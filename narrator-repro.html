@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Narrator aria-activedescendant Repro</title>
+  <style>
+    body { font-family: Segoe UI, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 24px; }
+    h1 { font-size: 20px; }
+    section { margin: 32px 0; padding: 20px; border: 1px solid #ccc; border-radius: 6px; }
+    h2 { margin-top: 0; font-size: 16px; }
+    pre { background: #f5f5f5; padding: 12px; border-radius: 4px; font-size: 13px; overflow-x: auto; }
+
+    textarea {
+      display: block; width: 100%; box-sizing: border-box;
+      padding: 8px; font-size: 15px; font-family: Consolas, monospace;
+      border: 2px solid #999; border-radius: 4px; resize: none;
+    }
+    textarea:focus { border-color: #0078d4; outline: none; }
+
+    ul[role="listbox"] {
+      list-style: none; margin: 8px 0 0; padding: 4px 0;
+      border: 1px solid #999; border-radius: 4px; max-width: 300px;
+    }
+    li[role="option"] {
+      padding: 5px 12px; cursor: default; font-size: 14px;
+    }
+    li[role="option"][aria-selected="true"] {
+      background: #0078d4; color: white;
+    }
+
+    .badge {
+      display: inline-block; padding: 2px 8px; border-radius: 3px;
+      font-size: 12px; font-weight: bold; margin-left: 8px;
+    }
+    .pass { background: #d4edda; color: #155724; }
+    .fail { background: #f8d7da; color: #721c24; }
+    .note { background: #fff3cd; color: #856404; }
+  </style>
+</head>
+<body>
+
+<h1>Narrator <code>aria-activedescendant</code> Repro</h1>
+<p>
+  Demonstrates that Windows Narrator does not announce <code>aria-activedescendant</code>
+  changes in a combobox when <code>role="application"</code> is present on an ancestor.
+  Tested on Windows 11 with Narrator + Microsoft Edge.
+</p>
+
+<section>
+  <h2>Test 1 — Baseline (no <code>role="application"</code>) <span class="badge pass">PASS with NVDA/JAWS</span></h2>
+  <p>
+    Press <kbd>↓</kbd> / <kbd>↑</kbd> inside the textarea to move through options.
+    <strong>Expected:</strong> Narrator announces each option as selection changes.
+  </p>
+  <div id="wrapper1">
+    <textarea
+      id="input1"
+      rows="1"
+      role="combobox"
+      aria-label="Test 1 combobox"
+      aria-expanded="true"
+      aria-haspopup="listbox"
+      aria-autocomplete="list"
+      aria-controls="listbox1"
+      aria-activedescendant="opt1-0"
+      readonly
+    >type here</textarea>
+    <ul id="listbox1" role="listbox" aria-label="Options">
+      <li id="opt1-0" role="option" aria-selected="true">Alpha  \alpha</li>
+      <li id="opt1-1" role="option" aria-selected="false">Beta  \beta</li>
+      <li id="opt1-2" role="option" aria-selected="false">Gamma  \gamma</li>
+      <li id="opt1-3" role="option" aria-selected="false">Delta  \delta</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Test 2 — With <code>role="application"</code> on wrapper <span class="badge fail">FAIL — Narrator silent</span></h2>
+  <p>
+    Identical markup, but the wrapper div has <code>role="application"</code>.
+    <strong>Expected:</strong> Narrator announces each option.
+    <strong>Actual:</strong> Narrator is silent when <code>aria-activedescendant</code> changes.
+  </p>
+  <div id="wrapper2" role="application" aria-label="Application region">
+    <textarea
+      id="input2"
+      rows="1"
+      role="combobox"
+      aria-label="Test 2 combobox"
+      aria-expanded="true"
+      aria-haspopup="listbox"
+      aria-autocomplete="list"
+      aria-controls="listbox2"
+      aria-activedescendant="opt2-0"
+      readonly
+    >type here</textarea>
+    <ul id="listbox2" role="listbox" aria-label="Options">
+      <li id="opt2-0" role="option" aria-selected="true">Alpha  \alpha</li>
+      <li id="opt2-1" role="option" aria-selected="false">Beta  \beta</li>
+      <li id="opt2-2" role="option" aria-selected="false">Gamma  \gamma</li>
+      <li id="opt2-3" role="option" aria-selected="false">Delta  \delta</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Test 3 — With <code>role="application"</code> on <code>&lt;body&gt;</code> <span class="badge fail">FAIL — Narrator silent</span></h2>
+  <p>
+    Same as Test 2 but <code>role="application"</code> is on the <code>&lt;body&gt;</code> element
+    (common pattern for single-page apps to suppress Narrator scan mode).
+    <strong>Actual:</strong> Narrator is still silent on <code>aria-activedescendant</code> changes.
+  </p>
+  <p class="note" style="padding:8px;border-radius:4px;font-size:13px;">
+    <strong>Note:</strong> This page itself uses <code>role="application"</code> on
+    <code>&lt;body&gt;</code> so Test 3 and Test 2 behave the same way — both silent.
+  </p>
+  <div id="wrapper3">
+    <textarea
+      id="input3"
+      rows="1"
+      role="combobox"
+      aria-label="Test 3 combobox"
+      aria-expanded="true"
+      aria-haspopup="listbox"
+      aria-autocomplete="list"
+      aria-controls="listbox3"
+      aria-activedescendant="opt3-0"
+      readonly
+    >type here</textarea>
+    <ul id="listbox3" role="listbox" aria-label="Options">
+      <li id="opt3-0" role="option" aria-selected="true">Alpha  \alpha</li>
+      <li id="opt3-1" role="option" aria-selected="false">Beta  \beta</li>
+      <li id="opt3-2" role="option" aria-selected="false">Gamma  \gamma</li>
+      <li id="opt3-3" role="option" aria-selected="false">Delta  \delta</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Why <code>role="application"</code> is needed</h2>
+  <p>
+    Without <code>role="application"</code>, pressing <kbd>↓</kbd> in the textarea causes
+    Narrator to enter <strong>Scan mode</strong>, which intercepts all arrow keys and prevents
+    the application from receiving them. The developer is therefore forced to choose between:
+  </p>
+  <ul>
+    <li>Suppress scan mode with <code>role="application"</code> → <code>aria-activedescendant</code> stops being announced</li>
+    <li>Remove <code>role="application"</code> → Arrow keys stolen by scan mode, app unusable</li>
+  </ul>
+  <p>
+    <strong>Workaround in use:</strong> <code>document.ariaNotify()</code> (Edge 136+, origin trial).
+    This works but is not yet broadly available.
+  </p>
+</section>
+
+<section>
+  <h2>Reproduction steps</h2>
+  <ol>
+    <li>Open this page in Microsoft Edge on Windows 11 with Narrator running</li>
+    <li>Tab to the <strong>Test 1</strong> textarea and press <kbd>↓</kbd> / <kbd>↑</kbd> — note Narrator announces each option</li>
+    <li>Tab to the <strong>Test 2</strong> textarea and press <kbd>↓</kbd> / <kbd>↑</kbd> — Narrator is silent</li>
+  </ol>
+  <pre>Environment:
+  OS:       Windows 11
+  Browser:  Microsoft Edge (latest)
+  Narrator: Windows built-in
+
+Relevant ARIA:
+  ancestor:  role="application"
+  input:     role="combobox" + aria-activedescendant="opt-N"
+  popup:     role="listbox"  + li[role="option"]
+
+Expected:  Narrator announces option label on aria-activedescendant change
+Actual:    Narrator is silent; no announcement made</pre>
+</section>
+
+<script>
+  // Shared keyboard handler for all three test textareas
+  function makeHandler(inputId, listboxId, prefix) {
+    const input = document.getElementById(inputId);
+    const options = document.querySelectorAll(`#${listboxId} [role="option"]`);
+    let current = 0;
+
+    function select(idx) {
+      options[current].setAttribute("aria-selected", "false");
+      current = idx;
+      options[current].setAttribute("aria-selected", "true");
+      input.setAttribute("aria-activedescendant", `${prefix}-${current}`);
+    }
+
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowDown") { e.preventDefault(); select(Math.min(current + 1, options.length - 1)); }
+      if (e.key === "ArrowUp")   { e.preventDefault(); select(Math.max(current - 1, 0)); }
+    });
+  }
+
+  makeHandler("input1", "listbox1", "opt1");
+  makeHandler("input2", "listbox2", "opt2");
+  makeHandler("input3", "listbox3", "opt3");
+</script>
+
+</body>
+</html>

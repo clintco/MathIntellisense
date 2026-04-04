@@ -1,0 +1,48 @@
+.editor-wrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.editor-textarea {
+  flex: 1;
+  width: 100%;
+  min-height: 200px;
+  box-sizing: border-box;
+  background: #1e1e2e;
+  color: #cdd6f4;
+  border: 1px solid #313244;
+  border-radius: 8px;
+  padding: 16px;
+  font-family: "JetBrains Mono", "Fira Code", "Cascadia Code", "Consolas", monospace;
+  font-size: 16px;
+  line-height: 1.8;
+  outline: none;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  cursor: text;
+  transition: border-color 0.15s;
+}
+
+.editor-textarea:focus {
+  border-color: #89b4fa;
+}
+
+/* Placeholder via data attribute */
+.editor-textarea:empty::before {
+  content: attr(data-placeholder);
+  color: #9399b2;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Inline MathML rendering */
+.editor-textarea math {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.1em;
+  color: #cdd6f4;
+  padding: 0 2px;
+}

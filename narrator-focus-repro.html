@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Narrator Repro — Combobox Scan Mode Bug</title>
+  <style>
+    body { font-family: Segoe UI, sans-serif; padding: 2rem; max-width: 500px; }
+    .steps { background: #f4f4f4; border-left: 4px solid #0078d4; padding: 1rem; margin-bottom: 1.5rem; }
+    .expected { color: #107c10; } .actual { color: #a80000; }
+    #combobox { border: 2px solid #888; border-radius: 4px; padding: 6px 10px; min-width: 200px; display: inline-block; }
+    #combobox:focus { border-color: #0078d4; outline: none; }
+    #listbox { list-style: none; margin: 0; padding: 0; border: 1px solid #888; border-radius: 4px; position: absolute; top: 100%; left: 0; min-width: 100%; background: white; }
+    #listbox li { padding: 6px 10px; }
+    #listbox li[aria-selected="true"] { background: #0078d4; color: white; }
+  </style>
+</head>
+<body>
+
+  <h1>Narrator Repro: Combobox Triggers Scan Mode</h1>
+
+  <div class="steps">
+    <strong>Steps to reproduce:</strong>
+    <ol>
+      <li>Enable Narrator (Win + Ctrl + Enter)</li>
+      <li>Tab to the editor and type any character</li>
+      <li>The listbox appears with the first item pre-selected</li>
+    </ol>
+    <p class="expected"><strong>Expected:</strong> Narrator stays in forms mode and reads the active option via <code>aria-activedescendant</code>.</p>
+    <p class="actual"><strong>Actual:</strong> Narrator flips into scan mode.</p>
+    <p><strong>Root cause:</strong> <code>aria-activedescendant</code> is set on the combobox at the same moment the listbox is dynamically inserted into the DOM.</p>
+  </div>
+
+  <div role="application" aria-label="Editor">
+    <div id="combobox-wrapper" style="position:relative; display:inline-block;">
+      <div
+        id="combobox"
+        contenteditable="true"
+        role="combobox"
+        aria-label="Search"
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        aria-autocomplete="list"
+        aria-controls="listbox"
+        tabindex="0"
+      ></div>
+    </div>
+  </div>
+
+  <script>
+    const combobox = document.getElementById("combobox");
+    const wrapper = document.getElementById("combobox-wrapper");
+    let listbox = null;
+
+    combobox.addEventListener("keyup", () => {
+      const query = (combobox.innerText || "").replace(/\n/g, "").trim();
+      if (!query) { closeDropdown(); return; }
+
+      closeDropdown(); // remove previous listbox if any
+
+      // Dynamically insert listbox — this combined with setting aria-activedescendant
+      // immediately triggers Narrator to enter scan mode
+      listbox = document.createElement("ul");
+      listbox.id = "listbox";
+      listbox.setAttribute("role", "listbox");
+      ["alpha", "beta", "gamma"].forEach((name, i) => {
+        const li = document.createElement("li");
+        li.id = "opt-" + i;
+        li.setAttribute("role", "option");
+        li.setAttribute("aria-selected", i === 0 ? "true" : "false");
+        li.textContent = name;
+        listbox.appendChild(li);
+      });
+      wrapper.appendChild(listbox);
+
+      combobox.setAttribute("aria-expanded", "true");
+      combobox.setAttribute("aria-activedescendant", "opt-0"); // set immediately on open
+    });
+
+    combobox.addEventListener("keydown", (e) => {
+      if (!listbox) return;
+      if (e.key === "Escape") { e.preventDefault(); closeDropdown(); }
+    });
+
+    combobox.addEventListener("blur", () => setTimeout(closeDropdown, 150));
+
+    function closeDropdown() {
+      listbox?.remove();
+      listbox = null;
+      combobox.setAttribute("aria-expanded", "false");
+      combobox.removeAttribute("aria-activedescendant");
+    }
+  </script>
+
+</body>
+</html>
