@@ -135,7 +135,7 @@ export default function SimpleApp() {
   }, [suggestions, selectedIndex, acceptItem, value]);
 
   const isOpen = suggestions.length > 0;
-  const activeOptionId = isOpen ? `simple-option-${selectedIndex}` : undefined;
+  const activeOptionId = isOpen && selectedIndex >= 0 ? `simple-option-${selectedIndex}` : undefined;
 
   // Announce selected item via ariaNotify (Edge 136+)
   useEffect(() => {
@@ -150,7 +150,7 @@ export default function SimpleApp() {
   }, [selectedIndex, isOpen, suggestions]);
 
   return (
-    <div role="application" aria-label="Math Intellisense Simple" style={{ padding: "24px", fontFamily: "system-ui, sans-serif", background: "var(--colorNeutralBackground1)", minHeight: "100vh", color: "var(--colorNeutralForeground1)" }}>
+    <div style={{ padding: "24px", fontFamily: "system-ui, sans-serif", background: "var(--colorNeutralBackground1)", minHeight: "100vh", color: "var(--colorNeutralForeground1)" }}>
       <header style={{ marginBottom: "16px" }}>
         <h1 style={{ margin: 0, fontSize: "20px" }}>Math Intellisense — Simple</h1>
         <p style={{ margin: "4px 0 0", fontSize: "13px", color: "var(--colorNeutralForeground3)" }}>
@@ -159,7 +159,7 @@ export default function SimpleApp() {
         </p>
       </header>
 
-      <div role="application" aria-label="Math symbol editor" style={{ position: "relative" }}>
+      <div style={{ position: "relative" }}>
         <textarea
           ref={textareaRef}
           value={value}
@@ -215,6 +215,8 @@ export default function SimpleApp() {
               id={`simple-option-${idx}`}
               role="option"
               aria-selected={idx === selectedIndex}
+              aria-setsize={suggestions.length}
+              aria-posinset={idx + 1}
               aria-label={item.type === "equation" ? `${item.name}, ${item.domain}` : `${item.symbol} backslash ${item.code}`}
               onMouseEnter={() => setSelectedIndex(idx)}
               onMouseDown={(e) => { e.preventDefault(); acceptItem(item); }}
