@@ -3720,6 +3720,46 @@ export const mathEquations = [
     "domain": "Building Blocks",
     "description": "2 by 2 matrix with placeholder entries",
     "core": false
+  },
+  {
+    "name": "3x3 matrix",
+    "aliases": "3 by 3 matrix,pmatrix,parentheses matrix",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo fence=\"true\">(</mo><mtable rowspacing=\"0.16em\" columnalign=\"center center center\" columnspacing=\"1em\"><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr></mtable><mo fence=\"true\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\begin{pmatrix}\\square &amp; \\square &amp; \\square \\\\ \\square &amp; \\square &amp; \\square \\\\ \\square &amp; \\square &amp; \\square\\end{pmatrix}</annotation></semantics></math>",
+    "domain": "Building Blocks",
+    "description": "3 by 3 matrix with placeholder entries",
+    "core": false
+  },
+  {
+    "name": "2x2 bracket matrix",
+    "aliases": "2 by 2 bmatrix,bracket matrix",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo fence=\"true\">[</mo><mtable rowspacing=\"0.16em\" columnalign=\"center center\" columnspacing=\"1em\"><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr></mtable><mo fence=\"true\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\begin{bmatrix}\\square &amp; \\square \\\\ \\square &amp; \\square\\end{bmatrix}</annotation></semantics></math>",
+    "domain": "Building Blocks",
+    "description": "2 by 2 bracket matrix with placeholder entries",
+    "core": false
+  },
+  {
+    "name": "3x3 bracket matrix",
+    "aliases": "3 by 3 bmatrix,bracket matrix",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo fence=\"true\">[</mo><mtable rowspacing=\"0.16em\" columnalign=\"center center center\" columnspacing=\"1em\"><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr></mtable><mo fence=\"true\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\begin{bmatrix}\\square &amp; \\square &amp; \\square \\\\ \\square &amp; \\square &amp; \\square \\\\ \\square &amp; \\square &amp; \\square\\end{bmatrix}</annotation></semantics></math>",
+    "domain": "Building Blocks",
+    "description": "3 by 3 bracket matrix with placeholder entries",
+    "core": false
+  },
+  {
+    "name": "2x2 determinant",
+    "aliases": "2 by 2 vmatrix,determinant matrix,vertical bar matrix",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo fence=\"true\">∣</mo><mtable rowspacing=\"0.16em\" columnalign=\"center center\" columnspacing=\"1em\"><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr></mtable><mo fence=\"true\">∣</mo></mrow><annotation encoding=\"application/x-tex\">\\begin{vmatrix}\\square &amp; \\square \\\\ \\square &amp; \\square\\end{vmatrix}</annotation></semantics></math>",
+    "domain": "Building Blocks",
+    "description": "2 by 2 determinant (vertical bar) matrix with placeholder entries",
+    "core": false
+  },
+  {
+    "name": "3x3 determinant",
+    "aliases": "3 by 3 vmatrix,determinant matrix,vertical bar matrix",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo fence=\"true\">∣</mo><mtable rowspacing=\"0.16em\" columnalign=\"center center center\" columnspacing=\"1em\"><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr></mtable><mo fence=\"true\">∣</mo></mrow><annotation encoding=\"application/x-tex\">\\begin{vmatrix}\\square &amp; \\square &amp; \\square \\\\ \\square &amp; \\square &amp; \\square \\\\ \\square &amp; \\square &amp; \\square\\end{vmatrix}</annotation></semantics></math>",
+    "domain": "Building Blocks",
+    "description": "3 by 3 determinant (vertical bar) matrix with placeholder entries",
+    "core": false
   }
 ];
 
