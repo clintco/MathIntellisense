@@ -14,13 +14,12 @@ const allEquationItems = mathEquations
   .map(e => ({ type: "equation", ...e, latex: extractLatex(e.mathml) }));
 
 function search(query) {
-  if (!query) return [];
   const q = query.toLowerCase();
   const symbols = mathSymbols
     .filter(s => s.code.startsWith(q) || s.aliases.some(a => a.startsWith(q)))
     .slice(0, MAX_RESULTS);
   const equations = allEquationItems
-    .filter(e => e.name.toLowerCase().includes(q))
+    .filter(e => e.name.toLowerCase().includes(q) || e.aliases.toLowerCase().includes(q))
     .slice(0, 6);
   return [...symbols, ...equations];
 }
@@ -155,7 +154,7 @@ export default function SimpleApp() {
         <h1 style={{ margin: 0, fontSize: "20px" }}>Math Intellisense — Simple</h1>
         <p style={{ margin: "4px 0 0", fontSize: "13px", color: "var(--colorNeutralForeground3)" }}>
           Type <kbd style={kbdStyle}>\</kbd> followed by a code to insert a math symbol. &nbsp;
-          <a href="/" style={{ color: "var(--colorBrandForeground1)" }}>← Full version</a>
+          <a href="index.html" style={{ color: "var(--colorBrandForeground1)" }}>← Full version</a>
         </p>
       </header>
 
