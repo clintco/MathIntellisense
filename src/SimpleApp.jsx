@@ -150,12 +150,12 @@ export default function SimpleApp() {
   }, [selectedIndex, isOpen, suggestions]);
 
   return (
-    <div role="application" aria-label="Math Intellisense Simple" style={{ padding: "24px", fontFamily: "system-ui, sans-serif", background: "#1e1e2e", minHeight: "100vh", color: "#cdd6f4" }}>
+    <div role="application" aria-label="Math Intellisense Simple" style={{ padding: "24px", fontFamily: "system-ui, sans-serif", background: "var(--colorNeutralBackground1)", minHeight: "100vh", color: "var(--colorNeutralForeground1)" }}>
       <header style={{ marginBottom: "16px" }}>
         <h1 style={{ margin: 0, fontSize: "20px" }}>Math Intellisense — Simple</h1>
-        <p style={{ margin: "4px 0 0", fontSize: "13px", color: "#6c7086" }}>
+        <p style={{ margin: "4px 0 0", fontSize: "13px", color: "var(--colorNeutralForeground3)" }}>
           Type <kbd style={kbdStyle}>\</kbd> followed by a code to insert a math symbol. &nbsp;
-          <a href="/" style={{ color: "#89b4fa" }}>← Full version</a>
+          <a href="/" style={{ color: "var(--colorBrandForeground1)" }}>← Full version</a>
         </p>
       </header>
 
@@ -180,8 +180,10 @@ export default function SimpleApp() {
           aria-activedescendant={activeOptionId}
           style={{
             width: "100%", height: "200px", boxSizing: "border-box",
-            background: "#181825", color: "#cdd6f4",
-            border: "1px solid #313244", borderRadius: "8px",
+            background: "var(--colorNeutralBackground3)",
+            color: "var(--colorNeutralForeground1)",
+            border: "1px solid var(--colorNeutralStroke1)",
+            borderRadius: "8px",
             padding: "16px", fontSize: "16px", lineHeight: "1.6",
             fontFamily: "'JetBrains Mono', 'Cascadia Code', monospace",
             resize: "none", outline: "none",
@@ -199,8 +201,8 @@ export default function SimpleApp() {
             left: caretPos.left,
             margin: 0, padding: "4px 0",
             listStyle: "none",
-            background: "#1e1e2e",
-            border: "1px solid #45475a",
+            background: "var(--colorNeutralBackground2)",
+            border: "1px solid var(--colorNeutralStroke2)",
             borderRadius: "6px",
             boxShadow: "0 4px 24px rgba(0,0,0,0.6)",
             zIndex: 1000,
@@ -219,19 +221,19 @@ export default function SimpleApp() {
               style={{
                 display: "flex", alignItems: "center", gap: "10px",
                 padding: "5px 12px", cursor: "pointer",
-                background: idx === selectedIndex ? "#3b4261" : "transparent",
+                background: idx === selectedIndex ? "var(--colorNeutralBackground1Selected)" : "transparent",
                 fontSize: "13px",
               }}
             >
               {item.type === "equation" ? (
                 <>
-                  <span style={{ flex: 1, color: "#cdd6f4", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{item.name}</span>
-                  <span style={{ fontSize: "10px", color: "#9399b2", flexShrink: 0 }}>{item.domain}</span>
+                  <span style={{ flex: 1, color: "var(--colorNeutralForeground1)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{item.name}</span>
+                  <span style={{ fontSize: "10px", color: "var(--colorNeutralForeground3)", flexShrink: 0 }}>{item.domain}</span>
                 </>
               ) : (
                 <>
-                  <span style={{ fontSize: "18px", width: "24px", textAlign: "center", color: "#cdd6f4" }}>{item.symbol}</span>
-                  <span style={{ fontFamily: "'Cascadia Code', monospace", color: "#89b4fa" }}>\{item.code}</span>
+                  <span style={{ fontSize: "18px", width: "24px", textAlign: "center", color: "var(--colorNeutralForeground1)" }}>{item.symbol}</span>
+                  <span style={{ fontFamily: "'Cascadia Code', monospace", color: "var(--colorBrandForeground1)" }}>\{item.code}</span>
                 </>
               )}
             </li>
@@ -244,6 +246,8 @@ export default function SimpleApp() {
 
 const kbdStyle = {
   display: "inline-block", padding: "0 4px",
-  background: "#313244", border: "1px solid #45475a",
-  borderRadius: "3px", fontSize: "11px", color: "#cdd6f4",
+  background: "var(--colorNeutralBackground4)",
+  border: "1px solid var(--colorNeutralStroke2)",
+  borderRadius: "3px", fontSize: "11px",
+  color: "var(--colorNeutralForeground1)",
 };

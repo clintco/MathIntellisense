@@ -2,24 +2,32 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:      #11111b;
-  --surface: #1e1e2e;
-  --border:  #313244;
-  --text:    #cdd6f4;
-  --subtext: #9399b2;
-  --accent:  #89b4fa;
+  --bg:      var(--colorNeutralBackground1);
+  --surface: var(--colorNeutralBackground2);
+  --border:  var(--colorNeutralStroke1);
+  --text:    var(--colorNeutralForeground1);
+  --subtext: var(--colorNeutralForeground3);
+  --accent:  var(--colorBrandForeground1);
   --green:   #a6e3a1;
+  --match-highlight: #f9e2af;
   font-family: "Segoe UI", system-ui, sans-serif;
   color: var(--text);
-  background: var(--bg);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --green: #1e7a1e;
+    --match-highlight: #8a5700;
+  }
 }
 
 /* ── Layout ──────────────────────────────────────────────────────────────── */
 .app {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
+  background: var(--bg);
 }
 
 .app-header {
@@ -84,7 +92,7 @@
 
 .core-toggle-hint {
   font-size: 11px;
-  color: #9399b2;
+  color: var(--subtext);
 }
 
 /* ── Sidebar ─────────────────────────────────────────────────────────────── */
@@ -125,8 +133,8 @@
 kbd {
   display: inline-block;
   padding: 1px 5px;
-  background: var(--border);
-  border: 1px solid #45475a;
+  background: var(--colorNeutralBackground4);
+  border: 1px solid var(--colorNeutralStroke2);
   border-radius: 3px;
   font-family: "Cascadia Code", "Fira Code", monospace;
   font-size: 11px;
@@ -145,7 +153,7 @@ kbd {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  background: var(--border);
+  background: var(--colorNeutralBackground4);
   border-radius: 4px;
   padding: 3px 7px;
   font-size: 12px;
@@ -163,7 +171,7 @@ kbd {
 
 /* ── Output preview ─────────────────────────────────────────────────────── */
 .output-preview {
-  background: var(--border);
+  background: var(--colorNeutralBackground4);
   border-radius: 6px;
   padding: 10px 12px;
   font-size: 18px;

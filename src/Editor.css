@@ -10,9 +10,9 @@
   width: 100%;
   min-height: 200px;
   box-sizing: border-box;
-  background: #1e1e2e;
-  color: #cdd6f4;
-  border: 1px solid #313244;
+  background: var(--colorNeutralBackground2);
+  color: var(--colorNeutralForeground1);
+  border: 1px solid var(--colorNeutralStroke1);
   border-radius: 8px;
   padding: 16px;
   font-family: "JetBrains Mono", "Fira Code", "Cascadia Code", "Consolas", monospace;
@@ -27,13 +27,13 @@
 }
 
 .editor-textarea:focus {
-  border-color: #89b4fa;
+  border-color: var(--colorBrandStroke1);
 }
 
 /* Placeholder via data attribute */
 .editor-textarea:empty::before {
   content: attr(data-placeholder);
-  color: #9399b2;
+  color: var(--colorNeutralForeground4);
   pointer-events: none;
   user-select: none;
 }
@@ -43,6 +43,6 @@
   display: inline-block;
   vertical-align: middle;
   font-size: 1.1em;
-  color: #cdd6f4;
+  color: var(--colorNeutralForeground1);
   padding: 0 2px;
 }

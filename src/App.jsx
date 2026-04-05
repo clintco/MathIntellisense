@@ -12,7 +12,7 @@ export default function App() {
         <h1 className="app-title">Math Intellisense</h1>
         <p className="app-subtitle">
           Type <kbd>\</kbd> followed by a symbol name, alias, or category to insert unicode math symbols
-          &nbsp;·&nbsp; <a href="/simple.html" style={{ color: "#89b4fa" }}>Simple version →</a>
+          &nbsp;·&nbsp; <a href="/simple.html" style={{ color: "var(--colorBrandForeground1)" }}>Simple version →</a>
         </p>
       </header>
 
