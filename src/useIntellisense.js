@@ -82,7 +82,7 @@ export function useIntellisense() {
       const eqCategoryResults = allCategoryItems
         .filter(c => c.section === "equations" && c.category.toLowerCase().includes(q));
       const eqResults = allEquationItems
-        .filter(e => e.name.toLowerCase().includes(q))
+        .filter(e => e.name.toLowerCase().includes(q) || e.aliases.toLowerCase().includes(q))
         .slice(0, 6);
       results = [...symbolResults, ...eqCategoryResults, ...eqResults];
     }

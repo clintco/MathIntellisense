@@ -13,31 +13,31 @@ export const mathEquations = [
     "name": "exponent product rule",
     "aliases": "multiply same base",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mi>m</mi></msup><mo>⋅</mo><msup><mi>a</mi><mi>n</mi></msup><mo>=</mo><msup><mi>a</mi><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">a^m \\cdot a^n = a^{m+n}</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Multiplying powers with the same base adds exponents",
-    "core": true
+    "core": false
   },
   {
     "name": "exponent quotient rule",
     "aliases": "divide same base",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><msup><mi>a</mi><mi>m</mi></msup><msup><mi>a</mi><mi>n</mi></msup></mfrac><mo>=</mo><msup><mi>a</mi><mrow><mi>m</mi><mo>−</mo><mi>n</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">\\frac{a^m}{a^n} = a^{m-n}</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Dividing powers with the same base subtracts exponents",
-    "core": true
+    "core": false
   },
   {
     "name": "exponent power rule",
     "aliases": "power of a power",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><msup><mi>a</mi><mi>m</mi></msup><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup><mo>=</mo><msup><mi>a</mi><mrow><mi>m</mi><mi>n</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">(a^m)^n = a^{mn}</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Raising a power to a power multiplies exponents",
-    "core": true
+    "core": false
   },
   {
     "name": "power of a product",
     "aliases": "(ab) to the n",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>a</mi><mi>b</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup><mo>=</mo><msup><mi>a</mi><mi>n</mi></msup><msup><mi>b</mi><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">(ab)^n = a^n b^n</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Distributing an exponent over a product",
     "core": false
   },
@@ -45,7 +45,7 @@ export const mathEquations = [
     "name": "power of a quotient",
     "aliases": "(a over b) to the n",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mrow><mo fence=\"true\">(</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo fence=\"true\">)</mo></mrow><mi>n</mi></msup><mo>=</mo><mfrac><msup><mi>a</mi><mi>n</mi></msup><msup><mi>b</mi><mi>n</mi></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Distributing an exponent over a quotient",
     "core": false
   },
@@ -53,71 +53,79 @@ export const mathEquations = [
     "name": "negative exponent",
     "aliases": "a to the negative n",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mrow><mo>−</mo><mi>n</mi></mrow></msup><mo>=</mo><mfrac><mn>1</mn><msup><mi>a</mi><mi>n</mi></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">a^{-n} = \\frac{1}{a^n}</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Negative exponent means reciprocal",
-    "core": true
+    "core": false
   },
   {
     "name": "fractional exponent",
     "aliases": "rational exponent",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mrow><mi>m</mi><mi mathvariant=\"normal\">/</mi><mi>n</mi></mrow></msup><mo>=</mo><mroot><msup><mi>a</mi><mi>m</mi></msup><mi>n</mi></mroot></mrow><annotation encoding=\"application/x-tex\">a^{m/n} = \\sqrt[n]{a^m}</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Fractional exponent as a radical",
-    "core": true
+    "core": false
   },
   {
     "name": "logarithm product rule",
     "aliases": "log of a product",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mo stretchy=\"false\">(</mo><mi>x</mi><mi>y</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mi>x</mi><mo>+</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">\\log_b(xy) = \\log_b x + \\log_b y</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Logarithm of a product equals sum of logarithms",
-    "core": true
+    "core": false
   },
   {
     "name": "logarithm quotient rule",
     "aliases": "log of a quotient",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mrow><mo fence=\"true\">(</mo><mfrac><mi>x</mi><mi>y</mi></mfrac><mo fence=\"true\">)</mo></mrow><mo>=</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mi>x</mi><mo>−</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">\\log_b\\left(\\frac{x}{y}\\right) = \\log_b x - \\log_b y</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Logarithm of a quotient equals difference of logarithms",
-    "core": true
+    "core": false
   },
   {
     "name": "logarithm power rule",
     "aliases": "log of a power",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mo stretchy=\"false\">(</mo><msup><mi>x</mi><mi>n</mi></msup><mo stretchy=\"false\">)</mo><mo>=</mo><mi>n</mi><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\log_b(x^n) = n\\log_b x</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Logarithm of a power brings the exponent down",
-    "core": true
+    "core": false
   },
   {
     "name": "logarithm inverse",
     "aliases": "b to the log base b of x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>b</mi><mrow><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mi>x</mi></mrow></msup><mo>=</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">b^{\\log_b x} = x</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Exponential and logarithm are inverse operations",
-    "core": true
+    "core": false
   },
   {
-    "name": "perfect square trinomial subtraction",
-    "aliases": "(a-b) squared",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">(a-b)^2 = a^2 - 2ab + b^2</annotation></semantics></math>",
-    "domain": "Algebra",
-    "description": "Perfect square with subtraction",
-    "core": true
+    "name": "change of base formula",
+    "aliases": "logarithm change of base",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mi>x</mi></mrow><mrow><mi>ln</mi><mo>⁡</mo><mi>b</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\log_{b}(x) = \\frac{\\ln x}{\\ln b}</annotation></semantics></math>",
+    "domain": "Algebra & Number Systems",
+    "description": "Change of base formula for logarithms",
+    "core": false
+  },
+  {
+    "name": "perfect square trinomial",
+    "aliases": "(a+b) squared; (a-b) squared",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo separator=\"true\">;</mo><mtext>  </mtext><mo stretchy=\"false\">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">(a+b)^2 = a^2 + 2ab + b^2; \\; (a-b)^2 = a^2 - 2ab + b^2</annotation></semantics></math>",
+    "domain": "Algebra & Number Systems",
+    "description": "Perfect square expansion (both addition and subtraction forms)",
+    "core": false
   },
   {
     "name": "completing the square",
     "aliases": "complete the square",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><msup><mrow><mo fence=\"true\">(</mo><mfrac><mi>b</mi><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mrow><mo fence=\"true\">(</mo><mi>x</mi><mo>+</mo><mfrac><mi>b</mi><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">x^2 + bx + \\left(\\frac{b}{2}\\right)^2 = \\left(x + \\frac{b}{2}\\right)^2</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Completing the square identity",
-    "core": true
+    "core": false
   },
   {
     "name": "direct variation",
     "aliases": "y varies directly as x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>k</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">y = kx</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Direct variation with constant of proportionality k",
     "core": false
   },
@@ -125,7 +133,7 @@ export const mathEquations = [
     "name": "inverse variation",
     "aliases": "y varies inversely as x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mi>k</mi><mi>x</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">y = \\frac{k}{x}</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Inverse variation with constant of proportionality k",
     "core": false
   },
@@ -133,7 +141,7 @@ export const mathEquations = [
     "name": "joint variation",
     "aliases": "y varies jointly as x and z",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>k</mi><mi>x</mi><mi>z</mi></mrow><annotation encoding=\"application/x-tex\">y = kxz</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Joint variation: y proportional to both x and z",
     "core": false
   },
@@ -141,7 +149,7 @@ export const mathEquations = [
     "name": "distance rate time",
     "aliases": "d equals rt",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>d</mi><mo>=</mo><mi>r</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">d = rt</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Distance equals rate times time",
     "core": false
   },
@@ -149,7 +157,7 @@ export const mathEquations = [
     "name": "absolute value equation",
     "aliases": "absolute value equals b",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>x</mi><mo>−</mo><mi>a</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mi>b</mi><mtext>  </mtext><mo>⇒</mo><mtext>  </mtext><mi>x</mi><mo>=</mo><mi>a</mi><mo>±</mo><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">|x - a| = b \\;\\Rightarrow\\; x = a \\pm b</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Solution of an absolute value equation",
     "core": false
   },
@@ -157,263 +165,119 @@ export const mathEquations = [
     "name": "quadratic formula",
     "aliases": "roots of quadratic",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mo>−</mo><mi>b</mi><mo>±</mo><msqrt><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>a</mi><mi>c</mi></mrow></msqrt></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}</annotation></semantics></math>",
-    "domain": "Algebra",
-    "description": "Formula for roots of ax²+bx+c=0",
-    "core": true
+    "domain": "Algebra & Number Systems",
+    "description": "Formula for roots of ax^2+bx+c=0",
+    "core": false
   },
   {
     "name": "discriminant",
     "aliases": "b squared minus 4ac",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>a</mi><mi>c</mi></mrow><annotation encoding=\"application/x-tex\">b^2 - 4ac</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Discriminant of a quadratic equation",
-    "core": true
+    "core": false
   },
   {
     "name": "difference of squares",
     "aliases": "(a+b)(a-b)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">a^2 - b^2 = (a+b)(a-b)</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Difference of squares factoring identity",
-    "core": true
-  },
-  {
-    "name": "perfect square trinomial",
-    "aliases": "(a+b) squared",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">(a + b)^2 = a^2 + 2ab + b^2</annotation></semantics></math>",
-    "domain": "Algebra",
-    "description": "Perfect square expansion",
-    "core": true
+    "core": false
   },
   {
     "name": "sum of cubes",
     "aliases": "a cubed plus b cubed",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mn>3</mn></msup><mo>+</mo><msup><mi>b</mi><mn>3</mn></msup><mo>=</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">a^3 + b^3 = (a+b)(a^2 - ab + b^2)</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Sum of cubes factoring",
-    "core": true
+    "core": false
   },
   {
     "name": "difference of cubes",
     "aliases": "a cubed minus b cubed",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mn>3</mn></msup><mo>−</mo><msup><mi>b</mi><mn>3</mn></msup><mo>=</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">a^3 - b^3 = (a-b)(a^2 + ab + b^2)</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Difference of cubes factoring",
-    "core": true
+    "core": false
   },
   {
     "name": "binomial theorem",
     "aliases": "binomial expansion",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup><mo>=</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mi>n</mi><mi>k</mi></mfrac><mo fence=\"true\">)</mo></mrow><msup><mi>a</mi><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></msup><msup><mi>b</mi><mi>k</mi></msup></mrow><annotation encoding=\"application/x-tex\">(a+b)^n = \\sum_{k=0}^{n} \\binom{n}{k} a^{n-k} b^k</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Binomial theorem expansion",
-    "core": true
+    "core": false
   },
   {
     "name": "geometric series",
     "aliases": "finite geometric sum",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><mi>a</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><msup><mi>r</mi><mi>n</mi></msup><mo stretchy=\"false\">)</mo></mrow><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">S_n = \\frac{a(1-r^n)}{1-r}</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Sum of a finite geometric series",
-    "core": true
+    "core": false
   },
   {
     "name": "infinite geometric series",
     "aliases": "infinite geo sum",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mo>=</mo><mfrac><mi>a</mi><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">S = \\frac{a}{1-r}</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Sum of an infinite geometric series (|r|<1)",
-    "core": true
+    "core": false
   },
   {
     "name": "arithmetic series",
     "aliases": "arithmetic sum",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><mfrac><mi>n</mi><mn>2</mn></mfrac><mo stretchy=\"false\">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">S_n = \\frac{n}{2}(a_1 + a_n)</annotation></semantics></math>",
-    "domain": "Algebra",
+    "domain": "Algebra & Number Systems",
     "description": "Sum of an arithmetic series",
-    "core": true
-  },
-  {
-    "name": "change of base",
-    "aliases": "logarithm change of base",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mi>x</mi></mrow><mrow><mi>ln</mi><mo>⁡</mo><mi>b</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\log_{b}(x) = \\frac{\\ln x}{\\ln b}</annotation></semantics></math>",
-    "domain": "Algebra",
-    "description": "Change of base formula for logarithms",
-    "core": true
-  },
-  {
-    "name": "permutation",
-    "aliases": "n permute r",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mi>r</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">!</mo></mrow><mrow><mo stretchy=\"false\">(</mo><mi>n</mi><mo>−</mo><mi>r</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">!</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P(n{,}r) = \\frac{n!}{(n-r)!}</annotation></semantics></math>",
-    "domain": "Combinatorics",
-    "description": "Number of ordered arrangements of r items from n",
-    "core": true
-  },
-  {
-    "name": "combination",
-    "aliases": "n choose r",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mi>r</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">!</mo></mrow><mrow><mi>r</mi><mo stretchy=\"false\">!</mo><mo stretchy=\"false\">(</mo><mi>n</mi><mo>−</mo><mi>r</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">!</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">C(n{,}r) = \\frac{n!}{r!(n-r)!}</annotation></semantics></math>",
-    "domain": "Combinatorics",
-    "description": "Number of unordered selections of r items from n",
-    "core": true
-  },
-  {
-    "name": "multinomial coefficient",
-    "aliases": "multinomial",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mi>n</mi><mrow><msub><mi>k</mi><mn>1</mn></msub><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><msub><mi>k</mi><mn>2</mn></msub><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mo>…</mo><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><msub><mi>k</mi><mi>r</mi></msub></mrow></mfrac><mo fence=\"true\">)</mo></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">!</mo></mrow><mrow><msub><mi>k</mi><mn>1</mn></msub><mo stretchy=\"false\">!</mo><mtext> </mtext><msub><mi>k</mi><mn>2</mn></msub><mo stretchy=\"false\">!</mo><mo>⋯</mo><msub><mi>k</mi><mi>r</mi></msub><mo stretchy=\"false\">!</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\binom{n}{k_1{,}k_2{,}\\ldots{,}k_r} = \\frac{n!}{k_1!\\,k_2!\\cdots k_r!}</annotation></semantics></math>",
-    "domain": "Combinatorics",
-    "description": "Number of ways to partition n objects into r ordered groups",
-    "core": true
-  },
-  {
-    "name": "stars and bars",
-    "aliases": "combinations with repetition",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mrow><mi>n</mi><mo>+</mo><mi>k</mi><mo>−</mo><mn>1</mn></mrow><mi>k</mi></mfrac><mo fence=\"true\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\binom{n+k-1}{k}</annotation></semantics></math>",
-    "domain": "Combinatorics",
-    "description": "Number of ways to place n identical items into k distinct bins",
     "core": false
   },
   {
-    "name": "Catalan number",
-    "aliases": "nth Catalan number",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>C</mi><mi>n</mi></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mrow><mn>2</mn><mi>n</mi></mrow><mi>n</mi></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">C_n = \\frac{1}{n+1}\\binom{2n}{n}</annotation></semantics></math>",
-    "domain": "Combinatorics",
-    "description": "nth Catalan number counting many combinatorial structures",
+    "name": "nth term of arithmetic sequence",
+    "aliases": "arithmetic sequence general term",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mo stretchy=\"false\">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mi>d</mi></mrow><annotation encoding=\"application/x-tex\">a_n = a_1 + (n-1)d</annotation></semantics></math>",
+    "domain": "Algebra & Number Systems",
+    "description": "nth term of an arithmetic sequence with first term a_1 and common difference d",
     "core": false
   },
   {
-    "name": "derangement",
-    "aliases": "number of derangements",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>D</mi><mi>n</mi></msub><mo>=</mo><mi>n</mi><mo stretchy=\"false\">!</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mfrac><mrow><mo stretchy=\"false\">(</mo><mo>−</mo><mn>1</mn><msup><mo stretchy=\"false\">)</mo><mi>k</mi></msup></mrow><mrow><mi>k</mi><mo stretchy=\"false\">!</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">D_n = n!\\sum_{k=0}^{n}\\frac{(-1)^k}{k!}</annotation></semantics></math>",
-    "domain": "Combinatorics",
-    "description": "Number of permutations of n elements with no fixed points",
+    "name": "nth term of geometric sequence",
+    "aliases": "geometric sequence general term",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>⋅</mo><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding=\"application/x-tex\">a_n = a_1 \\cdot r^{n-1}</annotation></semantics></math>",
+    "domain": "Algebra & Number Systems",
+    "description": "nth term of a geometric sequence with first term a_1 and common ratio r",
     "core": false
   },
   {
-    "name": "inclusion-exclusion two sets",
-    "aliases": "size of A union B",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>∪</mo><mi>B</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi mathvariant=\"normal\">∣</mi><mi>B</mi><mi mathvariant=\"normal\">∣</mi><mo>−</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>∩</mo><mi>B</mi><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">|A \\cup B| = |A| + |B| - |A \\cap B|</annotation></semantics></math>",
-    "domain": "Set Theory",
-    "description": "Inclusion-exclusion principle for two sets",
-    "core": true
-  },
-  {
-    "name": "inclusion-exclusion three sets",
-    "aliases": "size of A union B union C",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>∪</mo><mi>B</mi><mo>∪</mo><mi>C</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi mathvariant=\"normal\">∣</mi><mi>B</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi mathvariant=\"normal\">∣</mi><mi>C</mi><mi mathvariant=\"normal\">∣</mi><mo>−</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>∩</mo><mi>B</mi><mi mathvariant=\"normal\">∣</mi><mo>−</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>∩</mo><mi>C</mi><mi mathvariant=\"normal\">∣</mi><mo>−</mo><mi mathvariant=\"normal\">∣</mi><mi>B</mi><mo>∩</mo><mi>C</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>∩</mo><mi>B</mi><mo>∩</mo><mi>C</mi><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">|A \\cup B \\cup C| = |A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|</annotation></semantics></math>",
-    "domain": "Set Theory",
-    "description": "Inclusion-exclusion principle for three sets",
-    "core": true
-  },
-  {
-    "name": "De Morgan set law union",
-    "aliases": "complement of union",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><msup><mo stretchy=\"false\">)</mo><mi>c</mi></msup><mo>=</mo><msup><mi>A</mi><mi>c</mi></msup><mo>∩</mo><msup><mi>B</mi><mi>c</mi></msup></mrow><annotation encoding=\"application/x-tex\">(A \\cup B)^c = A^c \\cap B^c</annotation></semantics></math>",
-    "domain": "Set Theory",
-    "description": "De Morgan's law: complement of a union equals intersection of complements",
-    "core": true
-  },
-  {
-    "name": "De Morgan set law intersection",
-    "aliases": "complement of intersection",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><msup><mo stretchy=\"false\">)</mo><mi>c</mi></msup><mo>=</mo><msup><mi>A</mi><mi>c</mi></msup><mo>∪</mo><msup><mi>B</mi><mi>c</mi></msup></mrow><annotation encoding=\"application/x-tex\">(A \\cap B)^c = A^c \\cup B^c</annotation></semantics></math>",
-    "domain": "Set Theory",
-    "description": "De Morgan's law: complement of an intersection equals union of complements",
-    "core": true
-  },
-  {
-    "name": "power set cardinality",
-    "aliases": "size of power set",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"script\">P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mi mathvariant=\"normal\">∣</mi><mo>=</mo><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">|\\mathcal{P}(A)| = 2^n</annotation></semantics></math>",
-    "domain": "Set Theory",
-    "description": "Number of subsets of a set with n elements",
+    "name": "vertex form of a parabola",
+    "aliases": "vertex form",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>a</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>−</mo><mi>h</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>+</mo><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">y = a(x-h)^2 + k</annotation></semantics></math>",
+    "domain": "Algebra & Number Systems",
+    "description": "Parabola with vertex at (h,k)",
     "core": false
   },
   {
-    "name": "Cartesian product cardinality",
-    "aliases": "size of A cross B",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>×</mo><mi>B</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mi mathvariant=\"normal\">∣</mi><mo>⋅</mo><mi mathvariant=\"normal\">∣</mi><mi>B</mi><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">|A \\times B| = |A| \\cdot |B|</annotation></semantics></math>",
-    "domain": "Set Theory",
-    "description": "Number of ordered pairs in a Cartesian product",
+    "name": "exponential growth and decay",
+    "aliases": "exponential model; ODE exponential solution",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mi>y</mi><mn>0</mn></msub><mtext> </mtext><msup><mi>e</mi><mrow><mi>k</mi><mi>t</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">y = y_0\\,e^{kt}</annotation></semantics></math>",
+    "domain": "Algebra & Number Systems",
+    "description": "Exponential growth (k>0) or decay (k<0) model; also general solution to dy/dt = ky",
     "core": false
-  },
-  {
-    "name": "De Morgan law conjunction",
-    "aliases": "negation of and",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">¬</mi><mo stretchy=\"false\">(</mo><mi>p</mi><mo>∧</mo><mi>q</mi><mo stretchy=\"false\">)</mo><mo>≡</mo><mi mathvariant=\"normal\">¬</mi><mi>p</mi><mo>∨</mo><mi mathvariant=\"normal\">¬</mi><mi>q</mi></mrow><annotation encoding=\"application/x-tex\">\\lnot(p \\land q) \\equiv \\lnot p \\lor \\lnot q</annotation></semantics></math>",
-    "domain": "Logic",
-    "description": "De Morgan's law for logical conjunction",
-    "core": true
-  },
-  {
-    "name": "De Morgan law disjunction",
-    "aliases": "negation of or",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">¬</mi><mo stretchy=\"false\">(</mo><mi>p</mi><mo>∨</mo><mi>q</mi><mo stretchy=\"false\">)</mo><mo>≡</mo><mi mathvariant=\"normal\">¬</mi><mi>p</mi><mo>∧</mo><mi mathvariant=\"normal\">¬</mi><mi>q</mi></mrow><annotation encoding=\"application/x-tex\">\\lnot(p \\lor q) \\equiv \\lnot p \\land \\lnot q</annotation></semantics></math>",
-    "domain": "Logic",
-    "description": "De Morgan's law for logical disjunction",
-    "core": true
-  },
-  {
-    "name": "conditional equivalence",
-    "aliases": "if then as or",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>p</mi><mo>⇒</mo><mi>q</mi><mo>≡</mo><mi mathvariant=\"normal\">¬</mi><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><annotation encoding=\"application/x-tex\">p \\Rightarrow q \\equiv \\lnot p \\lor q</annotation></semantics></math>",
-    "domain": "Logic",
-    "description": "Conditional expressed as a disjunction",
-    "core": true
-  },
-  {
-    "name": "contrapositive",
-    "aliases": "contrapositive equivalence",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>p</mi><mo>⇒</mo><mi>q</mi><mo>≡</mo><mi mathvariant=\"normal\">¬</mi><mi>q</mi><mo>⇒</mo><mi mathvariant=\"normal\">¬</mi><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">p \\Rightarrow q \\equiv \\lnot q \\Rightarrow \\lnot p</annotation></semantics></math>",
-    "domain": "Logic",
-    "description": "A conditional and its contrapositive are logically equivalent",
-    "core": true
-  },
-  {
-    "name": "biconditional equivalence",
-    "aliases": "iff as two conditionals",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>p</mi><mo>⇔</mo><mi>q</mi><mo>≡</mo><mo stretchy=\"false\">(</mo><mi>p</mi><mo>⇒</mo><mi>q</mi><mo stretchy=\"false\">)</mo><mo>∧</mo><mo stretchy=\"false\">(</mo><mi>q</mi><mo>⇒</mo><mi>p</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">p \\Leftrightarrow q \\equiv (p \\Rightarrow q) \\land (q \\Rightarrow p)</annotation></semantics></math>",
-    "domain": "Logic",
-    "description": "Biconditional expressed as two conditionals",
-    "core": true
-  },
-  {
-    "name": "double negation",
-    "aliases": "not not p",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">¬</mi><mi mathvariant=\"normal\">¬</mi><mi>p</mi><mo>≡</mo><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">\\lnot\\lnot p \\equiv p</annotation></semantics></math>",
-    "domain": "Logic",
-    "description": "Double negation elimination",
-    "core": true
-  },
-  {
-    "name": "modus ponens",
-    "aliases": "if p then q",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi>p</mi><mspace width=\"1em\"/><mi>p</mi><mo>⇒</mo><mi>q</mi></mrow><mi>q</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{p \\quad p \\Rightarrow q}{q}</annotation></semantics></math>",
-    "domain": "Logic",
-    "description": "Modus ponens inference rule",
-    "core": true
-  },
-  {
-    "name": "modus tollens",
-    "aliases": "not q then not p",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi mathvariant=\"normal\">¬</mi><mi>q</mi><mspace width=\"1em\"/><mi>p</mi><mo>⇒</mo><mi>q</mi></mrow><mrow><mi mathvariant=\"normal\">¬</mi><mi>p</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{\\lnot q \\quad p \\Rightarrow q}{\\lnot p}</annotation></semantics></math>",
-    "domain": "Logic",
-    "description": "Modus tollens inference rule",
-    "core": true
   },
   {
     "name": "division algorithm",
     "aliases": "a equals bq plus r",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>a</mi><mo>=</mo><mi>b</mi><mi>q</mi><mo>+</mo><mi>r</mi><mspace width=\"1em\"/><mn>0</mn><mo>≤</mo><mi>r</mi><mo>&lt;</mo><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">a = bq + r \\quad 0 \\leq r &lt; b</annotation></semantics></math>",
-    "domain": "Number Theory",
+    "domain": "Algebra & Number Systems",
     "description": "Every integer a divided by positive b has unique quotient q and remainder r",
     "core": false
   },
   {
     "name": "Bezout's identity",
     "aliases": "gcd as linear combination",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>gcd</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">\\gcd(a{,}b) = ax + by</annotation></semantics></math>",
-    "domain": "Number Theory",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>gcd</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mo separator=\"true\">,</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">\\gcd(a,b) = ax + by</annotation></semantics></math>",
+    "domain": "Algebra & Number Systems",
     "description": "GCD of a and b can be expressed as a linear combination of a and b",
     "core": false
   },
@@ -421,751 +285,47 @@ export const mathEquations = [
     "name": "Fermat's little theorem",
     "aliases": "a to the p mod p",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mi>p</mi></msup><mo>≡</mo><mi>a</mi><mspace></mspace><mspace width=\"1em\"/><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">d</mi></mrow><mspace width=\"0.3333em\"/><mi>p</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">a^p \\equiv a \\pmod{p}</annotation></semantics></math>",
-    "domain": "Number Theory",
+    "domain": "Algebra & Number Systems",
     "description": "For prime p and any integer a: a^p is congruent to a mod p",
-    "core": true
+    "core": false
   },
   {
     "name": "Euler's totient function",
     "aliases": "phi of n",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>φ</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>n</mi><munder><mo>∏</mo><mrow><mi>p</mi><mo>∣</mo><mi>n</mi></mrow></munder><mtext> ⁣</mtext><mrow><mo fence=\"true\">(</mo><mn>1</mn><mo>−</mo><mfrac><mn>1</mn><mi>p</mi></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\varphi(n) = n\\prod_{p \\mid n}\\!\\left(1 - \\frac{1}{p}\\right)</annotation></semantics></math>",
-    "domain": "Number Theory",
+    "domain": "Algebra & Number Systems",
     "description": "Count of integers up to n that are coprime to n",
-    "core": true
+    "core": false
   },
   {
     "name": "Euler's theorem",
     "aliases": "a to the phi n",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mrow><mi>φ</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo></mrow></msup><mo>≡</mo><mn>1</mn><mspace></mspace><mspace width=\"1em\"/><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">d</mi></mrow><mspace width=\"0.3333em\"/><mi>n</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">a^{\\varphi(n)} \\equiv 1 \\pmod{n}</annotation></semantics></math>",
-    "domain": "Number Theory",
+    "domain": "Algebra & Number Systems",
     "description": "For gcd(a,n)=1: a raised to Euler totient is congruent to 1 mod n",
-    "core": true
-  },
-  {
-    "name": "handshaking lemma",
-    "aliases": "sum of degrees",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munder><mo>∑</mo><mrow><mi>v</mi><mo>∈</mo><mi>V</mi></mrow></munder><mi>deg</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>v</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>2</mn><mi mathvariant=\"normal\">∣</mi><mi>E</mi><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">\\sum_{v \\in V} \\deg(v) = 2|E|</annotation></semantics></math>",
-    "domain": "Graph Theory",
-    "description": "Sum of all vertex degrees equals twice the number of edges",
     "core": false
-  },
-  {
-    "name": "Euler's planar graph formula",
-    "aliases": "V minus E plus F equals 2",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>−</mo><mi>E</mi><mo>+</mo><mi>F</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">V - E + F = 2</annotation></semantics></math>",
-    "domain": "Graph Theory",
-    "description": "Euler's formula for connected planar graphs: vertices minus edges plus faces",
-    "core": false
-  },
-  {
-    "name": "complete graph edges",
-    "aliases": "edges in Kn",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>E</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">|E| = \\frac{n(n-1)}{2}</annotation></semantics></math>",
-    "domain": "Graph Theory",
-    "description": "Number of edges in a complete graph on n vertices",
-    "core": false
-  },
-  {
-    "name": "Fibonacci recurrence",
-    "aliases": "Fibonacci sequence",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>F</mi><mi>n</mi></msub><mo>=</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msub></mrow><annotation encoding=\"application/x-tex\">F_n = F_{n-1} + F_{n-2}</annotation></semantics></math>",
-    "domain": "Discrete Mathematics",
-    "description": "Fibonacci recurrence with F_1 = F_2 = 1",
-    "core": true
-  },
-  {
-    "name": "master theorem",
-    "aliases": "divide and conquer recurrence",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>T</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>a</mi><mi>T</mi><mrow><mo fence=\"true\">(</mo><mfrac><mi>n</mi><mi>b</mi></mfrac><mo fence=\"true\">)</mo></mrow><mo>+</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">T(n) = aT\\left(\\frac{n}{b}\\right) + f(n)</annotation></semantics></math>",
-    "domain": "Discrete Mathematics",
-    "description": "Master theorem for analyzing divide-and-conquer recurrences",
-    "core": false
-  },
-  {
-    "name": "sum of first n integers",
-    "aliases": "triangular number formula",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>k</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sum_{k=1}^{n} k = \\frac{n(n+1)}{2}</annotation></semantics></math>",
-    "domain": "Discrete Mathematics",
-    "description": "Closed form for the sum of the first n positive integers",
-    "core": true
-  },
-  {
-    "name": "sum of first n squares",
-    "aliases": "sum of squares formula",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msup><mi>k</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><mn>6</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sum_{k=1}^{n} k^2 = \\frac{n(n+1)(2n+1)}{6}</annotation></semantics></math>",
-    "domain": "Discrete Mathematics",
-    "description": "Closed form for the sum of squares of the first n integers",
-    "core": true
-  },
-  {
-    "name": "sum of first n cubes",
-    "aliases": "sum of cubes formula",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msup><mi>k</mi><mn>3</mn></msup><mo>=</mo><msup><mrow><mo fence=\"true\">[</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><mn>2</mn></mfrac><mo fence=\"true\">]</mo></mrow><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">\\sum_{k=1}^{n} k^3 = \\left[\\frac{n(n+1)}{2}\\right]^2</annotation></semantics></math>",
-    "domain": "Discrete Mathematics",
-    "description": "Closed form for the sum of cubes of the first n integers",
-    "core": true
-  },
-  {
-    "name": "mathematical induction",
-    "aliases": "induction step",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mtext> true and </mtext><mi>P</mi><mo stretchy=\"false\">(</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>⇒</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>k</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>P</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo><mtext> for all </mtext><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">P(1) \\text{ true and } P(k) \\Rightarrow P(k+1) \\implies P(n) \\text{ for all } n \\geq 1</annotation></semantics></math>",
-    "domain": "Discrete Mathematics",
-    "description": "Principle of mathematical induction",
-    "core": true
-  },
-  {
-    "name": "slope",
-    "aliases": "slope of a line",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><msub><mi>y</mi><mn>2</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">m = \\frac{y_2 - y_1}{x_2 - x_1}</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Slope between two points",
-    "core": true
-  },
-  {
-    "name": "slope intercept form",
-    "aliases": "y equals mx plus b",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>m</mi><mi>x</mi><mo>+</mo><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">y = mx + b</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Slope-intercept form of a line",
-    "core": true
-  },
-  {
-    "name": "point slope form",
-    "aliases": "y minus y1 equals m times x minus x1",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub><mo>=</mo><mi>m</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">y - y_1 = m(x - x_1)</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Point-slope form of a line",
-    "core": true
-  },
-  {
-    "name": "standard form of a line",
-    "aliases": "Ax plus By equals C",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mi>x</mi><mo>+</mo><mi>B</mi><mi>y</mi><mo>=</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">Ax + By = C</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Standard form of a linear equation",
-    "core": true
-  },
-  {
-    "name": "Pythagorean theorem",
-    "aliases": "a squared plus b squared equals c squared",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">a^2 + b^2 = c^2</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Pythagorean theorem for right triangles",
-    "core": true
-  },
-  {
-    "name": "distance formula",
-    "aliases": "distance between two points",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>d</mi><mo>=</mo><msqrt><mrow><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy=\"false\">(</mo><msub><mi>y</mi><mn>2</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Distance between two points in the plane",
-    "core": true
-  },
-  {
-    "name": "midpoint formula",
-    "aliases": "midpoint between two points",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mo>=</mo><mrow><mo fence=\"true\">(</mo><mfrac><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mfrac><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><msub><mi>y</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">M = \\left(\\frac{x_1+x_2}{2}{,}\\frac{y_1+y_2}{2}\\right)</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Midpoint between two points",
-    "core": true
-  },
-  {
-    "name": "equation of a circle",
-    "aliases": "circle equation",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>x</mi><mo>−</mo><mi>h</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy=\"false\">(</mo><mi>y</mi><mo>−</mo><mi>k</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">(x-h)^2 + (y-k)^2 = r^2</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Equation of a circle centered at (h,k) with radius r",
-    "core": true
-  },
-  {
-    "name": "area of a circle",
-    "aliases": "circle area",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">A = \\pi r^2</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Area of a circle with radius r",
-    "core": true
-  },
-  {
-    "name": "circumference of a circle",
-    "aliases": "perimeter of a circle",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mo>=</mo><mn>2</mn><mi>π</mi><mi>r</mi></mrow><annotation encoding=\"application/x-tex\">C = 2\\pi r</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Circumference of a circle",
-    "core": true
-  },
-  {
-    "name": "area of a triangle",
-    "aliases": "triangle area",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>b</mi><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">A = \\frac{1}{2}bh</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Area of a triangle with base b and height h",
-    "core": true
-  },
-  {
-    "name": "Heron's formula",
-    "aliases": "triangle area from three sides",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><msqrt><mrow><mi>s</mi><mo stretchy=\"false\">(</mo><mi>s</mi><mo>−</mo><mi>a</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>s</mi><mo>−</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>s</mi><mo>−</mo><mi>c</mi><mo stretchy=\"false\">)</mo></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">A = \\sqrt{s(s-a)(s-b)(s-c)}</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Area of a triangle given all three sides (s = semi-perimeter)",
-    "core": true
-  },
-  {
-    "name": "area of a rectangle",
-    "aliases": "rectangle area",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mi>l</mi><mi>w</mi></mrow><annotation encoding=\"application/x-tex\">A = lw</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Area of a rectangle",
-    "core": true
-  },
-  {
-    "name": "area of a trapezoid",
-    "aliases": "trapezoid area",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"false\">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">A = \\frac{1}{2}(a+b)h</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Area of a trapezoid with parallel sides a and b",
-    "core": true
-  },
-  {
-    "name": "area of an ellipse",
-    "aliases": "ellipse area",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mi>π</mi><mi>a</mi><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">A = \\pi ab</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Area of an ellipse with semi-axes a and b",
-    "core": true
-  },
-  {
-    "name": "volume of a sphere",
-    "aliases": "sphere volume",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>r</mi><mn>3</mn></msup></mrow><annotation encoding=\"application/x-tex\">V = \\frac{4}{3}\\pi r^3</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Volume of a sphere",
-    "core": true
-  },
-  {
-    "name": "surface area of a sphere",
-    "aliases": "sphere surface area",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mn>4</mn><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">A = 4\\pi r^2</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Surface area of a sphere",
-    "core": true
-  },
-  {
-    "name": "volume of a cylinder",
-    "aliases": "cylinder volume",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">V = \\pi r^2 h</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Volume of a cylinder",
-    "core": true
-  },
-  {
-    "name": "volume of a cone",
-    "aliases": "cone volume",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">V = \\frac{1}{3}\\pi r^2 h</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Volume of a cone",
-    "core": true
-  },
-  {
-    "name": "volume of a cube",
-    "aliases": "cube volume",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><msup><mi>s</mi><mn>3</mn></msup></mrow><annotation encoding=\"application/x-tex\">V = s^3</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Volume of a cube with side s",
-    "core": false
-  },
-  {
-    "name": "volume of a rectangular prism",
-    "aliases": "box volume",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>l</mi><mi>w</mi><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">V = lwh</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Volume of a rectangular prism",
-    "core": false
-  },
-  {
-    "name": "sine ratio",
-    "aliases": "SOH sin equals opposite over hypotenuse",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mtext>opposite</mtext><mtext>hypotenuse</mtext></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sin\\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Definition of sine as ratio of opposite side to hypotenuse",
-    "core": true
-  },
-  {
-    "name": "cosine ratio",
-    "aliases": "CAH cos equals adjacent over hypotenuse",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mtext>adjacent</mtext><mtext>hypotenuse</mtext></mfrac></mrow><annotation encoding=\"application/x-tex\">\\cos\\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Definition of cosine as ratio of adjacent side to hypotenuse",
-    "core": true
-  },
-  {
-    "name": "tangent ratio",
-    "aliases": "TOA tan equals opposite over adjacent",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mtext>opposite</mtext><mtext>adjacent</mtext></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tan\\theta = \\frac{\\text{opposite}}{\\text{adjacent}}</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Definition of tangent as ratio of opposite to adjacent side",
-    "core": true
-  },
-  {
-    "name": "cosecant reciprocal identity",
-    "aliases": "csc equals one over sin",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>csc</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\csc\\theta = \\frac{1}{\\sin\\theta}</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Cosecant as reciprocal of sine",
-    "core": true
-  },
-  {
-    "name": "secant reciprocal identity",
-    "aliases": "sec equals one over cos",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sec</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sec\\theta = \\frac{1}{\\cos\\theta}</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Secant as reciprocal of cosine",
-    "core": true
-  },
-  {
-    "name": "cotangent reciprocal identity",
-    "aliases": "cot equals one over tan",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cot</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mi>tan</mi><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\cot\\theta = \\frac{1}{\\tan\\theta}</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Cotangent as reciprocal of tangent",
-    "core": true
-  },
-  {
-    "name": "tangent quotient identity",
-    "aliases": "tan equals sin over cos",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Tangent as quotient of sine and cosine",
-    "core": true
-  },
-  {
-    "name": "cotangent quotient identity",
-    "aliases": "cot equals cos over sin",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cot</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta}</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Cotangent as quotient of cosine and sine",
-    "core": true
-  },
-  {
-    "name": "sine cofunction identity",
-    "aliases": "sin of 90 minus theta",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><msup><mn>90</mn><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\sin(90^{\\circ}-\\theta) = \\cos\\theta</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Sine and cosine are cofunctions",
-    "core": false
-  },
-  {
-    "name": "cosine cofunction identity",
-    "aliases": "cos of 90 minus theta",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><msup><mn>90</mn><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\cos(90^{\\circ}-\\theta) = \\sin\\theta</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Cosine and sine are cofunctions",
-    "core": false
-  },
-  {
-    "name": "tangent cofunction identity",
-    "aliases": "tan of 90 minus theta",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><msup><mn>90</mn><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>cot</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\tan(90^{\\circ}-\\theta) = \\cot\\theta</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Tangent and cotangent are cofunctions",
-    "core": false
-  },
-  {
-    "name": "sine odd identity",
-    "aliases": "sin of negative theta",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo>−</mo><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\sin(-\\theta) = -\\sin\\theta</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Sine is an odd function",
-    "core": false
-  },
-  {
-    "name": "cosine even identity",
-    "aliases": "cos of negative theta",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\cos(-\\theta) = \\cos\\theta</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Cosine is an even function",
-    "core": false
-  },
-  {
-    "name": "tangent odd identity",
-    "aliases": "tan of negative theta",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo>−</mo><mi>tan</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\tan(-\\theta) = -\\tan\\theta</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Tangent is an odd function",
-    "core": false
-  },
-  {
-    "name": "degree to radian conversion",
-    "aliases": "degrees to radians",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>θ</mi><mtext>rad</mtext></msub><mo>=</mo><msub><mi>θ</mi><mtext>deg</mtext></msub><mo>×</mo><mfrac><mi>π</mi><mn>180</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\theta_{\\text{rad}} = \\theta_{\\text{deg}} \\times \\frac{\\pi}{180}</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Convert degrees to radians",
-    "core": true
-  },
-  {
-    "name": "radian to degree conversion",
-    "aliases": "radians to degrees",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>θ</mi><mtext>deg</mtext></msub><mo>=</mo><msub><mi>θ</mi><mtext>rad</mtext></msub><mo>×</mo><mfrac><mn>180</mn><mi>π</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\theta_{\\text{deg}} = \\theta_{\\text{rad}} \\times \\frac{180}{\\pi}</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Convert radians to degrees",
-    "core": true
-  },
-  {
-    "name": "Pythagorean identity",
-    "aliases": "sin squared plus cos squared equals one",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mrow><mi>sin</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>+</mo><msup><mrow><mi>cos</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">\\sin^2\\theta + \\cos^2\\theta = 1</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Fundamental Pythagorean identity",
-    "core": true
-  },
-  {
-    "name": "secant identity",
-    "aliases": "one plus tan squared",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mn>1</mn><mo>+</mo><msup><mrow><mi>tan</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>=</mo><msup><mrow><mi>sec</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">1 + \\tan^2\\theta = \\sec^2\\theta</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Pythagorean identity involving secant",
-    "core": true
-  },
-  {
-    "name": "cosecant identity",
-    "aliases": "one plus cot squared",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mn>1</mn><mo>+</mo><msup><mrow><mi>cot</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>=</mo><msup><mrow><mi>csc</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">1 + \\cot^2\\theta = \\csc^2\\theta</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Pythagorean identity involving cosecant",
-    "core": true
-  },
-  {
-    "name": "sine double angle formula",
-    "aliases": "double angle sine",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>2</mn><mi>sin</mi><mo>⁡</mo><mi>θ</mi><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\sin(2\\theta) = 2\\sin\\theta\\cos\\theta</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Sine double angle formula",
-    "core": true
-  },
-  {
-    "name": "cosine double angle formula",
-    "aliases": "double angle cosine",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msup><mrow><mi>cos</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>−</mo><msup><mrow><mi>sin</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\cos(2\\theta) = \\cos^2\\theta - \\sin^2\\theta</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Cosine double angle formula (form 1)",
-    "core": true
-  },
-  {
-    "name": "cosine double angle formula 2",
-    "aliases": "double angle cosine 2cos squared minus 1",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>2</mn><msup><mrow><mi>cos</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">\\cos(2\\theta) = 2\\cos^2\\theta - 1</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Cosine double angle formula (form 2)",
-    "core": true
-  },
-  {
-    "name": "cosine double angle formula 3",
-    "aliases": "double angle cosine 1 minus 2sin squared",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>1</mn><mo>−</mo><mn>2</mn><msup><mrow><mi>sin</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\cos(2\\theta) = 1 - 2\\sin^2\\theta</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Cosine double angle formula (form 3)",
-    "core": true
-  },
-  {
-    "name": "tangent double angle formula",
-    "aliases": "double angle tangent",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mn>2</mn><mi>tan</mi><mo>⁡</mo><mi>θ</mi></mrow><mrow><mn>1</mn><mo>−</mo><msup><mrow><mi>tan</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tan(2\\theta) = \\frac{2\\tan\\theta}{1-\\tan^2\\theta}</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Tangent double angle formula",
-    "core": true
-  },
-  {
-    "name": "sine addition formula",
-    "aliases": "sin of A plus B",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>sin</mi><mo>⁡</mo><mi>A</mi><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>+</mo><mi>cos</mi><mo>⁡</mo><mi>A</mi><mi>sin</mi><mo>⁡</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">\\sin(A+B) = \\sin A\\cos B + \\cos A\\sin B</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Sine addition formula",
-    "core": true
-  },
-  {
-    "name": "sine subtraction formula",
-    "aliases": "sin of A minus B",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>sin</mi><mo>⁡</mo><mi>A</mi><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>−</mo><mi>cos</mi><mo>⁡</mo><mi>A</mi><mi>sin</mi><mo>⁡</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">\\sin(A-B) = \\sin A\\cos B - \\cos A\\sin B</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Sine subtraction formula",
-    "core": true
-  },
-  {
-    "name": "cosine addition formula",
-    "aliases": "cos of A plus B",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>cos</mi><mo>⁡</mo><mi>A</mi><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>−</mo><mi>sin</mi><mo>⁡</mo><mi>A</mi><mi>sin</mi><mo>⁡</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">\\cos(A+B) = \\cos A\\cos B - \\sin A\\sin B</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Cosine addition formula",
-    "core": true
-  },
-  {
-    "name": "cosine subtraction formula",
-    "aliases": "cos of A minus B",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>cos</mi><mo>⁡</mo><mi>A</mi><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>+</mo><mi>sin</mi><mo>⁡</mo><mi>A</mi><mi>sin</mi><mo>⁡</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">\\cos(A-B) = \\cos A\\cos B + \\sin A\\sin B</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Cosine subtraction formula",
-    "core": true
-  },
-  {
-    "name": "tangent addition formula",
-    "aliases": "tan of A plus B",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>tan</mi><mo>⁡</mo><mi>A</mi><mo>+</mo><mi>tan</mi><mo>⁡</mo><mi>B</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>tan</mi><mo>⁡</mo><mi>A</mi><mi>tan</mi><mo>⁡</mo><mi>B</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tan(A+B) = \\frac{\\tan A + \\tan B}{1 - \\tan A\\tan B}</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Tangent addition formula",
-    "core": true
-  },
-  {
-    "name": "tangent subtraction formula",
-    "aliases": "tan of A minus B",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>tan</mi><mo>⁡</mo><mi>A</mi><mo>−</mo><mi>tan</mi><mo>⁡</mo><mi>B</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>tan</mi><mo>⁡</mo><mi>A</mi><mi>tan</mi><mo>⁡</mo><mi>B</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tan(A-B) = \\frac{\\tan A - \\tan B}{1 + \\tan A\\tan B}</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Tangent subtraction formula",
-    "core": true
-  },
-  {
-    "name": "law of sines",
-    "aliases": "sine rule",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>a</mi><mrow><mi>sin</mi><mo>⁡</mo><mi>A</mi></mrow></mfrac><mo>=</mo><mfrac><mi>b</mi><mrow><mi>sin</mi><mo>⁡</mo><mi>B</mi></mrow></mfrac><mo>=</mo><mfrac><mi>c</mi><mrow><mi>sin</mi><mo>⁡</mo><mi>C</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C}</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Law of sines for any triangle",
-    "core": true
-  },
-  {
-    "name": "law of cosines",
-    "aliases": "cosine rule",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>a</mi><mi>b</mi><mi>cos</mi><mo>⁡</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">c^2 = a^2 + b^2 - 2ab\\cos C</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Law of cosines for any triangle",
-    "core": true
-  },
-  {
-    "name": "Euler's formula",
-    "aliases": "e to the i theta",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>e</mi><mrow><mi>i</mi><mi>θ</mi></mrow></msup><mo>=</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi><mo>+</mo><mi>i</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">e^{i\\theta} = \\cos\\theta + i\\sin\\theta</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Euler's formula relating exponentials to trig functions",
-    "core": true
-  },
-  {
-    "name": "chain rule",
-    "aliases": "derivative of a composition",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>u</mi></mrow></mfrac><mo>⋅</mo><mfrac><mrow><mi>d</mi><mi>u</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Chain rule for differentiating composite functions",
-    "core": true
-  },
-  {
-    "name": "product rule",
-    "aliases": "derivative of a product",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>f</mi><mi>g</mi><mo stretchy=\"false\">]</mo><mo>=</mo><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mi>g</mi><mo>+</mo><mi>f</mi><msup><mi>g</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[fg] = f&#x27;g + fg&#x27;</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Product rule for differentiation",
-    "core": true
-  },
-  {
-    "name": "quotient rule",
-    "aliases": "derivative of a quotient",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mrow><mo fence=\"true\">[</mo><mfrac><mi>f</mi><mi>g</mi></mfrac><mo fence=\"true\">]</mo></mrow><mo>=</mo><mfrac><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mi>g</mi><mo>−</mo><mi>f</mi><msup><mi>g</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><msup><mi>g</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}\\left[\\frac{f}{g}\\right] = \\frac{f&#x27;g - fg&#x27;}{g^2}</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Quotient rule for differentiation",
-    "core": true
-  },
-  {
-    "name": "fundamental theorem of calculus",
-    "aliases": "FTC",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\int_{a}^{b} f(x)\\,dx = F(b) - F(a)</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Fundamental theorem of calculus",
-    "core": true
-  },
-  {
-    "name": "definite integral",
-    "aliases": "integral from a to b",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\int_{a}^{b} f(x)\\,dx</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Definite integral of f from a to b",
-    "core": true
-  },
-  {
-    "name": "double integral",
-    "aliases": "integral over a region",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∬</mo><mi>D</mi></msub><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">\\iint_{D} f(x{,}y)\\,dA</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Double integral over region D",
-    "core": true
-  },
-  {
-    "name": "triple integral",
-    "aliases": "integral over a volume",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∭</mo><mi>V</mi></msub><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mi>y</mi><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mi>z</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">\\iiint_{V} f(x{,}y{,}z)\\,dV</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Triple integral over volume V",
-    "core": true
-  },
-  {
-    "name": "contour integral",
-    "aliases": "line integral",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∮</mo><mi>C</mi></msub><mi>f</mi><mo stretchy=\"false\">(</mo><mi>z</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>z</mi></mrow><annotation encoding=\"application/x-tex\">\\oint_{C} f(z)\\,dz</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Contour integral along curve C",
-    "core": false
-  },
-  {
-    "name": "integration by parts",
-    "aliases": "IBP",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><mi>u</mi><mtext> </mtext><mi>d</mi><mi>v</mi><mo>=</mo><mi>u</mi><mi>v</mi><mo>−</mo><mo>∫</mo><mi>v</mi><mtext> </mtext><mi>d</mi><mi>u</mi></mrow><annotation encoding=\"application/x-tex\">\\int u\\,dv = uv - \\int v\\,du</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Integration by parts formula",
-    "core": true
-  },
-  {
-    "name": "Taylor series",
-    "aliases": "Taylor expansion",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant=\"normal\">∞</mi></munderover><mfrac><mrow><msup><mi>f</mi><mrow><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo></mrow></msup><mo stretchy=\"false\">(</mo><mi>a</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>n</mi><mo stretchy=\"false\">!</mo></mrow></mfrac><mo stretchy=\"false\">(</mo><mi>x</mi><mo>−</mo><mi>a</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">f(x) = \\sum_{n=0}^{\\infty} \\frac{f^{(n)}(a)}{n!}(x-a)^n</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Taylor series expansion of f around x=a",
-    "core": true
-  },
-  {
-    "name": "Maclaurin series",
-    "aliases": "Maclaurin expansion",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant=\"normal\">∞</mi></munderover><mfrac><mrow><msup><mi>f</mi><mrow><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo></mrow></msup><mo stretchy=\"false\">(</mo><mn>0</mn><mo stretchy=\"false\">)</mo></mrow><mrow><mi>n</mi><mo stretchy=\"false\">!</mo></mrow></mfrac><msup><mi>x</mi><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">f(x) = \\sum_{n=0}^{\\infty} \\frac{f^{(n)}(0)}{n!}x^n</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Maclaurin series (Taylor series at a=0)",
-    "core": true
-  },
-  {
-    "name": "L'Hopital's rule",
-    "aliases": "L'Hopital",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></munder><mfrac><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>g</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow></mfrac><mo>=</mo><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></munder><mfrac><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><mrow><msup><mi>g</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\lim_{x\\to a}\\frac{f(x)}{g(x)} = \\lim_{x\\to a}\\frac{f&#x27;(x)}{g&#x27;(x)}</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "L'Hôpital's rule for indeterminate forms",
-    "core": true
-  },
-  {
-    "name": "dot product",
-    "aliases": "scalar product",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"bold\">a</mi><mo>⋅</mo><mi mathvariant=\"bold\">b</mi><mo>=</mo><mi mathvariant=\"normal\">∥</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"normal\">∥</mi><mi mathvariant=\"normal\">∥</mi><mi mathvariant=\"bold\">b</mi><mi mathvariant=\"normal\">∥</mi><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{a} \\cdot \\mathbf{b} = \\|\\mathbf{a}\\|\\|\\mathbf{b}\\|\\cos\\theta</annotation></semantics></math>",
-    "domain": "Linear Algebra",
-    "description": "Dot product expressed in terms of magnitudes and angle",
-    "core": true
-  },
-  {
-    "name": "determinant of a 2x2 matrix",
-    "aliases": "det two by two",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>det</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mtable rowspacing=\"0.16em\" columnalign=\"center center\" columnspacing=\"1em\"><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi>a</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi>b</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi>c</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi>d</mi></mstyle></mtd></mtr></mtable><mo fence=\"true\">)</mo></mrow><mo>=</mo><mi>a</mi><mi>d</mi><mo>−</mo><mi>b</mi><mi>c</mi></mrow><annotation encoding=\"application/x-tex\">\\det \\begin{pmatrix}a&amp;b\\\\c&amp;d\\end{pmatrix} = ad - bc</annotation></semantics></math>",
-    "domain": "Linear Algebra",
-    "description": "Determinant of a 2×2 matrix",
-    "core": true
-  },
-  {
-    "name": "eigenvalue equation",
-    "aliases": "eigenvector equation",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mi mathvariant=\"bold\">v</mi><mo>=</mo><mi>λ</mi><mi mathvariant=\"bold\">v</mi></mrow><annotation encoding=\"application/x-tex\">A\\mathbf{v} = \\lambda\\mathbf{v}</annotation></semantics></math>",
-    "domain": "Linear Algebra",
-    "description": "Eigenvalue equation for matrix A",
-    "core": true
-  },
-  {
-    "name": "characteristic polynomial",
-    "aliases": "eigenvalue characteristic equation",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>det</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>λ</mi><mi>I</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">\\det(A - \\lambda I) = 0</annotation></semantics></math>",
-    "domain": "Linear Algebra",
-    "description": "Characteristic polynomial used to find eigenvalues",
-    "core": false
-  },
-  {
-    "name": "sample mean",
-    "aliases": "arithmetic mean",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding=\"application/x-tex\">\\bar{x} = \\frac{1}{n}\\sum_{i=1}^{n} x_i</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Sample mean of n values",
-    "core": true
-  },
-  {
-    "name": "sample variance",
-    "aliases": "variance formula",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>1</mn><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">s^2 = \\frac{1}{n-1}\\sum_{i=1}^{n}(x_i - \\bar{x})^2</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Sample variance",
-    "core": true
-  },
-  {
-    "name": "population standard deviation",
-    "aliases": "std dev formula",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>σ</mi><mo>=</mo><msqrt><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mi>μ</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">\\sigma = \\sqrt{\\frac{1}{N}\\sum_{i=1}^{N}(x_i-\\mu)^2}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Population standard deviation",
-    "core": true
-  },
-  {
-    "name": "z-score",
-    "aliases": "standard score",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mi>μ</mi></mrow><mi>σ</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">z = \\frac{x - \\mu}{\\sigma}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Z-score (standardized value)",
-    "core": true
-  },
-  {
-    "name": "normal distribution PDF",
-    "aliases": "Gaussian density",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>σ</mi><msqrt><mrow><mn>2</mn><mi>π</mi></mrow></msqrt></mrow></mfrac><mtext> </mtext><msup><mi>e</mi><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mi>μ</mi></mrow><mi>σ</mi></mfrac><mo fence=\"true\">)</mo></mrow><mn>2</mn></msup></mrow></msup></mrow><annotation encoding=\"application/x-tex\">f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}}\\,e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Normal distribution probability density function",
-    "core": true
-  },
-  {
-    "name": "Bayes theorem",
-    "aliases": "Bayes rule",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∣</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>B</mi><mo>∣</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P(A \\mid B) = \\frac{P(B \\mid A)\\,P(A)}{P(B)}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Bayes' theorem for conditional probability",
-    "core": true
-  },
-  {
-    "name": "expected value discrete",
-    "aliases": "mean of a discrete distribution",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo stretchy=\"false\">[</mo><mi>X</mi><mo stretchy=\"false\">]</mo><mo>=</mo><munder><mo>∑</mo><mi>x</mi></munder><mi>x</mi><mtext> </mtext><mi>P</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo>=</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">E[X] = \\sum_{x} x\\,P(X=x)</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Expected value of a discrete random variable",
-    "core": true
-  },
-  {
-    "name": "covariance",
-    "aliases": "Cov X Y",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>Cov</mtext><mo stretchy=\"false\">(</mo><mi>X</mi><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mi>Y</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>E</mi><mo stretchy=\"false\">[</mo><mo stretchy=\"false\">(</mo><mi>X</mi><mo>−</mo><msub><mi>μ</mi><mi>X</mi></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>Y</mi><mo>−</mo><msub><mi>μ</mi><mi>Y</mi></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\text{Cov}(X{,}Y) = E[(X-\\mu_X)(Y-\\mu_Y)]</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Covariance of X and Y",
-    "core": true
-  },
-  {
-    "name": "Pearson correlation",
-    "aliases": "correlation coefficient",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ρ</mi><mo>=</mo><mfrac><mrow><mtext>Cov</mtext><mo stretchy=\"false\">(</mo><mi>X</mi><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mi>Y</mi><mo stretchy=\"false\">)</mo></mrow><mrow><msub><mi>σ</mi><mi>X</mi></msub><msub><mi>σ</mi><mi>Y</mi></msub></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\rho = \\frac{\\text{Cov}(X{,}Y)}{\\sigma_X \\sigma_Y}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Pearson correlation coefficient",
-    "core": true
   },
   {
     "name": "modular congruence",
     "aliases": "congruence modulo n",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>a</mi><mo>≡</mo><mi>b</mi><mspace></mspace><mspace width=\"1em\"/><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">d</mi></mrow><mspace width=\"0.3333em\"/><mi>n</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">a \\equiv b \\pmod{n}</annotation></semantics></math>",
-    "domain": "Number Theory",
+    "domain": "Algebra & Number Systems",
     "description": "a is congruent to b modulo n",
-    "core": true
+    "core": false
   },
   {
     "name": "modulus of a complex number",
     "aliases": "absolute value of z",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>z</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">|z| = \\sqrt{a^2+b^2}</annotation></semantics></math>",
-    "domain": "Complex Numbers",
+    "domain": "Algebra & Number Systems",
     "description": "Modulus (magnitude) of complex number z = a+bi",
-    "core": true
+    "core": false
   },
   {
     "name": "complex multiplication",
     "aliases": "z1 times z2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>c</mi><mo>+</mo><mi>d</mi><mi>i</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mi>c</mi><mo>−</mo><mi>b</mi><mi>d</mi><mo stretchy=\"false\">)</mo><mo>+</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mi>d</mi><mo>+</mo><mi>b</mi><mi>c</mi><mo stretchy=\"false\">)</mo><mi>i</mi></mrow><annotation encoding=\"application/x-tex\">(a+bi)(c+di) = (ac-bd) + (ad+bc)i</annotation></semantics></math>",
-    "domain": "Complex Numbers",
+    "domain": "Algebra & Number Systems",
     "description": "Multiplication of two complex numbers",
     "core": false
   },
@@ -1173,751 +333,439 @@ export const mathEquations = [
     "name": "de Moivre's theorem",
     "aliases": "de Moivre",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi><mo>+</mo><mi>i</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup><mo>=</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>n</mi><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>+</mo><mi>i</mi><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>n</mi><mi>θ</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\cos\\theta + i\\sin\\theta)^n = \\cos(n\\theta) + i\\sin(n\\theta)</annotation></semantics></math>",
-    "domain": "Complex Numbers",
+    "domain": "Algebra & Number Systems",
     "description": "De Moivre's theorem for powers of complex numbers",
-    "core": true
-  },
-  {
-    "name": "first order linear ODE",
-    "aliases": "first order differential equation",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>+</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mi>y</mi><mo>=</mo><mi>Q</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\frac{dy}{dx} + P(x)y = Q(x)</annotation></semantics></math>",
-    "domain": "Differential Equations",
-    "description": "Standard form of a first-order linear ODE",
-    "core": true
-  },
-  {
-    "name": "second order linear ODE",
-    "aliases": "second order differential equation",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>y</mi><mrow><mo mathvariant=\"normal\">′</mo><mo mathvariant=\"normal\">′</mo></mrow></msup><mo>+</mo><mi>p</mi><msup><mi>y</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>+</mo><mi>q</mi><mi>y</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">y&#x27;&#x27; + py&#x27; + qy = 0</annotation></semantics></math>",
-    "domain": "Differential Equations",
-    "description": "Second-order linear ODE with constant coefficients",
-    "core": true
-  },
-  {
-    "name": "Laplace transform definition",
-    "aliases": "L transform",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"script\">L</mi><mo stretchy=\"false\">{</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">}</mo><mo>=</mo><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant=\"normal\">∞</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>s</mi><mi>t</mi></mrow></msup><mtext> </mtext><mi>d</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{L}\\{f(t)\\} = \\int_0^{\\infty} f(t)e^{-st}\\,dt</annotation></semantics></math>",
-    "domain": "Differential Equations",
-    "description": "Definition of the Laplace transform",
-    "core": true
-  },
-  {
-    "name": "Fourier transform definition",
-    "aliases": "F transform",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mover accent=\"true\"><mi>f</mi><mo>^</mo></mover><mo stretchy=\"false\">(</mo><mi>ω</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant=\"normal\">∞</mi></mrow><mi mathvariant=\"normal\">∞</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>i</mi><mi>ω</mi><mi>t</mi></mrow></msup><mtext> </mtext><mi>d</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">\\hat{f}(\\omega) = \\int_{-\\infty}^{\\infty} f(t)e^{-i\\omega t}\\,dt</annotation></semantics></math>",
-    "domain": "Differential Equations",
-    "description": "Definition of the Fourier transform",
-    "core": true
-  },
-  {
-    "name": "inverse Fourier transform",
-    "aliases": "inverse F transform",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>π</mi></mrow></mfrac><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant=\"normal\">∞</mi></mrow><mi mathvariant=\"normal\">∞</mi></msubsup><mover accent=\"true\"><mi>f</mi><mo>^</mo></mover><mo stretchy=\"false\">(</mo><mi>ω</mi><mo stretchy=\"false\">)</mo><msup><mi>e</mi><mrow><mi>i</mi><mi>ω</mi><mi>t</mi></mrow></msup><mtext> </mtext><mi>d</mi><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">f(t) = \\frac{1}{2\\pi}\\int_{-\\infty}^{\\infty} \\hat{f}(\\omega)e^{i\\omega t}\\,d\\omega</annotation></semantics></math>",
-    "domain": "Differential Equations",
-    "description": "Inverse Fourier transform",
-    "core": true
-  },
-  {
-    "name": "Einstein mass-energy equivalence",
-    "aliases": "E equals mc squared",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">E = mc^2</annotation></semantics></math>",
-    "domain": "Physics - Modern",
-    "description": "Einstein's mass-energy equivalence",
-    "core": true
-  },
-  {
-    "name": "Newton's second law",
-    "aliases": "F equals ma",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding=\"application/x-tex\">F = ma</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Newton's second law of motion",
-    "core": true
-  },
-  {
-    "name": "kinetic energy formula",
-    "aliases": "KE equals half mv squared",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>K</mi><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">KE = \\frac{1}{2}mv^2</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Kinetic energy of a moving object",
-    "core": true
-  },
-  {
-    "name": "gravitational potential energy near surface",
-    "aliases": "GPE equals mgh",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>U</mi><mo>=</mo><mi>m</mi><mi>g</mi><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">U = mgh</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Gravitational potential energy near Earth's surface",
-    "core": true
-  },
-  {
-    "name": "Coulomb's law",
-    "aliases": "electrostatic force",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mi>k</mi><mfrac><mrow><msub><mi>q</mi><mn>1</mn></msub><msub><mi>q</mi><mn>2</mn></msub></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">F = k\\frac{q_1 q_2}{r^2}</annotation></semantics></math>",
-    "domain": "Physics - Electromagnetism",
-    "description": "Coulomb's law for the force between two charges",
-    "core": true
-  },
-  {
-    "name": "Ohm's law",
-    "aliases": "V equals IR",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">V = IR</annotation></semantics></math>",
-    "domain": "Physics - Electromagnetism",
-    "description": "Ohm's law relating voltage current and resistance",
-    "core": true
-  },
-  {
-    "name": "wave speed equation",
-    "aliases": "wave speed equals f lambda",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>v</mi><mo>=</mo><mi>f</mi><mi>λ</mi></mrow><annotation encoding=\"application/x-tex\">v = f\\lambda</annotation></semantics></math>",
-    "domain": "Physics - Waves",
-    "description": "Wave speed as frequency times wavelength",
-    "core": true
-  },
-  {
-    "name": "kinematic velocity",
-    "aliases": "v equals v0 plus at",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>v</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>a</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">v = v_0 + at</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Velocity under constant acceleration",
-    "core": true
-  },
-  {
-    "name": "kinematic position",
-    "aliases": "x equals x0 plus v0t plus half at squared",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>x</mi><mo>=</mo><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><msub><mi>v</mi><mn>0</mn></msub><mi>t</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">x = x_0 + v_0 t + \\frac{1}{2}at^2</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Position under constant acceleration",
-    "core": true
-  },
-  {
-    "name": "kinematic velocity squared",
-    "aliases": "v squared equals v0 squared plus 2a delta x",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>+</mo><mn>2</mn><mi>a</mi><mi mathvariant=\"normal\">Δ</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">v^2 = v_0^2 + 2a\\Delta x</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Velocity-position relation under constant acceleration",
-    "core": true
-  },
-  {
-    "name": "kinematic average velocity",
-    "aliases": "x equals half v plus v0 times t",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"false\">(</mo><mi>v</mi><mo>+</mo><msub><mi>v</mi><mn>0</mn></msub><mo stretchy=\"false\">)</mo><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta x = \\frac{1}{2}(v + v_0)t</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Displacement using average velocity",
-    "core": true
-  },
-  {
-    "name": "Newton's law of universal gravitation",
-    "aliases": "gravitational force",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mi>G</mi><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">F = G\\frac{m_1 m_2}{r^2}</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Gravitational force between two masses",
-    "core": true
-  },
-  {
-    "name": "gravitational potential energy general",
-    "aliases": "universal gravitational PE",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>U</mi><mo>=</mo><mo>−</mo><mfrac><mrow><mi>G</mi><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">U = -\\frac{Gm_1 m_2}{r}</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Gravitational potential energy between two masses",
     "core": false
   },
   {
-    "name": "escape velocity",
-    "aliases": "v escape",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>v</mi><mi>e</mi></msub><mo>=</mo><msqrt><mfrac><mrow><mn>2</mn><mi>G</mi><mi>M</mi></mrow><mi>R</mi></mfrac></msqrt></mrow><annotation encoding=\"application/x-tex\">v_e = \\sqrt{\\frac{2GM}{R}}</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Minimum speed to escape a gravitational field",
+    "name": "Euler's identity",
+    "aliases": "e to the i pi plus 1 equals 0",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>e</mi><mrow><mi>i</mi><mi>π</mi></mrow></msup><mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">e^{i\\pi} + 1 = 0</annotation></semantics></math>",
+    "domain": "Algebra & Number Systems",
+    "description": "Combines fundamental constants e, i, pi, 1, 0 in a single equation",
     "core": false
   },
   {
-    "name": "momentum",
-    "aliases": "p equals mv",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>p</mi><mo>=</mo><mi>m</mi><mi>v</mi></mrow><annotation encoding=\"application/x-tex\">p = mv</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Linear momentum of an object",
-    "core": true
-  },
-  {
-    "name": "impulse",
-    "aliases": "impulse equals F delta t",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>J</mi><mo>=</mo><mi>F</mi><mi mathvariant=\"normal\">Δ</mi><mi>t</mi><mo>=</mo><mi mathvariant=\"normal\">Δ</mi><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">J = F\\Delta t = \\Delta p</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Impulse equals change in momentum",
-    "core": true
-  },
-  {
-    "name": "conservation of momentum",
-    "aliases": "momentum before equals momentum after",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>v</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><msub><mi>m</mi><mn>1</mn></msub><msubsup><mi>v</mi><mn>1</mn><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msubsup><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><msubsup><mi>v</mi><mn>2</mn><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msubsup></mrow><annotation encoding=\"application/x-tex\">m_1 v_1 + m_2 v_2 = m_1 v_1^{\\prime} + m_2 v_2^{\\prime}</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Conservation of linear momentum in a collision",
-    "core": true
-  },
-  {
-    "name": "work",
-    "aliases": "W equals Fd cos theta",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>W</mi><mo>=</mo><mi>F</mi><mi>d</mi><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">W = Fd\\cos\\theta</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Work done by a force over a displacement",
-    "core": true
-  },
-  {
-    "name": "power",
-    "aliases": "P equals W over t",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo>=</mo><mfrac><mi>W</mi><mi>t</mi></mfrac><mo>=</mo><mi>F</mi><mi>v</mi></mrow><annotation encoding=\"application/x-tex\">P = \\frac{W}{t} = Fv</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Power as rate of doing work",
-    "core": true
-  },
-  {
-    "name": "centripetal acceleration",
-    "aliases": "a equals v squared over r",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>a</mi><mi>c</mi></msub><mo>=</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">a_c = \\frac{v^2}{r}</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Centripetal acceleration for circular motion",
-    "core": true
-  },
-  {
-    "name": "centripetal force",
-    "aliases": "F equals mv squared over r",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>F</mi><mi>c</mi></msub><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">F_c = \\frac{mv^2}{r}</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Net centripetal force for circular motion",
-    "core": true
-  },
-  {
-    "name": "torque",
-    "aliases": "tau equals r F sin theta",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>τ</mi><mo>=</mo><mi>r</mi><mi>F</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\tau = rF\\sin\\theta</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Torque produced by a force",
-    "core": true
-  },
-  {
-    "name": "angular momentum",
-    "aliases": "L equals I omega",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>L</mi><mo>=</mo><mi>I</mi><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">L = I\\omega</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Angular momentum of a rotating body",
+    "name": "slope",
+    "aliases": "slope of a line",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><msub><mi>y</mi><mn>2</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">m = \\frac{y_2 - y_1}{x_2 - x_1}</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Slope between two points",
     "core": false
   },
   {
-    "name": "rotational kinetic energy",
-    "aliases": "KE rotation",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>K</mi><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>I</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">KE = \\frac{1}{2}I\\omega^2</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Kinetic energy of a rotating body",
+    "name": "slope intercept form",
+    "aliases": "y equals mx plus b",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>m</mi><mi>x</mi><mo>+</mo><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">y = mx + b</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Slope-intercept form of a line",
     "core": false
   },
   {
-    "name": "Hooke's law",
-    "aliases": "spring force",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mo>−</mo><mi>k</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">F = -kx</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Hooke's law for a spring with spring constant k",
-    "core": true
-  },
-  {
-    "name": "period of a spring",
-    "aliases": "spring oscillation period",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mi>m</mi><mi>k</mi></mfrac></msqrt></mrow><annotation encoding=\"application/x-tex\">T = 2\\pi\\sqrt{\\frac{m}{k}}</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Period of a mass-spring simple harmonic oscillator",
-    "core": true
-  },
-  {
-    "name": "period of a pendulum",
-    "aliases": "pendulum oscillation period",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mi>L</mi><mi>g</mi></mfrac></msqrt></mrow><annotation encoding=\"application/x-tex\">T = 2\\pi\\sqrt{\\frac{L}{g}}</annotation></semantics></math>",
-    "domain": "Physics - Mechanics",
-    "description": "Period of a simple pendulum of length L",
-    "core": true
-  },
-  {
-    "name": "ideal gas law",
-    "aliases": "PV equals nRT",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mi>n</mi><mi>R</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">PV = nRT</annotation></semantics></math>",
-    "domain": "Physics - Thermodynamics",
-    "description": "Ideal gas law relating pressure volume temperature and moles",
-    "core": true
-  },
-  {
-    "name": "first law of thermodynamics",
-    "aliases": "delta U equals Q minus W",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>U</mi><mo>=</mo><mi>Q</mi><mo>−</mo><mi>W</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta U = Q - W</annotation></semantics></math>",
-    "domain": "Physics - Thermodynamics",
-    "description": "First law of thermodynamics (conservation of energy)",
-    "core": true
-  },
-  {
-    "name": "heat transfer",
-    "aliases": "Q equals mc delta T",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>Q</mi><mo>=</mo><mi>m</mi><mi>c</mi><mi mathvariant=\"normal\">Δ</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">Q = mc\\Delta T</annotation></semantics></math>",
-    "domain": "Physics - Thermodynamics",
-    "description": "Heat absorbed or released by a substance",
-    "core": true
-  },
-  {
-    "name": "thermal linear expansion",
-    "aliases": "delta L equals alpha L0 delta T",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>L</mi><mo>=</mo><mi>α</mi><msub><mi>L</mi><mn>0</mn></msub><mi mathvariant=\"normal\">Δ</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta L = \\alpha L_0 \\Delta T</annotation></semantics></math>",
-    "domain": "Physics - Thermodynamics",
-    "description": "Linear thermal expansion of a solid",
-    "core": true
-  },
-  {
-    "name": "Carnot efficiency",
-    "aliases": "Carnot engine efficiency",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>η</mi><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><msub><mi>T</mi><mi>c</mi></msub><msub><mi>T</mi><mi>h</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\eta = 1 - \\frac{T_c}{T_h}</annotation></semantics></math>",
-    "domain": "Physics - Thermodynamics",
-    "description": "Maximum efficiency of a heat engine",
-    "core": true
-  },
-  {
-    "name": "electric field from point charge",
-    "aliases": "E equals kQ over r squared",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo>=</mo><mi>k</mi><mfrac><mi>Q</mi><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">E = k\\frac{Q}{r^2}</annotation></semantics></math>",
-    "domain": "Physics - Electromagnetism",
-    "description": "Electric field magnitude from a point charge",
-    "core": true
-  },
-  {
-    "name": "electric potential energy",
-    "aliases": "U equals kq1q2 over r",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>U</mi><mo>=</mo><mi>k</mi><mfrac><mrow><msub><mi>q</mi><mn>1</mn></msub><msub><mi>q</mi><mn>2</mn></msub></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">U = k\\frac{q_1 q_2}{r}</annotation></semantics></math>",
-    "domain": "Physics - Electromagnetism",
-    "description": "Electric potential energy between two point charges",
-    "core": true
-  },
-  {
-    "name": "electric potential",
-    "aliases": "V equals kQ over r",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>k</mi><mfrac><mi>Q</mi><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">V = k\\frac{Q}{r}</annotation></semantics></math>",
-    "domain": "Physics - Electromagnetism",
-    "description": "Electric potential due to a point charge",
-    "core": true
-  },
-  {
-    "name": "capacitance",
-    "aliases": "C equals Q over V",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mo>=</mo><mfrac><mi>Q</mi><mi>V</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">C = \\frac{Q}{V}</annotation></semantics></math>",
-    "domain": "Physics - Electromagnetism",
-    "description": "Definition of capacitance",
-    "core": true
-  },
-  {
-    "name": "energy stored in a capacitor",
-    "aliases": "capacitor energy",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>U</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>C</mi><msup><mi>V</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">U = \\frac{1}{2}CV^2</annotation></semantics></math>",
-    "domain": "Physics - Electromagnetism",
-    "description": "Energy stored in a charged capacitor",
-    "core": true
-  },
-  {
-    "name": "electrical power",
-    "aliases": "P equals IV",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo>=</mo><mi>I</mi><mi>V</mi><mo>=</mo><msup><mi>I</mi><mn>2</mn></msup><mi>R</mi><mo>=</mo><mfrac><msup><mi>V</mi><mn>2</mn></msup><mi>R</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">P = IV = I^2R = \\frac{V^2}{R}</annotation></semantics></math>",
-    "domain": "Physics - Electromagnetism",
-    "description": "Electrical power dissipated in a resistor",
-    "core": true
-  },
-  {
-    "name": "resistors in series",
-    "aliases": "series resistance",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>R</mi><mtext>total</mtext></msub><mo>=</mo><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>R</mi><mi>n</mi></msub></mrow><annotation encoding=\"application/x-tex\">R_{\\text{total}} = R_1 + R_2 + \\cdots + R_n</annotation></semantics></math>",
-    "domain": "Physics - Electromagnetism",
-    "description": "Total resistance of resistors in series",
-    "core": true
-  },
-  {
-    "name": "resistors in parallel",
-    "aliases": "parallel resistance",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mn>1</mn><msub><mi>R</mi><mtext>total</mtext></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>2</mn></msub></mfrac><mo>+</mo><mo>⋯</mo><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mi>n</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{1}{R_{\\text{total}}} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\cdots + \\frac{1}{R_n}</annotation></semantics></math>",
-    "domain": "Physics - Electromagnetism",
-    "description": "Total resistance of resistors in parallel",
-    "core": true
-  },
-  {
-    "name": "Faraday's law",
-    "aliases": "induced EMF",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"script\">E</mi><mo>=</mo><mo>−</mo><mfrac><mrow><mi>d</mi><msub><mi mathvariant=\"normal\">Φ</mi><mi>B</mi></msub></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\mathcal{E} = -\\frac{d\\Phi_B}{dt}</annotation></semantics></math>",
-    "domain": "Physics - Electromagnetism",
-    "description": "Faraday's law of electromagnetic induction",
-    "core": true
-  },
-  {
-    "name": "magnetic force on a charge",
-    "aliases": "Lorentz force",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mi>q</mi><mi>v</mi><mi>B</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">F = qvB\\sin\\theta</annotation></semantics></math>",
-    "domain": "Physics - Electromagnetism",
-    "description": "Magnetic force on a moving charge",
-    "core": true
-  },
-  {
-    "name": "magnetic force on a wire",
-    "aliases": "force on current carrying wire",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mi>B</mi><mi>I</mi><mi>L</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">F = BIL\\sin\\theta</annotation></semantics></math>",
-    "domain": "Physics - Electromagnetism",
-    "description": "Magnetic force on a current-carrying conductor",
-    "core": true
-  },
-  {
-    "name": "energy stored in an inductor",
-    "aliases": "inductor energy",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>U</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>L</mi><msup><mi>I</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">U = \\frac{1}{2}LI^2</annotation></semantics></math>",
-    "domain": "Physics - Electromagnetism",
-    "description": "Energy stored in an inductor",
+    "name": "point slope form",
+    "aliases": "y minus y1 equals m times x minus x1",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub><mo>=</mo><mi>m</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">y - y_1 = m(x - x_1)</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Point-slope form of a line",
     "core": false
   },
   {
-    "name": "Snell's law",
-    "aliases": "law of refraction",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mi>sin</mi><mo>⁡</mo><msub><mi>θ</mi><mn>1</mn></msub><mo>=</mo><msub><mi>n</mi><mn>2</mn></msub><mi>sin</mi><mo>⁡</mo><msub><mi>θ</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">n_1\\sin\\theta_1 = n_2\\sin\\theta_2</annotation></semantics></math>",
-    "domain": "Physics - Waves",
-    "description": "Snell's law of refraction",
-    "core": true
-  },
-  {
-    "name": "thin lens equation",
-    "aliases": "lens formula",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mn>1</mn><mi>f</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>d</mi><mi>o</mi></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>d</mi><mi>i</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{1}{f} = \\frac{1}{d_o} + \\frac{1}{d_i}</annotation></semantics></math>",
-    "domain": "Physics - Waves",
-    "description": "Thin lens equation relating focal length and image/object distances",
-    "core": true
-  },
-  {
-    "name": "magnification",
-    "aliases": "lens magnification",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>m</mi><mo>=</mo><mo>−</mo><mfrac><msub><mi>d</mi><mi>i</mi></msub><msub><mi>d</mi><mi>o</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">m = -\\frac{d_i}{d_o}</annotation></semantics></math>",
-    "domain": "Physics - Waves",
-    "description": "Lateral magnification of a lens or mirror",
-    "core": true
-  },
-  {
-    "name": "wave frequency and period",
-    "aliases": "f equals one over T",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo>=</mo><mfrac><mn>1</mn><mi>T</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">f = \\frac{1}{T}</annotation></semantics></math>",
-    "domain": "Physics - Waves",
-    "description": "Relationship between frequency and period",
-    "core": true
-  },
-  {
-    "name": "Doppler effect",
-    "aliases": "Doppler shift",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>=</mo><mi>f</mi><mfrac><mrow><mi>v</mi><mo>±</mo><msub><mi>v</mi><mi>o</mi></msub></mrow><mrow><mi>v</mi><mo>∓</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">f&#x27; = f\\frac{v \\pm v_o}{v \\mp v_s}</annotation></semantics></math>",
-    "domain": "Physics - Waves",
-    "description": "Doppler effect for moving source or observer",
-    "core": true
-  },
-  {
-    "name": "standing wave wavelength",
-    "aliases": "harmonics",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>λ</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mi>L</mi></mrow><mi>n</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\lambda_n = \\frac{2L}{n}</annotation></semantics></math>",
-    "domain": "Physics - Waves",
-    "description": "Wavelengths of standing waves in a string of length L",
+    "name": "standard form of a line",
+    "aliases": "Ax plus By equals C",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mi>x</mi><mo>+</mo><mi>B</mi><mi>y</mi><mo>=</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">Ax + By = C</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Standard form of a linear equation",
     "core": false
   },
   {
-    "name": "double slit constructive interference",
-    "aliases": "constructive interference",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>d</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mi>m</mi><mi>λ</mi></mrow><annotation encoding=\"application/x-tex\">d\\sin\\theta = m\\lambda</annotation></semantics></math>",
-    "domain": "Physics - Waves",
-    "description": "Condition for constructive interference in double-slit experiment",
+    "name": "Pythagorean theorem",
+    "aliases": "a squared plus b squared equals c squared",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">a^2 + b^2 = c^2</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Pythagorean theorem for right triangles",
     "core": false
   },
   {
-    "name": "double slit destructive interference",
-    "aliases": "destructive interference",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>d</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mrow><mo fence=\"true\">(</mo><mi>m</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mi>λ</mi></mrow><annotation encoding=\"application/x-tex\">d\\sin\\theta = \\left(m+\\frac{1}{2}\\right)\\lambda</annotation></semantics></math>",
-    "domain": "Physics - Waves",
-    "description": "Condition for destructive interference in double-slit experiment",
+    "name": "distance formula",
+    "aliases": "distance between two points",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>d</mi><mo>=</mo><msqrt><mrow><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy=\"false\">(</mo><msub><mi>y</mi><mn>2</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Distance between two points in the plane",
     "core": false
   },
   {
-    "name": "photoelectric effect",
-    "aliases": "photon energy minus work function",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>K</mi><msub><mi>E</mi><mi>max</mi><mo>⁡</mo></msub><mo>=</mo><mi>h</mi><mi>f</mi><mo>−</mo><mi>ϕ</mi></mrow><annotation encoding=\"application/x-tex\">KE_{\\max} = hf - \\phi</annotation></semantics></math>",
-    "domain": "Physics - Modern",
-    "description": "Maximum kinetic energy of photoelectrons",
-    "core": true
-  },
-  {
-    "name": "de Broglie wavelength",
-    "aliases": "matter wave",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>λ</mi><mo>=</mo><mfrac><mi>h</mi><mi>p</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\lambda = \\frac{h}{p}</annotation></semantics></math>",
-    "domain": "Physics - Modern",
-    "description": "de Broglie wavelength of a particle with momentum p",
-    "core": true
-  },
-  {
-    "name": "Heisenberg uncertainty principle",
-    "aliases": "uncertainty principle",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>x</mi><mtext> </mtext><mi mathvariant=\"normal\">Δ</mi><mi>p</mi><mo>≥</mo><mfrac><mi mathvariant=\"normal\">ℏ</mi><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\Delta x\\,\\Delta p \\geq \\frac{\\hbar}{2}</annotation></semantics></math>",
-    "domain": "Physics - Modern",
-    "description": "Heisenberg position-momentum uncertainty principle",
-    "core": true
-  },
-  {
-    "name": "radioactive decay",
-    "aliases": "N equals N0 e to the negative lambda t",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>N</mi><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><mtext> </mtext><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi><mi>t</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">N = N_0\\,e^{-\\lambda t}</annotation></semantics></math>",
-    "domain": "Physics - Modern",
-    "description": "Radioactive decay of N₀ initial nuclei",
+    "name": "midpoint formula",
+    "aliases": "midpoint between two points",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mo>=</mo><mrow><mo fence=\"true\">(</mo><mfrac><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo separator=\"true\">,</mo><mfrac><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><msub><mi>y</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">M = \\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Midpoint between two points",
     "core": false
   },
   {
-    "name": "radioactive half-life",
-    "aliases": "half life formula",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>t</mi><mrow><mn>1</mn><mi mathvariant=\"normal\">/</mi><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mn>2</mn></mrow><mi>λ</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">t_{1/2} = \\frac{\\ln 2}{\\lambda}</annotation></semantics></math>",
-    "domain": "Physics - Modern",
-    "description": "Half-life in terms of decay constant λ",
+    "name": "equation of a circle",
+    "aliases": "circle equation",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>x</mi><mo>−</mo><mi>h</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy=\"false\">(</mo><mi>y</mi><mo>−</mo><mi>k</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">(x-h)^2 + (y-k)^2 = r^2</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Equation of a circle centered at (h,k) with radius r",
     "core": false
   },
   {
-    "name": "simple interest",
-    "aliases": "I equals Prt",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>I</mi><mo>=</mo><mi>P</mi><mi>r</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">I = Prt</annotation></semantics></math>",
-    "domain": "Financial Mathematics",
-    "description": "Simple interest where P is principal r is annual rate t is time in years",
-    "core": true
-  },
-  {
-    "name": "compound interest",
-    "aliases": "A equals P times one plus r over n to the nt",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mi>P</mi><msup><mrow><mo fence=\"true\">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac><mo fence=\"true\">)</mo></mrow><mrow><mi>n</mi><mi>t</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">A = P\\left(1 + \\frac{r}{n}\\right)^{nt}</annotation></semantics></math>",
-    "domain": "Financial Mathematics",
-    "description": "Compound interest with n compounding periods per year",
-    "core": true
-  },
-  {
-    "name": "continuously compounded interest",
-    "aliases": "A equals Pe to the rt",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mi>P</mi><msup><mi>e</mi><mrow><mi>r</mi><mi>t</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">A = Pe^{rt}</annotation></semantics></math>",
-    "domain": "Financial Mathematics",
-    "description": "Continuously compounded interest",
-    "core": true
-  },
-  {
-    "name": "future value",
-    "aliases": "FV equals PV times one plus r to the n",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mi>V</mi><mo>=</mo><mi>P</mi><mi>V</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">FV = PV(1+r)^n</annotation></semantics></math>",
-    "domain": "Financial Mathematics",
-    "description": "Future value of a lump sum with rate r over n periods",
-    "core": true
-  },
-  {
-    "name": "present value",
-    "aliases": "PV equals FV over one plus r to the n",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mfrac><mrow><mi>F</mi><mi>V</mi></mrow><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">PV = \\frac{FV}{(1+r)^n}</annotation></semantics></math>",
-    "domain": "Financial Mathematics",
-    "description": "Present value (discount) of a future lump sum",
-    "core": true
-  },
-  {
-    "name": "present value of an annuity",
-    "aliases": "PVA",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mi>P</mi><mi>M</mi><mi>T</mi><mo>⋅</mo><mfrac><mrow><mn>1</mn><mo>−</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mrow><mo>−</mo><mi>n</mi></mrow></msup></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">PV = PMT \\cdot \\frac{1-(1+r)^{-n}}{r}</annotation></semantics></math>",
-    "domain": "Financial Mathematics",
-    "description": "Present value of n equal payments PMT at rate r per period",
-    "core": true
-  },
-  {
-    "name": "future value of an annuity",
-    "aliases": "FVA",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mi>V</mi><mo>=</mo><mi>P</mi><mi>M</mi><mi>T</mi><mo>⋅</mo><mfrac><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">FV = PMT \\cdot \\frac{(1+r)^n - 1}{r}</annotation></semantics></math>",
-    "domain": "Financial Mathematics",
-    "description": "Future value of n equal payments PMT at rate r per period",
+    "name": "area of a circle",
+    "aliases": "circle area",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">A = \\pi r^2</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Area of a circle with radius r",
     "core": false
   },
   {
-    "name": "present value of a perpetuity",
-    "aliases": "perpetuity formula",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mfrac><mrow><mi>P</mi><mi>M</mi><mi>T</mi></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">PV = \\frac{PMT}{r}</annotation></semantics></math>",
-    "domain": "Financial Mathematics",
-    "description": "Present value of an infinite series of equal payments",
+    "name": "circumference of a circle",
+    "aliases": "perimeter of a circle",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mo>=</mo><mn>2</mn><mi>π</mi><mi>r</mi></mrow><annotation encoding=\"application/x-tex\">C = 2\\pi r</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Circumference of a circle",
     "core": false
   },
   {
-    "name": "loan payment amortization",
-    "aliases": "monthly payment formula",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mo>=</mo><mi>P</mi><mo>⋅</mo><mfrac><mrow><mi>r</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup></mrow><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">M = P \\cdot \\frac{r(1+r)^n}{(1+r)^n - 1}</annotation></semantics></math>",
-    "domain": "Financial Mathematics",
-    "description": "Periodic payment for a fully amortizing loan of principal P",
+    "name": "area of a triangle",
+    "aliases": "triangle area",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>b</mi><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">A = \\frac{1}{2}bh</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Area of a triangle with base b and height h",
     "core": false
   },
   {
-    "name": "effective annual rate",
-    "aliases": "EAR",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mi>A</mi><mi>R</mi><mo>=</mo><msup><mrow><mo fence=\"true\">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac><mo fence=\"true\">)</mo></mrow><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">EAR = \\left(1 + \\frac{r}{n}\\right)^n - 1</annotation></semantics></math>",
-    "domain": "Financial Mathematics",
-    "description": "Effective annual rate given nominal rate r compounded n times per year",
+    "name": "Heron's formula",
+    "aliases": "triangle area from three sides",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><msqrt><mrow><mi>s</mi><mo stretchy=\"false\">(</mo><mi>s</mi><mo>−</mo><mi>a</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>s</mi><mo>−</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>s</mi><mo>−</mo><mi>c</mi><mo stretchy=\"false\">)</mo></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">A = \\sqrt{s(s-a)(s-b)(s-c)}</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Area of a triangle given all three sides (s = semi-perimeter)",
     "core": false
   },
   {
-    "name": "net present value",
-    "aliases": "NPV",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>N</mi><mi>P</mi><mi>V</mi><mo>=</mo><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mfrac><mrow><mi>C</mi><msub><mi>F</mi><mi>t</mi></msub></mrow><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>t</mi></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">NPV = \\sum_{t=0}^{n} \\frac{CF_t}{(1+r)^t}</annotation></semantics></math>",
-    "domain": "Financial Mathematics",
-    "description": "Net present value of cash flows CF at discount rate r",
+    "name": "area of a rectangle",
+    "aliases": "rectangle area",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mi>l</mi><mi>w</mi></mrow><annotation encoding=\"application/x-tex\">A = lw</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Area of a rectangle",
     "core": false
   },
   {
-    "name": "compound annual growth rate",
-    "aliases": "CAGR",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mi>A</mi><mi>G</mi><mi>R</mi><mo>=</mo><msup><mrow><mo fence=\"true\">(</mo><mfrac><msub><mi>V</mi><mi>f</mi></msub><msub><mi>V</mi><mi>i</mi></msub></mfrac><mo fence=\"true\">)</mo></mrow><mfrac><mn>1</mn><mi>n</mi></mfrac></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">CAGR = \\left(\\frac{V_f}{V_i}\\right)^{\\frac{1}{n}} - 1</annotation></semantics></math>",
-    "domain": "Financial Mathematics",
-    "description": "Annualized growth rate from initial value V_i to final value V_f over n years",
+    "name": "area of a trapezoid",
+    "aliases": "trapezoid area",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"false\">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">A = \\frac{1}{2}(a+b)h</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Area of a trapezoid with parallel sides a and b",
     "core": false
   },
   {
-    "name": "doubling time",
-    "aliases": "rule of 70",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mn>2</mn></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">t = \\frac{\\ln 2}{r}</annotation></semantics></math>",
-    "domain": "Financial Mathematics",
-    "description": "Exact time for an investment to double at continuous rate r",
+    "name": "area of an ellipse",
+    "aliases": "ellipse area",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mi>π</mi><mi>a</mi><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">A = \\pi ab</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Area of an ellipse with semi-axes a and b",
     "core": false
   },
   {
-    "name": "rule of 72",
-    "aliases": "approximate doubling time",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>t</mi><mo>≈</mo><mfrac><mn>72</mn><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">t \\approx \\frac{72}{r}</annotation></semantics></math>",
-    "domain": "Financial Mathematics",
-    "description": "Approximate years to double at rate r percent (r as a whole number)",
+    "name": "volume of a sphere",
+    "aliases": "sphere volume",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>r</mi><mn>3</mn></msup></mrow><annotation encoding=\"application/x-tex\">V = \\frac{4}{3}\\pi r^3</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Volume of a sphere",
     "core": false
   },
   {
-    "name": "Fisher equation",
-    "aliases": "nominal versus real rate",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><msub><mi>r</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo><mo>=</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><msub><mi>r</mi><mi>r</mi></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>π</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(1 + r_n) = (1 + r_r)(1 + \\pi)</annotation></semantics></math>",
-    "domain": "Financial Mathematics",
-    "description": "Relates nominal rate r_n real rate r_r and inflation rate pi",
+    "name": "surface area of a sphere",
+    "aliases": "sphere surface area",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mn>4</mn><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">A = 4\\pi r^2</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Surface area of a sphere",
     "core": false
   },
   {
-    "name": "straight-line depreciation",
-    "aliases": "SLD",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>D</mi><mo>=</mo><mfrac><mrow><mi>C</mi><mo>−</mo><mi>S</mi></mrow><mi>n</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">D = \\frac{C - S}{n}</annotation></semantics></math>",
-    "domain": "Financial Mathematics",
-    "description": "Annual depreciation of asset with cost C salvage value S over n years",
+    "name": "volume of a cylinder",
+    "aliases": "cylinder volume",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">V = \\pi r^2 h</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Volume of a cylinder",
     "core": false
   },
   {
-    "name": "return on investment",
-    "aliases": "ROI",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>R</mi><mi>O</mi><mi>I</mi><mo>=</mo><mfrac><mrow><msub><mi>V</mi><mi>f</mi></msub><mo>−</mo><msub><mi>V</mi><mi>i</mi></msub></mrow><msub><mi>V</mi><mi>i</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">ROI = \\frac{V_f - V_i}{V_i}</annotation></semantics></math>",
-    "domain": "Financial Mathematics",
-    "description": "Return on investment as a fraction of initial value",
+    "name": "volume of a cone",
+    "aliases": "cone volume",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">V = \\frac{1}{3}\\pi r^2 h</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Volume of a cone",
     "core": false
   },
   {
-    "name": "bond price formula",
-    "aliases": "present value of bond",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo>=</mo><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mi>C</mi><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>t</mi></msup></mrow></mfrac><mo>+</mo><mfrac><mi>F</mi><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P = \\sum_{t=1}^{n} \\frac{C}{(1+r)^t} + \\frac{F}{(1+r)^n}</annotation></semantics></math>",
-    "domain": "Financial Mathematics",
-    "description": "Price of a bond with coupon C face value F yield r and n periods",
+    "name": "volume of a cube",
+    "aliases": "cube volume",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><msup><mi>s</mi><mn>3</mn></msup></mrow><annotation encoding=\"application/x-tex\">V = s^3</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Volume of a cube with side s",
     "core": false
   },
   {
-    "name": "nth term of arithmetic sequence",
-    "aliases": "arithmetic sequence general term",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mo stretchy=\"false\">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mi>d</mi></mrow><annotation encoding=\"application/x-tex\">a_n = a_1 + (n-1)d</annotation></semantics></math>",
-    "domain": "Algebra",
-    "description": "nth term of an arithmetic sequence with first term a₁ and common difference d",
-    "core": true
+    "name": "volume of a rectangular prism",
+    "aliases": "box volume",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>l</mi><mi>w</mi><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">V = lwh</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Volume of a rectangular prism",
+    "core": false
   },
   {
-    "name": "nth term of geometric sequence",
-    "aliases": "geometric sequence general term",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>⋅</mo><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding=\"application/x-tex\">a_n = a_1 \\cdot r^{n-1}</annotation></semantics></math>",
-    "domain": "Algebra",
-    "description": "nth term of a geometric sequence with first term a₁ and common ratio r",
-    "core": true
+    "name": "volume of a pyramid",
+    "aliases": "pyramid volume",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>B</mi><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">V = \\frac{1}{3}Bh</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Volume of a pyramid with base area B and height h",
+    "core": false
   },
   {
-    "name": "vertex form of a parabola",
-    "aliases": "vertex form",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>a</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>−</mo><mi>h</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>+</mo><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">y = a(x-h)^2 + k</annotation></semantics></math>",
-    "domain": "Algebra",
-    "description": "Parabola with vertex at (h,k)",
-    "core": true
+    "name": "surface area of a cylinder",
+    "aliases": "cylinder surface area",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mi>A</mi><mo>=</mo><mn>2</mn><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>π</mi><mi>r</mi><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">SA = 2\\pi r^2 + 2\\pi r h</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Total surface area of a cylinder",
+    "core": false
   },
   {
-    "name": "exponential growth and decay",
-    "aliases": "exponential model",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mi>y</mi><mn>0</mn></msub><mtext> </mtext><msup><mi>e</mi><mrow><mi>k</mi><mi>t</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">y = y_0\\,e^{kt}</annotation></semantics></math>",
-    "domain": "Algebra",
-    "description": "Exponential growth (k>0) or decay (k<0) model",
-    "core": true
+    "name": "surface area of a cone",
+    "aliases": "cone surface area",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mi>A</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mi>π</mi><mi>r</mi><mi>l</mi></mrow><annotation encoding=\"application/x-tex\">SA = \\pi r^2 + \\pi r l</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Total surface area of a cone where l is slant height",
+    "core": false
+  },
+  {
+    "name": "surface area of a rectangular prism",
+    "aliases": "box surface area",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mi>A</mi><mo>=</mo><mn>2</mn><mo stretchy=\"false\">(</mo><mi>l</mi><mi>w</mi><mo>+</mo><mi>l</mi><mi>h</mi><mo>+</mo><mi>w</mi><mi>h</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">SA = 2(lw + lh + wh)</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Total surface area of a rectangular prism",
+    "core": false
+  },
+  {
+    "name": "sine ratio",
+    "aliases": "SOH sin equals opposite over hypotenuse",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mtext>opposite</mtext><mtext>hypotenuse</mtext></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sin\\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Definition of sine as ratio of opposite side to hypotenuse",
+    "core": false
+  },
+  {
+    "name": "cosine ratio",
+    "aliases": "CAH cos equals adjacent over hypotenuse",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mtext>adjacent</mtext><mtext>hypotenuse</mtext></mfrac></mrow><annotation encoding=\"application/x-tex\">\\cos\\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Definition of cosine as ratio of adjacent side to hypotenuse",
+    "core": false
+  },
+  {
+    "name": "tangent ratio",
+    "aliases": "TOA tan equals opposite over adjacent",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mtext>opposite</mtext><mtext>adjacent</mtext></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tan\\theta = \\frac{\\text{opposite}}{\\text{adjacent}}</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Definition of tangent as ratio of opposite to adjacent side",
+    "core": false
+  },
+  {
+    "name": "reciprocal trigonometric identities",
+    "aliases": "csc equals one over sin; sec equals one over cos; cot equals one over tan",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>csc</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mfrac><mo separator=\"true\">;</mo><mtext>  </mtext><mi>sec</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mfrac><mo separator=\"true\">;</mo><mtext>  </mtext><mi>cot</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mi>tan</mi><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\csc\\theta = \\frac{1}{\\sin\\theta};\\; \\sec\\theta = \\frac{1}{\\cos\\theta};\\; \\cot\\theta = \\frac{1}{\\tan\\theta}</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Definitions of cosecant, secant, and cotangent as reciprocals",
+    "core": false
+  },
+  {
+    "name": "trigonometric quotient identities",
+    "aliases": "tan equals sin over cos; cot equals cos over sin",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mfrac><mo separator=\"true\">;</mo><mtext>  </mtext><mi>cot</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta};\\; \\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta}</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Tangent as sine/cosine and cotangent as cosine/sine",
+    "core": false
+  },
+  {
+    "name": "cofunction identities",
+    "aliases": "sin of 90 minus theta; cos of 90 minus theta; tan of 90 minus theta",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><msup><mn>90</mn><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi><mo separator=\"true\">;</mo><mtext>  </mtext><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><msup><mn>90</mn><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>sin</mi><mo>⁡</mo><mi>θ</mi><mo separator=\"true\">;</mo><mtext>  </mtext><mi>tan</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><msup><mn>90</mn><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>cot</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\sin(90^{\\circ}-\\theta) = \\cos\\theta;\\; \\cos(90^{\\circ}-\\theta) = \\sin\\theta;\\; \\tan(90^{\\circ}-\\theta) = \\cot\\theta</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Trigonometric cofunction identities",
+    "core": false
+  },
+  {
+    "name": "odd and even trig identities",
+    "aliases": "sin of negative theta; cos of negative theta; tan of negative theta",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo>−</mo><mi>sin</mi><mo>⁡</mo><mi>θ</mi><mo separator=\"true\">;</mo><mtext>  </mtext><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi><mo separator=\"true\">;</mo><mtext>  </mtext><mi>tan</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo>−</mo><mi>tan</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\sin(-\\theta) = -\\sin\\theta;\\; \\cos(-\\theta) = \\cos\\theta;\\; \\tan(-\\theta) = -\\tan\\theta</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Parity of trig functions: sine and tangent are odd, cosine is even",
+    "core": false
+  },
+  {
+    "name": "degree to radian conversion",
+    "aliases": "degrees to radians",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>θ</mi><mtext>rad</mtext></msub><mo>=</mo><msub><mi>θ</mi><mtext>deg</mtext></msub><mo>×</mo><mfrac><mi>π</mi><mn>180</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\theta_{\\text{rad}} = \\theta_{\\text{deg}} \\times \\frac{\\pi}{180}</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Convert degrees to radians",
+    "core": false
+  },
+  {
+    "name": "radian to degree conversion",
+    "aliases": "radians to degrees",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>θ</mi><mtext>deg</mtext></msub><mo>=</mo><msub><mi>θ</mi><mtext>rad</mtext></msub><mo>×</mo><mfrac><mn>180</mn><mi>π</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\theta_{\\text{deg}} = \\theta_{\\text{rad}} \\times \\frac{180}{\\pi}</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Convert radians to degrees",
+    "core": false
+  },
+  {
+    "name": "Pythagorean trigonometric identities",
+    "aliases": "Pythagorean identity; secant identity; cosecant identity; sin squared plus cos squared equals one; one plus tan squared; one plus cot squared",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mrow><mi>sin</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>+</mo><msup><mrow><mi>cos</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>=</mo><mn>1</mn><mo separator=\"true\">;</mo><mtext>  </mtext><mn>1</mn><mo>+</mo><msup><mrow><mi>tan</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>=</mo><msup><mrow><mi>sec</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo separator=\"true\">;</mo><mtext>  </mtext><mn>1</mn><mo>+</mo><msup><mrow><mi>cot</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>=</mo><msup><mrow><mi>csc</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\sin^2\\theta + \\cos^2\\theta = 1;\\; 1 + \\tan^2\\theta = \\sec^2\\theta;\\; 1 + \\cot^2\\theta = \\csc^2\\theta</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Three Pythagorean identities for trig functions",
+    "core": false
+  },
+  {
+    "name": "sine double angle formula",
+    "aliases": "double angle sine",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>2</mn><mi>sin</mi><mo>⁡</mo><mi>θ</mi><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\sin(2\\theta) = 2\\sin\\theta\\cos\\theta</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Sine double angle formula",
+    "core": false
+  },
+  {
+    "name": "cosine double-angle formulas",
+    "aliases": "double angle cosine; cosine double angle formula 2; cosine double angle formula 3",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msup><mrow><mi>cos</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>−</mo><msup><mrow><mi>sin</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\cos(2\\theta) = \\cos^2\\theta - \\sin^2\\theta</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Cosine double-angle identity (equivalent forms: cos^2-sin^2, 2cos^2-1, 1-2sin^2)",
+    "core": false
+  },
+  {
+    "name": "tangent double angle formula",
+    "aliases": "double angle tangent",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mn>2</mn><mi>tan</mi><mo>⁡</mo><mi>θ</mi></mrow><mrow><mn>1</mn><mo>−</mo><msup><mrow><mi>tan</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tan(2\\theta) = \\frac{2\\tan\\theta}{1-\\tan^2\\theta}</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Tangent double angle formula",
+    "core": false
+  },
+  {
+    "name": "sine addition formula",
+    "aliases": "sin of A plus B",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>sin</mi><mo>⁡</mo><mi>A</mi><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>+</mo><mi>cos</mi><mo>⁡</mo><mi>A</mi><mi>sin</mi><mo>⁡</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">\\sin(A+B) = \\sin A\\cos B + \\cos A\\sin B</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Sine addition formula",
+    "core": false
+  },
+  {
+    "name": "sine subtraction formula",
+    "aliases": "sin of A minus B",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>sin</mi><mo>⁡</mo><mi>A</mi><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>−</mo><mi>cos</mi><mo>⁡</mo><mi>A</mi><mi>sin</mi><mo>⁡</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">\\sin(A-B) = \\sin A\\cos B - \\cos A\\sin B</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Sine subtraction formula",
+    "core": false
+  },
+  {
+    "name": "cosine addition formula",
+    "aliases": "cos of A plus B",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>cos</mi><mo>⁡</mo><mi>A</mi><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>−</mo><mi>sin</mi><mo>⁡</mo><mi>A</mi><mi>sin</mi><mo>⁡</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">\\cos(A+B) = \\cos A\\cos B - \\sin A\\sin B</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Cosine addition formula",
+    "core": false
+  },
+  {
+    "name": "cosine subtraction formula",
+    "aliases": "cos of A minus B",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>cos</mi><mo>⁡</mo><mi>A</mi><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>+</mo><mi>sin</mi><mo>⁡</mo><mi>A</mi><mi>sin</mi><mo>⁡</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">\\cos(A-B) = \\cos A\\cos B + \\sin A\\sin B</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Cosine subtraction formula",
+    "core": false
+  },
+  {
+    "name": "tangent addition formula",
+    "aliases": "tan of A plus B",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>tan</mi><mo>⁡</mo><mi>A</mi><mo>+</mo><mi>tan</mi><mo>⁡</mo><mi>B</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>tan</mi><mo>⁡</mo><mi>A</mi><mi>tan</mi><mo>⁡</mo><mi>B</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tan(A+B) = \\frac{\\tan A + \\tan B}{1 - \\tan A\\tan B}</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Tangent addition formula",
+    "core": false
+  },
+  {
+    "name": "tangent subtraction formula",
+    "aliases": "tan of A minus B",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>tan</mi><mo>⁡</mo><mi>A</mi><mo>−</mo><mi>tan</mi><mo>⁡</mo><mi>B</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>tan</mi><mo>⁡</mo><mi>A</mi><mi>tan</mi><mo>⁡</mo><mi>B</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tan(A-B) = \\frac{\\tan A - \\tan B}{1 + \\tan A\\tan B}</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Tangent subtraction formula",
+    "core": false
+  },
+  {
+    "name": "law of sines",
+    "aliases": "sine rule",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>a</mi><mrow><mi>sin</mi><mo>⁡</mo><mi>A</mi></mrow></mfrac><mo>=</mo><mfrac><mi>b</mi><mrow><mi>sin</mi><mo>⁡</mo><mi>B</mi></mrow></mfrac><mo>=</mo><mfrac><mi>c</mi><mrow><mi>sin</mi><mo>⁡</mo><mi>C</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C}</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Law of sines for any triangle",
+    "core": false
+  },
+  {
+    "name": "law of cosines",
+    "aliases": "cosine rule",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>a</mi><mi>b</mi><mi>cos</mi><mo>⁡</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">c^2 = a^2 + b^2 - 2ab\\cos C</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Law of cosines for any triangle",
+    "core": false
+  },
+  {
+    "name": "Euler's formula",
+    "aliases": "e to the i theta",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>e</mi><mrow><mi>i</mi><mi>θ</mi></mrow></msup><mo>=</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi><mo>+</mo><mi>i</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">e^{i\\theta} = \\cos\\theta + i\\sin\\theta</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Euler's formula relating exponentials to trig functions",
+    "core": false
   },
   {
     "name": "arc length",
     "aliases": "s equals r theta",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>s</mi><mo>=</mo><mi>r</mi><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">s = r\\theta</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Arc length of a circle with radius r and central angle θ in radians",
-    "core": true
+    "domain": "Geometry & Trigonometry",
+    "description": "Arc length of a circle with radius r and central angle in radians",
+    "core": false
   },
   {
     "name": "area of a sector",
     "aliases": "sector area",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mi>r</mi><mn>2</mn></msup><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">A = \\frac{1}{2}r^2\\theta</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Area of a circular sector with radius r and central angle θ in radians",
-    "core": true
+    "domain": "Geometry & Trigonometry",
+    "description": "Area of a circular sector with radius r and central angle in radians",
+    "core": false
   },
   {
     "name": "area of a triangle using sine",
     "aliases": "triangle area two sides and angle",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><mi>b</mi><mi>sin</mi><mo>⁡</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">A = \\frac{1}{2}ab\\sin C</annotation></semantics></math>",
-    "domain": "Trigonometry",
+    "domain": "Geometry & Trigonometry",
     "description": "Area of a triangle given two sides a and b and included angle C",
-    "core": true
-  },
-  {
-    "name": "sine half angle formula",
-    "aliases": "half angle sine",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mi>θ</mi><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mo>=</mo><mo>±</mo><msqrt><mfrac><mrow><mn>1</mn><mo>−</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mn>2</mn></mfrac></msqrt></mrow><annotation encoding=\"application/x-tex\">\\sin\\left(\\frac{\\theta}{2}\\right) = \\pm\\sqrt{\\frac{1-\\cos\\theta}{2}}</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Sine half-angle formula",
     "core": false
   },
   {
-    "name": "cosine half angle formula",
-    "aliases": "half angle cosine",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mi>θ</mi><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mo>=</mo><mo>±</mo><msqrt><mfrac><mrow><mn>1</mn><mo>+</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mn>2</mn></mfrac></msqrt></mrow><annotation encoding=\"application/x-tex\">\\cos\\left(\\frac{\\theta}{2}\\right) = \\pm\\sqrt{\\frac{1+\\cos\\theta}{2}}</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Cosine half-angle formula",
+    "name": "half-angle formulas",
+    "aliases": "half angle sine; half angle cosine; half angle tangent",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mi>θ</mi><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mo>=</mo><mo>±</mo><msqrt><mfrac><mrow><mn>1</mn><mo>−</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mn>2</mn></mfrac></msqrt><mo separator=\"true\">;</mo><mtext>  </mtext><mi>cos</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mi>θ</mi><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mo>=</mo><mo>±</mo><msqrt><mfrac><mrow><mn>1</mn><mo>+</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mn>2</mn></mfrac></msqrt><mo separator=\"true\">;</mo><mtext>  </mtext><mi>tan</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mi>θ</mi><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sin\\left(\\frac{\\theta}{2}\\right) = \\pm\\sqrt{\\frac{1-\\cos\\theta}{2}};\\; \\cos\\left(\\frac{\\theta}{2}\\right) = \\pm\\sqrt{\\frac{1+\\cos\\theta}{2}};\\; \\tan\\left(\\frac{\\theta}{2}\\right) = \\frac{1-\\cos\\theta}{\\sin\\theta}</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Half-angle formulas for sine, cosine, and tangent",
     "core": false
   },
   {
-    "name": "tangent half angle formula",
-    "aliases": "half angle tangent",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mi>θ</mi><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tan\\left(\\frac{\\theta}{2}\\right) = \\frac{1-\\cos\\theta}{\\sin\\theta}</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Tangent half-angle formula",
-    "core": false
-  },
-  {
-    "name": "power reducing sine",
-    "aliases": "sin squared power reduction",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mrow><mi>sin</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>θ</mi><mo stretchy=\"false\">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sin^2\\theta = \\frac{1-\\cos(2\\theta)}{2}</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Power-reducing formula for sin²θ",
-    "core": false
-  },
-  {
-    "name": "power reducing cosine",
-    "aliases": "cos squared power reduction",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mrow><mi>cos</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>θ</mi><mo stretchy=\"false\">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\cos^2\\theta = \\frac{1+\\cos(2\\theta)}{2}</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Power-reducing formula for cos²θ",
+    "name": "power-reducing formulas",
+    "aliases": "sin squared power reduction; cos squared power reduction",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mrow><mi>sin</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>θ</mi><mo stretchy=\"false\">)</mo></mrow><mn>2</mn></mfrac><mo separator=\"true\">;</mo><mtext>  </mtext><msup><mrow><mi>cos</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>θ</mi><mo stretchy=\"false\">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sin^2\\theta = \\frac{1-\\cos(2\\theta)}{2};\\; \\cos^2\\theta = \\frac{1+\\cos(2\\theta)}{2}</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Power-reducing formulas for sin^2 and cos^2",
     "core": false
   },
   {
     "name": "angular velocity",
     "aliases": "omega equals theta over t",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ω</mi><mo>=</mo><mfrac><mi>θ</mi><mi>t</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\omega = \\frac{\\theta}{t}</annotation></semantics></math>",
-    "domain": "Trigonometry",
+    "domain": "Geometry & Trigonometry",
     "description": "Angular velocity as angle swept per unit time",
     "core": false
   },
@@ -1925,303 +773,255 @@ export const mathEquations = [
     "name": "linear velocity from angular",
     "aliases": "v equals r omega",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>v</mi><mo>=</mo><mi>r</mi><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">v = r\\omega</annotation></semantics></math>",
-    "domain": "Trigonometry",
+    "domain": "Geometry & Trigonometry",
     "description": "Linear velocity from angular velocity and radius",
     "core": false
   },
   {
-    "name": "product to sum sine cosine",
-    "aliases": "product to sum sin cos",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mi>A</mi><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"false\">[</mo><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>+</mo><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\sin A\\cos B = \\frac{1}{2}[\\sin(A+B)+\\sin(A-B)]</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Product-to-sum identity for sin·cos",
+    "name": "product-to-sum identities",
+    "aliases": "product to sum sin cos; product to sum cos cos; product to sum sin sin",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mi>A</mi><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"false\">[</mo><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>+</mo><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo><mo separator=\"true\">;</mo><mtext>  </mtext><mi>cos</mi><mo>⁡</mo><mi>A</mi><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"false\">[</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>+</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo><mo separator=\"true\">;</mo><mtext>  </mtext><mi>sin</mi><mo>⁡</mo><mi>A</mi><mi>sin</mi><mo>⁡</mo><mi>B</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"false\">[</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\sin A\\cos B = \\frac{1}{2}[\\sin(A+B)+\\sin(A-B)];\\; \\cos A\\cos B = \\frac{1}{2}[\\cos(A-B)+\\cos(A+B)];\\; \\sin A\\sin B = \\frac{1}{2}[\\cos(A-B)-\\cos(A+B)]</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Product-to-sum identities for sin*cos, cos*cos, sin*sin",
     "core": false
   },
   {
-    "name": "product to sum cosine cosine",
-    "aliases": "product to sum cos cos",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mi>A</mi><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"false\">[</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>+</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\cos A\\cos B = \\frac{1}{2}[\\cos(A-B)+\\cos(A+B)]</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Product-to-sum identity for cos·cos",
-    "core": false
-  },
-  {
-    "name": "product to sum sine sine",
-    "aliases": "product to sum sin sin",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mi>A</mi><mi>sin</mi><mo>⁡</mo><mi>B</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"false\">[</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\sin A\\sin B = \\frac{1}{2}[\\cos(A-B)-\\cos(A+B)]</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Product-to-sum identity for sin·sin",
-    "core": false
-  },
-  {
-    "name": "sum to product sine",
-    "aliases": "sum to product sine plus sine",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mi>A</mi><mo>+</mo><mi>sin</mi><mo>⁡</mo><mi>B</mi><mo>=</mo><mn>2</mn><mi>sin</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mi>cos</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi>A</mi><mo>−</mo><mi>B</mi></mrow><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\sin A + \\sin B = 2\\sin\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right)</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Sum-to-product identity for sine",
-    "core": false
-  },
-  {
-    "name": "sum to product cosine",
-    "aliases": "sum to product cosine plus cosine",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mi>A</mi><mo>+</mo><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>=</mo><mn>2</mn><mi>cos</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mi>cos</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi>A</mi><mo>−</mo><mi>B</mi></mrow><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\cos A + \\cos B = 2\\cos\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right)</annotation></semantics></math>",
-    "domain": "Trigonometry",
-    "description": "Sum-to-product identity for cosine",
+    "name": "sum-to-product identities",
+    "aliases": "sum to product sine; sum to product cosine",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mi>A</mi><mo>+</mo><mi>sin</mi><mo>⁡</mo><mi>B</mi><mo>=</mo><mn>2</mn><mi>sin</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mi>cos</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi>A</mi><mo>−</mo><mi>B</mi></mrow><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mo separator=\"true\">;</mo><mtext>  </mtext><mi>cos</mi><mo>⁡</mo><mi>A</mi><mo>+</mo><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>=</mo><mn>2</mn><mi>cos</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mi>cos</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi>A</mi><mo>−</mo><mi>B</mi></mrow><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\sin A + \\sin B = 2\\sin\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right);\\; \\cos A + \\cos B = 2\\cos\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right)</annotation></semantics></math>",
+    "domain": "Geometry & Trigonometry",
+    "description": "Sum-to-product identities for sine and cosine",
     "core": false
   },
   {
     "name": "standard form of an ellipse",
     "aliases": "ellipse equation",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><msup><mi>x</mi><mn>2</mn></msup><msup><mi>a</mi><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1</annotation></semantics></math>",
-    "domain": "Conic Sections",
+    "domain": "Geometry & Trigonometry",
     "description": "Ellipse centered at origin with semi-axes a and b",
-    "core": true
+    "core": false
   },
   {
     "name": "standard form of a hyperbola",
     "aliases": "hyperbola equation",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><msup><mi>x</mi><mn>2</mn></msup><msup><mi>a</mi><mn>2</mn></msup></mfrac><mo>−</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1</annotation></semantics></math>",
-    "domain": "Conic Sections",
+    "domain": "Geometry & Trigonometry",
     "description": "Horizontal hyperbola centered at origin",
-    "core": true
+    "core": false
   },
   {
     "name": "standard form of a parabola",
     "aliases": "parabola from focus",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>4</mn><mi>p</mi><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">x^2 = 4py</annotation></semantics></math>",
-    "domain": "Conic Sections",
+    "domain": "Geometry & Trigonometry",
     "description": "Parabola with vertex at origin opening upward (focus at (0,p))",
-    "core": true
+    "core": false
   },
   {
-    "name": "volume of a pyramid",
-    "aliases": "pyramid volume",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>B</mi><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">V = \\frac{1}{3}Bh</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Volume of a pyramid with base area B and height h",
-    "core": true
+    "name": "chain rule",
+    "aliases": "derivative of a composition",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>u</mi></mrow></mfrac><mo>⋅</mo><mfrac><mrow><mi>d</mi><mi>u</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Chain rule for differentiating composite functions",
+    "core": false
   },
   {
-    "name": "surface area of a cylinder",
-    "aliases": "cylinder surface area",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mi>A</mi><mo>=</mo><mn>2</mn><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>π</mi><mi>r</mi><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">SA = 2\\pi r^2 + 2\\pi r h</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Total surface area of a cylinder",
-    "core": true
+    "name": "product rule",
+    "aliases": "derivative of a product",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>f</mi><mi>g</mi><mo stretchy=\"false\">]</mo><mo>=</mo><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mi>g</mi><mo>+</mo><mi>f</mi><msup><mi>g</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[fg] = f&#x27;g + fg&#x27;</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Product rule for differentiation",
+    "core": false
   },
   {
-    "name": "surface area of a cone",
-    "aliases": "cone surface area",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mi>A</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mi>π</mi><mi>r</mi><mi>l</mi></mrow><annotation encoding=\"application/x-tex\">SA = \\pi r^2 + \\pi r l</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Total surface area of a cone where l is slant height",
-    "core": true
-  },
-  {
-    "name": "surface area of a rectangular prism",
-    "aliases": "box surface area",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mi>A</mi><mo>=</mo><mn>2</mn><mo stretchy=\"false\">(</mo><mi>l</mi><mi>w</mi><mo>+</mo><mi>l</mi><mi>h</mi><mo>+</mo><mi>w</mi><mi>h</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">SA = 2(lw + lh + wh)</annotation></semantics></math>",
-    "domain": "Geometry",
-    "description": "Total surface area of a rectangular prism",
+    "name": "quotient rule",
+    "aliases": "derivative of a quotient",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mrow><mo fence=\"true\">[</mo><mfrac><mi>f</mi><mi>g</mi></mfrac><mo fence=\"true\">]</mo></mrow><mo>=</mo><mfrac><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mi>g</mi><mo>−</mo><mi>f</mi><msup><mi>g</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><msup><mi>g</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}\\left[\\frac{f}{g}\\right] = \\frac{f&#x27;g - fg&#x27;}{g^2}</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Quotient rule for differentiation",
     "core": false
   },
   {
     "name": "power rule for derivatives",
     "aliases": "derivative power rule",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><msup><mi>x</mi><mi>n</mi></msup><mo stretchy=\"false\">]</mo><mo>=</mo><mi>n</mi><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[x^n] = nx^{n-1}</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Power rule for differentiation",
-    "core": true
+    "core": false
   },
   {
     "name": "derivative of sine",
     "aliases": "d dx sin x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>sin</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mi>cos</mi><mo>⁡</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\sin x] = \\cos x</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Derivative of sine",
-    "core": true
+    "core": false
   },
   {
     "name": "derivative of cosine",
     "aliases": "d dx cos x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>cos</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mo>−</mo><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\cos x] = -\\sin x</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Derivative of cosine",
-    "core": true
+    "core": false
   },
   {
     "name": "derivative of e to the x",
     "aliases": "d dx e to the x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><msup><mi>e</mi><mi>x</mi></msup><mo stretchy=\"false\">]</mo><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[e^x] = e^x</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Derivative of the natural exponential",
-    "core": true
+    "core": false
   },
   {
     "name": "derivative of natural log",
     "aliases": "d dx ln x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>ln</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\ln x] = \\frac{1}{x}</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Derivative of the natural logarithm",
-    "core": true
-  },
-  {
-    "name": "power rule for integration",
-    "aliases": "integral power rule",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><msup><mi>x</mi><mi>n</mi></msup><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mfrac><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int x^n\\,dx = \\frac{x^{n+1}}{n+1} + C</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Power rule for integration (n ≠ -1)",
-    "core": true
-  },
-  {
-    "name": "mean value theorem",
-    "aliases": "MVT",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>c</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">f&#x27;(c) = \\frac{f(b)-f(a)}{b-a}</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Mean value theorem: there exists c in (a,b) with this slope",
-    "core": true
-  },
-  {
-    "name": "disk method",
-    "aliases": "volume of revolution disk",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>π</mi><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mo stretchy=\"false\">[</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><msup><mo stretchy=\"false\">]</mo><mn>2</mn></msup><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">V = \\pi\\int_{a}^{b}[f(x)]^2\\,dx</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Volume of solid of revolution using the disk method",
-    "core": true
-  },
-  {
-    "name": "shell method",
-    "aliases": "volume of revolution shell",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mn>2</mn><mi>π</mi><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>x</mi><mtext> </mtext><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">V = 2\\pi\\int_{a}^{b} x\\,f(x)\\,dx</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Volume of solid of revolution using the shell method",
-    "core": true
-  },
-  {
-    "name": "arc length of a curve",
-    "aliases": "length of a curve",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>L</mi><mo>=</mo><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><msqrt><mrow><mn>1</mn><mo>+</mo><mo stretchy=\"false\">[</mo><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><msup><mo stretchy=\"false\">]</mo><mn>2</mn></msup></mrow></msqrt><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">L = \\int_{a}^{b}\\sqrt{1+[f&#x27;(x)]^2}\\,dx</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Arc length of y=f(x) from x=a to x=b",
-    "core": true
+    "core": false
   },
   {
     "name": "derivative of tangent",
     "aliases": "d dx tan x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>tan</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><msup><mrow><mi>sec</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\tan x] = \\sec^2 x</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Derivative of tangent",
-    "core": true
+    "core": false
   },
   {
     "name": "derivative of cotangent",
     "aliases": "d dx cot x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>cot</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mo>−</mo><msup><mrow><mi>csc</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\cot x] = -\\csc^2 x</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Derivative of cotangent",
-    "core": true
+    "core": false
   },
   {
     "name": "derivative of secant",
     "aliases": "d dx sec x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>sec</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mi>sec</mi><mo>⁡</mo><mi>x</mi><mi>tan</mi><mo>⁡</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\sec x] = \\sec x\\tan x</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Derivative of secant",
-    "core": true
+    "core": false
   },
   {
     "name": "derivative of cosecant",
     "aliases": "d dx csc x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>csc</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mo>−</mo><mi>csc</mi><mo>⁡</mo><mi>x</mi><mi>cot</mi><mo>⁡</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\csc x] = -\\csc x\\cot x</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Derivative of cosecant",
-    "core": true
+    "core": false
   },
   {
     "name": "derivative of a to the x",
     "aliases": "d dx a to the x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><msup><mi>a</mi><mi>x</mi></msup><mo stretchy=\"false\">]</mo><mo>=</mo><msup><mi>a</mi><mi>x</mi></msup><mi>ln</mi><mo>⁡</mo><mi>a</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[a^x] = a^x \\ln a</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Derivative of exponential with arbitrary base a",
-    "core": true
+    "core": false
   },
   {
     "name": "derivative of arcsin",
     "aliases": "d dx arcsin x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>arcsin</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\arcsin x] = \\frac{1}{\\sqrt{1-x^2}}</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Derivative of inverse sine",
-    "core": true
+    "core": false
   },
   {
     "name": "derivative of arccos",
     "aliases": "d dx arccos x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>arccos</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mo>−</mo><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\arccos x] = -\\frac{1}{\\sqrt{1-x^2}}</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Derivative of inverse cosine",
-    "core": true
+    "core": false
   },
   {
     "name": "derivative of arctan",
     "aliases": "d dx arctan x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>arctan</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\arctan x] = \\frac{1}{1+x^2}</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Derivative of inverse tangent",
-    "core": true
+    "core": false
+  },
+  {
+    "name": "fundamental theorem of calculus",
+    "aliases": "FTC",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\int_{a}^{b} f(x)\\,dx = F(b) - F(a)</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Fundamental theorem of calculus",
+    "core": false
+  },
+  {
+    "name": "definite integral",
+    "aliases": "integral from a to b",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\int_{a}^{b} f(x)\\,dx</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Definite integral of f from a to b",
+    "core": false
+  },
+  {
+    "name": "power rule for integration",
+    "aliases": "integral power rule",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><msup><mi>x</mi><mi>n</mi></msup><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mfrac><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int x^n\\,dx = \\frac{x^{n+1}}{n+1} + C</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Power rule for integration (n != -1)",
+    "core": false
   },
   {
     "name": "integral of 1 over x",
     "aliases": "integral of reciprocal",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><mfrac><mn>1</mn><mi>x</mi></mfrac><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mi>ln</mi><mo>⁡</mo><mi mathvariant=\"normal\">∣</mi><mi>x</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int \\frac{1}{x}\\,dx = \\ln|x| + C</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Integral of 1/x",
-    "core": true
+    "core": false
   },
   {
     "name": "integral of e to the x",
     "aliases": "integral of exponential",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><msup><mi>e</mi><mi>x</mi></msup><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int e^x\\,dx = e^x + C</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Integral of the natural exponential",
-    "core": true
+    "core": false
   },
   {
     "name": "integral of a to the x",
     "aliases": "integral of a to the x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><msup><mi>a</mi><mi>x</mi></msup><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mfrac><msup><mi>a</mi><mi>x</mi></msup><mrow><mi>ln</mi><mo>⁡</mo><mi>a</mi></mrow></mfrac><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int a^x\\,dx = \\frac{a^x}{\\ln a} + C</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Integral of exponential with arbitrary base a",
-    "core": true
+    "core": false
   },
   {
     "name": "integral of sine",
     "aliases": "integral of sin x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><mi>sin</mi><mo>⁡</mo><mi>x</mi><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mo>−</mo><mi>cos</mi><mo>⁡</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int \\sin x\\,dx = -\\cos x + C</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Integral of sine",
-    "core": true
+    "core": false
   },
   {
     "name": "integral of cosine",
     "aliases": "integral of cos x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><mi>cos</mi><mo>⁡</mo><mi>x</mi><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mi>sin</mi><mo>⁡</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int \\cos x\\,dx = \\sin x + C</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Integral of cosine",
-    "core": true
+    "core": false
   },
   {
     "name": "integral of tangent",
     "aliases": "integral of tan x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><mi>tan</mi><mo>⁡</mo><mi>x</mi><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mo>−</mo><mi>ln</mi><mo>⁡</mo><mi mathvariant=\"normal\">∣</mi><mi>cos</mi><mo>⁡</mo><mi>x</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int \\tan x\\,dx = -\\ln|\\cos x| + C</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Integral of tangent",
-    "core": true
+    "core": false
   },
   {
     "name": "integral of secant",
     "aliases": "integral of sec x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><mi>sec</mi><mo>⁡</mo><mi>x</mi><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mi>ln</mi><mo>⁡</mo><mi mathvariant=\"normal\">∣</mi><mi>sec</mi><mo>⁡</mo><mi>x</mi><mo>+</mo><mi>tan</mi><mo>⁡</mo><mi>x</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int \\sec x\\,dx = \\ln|\\sec x + \\tan x| + C</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Integral of secant",
     "core": false
   },
@@ -2229,7 +1029,7 @@ export const mathEquations = [
     "name": "integral of cosecant",
     "aliases": "integral of csc x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><mi>csc</mi><mo>⁡</mo><mi>x</mi><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mo>−</mo><mi>ln</mi><mo>⁡</mo><mi mathvariant=\"normal\">∣</mi><mi>csc</mi><mo>⁡</mo><mi>x</mi><mo>+</mo><mi>cot</mi><mo>⁡</mo><mi>x</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int \\csc x\\,dx = -\\ln|\\csc x + \\cot x| + C</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Integral of cosecant",
     "core": false
   },
@@ -2237,103 +1037,191 @@ export const mathEquations = [
     "name": "integral of sec squared",
     "aliases": "integral of sec squared x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><msup><mrow><mi>sec</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>x</mi><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mi>tan</mi><mo>⁡</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int \\sec^2 x\\,dx = \\tan x + C</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Integral of secant squared",
-    "core": true
+    "core": false
   },
   {
     "name": "integral of 1 over sqrt 1 minus x squared",
     "aliases": "arcsin integral form",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mfrac><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mi>arcsin</mi><mo>⁡</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int \\frac{1}{\\sqrt{1-x^2}}\\,dx = \\arcsin x + C</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Integral yielding inverse sine",
-    "core": true
+    "core": false
   },
   {
     "name": "integral of 1 over 1 plus x squared",
     "aliases": "arctan integral form",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mi>arctan</mi><mo>⁡</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int \\frac{1}{1+x^2}\\,dx = \\arctan x + C</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Integral yielding inverse tangent",
-    "core": true
+    "core": false
+  },
+  {
+    "name": "integration by parts",
+    "aliases": "IBP",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><mi>u</mi><mtext> </mtext><mi>d</mi><mi>v</mi><mo>=</mo><mi>u</mi><mi>v</mi><mo>−</mo><mo>∫</mo><mi>v</mi><mtext> </mtext><mi>d</mi><mi>u</mi></mrow><annotation encoding=\"application/x-tex\">\\int u\\,dv = uv - \\int v\\,du</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Integration by parts formula",
+    "core": false
+  },
+  {
+    "name": "double integral",
+    "aliases": "integral over a region",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∬</mo><mi>D</mi></msub><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">\\iint_{D} f(x,y)\\,dA</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Double integral over region D",
+    "core": false
+  },
+  {
+    "name": "triple integral",
+    "aliases": "integral over a volume",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∭</mo><mi>V</mi></msub><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo separator=\"true\">,</mo><mi>z</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">\\iiint_{V} f(x,y,z)\\,dV</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Triple integral over volume V",
+    "core": false
+  },
+  {
+    "name": "contour integral",
+    "aliases": "line integral",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∮</mo><mi>C</mi></msub><mi>f</mi><mo stretchy=\"false\">(</mo><mi>z</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>z</mi></mrow><annotation encoding=\"application/x-tex\">\\oint_{C} f(z)\\,dz</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Contour integral along curve C",
+    "core": false
+  },
+  {
+    "name": "Taylor series",
+    "aliases": "Taylor expansion",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant=\"normal\">∞</mi></munderover><mfrac><mrow><msup><mi>f</mi><mrow><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo></mrow></msup><mo stretchy=\"false\">(</mo><mi>a</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>n</mi><mo stretchy=\"false\">!</mo></mrow></mfrac><mo stretchy=\"false\">(</mo><mi>x</mi><mo>−</mo><mi>a</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">f(x) = \\sum_{n=0}^{\\infty} \\frac{f^{(n)}(a)}{n!}(x-a)^n</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Taylor series expansion of f around x=a",
+    "core": false
+  },
+  {
+    "name": "Maclaurin series",
+    "aliases": "Maclaurin expansion",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant=\"normal\">∞</mi></munderover><mfrac><mrow><msup><mi>f</mi><mrow><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo></mrow></msup><mo stretchy=\"false\">(</mo><mn>0</mn><mo stretchy=\"false\">)</mo></mrow><mrow><mi>n</mi><mo stretchy=\"false\">!</mo></mrow></mfrac><msup><mi>x</mi><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">f(x) = \\sum_{n=0}^{\\infty} \\frac{f^{(n)}(0)}{n!}x^n</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Maclaurin series (Taylor series at a=0)",
+    "core": false
+  },
+  {
+    "name": "L'Hopital's rule",
+    "aliases": "L'Hopital",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></munder><mfrac><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>g</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow></mfrac><mo>=</mo><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></munder><mfrac><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><mrow><msup><mi>g</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\lim_{x\\to a}\\frac{f(x)}{g(x)} = \\lim_{x\\to a}\\frac{f&#x27;(x)}{g&#x27;(x)}</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "L'Hopital's rule for indeterminate forms",
+    "core": false
+  },
+  {
+    "name": "mean value theorem",
+    "aliases": "MVT",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>c</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">f&#x27;(c) = \\frac{f(b)-f(a)}{b-a}</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Mean value theorem: there exists c in (a,b) with this slope",
+    "core": false
+  },
+  {
+    "name": "Rolle's theorem",
+    "aliases": "Rolles theorem",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>c</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>0</mn><mtext> for some </mtext><mi>c</mi><mo>∈</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mo separator=\"true\">,</mo><mi>b</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">f(a)=f(b) \\implies f&#x27;(c)=0 \\text{ for some } c \\in (a,b)</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Rolle's theorem: horizontal tangent exists between equal values",
+    "core": false
   },
   {
     "name": "squeeze theorem",
     "aliases": "sandwich theorem",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>g</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>≤</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>≤</mo><mi>h</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> and </mtext><mi>lim</mi><mo>⁡</mo><mi>g</mi><mo>=</mo><mi>lim</mi><mo>⁡</mo><mi>h</mi><mo>=</mo><mi>L</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>lim</mi><mo>⁡</mo><mi>f</mi><mo>=</mo><mi>L</mi></mrow><annotation encoding=\"application/x-tex\">g(x) \\leq f(x) \\leq h(x) \\text{ and } \\lim g = \\lim h = L \\implies \\lim f = L</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Squeeze theorem for evaluating limits",
-    "core": true
+    "core": false
   },
   {
     "name": "limit of sin x over x",
     "aliases": "fundamental trig limit",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">\\lim_{x \\to 0}\\frac{\\sin x}{x} = 1</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Fundamental trigonometric limit",
-    "core": true
+    "core": false
   },
   {
     "name": "limit of 1 minus cos x over x",
     "aliases": "second trig limit",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mn>1</mn><mo>−</mo><mi>cos</mi><mo>⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">\\lim_{x \\to 0}\\frac{1-\\cos x}{x} = 0</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Second fundamental trigonometric limit",
-    "core": true
-  },
-  {
-    "name": "Rolle's theorem",
-    "aliases": "Rolles theorem",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>c</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>0</mn><mtext> for some </mtext><mi>c</mi><mo>∈</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mi>b</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">f(a)=f(b) \\implies f&#x27;(c)=0 \\text{ for some } c \\in (a{,}b)</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Rolle's theorem: horizontal tangent exists between equal values",
-    "core": true
+    "core": false
   },
   {
     "name": "average value of a function",
     "aliases": "mean value of f",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>f</mi><mtext>avg</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow></mfrac><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">f_{\\text{avg}} = \\frac{1}{b-a}\\int_{a}^{b} f(x)\\,dx</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Average value of f(x) on the interval [a,b]",
-    "core": true
+    "core": false
+  },
+  {
+    "name": "disk method",
+    "aliases": "volume of revolution disk",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>π</mi><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mo stretchy=\"false\">[</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><msup><mo stretchy=\"false\">]</mo><mn>2</mn></msup><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">V = \\pi\\int_{a}^{b}[f(x)]^2\\,dx</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Volume of solid of revolution using the disk method",
+    "core": false
+  },
+  {
+    "name": "shell method",
+    "aliases": "volume of revolution shell",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mn>2</mn><mi>π</mi><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>x</mi><mtext> </mtext><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">V = 2\\pi\\int_{a}^{b} x\\,f(x)\\,dx</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Volume of solid of revolution using the shell method",
+    "core": false
   },
   {
     "name": "washer method",
     "aliases": "volume of revolution washer",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>π</mi><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mo fence=\"true\">[</mo><mi>R</mi><mo stretchy=\"false\">(</mo><mi>x</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>−</mo><mi>r</mi><mo stretchy=\"false\">(</mo><mi>x</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo fence=\"true\">]</mo></mrow><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">V = \\pi\\int_{a}^{b}\\left[R(x)^2 - r(x)^2\\right]\\,dx</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Volume of revolution using washers with outer radius R and inner radius r",
-    "core": true
+    "core": false
+  },
+  {
+    "name": "arc length of a curve",
+    "aliases": "length of a curve",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>L</mi><mo>=</mo><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><msqrt><mrow><mn>1</mn><mo>+</mo><mo stretchy=\"false\">[</mo><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><msup><mo stretchy=\"false\">]</mo><mn>2</mn></msup></mrow></msqrt><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">L = \\int_{a}^{b}\\sqrt{1+[f&#x27;(x)]^2}\\,dx</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Arc length of y=f(x) from x=a to x=b",
+    "core": false
   },
   {
     "name": "surface area of revolution",
     "aliases": "surface area formula",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>2</mn><mi>π</mi><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><msqrt><mrow><mn>1</mn><mo>+</mo><mo stretchy=\"false\">[</mo><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><msup><mo stretchy=\"false\">]</mo><mn>2</mn></msup></mrow></msqrt><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">S = 2\\pi\\int_{a}^{b} f(x)\\sqrt{1+[f&#x27;(x)]^2}\\,dx</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Surface area of solid of revolution about the x-axis",
-    "core": true
+    "core": false
   },
   {
     "name": "p-series convergence",
     "aliases": "p series",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant=\"normal\">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mi>p</mi></msup></mfrac><mtext> converges if </mtext><mi>p</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">\\sum_{n=1}^{\\infty}\\frac{1}{n^p} \\text{ converges if } p &gt; 1</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "p-series convergence criterion",
-    "core": true
+    "core": false
   },
   {
     "name": "ratio test",
     "aliases": "ratio test for series",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>n</mi><mo>→</mo><mi mathvariant=\"normal\">∞</mi></mrow></munder><mrow><mo fence=\"true\">∣</mo><mfrac><msub><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><msub><mi>a</mi><mi>n</mi></msub></mfrac><mo fence=\"true\">∣</mo></mrow><mo>&lt;</mo><mn>1</mn><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mtext>converges</mtext></mrow><annotation encoding=\"application/x-tex\">\\lim_{n\\to\\infty}\\left|\\frac{a_{n+1}}{a_n}\\right| &lt; 1 \\implies \\text{converges}</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Ratio test for absolute convergence of a series",
-    "core": true
+    "core": false
   },
   {
     "name": "root test",
     "aliases": "nth root test",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>n</mi><mo>→</mo><mi mathvariant=\"normal\">∞</mi></mrow></munder><mroot><mrow><mi mathvariant=\"normal\">∣</mi><msub><mi>a</mi><mi>n</mi></msub><mi mathvariant=\"normal\">∣</mi></mrow><mi>n</mi></mroot><mo>&lt;</mo><mn>1</mn><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mtext>converges</mtext></mrow><annotation encoding=\"application/x-tex\">\\lim_{n\\to\\infty}\\sqrt[n]{|a_n|} &lt; 1 \\implies \\text{converges}</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Root test for absolute convergence of a series",
     "core": false
   },
@@ -2341,15 +1229,15 @@ export const mathEquations = [
     "name": "radius of convergence",
     "aliases": "power series radius",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>R</mi><mo>=</mo><mfrac><mn>1</mn><mrow><munder><mrow><mi mathvariant=\"normal\">lim sup</mi><mo>⁡</mo></mrow><mrow><mi>n</mi><mo>→</mo><mi mathvariant=\"normal\">∞</mi></mrow></munder><mroot><mrow><mi mathvariant=\"normal\">∣</mi><msub><mi>a</mi><mi>n</mi></msub><mi mathvariant=\"normal\">∣</mi></mrow><mi>n</mi></mroot></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">R = \\frac{1}{\\limsup_{n\\to\\infty}\\sqrt[n]{|a_n|}}</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Radius of convergence of a power series via Cauchy-Hadamard",
-    "core": true
+    "core": false
   },
   {
     "name": "directional derivative",
     "aliases": "derivative in direction u",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>D</mi><mi mathvariant=\"bold\">u</mi></msub><mi>f</mi><mo>=</mo><mi mathvariant=\"normal\">∇</mi><mi>f</mi><mo>⋅</mo><mi mathvariant=\"bold\">u</mi></mrow><annotation encoding=\"application/x-tex\">D_{\\mathbf{u}}f = \\nabla f \\cdot \\mathbf{u}</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Directional derivative of f in the direction of unit vector u",
     "core": false
   },
@@ -2357,15 +1245,31 @@ export const mathEquations = [
     "name": "multivariable second derivative test",
     "aliases": "second partial test",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>D</mi><mo>=</mo><msub><mi>f</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><msub><mi>f</mi><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo>−</mo><msubsup><mi>f</mi><mrow><mi>x</mi><mi>y</mi></mrow><mn>2</mn></msubsup></mrow><annotation encoding=\"application/x-tex\">D = f_{xx}f_{yy} - f_{xy}^2</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Discriminant for classifying critical points of f(x,y)",
+    "core": false
+  },
+  {
+    "name": "double integral in polar coordinates",
+    "aliases": "polar area element",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∬</mo><mi>D</mi></msub><mi>f</mi><mo stretchy=\"false\">(</mo><mi>r</mi><mo separator=\"true\">,</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>r</mi><mtext> </mtext><mi>d</mi><mi>r</mi><mtext> </mtext><mi>d</mi><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\iint_{D} f(r,\\theta)\\,r\\,dr\\,d\\theta</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Double integral converted to polar coordinates with Jacobian r",
+    "core": false
+  },
+  {
+    "name": "change of variables Jacobian",
+    "aliases": "substitution in double integral",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∬</mo><mi>D</mi></msub><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi><mtext> </mtext><mi>d</mi><mi>y</mi><mo>=</mo><msub><mo>∬</mo><msup><mi>D</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></msub><mi>f</mi><mo stretchy=\"false\">(</mo><mi>g</mi><mo separator=\"true\">,</mo><mi>h</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi mathvariant=\"normal\">∣</mi><mi>J</mi><mi mathvariant=\"normal\">∣</mi><mtext> </mtext><mi>d</mi><mi>u</mi><mtext> </mtext><mi>d</mi><mi>v</mi></mrow><annotation encoding=\"application/x-tex\">\\iint_{D} f(x,y)\\,dx\\,dy = \\iint_{D&#x27;} f(g,h)\\,|J|\\,du\\,dv</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Change of variables using the Jacobian determinant",
     "core": false
   },
   {
     "name": "Green's theorem",
     "aliases": "Greens theorem",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∮</mo><mi>C</mi></msub><mo stretchy=\"false\">(</mo><mi>P</mi><mtext> </mtext><mi>d</mi><mi>x</mi><mo>+</mo><mi>Q</mi><mtext> </mtext><mi>d</mi><mi>y</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mo>∬</mo><mi>D</mi></msub><mtext> ⁣</mtext><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi mathvariant=\"normal\">∂</mi><mi>Q</mi></mrow><mrow><mi mathvariant=\"normal\">∂</mi><mi>x</mi></mrow></mfrac><mo>−</mo><mfrac><mrow><mi mathvariant=\"normal\">∂</mi><mi>P</mi></mrow><mrow><mi mathvariant=\"normal\">∂</mi><mi>y</mi></mrow></mfrac><mo fence=\"true\">)</mo></mrow><mi>d</mi><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">\\oint_{C}(P\\,dx + Q\\,dy) = \\iint_{D}\\!\\left(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y}\\right)dA</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Green's theorem relating a line integral to a double integral",
     "core": false
   },
@@ -2373,7 +1277,7 @@ export const mathEquations = [
     "name": "Stokes' theorem",
     "aliases": "Stokes theorem",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∮</mo><mi>C</mi></msub><mi mathvariant=\"bold\">F</mi><mo>⋅</mo><mi>d</mi><mi mathvariant=\"bold\">r</mi><mo>=</mo><msub><mo>∬</mo><mi>S</mi></msub><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∇</mi><mo>×</mo><mi mathvariant=\"bold\">F</mi><mo stretchy=\"false\">)</mo><mo>⋅</mo><mi>d</mi><mi mathvariant=\"bold\">S</mi></mrow><annotation encoding=\"application/x-tex\">\\oint_{C}\\mathbf{F}\\cdot d\\mathbf{r} = \\iint_{S}(\\nabla\\times\\mathbf{F})\\cdot d\\mathbf{S}</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Stokes' theorem relating a line integral to a surface integral",
     "core": false
   },
@@ -2381,871 +1285,135 @@ export const mathEquations = [
     "name": "divergence theorem",
     "aliases": "Gauss's theorem",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∯</mo><mi>S</mi></msub><mi mathvariant=\"bold\">F</mi><mo>⋅</mo><mi>d</mi><mi mathvariant=\"bold\">S</mi><mo>=</mo><msub><mo>∭</mo><mi>V</mi></msub><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∇</mi><mo>⋅</mo><mi mathvariant=\"bold\">F</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">\\oiint_{S}\\mathbf{F}\\cdot d\\mathbf{S} = \\iiint_{V}(\\nabla\\cdot\\mathbf{F})\\,dV</annotation></semantics></math>",
-    "domain": "Calculus",
+    "domain": "Calculus & Analysis",
     "description": "Divergence theorem relating surface flux to volume divergence",
     "core": false
   },
   {
-    "name": "double integral in polar coordinates",
-    "aliases": "polar area element",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∬</mo><mi>D</mi></msub><mi>f</mi><mo stretchy=\"false\">(</mo><mi>r</mi><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>r</mi><mtext> </mtext><mi>d</mi><mi>r</mi><mtext> </mtext><mi>d</mi><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\iint_{D} f(r{,}\\theta)\\,r\\,dr\\,d\\theta</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Double integral converted to polar coordinates with Jacobian r",
+    "name": "first order linear ODE",
+    "aliases": "first order differential equation",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>+</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mi>y</mi><mo>=</mo><mi>Q</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\frac{dy}{dx} + P(x)y = Q(x)</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Standard form of a first-order linear ODE",
     "core": false
   },
   {
-    "name": "change of variables Jacobian",
-    "aliases": "substitution in double integral",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∬</mo><mi>D</mi></msub><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi><mtext> </mtext><mi>d</mi><mi>y</mi><mo>=</mo><msub><mo>∬</mo><msup><mi>D</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></msub><mi>f</mi><mo stretchy=\"false\">(</mo><mi>g</mi><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mi>h</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi mathvariant=\"normal\">∣</mi><mi>J</mi><mi mathvariant=\"normal\">∣</mi><mtext> </mtext><mi>d</mi><mi>u</mi><mtext> </mtext><mi>d</mi><mi>v</mi></mrow><annotation encoding=\"application/x-tex\">\\iint_{D} f(x{,}y)\\,dx\\,dy = \\iint_{D&#x27;} f(g{,}h)\\,|J|\\,du\\,dv</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Change of variables using the Jacobian determinant",
+    "name": "second order linear ODE",
+    "aliases": "second order differential equation",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>y</mi><mrow><mo mathvariant=\"normal\">′</mo><mo mathvariant=\"normal\">′</mo></mrow></msup><mo>+</mo><mi>p</mi><msup><mi>y</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>+</mo><mi>q</mi><mi>y</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">y&#x27;&#x27; + py&#x27; + qy = 0</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Second-order linear ODE with constant coefficients",
     "core": false
   },
   {
-    "name": "vector projection",
-    "aliases": "proj of u onto v",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mtext>proj</mtext><mi mathvariant=\"bold\">v</mi></msub><mi mathvariant=\"bold\">u</mi><mo>=</mo><mfrac><mrow><mi mathvariant=\"bold\">u</mi><mo>⋅</mo><mi mathvariant=\"bold\">v</mi></mrow><mrow><mi mathvariant=\"normal\">∥</mi><mi mathvariant=\"bold\">v</mi><msup><mi mathvariant=\"normal\">∥</mi><mn>2</mn></msup></mrow></mfrac><mi mathvariant=\"bold\">v</mi></mrow><annotation encoding=\"application/x-tex\">\\text{proj}_{\\mathbf{v}}\\mathbf{u} = \\frac{\\mathbf{u}\\cdot\\mathbf{v}}{\\|\\mathbf{v}\\|^2}\\mathbf{v}</annotation></semantics></math>",
-    "domain": "Linear Algebra",
-    "description": "Projection of vector u onto vector v",
-    "core": true
-  },
-  {
-    "name": "cross product magnitude",
-    "aliases": "magnitude of a cross b",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∥</mi><mi mathvariant=\"bold\">a</mi><mo>×</mo><mi mathvariant=\"bold\">b</mi><mi mathvariant=\"normal\">∥</mi><mo>=</mo><mi mathvariant=\"normal\">∥</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"normal\">∥</mi><mi mathvariant=\"normal\">∥</mi><mi mathvariant=\"bold\">b</mi><mi mathvariant=\"normal\">∥</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\|\\mathbf{a}\\times\\mathbf{b}\\| = \\|\\mathbf{a}\\|\\|\\mathbf{b}\\|\\sin\\theta</annotation></semantics></math>",
-    "domain": "Linear Algebra",
-    "description": "Magnitude of the cross product",
-    "core": true
-  },
-  {
-    "name": "cross product components",
-    "aliases": "a cross b formula",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"bold\">a</mi><mo>×</mo><mi mathvariant=\"bold\">b</mi><mo>=</mo><mrow><mo fence=\"true\">(</mo><mtable rowspacing=\"0.16em\" columnalign=\"center center center\" columnspacing=\"1em\"><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"bold\">i</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"bold\">j</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"bold\">k</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><msub><mi>a</mi><mn>1</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><msub><mi>a</mi><mn>2</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><msub><mi>a</mi><mn>3</mn></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><msub><mi>b</mi><mn>1</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><msub><mi>b</mi><mn>2</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><msub><mi>b</mi><mn>3</mn></msub></mstyle></mtd></mtr></mtable><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\mathbf{a}\\times\\mathbf{b} = \\begin{pmatrix}\\mathbf{i}&amp;\\mathbf{j}&amp;\\mathbf{k}\\\\a_1&amp;a_2&amp;a_3\\\\b_1&amp;b_2&amp;b_3\\end{pmatrix}</annotation></semantics></math>",
-    "domain": "Linear Algebra",
-    "description": "Cross product in component form via determinant",
+    "name": "Laplace transform definition",
+    "aliases": "L transform",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"script\">L</mi><mo stretchy=\"false\">{</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">}</mo><mo>=</mo><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant=\"normal\">∞</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>s</mi><mi>t</mi></mrow></msup><mtext> </mtext><mi>d</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{L}\\{f(t)\\} = \\int_0^{\\infty} f(t)e^{-st}\\,dt</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Definition of the Laplace transform",
     "core": false
   },
   {
-    "name": "Cauchy-Schwarz inequality",
-    "aliases": "Cauchy Schwarz",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"bold\">a</mi><mo>⋅</mo><mi mathvariant=\"bold\">b</mi><mi mathvariant=\"normal\">∣</mi><mo>≤</mo><mi mathvariant=\"normal\">∥</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"normal\">∥</mi><mi mathvariant=\"normal\">∥</mi><mi mathvariant=\"bold\">b</mi><mi mathvariant=\"normal\">∥</mi></mrow><annotation encoding=\"application/x-tex\">|\\mathbf{a}\\cdot\\mathbf{b}| \\leq \\|\\mathbf{a}\\|\\|\\mathbf{b}\\|</annotation></semantics></math>",
-    "domain": "Linear Algebra",
-    "description": "Cauchy-Schwarz inequality for vectors",
-    "core": true
-  },
-  {
-    "name": "addition rule for probability",
-    "aliases": "P of A union B",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mo>+</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">P(A \\cup B) = P(A) + P(B) - P(A \\cap B)</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Addition rule for the probability of A or B",
-    "core": true
-  },
-  {
-    "name": "conditional probability formula",
-    "aliases": "P of A given B",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∣</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Definition of conditional probability",
-    "core": true
-  },
-  {
-    "name": "multiplication rule for probability",
-    "aliases": "P of A and B",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mo>⋅</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>B</mi><mo>∣</mo><mi>A</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">P(A \\cap B) = P(A)\\cdot P(B \\mid A)</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Multiplication rule for joint probability",
-    "core": true
-  },
-  {
-    "name": "binomial probability",
-    "aliases": "binomial PMF",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mi>n</mi><mi>k</mi></mfrac><mo fence=\"true\">)</mo></mrow><msup><mi>p</mi><mi>k</mi></msup><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><msup><mo stretchy=\"false\">)</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">P(X=k) = \\binom{n}{k}p^k(1-p)^{n-k}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Probability mass function of the binomial distribution",
-    "core": true
-  },
-  {
-    "name": "Poisson probability",
-    "aliases": "Poisson PMF",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup><msup><mi>λ</mi><mi>k</mi></msup></mrow><mrow><mi>k</mi><mo stretchy=\"false\">!</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P(X=k) = \\frac{e^{-\\lambda}\\lambda^k}{k!}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Probability mass function of the Poisson distribution",
-    "core": true
-  },
-  {
-    "name": "standard error of the mean",
-    "aliases": "SEM",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mi>E</mi><mo>=</mo><mfrac><mi>σ</mi><msqrt><mi>n</mi></msqrt></mfrac></mrow><annotation encoding=\"application/x-tex\">SE = \\frac{\\sigma}{\\sqrt{n}}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Standard error of the sample mean",
-    "core": true
-  },
-  {
-    "name": "confidence interval for mean",
-    "aliases": "confidence interval",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><mo>±</mo><msup><mi>z</mi><mo>∗</mo></msup><mfrac><mi>σ</mi><msqrt><mi>n</mi></msqrt></mfrac></mrow><annotation encoding=\"application/x-tex\">\\bar{x} \\pm z^*\\frac{\\sigma}{\\sqrt{n}}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Confidence interval for a population mean",
-    "core": true
-  },
-  {
-    "name": "t-test statistic",
-    "aliases": "one sample t-test",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><mo>−</mo><mi>μ</mi></mrow><mrow><mi>s</mi><mi mathvariant=\"normal\">/</mi><msqrt><mi>n</mi></msqrt></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">t = \\frac{\\bar{x} - \\mu}{s/\\sqrt{n}}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "One-sample t-test statistic",
-    "core": true
-  },
-  {
-    "name": "expected value of a continuous distribution",
-    "aliases": "continuous expected value",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo stretchy=\"false\">[</mo><mi>X</mi><mo stretchy=\"false\">]</mo><mo>=</mo><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant=\"normal\">∞</mi></mrow><mi mathvariant=\"normal\">∞</mi></msubsup><mi>x</mi><mtext> </mtext><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">E[X] = \\int_{-\\infty}^{\\infty} x\\,f(x)\\,dx</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Expected value of a continuous random variable",
-    "core": true
-  },
-  {
-    "name": "complement rule",
-    "aliases": "probability of not A",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><msup><mi>A</mi><mi>c</mi></msup><mo stretchy=\"false\">)</mo><mo>=</mo><mn>1</mn><mo>−</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">P(A^c) = 1 - P(A)</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Probability of the complement of event A",
-    "core": true
-  },
-  {
-    "name": "law of total probability",
-    "aliases": "total probability",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∣</mo><msub><mi>B</mi><mi>i</mi></msub><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>P</mi><mo stretchy=\"false\">(</mo><msub><mi>B</mi><mi>i</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">P(A) = \\sum_{i} P(A \\mid B_i)\\,P(B_i)</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Total probability over a partition of the sample space",
-    "core": true
-  },
-  {
-    "name": "geometric distribution PMF",
-    "aliases": "geometric PMF",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><msup><mo stretchy=\"false\">)</mo><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">P(X=k) = (1-p)^{k-1}p</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "PMF of geometric distribution: k trials until first success",
+    "name": "Fourier transform definition",
+    "aliases": "F transform",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mover accent=\"true\"><mi>f</mi><mo>^</mo></mover><mo stretchy=\"false\">(</mo><mi>ω</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant=\"normal\">∞</mi></mrow><mi mathvariant=\"normal\">∞</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>i</mi><mi>ω</mi><mi>t</mi></mrow></msup><mtext> </mtext><mi>d</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">\\hat{f}(\\omega) = \\int_{-\\infty}^{\\infty} f(t)e^{-i\\omega t}\\,dt</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Definition of the Fourier transform",
     "core": false
   },
   {
-    "name": "hypergeometric distribution PMF",
-    "aliases": "hypergeometric PMF",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mi>K</mi><mi>k</mi></mfrac><mo fence=\"true\">)</mo></mrow><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mrow><mi>N</mi><mo>−</mo><mi>K</mi></mrow><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></mfrac><mo fence=\"true\">)</mo></mrow></mrow><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mi>N</mi><mi>n</mi></mfrac><mo fence=\"true\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P(X=k) = \\frac{\\binom{K}{k}\\binom{N-K}{n-k}}{\\binom{N}{n}}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "PMF for sampling k successes without replacement from population N",
-    "core": false
-  },
-  {
-    "name": "exponential distribution PDF",
-    "aliases": "exponential PDF",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>λ</mi><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi><mi>x</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">f(x) = \\lambda e^{-\\lambda x}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "PDF of the exponential distribution with rate lambda (x >= 0)",
-    "core": false
-  },
-  {
-    "name": "uniform distribution PDF",
-    "aliases": "uniform PDF",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">f(x) = \\frac{1}{b-a}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "PDF of a continuous uniform distribution on [a,b]",
-    "core": false
-  },
-  {
-    "name": "interquartile range",
-    "aliases": "IQR",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>I</mi><mi>Q</mi><mi>R</mi><mo>=</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>−</mo><msub><mi>Q</mi><mn>1</mn></msub></mrow><annotation encoding=\"application/x-tex\">IQR = Q_3 - Q_1</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Spread of the middle 50% of data",
-    "core": false
-  },
-  {
-    "name": "coefficient of variation",
-    "aliases": "CV",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mi>V</mi><mo>=</mo><mfrac><mi>σ</mi><mi>μ</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">CV = \\frac{\\sigma}{\\mu}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Relative variability as a ratio of standard deviation to mean",
-    "core": false
-  },
-  {
-    "name": "skewness",
-    "aliases": "sample skewness",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>skewness</mtext><mo>=</mo><mfrac><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>∑</mo><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><msup><mo stretchy=\"false\">)</mo><mn>3</mn></msup></mrow><msup><mi>s</mi><mn>3</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">\\text{skewness} = \\frac{\\frac{1}{n}\\sum(x_i-\\bar{x})^3}{s^3}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Measure of asymmetry of a distribution",
-    "core": false
-  },
-  {
-    "name": "kurtosis",
-    "aliases": "excess kurtosis",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>kurtosis</mtext><mo>=</mo><mfrac><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>∑</mo><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><msup><mo stretchy=\"false\">)</mo><mn>4</mn></msup></mrow><msup><mi>s</mi><mn>4</mn></msup></mfrac><mo>−</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">\\text{kurtosis} = \\frac{\\frac{1}{n}\\sum(x_i-\\bar{x})^4}{s^4} - 3</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Measure of tail heaviness relative to a normal distribution",
-    "core": false
-  },
-  {
-    "name": "chi-squared test statistic",
-    "aliases": "chi squared goodness of fit",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>χ</mi><mn>2</mn></msup><mo>=</mo><mo>∑</mo><mfrac><mrow><mo stretchy=\"false\">(</mo><msub><mi>O</mi><mi>i</mi></msub><mo>−</mo><msub><mi>E</mi><mi>i</mi></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow><msub><mi>E</mi><mi>i</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\chi^2 = \\sum \\frac{(O_i - E_i)^2}{E_i}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Chi-squared test statistic comparing observed to expected counts",
-    "core": false
-  },
-  {
-    "name": "F-statistic",
-    "aliases": "F test",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mfrac><msubsup><mi>s</mi><mn>1</mn><mn>2</mn></msubsup><msubsup><mi>s</mi><mn>2</mn><mn>2</mn></msubsup></mfrac></mrow><annotation encoding=\"application/x-tex\">F = \\frac{s_1^2}{s_2^2}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "F-statistic for comparing two sample variances",
-    "core": false
-  },
-  {
-    "name": "two-sample t-test",
-    "aliases": "independent samples t-test",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><msub><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><mn>1</mn></msub><mo>−</mo><msub><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><mn>2</mn></msub></mrow><msqrt><mrow><mfrac><msubsup><mi>s</mi><mn>1</mn><mn>2</mn></msubsup><msub><mi>n</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><msubsup><mi>s</mi><mn>2</mn><mn>2</mn></msubsup><msub><mi>n</mi><mn>2</mn></msub></mfrac></mrow></msqrt></mfrac></mrow><annotation encoding=\"application/x-tex\">t = \\frac{\\bar{x}_1 - \\bar{x}_2}{\\sqrt{\\frac{s_1^2}{n_1}+\\frac{s_2^2}{n_2}}}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Two-sample t-test statistic for independent groups",
-    "core": false
-  },
-  {
-    "name": "pooled variance",
-    "aliases": "pooled standard deviation",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mi>s</mi><mi>p</mi><mn>2</mn></msubsup><mo>=</mo><mfrac><mrow><mo stretchy=\"false\">(</mo><msub><mi>n</mi><mn>1</mn></msub><mo>−</mo><mn>1</mn><mo stretchy=\"false\">)</mo><msubsup><mi>s</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><mo stretchy=\"false\">(</mo><msub><mi>n</mi><mn>2</mn></msub><mo>−</mo><mn>1</mn><mo stretchy=\"false\">)</mo><msubsup><mi>s</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>+</mo><msub><mi>n</mi><mn>2</mn></msub><mo>−</mo><mn>2</mn></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">s_p^2 = \\frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Pooled variance estimate for two samples",
-    "core": false
-  },
-  {
-    "name": "OLS slope",
-    "aliases": "least squares slope",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mover accent=\"true\"><mi>β</mi><mo>^</mo></mover><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mo>∑</mo><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><mover accent=\"true\"><mi>y</mi><mo>ˉ</mo></mover><mo stretchy=\"false\">)</mo></mrow><mrow><mo>∑</mo><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\hat{\\beta}_1 = \\frac{\\sum(x_i-\\bar{x})(y_i-\\bar{y})}{\\sum(x_i-\\bar{x})^2}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Ordinary least squares estimate of regression slope",
-    "core": true
-  },
-  {
-    "name": "OLS intercept",
-    "aliases": "least squares intercept",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mover accent=\"true\"><mi>β</mi><mo>^</mo></mover><mn>0</mn></msub><mo>=</mo><mover accent=\"true\"><mi>y</mi><mo>ˉ</mo></mover><mo>−</mo><msub><mover accent=\"true\"><mi>β</mi><mo>^</mo></mover><mn>1</mn></msub><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover></mrow><annotation encoding=\"application/x-tex\">\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1\\bar{x}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Ordinary least squares estimate of regression intercept",
-    "core": true
-  },
-  {
-    "name": "simple linear regression",
-    "aliases": "regression line",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mo>=</mo><msub><mover accent=\"true\"><mi>β</mi><mo>^</mo></mover><mn>0</mn></msub><mo>+</mo><msub><mover accent=\"true\"><mi>β</mi><mo>^</mo></mover><mn>1</mn></msub><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\hat{y} = \\hat{\\beta}_0 + \\hat{\\beta}_1 x</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Simple linear regression predicted value",
-    "core": true
-  },
-  {
-    "name": "R squared",
-    "aliases": "coefficient of determination",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><mrow><mi>S</mi><msub><mi>S</mi><mtext>res</mtext></msub></mrow><mrow><mi>S</mi><msub><mi>S</mi><mtext>tot</mtext></msub></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">R^2 = 1 - \\frac{SS_{\\text{res}}}{SS_{\\text{tot}}}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Proportion of variance in y explained by the regression model",
-    "core": true
-  },
-  {
-    "name": "sum of squared residuals",
-    "aliases": "SSR",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><msub><mi>S</mi><mtext>res</mtext></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy=\"false\">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">SS_{\\text{res}} = \\sum_{i=1}^{n}(y_i - \\hat{y}_i)^2</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Sum of squared residuals (unexplained variation)",
-    "core": false
-  },
-  {
-    "name": "mean squared error",
-    "aliases": "MSE",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mi>S</mi><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy=\"false\">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">MSE = \\frac{1}{n}\\sum_{i=1}^{n}(y_i - \\hat{y}_i)^2</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Mean squared error of predictions",
-    "core": true
-  },
-  {
-    "name": "root mean squared error",
-    "aliases": "RMSE",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>R</mi><mi>M</mi><mi>S</mi><mi>E</mi><mo>=</mo><msqrt><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy=\"false\">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">RMSE = \\sqrt{\\frac{1}{n}\\sum_{i=1}^{n}(y_i - \\hat{y}_i)^2}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "Root mean squared error of predictions",
-    "core": true
-  },
-  {
-    "name": "OLS normal equations",
-    "aliases": "matrix regression",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mover accent=\"true\"><mi mathvariant=\"bold-italic\">β</mi><mo>^</mo></mover><mo>=</mo><mo stretchy=\"false\">(</mo><msup><mi mathvariant=\"bold\">X</mi><mi>T</mi></msup><mi mathvariant=\"bold\">X</mi><msup><mo stretchy=\"false\">)</mo><mrow><mo>−</mo><mn>1</mn></mrow></msup><msup><mi mathvariant=\"bold\">X</mi><mi>T</mi></msup><mi mathvariant=\"bold\">y</mi></mrow><annotation encoding=\"application/x-tex\">\\hat{\\boldsymbol{\\beta}} = (\\mathbf{X}^T\\mathbf{X})^{-1}\\mathbf{X}^T\\mathbf{y}</annotation></semantics></math>",
-    "domain": "Statistics",
-    "description": "OLS estimator in matrix form for multiple regression",
-    "core": false
-  },
-  {
-    "name": "Shannon entropy",
-    "aliases": "information entropy",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>H</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo>−</mo><munder><mo>∑</mo><mi>x</mi></munder><mi>p</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>2</mn></msub><mi>p</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">H(X) = -\\sum_{x} p(x)\\log_2 p(x)</annotation></semantics></math>",
-    "domain": "Information Theory",
-    "description": "Shannon entropy measuring average information content",
-    "core": false
-  },
-  {
-    "name": "cross-entropy",
-    "aliases": "cross entropy loss",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>H</mi><mo stretchy=\"false\">(</mo><mi>p</mi><mo separator=\"true\" lspace=\"0em\" rspace=\"0em\">,</mo><mi>q</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo>−</mo><munder><mo>∑</mo><mi>x</mi></munder><mi>p</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mi>log</mi><mo>⁡</mo><mi>q</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">H(p{,}q) = -\\sum_{x} p(x)\\log q(x)</annotation></semantics></math>",
-    "domain": "Information Theory",
-    "description": "Cross-entropy between true distribution p and predicted distribution q",
-    "core": false
-  },
-  {
-    "name": "KL divergence",
-    "aliases": "Kullback-Leibler divergence",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>D</mi><mrow><mi>K</mi><mi>L</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>P</mi><mi mathvariant=\"normal\">∥</mi><mi>Q</mi><mo stretchy=\"false\">)</mo><mo>=</mo><munder><mo>∑</mo><mi>x</mi></munder><mi>P</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mi>log</mi><mo>⁡</mo><mfrac><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>Q</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">D_{KL}(P \\| Q) = \\sum_{x} P(x)\\log\\frac{P(x)}{Q(x)}</annotation></semantics></math>",
-    "domain": "Information Theory",
-    "description": "KL divergence measuring difference between distributions P and Q",
-    "core": false
-  },
-  {
-    "name": "mutual information",
-    "aliases": "I of X and Y",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>I</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo separator=\"true\">;</mo><mi>Y</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>H</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>H</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo>∣</mo><mi>Y</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">I(X;Y) = H(X) - H(X \\mid Y)</annotation></semantics></math>",
-    "domain": "Information Theory",
-    "description": "Mutual information: reduction in uncertainty of X given Y",
-    "core": false
-  },
-  {
-    "name": "sigmoid function",
-    "aliases": "logistic function",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>σ</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sigma(x) = \\frac{1}{1+e^{-x}}</annotation></semantics></math>",
-    "domain": "Machine Learning",
-    "description": "Sigmoid activation function mapping input to (0,1)",
-    "core": false
-  },
-  {
-    "name": "softmax function",
-    "aliases": "softmax",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>softmax</mtext><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><msup><mi>e</mi><msub><mi>x</mi><mi>i</mi></msub></msup><mrow><munder><mo>∑</mo><mi>j</mi></munder><msup><mi>e</mi><msub><mi>x</mi><mi>j</mi></msub></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\text{softmax}(x_i) = \\frac{e^{x_i}}{\\sum_{j} e^{x_j}}</annotation></semantics></math>",
-    "domain": "Machine Learning",
-    "description": "Softmax function converting logits to a probability distribution",
-    "core": false
-  },
-  {
-    "name": "binary cross-entropy loss",
-    "aliases": "log loss",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>L</mi><mo>=</mo><mo>−</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo fence=\"true\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">[</mo><msub><mi>y</mi><mi>i</mi></msub><mi>log</mi><mo>⁡</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><mo>+</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><msub><mi>y</mi><mi>i</mi></msub><mo stretchy=\"false\">)</mo><mi>log</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><mo stretchy=\"false\">)</mo><mo fence=\"true\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">]</mo></mrow><annotation encoding=\"application/x-tex\">L = -\\frac{1}{n}\\sum_{i=1}^{n}\\bigl[y_i\\log\\hat{y}_i + (1-y_i)\\log(1-\\hat{y}_i)\\bigr]</annotation></semantics></math>",
-    "domain": "Machine Learning",
-    "description": "Binary cross-entropy loss for classification",
-    "core": false
-  },
-  {
-    "name": "gradient descent update",
-    "aliases": "parameter update rule",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>θ</mi><mo>←</mo><mi>θ</mi><mo>−</mo><mi>α</mi><mtext> </mtext><msub><mi mathvariant=\"normal\">∇</mi><mi>θ</mi></msub><mi>J</mi><mo stretchy=\"false\">(</mo><mi>θ</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\theta \\leftarrow \\theta - \\alpha\\,\\nabla_\\theta J(\\theta)</annotation></semantics></math>",
-    "domain": "Machine Learning",
-    "description": "Gradient descent weight update with learning rate alpha",
-    "core": false
-  },
-  {
-    "name": "L1 norm",
-    "aliases": "Manhattan norm",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∥</mi><mi mathvariant=\"bold\">x</mi><msub><mi mathvariant=\"normal\">∥</mi><mn>1</mn></msub><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><mi mathvariant=\"normal\">∣</mi><msub><mi>x</mi><mi>i</mi></msub><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">\\|\\mathbf{x}\\|_1 = \\sum_{i}|x_i|</annotation></semantics></math>",
-    "domain": "Machine Learning",
-    "description": "L1 norm used in Lasso regularization",
-    "core": false
-  },
-  {
-    "name": "L2 norm",
-    "aliases": "Euclidean norm",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∥</mi><mi mathvariant=\"bold\">x</mi><msub><mi mathvariant=\"normal\">∥</mi><mn>2</mn></msub><mo>=</mo><msqrt><mrow><munder><mo>∑</mo><mi>i</mi></munder><msubsup><mi>x</mi><mi>i</mi><mn>2</mn></msubsup></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">\\|\\mathbf{x}\\|_2 = \\sqrt{\\sum_{i}x_i^2}</annotation></semantics></math>",
-    "domain": "Machine Learning",
-    "description": "L2 norm used in Ridge regularization",
-    "core": false
-  },
-  {
-    "name": "L2 regularization loss",
-    "aliases": "Ridge loss",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>J</mi><mo stretchy=\"false\">(</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>M</mi><mi>S</mi><mi>E</mi><mo>+</mo><mi>λ</mi><munder><mo>∑</mo><mi>j</mi></munder><msubsup><mi>θ</mi><mi>j</mi><mn>2</mn></msubsup></mrow><annotation encoding=\"application/x-tex\">J(\\theta) = MSE + \\lambda\\sum_{j}\\theta_j^2</annotation></semantics></math>",
-    "domain": "Machine Learning",
-    "description": "L2 regularized loss function (Ridge regression)",
-    "core": false
-  },
-  {
-    "name": "L1 regularization loss",
-    "aliases": "Lasso loss",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>J</mi><mo stretchy=\"false\">(</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>M</mi><mi>S</mi><mi>E</mi><mo>+</mo><mi>λ</mi><munder><mo>∑</mo><mi>j</mi></munder><mi mathvariant=\"normal\">∣</mi><msub><mi>θ</mi><mi>j</mi></msub><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">J(\\theta) = MSE + \\lambda\\sum_{j}|\\theta_j|</annotation></semantics></math>",
-    "domain": "Machine Learning",
-    "description": "L1 regularized loss function (Lasso regression)",
-    "core": false
-  },
-  {
-    "name": "bias-variance decomposition",
-    "aliases": "bias variance tradeoff",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo fence=\"true\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">[</mo><mo stretchy=\"false\">(</mo><mi>y</mi><mo>−</mo><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo fence=\"true\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">]</mo><mo>=</mo><msup><mtext>Bias</mtext><mn>2</mn></msup><mo>+</mo><mtext>Variance</mtext><mo>+</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">E\\bigl[(y-\\hat{y})^2\\bigr] = \\text{Bias}^2 + \\text{Variance} + \\sigma^2</annotation></semantics></math>",
-    "domain": "Machine Learning",
-    "description": "Decomposition of expected prediction error",
-    "core": false
-  },
-  {
-    "name": "accuracy",
-    "aliases": "classification accuracy",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>Accuracy</mtext><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>T</mi><mi>N</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>T</mi><mi>N</mi><mo>+</mo><mi>F</mi><mi>P</mi><mo>+</mo><mi>F</mi><mi>N</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\text{Accuracy} = \\frac{TP+TN}{TP+TN+FP+FN}</annotation></semantics></math>",
-    "domain": "Machine Learning",
-    "description": "Fraction of correctly classified instances",
-    "core": false
-  },
-  {
-    "name": "precision",
-    "aliases": "positive predictive value",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>Precision</mtext><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>F</mi><mi>P</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\text{Precision} = \\frac{TP}{TP+FP}</annotation></semantics></math>",
-    "domain": "Machine Learning",
-    "description": "Fraction of positive predictions that are correct",
-    "core": false
-  },
-  {
-    "name": "recall",
-    "aliases": "sensitivity;true positive rate",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>Recall</mtext><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>F</mi><mi>N</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\text{Recall} = \\frac{TP}{TP+FN}</annotation></semantics></math>",
-    "domain": "Machine Learning",
-    "description": "Fraction of actual positives correctly identified",
-    "core": false
-  },
-  {
-    "name": "F1 score",
-    "aliases": "F1",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>F</mi><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⋅</mo><mtext>Precision</mtext><mo>⋅</mo><mtext>Recall</mtext></mrow><mrow><mtext>Precision</mtext><mo>+</mo><mtext>Recall</mtext></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">F_1 = \\frac{2 \\cdot \\text{Precision} \\cdot \\text{Recall}}{\\text{Precision} + \\text{Recall}}</annotation></semantics></math>",
-    "domain": "Machine Learning",
-    "description": "Harmonic mean of precision and recall",
+    "name": "inverse Fourier transform",
+    "aliases": "inverse F transform",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>π</mi></mrow></mfrac><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant=\"normal\">∞</mi></mrow><mi mathvariant=\"normal\">∞</mi></msubsup><mover accent=\"true\"><mi>f</mi><mo>^</mo></mover><mo stretchy=\"false\">(</mo><mi>ω</mi><mo stretchy=\"false\">)</mo><msup><mi>e</mi><mrow><mi>i</mi><mi>ω</mi><mi>t</mi></mrow></msup><mtext> </mtext><mi>d</mi><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">f(t) = \\frac{1}{2\\pi}\\int_{-\\infty}^{\\infty} \\hat{f}(\\omega)e^{i\\omega t}\\,d\\omega</annotation></semantics></math>",
+    "domain": "Calculus & Analysis",
+    "description": "Inverse Fourier transform",
     "core": false
   },
   {
     "name": "separation of variables",
     "aliases": "separable ODE",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>g</mi><mo stretchy=\"false\">(</mo><mi>y</mi><mo stretchy=\"false\">)</mo></mrow></mfrac><mo>=</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{dy}{g(y)} = f(x)\\,dx</annotation></semantics></math>",
-    "domain": "Differential Equations",
+    "domain": "Calculus & Analysis",
     "description": "Separation of variables technique for solving ODEs",
-    "core": true
+    "core": false
   },
   {
     "name": "integrating factor",
     "aliases": "ODE integrating factor",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>μ</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msup><mi>e</mi><mrow><mo>∫</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">\\mu(x) = e^{\\int P(x)\\,dx}</annotation></semantics></math>",
-    "domain": "Differential Equations",
+    "domain": "Calculus & Analysis",
     "description": "Integrating factor for solving first-order linear ODEs",
-    "core": true
-  },
-  {
-    "name": "exponential growth decay solution",
-    "aliases": "ODE exponential solution",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>C</mi><msup><mi>e</mi><mrow><mi>k</mi><mi>t</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">y = Ce^{kt}</annotation></semantics></math>",
-    "domain": "Differential Equations",
-    "description": "General solution to dy/dt = ky",
-    "core": true
-  },
-  {
-    "name": "mole mass relationship",
-    "aliases": "n equals m over M",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>n</mi><mo>=</mo><mfrac><mi>m</mi><mi>M</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">n = \\frac{m}{M}</annotation></semantics></math>",
-    "domain": "Chemistry - Stoichiometry",
-    "description": "Moles equals mass divided by molar mass M",
     "core": false
   },
   {
-    "name": "number of particles",
-    "aliases": "N equals n times NA",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>N</mi><mo>=</mo><mi>n</mi><mo>×</mo><msub><mi>N</mi><mi>A</mi></msub></mrow><annotation encoding=\"application/x-tex\">N = n \\times N_A</annotation></semantics></math>",
-    "domain": "Chemistry - Stoichiometry",
-    "description": "Number of particles from moles and Avogadro's number",
+    "name": "dot product",
+    "aliases": "scalar product",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"bold\">a</mi><mo>⋅</mo><mi mathvariant=\"bold\">b</mi><mo>=</mo><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"bold\">b</mi><mi mathvariant=\"normal\">∣</mi><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{a} \\cdot \\mathbf{b} = |\\mathbf{a}||\\mathbf{b}|\\cos\\theta</annotation></semantics></math>",
+    "domain": "Linear Algebra & Abstract Algebra",
+    "description": "Dot product expressed in terms of magnitudes and angle",
     "core": false
   },
   {
-    "name": "percent composition",
-    "aliases": "mass percent",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>w</mi><mo>=</mo><mfrac><msub><mi>m</mi><mtext>element</mtext></msub><msub><mi>m</mi><mtext>compound</mtext></msub></mfrac><mo>×</mo><mn>100</mn><mi mathvariant=\"normal\">%</mi></mrow><annotation encoding=\"application/x-tex\">w = \\frac{m_{\\text{element}}}{m_{\\text{compound}}} \\times 100\\%</annotation></semantics></math>",
-    "domain": "Chemistry - Stoichiometry",
-    "description": "Mass percent of an element in a compound",
+    "name": "determinant of a 2x2 matrix",
+    "aliases": "det two by two",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>det</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mtable rowspacing=\"0.16em\" columnalign=\"center center\" columnspacing=\"1em\"><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi>a</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi>b</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi>c</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi>d</mi></mstyle></mtd></mtr></mtable><mo fence=\"true\">)</mo></mrow><mo>=</mo><mi>a</mi><mi>d</mi><mo>−</mo><mi>b</mi><mi>c</mi></mrow><annotation encoding=\"application/x-tex\">\\det \\begin{pmatrix} a &amp; b \\\\ c &amp; d \\end{pmatrix} = ad - bc</annotation></semantics></math>",
+    "domain": "Linear Algebra & Abstract Algebra",
+    "description": "Determinant of a 2x2 matrix",
     "core": false
   },
   {
-    "name": "molarity",
-    "aliases": "moles per liter",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mo>=</mo><mfrac><mi>n</mi><mi>V</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">M = \\frac{n}{V}</annotation></semantics></math>",
-    "domain": "Chemistry - Solutions",
-    "description": "Molarity: moles of solute per liter of solution",
+    "name": "eigenvalue equation",
+    "aliases": "eigenvector equation",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mi mathvariant=\"bold\">v</mi><mo>=</mo><mi>λ</mi><mi mathvariant=\"bold\">v</mi></mrow><annotation encoding=\"application/x-tex\">A\\mathbf{v} = \\lambda\\mathbf{v}</annotation></semantics></math>",
+    "domain": "Linear Algebra & Abstract Algebra",
+    "description": "Eigenvalue equation for matrix A",
     "core": false
   },
   {
-    "name": "dilution formula",
-    "aliases": "M1V1 equals M2V2",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>M</mi><mn>1</mn></msub><msub><mi>V</mi><mn>1</mn></msub><mo>=</mo><msub><mi>M</mi><mn>2</mn></msub><msub><mi>V</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">M_1 V_1 = M_2 V_2</annotation></semantics></math>",
-    "domain": "Chemistry - Solutions",
-    "description": "Dilution relationship between initial and final concentration and volume",
+    "name": "characteristic polynomial",
+    "aliases": "eigenvalue characteristic equation",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>det</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>λ</mi><mi>I</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">\\det(A - \\lambda I) = 0</annotation></semantics></math>",
+    "domain": "Linear Algebra & Abstract Algebra",
+    "description": "Characteristic polynomial used to find eigenvalues",
     "core": false
   },
   {
-    "name": "molality",
-    "aliases": "moles per kilogram solvent",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>m</mi><mo>=</mo><mfrac><msub><mi>n</mi><mtext>solute</mtext></msub><msub><mi>m</mi><mtext>solvent</mtext></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">m = \\frac{n_{\\text{solute}}}{m_{\\text{solvent}}}</annotation></semantics></math>",
-    "domain": "Chemistry - Solutions",
-    "description": "Molality: moles of solute per kilogram of solvent",
+    "name": "vector projection",
+    "aliases": "proj of u onto v",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mtext>proj</mtext><mi mathvariant=\"bold\">v</mi></msub><mi mathvariant=\"bold\">u</mi><mo>=</mo><mfrac><mrow><mi mathvariant=\"bold\">u</mi><mo>⋅</mo><mi mathvariant=\"bold\">v</mi></mrow><mrow><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"bold\">v</mi><msup><mi mathvariant=\"normal\">∣</mi><mn>2</mn></msup></mrow></mfrac><mi mathvariant=\"bold\">v</mi></mrow><annotation encoding=\"application/x-tex\">\\text{proj}_{\\mathbf{v}}\\mathbf{u} = \\frac{\\mathbf{u}\\cdot\\mathbf{v}}{|\\mathbf{v}|^2}\\mathbf{v}</annotation></semantics></math>",
+    "domain": "Linear Algebra & Abstract Algebra",
+    "description": "Projection of vector u onto vector v",
     "core": false
   },
   {
-    "name": "Raoult's law",
-    "aliases": "vapor pressure lowering",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo>=</mo><msub><mi>X</mi><mtext>solvent</mtext></msub><msup><mi>P</mi><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup></mrow><annotation encoding=\"application/x-tex\">P = X_{\\text{solvent}} P^{\\circ}</annotation></semantics></math>",
-    "domain": "Chemistry - Solutions",
-    "description": "Vapor pressure of solution equals mole fraction times pure vapor pressure",
+    "name": "cross product magnitude",
+    "aliases": "magnitude of a cross b",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"bold\">a</mi><mo>×</mo><mi mathvariant=\"bold\">b</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"bold\">b</mi><mi mathvariant=\"normal\">∣</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">|\\mathbf{a}\\times\\mathbf{b}| = |\\mathbf{a}||\\mathbf{b}|\\sin\\theta</annotation></semantics></math>",
+    "domain": "Linear Algebra & Abstract Algebra",
+    "description": "Magnitude of the cross product",
     "core": false
   },
   {
-    "name": "boiling point elevation",
-    "aliases": "delta Tb",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><msub><mi>T</mi><mi>b</mi></msub><mo>=</mo><mi>i</mi><msub><mi>K</mi><mi>b</mi></msub><mi>m</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta T_b = i K_b m</annotation></semantics></math>",
-    "domain": "Chemistry - Solutions",
-    "description": "Elevation of boiling point by a solute",
+    "name": "cross product components",
+    "aliases": "a cross b formula",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"bold\">a</mi><mo>×</mo><mi mathvariant=\"bold\">b</mi><mo>=</mo><mrow><mo fence=\"true\">∣</mo><mtable rowspacing=\"0.16em\" columnalign=\"center center center\" columnspacing=\"1em\"><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"bold\">i</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"bold\">j</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"bold\">k</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><msub><mi>a</mi><mn>1</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><msub><mi>a</mi><mn>2</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><msub><mi>a</mi><mn>3</mn></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><msub><mi>b</mi><mn>1</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><msub><mi>b</mi><mn>2</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><msub><mi>b</mi><mn>3</mn></msub></mstyle></mtd></mtr></mtable><mo fence=\"true\">∣</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\mathbf{a}\\times\\mathbf{b} = \\begin{vmatrix} \\mathbf{i} &amp; \\mathbf{j} &amp; \\mathbf{k} \\\\ a_1 &amp; a_2 &amp; a_3 \\\\ b_1 &amp; b_2 &amp; b_3 \\end{vmatrix}</annotation></semantics></math>",
+    "domain": "Linear Algebra & Abstract Algebra",
+    "description": "Cross product in component form via determinant",
     "core": false
   },
   {
-    "name": "freezing point depression",
-    "aliases": "delta Tf",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><msub><mi>T</mi><mi>f</mi></msub><mo>=</mo><mi>i</mi><msub><mi>K</mi><mi>f</mi></msub><mi>m</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta T_f = i K_f m</annotation></semantics></math>",
-    "domain": "Chemistry - Solutions",
-    "description": "Depression of freezing point by a solute",
-    "core": false
-  },
-  {
-    "name": "osmotic pressure",
-    "aliases": "pi equals iMRT",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>π</mi><mo>=</mo><mi>i</mi><mi>M</mi><mi>R</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">\\pi = iMRT</annotation></semantics></math>",
-    "domain": "Chemistry - Solutions",
-    "description": "Osmotic pressure of a solution",
-    "core": false
-  },
-  {
-    "name": "Boyle's law",
-    "aliases": "P1V1 equals P2V2",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>P</mi><mn>1</mn></msub><msub><mi>V</mi><mn>1</mn></msub><mo>=</mo><msub><mi>P</mi><mn>2</mn></msub><msub><mi>V</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">P_1 V_1 = P_2 V_2</annotation></semantics></math>",
-    "domain": "Chemistry - Gas Laws",
-    "description": "Inverse relationship between pressure and volume at constant T",
-    "core": false
-  },
-  {
-    "name": "Charles's law",
-    "aliases": "V1 over T1",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><msub><mi>V</mi><mn>1</mn></msub><msub><mi>T</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>V</mi><mn>2</mn></msub><msub><mi>T</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{V_1}{T_1} = \\frac{V_2}{T_2}</annotation></semantics></math>",
-    "domain": "Chemistry - Gas Laws",
-    "description": "Direct relationship between volume and temperature at constant P",
-    "core": false
-  },
-  {
-    "name": "Gay-Lussac's law",
-    "aliases": "P1 over T1",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><msub><mi>P</mi><mn>1</mn></msub><msub><mi>T</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>P</mi><mn>2</mn></msub><msub><mi>T</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{P_1}{T_1} = \\frac{P_2}{T_2}</annotation></semantics></math>",
-    "domain": "Chemistry - Gas Laws",
-    "description": "Direct relationship between pressure and temperature at constant V",
-    "core": false
-  },
-  {
-    "name": "combined gas law",
-    "aliases": "combined gas",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><msub><mi>P</mi><mn>1</mn></msub><msub><mi>V</mi><mn>1</mn></msub></mrow><msub><mi>T</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><mrow><msub><mi>P</mi><mn>2</mn></msub><msub><mi>V</mi><mn>2</mn></msub></mrow><msub><mi>T</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{P_1 V_1}{T_1} = \\frac{P_2 V_2}{T_2}</annotation></semantics></math>",
-    "domain": "Chemistry - Gas Laws",
-    "description": "Combined relationship of pressure volume and temperature",
-    "core": false
-  },
-  {
-    "name": "Avogadro's law",
-    "aliases": "V1 over n1",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><msub><mi>V</mi><mn>1</mn></msub><msub><mi>n</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>V</mi><mn>2</mn></msub><msub><mi>n</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{V_1}{n_1} = \\frac{V_2}{n_2}</annotation></semantics></math>",
-    "domain": "Chemistry - Gas Laws",
-    "description": "Volume is proportional to moles at constant T and P",
-    "core": false
-  },
-  {
-    "name": "Dalton's law of partial pressures",
-    "aliases": "total pressure",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>P</mi><mtext>total</mtext></msub><mo>=</mo><msub><mi>P</mi><mn>1</mn></msub><mo>+</mo><msub><mi>P</mi><mn>2</mn></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>P</mi><mi>n</mi></msub></mrow><annotation encoding=\"application/x-tex\">P_{\\text{total}} = P_1 + P_2 + \\cdots + P_n</annotation></semantics></math>",
-    "domain": "Chemistry - Gas Laws",
-    "description": "Total pressure equals sum of partial pressures of each gas",
-    "core": false
-  },
-  {
-    "name": "Graham's law of effusion",
-    "aliases": "rate of effusion",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><msub><mi>r</mi><mn>1</mn></msub><msub><mi>r</mi><mn>2</mn></msub></mfrac><mo>=</mo><msqrt><mfrac><msub><mi>M</mi><mn>2</mn></msub><msub><mi>M</mi><mn>1</mn></msub></mfrac></msqrt></mrow><annotation encoding=\"application/x-tex\">\\frac{r_1}{r_2} = \\sqrt{\\frac{M_2}{M_1}}</annotation></semantics></math>",
-    "domain": "Chemistry - Gas Laws",
-    "description": "Effusion rate inversely proportional to square root of molar mass",
-    "core": false
-  },
-  {
-    "name": "van der Waals equation",
-    "aliases": "real gas equation",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mrow><mo fence=\"true\">(</mo><mi>P</mi><mo>+</mo><mfrac><mrow><mi>a</mi><msup><mi>n</mi><mn>2</mn></msup></mrow><msup><mi>V</mi><mn>2</mn></msup></mfrac><mo fence=\"true\">)</mo></mrow><mo stretchy=\"false\">(</mo><mi>V</mi><mo>−</mo><mi>n</mi><mi>b</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>n</mi><mi>R</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">\\left(P + \\frac{an^2}{V^2}\\right)(V - nb) = nRT</annotation></semantics></math>",
-    "domain": "Chemistry - Gas Laws",
-    "description": "Equation of state for real gases with intermolecular corrections",
-    "core": false
-  },
-  {
-    "name": "enthalpy of reaction",
-    "aliases": "delta H reaction",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><msub><mi>H</mi><mtext>rxn</mtext></msub><mo>=</mo><mo>∑</mo><mi mathvariant=\"normal\">Δ</mi><msub><mi>H</mi><mi>f</mi></msub><mo stretchy=\"false\">(</mo><mtext>products</mtext><mo stretchy=\"false\">)</mo><mo>−</mo><mo>∑</mo><mi mathvariant=\"normal\">Δ</mi><msub><mi>H</mi><mi>f</mi></msub><mo stretchy=\"false\">(</mo><mtext>reactants</mtext><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\Delta H_{\\text{rxn}} = \\sum \\Delta H_f(\\text{products}) - \\sum \\Delta H_f(\\text{reactants})</annotation></semantics></math>",
-    "domain": "Chemistry - Thermochemistry",
-    "description": "Standard enthalpy of reaction from heats of formation",
-    "core": false
-  },
-  {
-    "name": "Gibbs free energy",
-    "aliases": "delta G",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>G</mi><mo>=</mo><mi mathvariant=\"normal\">Δ</mi><mi>H</mi><mo>−</mo><mi>T</mi><mi mathvariant=\"normal\">Δ</mi><mi>S</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta G = \\Delta H - T\\Delta S</annotation></semantics></math>",
-    "domain": "Chemistry - Thermochemistry",
-    "description": "Gibbs free energy determines spontaneity of a reaction",
-    "core": false
-  },
-  {
-    "name": "Gibbs free energy and equilibrium",
-    "aliases": "delta G naught and K",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><msup><mi>G</mi><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup><mo>=</mo><mo>−</mo><mi>R</mi><mi>T</mi><mi>ln</mi><mo>⁡</mo><mi>K</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta G^{\\circ} = -RT\\ln K</annotation></semantics></math>",
-    "domain": "Chemistry - Thermochemistry",
-    "description": "Relationship between standard free energy and equilibrium constant",
-    "core": false
-  },
-  {
-    "name": "entropy change",
-    "aliases": "delta S",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>S</mi><mo>=</mo><mfrac><msub><mi>q</mi><mtext>rev</mtext></msub><mi>T</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\Delta S = \\frac{q_{\\text{rev}}}{T}</annotation></semantics></math>",
-    "domain": "Chemistry - Thermochemistry",
-    "description": "Entropy change for a reversible process at temperature T",
-    "core": false
-  },
-  {
-    "name": "equilibrium constant expression",
-    "aliases": "Keq",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>K</mi><mo>=</mo><mfrac><mrow><mo stretchy=\"false\">[</mo><mtext>products</mtext><msup><mo stretchy=\"false\">]</mo><mtext>coefficients</mtext></msup></mrow><mrow><mo stretchy=\"false\">[</mo><mtext>reactants</mtext><msup><mo stretchy=\"false\">]</mo><mtext>coefficients</mtext></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">K = \\frac{[\\text{products}]^{\\text{coefficients}}}{[\\text{reactants}]^{\\text{coefficients}}}</annotation></semantics></math>",
-    "domain": "Chemistry - Equilibrium",
-    "description": "Equilibrium constant as ratio of product to reactant concentrations",
-    "core": false
-  },
-  {
-    "name": "Kp Kc relationship",
-    "aliases": "Kp equals Kc RT delta n",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>K</mi><mi>p</mi></msub><mo>=</mo><msub><mi>K</mi><mi>c</mi></msub><mo stretchy=\"false\">(</mo><mi>R</mi><mi>T</mi><msup><mo stretchy=\"false\">)</mo><mrow><mi mathvariant=\"normal\">Δ</mi><mi>n</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">K_p = K_c (RT)^{\\Delta n}</annotation></semantics></math>",
-    "domain": "Chemistry - Equilibrium",
-    "description": "Relationship between Kp and Kc where delta n is moles gas change",
-    "core": false
-  },
-  {
-    "name": "reaction quotient",
-    "aliases": "Q compared to K",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>Q</mi><mo>=</mo><mfrac><mrow><mo stretchy=\"false\">[</mo><mtext>products</mtext><mo stretchy=\"false\">]</mo></mrow><mrow><mo stretchy=\"false\">[</mo><mtext>reactants</mtext><mo stretchy=\"false\">]</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">Q = \\frac{[\\text{products}]}{[\\text{reactants}]}</annotation></semantics></math>",
-    "domain": "Chemistry - Equilibrium",
-    "description": "Reaction quotient used to predict direction of reaction",
-    "core": false
-  },
-  {
-    "name": "pH definition",
-    "aliases": "pH equals negative log H",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>pH</mtext><mo>=</mo><mo>−</mo><mi>log</mi><mo>⁡</mo><mo stretchy=\"false\">[</mo><msup><mtext>H</mtext><mo>+</mo></msup><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\text{pH} = -\\log[\\text{H}^+]</annotation></semantics></math>",
-    "domain": "Chemistry - Acids and Bases",
-    "description": "pH as negative log of hydrogen ion concentration",
-    "core": false
-  },
-  {
-    "name": "pOH definition",
-    "aliases": "pOH equals negative log OH",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>pOH</mtext><mo>=</mo><mo>−</mo><mi>log</mi><mo>⁡</mo><mo stretchy=\"false\">[</mo><msup><mtext>OH</mtext><mo>−</mo></msup><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\text{pOH} = -\\log[\\text{OH}^-]</annotation></semantics></math>",
-    "domain": "Chemistry - Acids and Bases",
-    "description": "pOH as negative log of hydroxide ion concentration",
-    "core": false
-  },
-  {
-    "name": "pH plus pOH",
-    "aliases": "pH pOH equals 14",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>pH</mtext><mo>+</mo><mtext>pOH</mtext><mo>=</mo><mn>14</mn></mrow><annotation encoding=\"application/x-tex\">\\text{pH} + \\text{pOH} = 14</annotation></semantics></math>",
-    "domain": "Chemistry - Acids and Bases",
-    "description": "Relationship between pH and pOH in aqueous solution at 25°C",
-    "core": false
-  },
-  {
-    "name": "water dissociation constant",
-    "aliases": "Kw",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>K</mi><mi>w</mi></msub><mo>=</mo><mo stretchy=\"false\">[</mo><msup><mtext>H</mtext><mo>+</mo></msup><mo stretchy=\"false\">]</mo><mo stretchy=\"false\">[</mo><msup><mtext>OH</mtext><mo>−</mo></msup><mo stretchy=\"false\">]</mo><mo>=</mo><mn>1.0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>14</mn></mrow></msup></mrow><annotation encoding=\"application/x-tex\">K_w = [\\text{H}^+][\\text{OH}^-] = 1.0 \\times 10^{-14}</annotation></semantics></math>",
-    "domain": "Chemistry - Acids and Bases",
-    "description": "Ion product of water at 25°C",
-    "core": false
-  },
-  {
-    "name": "Henderson-Hasselbalch equation",
-    "aliases": "pH of buffer",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>pH</mtext><mo>=</mo><mtext>p</mtext><msub><mi>K</mi><mi>a</mi></msub><mo>+</mo><mi>log</mi><mo>⁡</mo><mfrac><mrow><mo stretchy=\"false\">[</mo><msup><mtext>A</mtext><mo>−</mo></msup><mo stretchy=\"false\">]</mo></mrow><mrow><mo stretchy=\"false\">[</mo><mtext>HA</mtext><mo stretchy=\"false\">]</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\text{pH} = \\text{p}K_a + \\log\\frac{[\\text{A}^-]}{[\\text{HA}]}</annotation></semantics></math>",
-    "domain": "Chemistry - Acids and Bases",
-    "description": "pH of a buffer solution from pKa and concentration ratio",
-    "core": false
-  },
-  {
-    "name": "Ka times Kb equals Kw",
-    "aliases": "conjugate acid base pair",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>K</mi><mi>a</mi></msub><mo>×</mo><msub><mi>K</mi><mi>b</mi></msub><mo>=</mo><msub><mi>K</mi><mi>w</mi></msub></mrow><annotation encoding=\"application/x-tex\">K_a \\times K_b = K_w</annotation></semantics></math>",
-    "domain": "Chemistry - Acids and Bases",
-    "description": "Product of conjugate acid and base dissociation constants equals Kw",
-    "core": false
-  },
-  {
-    "name": "standard cell potential",
-    "aliases": "E cell",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mi>E</mi><mtext>cell</mtext><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msubsup><mo>=</mo><msubsup><mi>E</mi><mtext>cathode</mtext><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msubsup><mo>−</mo><msubsup><mi>E</mi><mtext>anode</mtext><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msubsup></mrow><annotation encoding=\"application/x-tex\">E^{\\circ}_{\\text{cell}} = E^{\\circ}_{\\text{cathode}} - E^{\\circ}_{\\text{anode}}</annotation></semantics></math>",
-    "domain": "Chemistry - Electrochemistry",
-    "description": "Standard cell potential from half-reaction potentials",
-    "core": false
-  },
-  {
-    "name": "Nernst equation",
-    "aliases": "E cell at non-standard",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo>=</mo><msup><mi>E</mi><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup><mo>−</mo><mfrac><mrow><mi>R</mi><mi>T</mi></mrow><mrow><mi>n</mi><mi>F</mi></mrow></mfrac><mi>ln</mi><mo>⁡</mo><mi>Q</mi></mrow><annotation encoding=\"application/x-tex\">E = E^{\\circ} - \\frac{RT}{nF}\\ln Q</annotation></semantics></math>",
-    "domain": "Chemistry - Electrochemistry",
-    "description": "Cell potential at non-standard conditions",
-    "core": false
-  },
-  {
-    "name": "Gibbs and cell potential",
-    "aliases": "delta G and E cell",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><msup><mi>G</mi><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup><mo>=</mo><mo>−</mo><mi>n</mi><mi>F</mi><msup><mi>E</mi><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup></mrow><annotation encoding=\"application/x-tex\">\\Delta G^{\\circ} = -nFE^{\\circ}</annotation></semantics></math>",
-    "domain": "Chemistry - Electrochemistry",
-    "description": "Relationship between standard free energy and cell potential",
-    "core": false
-  },
-  {
-    "name": "Faraday electrolysis",
-    "aliases": "mass deposited",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><mi>M</mi><mi>I</mi><mi>t</mi></mrow><mrow><mi>n</mi><mi>F</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">m = \\frac{MIt}{nF}</annotation></semantics></math>",
-    "domain": "Chemistry - Electrochemistry",
-    "description": "Mass deposited in electrolysis from current I and time t",
-    "core": false
-  },
-  {
-    "name": "rate law",
-    "aliases": "reaction rate",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>rate</mtext><mo>=</mo><mi>k</mi><mo stretchy=\"false\">[</mo><mi>A</mi><msup><mo stretchy=\"false\">]</mo><mi>m</mi></msup><mo stretchy=\"false\">[</mo><mi>B</mi><msup><mo stretchy=\"false\">]</mo><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">\\text{rate} = k[A]^m[B]^n</annotation></semantics></math>",
-    "domain": "Chemistry - Kinetics",
-    "description": "Rate law with rate constant k and reaction orders m and n",
-    "core": false
-  },
-  {
-    "name": "first order integrated rate law",
-    "aliases": "ln A equals ln A0 minus kt",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ln</mi><mo>⁡</mo><mo stretchy=\"false\">[</mo><mi>A</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mi>ln</mi><mo>⁡</mo><mo stretchy=\"false\">[</mo><mi>A</mi><msub><mo stretchy=\"false\">]</mo><mn>0</mn></msub><mo>−</mo><mi>k</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">\\ln[A] = \\ln[A]_0 - kt</annotation></semantics></math>",
-    "domain": "Chemistry - Kinetics",
-    "description": "Integrated rate law for a first-order reaction",
-    "core": false
-  },
-  {
-    "name": "second order integrated rate law",
-    "aliases": "1 over A equals 1 over A0 plus kt",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mn>1</mn><mrow><mo stretchy=\"false\">[</mo><mi>A</mi><mo stretchy=\"false\">]</mo></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mo stretchy=\"false\">[</mo><mi>A</mi><msub><mo stretchy=\"false\">]</mo><mn>0</mn></msub></mrow></mfrac><mo>+</mo><mi>k</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{1}{[A]} = \\frac{1}{[A]_0} + kt</annotation></semantics></math>",
-    "domain": "Chemistry - Kinetics",
-    "description": "Integrated rate law for a second-order reaction",
-    "core": false
-  },
-  {
-    "name": "half-life first order",
-    "aliases": "t half first order",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>t</mi><mrow><mn>1</mn><mi mathvariant=\"normal\">/</mi><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mn>2</mn></mrow><mi>k</mi></mfrac><mo>=</mo><mfrac><mn>0.693</mn><mi>k</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">t_{1/2} = \\frac{\\ln 2}{k} = \\frac{0.693}{k}</annotation></semantics></math>",
-    "domain": "Chemistry - Kinetics",
-    "description": "Half-life of a first-order reaction",
-    "core": false
-  },
-  {
-    "name": "Arrhenius equation",
-    "aliases": "k equals A e to the negative Ea over RT",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>k</mi><mo>=</mo><mi>A</mi><msup><mi>e</mi><mrow><mo>−</mo><msub><mi>E</mi><mi>a</mi></msub><mi mathvariant=\"normal\">/</mi><mi>R</mi><mi>T</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">k = Ae^{-E_a/RT}</annotation></semantics></math>",
-    "domain": "Chemistry - Kinetics",
-    "description": "Rate constant dependence on activation energy and temperature",
-    "core": false
-  },
-  {
-    "name": "Rydberg formula",
-    "aliases": "hydrogen spectral lines",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mn>1</mn><mi>λ</mi></mfrac><mo>=</mo><msub><mi>R</mi><mi>H</mi></msub><mrow><mo fence=\"true\">(</mo><mfrac><mn>1</mn><msubsup><mi>n</mi><mn>1</mn><mn>2</mn></msubsup></mfrac><mo>−</mo><mfrac><mn>1</mn><msubsup><mi>n</mi><mn>2</mn><mn>2</mn></msubsup></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\frac{1}{\\lambda} = R_H\\left(\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right)</annotation></semantics></math>",
-    "domain": "Chemistry - Atomic Structure",
-    "description": "Wavelengths of hydrogen spectral lines",
-    "core": false
-  },
-  {
-    "name": "photon energy",
-    "aliases": "E equals hf",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo>=</mo><mi>h</mi><mi>f</mi><mo>=</mo><mfrac><mrow><mi>h</mi><mi>c</mi></mrow><mi>λ</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">E = hf = \\frac{hc}{\\lambda}</annotation></semantics></math>",
-    "domain": "Chemistry - Atomic Structure",
-    "description": "Energy of a photon in terms of frequency and wavelength",
-    "core": false
-  },
-  {
-    "name": "Bohr model energy levels",
-    "aliases": "energy of nth level",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>=</mo><mo>−</mo><mfrac><mrow><mn>13.6</mn><mtext> </mtext><mtext>eV</mtext></mrow><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">E_n = -\\frac{13.6\\,\\text{eV}}{n^2}</annotation></semantics></math>",
-    "domain": "Chemistry - Atomic Structure",
-    "description": "Energy of the nth electron shell in the Bohr model of hydrogen",
-    "core": false
-  },
-  {
-    "name": "Newton's method",
-    "aliases": "Newton-Raphson method",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mfrac><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo></mrow><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">x_{n+1} = x_n - \\frac{f(x_n)}{f&#x27;(x_n)}</annotation></semantics></math>",
-    "domain": "Numerical Methods",
-    "description": "Iterative root-finding using tangent line approximation",
-    "core": false
-  },
-  {
-    "name": "trapezoidal rule",
-    "aliases": "trapezoid integration rule",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi><mo>≈</mo><mfrac><mi>h</mi><mn>2</mn></mfrac><mo stretchy=\"false\">[</mo><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mn>2</mn><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mo>⋯</mo><mo>+</mo><mn>2</mn><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\int_a^b f(x)\\,dx \\approx \\frac{h}{2}[f(x_0) + 2f(x_1) + \\cdots + 2f(x_{n-1}) + f(x_n)]</annotation></semantics></math>",
-    "domain": "Numerical Methods",
-    "description": "Numerical integration approximation with n equal subintervals of width h",
-    "core": false
-  },
-  {
-    "name": "Simpson's rule",
-    "aliases": "Simpson one-third rule",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi><mo>≈</mo><mfrac><mi>h</mi><mn>3</mn></mfrac><mo stretchy=\"false\">[</mo><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mn>4</mn><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mn>2</mn><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mo>⋯</mo><mo>+</mo><mn>4</mn><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\int_a^b f(x)\\,dx \\approx \\frac{h}{3}[f(x_0) + 4f(x_1) + 2f(x_2) + \\cdots + 4f(x_{n-1}) + f(x_n)]</annotation></semantics></math>",
-    "domain": "Numerical Methods",
-    "description": "Numerical integration using parabolic arcs; n must be even",
-    "core": false
-  },
-  {
-    "name": "Euler's method",
-    "aliases": "Euler ODE method",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>y</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>y</mi><mi>n</mi></msub><mo>+</mo><mi>h</mi><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo separator=\"true\">,</mo><msub><mi>y</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">y_{n+1} = y_n + h f(x_n, y_n)</annotation></semantics></math>",
-    "domain": "Numerical Methods",
-    "description": "First-order numerical solver for ordinary differential equations with step size h",
-    "core": false
-  },
-  {
-    "name": "forward difference",
-    "aliases": "forward finite difference",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>≈</mo><mfrac><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>+</mo><mi>h</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><mi>h</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">f&#x27;(x) \\approx \\frac{f(x+h) - f(x)}{h}</annotation></semantics></math>",
-    "domain": "Numerical Methods",
-    "description": "First-order approximation of a derivative using a forward step of size h",
-    "core": false
-  },
-  {
-    "name": "central difference",
-    "aliases": "centered finite difference",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>≈</mo><mfrac><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>+</mo><mi>h</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>−</mo><mi>h</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mn>2</mn><mi>h</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">f&#x27;(x) \\approx \\frac{f(x+h) - f(x-h)}{2h}</annotation></semantics></math>",
-    "domain": "Numerical Methods",
-    "description": "Second-order approximation of a derivative using a symmetric step",
-    "core": false
-  },
-  {
-    "name": "Runge-Kutta 4",
-    "aliases": "RK4 method",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>y</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>y</mi><mi>n</mi></msub><mo>+</mo><mfrac><mi>h</mi><mn>6</mn></mfrac><mo stretchy=\"false\">(</mo><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><mn>2</mn><msub><mi>k</mi><mn>2</mn></msub><mo>+</mo><mn>2</mn><msub><mi>k</mi><mn>3</mn></msub><mo>+</mo><msub><mi>k</mi><mn>4</mn></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">y_{n+1} = y_n + \\frac{h}{6}(k_1 + 2k_2 + 2k_3 + k_4)</annotation></semantics></math>",
-    "domain": "Numerical Methods",
-    "description": "Fourth-order numerical ODE integrator update step using weighted slope estimates",
+    "name": "Cauchy-Schwarz inequality",
+    "aliases": "Cauchy Schwarz",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"bold\">a</mi><mo>⋅</mo><mi mathvariant=\"bold\">b</mi><mi mathvariant=\"normal\">∣</mi><mo>≤</mo><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"bold\">b</mi><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">|\\mathbf{a}\\cdot\\mathbf{b}| \\leq |\\mathbf{a}||\\mathbf{b}|</annotation></semantics></math>",
+    "domain": "Linear Algebra & Abstract Algebra",
+    "description": "Cauchy-Schwarz inequality for vectors",
     "core": false
   },
   {
     "name": "Lagrange's theorem",
     "aliases": "group index theorem",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>G</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mi mathvariant=\"normal\">∣</mi><mi>H</mi><mi mathvariant=\"normal\">∣</mi><mo>⋅</mo><mo stretchy=\"false\">[</mo><mi>G</mi><mo>:</mo><mi>H</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">|G| = |H| \\cdot [G:H]</annotation></semantics></math>",
-    "domain": "Abstract Algebra",
+    "domain": "Linear Algebra & Abstract Algebra",
     "description": "The order of subgroup H times its index equals the order of group G",
     "core": false
   },
@@ -3253,7 +1421,7 @@ export const mathEquations = [
     "name": "group homomorphism",
     "aliases": "homomorphism property",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ϕ</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mi>b</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>ϕ</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo stretchy=\"false\">)</mo><mi>ϕ</mi><mo stretchy=\"false\">(</mo><mi>b</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\phi(ab) = \\phi(a)\\phi(b)</annotation></semantics></math>",
-    "domain": "Abstract Algebra",
+    "domain": "Linear Algebra & Abstract Algebra",
     "description": "A map between groups that preserves the group operation",
     "core": false
   },
@@ -3261,7 +1429,7 @@ export const mathEquations = [
     "name": "first isomorphism theorem",
     "aliases": "fundamental homomorphism theorem",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>G</mi><mi mathvariant=\"normal\">/</mi><mi>ker</mi><mo>⁡</mo><mi>ϕ</mi><mo>≅</mo><mtext>Im</mtext><mo stretchy=\"false\">(</mo><mi>ϕ</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">G / \\ker\\phi \\cong \\text{Im}(\\phi)</annotation></semantics></math>",
-    "domain": "Abstract Algebra",
+    "domain": "Linear Algebra & Abstract Algebra",
     "description": "The quotient of G by the kernel of a homomorphism is isomorphic to its image",
     "core": false
   },
@@ -3269,7 +1437,7 @@ export const mathEquations = [
     "name": "group element order",
     "aliases": "power of group element",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mrow><mi mathvariant=\"normal\">∣</mi><mi>a</mi><mi mathvariant=\"normal\">∣</mi></mrow></msup><mo>=</mo><mi>e</mi></mrow><annotation encoding=\"application/x-tex\">a^{|a|} = e</annotation></semantics></math>",
-    "domain": "Abstract Algebra",
+    "domain": "Linear Algebra & Abstract Algebra",
     "description": "Raising an element to the power of its order returns the group identity",
     "core": false
   },
@@ -3277,7 +1445,7 @@ export const mathEquations = [
     "name": "Lagrange multiplier condition",
     "aliases": "gradient parallelism",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∇</mi><mi>f</mi><mo>=</mo><mi>λ</mi><mi mathvariant=\"normal\">∇</mi><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">\\nabla f = \\lambda \\nabla g</annotation></semantics></math>",
-    "domain": "Optimization",
+    "domain": "Linear Algebra & Abstract Algebra",
     "description": "Necessary condition for a constrained extremum: gradients of objective and constraint are parallel",
     "core": false
   },
@@ -3285,31 +1453,239 @@ export const mathEquations = [
     "name": "Lagrangian function",
     "aliases": "augmented objective",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"script\">L</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>λ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>λ</mi><mi>g</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathcal{L}(x,\\lambda) = f(x) - \\lambda g(x)</annotation></semantics></math>",
-    "domain": "Optimization",
-    "description": "Combines objective f and constraint g with multiplier lambda; stationarity gives optimum",
+    "domain": "Linear Algebra & Abstract Algebra",
+    "description": "Combines objective f and constraint g with multiplier lambda",
     "core": false
   },
   {
     "name": "KKT stationarity condition",
     "aliases": "KKT optimality",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∇</mi><mi>f</mi><mo stretchy=\"false\">(</mo><msup><mi>x</mi><mo>∗</mo></msup><mo stretchy=\"false\">)</mo><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>λ</mi><mi>i</mi></msub><mi mathvariant=\"normal\">∇</mi><msub><mi>g</mi><mi>i</mi></msub><mo stretchy=\"false\">(</mo><msup><mi>x</mi><mo>∗</mo></msup><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\nabla f(x^*) = \\sum_i \\lambda_i \\nabla g_i(x^*)</annotation></semantics></math>",
-    "domain": "Optimization",
+    "domain": "Linear Algebra & Abstract Algebra",
     "description": "Necessary condition for optimality with multiple inequality constraints",
+    "core": false
+  },
+  {
+    "name": "permutation",
+    "aliases": "n permute r",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo separator=\"true\">,</mo><mi>r</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">!</mo></mrow><mrow><mo stretchy=\"false\">(</mo><mi>n</mi><mo>−</mo><mi>r</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">!</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P(n,r) = \\frac{n!}{(n-r)!}</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Number of ordered arrangements of r items from n",
+    "core": false
+  },
+  {
+    "name": "combination",
+    "aliases": "n choose r",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo separator=\"true\">,</mo><mi>r</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">!</mo></mrow><mrow><mi>r</mi><mo stretchy=\"false\">!</mo><mo stretchy=\"false\">(</mo><mi>n</mi><mo>−</mo><mi>r</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">!</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">C(n,r) = \\frac{n!}{r!(n-r)!}</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Number of unordered selections of r items from n",
+    "core": false
+  },
+  {
+    "name": "multinomial coefficient",
+    "aliases": "multinomial",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mi>n</mi><mrow><msub><mi>k</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><msub><mi>k</mi><mn>2</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>k</mi><mi>r</mi></msub></mrow></mfrac><mo fence=\"true\">)</mo></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">!</mo></mrow><mrow><msub><mi>k</mi><mn>1</mn></msub><mo stretchy=\"false\">!</mo><mtext> </mtext><msub><mi>k</mi><mn>2</mn></msub><mo stretchy=\"false\">!</mo><mo>⋯</mo><msub><mi>k</mi><mi>r</mi></msub><mo stretchy=\"false\">!</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\binom{n}{k_1,k_2,\\ldots,k_r} = \\frac{n!}{k_1!\\,k_2!\\cdots k_r!}</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Number of ways to partition n objects into r ordered groups",
+    "core": false
+  },
+  {
+    "name": "stars and bars",
+    "aliases": "combinations with repetition",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mrow><mi>n</mi><mo>+</mo><mi>k</mi><mo>−</mo><mn>1</mn></mrow><mi>k</mi></mfrac><mo fence=\"true\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\binom{n+k-1}{k}</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Number of ways to place n identical items into k distinct bins",
+    "core": false
+  },
+  {
+    "name": "Catalan number",
+    "aliases": "nth Catalan number",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>C</mi><mi>n</mi></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mrow><mn>2</mn><mi>n</mi></mrow><mi>n</mi></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">C_n = \\frac{1}{n+1}\\binom{2n}{n}</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "nth Catalan number counting many combinatorial structures",
+    "core": false
+  },
+  {
+    "name": "derangement",
+    "aliases": "number of derangements",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>D</mi><mi>n</mi></msub><mo>=</mo><mi>n</mi><mo stretchy=\"false\">!</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mfrac><mrow><mo stretchy=\"false\">(</mo><mo>−</mo><mn>1</mn><msup><mo stretchy=\"false\">)</mo><mi>k</mi></msup></mrow><mrow><mi>k</mi><mo stretchy=\"false\">!</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">D_n = n!\\sum_{k=0}^{n}\\frac{(-1)^k}{k!}</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Number of permutations of n elements with no fixed points",
+    "core": false
+  },
+  {
+    "name": "inclusion-exclusion two sets",
+    "aliases": "size of A union B",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>∪</mo><mi>B</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi mathvariant=\"normal\">∣</mi><mi>B</mi><mi mathvariant=\"normal\">∣</mi><mo>−</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>∩</mo><mi>B</mi><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">|A \\cup B| = |A| + |B| - |A \\cap B|</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Inclusion-exclusion principle for two sets",
+    "core": false
+  },
+  {
+    "name": "inclusion-exclusion three sets",
+    "aliases": "size of A union B union C",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>∪</mo><mi>B</mi><mo>∪</mo><mi>C</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi mathvariant=\"normal\">∣</mi><mi>B</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi mathvariant=\"normal\">∣</mi><mi>C</mi><mi mathvariant=\"normal\">∣</mi><mo>−</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>∩</mo><mi>B</mi><mi mathvariant=\"normal\">∣</mi><mo>−</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>∩</mo><mi>C</mi><mi mathvariant=\"normal\">∣</mi><mo>−</mo><mi mathvariant=\"normal\">∣</mi><mi>B</mi><mo>∩</mo><mi>C</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>∩</mo><mi>B</mi><mo>∩</mo><mi>C</mi><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">|A \\cup B \\cup C| = |A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Inclusion-exclusion principle for three sets",
+    "core": false
+  },
+  {
+    "name": "De Morgan's laws (set theory)",
+    "aliases": "complement of union; complement of intersection",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><msup><mo stretchy=\"false\">)</mo><mi>c</mi></msup><mo>=</mo><msup><mi>A</mi><mi>c</mi></msup><mo>∩</mo><msup><mi>B</mi><mi>c</mi></msup><mo separator=\"true\">;</mo><mtext>  </mtext><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><msup><mo stretchy=\"false\">)</mo><mi>c</mi></msup><mo>=</mo><msup><mi>A</mi><mi>c</mi></msup><mo>∪</mo><msup><mi>B</mi><mi>c</mi></msup></mrow><annotation encoding=\"application/x-tex\">(A \\cup B)^c = A^c \\cap B^c;\\; (A \\cap B)^c = A^c \\cup B^c</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "De Morgan's laws for set complements",
+    "core": false
+  },
+  {
+    "name": "power set cardinality",
+    "aliases": "size of power set",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"script\">P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mi mathvariant=\"normal\">∣</mi><mo>=</mo><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">|\\mathcal{P}(A)| = 2^n</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Number of subsets of a set with n elements",
+    "core": false
+  },
+  {
+    "name": "Cartesian product cardinality",
+    "aliases": "size of A cross B",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>×</mo><mi>B</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mi mathvariant=\"normal\">∣</mi><mo>⋅</mo><mi mathvariant=\"normal\">∣</mi><mi>B</mi><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">|A \\times B| = |A| \\cdot |B|</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Number of ordered pairs in a Cartesian product",
+    "core": false
+  },
+  {
+    "name": "De Morgan's laws (logic)",
+    "aliases": "negation of and; negation of or",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">¬</mi><mo stretchy=\"false\">(</mo><mi>p</mi><mo>∧</mo><mi>q</mi><mo stretchy=\"false\">)</mo><mo>≡</mo><mi mathvariant=\"normal\">¬</mi><mi>p</mi><mo>∨</mo><mi mathvariant=\"normal\">¬</mi><mi>q</mi><mo separator=\"true\">;</mo><mtext>  </mtext><mi mathvariant=\"normal\">¬</mi><mo stretchy=\"false\">(</mo><mi>p</mi><mo>∨</mo><mi>q</mi><mo stretchy=\"false\">)</mo><mo>≡</mo><mi mathvariant=\"normal\">¬</mi><mi>p</mi><mo>∧</mo><mi mathvariant=\"normal\">¬</mi><mi>q</mi></mrow><annotation encoding=\"application/x-tex\">\\lnot(p \\land q) \\equiv \\lnot p \\lor \\lnot q;\\; \\lnot(p \\lor q) \\equiv \\lnot p \\land \\lnot q</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "De Morgan's laws for logical conjunction and disjunction",
+    "core": false
+  },
+  {
+    "name": "conditional equivalence",
+    "aliases": "if then as or",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>p</mi><mo>⇒</mo><mi>q</mi><mo>≡</mo><mi mathvariant=\"normal\">¬</mi><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><annotation encoding=\"application/x-tex\">p \\Rightarrow q \\equiv \\lnot p \\lor q</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Conditional expressed as a disjunction",
+    "core": false
+  },
+  {
+    "name": "contrapositive",
+    "aliases": "contrapositive equivalence",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>p</mi><mo>⇒</mo><mi>q</mi><mo>≡</mo><mi mathvariant=\"normal\">¬</mi><mi>q</mi><mo>⇒</mo><mi mathvariant=\"normal\">¬</mi><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">p \\Rightarrow q \\equiv \\lnot q \\Rightarrow \\lnot p</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "A conditional and its contrapositive are logically equivalent",
+    "core": false
+  },
+  {
+    "name": "biconditional equivalence",
+    "aliases": "iff as two conditionals",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>p</mi><mo>⇔</mo><mi>q</mi><mo>≡</mo><mo stretchy=\"false\">(</mo><mi>p</mi><mo>⇒</mo><mi>q</mi><mo stretchy=\"false\">)</mo><mo>∧</mo><mo stretchy=\"false\">(</mo><mi>q</mi><mo>⇒</mo><mi>p</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">p \\Leftrightarrow q \\equiv (p \\Rightarrow q) \\land (q \\Rightarrow p)</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Biconditional expressed as two conditionals",
+    "core": false
+  },
+  {
+    "name": "double negation",
+    "aliases": "not not p",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">¬</mi><mi mathvariant=\"normal\">¬</mi><mi>p</mi><mo>≡</mo><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">\\lnot\\lnot p \\equiv p</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Double negation elimination",
+    "core": false
+  },
+  {
+    "name": "modus ponens",
+    "aliases": "if p then q",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi>p</mi><mspace width=\"1em\"/><mi>p</mi><mo>⇒</mo><mi>q</mi></mrow><mi>q</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{p \\quad p \\Rightarrow q}{q}</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Modus ponens inference rule",
+    "core": false
+  },
+  {
+    "name": "modus tollens",
+    "aliases": "not q then not p",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi mathvariant=\"normal\">¬</mi><mi>q</mi><mspace width=\"1em\"/><mi>p</mi><mo>⇒</mo><mi>q</mi></mrow><mrow><mi mathvariant=\"normal\">¬</mi><mi>p</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{\\lnot q \\quad p \\Rightarrow q}{\\lnot p}</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Modus tollens inference rule",
+    "core": false
+  },
+  {
+    "name": "handshaking lemma",
+    "aliases": "sum of degrees",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munder><mo>∑</mo><mrow><mi>v</mi><mo>∈</mo><mi>V</mi></mrow></munder><mi>deg</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>v</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>2</mn><mi mathvariant=\"normal\">∣</mi><mi>E</mi><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">\\sum_{v \\in V} \\deg(v) = 2|E|</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Sum of all vertex degrees equals twice the number of edges",
+    "core": false
+  },
+  {
+    "name": "Euler's planar graph formula",
+    "aliases": "V minus E plus F equals 2",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>−</mo><mi>E</mi><mo>+</mo><mi>F</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">V - E + F = 2</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Euler's formula for connected planar graphs",
+    "core": false
+  },
+  {
+    "name": "complete graph edges",
+    "aliases": "edges in Kn",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>E</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">|E| = \\frac{n(n-1)}{2}</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Number of edges in a complete graph on n vertices",
+    "core": false
+  },
+  {
+    "name": "Fibonacci recurrence",
+    "aliases": "Fibonacci sequence",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>F</mi><mi>n</mi></msub><mo>=</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msub></mrow><annotation encoding=\"application/x-tex\">F_n = F_{n-1} + F_{n-2}</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Fibonacci recurrence with F_1 = F_2 = 1",
+    "core": false
+  },
+  {
+    "name": "master theorem",
+    "aliases": "divide and conquer recurrence",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>T</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>a</mi><mi>T</mi><mrow><mo fence=\"true\">(</mo><mfrac><mi>n</mi><mi>b</mi></mfrac><mo fence=\"true\">)</mo></mrow><mo>+</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">T(n) = aT\\left(\\frac{n}{b}\\right) + f(n)</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Master theorem for analyzing divide-and-conquer recurrences",
+    "core": false
+  },
+  {
+    "name": "sum of first n integers",
+    "aliases": "triangular number formula",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>k</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sum_{k=1}^{n} k = \\frac{n(n+1)}{2}</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Closed form for the sum of the first n positive integers",
+    "core": false
+  },
+  {
+    "name": "sum of first n squares",
+    "aliases": "sum of squares formula",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msup><mi>k</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><mn>6</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sum_{k=1}^{n} k^2 = \\frac{n(n+1)(2n+1)}{6}</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Closed form for the sum of squares of the first n integers",
+    "core": false
+  },
+  {
+    "name": "sum of first n cubes",
+    "aliases": "sum of cubes formula",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msup><mi>k</mi><mn>3</mn></msup><mo>=</mo><msup><mrow><mo fence=\"true\">[</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><mn>2</mn></mfrac><mo fence=\"true\">]</mo></mrow><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">\\sum_{k=1}^{n} k^3 = \\left[\\frac{n(n+1)}{2}\\right]^2</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Closed form for the sum of cubes of the first n integers",
     "core": false
   },
   {
     "name": "Boolean XOR",
     "aliases": "exclusive or",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>⊕</mo><mi>B</mi><mo>=</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∧</mo><mi mathvariant=\"normal\">¬</mi><mi>B</mi><mo stretchy=\"false\">)</mo><mo>∨</mo><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">¬</mi><mi>A</mi><mo>∧</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">A \\oplus B = (A \\land \\lnot B) \\lor (\\lnot A \\land B)</annotation></semantics></math>",
-    "domain": "Boolean Algebra",
-    "description": "Exclusive OR is true when exactly one of the two inputs is true",
+    "domain": "Discrete Math & Logic",
+    "description": "Exclusive OR is true when exactly one input is true",
     "core": false
   },
   {
     "name": "Boolean absorption law",
     "aliases": "absorption identity",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>∨</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∧</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A \\lor (A \\land B) = A</annotation></semantics></math>",
-    "domain": "Boolean Algebra",
+    "domain": "Discrete Math & Logic",
     "description": "A term absorbs a conjunction that already contains it",
     "core": false
   },
@@ -3317,7 +1693,7 @@ export const mathEquations = [
     "name": "Boolean distributive law",
     "aliases": "Boolean distribution",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>∧</mo><mo stretchy=\"false\">(</mo><mi>B</mi><mo>∨</mo><mi>C</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∧</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>∨</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∧</mo><mi>C</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">A \\land (B \\lor C) = (A \\land B) \\lor (A \\land C)</annotation></semantics></math>",
-    "domain": "Boolean Algebra",
+    "domain": "Discrete Math & Logic",
     "description": "AND distributes over OR in Boolean algebra",
     "core": false
   },
@@ -3325,31 +1701,951 @@ export const mathEquations = [
     "name": "Boolean idempotent law",
     "aliases": "idempotent identity",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>∧</mo><mi>A</mi><mo>=</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A \\land A = A</annotation></semantics></math>",
-    "domain": "Boolean Algebra",
+    "domain": "Discrete Math & Logic",
     "description": "Repeating AND or OR with the same variable leaves the value unchanged",
+    "core": false
+  },
+  {
+    "name": "Stirling's approximation",
+    "aliases": "approximate n!",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>n</mi><mo stretchy=\"false\">!</mo><mo>≈</mo><msqrt><mrow><mn>2</mn><mi>π</mi><mi>n</mi></mrow></msqrt><msup><mrow><mo fence=\"true\">(</mo><mfrac><mi>n</mi><mi>e</mi></mfrac><mo fence=\"true\">)</mo></mrow><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">n! \\approx \\sqrt{2\\pi n}\\left(\\frac{n}{e}\\right)^n</annotation></semantics></math>",
+    "domain": "Discrete Math & Logic",
+    "description": "Asymptotic approximation for n! for large n",
+    "core": false
+  },
+  {
+    "name": "sample mean",
+    "aliases": "arithmetic mean",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding=\"application/x-tex\">\\bar{x} = \\frac{1}{n}\\sum_{i=1}^{n} x_i</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Sample mean of n values",
+    "core": false
+  },
+  {
+    "name": "sample variance",
+    "aliases": "variance formula",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>1</mn><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">s^2 = \\frac{1}{n-1}\\sum_{i=1}^{n}(x_i - \\bar{x})^2</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Sample variance",
+    "core": false
+  },
+  {
+    "name": "population standard deviation",
+    "aliases": "std dev formula",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>σ</mi><mo>=</mo><msqrt><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mi>μ</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">\\sigma = \\sqrt{\\frac{1}{N}\\sum_{i=1}^{N}(x_i-\\mu)^2}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Population standard deviation",
+    "core": false
+  },
+  {
+    "name": "z-score",
+    "aliases": "standard score",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mi>μ</mi></mrow><mi>σ</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">z = \\frac{x - \\mu}{\\sigma}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Z-score (standardized value)",
+    "core": false
+  },
+  {
+    "name": "normal distribution PDF",
+    "aliases": "Gaussian density",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>σ</mi><msqrt><mrow><mn>2</mn><mi>π</mi></mrow></msqrt></mrow></mfrac><mtext> </mtext><msup><mi>e</mi><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mi>μ</mi></mrow><mi>σ</mi></mfrac><mo fence=\"true\">)</mo></mrow><mn>2</mn></msup></mrow></msup></mrow><annotation encoding=\"application/x-tex\">f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}}\\,e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Normal distribution probability density function",
+    "core": false
+  },
+  {
+    "name": "Bayes' theorem",
+    "aliases": "Bayes rule",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∣</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>B</mi><mo>∣</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P(A \\mid B) = \\frac{P(B \\mid A)\\,P(A)}{P(B)}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Bayes' theorem for conditional probability",
+    "core": false
+  },
+  {
+    "name": "expected value (discrete)",
+    "aliases": "mean of a discrete distribution",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo stretchy=\"false\">[</mo><mi>X</mi><mo stretchy=\"false\">]</mo><mo>=</mo><munder><mo>∑</mo><mi>x</mi></munder><mi>x</mi><mtext> </mtext><mi>P</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo>=</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">E[X] = \\sum_{x} x\\,P(X=x)</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Expected value of a discrete random variable",
+    "core": false
+  },
+  {
+    "name": "expected value (continuous)",
+    "aliases": "continuous expected value",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo stretchy=\"false\">[</mo><mi>X</mi><mo stretchy=\"false\">]</mo><mo>=</mo><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant=\"normal\">∞</mi></mrow><mi mathvariant=\"normal\">∞</mi></msubsup><mi>x</mi><mtext> </mtext><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">E[X] = \\int_{-\\infty}^{\\infty} x\\,f(x)\\,dx</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Expected value of a continuous random variable",
+    "core": false
+  },
+  {
+    "name": "covariance",
+    "aliases": "Cov X Y",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>Cov</mtext><mo stretchy=\"false\">(</mo><mi>X</mi><mo separator=\"true\">,</mo><mi>Y</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>E</mi><mo stretchy=\"false\">[</mo><mo stretchy=\"false\">(</mo><mi>X</mi><mo>−</mo><msub><mi>μ</mi><mi>X</mi></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>Y</mi><mo>−</mo><msub><mi>μ</mi><mi>Y</mi></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\text{Cov}(X,Y) = E[(X-\\mu_X)(Y-\\mu_Y)]</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Covariance of X and Y",
+    "core": false
+  },
+  {
+    "name": "Pearson correlation",
+    "aliases": "correlation coefficient",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ρ</mi><mo>=</mo><mfrac><mrow><mtext>Cov</mtext><mo stretchy=\"false\">(</mo><mi>X</mi><mo separator=\"true\">,</mo><mi>Y</mi><mo stretchy=\"false\">)</mo></mrow><mrow><msub><mi>σ</mi><mi>X</mi></msub><msub><mi>σ</mi><mi>Y</mi></msub></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\rho = \\frac{\\text{Cov}(X,Y)}{\\sigma_X \\sigma_Y}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Pearson correlation coefficient",
+    "core": false
+  },
+  {
+    "name": "addition rule for probability",
+    "aliases": "P of A union B",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mo>+</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">P(A \\cup B) = P(A) + P(B) - P(A \\cap B)</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Addition rule for the probability of A or B",
+    "core": false
+  },
+  {
+    "name": "conditional probability formula",
+    "aliases": "P of A given B",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∣</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Definition of conditional probability",
+    "core": false
+  },
+  {
+    "name": "multiplication rule for probability",
+    "aliases": "P of A and B",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mo>⋅</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>B</mi><mo>∣</mo><mi>A</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">P(A \\cap B) = P(A)\\cdot P(B \\mid A)</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Multiplication rule for joint probability",
+    "core": false
+  },
+  {
+    "name": "complement rule",
+    "aliases": "probability of not A",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><msup><mi>A</mi><mi>c</mi></msup><mo stretchy=\"false\">)</mo><mo>=</mo><mn>1</mn><mo>−</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">P(A^c) = 1 - P(A)</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Probability of the complement of event A",
+    "core": false
+  },
+  {
+    "name": "law of total probability",
+    "aliases": "total probability",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∣</mo><msub><mi>B</mi><mi>i</mi></msub><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>P</mi><mo stretchy=\"false\">(</mo><msub><mi>B</mi><mi>i</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">P(A) = \\sum_{i} P(A \\mid B_i)\\,P(B_i)</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Total probability over a partition of the sample space",
+    "core": false
+  },
+  {
+    "name": "binomial probability",
+    "aliases": "binomial PMF",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mi>n</mi><mi>k</mi></mfrac><mo fence=\"true\">)</mo></mrow><msup><mi>p</mi><mi>k</mi></msup><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><msup><mo stretchy=\"false\">)</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">P(X=k) = \\binom{n}{k}p^k(1-p)^{n-k}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Probability mass function of the binomial distribution",
+    "core": false
+  },
+  {
+    "name": "Poisson probability",
+    "aliases": "Poisson PMF",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup><msup><mi>λ</mi><mi>k</mi></msup></mrow><mrow><mi>k</mi><mo stretchy=\"false\">!</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P(X=k) = \\frac{e^{-\\lambda}\\lambda^k}{k!}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Probability mass function of the Poisson distribution",
+    "core": false
+  },
+  {
+    "name": "geometric distribution PMF",
+    "aliases": "geometric PMF",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><msup><mo stretchy=\"false\">)</mo><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">P(X=k) = (1-p)^{k-1}p</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "PMF of geometric distribution: k trials until first success",
+    "core": false
+  },
+  {
+    "name": "hypergeometric distribution PMF",
+    "aliases": "hypergeometric PMF",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mi>K</mi><mi>k</mi></mfrac><mo fence=\"true\">)</mo></mrow><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mrow><mi>N</mi><mo>−</mo><mi>K</mi></mrow><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></mfrac><mo fence=\"true\">)</mo></mrow></mrow><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mi>N</mi><mi>n</mi></mfrac><mo fence=\"true\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P(X=k) = \\frac{\\binom{K}{k}\\binom{N-K}{n-k}}{\\binom{N}{n}}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "PMF for sampling k successes without replacement from population N",
+    "core": false
+  },
+  {
+    "name": "exponential distribution PDF",
+    "aliases": "exponential PDF",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>λ</mi><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi><mi>x</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">f(x) = \\lambda e^{-\\lambda x}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "PDF of the exponential distribution with rate lambda (x >= 0)",
+    "core": false
+  },
+  {
+    "name": "uniform distribution PDF",
+    "aliases": "uniform PDF",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">f(x) = \\frac{1}{b-a}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "PDF of a continuous uniform distribution on [a,b]",
+    "core": false
+  },
+  {
+    "name": "standard error of the mean",
+    "aliases": "SEM",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mi>E</mi><mo>=</mo><mfrac><mi>σ</mi><msqrt><mi>n</mi></msqrt></mfrac></mrow><annotation encoding=\"application/x-tex\">SE = \\frac{\\sigma}{\\sqrt{n}}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Standard error of the sample mean",
+    "core": false
+  },
+  {
+    "name": "confidence interval for mean",
+    "aliases": "confidence interval",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><mo>±</mo><msup><mi>z</mi><mo>∗</mo></msup><mfrac><mi>σ</mi><msqrt><mi>n</mi></msqrt></mfrac></mrow><annotation encoding=\"application/x-tex\">\\bar{x} \\pm z^*\\frac{\\sigma}{\\sqrt{n}}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Confidence interval for a population mean",
+    "core": false
+  },
+  {
+    "name": "t-test statistic",
+    "aliases": "one sample t-test",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><mo>−</mo><mi>μ</mi></mrow><mrow><mi>s</mi><mi mathvariant=\"normal\">/</mi><msqrt><mi>n</mi></msqrt></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">t = \\frac{\\bar{x} - \\mu}{s/\\sqrt{n}}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "One-sample t-test statistic",
+    "core": false
+  },
+  {
+    "name": "two-sample t-test",
+    "aliases": "independent samples t-test",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><msub><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><mn>1</mn></msub><mo>−</mo><msub><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><mn>2</mn></msub></mrow><msqrt><mrow><mfrac><msubsup><mi>s</mi><mn>1</mn><mn>2</mn></msubsup><msub><mi>n</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><msubsup><mi>s</mi><mn>2</mn><mn>2</mn></msubsup><msub><mi>n</mi><mn>2</mn></msub></mfrac></mrow></msqrt></mfrac></mrow><annotation encoding=\"application/x-tex\">t = \\frac{\\bar{x}_1 - \\bar{x}_2}{\\sqrt{\\frac{s_1^2}{n_1}+\\frac{s_2^2}{n_2}}}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Two-sample t-test statistic for independent groups",
+    "core": false
+  },
+  {
+    "name": "pooled variance",
+    "aliases": "pooled standard deviation",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mi>s</mi><mi>p</mi><mn>2</mn></msubsup><mo>=</mo><mfrac><mrow><mo stretchy=\"false\">(</mo><msub><mi>n</mi><mn>1</mn></msub><mo>−</mo><mn>1</mn><mo stretchy=\"false\">)</mo><msubsup><mi>s</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><mo stretchy=\"false\">(</mo><msub><mi>n</mi><mn>2</mn></msub><mo>−</mo><mn>1</mn><mo stretchy=\"false\">)</mo><msubsup><mi>s</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>+</mo><msub><mi>n</mi><mn>2</mn></msub><mo>−</mo><mn>2</mn></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">s_p^2 = \\frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Pooled variance estimate for two samples",
+    "core": false
+  },
+  {
+    "name": "chi-squared test statistic",
+    "aliases": "chi squared goodness of fit",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>χ</mi><mn>2</mn></msup><mo>=</mo><mo>∑</mo><mfrac><mrow><mo stretchy=\"false\">(</mo><msub><mi>O</mi><mi>i</mi></msub><mo>−</mo><msub><mi>E</mi><mi>i</mi></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow><msub><mi>E</mi><mi>i</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\chi^2 = \\sum \\frac{(O_i - E_i)^2}{E_i}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Chi-squared test statistic comparing observed to expected counts",
+    "core": false
+  },
+  {
+    "name": "F-statistic",
+    "aliases": "F test",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mfrac><msubsup><mi>s</mi><mn>1</mn><mn>2</mn></msubsup><msubsup><mi>s</mi><mn>2</mn><mn>2</mn></msubsup></mfrac></mrow><annotation encoding=\"application/x-tex\">F = \\frac{s_1^2}{s_2^2}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "F-statistic for comparing two sample variances",
+    "core": false
+  },
+  {
+    "name": "interquartile range",
+    "aliases": "IQR",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>I</mi><mi>Q</mi><mi>R</mi><mo>=</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>−</mo><msub><mi>Q</mi><mn>1</mn></msub></mrow><annotation encoding=\"application/x-tex\">IQR = Q_3 - Q_1</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Spread of the middle 50 percent of data",
+    "core": false
+  },
+  {
+    "name": "coefficient of variation",
+    "aliases": "CV",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mi>V</mi><mo>=</mo><mfrac><mi>σ</mi><mi>μ</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">CV = \\frac{\\sigma}{\\mu}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Relative variability as a ratio of standard deviation to mean",
+    "core": false
+  },
+  {
+    "name": "skewness",
+    "aliases": "sample skewness",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>skewness</mtext><mo>=</mo><mfrac><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>∑</mo><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><msup><mo stretchy=\"false\">)</mo><mn>3</mn></msup></mrow><msup><mi>s</mi><mn>3</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">\\text{skewness} = \\frac{\\frac{1}{n}\\sum(x_i-\\bar{x})^3}{s^3}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Measure of asymmetry of a distribution",
+    "core": false
+  },
+  {
+    "name": "kurtosis",
+    "aliases": "excess kurtosis",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>kurtosis</mtext><mo>=</mo><mfrac><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>∑</mo><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><msup><mo stretchy=\"false\">)</mo><mn>4</mn></msup></mrow><msup><mi>s</mi><mn>4</mn></msup></mfrac><mo>−</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">\\text{kurtosis} = \\frac{\\frac{1}{n}\\sum(x_i-\\bar{x})^4}{s^4} - 3</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Measure of tail heaviness relative to a normal distribution",
+    "core": false
+  },
+  {
+    "name": "simple linear regression",
+    "aliases": "regression line",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mo>=</mo><msub><mover accent=\"true\"><mi>β</mi><mo>^</mo></mover><mn>0</mn></msub><mo>+</mo><msub><mover accent=\"true\"><mi>β</mi><mo>^</mo></mover><mn>1</mn></msub><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\hat{y} = \\hat{\\beta}_0 + \\hat{\\beta}_1 x</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Simple linear regression predicted value",
+    "core": false
+  },
+  {
+    "name": "OLS slope",
+    "aliases": "least squares slope",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mover accent=\"true\"><mi>β</mi><mo>^</mo></mover><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mo>∑</mo><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><mover accent=\"true\"><mi>y</mi><mo>ˉ</mo></mover><mo stretchy=\"false\">)</mo></mrow><mrow><mo>∑</mo><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\hat{\\beta}_1 = \\frac{\\sum(x_i-\\bar{x})(y_i-\\bar{y})}{\\sum(x_i-\\bar{x})^2}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Ordinary least squares estimate of regression slope",
+    "core": false
+  },
+  {
+    "name": "OLS intercept",
+    "aliases": "least squares intercept",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mover accent=\"true\"><mi>β</mi><mo>^</mo></mover><mn>0</mn></msub><mo>=</mo><mover accent=\"true\"><mi>y</mi><mo>ˉ</mo></mover><mo>−</mo><msub><mover accent=\"true\"><mi>β</mi><mo>^</mo></mover><mn>1</mn></msub><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover></mrow><annotation encoding=\"application/x-tex\">\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1\\bar{x}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Ordinary least squares estimate of regression intercept",
+    "core": false
+  },
+  {
+    "name": "R squared",
+    "aliases": "coefficient of determination",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><mrow><mi>S</mi><msub><mi>S</mi><mtext>res</mtext></msub></mrow><mrow><mi>S</mi><msub><mi>S</mi><mtext>tot</mtext></msub></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">R^2 = 1 - \\frac{SS_{\\text{res}}}{SS_{\\text{tot}}}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Proportion of variance in y explained by the regression model",
+    "core": false
+  },
+  {
+    "name": "sum of squared residuals",
+    "aliases": "SSR",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><msub><mi>S</mi><mtext>res</mtext></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy=\"false\">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">SS_{\\text{res}} = \\sum_{i=1}^{n}(y_i - \\hat{y}_i)^2</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Sum of squared residuals (unexplained variation)",
+    "core": false
+  },
+  {
+    "name": "mean squared error",
+    "aliases": "MSE",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mi>S</mi><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy=\"false\">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">MSE = \\frac{1}{n}\\sum_{i=1}^{n}(y_i - \\hat{y}_i)^2</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Mean squared error of predictions",
+    "core": false
+  },
+  {
+    "name": "root mean squared error",
+    "aliases": "RMSE",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>R</mi><mi>M</mi><mi>S</mi><mi>E</mi><mo>=</mo><msqrt><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy=\"false\">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">RMSE = \\sqrt{\\frac{1}{n}\\sum_{i=1}^{n}(y_i - \\hat{y}_i)^2}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Root mean squared error of predictions",
+    "core": false
+  },
+  {
+    "name": "OLS normal equations",
+    "aliases": "matrix regression",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mover accent=\"true\"><mi mathvariant=\"bold-italic\">β</mi><mo>^</mo></mover><mo>=</mo><mo stretchy=\"false\">(</mo><msup><mi mathvariant=\"bold\">X</mi><mi>T</mi></msup><mi mathvariant=\"bold\">X</mi><msup><mo stretchy=\"false\">)</mo><mrow><mo>−</mo><mn>1</mn></mrow></msup><msup><mi mathvariant=\"bold\">X</mi><mi>T</mi></msup><mi mathvariant=\"bold\">y</mi></mrow><annotation encoding=\"application/x-tex\">\\hat{\\boldsymbol{\\beta}} = (\\mathbf{X}^T\\mathbf{X})^{-1}\\mathbf{X}^T\\mathbf{y}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "OLS estimator in matrix form for multiple regression",
+    "core": false
+  },
+  {
+    "name": "Shannon entropy",
+    "aliases": "information entropy",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>H</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo>−</mo><munder><mo>∑</mo><mi>x</mi></munder><mi>p</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>2</mn></msub><mi>p</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">H(X) = -\\sum_{x} p(x)\\log_2 p(x)</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Shannon entropy measuring average information content",
+    "core": false
+  },
+  {
+    "name": "cross-entropy",
+    "aliases": "cross entropy loss",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>H</mi><mo stretchy=\"false\">(</mo><mi>p</mi><mo separator=\"true\">,</mo><mi>q</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo>−</mo><munder><mo>∑</mo><mi>x</mi></munder><mi>p</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mi>log</mi><mo>⁡</mo><mi>q</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">H(p,q) = -\\sum_{x} p(x)\\log q(x)</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Cross-entropy between true distribution p and predicted distribution q",
+    "core": false
+  },
+  {
+    "name": "KL divergence",
+    "aliases": "Kullback-Leibler divergence",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>D</mi><mrow><mi>K</mi><mi>L</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>P</mi><mi mathvariant=\"normal\">∥</mi><mi>Q</mi><mo stretchy=\"false\">)</mo><mo>=</mo><munder><mo>∑</mo><mi>x</mi></munder><mi>P</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mi>log</mi><mo>⁡</mo><mfrac><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>Q</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">D_{KL}(P \\| Q) = \\sum_{x} P(x)\\log\\frac{P(x)}{Q(x)}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "KL divergence measuring difference between distributions P and Q",
+    "core": false
+  },
+  {
+    "name": "mutual information",
+    "aliases": "I of X and Y",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>I</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo separator=\"true\">;</mo><mi>Y</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>H</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>H</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo>∣</mo><mi>Y</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">I(X;Y) = H(X) - H(X \\mid Y)</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Mutual information: reduction in uncertainty of X given Y",
+    "core": false
+  },
+  {
+    "name": "sigmoid function",
+    "aliases": "logistic function",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>σ</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sigma(x) = \\frac{1}{1+e^{-x}}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Sigmoid activation function mapping input to (0,1)",
+    "core": false
+  },
+  {
+    "name": "softmax function",
+    "aliases": "softmax",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>softmax</mtext><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><msup><mi>e</mi><msub><mi>x</mi><mi>i</mi></msub></msup><mrow><munder><mo>∑</mo><mi>j</mi></munder><msup><mi>e</mi><msub><mi>x</mi><mi>j</mi></msub></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\text{softmax}(x_i) = \\frac{e^{x_i}}{\\sum_{j} e^{x_j}}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Softmax function converting logits to a probability distribution",
+    "core": false
+  },
+  {
+    "name": "binary cross-entropy loss",
+    "aliases": "log loss",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>L</mi><mo>=</mo><mo>−</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo fence=\"true\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">[</mo><msub><mi>y</mi><mi>i</mi></msub><mi>log</mi><mo>⁡</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><mo>+</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><msub><mi>y</mi><mi>i</mi></msub><mo stretchy=\"false\">)</mo><mi>log</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><mo stretchy=\"false\">)</mo><mo fence=\"true\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">]</mo></mrow><annotation encoding=\"application/x-tex\">L = -\\frac{1}{n}\\sum_{i=1}^{n}\\bigl[y_i\\log\\hat{y}_i + (1-y_i)\\log(1-\\hat{y}_i)\\bigr]</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Binary cross-entropy loss for classification",
+    "core": false
+  },
+  {
+    "name": "gradient descent update",
+    "aliases": "parameter update rule",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>θ</mi><mo>←</mo><mi>θ</mi><mo>−</mo><mi>α</mi><mtext> </mtext><msub><mi mathvariant=\"normal\">∇</mi><mi>θ</mi></msub><mi>J</mi><mo stretchy=\"false\">(</mo><mi>θ</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\theta \\leftarrow \\theta - \\alpha\\,\\nabla_\\theta J(\\theta)</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Gradient descent weight update with learning rate alpha",
+    "core": false
+  },
+  {
+    "name": "L1 norm",
+    "aliases": "Manhattan norm",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∥</mi><mi mathvariant=\"bold\">x</mi><msub><mi mathvariant=\"normal\">∥</mi><mn>1</mn></msub><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><mi mathvariant=\"normal\">∣</mi><msub><mi>x</mi><mi>i</mi></msub><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">\\|\\mathbf{x}\\|_1 = \\sum_{i}|x_i|</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "L1 norm used in Lasso regularization",
+    "core": false
+  },
+  {
+    "name": "L2 norm",
+    "aliases": "Euclidean norm",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∥</mi><mi mathvariant=\"bold\">x</mi><msub><mi mathvariant=\"normal\">∥</mi><mn>2</mn></msub><mo>=</mo><msqrt><mrow><munder><mo>∑</mo><mi>i</mi></munder><msubsup><mi>x</mi><mi>i</mi><mn>2</mn></msubsup></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">\\|\\mathbf{x}\\|_2 = \\sqrt{\\sum_{i}x_i^2}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "L2 norm used in Ridge regularization",
+    "core": false
+  },
+  {
+    "name": "L2 regularization loss",
+    "aliases": "Ridge loss",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>J</mi><mo stretchy=\"false\">(</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>M</mi><mi>S</mi><mi>E</mi><mo>+</mo><mi>λ</mi><munder><mo>∑</mo><mi>j</mi></munder><msubsup><mi>θ</mi><mi>j</mi><mn>2</mn></msubsup></mrow><annotation encoding=\"application/x-tex\">J(\\theta) = MSE + \\lambda\\sum_{j}\\theta_j^2</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "L2 regularized loss function (Ridge regression)",
+    "core": false
+  },
+  {
+    "name": "L1 regularization loss",
+    "aliases": "Lasso loss",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>J</mi><mo stretchy=\"false\">(</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>M</mi><mi>S</mi><mi>E</mi><mo>+</mo><mi>λ</mi><munder><mo>∑</mo><mi>j</mi></munder><mi mathvariant=\"normal\">∣</mi><msub><mi>θ</mi><mi>j</mi></msub><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">J(\\theta) = MSE + \\lambda\\sum_{j}|\\theta_j|</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "L1 regularized loss function (Lasso regression)",
+    "core": false
+  },
+  {
+    "name": "bias-variance decomposition",
+    "aliases": "bias variance tradeoff",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo fence=\"true\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">[</mo><mo stretchy=\"false\">(</mo><mi>y</mi><mo>−</mo><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo fence=\"true\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">]</mo><mo>=</mo><msup><mtext>Bias</mtext><mn>2</mn></msup><mo>+</mo><mtext>Variance</mtext><mo>+</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">E\\bigl[(y-\\hat{y})^2\\bigr] = \\text{Bias}^2 + \\text{Variance} + \\sigma^2</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Decomposition of expected prediction error",
+    "core": false
+  },
+  {
+    "name": "accuracy",
+    "aliases": "classification accuracy",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>Accuracy</mtext><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>T</mi><mi>N</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>T</mi><mi>N</mi><mo>+</mo><mi>F</mi><mi>P</mi><mo>+</mo><mi>F</mi><mi>N</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\text{Accuracy} = \\frac{TP+TN}{TP+TN+FP+FN}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Fraction of correctly classified instances",
+    "core": false
+  },
+  {
+    "name": "precision",
+    "aliases": "positive predictive value",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>Precision</mtext><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>F</mi><mi>P</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\text{Precision} = \\frac{TP}{TP+FP}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Fraction of positive predictions that are correct",
+    "core": false
+  },
+  {
+    "name": "recall",
+    "aliases": "sensitivity; true positive rate",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>Recall</mtext><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>F</mi><mi>N</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\text{Recall} = \\frac{TP}{TP+FN}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Fraction of actual positives correctly identified",
+    "core": false
+  },
+  {
+    "name": "F1 score",
+    "aliases": "F1",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>F</mi><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⋅</mo><mtext>Precision</mtext><mo>⋅</mo><mtext>Recall</mtext></mrow><mrow><mtext>Precision</mtext><mo>+</mo><mtext>Recall</mtext></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">F_1 = \\frac{2 \\cdot \\text{Precision} \\cdot \\text{Recall}}{\\text{Precision} + \\text{Recall}}</annotation></semantics></math>",
+    "domain": "Probability, Statistics & Data Science",
+    "description": "Harmonic mean of precision and recall",
+    "core": false
+  },
+  {
+    "name": "Newton's second law",
+    "aliases": "F equals ma",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding=\"application/x-tex\">F = ma</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Newton's second law of motion",
+    "core": false
+  },
+  {
+    "name": "kinetic energy formula",
+    "aliases": "KE equals half mv squared",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>K</mi><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">KE = \\frac{1}{2}mv^2</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Kinetic energy of a moving object",
+    "core": false
+  },
+  {
+    "name": "gravitational potential energy near surface",
+    "aliases": "GPE equals mgh",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>U</mi><mo>=</mo><mi>m</mi><mi>g</mi><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">U = mgh</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Gravitational potential energy near Earth's surface",
+    "core": false
+  },
+  {
+    "name": "Coulomb's law",
+    "aliases": "electrostatic force",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mi>k</mi><mfrac><mrow><msub><mi>q</mi><mn>1</mn></msub><msub><mi>q</mi><mn>2</mn></msub></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">F = k\\frac{q_1 q_2}{r^2}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Coulomb's law for the force between two charges",
+    "core": false
+  },
+  {
+    "name": "Ohm's law",
+    "aliases": "V equals IR",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">V = IR</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Ohm's law relating voltage current and resistance",
+    "core": false
+  },
+  {
+    "name": "wave speed equation",
+    "aliases": "wave speed equals f lambda",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>v</mi><mo>=</mo><mi>f</mi><mi>λ</mi></mrow><annotation encoding=\"application/x-tex\">v = f\\lambda</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Wave speed as frequency times wavelength",
+    "core": false
+  },
+  {
+    "name": "kinematic velocity",
+    "aliases": "v equals v0 plus at",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>v</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>a</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">v = v_0 + at</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Velocity under constant acceleration",
+    "core": false
+  },
+  {
+    "name": "kinematic position",
+    "aliases": "x equals x0 plus v0t plus half at squared",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>x</mi><mo>=</mo><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><msub><mi>v</mi><mn>0</mn></msub><mi>t</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">x = x_0 + v_0 t + \\frac{1}{2}at^2</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Position under constant acceleration",
+    "core": false
+  },
+  {
+    "name": "kinematic velocity squared",
+    "aliases": "v squared equals v0 squared plus 2a delta x",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>+</mo><mn>2</mn><mi>a</mi><mi mathvariant=\"normal\">Δ</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">v^2 = v_0^2 + 2a\\Delta x</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Velocity-position relation under constant acceleration",
+    "core": false
+  },
+  {
+    "name": "kinematic average velocity",
+    "aliases": "x equals half v plus v0 times t",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"false\">(</mo><mi>v</mi><mo>+</mo><msub><mi>v</mi><mn>0</mn></msub><mo stretchy=\"false\">)</mo><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta x = \\frac{1}{2}(v + v_0)t</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Displacement using average velocity",
+    "core": false
+  },
+  {
+    "name": "Newton's law of universal gravitation",
+    "aliases": "gravitational force",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mi>G</mi><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">F = G\\frac{m_1 m_2}{r^2}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Gravitational force between two masses",
+    "core": false
+  },
+  {
+    "name": "gravitational potential energy general",
+    "aliases": "universal gravitational PE",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>U</mi><mo>=</mo><mo>−</mo><mfrac><mrow><mi>G</mi><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">U = -\\frac{Gm_1 m_2}{r}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Gravitational potential energy between two masses",
+    "core": false
+  },
+  {
+    "name": "escape velocity",
+    "aliases": "v escape",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>v</mi><mi>e</mi></msub><mo>=</mo><msqrt><mfrac><mrow><mn>2</mn><mi>G</mi><mi>M</mi></mrow><mi>R</mi></mfrac></msqrt></mrow><annotation encoding=\"application/x-tex\">v_e = \\sqrt{\\frac{2GM}{R}}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Minimum speed to escape a gravitational field",
+    "core": false
+  },
+  {
+    "name": "momentum",
+    "aliases": "p equals mv",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>p</mi><mo>=</mo><mi>m</mi><mi>v</mi></mrow><annotation encoding=\"application/x-tex\">p = mv</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Linear momentum of an object",
+    "core": false
+  },
+  {
+    "name": "impulse",
+    "aliases": "impulse equals F delta t",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>J</mi><mo>=</mo><mi>F</mi><mi mathvariant=\"normal\">Δ</mi><mi>t</mi><mo>=</mo><mi mathvariant=\"normal\">Δ</mi><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">J = F\\Delta t = \\Delta p</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Impulse equals change in momentum",
+    "core": false
+  },
+  {
+    "name": "conservation of momentum",
+    "aliases": "momentum before equals momentum after",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>v</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><msub><mi>m</mi><mn>1</mn></msub><msubsup><mi>v</mi><mn>1</mn><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msubsup><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><msubsup><mi>v</mi><mn>2</mn><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msubsup></mrow><annotation encoding=\"application/x-tex\">m_1 v_1 + m_2 v_2 = m_1 v_1&#x27; + m_2 v_2&#x27;</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Conservation of linear momentum in a collision",
+    "core": false
+  },
+  {
+    "name": "work",
+    "aliases": "W equals Fd cos theta",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>W</mi><mo>=</mo><mi>F</mi><mi>d</mi><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">W = Fd\\cos\\theta</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Work done by a force over a displacement",
+    "core": false
+  },
+  {
+    "name": "power",
+    "aliases": "P equals W over t",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo>=</mo><mfrac><mi>W</mi><mi>t</mi></mfrac><mo>=</mo><mi>F</mi><mi>v</mi></mrow><annotation encoding=\"application/x-tex\">P = \\frac{W}{t} = Fv</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Power as rate of doing work",
+    "core": false
+  },
+  {
+    "name": "centripetal acceleration",
+    "aliases": "a equals v squared over r",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>a</mi><mi>c</mi></msub><mo>=</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">a_c = \\frac{v^2}{r}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Centripetal acceleration for circular motion",
+    "core": false
+  },
+  {
+    "name": "centripetal force",
+    "aliases": "F equals mv squared over r",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>F</mi><mi>c</mi></msub><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">F_c = \\frac{mv^2}{r}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Net centripetal force for circular motion",
+    "core": false
+  },
+  {
+    "name": "torque",
+    "aliases": "tau equals r F sin theta",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>τ</mi><mo>=</mo><mi>r</mi><mi>F</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\tau = rF\\sin\\theta</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Torque produced by a force",
+    "core": false
+  },
+  {
+    "name": "angular momentum",
+    "aliases": "L equals I omega",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>L</mi><mo>=</mo><mi>I</mi><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">L = I\\omega</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Angular momentum of a rotating body",
+    "core": false
+  },
+  {
+    "name": "rotational kinetic energy",
+    "aliases": "KE rotation",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>K</mi><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>I</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">KE = \\frac{1}{2}I\\omega^2</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Kinetic energy of a rotating body",
+    "core": false
+  },
+  {
+    "name": "Hooke's law",
+    "aliases": "spring force",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mo>−</mo><mi>k</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">F = -kx</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Hooke's law for a spring with spring constant k",
+    "core": false
+  },
+  {
+    "name": "period of a spring",
+    "aliases": "spring oscillation period",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mi>m</mi><mi>k</mi></mfrac></msqrt></mrow><annotation encoding=\"application/x-tex\">T = 2\\pi\\sqrt{\\frac{m}{k}}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Period of a mass-spring simple harmonic oscillator",
+    "core": false
+  },
+  {
+    "name": "period of a pendulum",
+    "aliases": "pendulum oscillation period",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mi>L</mi><mi>g</mi></mfrac></msqrt></mrow><annotation encoding=\"application/x-tex\">T = 2\\pi\\sqrt{\\frac{L}{g}}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Period of a simple pendulum of length L",
+    "core": false
+  },
+  {
+    "name": "ideal gas law",
+    "aliases": "PV equals nRT",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mi>n</mi><mi>R</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">PV = nRT</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Ideal gas law relating pressure volume temperature and moles",
+    "core": false
+  },
+  {
+    "name": "first law of thermodynamics",
+    "aliases": "delta U equals Q minus W",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>U</mi><mo>=</mo><mi>Q</mi><mo>−</mo><mi>W</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta U = Q - W</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "First law of thermodynamics (conservation of energy)",
+    "core": false
+  },
+  {
+    "name": "heat transfer",
+    "aliases": "Q equals mc delta T",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>Q</mi><mo>=</mo><mi>m</mi><mi>c</mi><mi mathvariant=\"normal\">Δ</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">Q = mc\\Delta T</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Heat absorbed or released by a substance",
+    "core": false
+  },
+  {
+    "name": "thermal linear expansion",
+    "aliases": "delta L equals alpha L0 delta T",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>L</mi><mo>=</mo><mi>α</mi><msub><mi>L</mi><mn>0</mn></msub><mi mathvariant=\"normal\">Δ</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta L = \\alpha L_0 \\Delta T</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Linear thermal expansion of a solid",
+    "core": false
+  },
+  {
+    "name": "Carnot efficiency",
+    "aliases": "Carnot engine efficiency",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>η</mi><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><msub><mi>T</mi><mi>c</mi></msub><msub><mi>T</mi><mi>h</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\eta = 1 - \\frac{T_c}{T_h}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Maximum efficiency of a heat engine",
+    "core": false
+  },
+  {
+    "name": "electric field from point charge",
+    "aliases": "E equals kQ over r squared",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo>=</mo><mi>k</mi><mfrac><mi>Q</mi><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">E = k\\frac{Q}{r^2}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Electric field magnitude from a point charge",
+    "core": false
+  },
+  {
+    "name": "electric potential energy",
+    "aliases": "U equals kq1q2 over r",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>U</mi><mo>=</mo><mi>k</mi><mfrac><mrow><msub><mi>q</mi><mn>1</mn></msub><msub><mi>q</mi><mn>2</mn></msub></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">U = k\\frac{q_1 q_2}{r}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Electric potential energy between two point charges",
+    "core": false
+  },
+  {
+    "name": "electric potential",
+    "aliases": "V equals kQ over r",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>k</mi><mfrac><mi>Q</mi><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">V = k\\frac{Q}{r}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Electric potential due to a point charge",
+    "core": false
+  },
+  {
+    "name": "capacitance",
+    "aliases": "C equals Q over V",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mo>=</mo><mfrac><mi>Q</mi><mi>V</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">C = \\frac{Q}{V}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Definition of capacitance",
+    "core": false
+  },
+  {
+    "name": "energy stored in a capacitor",
+    "aliases": "capacitor energy",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>U</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>C</mi><msup><mi>V</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">U = \\frac{1}{2}CV^2</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Energy stored in a charged capacitor",
+    "core": false
+  },
+  {
+    "name": "electrical power",
+    "aliases": "P equals IV",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo>=</mo><mi>I</mi><mi>V</mi><mo>=</mo><msup><mi>I</mi><mn>2</mn></msup><mi>R</mi><mo>=</mo><mfrac><msup><mi>V</mi><mn>2</mn></msup><mi>R</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">P = IV = I^2R = \\frac{V^2}{R}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Electrical power dissipated in a resistor",
+    "core": false
+  },
+  {
+    "name": "resistors in series",
+    "aliases": "series resistance",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>R</mi><mtext>total</mtext></msub><mo>=</mo><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>R</mi><mi>n</mi></msub></mrow><annotation encoding=\"application/x-tex\">R_{\\text{total}} = R_1 + R_2 + \\cdots + R_n</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Total resistance of resistors in series",
+    "core": false
+  },
+  {
+    "name": "resistors in parallel",
+    "aliases": "parallel resistance",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mn>1</mn><msub><mi>R</mi><mtext>total</mtext></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>2</mn></msub></mfrac><mo>+</mo><mo>⋯</mo><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mi>n</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{1}{R_{\\text{total}}} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\cdots + \\frac{1}{R_n}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Total resistance of resistors in parallel",
+    "core": false
+  },
+  {
+    "name": "Faraday's law",
+    "aliases": "induced EMF",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"script\">E</mi><mo>=</mo><mo>−</mo><mfrac><mrow><mi>d</mi><msub><mi mathvariant=\"normal\">Φ</mi><mi>B</mi></msub></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\mathcal{E} = -\\frac{d\\Phi_B}{dt}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Faraday's law of electromagnetic induction",
+    "core": false
+  },
+  {
+    "name": "magnetic force on a charge",
+    "aliases": "Lorentz force",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mi>q</mi><mi>v</mi><mi>B</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">F = qvB\\sin\\theta</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Magnetic force on a moving charge",
+    "core": false
+  },
+  {
+    "name": "magnetic force on a wire",
+    "aliases": "force on current carrying wire",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mi>B</mi><mi>I</mi><mi>L</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">F = BIL\\sin\\theta</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Magnetic force on a current-carrying conductor",
+    "core": false
+  },
+  {
+    "name": "energy stored in an inductor",
+    "aliases": "inductor energy",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>U</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>L</mi><msup><mi>I</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">U = \\frac{1}{2}LI^2</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Energy stored in an inductor",
+    "core": false
+  },
+  {
+    "name": "Snell's law",
+    "aliases": "law of refraction",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mi>sin</mi><mo>⁡</mo><msub><mi>θ</mi><mn>1</mn></msub><mo>=</mo><msub><mi>n</mi><mn>2</mn></msub><mi>sin</mi><mo>⁡</mo><msub><mi>θ</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">n_1\\sin\\theta_1 = n_2\\sin\\theta_2</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Snell's law of refraction",
+    "core": false
+  },
+  {
+    "name": "thin lens equation",
+    "aliases": "lens formula",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mn>1</mn><mi>f</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>d</mi><mi>o</mi></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>d</mi><mi>i</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{1}{f} = \\frac{1}{d_o} + \\frac{1}{d_i}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Thin lens equation relating focal length and image/object distances",
+    "core": false
+  },
+  {
+    "name": "magnification",
+    "aliases": "lens magnification",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>m</mi><mo>=</mo><mo>−</mo><mfrac><msub><mi>d</mi><mi>i</mi></msub><msub><mi>d</mi><mi>o</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">m = -\\frac{d_i}{d_o}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Lateral magnification of a lens or mirror",
+    "core": false
+  },
+  {
+    "name": "wave frequency and period",
+    "aliases": "f equals one over T",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo>=</mo><mfrac><mn>1</mn><mi>T</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">f = \\frac{1}{T}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Relationship between frequency and period",
+    "core": false
+  },
+  {
+    "name": "Doppler effect",
+    "aliases": "Doppler shift",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>=</mo><mi>f</mi><mfrac><mrow><mi>v</mi><mo>±</mo><msub><mi>v</mi><mi>o</mi></msub></mrow><mrow><mi>v</mi><mo>∓</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">f&#x27; = f\\frac{v \\pm v_o}{v \\mp v_s}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Doppler effect for moving source or observer",
+    "core": false
+  },
+  {
+    "name": "standing wave wavelength",
+    "aliases": "harmonics",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>λ</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mi>L</mi></mrow><mi>n</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\lambda_n = \\frac{2L}{n}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Wavelengths of standing waves in a string of length L",
+    "core": false
+  },
+  {
+    "name": "double slit constructive interference",
+    "aliases": "constructive interference",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>d</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mi>m</mi><mi>λ</mi></mrow><annotation encoding=\"application/x-tex\">d\\sin\\theta = m\\lambda</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Condition for constructive interference in double-slit experiment",
+    "core": false
+  },
+  {
+    "name": "double slit destructive interference",
+    "aliases": "destructive interference",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>d</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mrow><mo fence=\"true\">(</mo><mi>m</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mi>λ</mi></mrow><annotation encoding=\"application/x-tex\">d\\sin\\theta = \\left(m+\\frac{1}{2}\\right)\\lambda</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Condition for destructive interference in double-slit experiment",
+    "core": false
+  },
+  {
+    "name": "photoelectric effect",
+    "aliases": "photon energy minus work function",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>K</mi><msub><mi>E</mi><mi>max</mi><mo>⁡</mo></msub><mo>=</mo><mi>h</mi><mi>f</mi><mo>−</mo><mi>ϕ</mi></mrow><annotation encoding=\"application/x-tex\">KE_{\\max} = hf - \\phi</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Maximum kinetic energy of photoelectrons",
+    "core": false
+  },
+  {
+    "name": "de Broglie wavelength",
+    "aliases": "matter wave",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>λ</mi><mo>=</mo><mfrac><mi>h</mi><mi>p</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\lambda = \\frac{h}{p}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "de Broglie wavelength of a particle with momentum p",
+    "core": false
+  },
+  {
+    "name": "Heisenberg uncertainty principle",
+    "aliases": "uncertainty principle",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>x</mi><mtext> </mtext><mi mathvariant=\"normal\">Δ</mi><mi>p</mi><mo>≥</mo><mfrac><mi mathvariant=\"normal\">ℏ</mi><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\Delta x\\,\\Delta p \\geq \\frac{\\hbar}{2}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Heisenberg position-momentum uncertainty principle",
+    "core": false
+  },
+  {
+    "name": "mass-energy equivalence",
+    "aliases": "E equals mc squared; rest energy",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">E = mc^2</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Einstein's mass-energy equivalence (rest energy of a body)",
+    "core": false
+  },
+  {
+    "name": "radioactive decay law",
+    "aliases": "N equals N0 e to the negative lambda t; exponential decay activity; nuclear decay",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>N</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi><mi>t</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">N(t) = N_0 e^{-\\lambda t}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Radioactive decay of initial nuclei",
+    "core": false
+  },
+  {
+    "name": "radioactive half-life",
+    "aliases": "half life formula; nuclear half-life",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>t</mi><mrow><mn>1</mn><mi mathvariant=\"normal\">/</mi><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mn>2</mn></mrow><mi>λ</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">t_{1/2} = \\frac{\\ln 2}{\\lambda}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Half-life in terms of decay constant",
     "core": false
   },
   {
     "name": "Lorentz factor",
     "aliases": "gamma factor",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>γ</mi><mo>=</mo><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>v</mi><mn>2</mn></msup><mi mathvariant=\"normal\">/</mi><msup><mi>c</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow><annotation encoding=\"application/x-tex\">\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}</annotation></semantics></math>",
-    "domain": "Special Relativity",
-    "description": "Relativistic factor quantifying time dilation and length contraction at speed v",
+    "domain": "Physics",
+    "description": "Relativistic factor quantifying time dilation and length contraction",
     "core": false
   },
   {
     "name": "time dilation",
     "aliases": "relativistic time dilation",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>t</mi><mo>=</mo><mi>γ</mi><mi mathvariant=\"normal\">Δ</mi><msub><mi>t</mi><mn>0</mn></msub></mrow><annotation encoding=\"application/x-tex\">\\Delta t = \\gamma \\Delta t_0</annotation></semantics></math>",
-    "domain": "Special Relativity",
-    "description": "A moving clock ticks slower by the Lorentz factor compared to a stationary one",
+    "domain": "Physics",
+    "description": "A moving clock ticks slower by the Lorentz factor",
     "core": false
   },
   {
     "name": "length contraction",
     "aliases": "Lorentz contraction",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>L</mi><mo>=</mo><mfrac><msub><mi>L</mi><mn>0</mn></msub><mi>γ</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">L = \\frac{L_0}{\\gamma}</annotation></semantics></math>",
-    "domain": "Special Relativity",
+    "domain": "Physics",
     "description": "A moving object appears shorter along the direction of motion",
     "core": false
   },
@@ -3357,23 +2653,15 @@ export const mathEquations = [
     "name": "relativistic momentum",
     "aliases": "Lorentz momentum",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>p</mi><mo>=</mo><mi>γ</mi><mi>m</mi><mi>v</mi></mrow><annotation encoding=\"application/x-tex\">p = \\gamma m v</annotation></semantics></math>",
-    "domain": "Special Relativity",
-    "description": "Momentum of a massive object moving at relativistic speed v",
-    "core": false
-  },
-  {
-    "name": "rest energy",
-    "aliases": "mass-energy equivalence",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>=</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">E_0 = mc^2</annotation></semantics></math>",
-    "domain": "Special Relativity",
-    "description": "Energy equivalent of a body at rest; m is the invariant mass",
+    "domain": "Physics",
+    "description": "Momentum of a massive object moving at relativistic speed",
     "core": false
   },
   {
     "name": "total relativistic energy",
     "aliases": "relativistic total energy",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo>=</mo><mi>γ</mi><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">E = \\gamma mc^2</annotation></semantics></math>",
-    "domain": "Special Relativity",
+    "domain": "Physics",
     "description": "Total energy of a moving massive object including rest energy",
     "core": false
   },
@@ -3381,7 +2669,7 @@ export const mathEquations = [
     "name": "energy-momentum relation",
     "aliases": "relativistic dispersion",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>E</mi><mn>2</mn></msup><mo>=</mo><mo stretchy=\"false\">(</mo><mi>p</mi><mi>c</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy=\"false\">(</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">E^2 = (pc)^2 + (mc^2)^2</annotation></semantics></math>",
-    "domain": "Special Relativity",
+    "domain": "Physics",
     "description": "Invariant relation between total energy and relativistic momentum",
     "core": false
   },
@@ -3389,31 +2677,31 @@ export const mathEquations = [
     "name": "relativistic velocity addition",
     "aliases": "velocity composition",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>u</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>=</mo><mfrac><mrow><mi>u</mi><mo>−</mo><mi>v</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>u</mi><mi>v</mi><mi mathvariant=\"normal\">/</mi><msup><mi>c</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">u&#x27; = \\frac{u - v}{1 - uv/c^2}</annotation></semantics></math>",
-    "domain": "Special Relativity",
-    "description": "Combined velocity of an object when changing reference frames at speed v",
+    "domain": "Physics",
+    "description": "Combined velocity when changing reference frames at speed v",
     "core": false
   },
   {
     "name": "Lorentz transformation position",
     "aliases": "x-prime transform",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>x</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>=</mo><mi>γ</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>−</mo><mi>v</mi><mi>t</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">x&#x27; = \\gamma(x - vt)</annotation></semantics></math>",
-    "domain": "Special Relativity",
-    "description": "Spatial coordinate in a frame moving at velocity v relative to the original",
+    "domain": "Physics",
+    "description": "Spatial coordinate in a frame moving at velocity v",
     "core": false
   },
   {
     "name": "Lorentz transformation time",
     "aliases": "t-prime transform",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>t</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>=</mo><mi>γ</mi><mrow><mo fence=\"true\">(</mo><mi>t</mi><mo>−</mo><mfrac><mrow><mi>v</mi><mi>x</mi></mrow><msup><mi>c</mi><mn>2</mn></msup></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">t&#x27; = \\gamma\\left(t - \\frac{vx}{c^2}\\right)</annotation></semantics></math>",
-    "domain": "Special Relativity",
-    "description": "Time coordinate in a frame moving at velocity v relative to the original",
+    "domain": "Physics",
+    "description": "Time coordinate in a frame moving at velocity v",
     "core": false
   },
   {
     "name": "Bernoulli's equation",
     "aliases": "Bernoulli principle",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>ρ</mi><msup><mi>v</mi><mn>2</mn></msup><mo>+</mo><mi>ρ</mi><mi>g</mi><mi>h</mi><mo>=</mo><mtext>const</mtext></mrow><annotation encoding=\"application/x-tex\">P + \\frac{1}{2}\\rho v^2 + \\rho g h = \\text{const}</annotation></semantics></math>",
-    "domain": "Fluid Mechanics",
+    "domain": "Physics",
     "description": "Conservation of energy for steady inviscid flow along a streamline",
     "core": false
   },
@@ -3421,15 +2709,15 @@ export const mathEquations = [
     "name": "continuity equation fluid",
     "aliases": "conservation of mass flow",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><msub><mi>A</mi><mn>2</mn></msub><msub><mi>v</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">A_1 v_1 = A_2 v_2</annotation></semantics></math>",
-    "domain": "Fluid Mechanics",
-    "description": "Conservation of mass for incompressible flow through a varying cross-section pipe",
+    "domain": "Physics",
+    "description": "Conservation of mass for incompressible flow",
     "core": false
   },
   {
     "name": "Reynolds number",
     "aliases": "Re dimensionless",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>R</mi><mi>e</mi><mo>=</mo><mfrac><mrow><mi>ρ</mi><mi>v</mi><mi>L</mi></mrow><mi>μ</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">Re = \\frac{\\rho v L}{\\mu}</annotation></semantics></math>",
-    "domain": "Fluid Mechanics",
+    "domain": "Physics",
     "description": "Dimensionless ratio of inertial to viscous forces predicting flow regime",
     "core": false
   },
@@ -3437,55 +2725,55 @@ export const mathEquations = [
     "name": "Poiseuille's law",
     "aliases": "Hagen-Poiseuille flow",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>Q</mi><mo>=</mo><mfrac><mrow><mi>π</mi><msup><mi>r</mi><mn>4</mn></msup><mi mathvariant=\"normal\">Δ</mi><mi>P</mi></mrow><mrow><mn>8</mn><mi>μ</mi><mi>L</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">Q = \\frac{\\pi r^4 \\Delta P}{8 \\mu L}</annotation></semantics></math>",
-    "domain": "Fluid Mechanics",
-    "description": "Volumetric flow rate through a cylindrical pipe under a pressure difference",
+    "domain": "Physics",
+    "description": "Volumetric flow rate through a cylindrical pipe",
     "core": false
   },
   {
     "name": "drag force",
     "aliases": "aerodynamic drag",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>F</mi><mi>d</mi></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>C</mi><mi>d</mi></msub><mi>ρ</mi><mi>A</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">F_d = \\frac{1}{2} C_d \\rho A v^2</annotation></semantics></math>",
-    "domain": "Fluid Mechanics",
-    "description": "Resistive force on an object moving through a fluid with drag coefficient C_d",
+    "domain": "Physics",
+    "description": "Resistive force on an object moving through a fluid",
     "core": false
   },
   {
     "name": "buoyancy force",
     "aliases": "Archimedes principle",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>F</mi><mi>b</mi></msub><mo>=</mo><msub><mi>ρ</mi><mi>f</mi></msub><mi>g</mi><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">F_b = \\rho_f g V</annotation></semantics></math>",
-    "domain": "Fluid Mechanics",
-    "description": "Upward force on a submerged object equal to the weight of displaced fluid",
+    "domain": "Physics",
+    "description": "Upward force on a submerged object equal to weight of displaced fluid",
     "core": false
   },
   {
     "name": "time-independent Schrodinger equation",
     "aliases": "TISE",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>−</mo><mfrac><msup><mi mathvariant=\"normal\">ℏ</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>ψ</mi></mrow><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mi>V</mi><mi>ψ</mi><mo>=</mo><mi>E</mi><mi>ψ</mi></mrow><annotation encoding=\"application/x-tex\">-\\frac{\\hbar^2}{2m}\\frac{d^2\\psi}{dx^2} + V\\psi = E\\psi</annotation></semantics></math>",
-    "domain": "Quantum Mechanics",
-    "description": "Eigenvalue equation for stationary quantum states, where V is potential energy",
+    "domain": "Physics",
+    "description": "Eigenvalue equation for stationary quantum states",
     "core": false
   },
   {
     "name": "time-dependent Schrodinger equation",
     "aliases": "TDSE",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>i</mi><mi mathvariant=\"normal\">ℏ</mi><mfrac><mrow><mi mathvariant=\"normal\">∂</mi><mi>ψ</mi></mrow><mrow><mi mathvariant=\"normal\">∂</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mover accent=\"true\"><mi>H</mi><mo>^</mo></mover><mi>ψ</mi></mrow><annotation encoding=\"application/x-tex\">i\\hbar\\frac{\\partial\\psi}{\\partial t} = \\hat{H}\\psi</annotation></semantics></math>",
-    "domain": "Quantum Mechanics",
-    "description": "Fundamental wave equation governing the time evolution of a quantum state",
+    "domain": "Physics",
+    "description": "Fundamental wave equation governing time evolution of a quantum state",
     "core": false
   },
   {
     "name": "wave function normalization",
     "aliases": "probability normalization",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant=\"normal\">∞</mi></mrow><mi mathvariant=\"normal\">∞</mi></msubsup><mi mathvariant=\"normal\">∣</mi><mi>ψ</mi><msup><mi mathvariant=\"normal\">∣</mi><mn>2</mn></msup><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">\\int_{-\\infty}^{\\infty} |\\psi|^2 \\, dx = 1</annotation></semantics></math>",
-    "domain": "Quantum Mechanics",
-    "description": "The total probability of finding the particle anywhere must equal one",
+    "domain": "Physics",
+    "description": "Total probability of finding the particle anywhere must equal one",
     "core": false
   },
   {
     "name": "quantum expectation value",
     "aliases": "quantum average",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">⟨</mo><mi>x</mi><mo stretchy=\"false\">⟩</mo><mo>=</mo><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant=\"normal\">∞</mi></mrow><mi mathvariant=\"normal\">∞</mi></msubsup><msup><mi>ψ</mi><mo>∗</mo></msup><mi>x</mi><mi>ψ</mi><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\langle x \\rangle = \\int_{-\\infty}^{\\infty} \\psi^* x \\psi\\,dx</annotation></semantics></math>",
-    "domain": "Quantum Mechanics",
+    "domain": "Physics",
     "description": "Statistical average of a position measurement for a particle in state psi",
     "core": false
   },
@@ -3493,7 +2781,7 @@ export const mathEquations = [
     "name": "particle in a box",
     "aliases": "infinite square well",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><msup><mi>n</mi><mn>2</mn></msup><msup><mi>π</mi><mn>2</mn></msup><msup><mi mathvariant=\"normal\">ℏ</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi><msup><mi>L</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">E_n = \\frac{n^2 \\pi^2 \\hbar^2}{2mL^2}</annotation></semantics></math>",
-    "domain": "Quantum Mechanics",
+    "domain": "Physics",
     "description": "Energy levels of a particle confined to a one-dimensional box of length L",
     "core": false
   },
@@ -3501,7 +2789,7 @@ export const mathEquations = [
     "name": "mass defect",
     "aliases": "nuclear mass defect",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>m</mi><mo>=</mo><mi>Z</mi><msub><mi>m</mi><mi>p</mi></msub><mo>+</mo><mi>N</mi><msub><mi>m</mi><mi>n</mi></msub><mo>−</mo><msub><mi>m</mi><mrow><mi>n</mi><mi>u</mi><mi>c</mi></mrow></msub></mrow><annotation encoding=\"application/x-tex\">\\Delta m = Z m_p + N m_n - m_{nuc}</annotation></semantics></math>",
-    "domain": "Nuclear Physics",
+    "domain": "Physics",
     "description": "Difference between constituent nucleon masses and the actual nuclear mass",
     "core": false
   },
@@ -3509,39 +2797,23 @@ export const mathEquations = [
     "name": "nuclear binding energy",
     "aliases": "total binding energy",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>E</mi><mi>b</mi></msub><mo>=</mo><mi mathvariant=\"normal\">Δ</mi><mi>m</mi><mo>⋅</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">E_b = \\Delta m \\cdot c^2</annotation></semantics></math>",
-    "domain": "Nuclear Physics",
-    "description": "Energy released when assembling a nucleus from its free constituent nucleons",
+    "domain": "Physics",
+    "description": "Energy released when assembling a nucleus from free constituent nucleons",
     "core": false
   },
   {
     "name": "Q-value",
     "aliases": "nuclear reaction energy",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>Q</mi><mo>=</mo><mrow><mo fence=\"true\">(</mo><msub><mi>m</mi><mtext>reactants</mtext></msub><mo>−</mo><msub><mi>m</mi><mtext>products</mtext></msub><mo fence=\"true\">)</mo></mrow><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">Q = \\left(m_{\\text{reactants}} - m_{\\text{products}}\\right)c^2</annotation></semantics></math>",
-    "domain": "Nuclear Physics",
+    "domain": "Physics",
     "description": "Energy released or absorbed in a nuclear reaction",
-    "core": false
-  },
-  {
-    "name": "radioactive decay law",
-    "aliases": "exponential decay activity",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>N</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi><mi>t</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">N(t) = N_0 e^{-\\lambda t}</annotation></semantics></math>",
-    "domain": "Nuclear Physics",
-    "description": "Number of undecayed radioactive nuclei remaining at time t",
-    "core": false
-  },
-  {
-    "name": "nuclear half-life",
-    "aliases": "radioactive half-life",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>t</mi><mrow><mn>1</mn><mi mathvariant=\"normal\">/</mi><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mn>2</mn></mrow><mi>λ</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">t_{1/2} = \\frac{\\ln 2}{\\lambda}</annotation></semantics></math>",
-    "domain": "Nuclear Physics",
-    "description": "Time for half of the radioactive nuclei in a sample to decay",
     "core": false
   },
   {
     "name": "sound intensity level",
     "aliases": "decibel level",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>β</mi><mo>=</mo><mn>10</mn><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>10</mn></msub><mrow><mo fence=\"true\">(</mo><mfrac><mi>I</mi><msub><mi>I</mi><mn>0</mn></msub></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\beta = 10\\log_{10}\\left(\\frac{I}{I_0}\\right)</annotation></semantics></math>",
-    "domain": "Acoustics",
+    "domain": "Physics",
     "description": "Sound pressure level in decibels relative to reference intensity I_0",
     "core": false
   },
@@ -3549,7 +2821,7 @@ export const mathEquations = [
     "name": "sound intensity point source",
     "aliases": "inverse square sound law",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>I</mi><mo>=</mo><mfrac><mi>P</mi><mrow><mn>4</mn><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">I = \\frac{P}{4\\pi r^2}</annotation></semantics></math>",
-    "domain": "Acoustics",
+    "domain": "Physics",
     "description": "Intensity from a point source decreases with the square of distance r",
     "core": false
   },
@@ -3557,7 +2829,7 @@ export const mathEquations = [
     "name": "fundamental frequency string",
     "aliases": "string vibration",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>f</mi><mn>1</mn></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>L</mi></mrow></mfrac><msqrt><mfrac><mi>T</mi><mi>μ</mi></mfrac></msqrt></mrow><annotation encoding=\"application/x-tex\">f_1 = \\frac{1}{2L}\\sqrt{\\frac{T}{\\mu}}</annotation></semantics></math>",
-    "domain": "Acoustics",
+    "domain": "Physics",
     "description": "Lowest resonant frequency of a string with tension T and linear mass density mu",
     "core": false
   },
@@ -3565,39 +2837,31 @@ export const mathEquations = [
     "name": "open pipe harmonics",
     "aliases": "open tube resonance",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><mi>n</mi><mi>v</mi></mrow><mrow><mn>2</mn><mi>L</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">f_n = \\frac{nv}{2L}</annotation></semantics></math>",
-    "domain": "Acoustics",
-    "description": "Resonant frequencies of a pipe open at both ends with n = 1 for fundamental",
+    "domain": "Physics",
+    "description": "Resonant frequencies of a pipe open at both ends",
     "core": false
   },
   {
     "name": "closed pipe resonance",
     "aliases": "quarter-wave resonance",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><mo stretchy=\"false\">(</mo><mn>2</mn><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mi>v</mi></mrow><mrow><mn>4</mn><mi>L</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">f_n = \\frac{(2n-1)v}{4L}</annotation></semantics></math>",
-    "domain": "Acoustics",
+    "domain": "Physics",
     "description": "Resonant frequencies of a pipe open at one end and closed at the other",
-    "core": false
-  },
-  {
-    "name": "Doppler effect",
-    "aliases": "Doppler shift",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>=</mo><mi>f</mi><mfrac><mrow><mi>v</mi><mo>+</mo><msub><mi>v</mi><mi>o</mi></msub></mrow><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">f&#x27; = f\\frac{v + v_o}{v - v_s}</annotation></semantics></math>",
-    "domain": "Acoustics",
-    "description": "Observed frequency when source and observer move relative to each other",
     "core": false
   },
   {
     "name": "Kepler's third law",
     "aliases": "orbital period law",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>T</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow><mrow><mi>G</mi><mi>M</mi></mrow></mfrac><msup><mi>a</mi><mn>3</mn></msup></mrow><annotation encoding=\"application/x-tex\">T^2 = \\frac{4\\pi^2}{GM}a^3</annotation></semantics></math>",
-    "domain": "Astronomy",
-    "description": "Square of orbital period is proportional to cube of semi-major axis a",
+    "domain": "Physics",
+    "description": "Square of orbital period is proportional to cube of semi-major axis",
     "core": false
   },
   {
     "name": "Hubble's law",
     "aliases": "cosmological expansion",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>v</mi><mo>=</mo><msub><mi>H</mi><mn>0</mn></msub><mi>d</mi></mrow><annotation encoding=\"application/x-tex\">v = H_0 d</annotation></semantics></math>",
-    "domain": "Astronomy",
+    "domain": "Physics",
     "description": "Recession velocity of a distant galaxy is proportional to its distance",
     "core": false
   },
@@ -3605,7 +2869,7 @@ export const mathEquations = [
     "name": "stellar luminosity",
     "aliases": "Stefan-Boltzmann luminosity",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>L</mi><mo>=</mo><mn>4</mn><mi>π</mi><msup><mi>R</mi><mn>2</mn></msup><mi>σ</mi><msup><mi>T</mi><mn>4</mn></msup></mrow><annotation encoding=\"application/x-tex\">L = 4\\pi R^2 \\sigma T^4</annotation></semantics></math>",
-    "domain": "Astronomy",
+    "domain": "Physics",
     "description": "Total power radiated by a star of radius R and surface temperature T",
     "core": false
   },
@@ -3613,23 +2877,391 @@ export const mathEquations = [
     "name": "apparent magnitude difference",
     "aliases": "Pogson's law",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>−</mo><msub><mi>m</mi><mn>2</mn></msub><mo>=</mo><mo>−</mo><mn>2.5</mn><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>10</mn></msub><mo stretchy=\"false\">(</mo><msub><mi>F</mi><mn>1</mn></msub><mi mathvariant=\"normal\">/</mi><msub><mi>F</mi><mn>2</mn></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">m_1 - m_2 = -2.5\\log_{10}(F_1/F_2)</annotation></semantics></math>",
-    "domain": "Astronomy",
-    "description": "Difference in apparent magnitude corresponds to a flux ratio between two stars",
+    "domain": "Physics",
+    "description": "Difference in apparent magnitude corresponds to a flux ratio",
     "core": false
   },
   {
     "name": "Schwarzschild radius",
     "aliases": "event horizon radius",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>r</mi><mi>s</mi></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mi>G</mi><mi>M</mi></mrow><msup><mi>c</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">r_s = \\frac{2GM}{c^2}</annotation></semantics></math>",
-    "domain": "Astronomy",
+    "domain": "Physics",
     "description": "Radius of the event horizon of a non-rotating black hole of mass M",
+    "core": false
+  },
+  {
+    "name": "Maxwell's equations (grouped)",
+    "aliases": "Gauss's law electric; Gauss's law magnetic; Faraday's law; Ampere-Maxwell law",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∇</mi><mo>⋅</mo><mi mathvariant=\"bold\">E</mi><mo>=</mo><mfrac><mi>ρ</mi><msub><mi>ε</mi><mn>0</mn></msub></mfrac><mo separator=\"true\">;</mo><mtext>  </mtext><mi mathvariant=\"normal\">∇</mi><mo>⋅</mo><mi mathvariant=\"bold\">B</mi><mo>=</mo><mn>0</mn><mo separator=\"true\">;</mo><mtext>  </mtext><mi mathvariant=\"normal\">∇</mi><mo>×</mo><mi mathvariant=\"bold\">E</mi><mo>=</mo><mo>−</mo><mfrac><mrow><mi mathvariant=\"normal\">∂</mi><mi mathvariant=\"bold\">B</mi></mrow><mrow><mi mathvariant=\"normal\">∂</mi><mi>t</mi></mrow></mfrac><mo separator=\"true\">;</mo><mtext>  </mtext><mi mathvariant=\"normal\">∇</mi><mo>×</mo><mi mathvariant=\"bold\">B</mi><mo>=</mo><msub><mi>μ</mi><mn>0</mn></msub><mi mathvariant=\"bold\">J</mi><mo>+</mo><msub><mi>μ</mi><mn>0</mn></msub><msub><mi>ε</mi><mn>0</mn></msub><mfrac><mrow><mi mathvariant=\"normal\">∂</mi><mi mathvariant=\"bold\">E</mi></mrow><mrow><mi mathvariant=\"normal\">∂</mi><mi>t</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\nabla \\cdot \\mathbf{E} = \\frac{\\rho}{\\varepsilon_0};\\; \\nabla \\cdot \\mathbf{B} = 0;\\; \\nabla \\times \\mathbf{E} = -\\frac{\\partial \\mathbf{B}}{\\partial t};\\; \\nabla \\times \\mathbf{B} = \\mu_0 \\mathbf{J} + \\mu_0 \\varepsilon_0 \\frac{\\partial \\mathbf{E}}{\\partial t}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Maxwell's four equations of electromagnetism (differential form)",
+    "core": false
+  },
+  {
+    "name": "wave equation (1D)",
+    "aliases": "classical wave PDE",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><msup><mi mathvariant=\"normal\">∂</mi><mn>2</mn></msup><mi>u</mi></mrow><mrow><mi mathvariant=\"normal\">∂</mi><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup><mfrac><mrow><msup><mi mathvariant=\"normal\">∂</mi><mn>2</mn></msup><mi>u</mi></mrow><mrow><mi mathvariant=\"normal\">∂</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{\\partial^2 u}{\\partial t^2} = c^2 \\frac{\\partial^2 u}{\\partial x^2}</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Wave equation describing wave propagation at speed c",
+    "core": false
+  },
+  {
+    "name": "Stefan-Boltzmann law",
+    "aliases": "radiant power",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo>=</mo><mi>σ</mi><mi>A</mi><msup><mi>T</mi><mn>4</mn></msup></mrow><annotation encoding=\"application/x-tex\">P = \\sigma A T^4</annotation></semantics></math>",
+    "domain": "Physics",
+    "description": "Power radiated by a blackbody of area A at temperature T",
+    "core": false
+  },
+  {
+    "name": "mole-mass relationship",
+    "aliases": "n equals m over M",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>n</mi><mo>=</mo><mfrac><mi>m</mi><mi>M</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">n = \\frac{m}{M}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Moles equals mass divided by molar mass M",
+    "core": false
+  },
+  {
+    "name": "number of particles",
+    "aliases": "N equals n times NA",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>N</mi><mo>=</mo><mi>n</mi><mo>×</mo><msub><mi>N</mi><mi>A</mi></msub></mrow><annotation encoding=\"application/x-tex\">N = n \\times N_A</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Number of particles from moles and Avogadro's number",
+    "core": false
+  },
+  {
+    "name": "percent composition",
+    "aliases": "mass percent",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>w</mi><mo>=</mo><mfrac><msub><mi>m</mi><mtext>element</mtext></msub><msub><mi>m</mi><mtext>compound</mtext></msub></mfrac><mo>×</mo><mn>100</mn><mi mathvariant=\"normal\">%</mi></mrow><annotation encoding=\"application/x-tex\">w = \\frac{m_{\\text{element}}}{m_{\\text{compound}}} \\times 100\\%</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Mass percent of an element in a compound",
+    "core": false
+  },
+  {
+    "name": "molarity",
+    "aliases": "moles per liter",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mo>=</mo><mfrac><mi>n</mi><mi>V</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">M = \\frac{n}{V}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Molarity: moles of solute per liter of solution",
+    "core": false
+  },
+  {
+    "name": "dilution formula",
+    "aliases": "M1V1 equals M2V2",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>M</mi><mn>1</mn></msub><msub><mi>V</mi><mn>1</mn></msub><mo>=</mo><msub><mi>M</mi><mn>2</mn></msub><msub><mi>V</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">M_1 V_1 = M_2 V_2</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Dilution relationship between initial and final concentration and volume",
+    "core": false
+  },
+  {
+    "name": "molality",
+    "aliases": "moles per kilogram solvent",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>m</mi><mo>=</mo><mfrac><msub><mi>n</mi><mtext>solute</mtext></msub><msub><mi>m</mi><mtext>solvent</mtext></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">m = \\frac{n_{\\text{solute}}}{m_{\\text{solvent}}}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Molality: moles of solute per kilogram of solvent",
+    "core": false
+  },
+  {
+    "name": "Raoult's law",
+    "aliases": "vapor pressure lowering",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo>=</mo><msub><mi>X</mi><mtext>solvent</mtext></msub><msup><mi>P</mi><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup></mrow><annotation encoding=\"application/x-tex\">P = X_{\\text{solvent}} P^{\\circ}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Vapor pressure of solution equals mole fraction times pure vapor pressure",
+    "core": false
+  },
+  {
+    "name": "boiling point elevation",
+    "aliases": "delta Tb",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><msub><mi>T</mi><mi>b</mi></msub><mo>=</mo><mi>i</mi><msub><mi>K</mi><mi>b</mi></msub><mi>m</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta T_b = i K_b m</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Elevation of boiling point by a solute",
+    "core": false
+  },
+  {
+    "name": "freezing point depression",
+    "aliases": "delta Tf",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><msub><mi>T</mi><mi>f</mi></msub><mo>=</mo><mi>i</mi><msub><mi>K</mi><mi>f</mi></msub><mi>m</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta T_f = i K_f m</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Depression of freezing point by a solute",
+    "core": false
+  },
+  {
+    "name": "osmotic pressure",
+    "aliases": "pi equals iMRT",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>π</mi><mo>=</mo><mi>i</mi><mi>M</mi><mi>R</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">\\pi = iMRT</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Osmotic pressure of a solution",
+    "core": false
+  },
+  {
+    "name": "Boyle's law",
+    "aliases": "P1V1 equals P2V2",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>P</mi><mn>1</mn></msub><msub><mi>V</mi><mn>1</mn></msub><mo>=</mo><msub><mi>P</mi><mn>2</mn></msub><msub><mi>V</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">P_1 V_1 = P_2 V_2</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Inverse relationship between pressure and volume at constant T",
+    "core": false
+  },
+  {
+    "name": "Charles's law",
+    "aliases": "V1 over T1",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><msub><mi>V</mi><mn>1</mn></msub><msub><mi>T</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>V</mi><mn>2</mn></msub><msub><mi>T</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{V_1}{T_1} = \\frac{V_2}{T_2}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Direct relationship between volume and temperature at constant P",
+    "core": false
+  },
+  {
+    "name": "Gay-Lussac's law",
+    "aliases": "P1 over T1",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><msub><mi>P</mi><mn>1</mn></msub><msub><mi>T</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>P</mi><mn>2</mn></msub><msub><mi>T</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{P_1}{T_1} = \\frac{P_2}{T_2}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Direct relationship between pressure and temperature at constant V",
+    "core": false
+  },
+  {
+    "name": "combined gas law",
+    "aliases": "combined gas",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><msub><mi>P</mi><mn>1</mn></msub><msub><mi>V</mi><mn>1</mn></msub></mrow><msub><mi>T</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><mrow><msub><mi>P</mi><mn>2</mn></msub><msub><mi>V</mi><mn>2</mn></msub></mrow><msub><mi>T</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{P_1 V_1}{T_1} = \\frac{P_2 V_2}{T_2}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Combined relationship of pressure volume and temperature",
+    "core": false
+  },
+  {
+    "name": "Avogadro's law",
+    "aliases": "V1 over n1",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><msub><mi>V</mi><mn>1</mn></msub><msub><mi>n</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>V</mi><mn>2</mn></msub><msub><mi>n</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{V_1}{n_1} = \\frac{V_2}{n_2}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Volume is proportional to moles at constant T and P",
+    "core": false
+  },
+  {
+    "name": "Dalton's law of partial pressures",
+    "aliases": "total pressure",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>P</mi><mtext>total</mtext></msub><mo>=</mo><msub><mi>P</mi><mn>1</mn></msub><mo>+</mo><msub><mi>P</mi><mn>2</mn></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>P</mi><mi>n</mi></msub></mrow><annotation encoding=\"application/x-tex\">P_{\\text{total}} = P_1 + P_2 + \\cdots + P_n</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Total pressure equals sum of partial pressures of each gas",
+    "core": false
+  },
+  {
+    "name": "Graham's law of effusion",
+    "aliases": "rate of effusion",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><msub><mi>r</mi><mn>1</mn></msub><msub><mi>r</mi><mn>2</mn></msub></mfrac><mo>=</mo><msqrt><mfrac><msub><mi>M</mi><mn>2</mn></msub><msub><mi>M</mi><mn>1</mn></msub></mfrac></msqrt></mrow><annotation encoding=\"application/x-tex\">\\frac{r_1}{r_2} = \\sqrt{\\frac{M_2}{M_1}}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Effusion rate inversely proportional to square root of molar mass",
+    "core": false
+  },
+  {
+    "name": "van der Waals equation",
+    "aliases": "real gas equation",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mrow><mo fence=\"true\">(</mo><mi>P</mi><mo>+</mo><mfrac><mrow><mi>a</mi><msup><mi>n</mi><mn>2</mn></msup></mrow><msup><mi>V</mi><mn>2</mn></msup></mfrac><mo fence=\"true\">)</mo></mrow><mo stretchy=\"false\">(</mo><mi>V</mi><mo>−</mo><mi>n</mi><mi>b</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>n</mi><mi>R</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">\\left(P + \\frac{an^2}{V^2}\\right)(V - nb) = nRT</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Equation of state for real gases with intermolecular corrections",
+    "core": false
+  },
+  {
+    "name": "enthalpy of reaction",
+    "aliases": "delta H reaction",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><msub><mi>H</mi><mtext>rxn</mtext></msub><mo>=</mo><mo>∑</mo><mi mathvariant=\"normal\">Δ</mi><msub><mi>H</mi><mi>f</mi></msub><mo stretchy=\"false\">(</mo><mtext>products</mtext><mo stretchy=\"false\">)</mo><mo>−</mo><mo>∑</mo><mi mathvariant=\"normal\">Δ</mi><msub><mi>H</mi><mi>f</mi></msub><mo stretchy=\"false\">(</mo><mtext>reactants</mtext><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\Delta H_{\\text{rxn}} = \\sum \\Delta H_f(\\text{products}) - \\sum \\Delta H_f(\\text{reactants})</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Standard enthalpy of reaction from heats of formation",
+    "core": false
+  },
+  {
+    "name": "Gibbs free energy",
+    "aliases": "delta G",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>G</mi><mo>=</mo><mi mathvariant=\"normal\">Δ</mi><mi>H</mi><mo>−</mo><mi>T</mi><mi mathvariant=\"normal\">Δ</mi><mi>S</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta G = \\Delta H - T\\Delta S</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Gibbs free energy determines spontaneity of a reaction",
+    "core": false
+  },
+  {
+    "name": "Gibbs free energy and equilibrium",
+    "aliases": "delta G naught and K",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><msup><mi>G</mi><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup><mo>=</mo><mo>−</mo><mi>R</mi><mi>T</mi><mi>ln</mi><mo>⁡</mo><mi>K</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta G^{\\circ} = -RT\\ln K</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Relationship between standard free energy and equilibrium constant",
+    "core": false
+  },
+  {
+    "name": "entropy change",
+    "aliases": "delta S",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>S</mi><mo>=</mo><mfrac><msub><mi>q</mi><mtext>rev</mtext></msub><mi>T</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\Delta S = \\frac{q_{\\text{rev}}}{T}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Entropy change for a reversible process at temperature T",
+    "core": false
+  },
+  {
+    "name": "equilibrium constant expression",
+    "aliases": "Keq",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>K</mi><mo>=</mo><mfrac><mrow><mo stretchy=\"false\">[</mo><mtext>products</mtext><msup><mo stretchy=\"false\">]</mo><mtext>coefficients</mtext></msup></mrow><mrow><mo stretchy=\"false\">[</mo><mtext>reactants</mtext><msup><mo stretchy=\"false\">]</mo><mtext>coefficients</mtext></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">K = \\frac{[\\text{products}]^{\\text{coefficients}}}{[\\text{reactants}]^{\\text{coefficients}}}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Equilibrium constant as ratio of product to reactant concentrations",
+    "core": false
+  },
+  {
+    "name": "Kp Kc relationship",
+    "aliases": "Kp equals Kc RT delta n",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>K</mi><mi>p</mi></msub><mo>=</mo><msub><mi>K</mi><mi>c</mi></msub><mo stretchy=\"false\">(</mo><mi>R</mi><mi>T</mi><msup><mo stretchy=\"false\">)</mo><mrow><mi mathvariant=\"normal\">Δ</mi><mi>n</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">K_p = K_c (RT)^{\\Delta n}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Relationship between Kp and Kc where delta n is moles gas change",
+    "core": false
+  },
+  {
+    "name": "reaction quotient",
+    "aliases": "Q compared to K",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>Q</mi><mo>=</mo><mfrac><mrow><mo stretchy=\"false\">[</mo><mtext>products</mtext><mo stretchy=\"false\">]</mo></mrow><mrow><mo stretchy=\"false\">[</mo><mtext>reactants</mtext><mo stretchy=\"false\">]</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">Q = \\frac{[\\text{products}]}{[\\text{reactants}]}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Reaction quotient used to predict direction of reaction",
+    "core": false
+  },
+  {
+    "name": "pH definition",
+    "aliases": "pH equals negative log H",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>pH</mtext><mo>=</mo><mo>−</mo><mi>log</mi><mo>⁡</mo><mo stretchy=\"false\">[</mo><msup><mtext>H</mtext><mo>+</mo></msup><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\text{pH} = -\\log[\\text{H}^+]</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "pH as negative log of hydrogen ion concentration",
+    "core": false
+  },
+  {
+    "name": "pOH definition",
+    "aliases": "pOH equals negative log OH",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>pOH</mtext><mo>=</mo><mo>−</mo><mi>log</mi><mo>⁡</mo><mo stretchy=\"false\">[</mo><msup><mtext>OH</mtext><mo>−</mo></msup><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\text{pOH} = -\\log[\\text{OH}^-]</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "pOH as negative log of hydroxide ion concentration",
+    "core": false
+  },
+  {
+    "name": "pH plus pOH",
+    "aliases": "pH pOH equals 14",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>pH</mtext><mo>+</mo><mtext>pOH</mtext><mo>=</mo><mn>14</mn></mrow><annotation encoding=\"application/x-tex\">\\text{pH} + \\text{pOH} = 14</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Relationship between pH and pOH in aqueous solution at 25C",
+    "core": false
+  },
+  {
+    "name": "water dissociation constant",
+    "aliases": "Kw",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>K</mi><mi>w</mi></msub><mo>=</mo><mo stretchy=\"false\">[</mo><msup><mtext>H</mtext><mo>+</mo></msup><mo stretchy=\"false\">]</mo><mo stretchy=\"false\">[</mo><msup><mtext>OH</mtext><mo>−</mo></msup><mo stretchy=\"false\">]</mo><mo>=</mo><mn>1.0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>14</mn></mrow></msup></mrow><annotation encoding=\"application/x-tex\">K_w = [\\text{H}^+][\\text{OH}^-] = 1.0 \\times 10^{-14}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Ion product of water at 25C",
+    "core": false
+  },
+  {
+    "name": "Henderson-Hasselbalch equation",
+    "aliases": "pH of buffer",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>pH</mtext><mo>=</mo><mtext>p</mtext><msub><mi>K</mi><mi>a</mi></msub><mo>+</mo><mi>log</mi><mo>⁡</mo><mfrac><mrow><mo stretchy=\"false\">[</mo><msup><mtext>A</mtext><mo>−</mo></msup><mo stretchy=\"false\">]</mo></mrow><mrow><mo stretchy=\"false\">[</mo><mtext>HA</mtext><mo stretchy=\"false\">]</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\text{pH} = \\text{p}K_a + \\log\\frac{[\\text{A}^-]}{[\\text{HA}]}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "pH of a buffer solution from pKa and concentration ratio",
+    "core": false
+  },
+  {
+    "name": "Ka times Kb equals Kw",
+    "aliases": "conjugate acid base pair",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>K</mi><mi>a</mi></msub><mo>×</mo><msub><mi>K</mi><mi>b</mi></msub><mo>=</mo><msub><mi>K</mi><mi>w</mi></msub></mrow><annotation encoding=\"application/x-tex\">K_a \\times K_b = K_w</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Product of conjugate acid and base dissociation constants equals Kw",
+    "core": false
+  },
+  {
+    "name": "standard cell potential",
+    "aliases": "E cell",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mi>E</mi><mtext>cell</mtext><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msubsup><mo>=</mo><msubsup><mi>E</mi><mtext>cathode</mtext><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msubsup><mo>−</mo><msubsup><mi>E</mi><mtext>anode</mtext><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msubsup></mrow><annotation encoding=\"application/x-tex\">E^{\\circ}_{\\text{cell}} = E^{\\circ}_{\\text{cathode}} - E^{\\circ}_{\\text{anode}}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Standard cell potential from half-reaction potentials",
+    "core": false
+  },
+  {
+    "name": "Nernst equation",
+    "aliases": "E cell at non-standard",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo>=</mo><msup><mi>E</mi><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup><mo>−</mo><mfrac><mrow><mi>R</mi><mi>T</mi></mrow><mrow><mi>n</mi><mi>F</mi></mrow></mfrac><mi>ln</mi><mo>⁡</mo><mi>Q</mi></mrow><annotation encoding=\"application/x-tex\">E = E^{\\circ} - \\frac{RT}{nF}\\ln Q</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Cell potential at non-standard conditions",
+    "core": false
+  },
+  {
+    "name": "Gibbs and cell potential",
+    "aliases": "delta G and E cell",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><msup><mi>G</mi><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup><mo>=</mo><mo>−</mo><mi>n</mi><mi>F</mi><msup><mi>E</mi><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup></mrow><annotation encoding=\"application/x-tex\">\\Delta G^{\\circ} = -nFE^{\\circ}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Relationship between standard free energy and cell potential",
+    "core": false
+  },
+  {
+    "name": "Faraday electrolysis",
+    "aliases": "mass deposited",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><mi>M</mi><mi>I</mi><mi>t</mi></mrow><mrow><mi>n</mi><mi>F</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">m = \\frac{MIt}{nF}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Mass deposited in electrolysis from current I and time t",
+    "core": false
+  },
+  {
+    "name": "rate law",
+    "aliases": "reaction rate",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>rate</mtext><mo>=</mo><mi>k</mi><mo stretchy=\"false\">[</mo><mi>A</mi><msup><mo stretchy=\"false\">]</mo><mi>m</mi></msup><mo stretchy=\"false\">[</mo><mi>B</mi><msup><mo stretchy=\"false\">]</mo><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">\\text{rate} = k[A]^m[B]^n</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Rate law with rate constant k and reaction orders m and n",
+    "core": false
+  },
+  {
+    "name": "first order integrated rate law",
+    "aliases": "ln A equals ln A0 minus kt",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ln</mi><mo>⁡</mo><mo stretchy=\"false\">[</mo><mi>A</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mi>ln</mi><mo>⁡</mo><mo stretchy=\"false\">[</mo><mi>A</mi><msub><mo stretchy=\"false\">]</mo><mn>0</mn></msub><mo>−</mo><mi>k</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">\\ln[A] = \\ln[A]_0 - kt</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Integrated rate law for a first-order reaction",
+    "core": false
+  },
+  {
+    "name": "second order integrated rate law",
+    "aliases": "1 over A equals 1 over A0 plus kt",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mn>1</mn><mrow><mo stretchy=\"false\">[</mo><mi>A</mi><mo stretchy=\"false\">]</mo></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mo stretchy=\"false\">[</mo><mi>A</mi><msub><mo stretchy=\"false\">]</mo><mn>0</mn></msub></mrow></mfrac><mo>+</mo><mi>k</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{1}{[A]} = \\frac{1}{[A]_0} + kt</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Integrated rate law for a second-order reaction",
+    "core": false
+  },
+  {
+    "name": "half-life first order",
+    "aliases": "t half first order",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>t</mi><mrow><mn>1</mn><mi mathvariant=\"normal\">/</mi><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mn>2</mn></mrow><mi>k</mi></mfrac><mo>=</mo><mfrac><mn>0.693</mn><mi>k</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">t_{1/2} = \\frac{\\ln 2}{k} = \\frac{0.693}{k}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Half-life of a first-order reaction",
+    "core": false
+  },
+  {
+    "name": "Arrhenius equation",
+    "aliases": "k equals A e to the negative Ea over RT",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>k</mi><mo>=</mo><mi>A</mi><msup><mi>e</mi><mrow><mo>−</mo><msub><mi>E</mi><mi>a</mi></msub><mi mathvariant=\"normal\">/</mi><mi>R</mi><mi>T</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">k = Ae^{-E_a/RT}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Rate constant dependence on activation energy and temperature",
+    "core": false
+  },
+  {
+    "name": "Rydberg formula",
+    "aliases": "hydrogen spectral lines",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mn>1</mn><mi>λ</mi></mfrac><mo>=</mo><msub><mi>R</mi><mi>H</mi></msub><mrow><mo fence=\"true\">(</mo><mfrac><mn>1</mn><msubsup><mi>n</mi><mn>1</mn><mn>2</mn></msubsup></mfrac><mo>−</mo><mfrac><mn>1</mn><msubsup><mi>n</mi><mn>2</mn><mn>2</mn></msubsup></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\frac{1}{\\lambda} = R_H\\left(\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right)</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Wavelengths of hydrogen spectral lines",
+    "core": false
+  },
+  {
+    "name": "photon energy",
+    "aliases": "E equals hf",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo>=</mo><mi>h</mi><mi>f</mi><mo>=</mo><mfrac><mrow><mi>h</mi><mi>c</mi></mrow><mi>λ</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">E = hf = \\frac{hc}{\\lambda}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Energy of a photon in terms of frequency and wavelength",
+    "core": false
+  },
+  {
+    "name": "Bohr model energy levels",
+    "aliases": "energy of nth level",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>=</mo><mo>−</mo><mfrac><mrow><mn>13.6</mn><mtext> </mtext><mtext>eV</mtext></mrow><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">E_n = -\\frac{13.6\\,\\text{eV}}{n^2}</annotation></semantics></math>",
+    "domain": "Chemistry",
+    "description": "Energy of the nth electron shell in the Bohr model of hydrogen",
     "core": false
   },
   {
     "name": "Hardy-Weinberg equilibrium",
     "aliases": "Hardy-Weinberg principle",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>p</mi><mi>q</mi><mo>+</mo><msup><mi>q</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">p^2 + 2pq + q^2 = 1</annotation></semantics></math>",
-    "domain": "Biology/Ecology",
+    "domain": "Biology & Life Sciences",
     "description": "Allele frequency equilibrium in a non-evolving diploid population with p + q = 1",
     "core": false
   },
@@ -3637,7 +3269,7 @@ export const mathEquations = [
     "name": "logistic population growth",
     "aliases": "logistic growth model",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi>d</mi><mi>N</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>r</mi><mi>N</mi><mrow><mo fence=\"true\">(</mo><mn>1</mn><mo>−</mo><mfrac><mi>N</mi><mi>K</mi></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\frac{dN}{dt} = rN\\left(1 - \\frac{N}{K}\\right)</annotation></semantics></math>",
-    "domain": "Biology/Ecology",
+    "domain": "Biology & Life Sciences",
     "description": "Population growth rate decreasing as size N approaches carrying capacity K",
     "core": false
   },
@@ -3645,7 +3277,7 @@ export const mathEquations = [
     "name": "Michaelis-Menten kinetics",
     "aliases": "enzyme kinetics",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>v</mi><mo>=</mo><mfrac><mrow><msub><mi>V</mi><mi>max</mi><mo>⁡</mo></msub><mo stretchy=\"false\">[</mo><mi>S</mi><mo stretchy=\"false\">]</mo></mrow><mrow><msub><mi>K</mi><mi>m</mi></msub><mo>+</mo><mo stretchy=\"false\">[</mo><mi>S</mi><mo stretchy=\"false\">]</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">v = \\frac{V_{\\max}[S]}{K_m + [S]}</annotation></semantics></math>",
-    "domain": "Biology/Ecology",
+    "domain": "Biology & Life Sciences",
     "description": "Reaction rate of an enzyme as a function of substrate concentration S",
     "core": false
   },
@@ -3653,15 +3285,159 @@ export const mathEquations = [
     "name": "exponential population growth",
     "aliases": "Malthusian growth",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>N</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mi>r</mi><mi>t</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">N(t) = N_0 e^{rt}</annotation></semantics></math>",
-    "domain": "Biology/Ecology",
+    "domain": "Biology & Life Sciences",
     "description": "Unconstrained population growth at constant per-capita growth rate r",
+    "core": false
+  },
+  {
+    "name": "simple interest",
+    "aliases": "I equals Prt",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>I</mi><mo>=</mo><mi>P</mi><mi>r</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">I = Prt</annotation></semantics></math>",
+    "domain": "Finance & Economics",
+    "description": "Simple interest where P is principal r is annual rate t is time in years",
+    "core": false
+  },
+  {
+    "name": "compound interest",
+    "aliases": "A equals P times one plus r over n to the nt",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mi>P</mi><msup><mrow><mo fence=\"true\">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac><mo fence=\"true\">)</mo></mrow><mrow><mi>n</mi><mi>t</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">A = P\\left(1 + \\frac{r}{n}\\right)^{nt}</annotation></semantics></math>",
+    "domain": "Finance & Economics",
+    "description": "Compound interest with n compounding periods per year",
+    "core": false
+  },
+  {
+    "name": "continuously compounded interest",
+    "aliases": "A equals Pe to the rt",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mi>P</mi><msup><mi>e</mi><mrow><mi>r</mi><mi>t</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">A = Pe^{rt}</annotation></semantics></math>",
+    "domain": "Finance & Economics",
+    "description": "Continuously compounded interest",
+    "core": false
+  },
+  {
+    "name": "future value",
+    "aliases": "FV equals PV times one plus r to the n",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mi>V</mi><mo>=</mo><mi>P</mi><mi>V</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">FV = PV(1+r)^n</annotation></semantics></math>",
+    "domain": "Finance & Economics",
+    "description": "Future value of a lump sum with rate r over n periods",
+    "core": false
+  },
+  {
+    "name": "present value",
+    "aliases": "PV equals FV over one plus r to the n",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mfrac><mrow><mi>F</mi><mi>V</mi></mrow><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">PV = \\frac{FV}{(1+r)^n}</annotation></semantics></math>",
+    "domain": "Finance & Economics",
+    "description": "Present value (discount) of a future lump sum",
+    "core": false
+  },
+  {
+    "name": "present value of an annuity",
+    "aliases": "PVA",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mi>P</mi><mi>M</mi><mi>T</mi><mo>⋅</mo><mfrac><mrow><mn>1</mn><mo>−</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mrow><mo>−</mo><mi>n</mi></mrow></msup></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">PV = PMT \\cdot \\frac{1-(1+r)^{-n}}{r}</annotation></semantics></math>",
+    "domain": "Finance & Economics",
+    "description": "Present value of n equal payments PMT at rate r per period",
+    "core": false
+  },
+  {
+    "name": "future value of an annuity",
+    "aliases": "FVA",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mi>V</mi><mo>=</mo><mi>P</mi><mi>M</mi><mi>T</mi><mo>⋅</mo><mfrac><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">FV = PMT \\cdot \\frac{(1+r)^n - 1}{r}</annotation></semantics></math>",
+    "domain": "Finance & Economics",
+    "description": "Future value of n equal payments PMT at rate r per period",
+    "core": false
+  },
+  {
+    "name": "present value of a perpetuity",
+    "aliases": "perpetuity formula",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mfrac><mrow><mi>P</mi><mi>M</mi><mi>T</mi></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">PV = \\frac{PMT}{r}</annotation></semantics></math>",
+    "domain": "Finance & Economics",
+    "description": "Present value of an infinite series of equal payments",
+    "core": false
+  },
+  {
+    "name": "loan payment amortization",
+    "aliases": "monthly payment formula",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mo>=</mo><mi>P</mi><mo>⋅</mo><mfrac><mrow><mi>r</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup></mrow><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">M = P \\cdot \\frac{r(1+r)^n}{(1+r)^n - 1}</annotation></semantics></math>",
+    "domain": "Finance & Economics",
+    "description": "Periodic payment for a fully amortizing loan of principal P",
+    "core": false
+  },
+  {
+    "name": "effective annual rate",
+    "aliases": "EAR",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mi>A</mi><mi>R</mi><mo>=</mo><msup><mrow><mo fence=\"true\">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac><mo fence=\"true\">)</mo></mrow><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">EAR = \\left(1 + \\frac{r}{n}\\right)^n - 1</annotation></semantics></math>",
+    "domain": "Finance & Economics",
+    "description": "Effective annual rate given nominal rate r compounded n times per year",
+    "core": false
+  },
+  {
+    "name": "net present value",
+    "aliases": "NPV",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>N</mi><mi>P</mi><mi>V</mi><mo>=</mo><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mfrac><mrow><mi>C</mi><msub><mi>F</mi><mi>t</mi></msub></mrow><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>t</mi></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">NPV = \\sum_{t=0}^{n} \\frac{CF_t}{(1+r)^t}</annotation></semantics></math>",
+    "domain": "Finance & Economics",
+    "description": "Net present value of cash flows CF at discount rate r",
+    "core": false
+  },
+  {
+    "name": "compound annual growth rate",
+    "aliases": "CAGR",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mi>A</mi><mi>G</mi><mi>R</mi><mo>=</mo><msup><mrow><mo fence=\"true\">(</mo><mfrac><msub><mi>V</mi><mi>f</mi></msub><msub><mi>V</mi><mi>i</mi></msub></mfrac><mo fence=\"true\">)</mo></mrow><mfrac><mn>1</mn><mi>n</mi></mfrac></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">CAGR = \\left(\\frac{V_f}{V_i}\\right)^{\\frac{1}{n}} - 1</annotation></semantics></math>",
+    "domain": "Finance & Economics",
+    "description": "Annualized growth rate from initial value V_i to final value V_f over n years",
+    "core": false
+  },
+  {
+    "name": "doubling time",
+    "aliases": "rule of 70",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mn>2</mn></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">t = \\frac{\\ln 2}{r}</annotation></semantics></math>",
+    "domain": "Finance & Economics",
+    "description": "Exact time for an investment to double at continuous rate r",
+    "core": false
+  },
+  {
+    "name": "rule of 72",
+    "aliases": "approximate doubling time",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>t</mi><mo>≈</mo><mfrac><mn>72</mn><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">t \\approx \\frac{72}{r}</annotation></semantics></math>",
+    "domain": "Finance & Economics",
+    "description": "Approximate years to double at rate r percent (r as a whole number)",
+    "core": false
+  },
+  {
+    "name": "Fisher equation",
+    "aliases": "nominal versus real rate",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><msub><mi>r</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo><mo>=</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><msub><mi>r</mi><mi>r</mi></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>π</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(1 + r_n) = (1 + r_r)(1 + \\pi)</annotation></semantics></math>",
+    "domain": "Finance & Economics",
+    "description": "Relates nominal rate r_n real rate r_r and inflation rate pi",
+    "core": false
+  },
+  {
+    "name": "straight-line depreciation",
+    "aliases": "SLD",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>D</mi><mo>=</mo><mfrac><mrow><mi>C</mi><mo>−</mo><mi>S</mi></mrow><mi>n</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">D = \\frac{C - S}{n}</annotation></semantics></math>",
+    "domain": "Finance & Economics",
+    "description": "Annual depreciation of asset with cost C salvage value S over n years",
+    "core": false
+  },
+  {
+    "name": "return on investment",
+    "aliases": "ROI",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>R</mi><mi>O</mi><mi>I</mi><mo>=</mo><mfrac><mrow><msub><mi>V</mi><mi>f</mi></msub><mo>−</mo><msub><mi>V</mi><mi>i</mi></msub></mrow><msub><mi>V</mi><mi>i</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">ROI = \\frac{V_f - V_i}{V_i}</annotation></semantics></math>",
+    "domain": "Finance & Economics",
+    "description": "Return on investment as a fraction of initial value",
+    "core": false
+  },
+  {
+    "name": "bond price formula",
+    "aliases": "present value of bond",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo>=</mo><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mi>C</mi><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>t</mi></msup></mrow></mfrac><mo>+</mo><mfrac><mi>F</mi><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P = \\sum_{t=1}^{n} \\frac{C}{(1+r)^t} + \\frac{F}{(1+r)^n}</annotation></semantics></math>",
+    "domain": "Finance & Economics",
+    "description": "Price of a bond with coupon C face value F yield r and n periods",
     "core": false
   },
   {
     "name": "price elasticity of demand",
     "aliases": "demand elasticity",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>ε</mi><mi>d</mi></msub><mo>=</mo><mfrac><mrow><mi mathvariant=\"normal\">Δ</mi><mi>Q</mi><mi mathvariant=\"normal\">/</mi><mi>Q</mi></mrow><mrow><mi mathvariant=\"normal\">Δ</mi><mi>P</mi><mi mathvariant=\"normal\">/</mi><mi>P</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\varepsilon_d = \\frac{\\Delta Q / Q}{\\Delta P / P}</annotation></semantics></math>",
-    "domain": "Microeconomics",
+    "domain": "Finance & Economics",
     "description": "Percentage change in quantity demanded per percentage change in price",
     "core": false
   },
@@ -3669,7 +3445,7 @@ export const mathEquations = [
     "name": "marginal cost",
     "aliases": "MC formula",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mi>C</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mi>T</mi><mi>C</mi></mrow><mrow><mi>d</mi><mi>Q</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">MC = \\frac{dTC}{dQ}</annotation></semantics></math>",
-    "domain": "Microeconomics",
+    "domain": "Finance & Economics",
     "description": "Additional cost of producing one more unit of output",
     "core": false
   },
@@ -3677,7 +3453,7 @@ export const mathEquations = [
     "name": "marginal revenue",
     "aliases": "MR formula",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mi>R</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mi>T</mi><mi>R</mi></mrow><mrow><mi>d</mi><mi>Q</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">MR = \\frac{dTR}{dQ}</annotation></semantics></math>",
-    "domain": "Microeconomics",
+    "domain": "Finance & Economics",
     "description": "Additional revenue earned from selling one more unit of output",
     "core": false
   },
@@ -3685,7 +3461,7 @@ export const mathEquations = [
     "name": "profit maximization condition",
     "aliases": "MR equals MC",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mi>R</mi><mo>=</mo><mi>M</mi><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">MR = MC</annotation></semantics></math>",
-    "domain": "Microeconomics",
+    "domain": "Finance & Economics",
     "description": "Profit is maximized at the output level where marginal revenue equals marginal cost",
     "core": false
   },
@@ -3693,15 +3469,23 @@ export const mathEquations = [
     "name": "consumer surplus",
     "aliases": "area below demand curve",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mi>S</mi><mo>=</mo><msubsup><mo>∫</mo><mn>0</mn><msup><mi>Q</mi><mo>∗</mo></msup></msubsup><mi>D</mi><mo stretchy=\"false\">(</mo><mi>Q</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>Q</mi><mo>−</mo><msup><mi>P</mi><mo>∗</mo></msup><msup><mi>Q</mi><mo>∗</mo></msup></mrow><annotation encoding=\"application/x-tex\">CS = \\int_0^{Q^*} D(Q)\\,dQ - P^* Q^*</annotation></semantics></math>",
-    "domain": "Microeconomics",
+    "domain": "Finance & Economics",
     "description": "Difference between consumers willingness to pay and the actual market price",
+    "core": false
+  },
+  {
+    "name": "Black-Scholes formula",
+    "aliases": "Black-Scholes model; option pricing",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mo>=</mo><msub><mi>S</mi><mn>0</mn></msub><mi>N</mi><mo stretchy=\"false\">(</mo><msub><mi>d</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo><mo>−</mo><mi>K</mi><msup><mi>e</mi><mrow><mo>−</mo><mi>r</mi><mi>T</mi></mrow></msup><mi>N</mi><mo stretchy=\"false\">(</mo><msub><mi>d</mi><mn>2</mn></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">C = S_0 N(d_1) - K e^{-rT} N(d_2)</annotation></semantics></math>",
+    "domain": "Finance & Economics",
+    "description": "Black-Scholes formula for the price C of a European call option",
     "core": false
   },
   {
     "name": "capacitor impedance",
     "aliases": "capacitive reactance",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>Z</mi><mi>C</mi></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mi>j</mi><mi>ω</mi><mi>C</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">Z_C = \\frac{1}{j\\omega C}</annotation></semantics></math>",
-    "domain": "Electrical Engineering",
+    "domain": "Engineering & Computing",
     "description": "Impedance of a capacitor as a function of angular frequency omega",
     "core": false
   },
@@ -3709,7 +3493,7 @@ export const mathEquations = [
     "name": "inductor impedance",
     "aliases": "inductive reactance",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>Z</mi><mi>L</mi></msub><mo>=</mo><mi>j</mi><mi>ω</mi><mi>L</mi></mrow><annotation encoding=\"application/x-tex\">Z_L = j\\omega L</annotation></semantics></math>",
-    "domain": "Electrical Engineering",
+    "domain": "Engineering & Computing",
     "description": "Impedance of an inductor as a function of angular frequency omega",
     "core": false
   },
@@ -3717,7 +3501,7 @@ export const mathEquations = [
     "name": "LC resonant frequency",
     "aliases": "resonance frequency",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>π</mi><msqrt><mrow><mi>L</mi><mi>C</mi></mrow></msqrt></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">f_0 = \\frac{1}{2\\pi\\sqrt{LC}}</annotation></semantics></math>",
-    "domain": "Electrical Engineering",
+    "domain": "Engineering & Computing",
     "description": "Natural resonant frequency of an LC tank circuit",
     "core": false
   },
@@ -3725,7 +3509,7 @@ export const mathEquations = [
     "name": "RC time constant",
     "aliases": "resistor-capacitor time constant",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>τ</mi><mo>=</mo><mi>R</mi><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\tau = RC</annotation></semantics></math>",
-    "domain": "Electrical Engineering",
+    "domain": "Engineering & Computing",
     "description": "Time for a capacitor to charge to about 63 percent of its final voltage through R",
     "core": false
   },
@@ -3733,7 +3517,7 @@ export const mathEquations = [
     "name": "RL time constant",
     "aliases": "resistor-inductor time constant",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>τ</mi><mo>=</mo><mfrac><mi>L</mi><mi>R</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tau = \\frac{L}{R}</annotation></semantics></math>",
-    "domain": "Electrical Engineering",
+    "domain": "Engineering & Computing",
     "description": "Time for current in an RL circuit to reach about 63 percent of its steady-state value",
     "core": false
   },
@@ -3741,7 +3525,7 @@ export const mathEquations = [
     "name": "RMS voltage",
     "aliases": "root mean square voltage",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>V</mi><mrow><mi>r</mi><mi>m</mi><mi>s</mi></mrow></msub><mo>=</mo><mfrac><msub><mi>V</mi><mrow><mi>p</mi><mi>e</mi><mi>a</mi><mi>k</mi></mrow></msub><msqrt><mn>2</mn></msqrt></mfrac></mrow><annotation encoding=\"application/x-tex\">V_{rms} = \\frac{V_{peak}}{\\sqrt{2}}</annotation></semantics></math>",
-    "domain": "Electrical Engineering",
+    "domain": "Engineering & Computing",
     "description": "Equivalent DC voltage of a sinusoidal AC signal",
     "core": false
   },
@@ -3749,7 +3533,7 @@ export const mathEquations = [
     "name": "capacitors in series",
     "aliases": "series capacitance",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mn>1</mn><msub><mi>C</mi><mrow><mi>e</mi><mi>q</mi></mrow></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>C</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>C</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{1}{C_{eq}} = \\frac{1}{C_1} + \\frac{1}{C_2}</annotation></semantics></math>",
-    "domain": "Electrical Engineering",
+    "domain": "Engineering & Computing",
     "description": "Equivalent capacitance of capacitors connected in series",
     "core": false
   },
@@ -3757,7 +3541,7 @@ export const mathEquations = [
     "name": "capacitors in parallel",
     "aliases": "parallel capacitance",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>C</mi><mrow><mi>e</mi><mi>q</mi></mrow></msub><mo>=</mo><msub><mi>C</mi><mn>1</mn></msub><mo>+</mo><msub><mi>C</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">C_{eq} = C_1 + C_2</annotation></semantics></math>",
-    "domain": "Electrical Engineering",
+    "domain": "Engineering & Computing",
     "description": "Equivalent capacitance of capacitors connected in parallel",
     "core": false
   },
@@ -3765,7 +3549,7 @@ export const mathEquations = [
     "name": "Nyquist-Shannon sampling theorem",
     "aliases": "sampling theorem",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>f</mi><mi>s</mi></msub><mo>≥</mo><mn>2</mn><msub><mi>f</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub></mrow><annotation encoding=\"application/x-tex\">f_s \\geq 2 f_{max}</annotation></semantics></math>",
-    "domain": "Signal Processing",
+    "domain": "Engineering & Computing",
     "description": "A signal must be sampled at least twice its highest frequency to avoid aliasing",
     "core": false
   },
@@ -3773,7 +3557,7 @@ export const mathEquations = [
     "name": "convolution integral",
     "aliases": "linear convolution",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>f</mi><mo>∗</mo><mi>g</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant=\"normal\">∞</mi></mrow><mi mathvariant=\"normal\">∞</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>τ</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>g</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo>−</mo><mi>τ</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>τ</mi></mrow><annotation encoding=\"application/x-tex\">(f * g)(t) = \\int_{-\\infty}^{\\infty} f(\\tau)\\,g(t - \\tau)\\,d\\tau</annotation></semantics></math>",
-    "domain": "Signal Processing",
+    "domain": "Engineering & Computing",
     "description": "Output of a linear time-invariant system is the convolution of input and impulse response",
     "core": false
   },
@@ -3781,7 +3565,7 @@ export const mathEquations = [
     "name": "discrete Fourier transform",
     "aliases": "DFT formula",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>X</mi><mo stretchy=\"false\">[</mo><mi>k</mi><mo stretchy=\"false\">]</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>N</mi><mo>−</mo><mn>1</mn></mrow></munderover><mi>x</mi><mo stretchy=\"false\">[</mo><mi>n</mi><mo stretchy=\"false\">]</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>j</mi><mn>2</mn><mi>π</mi><mi>k</mi><mi>n</mi><mi mathvariant=\"normal\">/</mi><mi>N</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">X[k] = \\sum_{n=0}^{N-1} x[n] e^{-j2\\pi kn/N}</annotation></semantics></math>",
-    "domain": "Signal Processing",
+    "domain": "Engineering & Computing",
     "description": "Transforms a discrete time-domain signal of length N into its frequency components",
     "core": false
   },
@@ -3789,7 +3573,7 @@ export const mathEquations = [
     "name": "signal-to-noise ratio",
     "aliases": "SNR decibels",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mi>N</mi><mi>R</mi><mo>=</mo><mn>10</mn><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>10</mn></msub><mrow><mo fence=\"true\">(</mo><mfrac><msub><mi>P</mi><mrow><mi>s</mi><mi>i</mi><mi>g</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><msub><mi>P</mi><mrow><mi>n</mi><mi>o</mi><mi>i</mi><mi>s</mi><mi>e</mi></mrow></msub></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">SNR = 10\\log_{10}\\left(\\frac{P_{signal}}{P_{noise}}\\right)</annotation></semantics></math>",
-    "domain": "Signal Processing",
+    "domain": "Engineering & Computing",
     "description": "Ratio of signal power to noise power expressed in decibels",
     "core": false
   },
@@ -3797,7 +3581,7 @@ export const mathEquations = [
     "name": "Shannon channel capacity",
     "aliases": "Shannon-Hartley theorem",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mo>=</mo><mi>B</mi><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>2</mn></msub><mrow><mo fence=\"true\">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>S</mi><mi>N</mi></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">C = B\\log_2\\left(1 + \\frac{S}{N}\\right)</annotation></semantics></math>",
-    "domain": "Signal Processing",
+    "domain": "Engineering & Computing",
     "description": "Maximum information rate of a channel with bandwidth B and signal-to-noise ratio S/N",
     "core": false
   },
@@ -3805,7 +3589,7 @@ export const mathEquations = [
     "name": "normal stress",
     "aliases": "axial stress",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sigma = \\frac{F}{A}</annotation></semantics></math>",
-    "domain": "Mechanics of Materials",
+    "domain": "Engineering & Computing",
     "description": "Normal force per unit cross-sectional area",
     "core": false
   },
@@ -3813,15 +3597,15 @@ export const mathEquations = [
     "name": "normal strain",
     "aliases": "axial strain",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ε</mi><mo>=</mo><mfrac><mi>δ</mi><mi>L</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\varepsilon = \\frac{\\delta}{L}</annotation></semantics></math>",
-    "domain": "Mechanics of Materials",
+    "domain": "Engineering & Computing",
     "description": "Ratio of axial deformation delta to original length L",
     "core": false
   },
   {
     "name": "Hooke's law for solids",
-    "aliases": "modulus of elasticity",
+    "aliases": "modulus of elasticity; Young's modulus",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mi>σ</mi><mi>ε</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">E = \\frac{\\sigma}{\\varepsilon}</annotation></semantics></math>",
-    "domain": "Mechanics of Materials",
+    "domain": "Engineering & Computing",
     "description": "Stress is proportional to strain within the elastic limit; E is Young's modulus",
     "core": false
   },
@@ -3829,7 +3613,7 @@ export const mathEquations = [
     "name": "average shear stress",
     "aliases": "shear force over area",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>τ</mi><mo>=</mo><mfrac><mi>V</mi><mi>A</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tau = \\frac{V}{A}</annotation></semantics></math>",
-    "domain": "Mechanics of Materials",
+    "domain": "Engineering & Computing",
     "description": "Average shear force per unit area on a cross-section",
     "core": false
   },
@@ -3837,7 +3621,7 @@ export const mathEquations = [
     "name": "shear modulus",
     "aliases": "modulus of rigidity",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>G</mi><mo>=</mo><mfrac><mi>τ</mi><mi>γ</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">G = \\frac{\\tau}{\\gamma}</annotation></semantics></math>",
-    "domain": "Mechanics of Materials",
+    "domain": "Engineering & Computing",
     "description": "Ratio of shear stress to shear strain in an elastic material",
     "core": false
   },
@@ -3845,7 +3629,7 @@ export const mathEquations = [
     "name": "Poisson's ratio",
     "aliases": "lateral strain ratio",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ν</mi><mo>=</mo><mo>−</mo><mfrac><msub><mi>ε</mi><mrow><mi>l</mi><mi>a</mi><mi>t</mi></mrow></msub><msub><mi>ε</mi><mrow><mi>a</mi><mi>x</mi></mrow></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\nu = -\\frac{\\varepsilon_{lat}}{\\varepsilon_{ax}}</annotation></semantics></math>",
-    "domain": "Mechanics of Materials",
+    "domain": "Engineering & Computing",
     "description": "Negative ratio of lateral strain to axial strain under uniaxial loading",
     "core": false
   },
@@ -3853,7 +3637,7 @@ export const mathEquations = [
     "name": "bending stress",
     "aliases": "flexure formula",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><mrow><mi>M</mi><mi>c</mi></mrow><mi>I</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sigma = \\frac{Mc}{I}</annotation></semantics></math>",
-    "domain": "Mechanics of Materials",
+    "domain": "Engineering & Computing",
     "description": "Normal stress at distance c from neutral axis due to bending moment M",
     "core": false
   },
@@ -3861,7 +3645,7 @@ export const mathEquations = [
     "name": "torsional shear stress",
     "aliases": "torsion formula",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>τ</mi><mo>=</mo><mfrac><mrow><mi>T</mi><mi>c</mi></mrow><mi>J</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tau = \\frac{Tc}{J}</annotation></semantics></math>",
-    "domain": "Mechanics of Materials",
+    "domain": "Engineering & Computing",
     "description": "Shear stress at distance c from center due to applied torque T and polar moment J",
     "core": false
   },
@@ -3869,120 +3653,64 @@ export const mathEquations = [
     "name": "thermal stress",
     "aliases": "temperature-induced stress",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>σ</mi><mi>T</mi></msub><mo>=</mo><mi>E</mi><mi>α</mi><mi mathvariant=\"normal\">Δ</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">\\sigma_T = E \\alpha \\Delta T</annotation></semantics></math>",
-    "domain": "Mechanics of Materials",
+    "domain": "Engineering & Computing",
     "description": "Stress in a constrained member due to a temperature change of Delta T",
     "core": false
   },
   {
-    "name": "Euler's identity",
-    "aliases": "most beautiful equation",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>e</mi><mrow><mi>i</mi><mi>π</mi></mrow></msup><mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">e^{i\\pi} + 1 = 0</annotation></semantics></math>",
-    "domain": "Complex Numbers",
-    "description": "Special case of Euler's formula at theta equals pi; links e and i and pi and 1 and 0",
-    "core": true
-  },
-  {
-    "name": "gamma function",
-    "aliases": "generalized factorial",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Γ</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant=\"normal\">∞</mi></msubsup><msup><mi>t</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><msup><mi>e</mi><mrow><mo>−</mo><mi>t</mi></mrow></msup><mtext> </mtext><mi>d</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">\\Gamma(n) = \\int_0^{\\infty} t^{n-1} e^{-t}\\,dt</annotation></semantics></math>",
-    "domain": "Calculus",
-    "description": "Generalizes the factorial to real and complex numbers; satisfies Gamma(n+1) = n!",
+    "name": "Newton's method",
+    "aliases": "Newton-Raphson method",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mfrac><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo></mrow><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">x_{n+1} = x_n - \\frac{f(x_n)}{f&#x27;(x_n)}</annotation></semantics></math>",
+    "domain": "Engineering & Computing",
+    "description": "Iterative root-finding using tangent line approximation",
     "core": false
   },
   {
-    "name": "wave equation",
-    "aliases": "second-order wave PDE",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><msup><mi mathvariant=\"normal\">∂</mi><mn>2</mn></msup><mi>u</mi></mrow><mrow><mi mathvariant=\"normal\">∂</mi><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup><mfrac><mrow><msup><mi mathvariant=\"normal\">∂</mi><mn>2</mn></msup><mi>u</mi></mrow><mrow><mi mathvariant=\"normal\">∂</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{\\partial^2 u}{\\partial t^2} = c^2 \\frac{\\partial^2 u}{\\partial x^2}</annotation></semantics></math>",
-    "domain": "Physics - Waves",
-    "description": "Describes propagation of a wave with speed c in one spatial dimension",
+    "name": "trapezoidal rule",
+    "aliases": "trapezoid integration rule",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi><mo>≈</mo><mfrac><mi>h</mi><mn>2</mn></mfrac><mo stretchy=\"false\">[</mo><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mn>2</mn><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mo>⋯</mo><mo>+</mo><mn>2</mn><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\int_a^b f(x)\\,dx \\approx \\frac{h}{2}[f(x_0) + 2f(x_1) + \\cdots + 2f(x_{n-1}) + f(x_n)]</annotation></semantics></math>",
+    "domain": "Engineering & Computing",
+    "description": "Numerical integration approximation with n equal subintervals of width h",
     "core": false
   },
   {
-    "name": "Boltzmann entropy",
-    "aliases": "statistical entropy",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mo>=</mo><msub><mi>k</mi><mi>B</mi></msub><mi>ln</mi><mo>⁡</mo><mi>W</mi></mrow><annotation encoding=\"application/x-tex\">S = k_B \\ln W</annotation></semantics></math>",
-    "domain": "Physics - Thermodynamics",
-    "description": "Entropy relates to W the number of microstates; k_B is the Boltzmann constant",
-    "core": true
-  },
-  {
-    "name": "Stefan-Boltzmann law",
-    "aliases": "blackbody radiated power",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo>=</mo><mi>σ</mi><mi>A</mi><msup><mi>T</mi><mn>4</mn></msup></mrow><annotation encoding=\"application/x-tex\">P = \\sigma A T^4</annotation></semantics></math>",
-    "domain": "Physics - Thermodynamics",
-    "description": "Total power radiated by a blackbody of area A at temperature T",
-    "core": true
-  },
-  {
-    "name": "Planck blackbody radiation",
-    "aliases": "spectral radiance",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>B</mi><mi>ν</mi></msub><mo stretchy=\"false\">(</mo><mi>ν</mi><mo separator=\"true\">,</mo><mi>T</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mn>2</mn><mi>h</mi><msup><mi>ν</mi><mn>3</mn></msup></mrow><msup><mi>c</mi><mn>2</mn></msup></mfrac><mfrac><mn>1</mn><mrow><msup><mi>e</mi><mrow><mi>h</mi><mi>ν</mi><mi mathvariant=\"normal\">/</mi><msub><mi>k</mi><mi>B</mi></msub><mi>T</mi></mrow></msup><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">B_\\nu(\\nu,T) = \\frac{2h\\nu^3}{c^2}\\frac{1}{e^{h\\nu/k_BT}-1}</annotation></semantics></math>",
-    "domain": "Physics - Modern",
-    "description": "Spectral radiance of a blackbody at frequency nu and temperature T",
+    "name": "Simpson's rule",
+    "aliases": "Simpson one-third rule",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi><mo>≈</mo><mfrac><mi>h</mi><mn>3</mn></mfrac><mo stretchy=\"false\">[</mo><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mn>4</mn><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mn>2</mn><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mo>⋯</mo><mo>+</mo><mn>4</mn><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\int_a^b f(x)\\,dx \\approx \\frac{h}{3}[f(x_0) + 4f(x_1) + 2f(x_2) + \\cdots + 4f(x_{n-1}) + f(x_n)]</annotation></semantics></math>",
+    "domain": "Engineering & Computing",
+    "description": "Numerical integration using parabolic arcs; n must be even",
     "core": false
   },
   {
-    "name": "Einstein field equations",
-    "aliases": "general relativity field equation",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>G</mi><mrow><mi>μ</mi><mi>ν</mi></mrow></msub><mo>=</mo><mfrac><mrow><mn>8</mn><mi>π</mi><mi>G</mi></mrow><msup><mi>c</mi><mn>4</mn></msup></mfrac><msub><mi>T</mi><mrow><mi>μ</mi><mi>ν</mi></mrow></msub></mrow><annotation encoding=\"application/x-tex\">G_{\\mu\\nu} = \\frac{8\\pi G}{c^4} T_{\\mu\\nu}</annotation></semantics></math>",
-    "domain": "Physics - Modern",
-    "description": "Relates the curvature of spacetime to the energy-momentum content of matter",
+    "name": "Euler's method",
+    "aliases": "Euler ODE method",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>y</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>y</mi><mi>n</mi></msub><mo>+</mo><mi>h</mi><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo separator=\"true\">,</mo><msub><mi>y</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">y_{n+1} = y_n + h f(x_n, y_n)</annotation></semantics></math>",
+    "domain": "Engineering & Computing",
+    "description": "First-order numerical solver for ODEs with step size h",
     "core": false
   },
   {
-    "name": "Dirac equation",
-    "aliases": "relativistic wave equation",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>i</mi><msup><mi>γ</mi><mi>μ</mi></msup><msub><mi mathvariant=\"normal\">∂</mi><mi>μ</mi></msub><mo>−</mo><mi>m</mi><mo stretchy=\"false\">)</mo><mi>ψ</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">(i\\gamma^\\mu \\partial_\\mu - m)\\psi = 0</annotation></semantics></math>",
-    "domain": "Quantum Mechanics",
-    "description": "Relativistic quantum equation for spin-1/2 particles; predicted antimatter",
+    "name": "forward difference",
+    "aliases": "forward finite difference",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>≈</mo><mfrac><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>+</mo><mi>h</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><mi>h</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">f&#x27;(x) \\approx \\frac{f(x+h) - f(x)}{h}</annotation></semantics></math>",
+    "domain": "Engineering & Computing",
+    "description": "First-order approximation of a derivative using a forward step of size h",
     "core": false
   },
   {
-    "name": "Gauss's law electric",
-    "aliases": "electric flux law",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∇</mi><mo>⋅</mo><mi mathvariant=\"bold\">E</mi><mo>=</mo><mfrac><mi>ρ</mi><msub><mi>ε</mi><mn>0</mn></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\nabla \\cdot \\mathbf{E} = \\frac{\\rho}{\\varepsilon_0}</annotation></semantics></math>",
-    "domain": "Physics - Electromagnetism",
-    "description": "First Maxwell equation: electric field divergence equals charge density over epsilon-naught",
+    "name": "central difference",
+    "aliases": "centered finite difference",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>≈</mo><mfrac><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>+</mo><mi>h</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>−</mo><mi>h</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mn>2</mn><mi>h</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">f&#x27;(x) \\approx \\frac{f(x+h) - f(x-h)}{2h}</annotation></semantics></math>",
+    "domain": "Engineering & Computing",
+    "description": "Second-order approximation of a derivative using a symmetric step",
     "core": false
   },
   {
-    "name": "Gauss's law magnetic",
-    "aliases": "no magnetic monopoles",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∇</mi><mo>⋅</mo><mi mathvariant=\"bold\">B</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">\\nabla \\cdot \\mathbf{B} = 0</annotation></semantics></math>",
-    "domain": "Physics - Electromagnetism",
-    "description": "Second Maxwell equation: magnetic field has no divergence; no magnetic monopoles exist",
-    "core": false
-  },
-  {
-    "name": "Ampere-Maxwell law",
-    "aliases": "Maxwell-Ampere law",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∇</mi><mo>×</mo><mi mathvariant=\"bold\">B</mi><mo>=</mo><msub><mi>μ</mi><mn>0</mn></msub><mi mathvariant=\"bold\">J</mi><mo>+</mo><msub><mi>μ</mi><mn>0</mn></msub><msub><mi>ε</mi><mn>0</mn></msub><mfrac><mrow><mi mathvariant=\"normal\">∂</mi><mi mathvariant=\"bold\">E</mi></mrow><mrow><mi mathvariant=\"normal\">∂</mi><mi>t</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\nabla \\times \\mathbf{B} = \\mu_0 \\mathbf{J} + \\mu_0\\varepsilon_0\\frac{\\partial \\mathbf{E}}{\\partial t}</annotation></semantics></math>",
-    "domain": "Physics - Electromagnetism",
-    "description": "Fourth Maxwell equation: magnetic circulation from current and changing electric field",
-    "core": false
-  },
-  {
-    "name": "Lorentz force law",
-    "aliases": "full electromagnetic force",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"bold\">F</mi><mo>=</mo><mi>q</mi><mo stretchy=\"false\">(</mo><mi mathvariant=\"bold\">E</mi><mo>+</mo><mi mathvariant=\"bold\">v</mi><mo>×</mo><mi mathvariant=\"bold\">B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathbf{F} = q(\\mathbf{E} + \\mathbf{v} \\times \\mathbf{B})</annotation></semantics></math>",
-    "domain": "Physics - Electromagnetism",
-    "description": "Total electromagnetic force on a charge q from electric and magnetic fields",
-    "core": false
-  },
-  {
-    "name": "Navier-Stokes equation",
-    "aliases": "viscous fluid motion",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ρ</mi><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi mathvariant=\"normal\">∂</mi><mi mathvariant=\"bold\">v</mi></mrow><mrow><mi mathvariant=\"normal\">∂</mi><mi>t</mi></mrow></mfrac><mo>+</mo><mi mathvariant=\"bold\">v</mi><mo>⋅</mo><mi mathvariant=\"normal\">∇</mi><mi mathvariant=\"bold\">v</mi><mo fence=\"true\">)</mo></mrow><mo>=</mo><mo>−</mo><mi mathvariant=\"normal\">∇</mi><mi>p</mi><mo>+</mo><mi>μ</mi><msup><mi mathvariant=\"normal\">∇</mi><mn>2</mn></msup><mi mathvariant=\"bold\">v</mi><mo>+</mo><mi mathvariant=\"bold\">f</mi></mrow><annotation encoding=\"application/x-tex\">\\rho\\left(\\frac{\\partial \\mathbf{v}}{\\partial t} + \\mathbf{v}\\cdot\\nabla\\mathbf{v}\\right) = -\\nabla p + \\mu\\nabla^2\\mathbf{v} + \\mathbf{f}</annotation></semantics></math>",
-    "domain": "Fluid Mechanics",
-    "description": "Newton's second law for a viscous incompressible fluid",
-    "core": false
-  },
-  {
-    "name": "Black-Scholes formula",
-    "aliases": "European call price",
-    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mo>=</mo><msub><mi>S</mi><mn>0</mn></msub><mi>N</mi><mo stretchy=\"false\">(</mo><msub><mi>d</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo><mo>−</mo><mi>K</mi><msup><mi>e</mi><mrow><mo>−</mo><mi>r</mi><mi>T</mi></mrow></msup><mi>N</mi><mo stretchy=\"false\">(</mo><msub><mi>d</mi><mn>2</mn></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">C = S_0 N(d_1) - K e^{-rT} N(d_2)</annotation></semantics></math>",
-    "domain": "Financial Mathematics",
-    "description": "European call option price; d1 and d2 depend on S0, K, r, sigma, T",
+    "name": "Runge-Kutta 4",
+    "aliases": "RK4 method",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>y</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>y</mi><mi>n</mi></msub><mo>+</mo><mfrac><mi>h</mi><mn>6</mn></mfrac><mo stretchy=\"false\">(</mo><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><mn>2</mn><msub><mi>k</mi><mn>2</mn></msub><mo>+</mo><mn>2</mn><msub><mi>k</mi><mn>3</mn></msub><mo>+</mo><msub><mi>k</mi><mn>4</mn></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">y_{n+1} = y_n + \\frac{h}{6}(k_1 + 2k_2 + 2k_3 + k_4)</annotation></semantics></math>",
+    "domain": "Engineering & Computing",
+    "description": "Fourth-order numerical ODE integrator update step",
     "core": false
   }
 ];

@@ -17,7 +17,7 @@ const require = createRequire(import.meta.url);
 const katex = require("katex");
 
 const __dir = dirname(fileURLToPath(import.meta.url));
-const CSV_PATH  = "C:\\Users\\clintc\\OneDrive - Microsoft\\Equation Templates\\equations.csv";
+const CSV_PATH  = "C:\\Users\\clintc\\OneDrive - Microsoft\\MathIntellisense\\Math_Templates_V2.txt";
 const OUT_PATH  = resolve(__dir, "../src/mathEquations.js");
 
 // ---------------------------------------------------------------------------
@@ -89,12 +89,16 @@ const equations = [];
 const failures  = [];
 
 for (const row of data) {
-  if (row.length !== 5) { console.warn("Bad row:", row); continue; }
+  if (row.length < 5) { console.warn("Bad row:", row); continue; }
   const [name, aliases, latex, domain, description] = row;
+
+  // The .txt file stores LaTeX with doubled backslashes (\\det → \det).
+  // Unescape them before converting.
+  const latexUnescaped = latex.replace(/\\\\/g, "\\");
 
   let mathml;
   try {
-    const html = latexToMathML(latex);
+    const html = latexToMathML(latexUnescaped);
     // KaTeX wraps in <span>, extract the <math> element
     const match = html.match(/<math[\s\S]*<\/math>/);
     mathml = match ? match[0] : html;
