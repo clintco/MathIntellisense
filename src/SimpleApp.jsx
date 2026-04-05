@@ -14,9 +14,10 @@ const allEquationItems = mathEquations
   .map(e => ({ type: "equation", ...e, latex: extractLatex(e.mathml) }));
 
 function search(query) {
+  if (!query) return [];
   const q = query.toLowerCase();
   const symbols = mathSymbols
-    .filter(s => s.code.startsWith(q) || s.aliases.some(a => a.startsWith(q)))
+    .filter(s => s.code.includes(q) || s.aliases.some(a => a.includes(q)))
     .slice(0, MAX_RESULTS);
   const equations = allEquationItems
     .filter(e => e.name.toLowerCase().includes(q) || e.aliases.toLowerCase().includes(q))
