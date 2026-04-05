@@ -85,6 +85,7 @@ export default function SimpleApp() {
       triggerPosRef.current = backslashPos;
       setSuggestions(search(query));
       setSelectedIndex(0);
+      setHasNavigated(false);
       setCaretPos(getCaretPixelPos(e.target, backslashPos));
     } else {
       triggerPosRef.current = null;
@@ -103,6 +104,7 @@ export default function SimpleApp() {
     const newCursor = before.length + insert.length;
     setValue(newValue);
     setSuggestions([]);
+    setHasNavigated(false);
     triggerPosRef.current = null;
     requestAnimationFrame(() => {
       ta.selectionStart = newCursor;
@@ -112,10 +114,10 @@ export default function SimpleApp() {
 
   const handleKeyDown = useCallback((e) => {
     if (suggestions.length) {
-      if (e.key === "ArrowDown") { e.preventDefault(); setSelectedIndex(i => Math.min(i + 1, suggestions.length - 1)); return; }
-      if (e.key === "ArrowUp") { e.preventDefault(); setSelectedIndex(i => Math.max(i - 1, 0)); return; }
+      if (e.key === "ArrowDown") { e.preventDefault(); setHasNavigated(true); setSelectedIndex(i => Math.min(i + 1, suggestions.length - 1)); return; }
+      if (e.key === "ArrowUp") { e.preventDefault(); setHasNavigated(true); setSelectedIndex(i => Math.max(i - 1, 0)); return; }
       if (e.key === "Enter" || e.key === "Tab") { e.preventDefault(); acceptItem(suggestions[selectedIndex]); return; }
-      if (e.key === "Escape") { setSuggestions([]); return; }
+      if (e.key === "Escape") { setSuggestions([]); setHasNavigated(false); return; }
     }
 
     if (e.key === " " || e.key === "\\") {
@@ -134,8 +136,9 @@ export default function SimpleApp() {
     }
   }, [suggestions, selectedIndex, acceptItem, value]);
 
+  const [hasNavigated, setHasNavigated] = useState(false);
   const isOpen = suggestions.length > 0;
-  const activeOptionId = isOpen && selectedIndex >= 0 ? `simple-option-${selectedIndex}` : undefined;
+  const activeOptionId = isOpen && hasNavigated ? `simple-option-${selectedIndex}` : undefined;
 
   // Announce selected item via ariaNotify (Edge 136+)
   useEffect(() => {
