@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Editor } from "./Editor";
-import { allCategories } from "./mathSymbols";
 import "./App.css";
 
 export default function App() {
@@ -51,12 +50,14 @@ export default function App() {
           </section>
 
           <section className="sidebar-section">
-            <h2>Categories</h2>
+            <h2>Equation examples</h2>
             <ul>
-              <li><kbd>\equations</kbd> — HS equations</li>
-              {allCategories.map(cat => (
-                <li key={cat}><kbd>\{cat.toLowerCase()}</kbd></li>
-              ))}
+              <li><kbd>\quadratic</kbd> — Quadratic formula</li>
+              <li><kbd>\pythagorean</kbd> — Pythagorean theorem</li>
+              <li><kbd>\law of sines</kbd> — Law of sines</li>
+              <li><kbd>\binomial</kbd> — Binomial theorem</li>
+              <li><kbd>\power rule</kbd> — Power rule for derivatives</li>
+              <li><kbd>\normal distribution</kbd> — Normal distribution</li>
             </ul>
           </section>
         </aside>
