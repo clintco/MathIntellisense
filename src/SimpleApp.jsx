@@ -1,4 +1,4 @@
-import { useRef, useState, useCallback, useEffect } from "react";
+import { useRef, useState, useCallback } from "react";
 import { mathSymbols, applyAutocorrect } from "./mathSymbols";
 import { mathEquations } from "./mathEquations";
 
@@ -139,18 +139,6 @@ export default function SimpleApp() {
   const [hasNavigated, setHasNavigated] = useState(false);
   const isOpen = suggestions.length > 0;
   const activeOptionId = isOpen && hasNavigated ? `simple-option-${selectedIndex}` : undefined;
-
-  // Announce selected item via ariaNotify (Edge 136+)
-  useEffect(() => {
-    if (!isOpen || !suggestions[selectedIndex]) return;
-    const item = suggestions[selectedIndex];
-    const msg = item.type === "equation"
-      ? `${item.name}, ${item.domain}`
-      : `${item.symbol} ${item.name}, backslash ${item.code}`;
-    if (typeof document.ariaNotify === "function") {
-      document.ariaNotify(msg);
-    }
-  }, [selectedIndex, isOpen, suggestions]);
 
   return (
     <div style={{ padding: "24px", fontFamily: "system-ui, sans-serif", background: "var(--colorNeutralBackground1)", minHeight: "100vh", color: "var(--colorNeutralForeground1)" }}>

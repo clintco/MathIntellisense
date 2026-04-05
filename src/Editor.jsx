@@ -49,6 +49,7 @@ export function Editor({ onChange }) {
 
   const is = useIntellisense();
   const { suggestions, selectedIndex, setSelectedIndex, isOpen, mode, activeCategory, reset: resetIS } = is;
+  const [hasNavigated, setHasNavigated] = useState(false);
 
   // Auto-focus on mount
   useEffect(() => { divRef.current?.focus(); }, []);
@@ -101,6 +102,7 @@ export function Editor({ onChange }) {
       triggerRef.current = { node: ctx.textNode, offset: ctx.backslashIdx };
       const q = ctx.textBefore.slice(ctx.backslashIdx + 1);
       setQuery(q);
+      setHasNavigated(false);
       is.onValueChange(ctx.textNode.textContent, ctx.offset);
       setCaretPos(getCaretPixelPos());
     }
@@ -108,6 +110,7 @@ export function Editor({ onChange }) {
   }, [is, resetIS, onChange]);
 
   const handleAccept = useCallback((item) => {
+    setHasNavigated(false);
     if (item.type === "category") {
       const ctx = getCaretTextContext();
       is.acceptItem(ctx?.textNode.textContent ?? "", ctx?.offset ?? 0, item);
@@ -140,6 +143,11 @@ export function Editor({ onChange }) {
   const handleKeyDown = useCallback((e) => {
     const div = divRef.current;
 
+    if (isOpen && (e.key === "ArrowDown" || e.key === "ArrowUp" || e.key === "PageDown" || e.key === "PageUp" || e.key === "Home" || e.key === "End")) {
+      setHasNavigated(true);
+    }
+    if (e.key === "Escape") setHasNavigated(false);
+
     is.onKeyDown(e, "", 0, handleAccept);
 
     // Autocorrect
@@ -171,23 +179,11 @@ export function Editor({ onChange }) {
         }
       }
     }
-  }, [is, resetIS, handleAccept, onChange]);
+  }, [is, isOpen, resetIS, handleAccept, onChange]);
 
-  const activeOptionId = isOpen && selectedIndex >= 0 ? `math-option-${selectedIndex}` : undefined;
+  const activeOptionId = isOpen && hasNavigated && selectedIndex >= 0 ? `math-option-${selectedIndex}` : undefined;
 
-  useEffect(() => {
-    if (!isOpen || !suggestions[selectedIndex]) return;
-    const item = suggestions[selectedIndex];
-    let msg;
-    if (item.type === "equation") {
-      msg = `${item.name}, ${item.domain}`;
-    } else if (item.type === "category") {
-      msg = `${item.category} category, ${item.count} symbols`;
-    } else {
-      msg = `${item.symbol} ${item.name}, backslash ${item.code}`;
-    }
-    if (typeof document.ariaNotify === "function") document.ariaNotify(msg);
-  }, [selectedIndex, isOpen, suggestions]);
+
 
   return (
     <div className="editor-wrapper" role="application" aria-label="Math editor">
@@ -199,6 +195,7 @@ export function Editor({ onChange }) {
         onInput={handleInput}
         onKeyDown={handleKeyDown}
         role="combobox"
+        aria-multiline="true"
         aria-label="Math editor"
         aria-expanded={isOpen}
         aria-haspopup="listbox"
