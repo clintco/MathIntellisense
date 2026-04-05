@@ -3,3 +3,5 @@ dist/
 *.zip
 .env
 .env.*
+Math_Templates_V2.txt
+scripts/addDictationStrings.mjs
