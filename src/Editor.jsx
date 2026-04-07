@@ -49,6 +49,7 @@ export function Editor({ onChange }) {
 
   const is = useIntellisense();
   const { suggestions, selectedIndex, setSelectedIndex, isOpen, mode, activeCategory, reset: resetIS } = is;
+  const [hideActiveDescendant, setHideActiveDescendant] = useState(false);
 
   // Auto-focus on mount
   useEffect(() => { divRef.current?.focus(); }, []);
@@ -140,6 +141,14 @@ export function Editor({ onChange }) {
   const handleKeyDown = useCallback((e) => {
     const div = divRef.current;
 
+    // Clear aria-activedescendant when moving the text cursor so NVDA/JAWS
+    // can read the input value instead of the focused list item (FluentUI pattern)
+    if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
+      setHideActiveDescendant(true);
+    } else {
+      setHideActiveDescendant(false);
+    }
+
     is.onKeyDown(e, "", 0, handleAccept);
 
     // Autocorrect
@@ -171,9 +180,9 @@ export function Editor({ onChange }) {
         }
       }
     }
-  }, [is, isOpen, resetIS, handleAccept, onChange]);
+  }, [is, resetIS, handleAccept, onChange]);
 
-  const activeOptionId = isOpen && selectedIndex >= 0 ? `math-option-${selectedIndex}` : undefined;
+  const activeOptionId = isOpen && selectedIndex >= 0 && !hideActiveDescendant ? `math-option-${selectedIndex}` : undefined;
 
 
 
