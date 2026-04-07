@@ -73,9 +73,15 @@ export function useIntellisense() {
     if (backslashIdx === -1) { reset(); return; }
 
     const query = value.slice(backslashIdx + 1, cursorPos);
+    // Check if the editor has any content outside the current \query trigger
+    const contentOutside = (value.slice(0, backslashIdx) + value.slice(cursorPos)).trim();
+    const editorIsEmpty = contentOutside.length === 0;
     let results;
     if (query.length === 0) {
-      results = allCategoryItems;
+      // Empty query: order depends on whether the editor already has content
+      results = editorIsEmpty
+        ? [...allCategoryItems.filter(c => c.section === "equations"), ...allCategoryItems.filter(c => c.section === "unicode")]
+        : [...allCategoryItems.filter(c => c.section === "unicode"), ...allCategoryItems.filter(c => c.section === "equations")];
     } else {
       const symbolResults = searchSymbols(query);
       const q = query.toLowerCase();
