@@ -38,28 +38,46 @@ export function useIntellisense() {
   const triggerPosRef = useRef(null);
   triggerPosRef.current = triggerPos;
 
+  // Saved parent list for going back up from a category drill-in
+  const prevSuggestionsRef = useRef([]);
+
   const reset = useCallback(() => {
     setSuggestions([]);
     setSelectedIndex(-1);
     setTriggerPos(null);
     setMode("search");
     setActiveCategory(null);
+    prevSuggestionsRef.current = [];
   }, []);
+
+  const goBack = useCallback(() => {
+    if (prevSuggestionsRef.current.length > 0) {
+      setSuggestions(prevSuggestionsRef.current);
+      prevSuggestionsRef.current = [];
+      setSelectedIndex(-1);
+      setMode("search");
+      setActiveCategory(null);
+    } else {
+      reset();
+    }
+  }, [reset]);
 
   /**
    * Called on every textarea input change.
    * Detects \query pattern and updates suggestions.
    */
-  const onValueChange = useCallback((value, cursorPos) => {
-    // If we're browsing a category, don't re-search — the dropdown stays until
-    // the user picks a symbol, presses Esc, or deletes the trigger.
-    // But if the cursor moved away from the trigger, close.
+  const onValueChange = useCallback((value, cursorPos, fullContent = value) => {
+    // If browsing a category and cursor moved away from trigger, close.
+    // Otherwise fall through — typing a character exits category mode and re-filters.
     if (mode === "category") {
       const tp = triggerPosRef.current;
       if (tp === null || cursorPos <= tp) {
         reset();
+        return;
       }
-      return;
+      setMode("search");
+      setActiveCategory(null);
+      prevSuggestionsRef.current = [];
     }
 
     // Walk back from cursor to find a backslash
@@ -73,8 +91,9 @@ export function useIntellisense() {
     if (backslashIdx === -1) { reset(); return; }
 
     const query = value.slice(backslashIdx + 1, cursorPos);
-    // Check if the editor has any content outside the current \query trigger
-    const contentOutside = (value.slice(0, backslashIdx) + value.slice(cursorPos)).trim();
+    // Use full editor content to determine if anything exists outside the \query trigger
+    const triggerText = "\\" + query;
+    const contentOutside = fullContent.replace(triggerText, "").trim();
     const editorIsEmpty = contentOutside.length === 0;
     let results;
     if (query.length === 0) {
@@ -109,6 +128,7 @@ export function useIntellisense() {
       const items = item.section === "equations"
         ? equationsByDomain[item.category]
         : getSymbolsByCategory(item.category).map(s => ({ type: "symbol", ...s }));
+      prevSuggestionsRef.current = suggestions;
       setMode("category");
       setActiveCategory(item.category);
       setSuggestions(items);
@@ -130,7 +150,7 @@ export function useIntellisense() {
     const newCursor = tp + item.symbol.length;
     reset();
     return { newValue, newCursor };
-  }, [reset]);
+  }, [reset, suggestions]);
 
   /**
    * Keyboard handler. Returns true if event was consumed.
@@ -168,6 +188,14 @@ export function useIntellisense() {
       setSelectedIndex(suggestions.length - 1);
       return true;
     }
+    if (e.key === "ArrowRight" || (e.key === "Enter" && suggestions[selectedIndex >= 0 ? selectedIndex : 0]?.type === "category")) {
+      const idx = selectedIndex >= 0 ? selectedIndex : 0;
+      if (suggestions[idx]?.type === "category") {
+        e.preventDefault();
+        onAccept(suggestions[idx]);
+        return true;
+      }
+    }
     if (e.key === "Enter" || e.key === "Tab") {
       e.preventDefault();
       const idx = selectedIndex >= 0 ? selectedIndex : 0;
@@ -176,16 +204,21 @@ export function useIntellisense() {
     }
     if (e.key === "Escape") {
       e.preventDefault();
-      reset();
+      goBack();
       return true;
     }
-    // Backspace in category mode → go back to search
+    if (e.key === "ArrowLeft" && mode === "category") {
+      e.preventDefault();
+      goBack();
+      return true;
+    }
+    // Backspace in category mode → go back to parent list
     if (e.key === "Backspace" && mode === "category") {
-      reset();
+      goBack();
       return false; // let textarea handle the backspace
     }
     return false;
-  }, [suggestions, selectedIndex, mode, reset]);
+  }, [suggestions, selectedIndex, mode, reset, goBack]);
 
   return {
     suggestions,

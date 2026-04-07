@@ -49,7 +49,6 @@ export function Editor({ onChange }) {
 
   const is = useIntellisense();
   const { suggestions, selectedIndex, setSelectedIndex, isOpen, mode, activeCategory, reset: resetIS } = is;
-  const [hasNavigated, setHasNavigated] = useState(false);
 
   // Auto-focus on mount
   useEffect(() => { divRef.current?.focus(); }, []);
@@ -102,15 +101,13 @@ export function Editor({ onChange }) {
       triggerRef.current = { node: ctx.textNode, offset: ctx.backslashIdx };
       const q = ctx.textBefore.slice(ctx.backslashIdx + 1);
       setQuery(q);
-      setHasNavigated(false);
-      is.onValueChange(ctx.textNode.textContent, ctx.offset);
+      is.onValueChange(ctx.textNode.textContent, ctx.offset, div.textContent);
       setCaretPos(getCaretPixelPos());
     }
     onChange?.(div.innerHTML);
   }, [is, resetIS, onChange]);
 
   const handleAccept = useCallback((item) => {
-    setHasNavigated(false);
     if (item.type === "category") {
       const ctx = getCaretTextContext();
       is.acceptItem(ctx?.textNode.textContent ?? "", ctx?.offset ?? 0, item);
@@ -142,11 +139,6 @@ export function Editor({ onChange }) {
 
   const handleKeyDown = useCallback((e) => {
     const div = divRef.current;
-
-    if (isOpen && (e.key === "ArrowDown" || e.key === "ArrowUp" || e.key === "PageDown" || e.key === "PageUp" || e.key === "Home" || e.key === "End")) {
-      setHasNavigated(true);
-    }
-    if (e.key === "Escape") setHasNavigated(false);
 
     is.onKeyDown(e, "", 0, handleAccept);
 
@@ -181,12 +173,12 @@ export function Editor({ onChange }) {
     }
   }, [is, isOpen, resetIS, handleAccept, onChange]);
 
-  const activeOptionId = isOpen && hasNavigated && selectedIndex >= 0 ? `math-option-${selectedIndex}` : undefined;
+  const activeOptionId = isOpen && selectedIndex >= 0 ? `math-option-${selectedIndex}` : undefined;
 
 
 
   return (
-    <div className="editor-wrapper" role="application" aria-label="Math editor">
+    <div className="editor-wrapper" role="document" aria-label="Math editor">
       <div
         ref={divRef}
         className="editor-textarea"
@@ -194,13 +186,11 @@ export function Editor({ onChange }) {
         suppressContentEditableWarning={true}
         onInput={handleInput}
         onKeyDown={handleKeyDown}
-        role="combobox"
+        role="textbox"
         aria-multiline="true"
         aria-label="Math editor"
         aria-expanded={isOpen}
-        aria-haspopup="listbox"
-        aria-autocomplete="list"
-        aria-controls="math-symbol-listbox"
+        aria-controls="math-symbol-menu"
         aria-activedescendant={activeOptionId}
         spellCheck={false}
         data-placeholder="Type \ for symbols and equations"

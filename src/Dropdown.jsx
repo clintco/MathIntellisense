@@ -24,7 +24,7 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
   }, [selectedIndex]);
 
   if (!suggestions.length) {
-    return <ul id="math-symbol-listbox" role="listbox" aria-label="Math symbol suggestions" style={{ display: "none" }} />;
+    return <ul id="math-symbol-menu" role="menu" aria-label="Math symbol suggestions" style={{ display: "none" }} />;
   }
 
   return (
@@ -37,7 +37,7 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
         </div>
       )}
 
-      <ul ref={listRef} id="math-symbol-listbox" className="dropdown-list" role="listbox" aria-label="Math symbol suggestions">
+      <ul ref={listRef} id="math-symbol-menu" className="dropdown-list" role="menu" aria-label="Math symbol suggestions">
         {suggestions.flatMap((item, idx) => {
           const el = item.type === "category"
             ? (
@@ -45,9 +45,8 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
                 key={`${item.section ?? "unicode"}-${item.category}`}
                 id={`math-option-${idx}`}
                 data-item
-                role="option"
-                aria-selected={idx === selectedIndex}
-                aria-label={`${item.category} category, ${item.count} ${item.section === "equations" ? "equations" : "symbols"}`}
+                role="menuitem"
+                aria-label={`${item.category}, ${item.count} ${item.section === "equations" ? "equations" : "symbols"}`}
                 className={`dropdown-item dropdown-item--category${idx === selectedIndex ? " selected" : ""}`}
                 onMouseEnter={() => onHover(idx)}
                 onMouseDown={(e) => { e.preventDefault(); onSelect(item); }}
@@ -57,7 +56,7 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
                   <HighlightedLabel text={item.category} query={query} />
                 </span>
                 <span className="item-count">{item.count} {item.section === "equations" ? "equations" : "symbols"}</span>
-                <span className="item-chevron">›</span>
+                <span className="item-chevron" aria-hidden="true">›</span>
               </li>
             )
             : item.type === "equation"
@@ -66,8 +65,7 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
                 key={item.name}
                 id={`math-option-${idx}`}
                 data-item
-                role="option"
-                aria-selected={idx === selectedIndex}
+                role="menuitem"
                 aria-label={`${item.name}, ${item.domain}`}
                 className={`dropdown-item dropdown-item--equation${idx === selectedIndex ? " selected" : ""}`}
                 onMouseEnter={() => onHover(idx)}
@@ -84,8 +82,7 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
                 key={item.code}
                 id={`math-option-${idx}`}
                 data-item
-                role="option"
-                aria-selected={idx === selectedIndex}
+                role="menuitem"
                 aria-label={`${item.symbol} ${item.name}, code backslash ${item.code}, ${item.category}`}
                 className={`dropdown-item${idx === selectedIndex ? " selected" : ""}`}
                 onMouseEnter={() => onHover(idx)}
@@ -116,12 +113,6 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
         })}
       </ul>
 
-      <div className="dropdown-footer" aria-hidden="true">
-        {mode === "category"
-          ? <><kbd>↑↓</kbd> navigate &nbsp;·&nbsp; <kbd>Enter</kbd> insert &nbsp;·&nbsp; <kbd>Esc</kbd> back</>
-          : <><kbd>↑↓</kbd> navigate &nbsp;·&nbsp; <kbd>Enter</kbd> select &nbsp;·&nbsp; <kbd>Esc</kbd> close</>
-        }
-      </div>
     </div>
   );
 }

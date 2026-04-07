@@ -58,11 +58,15 @@ function parseCSV(text) {
 // Pre-process Word-specific LaTeX syntax → standard LaTeX for KaTeX
 // ---------------------------------------------------------------------------
 function preprocessLatex(latex) {
+  // Replace \placeholder{n} with \square (Word-specific, not standard LaTeX)
+  latex = latex.replace(/\\placeholder\{[^}]*\}/g, "\\square");
   // Word uses \matrix(a&b\\c&d) — convert to \begin{pmatrix}a&b\\c&d\end{pmatrix}
-  // Use vmatrix for determinant context, pmatrix elsewhere
-  return latex.replace(/\\matrix\(([^)]*)\)/g, (_, inner) => {
-    return `\\begin{pmatrix}${inner}\\end{pmatrix}`;
-  });
+  latex = latex.replace(/\\matrix\(([^)]*)\)/g, (_, inner) => `\\begin{pmatrix}${inner}\\end{pmatrix}`);
+  // Handle \pmatrix/\bmatrix/\vmatrix{...} brace syntax (safe after placeholder replacement)
+  latex = latex.replace(/\\pmatrix\{([^}]*)\}/g, (_, inner) => `\\begin{pmatrix}${inner}\\end{pmatrix}`);
+  latex = latex.replace(/\\bmatrix\{([^}]*)\}/g, (_, inner) => `\\begin{bmatrix}${inner}\\end{bmatrix}`);
+  latex = latex.replace(/\\vmatrix\{([^}]*)\}/g, (_, inner) => `\\begin{vmatrix}${inner}\\end{vmatrix}`);
+  return latex;
 }
 
 // ---------------------------------------------------------------------------

@@ -85,7 +85,6 @@ export default function SimpleApp() {
       triggerPosRef.current = backslashPos;
       setSuggestions(search(query));
       setSelectedIndex(0);
-      setHasNavigated(false);
       setCaretPos(getCaretPixelPos(e.target, backslashPos));
     } else {
       triggerPosRef.current = null;
@@ -104,7 +103,6 @@ export default function SimpleApp() {
     const newCursor = before.length + insert.length;
     setValue(newValue);
     setSuggestions([]);
-    setHasNavigated(false);
     triggerPosRef.current = null;
     requestAnimationFrame(() => {
       ta.selectionStart = newCursor;
@@ -114,10 +112,10 @@ export default function SimpleApp() {
 
   const handleKeyDown = useCallback((e) => {
     if (suggestions.length) {
-      if (e.key === "ArrowDown") { e.preventDefault(); setHasNavigated(true); setSelectedIndex(i => Math.min(i + 1, suggestions.length - 1)); return; }
-      if (e.key === "ArrowUp") { e.preventDefault(); setHasNavigated(true); setSelectedIndex(i => Math.max(i - 1, 0)); return; }
+      if (e.key === "ArrowDown") { e.preventDefault(); setSelectedIndex(i => Math.min(i + 1, suggestions.length - 1)); return; }
+      if (e.key === "ArrowUp") { e.preventDefault(); setSelectedIndex(i => Math.max(i - 1, 0)); return; }
       if (e.key === "Enter" || e.key === "Tab") { e.preventDefault(); acceptItem(suggestions[selectedIndex]); return; }
-      if (e.key === "Escape") { setSuggestions([]); setHasNavigated(false); return; }
+      if (e.key === "Escape") { setSuggestions([]); return; }
     }
 
     if (e.key === " " || e.key === "\\") {
@@ -136,9 +134,8 @@ export default function SimpleApp() {
     }
   }, [suggestions, selectedIndex, acceptItem, value]);
 
-  const [hasNavigated, setHasNavigated] = useState(false);
   const isOpen = suggestions.length > 0;
-  const activeOptionId = isOpen && hasNavigated ? `simple-option-${selectedIndex}` : undefined;
+  const activeOptionId = isOpen && selectedIndex >= 0 ? `simple-option-${selectedIndex}` : undefined;
 
   return (
     <div style={{ padding: "24px", fontFamily: "system-ui, sans-serif", background: "var(--colorNeutralBackground1)", minHeight: "100vh", color: "var(--colorNeutralForeground1)" }}>
@@ -162,12 +159,10 @@ export default function SimpleApp() {
           autoComplete="off"
           autoCorrect="off"
           autoCapitalize="off"
-          role="combobox"
+          role="textbox"
           aria-label="Math symbol editor"
           aria-expanded={isOpen}
-          aria-haspopup="listbox"
-          aria-autocomplete="list"
-          aria-controls="simple-listbox"
+          aria-controls="simple-menu"
           aria-activedescendant={activeOptionId}
           style={{
             width: "100%", height: "200px", boxSizing: "border-box",
@@ -182,8 +177,8 @@ export default function SimpleApp() {
         />
 
         <ul
-          id="simple-listbox"
-          role="listbox"
+          id="simple-menu"
+          role="menu"
           aria-label="Math symbol suggestions"
           style={{
             display: isOpen ? undefined : "none",
@@ -204,10 +199,7 @@ export default function SimpleApp() {
             <li
               key={item.type === "equation" ? `eq-${item.name}` : item.code}
               id={`simple-option-${idx}`}
-              role="option"
-              aria-selected={idx === selectedIndex}
-              aria-setsize={suggestions.length}
-              aria-posinset={idx + 1}
+              role="menuitem"
               aria-label={item.type === "equation" ? `${item.name}, ${item.domain}` : `${item.symbol} backslash ${item.code}`}
               onMouseEnter={() => setSelectedIndex(idx)}
               onMouseDown={(e) => { e.preventDefault(); acceptItem(item); }}

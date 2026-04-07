@@ -174,20 +174,3 @@ mark.match {
 }
 
 /* ── Footer ──────────────────────────────────────────────────────────────── */
-.dropdown-footer {
-  padding: 4px 10px;
-  font-size: 10px;
-  color: var(--colorNeutralForeground3);
-  border-top: 1px solid var(--colorNeutralStroke1);
-  background: var(--colorNeutralBackground3);
-}
-.dropdown-footer kbd {
-  display: inline-block;
-  padding: 0 3px;
-  background: var(--colorNeutralBackground4);
-  border: 1px solid var(--colorNeutralStroke2);
-  border-radius: 2px;
-  font-size: 9px;
-  color: var(--colorNeutralForeground1);
-  font-family: inherit;
-}
