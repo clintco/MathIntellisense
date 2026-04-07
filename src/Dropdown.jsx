@@ -106,7 +106,9 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
                 <span className="item-cat">{item.category}</span>
               </li>
             );
-          const sep = (mode === "search" && item.section === "equations" && suggestions[idx - 1]?.section !== "equations")
+          // Separator between the two sections — placed before whichever section comes second
+          const prevSection = suggestions[idx - 1]?.section;
+          const sep = (mode === "search" && prevSection && item.section && item.section !== prevSection)
             ? <li key="__sep" className="dropdown-separator" role="separator" aria-hidden="true" />
             : null;
           return sep ? [sep, el] : el;

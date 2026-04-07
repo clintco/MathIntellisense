@@ -187,7 +187,7 @@ export function Editor({ onChange }) {
 
 
   return (
-    <div className="editor-wrapper" role="document" aria-label="Math editor">
+    <div className="editor-wrapper">
       <div
         ref={divRef}
         className="editor-textarea"
@@ -199,6 +199,7 @@ export function Editor({ onChange }) {
         aria-multiline="true"
         aria-label="Math editor"
         aria-expanded={isOpen}
+        aria-owns={isOpen ? "math-symbol-menu" : undefined}
         aria-controls="math-symbol-menu"
         aria-activedescendant={activeOptionId}
         spellCheck={false}
