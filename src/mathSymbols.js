@@ -49,7 +49,7 @@ export const mathSymbols = [
   { code: "nexists",        aliases: ["notexists"],                   symbol: "∄", name: "There does not exist",                category: "Basic Math",                         rank: 3 },
   { code: "in",             aliases: ["element", "belongs"],          symbol: "∈", name: "Element of (belongs to)",             category: "Basic Math",                         rank: 1 },
   { code: "ni",             aliases: ["contains", "owns"],            symbol: "∋", name: "Contains as member",                  category: "Basic Math",                         rank: 3 },
-  { code: "therefore",      aliases: [],                              symbol: "∴", name: "Therefore",                           category: "Basic Math",                         rank: 2 },
+  { code: "therefore",      aliases: ["qed"],                         symbol: "∴", name: "Therefore",                           category: "Basic Math",                         rank: 2 },
   { code: "neg",            aliases: ["not", "lnot"],                 symbol: "¬", name: "Not sign",                            category: "Basic Math",                         rank: 2 },
   { code: "ast",            aliases: [],                              symbol: "∗", name: "Asterisk operator",                   category: "Basic Math",                         rank: 2 },
   { code: "bullet",         aliases: [],                              symbol: "∙", name: "Bullet operator",                     category: "Basic Math",                         rank: 2 },
@@ -63,7 +63,7 @@ export const mathSymbols = [
 
   // ── Number Theory ─────────────────────────────────────────────────────────
   { code: "mid",            aliases: ["divides"],                     symbol: "∣", name: "Divides (is divisible by)",           category: "Number Theory",                      rank: 2 },
-  { code: "notdivide",      aliases: [],                              symbol: "∤", name: "Does not divide",                     category: "Number Theory",                      rank: 3 },
+  { code: "notdivide",      aliases: ["nmid"],                        symbol: "∤", name: "Does not divide",                     category: "Number Theory",                      rank: 3 },
 
   // ── Statistics and Probability ────────────────────────────────────────────
   { code: "stddev",         aliases: [],                              symbol: "σ", name: "Standard deviation",                  category: "Statistics and Probability",         rank: 1 },
@@ -195,7 +195,7 @@ export const mathSymbols = [
   { code: "sqsupset",       aliases: [],                              symbol: "⊐", name: "Square superset",                   category: "Relational Operators",               rank: 3 },
   { code: "sqsubseteq",     aliases: [],                              symbol: "⊑", name: "Square subset or equal",            category: "Relational Operators",               rank: 3 },
   { code: "sqsupseteq",     aliases: [],                              symbol: "⊒", name: "Square superset or equal",          category: "Relational Operators",               rank: 3 },
-  { code: "parallel",       aliases: [],                              symbol: "∥", name: "Parallel to",                        category: "Relational Operators",               rank: 2 },
+  { code: "parallel",       aliases: ["parallelto"],                  symbol: "∥", name: "Parallel to",                        category: "Relational Operators",               rank: 2 },
   { code: "perp",           aliases: ["perpendicular"],               symbol: "⊥", name: "Perpendicular to",                  category: "Relational Operators",               rank: 2 },
   { code: "vdash",          aliases: ["proves"],                      symbol: "⊢", name: "Proves",                             category: "Relational Operators",               rank: 2 },
   { code: "dashv",          aliases: [],                              symbol: "⊣", name: "Does not yield",                     category: "Relational Operators",               rank: 3 },
@@ -271,7 +271,7 @@ export const mathSymbols = [
   { code: "bigsqcup",       aliases: [],                              symbol: "⨆", name: "N-ary square union",               category: "Binary Operators (Advanced)",        rank: 3 },
 
   // ── Relational Operators (Advanced) ─────────────────────────────────────────
-  { code: "because",        aliases: [],                              symbol: "∵", name: "Because",                            category: "Relational Operators (Advanced)",    rank: 2 },
+  { code: "because",        aliases: ["since"],                       symbol: "∵", name: "Because",                            category: "Relational Operators (Advanced)",    rank: 2 },
   { code: "lll",            aliases: [],                              symbol: "⋘", name: "Very much less than",                category: "Relational Operators (Advanced)",    rank: 3 },
   { code: "ggg",            aliases: [],                              symbol: "⋙", name: "Very much greater than",             category: "Relational Operators (Advanced)",    rank: 3 },
   { code: "leqq",           aliases: [],                              symbol: "≦", name: "Less than over equal to",            category: "Relational Operators (Advanced)",    rank: 3 },
@@ -324,7 +324,7 @@ export const mathSymbols = [
   { code: "leftarrow",      aliases: ["gets"],                        symbol: "←", name: "Left arrow",                        category: "Arrows",                             rank: 2 },
   { code: "uparrow",        aliases: [],                              symbol: "↑", name: "Up arrow",                          category: "Arrows",                             rank: 2 },
   { code: "downarrow",      aliases: [],                              symbol: "↓", name: "Down arrow",                        category: "Arrows",                             rank: 2 },
-  { code: "leftrightarrow", aliases: [],                              symbol: "↔", name: "Left-right arrow",                  category: "Arrows",                             rank: 2 },
+  { code: "leftrightarrow", aliases: ["biconditional"],               symbol: "↔", name: "Left-right arrow",                  category: "Arrows",                             rank: 2 },
   { code: "updownarrow",    aliases: [],                              symbol: "↕", name: "Up-down arrow",                     category: "Arrows",                             rank: 3 },
   { code: "Rightarrow",     aliases: ["Implies", "Implication"],      symbol: "⇒", name: "Double right arrow (implies)",      category: "Arrows",                             rank: 1 },
   { code: "Leftarrow",      aliases: [],                              symbol: "⇐", name: "Double left arrow",                 category: "Arrows",                             rank: 2 },
@@ -412,6 +412,25 @@ export const mathSymbols = [
   { code: "subsetnoteq",    aliases: [],                              symbol: "⊊", name: "Subset with not equal to",           category: "Negated Relations",                  rank: 3 },
   { code: "supsetnoteq",    aliases: ["supsetneq"],                   symbol: "⊋", name: "Superset with not equal to",         category: "Negated Relations",                  rank: 3 },
   { code: "nsqsubseteq",    aliases: [],                              symbol: "⋢", name: "Not square subset or equal",         category: "Negated Relations",                  rank: 3 },
+
+  // ── Geometry ──────────────────────────────────────────────────────────────
+  { code: "circle",         aliases: [],                              symbol: "◯", name: "Circle",                              category: "Geometry",                           rank: 1 },
+  { code: "circledot",      aliases: ["odotgeo"],                     symbol: "⊙", name: "Circle with dot inside",             category: "Geometry",                           rank: 2 },
+  { code: "tvec",           aliases: ["line"],                        symbol: "⃡", name: "Line (left-right arrow above)",      category: "Geometry",                           rank: 2 },
+  { code: "seg",            aliases: ["segment"],                     symbol: "¯", name: "Segment",                             category: "Geometry",                           rank: 2 },
+  { code: "rightangle",     aliases: [],                              symbol: "∟", name: "Right angle",                         category: "Geometry",                           rank: 1 },
+  { code: "angle",          aliases: [],                              symbol: "∠", name: "Angle",                               category: "Geometry",                           rank: 1 },
+  { code: "angmsd",         aliases: ["measangle"],                   symbol: "∡", name: "Measured angle",                      category: "Geometry",                           rank: 2 },
+  { code: "angsph",         aliases: [],                              symbol: "∢", name: "Spherical angle",                     category: "Geometry",                           rank: 3 },
+  { code: "angrtvb",        aliases: [],                              symbol: "⊾", name: "Right angle with arc",               category: "Geometry",                           rank: 2 },
+  { code: "rtriangle",      aliases: ["righttriangle"],               symbol: "⊿", name: "Right triangle",                     category: "Geometry",                           rank: 2 },
+  { code: "triangle",       aliases: [],                              symbol: "△", name: "Triangle",                            category: "Geometry",                           rank: 1 },
+  { code: "parallelogram",  aliases: [],                              symbol: "▱", name: "Parallelogram",                       category: "Geometry",                           rank: 2 },
+  { code: "epar",           aliases: ["equalparallel"],               symbol: "⋕", name: "Equal and parallel to",              category: "Geometry",                           rank: 2 },
+  { code: "nparallel",      aliases: ["notparallel"],                 symbol: "∦", name: "Not parallel to",                    category: "Geometry",                           rank: 2 },
+  { code: "ratio",          aliases: [],                              symbol: "∶", name: "Ratio",                               category: "Geometry",                           rank: 2 },
+  { code: "Colon",          aliases: ["proportion"],                  symbol: "∷", name: "Proportion",                          category: "Geometry",                           rank: 2 },
+  { code: "qed",            aliases: ["endproof"],                    symbol: "∎", name: "End of proof (Q.E.D.)",              category: "Geometry",                           rank: 2 },
 ];
 
 /** All categories in the order they appear on the Microsoft reference page */
@@ -431,6 +450,7 @@ export const allCategories = [
   "Matrix Operations",
   "Arrows",
   "Negated Relations",
+  "Geometry",
 ];
 
 /** Get all symbols in a category */
