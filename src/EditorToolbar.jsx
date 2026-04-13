@@ -121,8 +121,6 @@ export function EditorToolbar({ editorRef, listRef, onInsert, onDictate, onRetur
         />
       </Tooltip>
 
-      <ToolbarDivider />
-
       {SYMBOL_ITEMS.map(item => (
         <Tooltip key={item.id} content={item.label} relationship="label" showDelay={300}>
           <ToolbarButton
