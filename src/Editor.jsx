@@ -149,6 +149,13 @@ export function Editor({ onChange }) {
       setHideActiveDescendant(false);
     }
 
+    if (e.key === "Tab" && e.shiftKey && isOpen) {
+      e.preventDefault();
+      setSelectedIndex(-1);
+      document.getElementById("toolbar-dictate-btn")?.focus();
+      return;
+    }
+
     is.onKeyDown(e, "", 0, handleAccept);
 
     // Autocorrect
@@ -182,6 +189,72 @@ export function Editor({ onChange }) {
     }
   }, [is, resetIS, handleAccept, onChange]);
 
+  const handleToolbarInsert = useCallback(({ type, symbol, element, cursorSlot }) => {
+    const div = divRef.current;
+    if (!div) return;
+
+    if (type === "symbol") {
+      // insertAtTrigger replaces \query with the symbol when a trigger is active;
+      // falls back to a no-op if triggerRef is null, so insert directly in that case.
+      if (triggerRef.current) {
+        insertAtTrigger(symbol);
+      } else {
+        const sel = window.getSelection();
+        if (!sel?.rangeCount || !div.contains(sel.getRangeAt(0).commonAncestorContainer)) {
+          const range = document.createRange();
+          range.selectNodeContents(div);
+          range.collapse(false);
+          sel.removeAllRanges();
+          sel.addRange(range);
+        }
+        const range = sel.getRangeAt(0);
+        range.deleteContents();
+        const textNode = document.createTextNode(symbol);
+        range.insertNode(textNode);
+        range.setStartAfter(textNode);
+        range.collapse(true);
+        sel.removeAllRanges();
+        sel.addRange(range);
+      }
+    } else if (type === "mathml" && element) {
+      if (triggerRef.current) {
+        insertAtTrigger(element);
+      } else {
+        const sel = window.getSelection();
+        if (!sel?.rangeCount || !div.contains(sel.getRangeAt(0).commonAncestorContainer)) {
+          const range = document.createRange();
+          range.selectNodeContents(div);
+          range.collapse(false);
+          sel.removeAllRanges();
+          sel.addRange(range);
+        }
+        const range = sel.getRangeAt(0);
+        range.deleteContents();
+        range.insertNode(element);
+      }
+      // Place cursor inside the requested slot
+      const slots = element.querySelectorAll("mi");
+      const slot = slots[cursorSlot ?? 0];
+      if (slot) {
+        const sel = window.getSelection();
+        const r = document.createRange();
+        r.selectNodeContents(slot);
+        r.collapse(false);
+        sel.removeAllRanges();
+        sel.addRange(r);
+      }
+    }
+
+    resetIS();
+    setQuery("");
+    onChange?.(div.innerHTML);
+  }, [onChange, resetIS, insertAtTrigger]);
+
+  const handleReturnToList = useCallback(() => {
+    setSelectedIndex(0);
+    divRef.current?.focus();
+  }, [setSelectedIndex]);
+
   const activeOptionId = isOpen && selectedIndex >= 0 && !hideActiveDescendant ? `math-option-${selectedIndex}` : undefined;
 
 
@@ -214,6 +287,9 @@ export function Editor({ onChange }) {
         query={query}
         onSelect={handleAccept}
         onHover={setSelectedIndex}
+        editorRef={divRef}
+        onInsert={handleToolbarInsert}
+        onReturnToList={handleReturnToList}
       />
     </div>
   );

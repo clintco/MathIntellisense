@@ -12,6 +12,16 @@
   overflow: hidden;
 }
 
+/* ── Toolbar header (sticky, never scrolls) ────────────────────────────── */
+.dropdown-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--colorNeutralBackground3);
+  border-bottom: 1px solid var(--colorNeutralStroke2);
+  flex-shrink: 0;
+}
+
 /* ── Breadcrumb (category mode) ────────────────────────────────────────── */
 .dropdown-breadcrumb {
   display: flex;

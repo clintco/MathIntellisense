@@ -1,0 +1,35 @@
+.editor-toolbar {
+  padding: 2px 4px;
+  background: transparent;
+}
+
+.toolbar-btn--dictate {
+  color: var(--colorBrandForeground1);
+}
+
+.toolbar-symbol {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 13px;
+  line-height: 1;
+}
+
+/* Fraction display */
+.toolbar-fraction {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  line-height: 1.1;
+  gap: 0;
+}
+
+.toolbar-fraction span:first-child {
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1px;
+}
+
+/* Remove top border radius from editor when toolbar is present */
+.editor-wrapper--with-toolbar .editor-textarea {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { EditorToolbar } from "./EditorToolbar";
 import "./Dropdown.css";
 
 function HighlightedLabel({ text, query }) {
@@ -14,7 +15,7 @@ function HighlightedLabel({ text, query }) {
   );
 }
 
-export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, position, mode, activeCategory, query, unit = "symbols" }) {
+export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, position, mode, activeCategory, query, unit = "symbols", editorRef, onInsert, onDictate, onReturnToList }) {
   const listRef = useRef(null);
 
   useEffect(() => {
@@ -29,6 +30,10 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
 
   return (
     <div className="dropdown" style={{ top: position.top, left: position.left }} onMouseDown={(e) => e.preventDefault()}>
+      <div className="dropdown-header">
+        <EditorToolbar editorRef={editorRef} listRef={listRef} onInsert={onInsert} onDictate={onDictate} onReturnToList={onReturnToList} />
+      </div>
+
       {mode === "category" && activeCategory && (
         <div className="dropdown-breadcrumb" aria-hidden="true">
           <span className="breadcrumb-back">←</span>
