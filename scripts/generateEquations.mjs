@@ -12,6 +12,7 @@ import { createRequire } from "module";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 import { isCoreEquation } from "../src/coreEquations.js";
+import { latexToUnicodeMath } from "./latexToUnicodeMath.mjs";
 
 const require = createRequire(import.meta.url);
 const katex = require("katex");
@@ -113,8 +114,9 @@ for (const row of data) {
     mathml = null;
   }
 
-  const core = isCoreEquation({ name, domain });
-  equations.push({ name, aliases, mathml, domain, description, core });
+  const core       = isCoreEquation({ name, domain });
+  const unicodemath = latexToUnicodeMath(preprocessLatex(latexUnescaped));
+  equations.push({ name, aliases, mathml, unicodemath, domain, description, core });
 }
 
 // ---------------------------------------------------------------------------
@@ -141,6 +143,7 @@ const js = `/**
  *   name        - equation name (used for search)
  *   aliases     - alternate spoken names
  *   mathml      - MathML string for insertion
+ *   unicodemath - UnicodeMath linear format string (null = needs manual review)
  *   domain      - subject domain (used for category browsing)
  *   description - human-readable description
  */
