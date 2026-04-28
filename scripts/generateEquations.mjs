@@ -95,7 +95,7 @@ const failures  = [];
 
 for (const row of data) {
   if (row.length < 5) { console.warn("Bad row:", row); continue; }
-  const [name, aliases, latex, domain, description] = row;
+  const [name, aliases, latex, domain, description, , dictationString] = row;
 
   // The .txt file stores LaTeX with doubled backslashes (\\det → \det).
   // Unescape them before converting.
@@ -116,7 +116,7 @@ for (const row of data) {
 
   const core       = isCoreEquation({ name, domain });
   const unicodemath = latexToUnicodeMath(preprocessLatex(latexUnescaped));
-  equations.push({ name, aliases, mathml, unicodemath, domain, description, core });
+  equations.push({ name, aliases, mathml, unicodemath, domain, description, dictationString: dictationString ?? "", core });
 }
 
 // ---------------------------------------------------------------------------
@@ -144,8 +144,9 @@ const js = `/**
  *   aliases     - alternate spoken names
  *   mathml      - MathML string for insertion
  *   unicodemath - UnicodeMath linear format string (null = needs manual review)
- *   domain      - subject domain (used for category browsing)
- *   description - human-readable description
+ *   domain          - subject domain (used for category browsing)
+ *   description     - human-readable description
+ *   dictationString - natural spoken form for speech recognition / accessibility
  */
 export const mathEquations = ${JSON.stringify(equations, null, 2)};
 

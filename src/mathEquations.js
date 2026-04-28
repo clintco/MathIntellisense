@@ -6,8 +6,9 @@
  *   aliases     - alternate spoken names
  *   mathml      - MathML string for insertion
  *   unicodemath - UnicodeMath linear format string (null = needs manual review)
- *   domain      - subject domain (used for category browsing)
- *   description - human-readable description
+ *   domain          - subject domain (used for category browsing)
+ *   description     - human-readable description
+ *   dictationString - natural spoken form for speech recognition / accessibility
  */
 export const mathEquations = [
   {
@@ -17,6 +18,7 @@ export const mathEquations = [
     "unicodemath": "a^m ⋅ a^n = a^(m+n)",
     "domain": "Algebra & Number Systems",
     "description": "Multiplying powers with the same base adds exponents",
+    "dictationString": "a to the m times a to the n equals a to the power of begin m plus n end",
     "core": false
   },
   {
@@ -26,6 +28,7 @@ export const mathEquations = [
     "unicodemath": "a^m/a^n = a^(m-n)",
     "domain": "Algebra & Number Systems",
     "description": "Dividing powers with the same base subtracts exponents",
+    "dictationString": "begin fraction a to the m over a to the n end fraction equals a to the power of begin m minus n end",
     "core": false
   },
   {
@@ -35,6 +38,7 @@ export const mathEquations = [
     "unicodemath": "(a^m)^n = a^mn",
     "domain": "Algebra & Number Systems",
     "description": "Raising a power to a power multiplies exponents",
+    "dictationString": "open parenthesis a to the m close parenthesis to the n equals a to the power of m times n",
     "core": false
   },
   {
@@ -44,6 +48,7 @@ export const mathEquations = [
     "unicodemath": "(ab)^n = a^n b^n",
     "domain": "Algebra & Number Systems",
     "description": "Distributing an exponent over a product",
+    "dictationString": "open parenthesis a times b close parenthesis to the n equals a to the n times b to the n",
     "core": false
   },
   {
@@ -53,6 +58,7 @@ export const mathEquations = [
     "unicodemath": "(a/b)^n = a^n/b^n",
     "domain": "Algebra & Number Systems",
     "description": "Distributing an exponent over a quotient",
+    "dictationString": "open parenthesis begin fraction a over b end fraction close parenthesis to the n equals begin fraction a to the n over b to the n end fraction",
     "core": false
   },
   {
@@ -62,6 +68,7 @@ export const mathEquations = [
     "unicodemath": "a^(-n) = 1/a^n",
     "domain": "Algebra & Number Systems",
     "description": "Negative exponent means reciprocal",
+    "dictationString": "a to the power of negative n equals begin fraction one over a to the n end fraction",
     "core": false
   },
   {
@@ -71,6 +78,7 @@ export const mathEquations = [
     "unicodemath": "a^(m/n) = n√(a^m)",
     "domain": "Algebra & Number Systems",
     "description": "Fractional exponent as a radical",
+    "dictationString": "a to the power of begin m over n end equals the nth root of a to the m",
     "core": false
   },
   {
@@ -80,6 +88,7 @@ export const mathEquations = [
     "unicodemath": "log_b(xy) = log_b x + log_b y",
     "domain": "Algebra & Number Systems",
     "description": "Logarithm of a product equals sum of logarithms",
+    "dictationString": "log base b of open parenthesis x times y close parenthesis equals log base b of x plus log base b of y",
     "core": false
   },
   {
@@ -89,6 +98,7 @@ export const mathEquations = [
     "unicodemath": "log_b(x/y) = log_b x - log_b y",
     "domain": "Algebra & Number Systems",
     "description": "Logarithm of a quotient equals difference of logarithms",
+    "dictationString": "log base b of begin fraction x over y end fraction equals log base b of x minus log base b of y",
     "core": false
   },
   {
@@ -98,6 +108,7 @@ export const mathEquations = [
     "unicodemath": "log_b(x^n) = nlog_b x",
     "domain": "Algebra & Number Systems",
     "description": "Logarithm of a power brings the exponent down",
+    "dictationString": "log base b of x to the n equals n times log base b of x",
     "core": false
   },
   {
@@ -107,6 +118,7 @@ export const mathEquations = [
     "unicodemath": "b^(log_bx) = x",
     "domain": "Algebra & Number Systems",
     "description": "Exponential and logarithm are inverse operations",
+    "dictationString": "b to the power of log base b of x equals x",
     "core": false
   },
   {
@@ -116,6 +128,7 @@ export const mathEquations = [
     "unicodemath": "log_b(x) = lnx/lnb",
     "domain": "Algebra & Number Systems",
     "description": "Change of base formula for logarithms",
+    "dictationString": "log base b of x equals begin fraction natural log of x over natural log of b end fraction",
     "core": false
   },
   {
@@ -125,6 +138,7 @@ export const mathEquations = [
     "unicodemath": "(a+b)^2 = a^2 + 2ab + b^2;  (a-b)^2 = a^2 - 2ab + b^2",
     "domain": "Algebra & Number Systems",
     "description": "Perfect square expansion (both addition and subtraction forms)",
+    "dictationString": "(addition form) open parenthesis a plus b close parenthesis squared equals a squared plus two a b plus b squared; (subtraction form) open parenthesis a minus b close parenthesis squared equals a squared minus two a b plus b squared",
     "core": false
   },
   {
@@ -134,6 +148,7 @@ export const mathEquations = [
     "unicodemath": "x^2 + bx + (b/2)^2 = (x + b/2)^2",
     "domain": "Algebra & Number Systems",
     "description": "Completing the square identity",
+    "dictationString": "x squared plus b x plus open parenthesis begin fraction b over two end fraction close parenthesis squared equals open parenthesis x plus begin fraction b over two end fraction close parenthesis squared",
     "core": false
   },
   {
@@ -143,6 +158,7 @@ export const mathEquations = [
     "unicodemath": "y = kx",
     "domain": "Algebra & Number Systems",
     "description": "Direct variation with constant of proportionality k",
+    "dictationString": "y equals k times x",
     "core": false
   },
   {
@@ -152,6 +168,7 @@ export const mathEquations = [
     "unicodemath": "y = k/x",
     "domain": "Algebra & Number Systems",
     "description": "Inverse variation with constant of proportionality k",
+    "dictationString": "y equals begin fraction k over x end fraction",
     "core": false
   },
   {
@@ -161,6 +178,7 @@ export const mathEquations = [
     "unicodemath": "y = kxz",
     "domain": "Algebra & Number Systems",
     "description": "Joint variation: y proportional to both x and z",
+    "dictationString": "y equals k times x times z",
     "core": false
   },
   {
@@ -170,6 +188,7 @@ export const mathEquations = [
     "unicodemath": "d = rt",
     "domain": "Algebra & Number Systems",
     "description": "Distance equals rate times time",
+    "dictationString": "d equals r times t",
     "core": false
   },
   {
@@ -179,6 +198,7 @@ export const mathEquations = [
     "unicodemath": "|x - a| = b ⇒ x = a ± b",
     "domain": "Algebra & Number Systems",
     "description": "Solution of an absolute value equation",
+    "dictationString": "the absolute value of begin x minus a end equals b, which implies x equals a plus or minus b",
     "core": false
   },
   {
@@ -188,6 +208,7 @@ export const mathEquations = [
     "unicodemath": "x = (-b±√(b^2-4ac))/2a",
     "domain": "Algebra & Number Systems",
     "description": "Formula for roots of ax^2+bx+c=0",
+    "dictationString": "x equals begin fraction negative b plus or minus the square root of begin b squared minus four times a times c end over two a end fraction",
     "core": false
   },
   {
@@ -197,6 +218,7 @@ export const mathEquations = [
     "unicodemath": "b^2 - 4ac",
     "domain": "Algebra & Number Systems",
     "description": "Discriminant of a quadratic equation",
+    "dictationString": "b squared minus four times a times c",
     "core": false
   },
   {
@@ -206,6 +228,7 @@ export const mathEquations = [
     "unicodemath": "a^2 - b^2 = (a+b)(a-b)",
     "domain": "Algebra & Number Systems",
     "description": "Difference of squares factoring identity",
+    "dictationString": "a squared minus b squared equals open parenthesis a plus b close parenthesis times open parenthesis a minus b close parenthesis",
     "core": false
   },
   {
@@ -215,6 +238,7 @@ export const mathEquations = [
     "unicodemath": "a^3 + b^3 = (a+b)(a^2 - ab + b^2)",
     "domain": "Algebra & Number Systems",
     "description": "Sum of cubes factoring",
+    "dictationString": "a cubed plus b cubed equals open parenthesis a plus b close parenthesis times open parenthesis a squared minus a b plus b squared close parenthesis",
     "core": false
   },
   {
@@ -224,6 +248,7 @@ export const mathEquations = [
     "unicodemath": "a^3 - b^3 = (a-b)(a^2 + ab + b^2)",
     "domain": "Algebra & Number Systems",
     "description": "Difference of cubes factoring",
+    "dictationString": "a cubed minus b cubed equals open parenthesis a minus b close parenthesis times open parenthesis a squared plus a b plus b squared close parenthesis",
     "core": false
   },
   {
@@ -233,6 +258,7 @@ export const mathEquations = [
     "unicodemath": "(a+b)^n = ∑_(k=0)^n (n¦k) a^(n-k) b^k",
     "domain": "Algebra & Number Systems",
     "description": "Binomial theorem expansion",
+    "dictationString": "open parenthesis a plus b close parenthesis to the n equals the sum from k equals zero to n of n choose k times a to the power of begin n minus k end times b to the k",
     "core": false
   },
   {
@@ -242,6 +268,7 @@ export const mathEquations = [
     "unicodemath": "S_n = a(1-r^n)/(1-r)",
     "domain": "Algebra & Number Systems",
     "description": "Sum of a finite geometric series",
+    "dictationString": "S sub n equals begin fraction a times open parenthesis one minus r to the n close parenthesis over one minus r end fraction",
     "core": false
   },
   {
@@ -251,6 +278,7 @@ export const mathEquations = [
     "unicodemath": "S = a/(1-r)",
     "domain": "Algebra & Number Systems",
     "description": "Sum of an infinite geometric series (|r|<1)",
+    "dictationString": "S equals begin fraction a over one minus r end fraction",
     "core": false
   },
   {
@@ -260,6 +288,7 @@ export const mathEquations = [
     "unicodemath": "S_n = n/2(a_1 + a_n)",
     "domain": "Algebra & Number Systems",
     "description": "Sum of an arithmetic series",
+    "dictationString": "S sub n equals begin fraction n over two end fraction times open parenthesis a sub one plus a sub n close parenthesis",
     "core": false
   },
   {
@@ -269,6 +298,7 @@ export const mathEquations = [
     "unicodemath": "a_n = a_1 + (n-1)d",
     "domain": "Algebra & Number Systems",
     "description": "nth term of an arithmetic sequence with first term a_1 and common difference d",
+    "dictationString": "a sub n equals a sub one plus open parenthesis n minus one close parenthesis times d",
     "core": false
   },
   {
@@ -278,6 +308,7 @@ export const mathEquations = [
     "unicodemath": "a_n = a_1 ⋅ r^(n-1)",
     "domain": "Algebra & Number Systems",
     "description": "nth term of a geometric sequence with first term a_1 and common ratio r",
+    "dictationString": "a sub n equals a sub one times r to the power of begin n minus one end",
     "core": false
   },
   {
@@ -287,6 +318,7 @@ export const mathEquations = [
     "unicodemath": "y = a(x-h)^2 + k",
     "domain": "Algebra & Number Systems",
     "description": "Parabola with vertex at (h,k)",
+    "dictationString": "y equals a times open parenthesis x minus h close parenthesis squared plus k",
     "core": false
   },
   {
@@ -296,6 +328,7 @@ export const mathEquations = [
     "unicodemath": "y = y_0e^kt",
     "domain": "Algebra & Number Systems",
     "description": "Exponential growth (k>0) or decay (k<0) model; also general solution to dy/dt = ky",
+    "dictationString": "y equals y sub zero times e to the power of k t",
     "core": false
   },
   {
@@ -305,6 +338,7 @@ export const mathEquations = [
     "unicodemath": "a = bq + r   0 ≤ r < b",
     "domain": "Algebra & Number Systems",
     "description": "Every integer a divided by positive b has unique quotient q and remainder r",
+    "dictationString": "a equals b times q plus r, where zero is less than or equal to r, and r is less than b",
     "core": false
   },
   {
@@ -314,6 +348,7 @@ export const mathEquations = [
     "unicodemath": "gcd(a,b) = ax + by",
     "domain": "Algebra & Number Systems",
     "description": "GCD of a and b can be expressed as a linear combination of a and b",
+    "dictationString": "the greatest common divisor of a and b equals a times x plus b times y",
     "core": false
   },
   {
@@ -323,6 +358,7 @@ export const mathEquations = [
     "unicodemath": "a^p ≡ a  (mod p)",
     "domain": "Algebra & Number Systems",
     "description": "For prime p and any integer a: a^p is congruent to a mod p",
+    "dictationString": "a to the p is congruent to a modulo p",
     "core": false
   },
   {
@@ -332,6 +368,7 @@ export const mathEquations = [
     "unicodemath": "ϕ(n) = n∏_(p∣n)(1 - 1/p)",
     "domain": "Algebra & Number Systems",
     "description": "Count of integers up to n that are coprime to n",
+    "dictationString": "phi of n equals n times the product for each prime p dividing n of open parenthesis one minus begin fraction one over p end fraction close parenthesis",
     "core": false
   },
   {
@@ -341,6 +378,7 @@ export const mathEquations = [
     "unicodemath": "a^(ϕ(n)) ≡ 1  (mod n)",
     "domain": "Algebra & Number Systems",
     "description": "For gcd(a,n)=1: a raised to Euler totient is congruent to 1 mod n",
+    "dictationString": "a to the power of phi of n is congruent to one modulo n",
     "core": false
   },
   {
@@ -350,6 +388,7 @@ export const mathEquations = [
     "unicodemath": "a ≡ b  (mod n)",
     "domain": "Algebra & Number Systems",
     "description": "a is congruent to b modulo n",
+    "dictationString": "a is congruent to b modulo n",
     "core": false
   },
   {
@@ -359,6 +398,7 @@ export const mathEquations = [
     "unicodemath": "|z| = √(a^2+b^2)",
     "domain": "Algebra & Number Systems",
     "description": "Modulus (magnitude) of complex number z = a+bi",
+    "dictationString": "the absolute value of z equals the square root of begin a squared plus b squared end",
     "core": false
   },
   {
@@ -368,6 +408,7 @@ export const mathEquations = [
     "unicodemath": "(a+bi)(c+di) = (ac-bd) + (ad+bc)i",
     "domain": "Algebra & Number Systems",
     "description": "Multiplication of two complex numbers",
+    "dictationString": "open parenthesis a plus b i close parenthesis times open parenthesis c plus d i close parenthesis equals open parenthesis a c minus b d close parenthesis plus open parenthesis a d plus b c close parenthesis i",
     "core": false
   },
   {
@@ -377,6 +418,7 @@ export const mathEquations = [
     "unicodemath": "(cosθ + isinθ)^n = cos(nθ) + isin(nθ)",
     "domain": "Algebra & Number Systems",
     "description": "De Moivre's theorem for powers of complex numbers",
+    "dictationString": "open parenthesis cosine theta plus i sine theta close parenthesis to the n equals cosine of n theta plus i sine of n theta",
     "core": false
   },
   {
@@ -386,6 +428,7 @@ export const mathEquations = [
     "unicodemath": "e^iπ + 1 = 0",
     "domain": "Algebra & Number Systems",
     "description": "Combines fundamental constants e, i, pi, 1, 0 in a single equation",
+    "dictationString": "e to the power of i pi plus one equals zero",
     "core": false
   },
   {
@@ -395,6 +438,7 @@ export const mathEquations = [
     "unicodemath": "m = (y_2-y_1)/(x_2-x_1)",
     "domain": "Geometry & Trigonometry",
     "description": "Slope between two points",
+    "dictationString": "m equals begin fraction y sub two minus y sub one over x sub two minus x sub one end fraction",
     "core": false
   },
   {
@@ -404,6 +448,7 @@ export const mathEquations = [
     "unicodemath": "y = mx + b",
     "domain": "Geometry & Trigonometry",
     "description": "Slope-intercept form of a line",
+    "dictationString": "y equals m x plus b",
     "core": false
   },
   {
@@ -413,6 +458,7 @@ export const mathEquations = [
     "unicodemath": "y - y_1 = m(x - x_1)",
     "domain": "Geometry & Trigonometry",
     "description": "Point-slope form of a line",
+    "dictationString": "y minus y sub one equals m times open parenthesis x minus x sub one close parenthesis",
     "core": false
   },
   {
@@ -422,6 +468,7 @@ export const mathEquations = [
     "unicodemath": "Ax + By = C",
     "domain": "Geometry & Trigonometry",
     "description": "Standard form of a linear equation",
+    "dictationString": "A x plus B y equals C",
     "core": false
   },
   {
@@ -431,6 +478,7 @@ export const mathEquations = [
     "unicodemath": "a^2 + b^2 = c^2",
     "domain": "Geometry & Trigonometry",
     "description": "Pythagorean theorem for right triangles",
+    "dictationString": "a squared plus b squared equals c squared",
     "core": false
   },
   {
@@ -440,6 +488,7 @@ export const mathEquations = [
     "unicodemath": "d = √((x_2-x_1)^2+(y_2-y_1)^2)",
     "domain": "Geometry & Trigonometry",
     "description": "Distance between two points in the plane",
+    "dictationString": "d equals the square root of begin open parenthesis x sub two minus x sub one close parenthesis squared plus open parenthesis y sub two minus y sub one close parenthesis squared end",
     "core": false
   },
   {
@@ -449,6 +498,7 @@ export const mathEquations = [
     "unicodemath": "M = ((x_1+x_2)/2,(y_1+y_2)/2)",
     "domain": "Geometry & Trigonometry",
     "description": "Midpoint between two points",
+    "dictationString": "M equals the point open parenthesis begin fraction x sub one plus x sub two over two end fraction comma begin fraction y sub one plus y sub two over two end fraction close parenthesis",
     "core": false
   },
   {
@@ -458,6 +508,7 @@ export const mathEquations = [
     "unicodemath": "(x-h)^2 + (y-k)^2 = r^2",
     "domain": "Geometry & Trigonometry",
     "description": "Equation of a circle centered at (h,k) with radius r",
+    "dictationString": "open parenthesis x minus h close parenthesis squared plus open parenthesis y minus k close parenthesis squared equals r squared",
     "core": false
   },
   {
@@ -467,6 +518,7 @@ export const mathEquations = [
     "unicodemath": "A = π r^2",
     "domain": "Geometry & Trigonometry",
     "description": "Area of a circle with radius r",
+    "dictationString": "A equals pi r squared",
     "core": false
   },
   {
@@ -476,6 +528,7 @@ export const mathEquations = [
     "unicodemath": "C = 2π r",
     "domain": "Geometry & Trigonometry",
     "description": "Circumference of a circle",
+    "dictationString": "C equals two pi r",
     "core": false
   },
   {
@@ -485,6 +538,7 @@ export const mathEquations = [
     "unicodemath": "A = 1/2bh",
     "domain": "Geometry & Trigonometry",
     "description": "Area of a triangle with base b and height h",
+    "dictationString": "A equals one half b h",
     "core": false
   },
   {
@@ -494,6 +548,7 @@ export const mathEquations = [
     "unicodemath": "A = √(s(s-a)(s-b)(s-c))",
     "domain": "Geometry & Trigonometry",
     "description": "Area of a triangle given all three sides (s = semi-perimeter)",
+    "dictationString": "A equals the square root of begin s times open parenthesis s minus a close parenthesis times open parenthesis s minus b close parenthesis times open parenthesis s minus c close parenthesis end",
     "core": false
   },
   {
@@ -503,6 +558,7 @@ export const mathEquations = [
     "unicodemath": "A = lw",
     "domain": "Geometry & Trigonometry",
     "description": "Area of a rectangle",
+    "dictationString": "A equals l times w",
     "core": false
   },
   {
@@ -512,6 +568,7 @@ export const mathEquations = [
     "unicodemath": "A = 1/2(a+b)h",
     "domain": "Geometry & Trigonometry",
     "description": "Area of a trapezoid with parallel sides a and b",
+    "dictationString": "A equals one half times open parenthesis a plus b close parenthesis times h",
     "core": false
   },
   {
@@ -521,6 +578,7 @@ export const mathEquations = [
     "unicodemath": "A = π ab",
     "domain": "Geometry & Trigonometry",
     "description": "Area of an ellipse with semi-axes a and b",
+    "dictationString": "A equals pi times a times b",
     "core": false
   },
   {
@@ -530,6 +588,7 @@ export const mathEquations = [
     "unicodemath": "V = 4/3π r^3",
     "domain": "Geometry & Trigonometry",
     "description": "Volume of a sphere",
+    "dictationString": "V equals begin fraction four over three end fraction times pi times r cubed",
     "core": false
   },
   {
@@ -539,6 +598,7 @@ export const mathEquations = [
     "unicodemath": "A = 4π r^2",
     "domain": "Geometry & Trigonometry",
     "description": "Surface area of a sphere",
+    "dictationString": "A equals four pi r squared",
     "core": false
   },
   {
@@ -548,6 +608,7 @@ export const mathEquations = [
     "unicodemath": "V = π r^2 h",
     "domain": "Geometry & Trigonometry",
     "description": "Volume of a cylinder",
+    "dictationString": "V equals pi r squared times h",
     "core": false
   },
   {
@@ -557,6 +618,7 @@ export const mathEquations = [
     "unicodemath": "V = 1/3π r^2 h",
     "domain": "Geometry & Trigonometry",
     "description": "Volume of a cone",
+    "dictationString": "V equals begin fraction one over three end fraction pi r squared h",
     "core": false
   },
   {
@@ -566,6 +628,7 @@ export const mathEquations = [
     "unicodemath": "V = s^3",
     "domain": "Geometry & Trigonometry",
     "description": "Volume of a cube with side s",
+    "dictationString": "V equals s cubed",
     "core": false
   },
   {
@@ -575,6 +638,7 @@ export const mathEquations = [
     "unicodemath": "V = lwh",
     "domain": "Geometry & Trigonometry",
     "description": "Volume of a rectangular prism",
+    "dictationString": "V equals l times w times h",
     "core": false
   },
   {
@@ -584,6 +648,7 @@ export const mathEquations = [
     "unicodemath": "V = 1/3Bh",
     "domain": "Geometry & Trigonometry",
     "description": "Volume of a pyramid with base area B and height h",
+    "dictationString": "V equals one third B h",
     "core": false
   },
   {
@@ -593,6 +658,7 @@ export const mathEquations = [
     "unicodemath": "SA = 2π r^2 + 2π r h",
     "domain": "Geometry & Trigonometry",
     "description": "Total surface area of a cylinder",
+    "dictationString": "S A equals two pi r squared plus two pi r h",
     "core": false
   },
   {
@@ -602,6 +668,7 @@ export const mathEquations = [
     "unicodemath": "SA = π r^2 + π r l",
     "domain": "Geometry & Trigonometry",
     "description": "Total surface area of a cone where l is slant height",
+    "dictationString": "S A equals pi r squared plus pi r l",
     "core": false
   },
   {
@@ -611,6 +678,7 @@ export const mathEquations = [
     "unicodemath": "SA = 2(lw + lh + wh)",
     "domain": "Geometry & Trigonometry",
     "description": "Total surface area of a rectangular prism",
+    "dictationString": "S A equals two times open parenthesis l w plus l h plus w h close parenthesis",
     "core": false
   },
   {
@@ -620,6 +688,7 @@ export const mathEquations = [
     "unicodemath": "sinθ = opposite/hypotenuse",
     "domain": "Geometry & Trigonometry",
     "description": "Definition of sine as ratio of opposite side to hypotenuse",
+    "dictationString": "sine of theta equals begin fraction opposite over hypotenuse end fraction",
     "core": false
   },
   {
@@ -629,6 +698,7 @@ export const mathEquations = [
     "unicodemath": "cosθ = adjacent/hypotenuse",
     "domain": "Geometry & Trigonometry",
     "description": "Definition of cosine as ratio of adjacent side to hypotenuse",
+    "dictationString": "cosine of theta equals begin fraction adjacent over hypotenuse end fraction",
     "core": false
   },
   {
@@ -638,6 +708,7 @@ export const mathEquations = [
     "unicodemath": "tanθ = opposite/adjacent",
     "domain": "Geometry & Trigonometry",
     "description": "Definition of tangent as ratio of opposite to adjacent side",
+    "dictationString": "tangent of theta equals begin fraction opposite over adjacent end fraction",
     "core": false
   },
   {
@@ -647,6 +718,7 @@ export const mathEquations = [
     "unicodemath": "cscθ = 1/sinθ; secθ = 1/cosθ; cotθ = 1/tanθ",
     "domain": "Geometry & Trigonometry",
     "description": "Definitions of cosecant, secant, and cotangent as reciprocals",
+    "dictationString": "cosecant theta equals begin fraction one over sine theta end fraction; secant theta equals begin fraction one over cosine theta end fraction; cotangent theta equals begin fraction one over tangent theta end fraction",
     "core": false
   },
   {
@@ -656,6 +728,7 @@ export const mathEquations = [
     "unicodemath": "tanθ = sinθ/cosθ; cotθ = cosθ/sinθ",
     "domain": "Geometry & Trigonometry",
     "description": "Tangent as sine/cosine and cotangent as cosine/sine",
+    "dictationString": "tangent theta equals begin fraction sine theta over cosine theta end fraction; cotangent theta equals begin fraction cosine theta over sine theta end fraction",
     "core": false
   },
   {
@@ -665,6 +738,7 @@ export const mathEquations = [
     "unicodemath": "sin(90^∘-θ) = cosθ; cos(90^∘-θ) = sinθ; tan(90^∘-θ) = cotθ",
     "domain": "Geometry & Trigonometry",
     "description": "Trigonometric cofunction identities",
+    "dictationString": "sine of open parenthesis ninety degrees minus theta close parenthesis equals cosine theta; cosine of open parenthesis ninety degrees minus theta close parenthesis equals sine theta; tangent of open parenthesis ninety degrees minus theta close parenthesis equals cotangent theta",
     "core": false
   },
   {
@@ -674,6 +748,7 @@ export const mathEquations = [
     "unicodemath": "sin(-θ) = -sinθ; cos(-θ) = cosθ; tan(-θ) = -tanθ",
     "domain": "Geometry & Trigonometry",
     "description": "Parity of trig functions: sine and tangent are odd, cosine is even",
+    "dictationString": "sine of negative theta equals negative sine theta; cosine of negative theta equals cosine theta; tangent of negative theta equals negative tangent theta",
     "core": false
   },
   {
@@ -683,6 +758,7 @@ export const mathEquations = [
     "unicodemath": "θ_rad = θ_deg × π/180",
     "domain": "Geometry & Trigonometry",
     "description": "Convert degrees to radians",
+    "dictationString": "theta in radians equals theta in degrees times begin fraction pi over one hundred eighty end fraction",
     "core": false
   },
   {
@@ -692,6 +768,7 @@ export const mathEquations = [
     "unicodemath": "θ_deg = θ_rad × 180/π",
     "domain": "Geometry & Trigonometry",
     "description": "Convert radians to degrees",
+    "dictationString": "theta in degrees equals theta in radians times begin fraction one hundred eighty over pi end fraction",
     "core": false
   },
   {
@@ -701,6 +778,7 @@ export const mathEquations = [
     "unicodemath": "sin^2θ + cos^2θ = 1; 1 + tan^2θ = sec^2θ; 1 + cot^2θ = csc^2θ",
     "domain": "Geometry & Trigonometry",
     "description": "Three Pythagorean identities for trig functions",
+    "dictationString": "sine squared theta plus cosine squared theta equals one",
     "core": false
   },
   {
@@ -710,6 +788,7 @@ export const mathEquations = [
     "unicodemath": "sin(2θ) = 2sinθcosθ",
     "domain": "Geometry & Trigonometry",
     "description": "Sine double angle formula",
+    "dictationString": "sine of two theta equals two sine theta cosine theta",
     "core": false
   },
   {
@@ -719,6 +798,7 @@ export const mathEquations = [
     "unicodemath": "cos(2θ) = cos^2θ - sin^2θ",
     "domain": "Geometry & Trigonometry",
     "description": "Cosine double-angle identity (equivalent forms: cos^2-sin^2, 2cos^2-1, 1-2sin^2)",
+    "dictationString": "cosine of two theta equals cosine squared theta minus sine squared theta",
     "core": false
   },
   {
@@ -728,6 +808,7 @@ export const mathEquations = [
     "unicodemath": "tan(2θ) = 2tanθ/(1-tan^2θ)",
     "domain": "Geometry & Trigonometry",
     "description": "Tangent double angle formula",
+    "dictationString": "tangent of two theta equals begin fraction two tangent theta over one minus tangent squared theta end fraction",
     "core": false
   },
   {
@@ -737,6 +818,7 @@ export const mathEquations = [
     "unicodemath": "sin(A+B) = sin Acos B + cos Asin B",
     "domain": "Geometry & Trigonometry",
     "description": "Sine addition formula",
+    "dictationString": "sine of open parenthesis A plus B close parenthesis equals sine A cosine B plus cosine A sine B",
     "core": false
   },
   {
@@ -746,6 +828,7 @@ export const mathEquations = [
     "unicodemath": "sin(A-B) = sin Acos B - cos Asin B",
     "domain": "Geometry & Trigonometry",
     "description": "Sine subtraction formula",
+    "dictationString": "sine of open parenthesis A minus B close parenthesis equals sine A cosine B minus cosine A sine B",
     "core": false
   },
   {
@@ -755,6 +838,7 @@ export const mathEquations = [
     "unicodemath": "cos(A+B) = cos Acos B - sin Asin B",
     "domain": "Geometry & Trigonometry",
     "description": "Cosine addition formula",
+    "dictationString": "cosine of open parenthesis A plus B close parenthesis equals cosine A cosine B minus sine A sine B",
     "core": false
   },
   {
@@ -764,6 +848,7 @@ export const mathEquations = [
     "unicodemath": "cos(A-B) = cos Acos B + sin Asin B",
     "domain": "Geometry & Trigonometry",
     "description": "Cosine subtraction formula",
+    "dictationString": "cosine of open parenthesis A minus B close parenthesis equals cosine A cosine B plus sine A sine B",
     "core": false
   },
   {
@@ -773,6 +858,7 @@ export const mathEquations = [
     "unicodemath": "tan(A+B) = (tanA+tanB)/(1-tanAtanB)",
     "domain": "Geometry & Trigonometry",
     "description": "Tangent addition formula",
+    "dictationString": "tangent of open parenthesis A plus B close parenthesis equals begin fraction tangent A plus tangent B over one minus tangent A times tangent B end fraction",
     "core": false
   },
   {
@@ -782,6 +868,7 @@ export const mathEquations = [
     "unicodemath": "tan(A-B) = (tanA-tanB)/(1+tanAtanB)",
     "domain": "Geometry & Trigonometry",
     "description": "Tangent subtraction formula",
+    "dictationString": "tangent of open parenthesis A minus B close parenthesis equals begin fraction tangent A minus tangent B over one plus tangent A times tangent B end fraction",
     "core": false
   },
   {
@@ -791,6 +878,7 @@ export const mathEquations = [
     "unicodemath": "a/sinA = b/sinB = c/sinC",
     "domain": "Geometry & Trigonometry",
     "description": "Law of sines for any triangle",
+    "dictationString": "begin fraction a over sine A end fraction equals begin fraction b over sine B end fraction equals begin fraction c over sine C end fraction",
     "core": false
   },
   {
@@ -800,6 +888,7 @@ export const mathEquations = [
     "unicodemath": "c^2 = a^2 + b^2 - 2abcos C",
     "domain": "Geometry & Trigonometry",
     "description": "Law of cosines for any triangle",
+    "dictationString": "c squared equals a squared plus b squared minus two a b cosine C",
     "core": false
   },
   {
@@ -809,6 +898,7 @@ export const mathEquations = [
     "unicodemath": "e^iθ = cosθ + isinθ",
     "domain": "Geometry & Trigonometry",
     "description": "Euler's formula relating exponentials to trig functions",
+    "dictationString": "e to the power of i theta equals cosine theta plus i sine theta",
     "core": false
   },
   {
@@ -818,6 +908,7 @@ export const mathEquations = [
     "unicodemath": "s = rθ",
     "domain": "Geometry & Trigonometry",
     "description": "Arc length of a circle with radius r and central angle in radians",
+    "dictationString": "s equals r times theta",
     "core": false
   },
   {
@@ -827,6 +918,7 @@ export const mathEquations = [
     "unicodemath": "A = 1/2r^2θ",
     "domain": "Geometry & Trigonometry",
     "description": "Area of a circular sector with radius r and central angle in radians",
+    "dictationString": "A equals one half r squared theta",
     "core": false
   },
   {
@@ -836,6 +928,7 @@ export const mathEquations = [
     "unicodemath": "A = 1/2absin C",
     "domain": "Geometry & Trigonometry",
     "description": "Area of a triangle given two sides a and b and included angle C",
+    "dictationString": "A equals one half a b sine C",
     "core": false
   },
   {
@@ -845,6 +938,7 @@ export const mathEquations = [
     "unicodemath": "sin(θ/2) = ±√((1-cosθ)/2); cos(θ/2) = ±√((1+cosθ)/2); tan(θ/2) = (1-cosθ)/sinθ",
     "domain": "Geometry & Trigonometry",
     "description": "Half-angle formulas for sine, cosine, and tangent",
+    "dictationString": "sine of begin fraction theta over two end fraction equals plus or minus the square root of begin fraction one minus cosine theta over two end fraction; cosine of begin fraction theta over two end fraction equals plus or minus the square root of begin fraction one plus cosine theta over two end fraction; tangent of begin fraction theta over two end fraction equals begin fraction one minus cosine theta over sine theta end fraction",
     "core": false
   },
   {
@@ -854,6 +948,7 @@ export const mathEquations = [
     "unicodemath": "sin^2θ = (1-cos(2θ))/2; cos^2θ = (1+cos(2θ))/2",
     "domain": "Geometry & Trigonometry",
     "description": "Power-reducing formulas for sin^2 and cos^2",
+    "dictationString": "sine squared theta equals begin fraction one minus cosine of two theta over two end fraction; cosine squared theta equals begin fraction one plus cosine of two theta over two end fraction",
     "core": false
   },
   {
@@ -863,6 +958,7 @@ export const mathEquations = [
     "unicodemath": "ω = θ/t",
     "domain": "Geometry & Trigonometry",
     "description": "Angular velocity as angle swept per unit time",
+    "dictationString": "omega equals theta over t",
     "core": false
   },
   {
@@ -872,6 +968,7 @@ export const mathEquations = [
     "unicodemath": "v = rω",
     "domain": "Geometry & Trigonometry",
     "description": "Linear velocity from angular velocity and radius",
+    "dictationString": "v equals r omega",
     "core": false
   },
   {
@@ -881,6 +978,7 @@ export const mathEquations = [
     "unicodemath": "sin Acos B = 1/2[sin(A+B)+sin(A-B)]; cos Acos B = 1/2[cos(A-B)+cos(A+B)]; sin Asin B = 1/2[cos(A-B)-cos(A+B)]",
     "domain": "Geometry & Trigonometry",
     "description": "Product-to-sum identities for sin*cos, cos*cos, sin*sin",
+    "dictationString": "sine A cosine B equals one half times open bracket sine of open parenthesis A plus B close parenthesis plus sine of open parenthesis A minus B close parenthesis close bracket; cosine A cosine B equals one half times open bracket cosine of open parenthesis A minus B close parenthesis plus cosine of open parenthesis A plus B close parenthesis close bracket; sine A sine B equals one half times open bracket cosine of open parenthesis A minus B close parenthesis minus cosine of open parenthesis A plus B close parenthesis close bracket",
     "core": false
   },
   {
@@ -890,6 +988,7 @@ export const mathEquations = [
     "unicodemath": "sin A + sin B = 2sin((A+B)/2)cos((A-B)/2); cos A + cos B = 2cos((A+B)/2)cos((A-B)/2)",
     "domain": "Geometry & Trigonometry",
     "description": "Sum-to-product identities for sine and cosine",
+    "dictationString": "sine A plus sine B equals two sine of open parenthesis begin fraction A plus B over two end fraction close parenthesis cosine of open parenthesis begin fraction A minus B over two end fraction close parenthesis; cosine A plus cosine B equals two cosine of open parenthesis begin fraction A plus B over two end fraction close parenthesis cosine of open parenthesis begin fraction A minus B over two end fraction close parenthesis",
     "core": false
   },
   {
@@ -899,6 +998,7 @@ export const mathEquations = [
     "unicodemath": "x^2/a^2 + y^2/b^2 = 1",
     "domain": "Geometry & Trigonometry",
     "description": "Ellipse centered at origin with semi-axes a and b",
+    "dictationString": "begin fraction x squared over a squared end fraction plus begin fraction y squared over b squared end fraction equals one",
     "core": false
   },
   {
@@ -908,6 +1008,7 @@ export const mathEquations = [
     "unicodemath": "x^2/a^2 - y^2/b^2 = 1",
     "domain": "Geometry & Trigonometry",
     "description": "Horizontal hyperbola centered at origin",
+    "dictationString": "begin fraction x squared over a squared end fraction minus begin fraction y squared over b squared end fraction equals one",
     "core": false
   },
   {
@@ -917,6 +1018,7 @@ export const mathEquations = [
     "unicodemath": "x^2 = 4py",
     "domain": "Geometry & Trigonometry",
     "description": "Parabola with vertex at origin opening upward (focus at (0,p))",
+    "dictationString": "x squared equals four p y",
     "core": false
   },
   {
@@ -926,6 +1028,7 @@ export const mathEquations = [
     "unicodemath": "dy/dx = dy/du ⋅ du/dx",
     "domain": "Calculus & Analysis",
     "description": "Chain rule for differentiating composite functions",
+    "dictationString": "d y over d x equals begin fraction d y over d u end fraction times begin fraction d u over d x end fraction",
     "core": false
   },
   {
@@ -935,6 +1038,7 @@ export const mathEquations = [
     "unicodemath": "d/dx[fg] = f'g + fg'",
     "domain": "Calculus & Analysis",
     "description": "Product rule for differentiation",
+    "dictationString": "the derivative of f times g equals f prime times g plus f times g prime",
     "core": false
   },
   {
@@ -944,6 +1048,7 @@ export const mathEquations = [
     "unicodemath": "d/dx[f/g] = (f'g-fg')/g^2",
     "domain": "Calculus & Analysis",
     "description": "Quotient rule for differentiation",
+    "dictationString": "the derivative of begin fraction f over g end fraction equals begin fraction f prime g minus f g prime over g squared end fraction",
     "core": false
   },
   {
@@ -953,6 +1058,7 @@ export const mathEquations = [
     "unicodemath": "d/dx[x^n] = nx^(n-1)",
     "domain": "Calculus & Analysis",
     "description": "Power rule for differentiation",
+    "dictationString": "the derivative of x to the n equals n times x to the power of begin n minus one end",
     "core": false
   },
   {
@@ -962,6 +1068,7 @@ export const mathEquations = [
     "unicodemath": "d/dx[sin x] = cos x",
     "domain": "Calculus & Analysis",
     "description": "Derivative of sine",
+    "dictationString": "the derivative of sine x equals cosine x",
     "core": false
   },
   {
@@ -971,6 +1078,7 @@ export const mathEquations = [
     "unicodemath": "d/dx[cos x] = -sin x",
     "domain": "Calculus & Analysis",
     "description": "Derivative of cosine",
+    "dictationString": "the derivative of cosine x equals negative sine x",
     "core": false
   },
   {
@@ -980,6 +1088,7 @@ export const mathEquations = [
     "unicodemath": "d/dx[e^x] = e^x",
     "domain": "Calculus & Analysis",
     "description": "Derivative of the natural exponential",
+    "dictationString": "the derivative of e to the x equals e to the x",
     "core": false
   },
   {
@@ -989,6 +1098,7 @@ export const mathEquations = [
     "unicodemath": "d/dx[ln x] = 1/x",
     "domain": "Calculus & Analysis",
     "description": "Derivative of the natural logarithm",
+    "dictationString": "the derivative of natural log of x equals begin fraction one over x end fraction",
     "core": false
   },
   {
@@ -998,6 +1108,7 @@ export const mathEquations = [
     "unicodemath": "d/dx[tan x] = sec^2 x",
     "domain": "Calculus & Analysis",
     "description": "Derivative of tangent",
+    "dictationString": "the derivative of tangent x equals secant squared x",
     "core": false
   },
   {
@@ -1007,6 +1118,7 @@ export const mathEquations = [
     "unicodemath": "d/dx[cot x] = -csc^2 x",
     "domain": "Calculus & Analysis",
     "description": "Derivative of cotangent",
+    "dictationString": "the derivative of cotangent x equals negative cosecant squared x",
     "core": false
   },
   {
@@ -1016,6 +1128,7 @@ export const mathEquations = [
     "unicodemath": "d/dx[sec x] = sec xtan x",
     "domain": "Calculus & Analysis",
     "description": "Derivative of secant",
+    "dictationString": "the derivative of secant x equals secant x times tangent x",
     "core": false
   },
   {
@@ -1025,6 +1138,7 @@ export const mathEquations = [
     "unicodemath": "d/dx[csc x] = -csc xcot x",
     "domain": "Calculus & Analysis",
     "description": "Derivative of cosecant",
+    "dictationString": "the derivative of cosecant x equals negative cosecant x times cotangent x",
     "core": false
   },
   {
@@ -1034,6 +1148,7 @@ export const mathEquations = [
     "unicodemath": "d/dx[a^x] = a^x ln a",
     "domain": "Calculus & Analysis",
     "description": "Derivative of exponential with arbitrary base a",
+    "dictationString": "the derivative of a to the x equals a to the x times natural log of a",
     "core": false
   },
   {
@@ -1043,6 +1158,7 @@ export const mathEquations = [
     "unicodemath": "d/dx[arcsin x] = 1/√(1-x^2)",
     "domain": "Calculus & Analysis",
     "description": "Derivative of inverse sine",
+    "dictationString": "the derivative of arcsine x equals begin fraction one over the square root of begin one minus x squared end end fraction",
     "core": false
   },
   {
@@ -1052,6 +1168,7 @@ export const mathEquations = [
     "unicodemath": "d/dx[arccos x] = -1/√(1-x^2)",
     "domain": "Calculus & Analysis",
     "description": "Derivative of inverse cosine",
+    "dictationString": "the derivative of arccosine x equals negative begin fraction one over the square root of begin one minus x squared end end fraction",
     "core": false
   },
   {
@@ -1061,6 +1178,7 @@ export const mathEquations = [
     "unicodemath": "d/dx[arctan x] = 1/(1+x^2)",
     "domain": "Calculus & Analysis",
     "description": "Derivative of inverse tangent",
+    "dictationString": "the derivative of arctangent x equals begin fraction one over one plus x squared end fraction",
     "core": false
   },
   {
@@ -1070,6 +1188,7 @@ export const mathEquations = [
     "unicodemath": "∫_a^b f(x)dx = F(b) - F(a)",
     "domain": "Calculus & Analysis",
     "description": "Fundamental theorem of calculus",
+    "dictationString": "the integral from a to b of f of x d x equals F of b minus F of a",
     "core": false
   },
   {
@@ -1079,6 +1198,7 @@ export const mathEquations = [
     "unicodemath": "∫_a^b f(x)dx",
     "domain": "Calculus & Analysis",
     "description": "Definite integral of f from a to b",
+    "dictationString": "the integral from a to b of f of x d x",
     "core": false
   },
   {
@@ -1088,6 +1208,7 @@ export const mathEquations = [
     "unicodemath": "∫ x^ndx = x^(n+1)/(n+1) + C",
     "domain": "Calculus & Analysis",
     "description": "Power rule for integration (n != -1)",
+    "dictationString": "the integral of x to the n d x equals begin fraction x to the power of begin n plus one end over n plus one end fraction plus C",
     "core": false
   },
   {
@@ -1097,6 +1218,7 @@ export const mathEquations = [
     "unicodemath": "∫ 1/xdx = ln|x| + C",
     "domain": "Calculus & Analysis",
     "description": "Integral of 1/x",
+    "dictationString": "the integral of begin fraction one over x end fraction d x equals natural log of the absolute value of x plus C",
     "core": false
   },
   {
@@ -1106,6 +1228,7 @@ export const mathEquations = [
     "unicodemath": "∫ e^xdx = e^x + C",
     "domain": "Calculus & Analysis",
     "description": "Integral of the natural exponential",
+    "dictationString": "the integral of e to the x d x equals e to the x plus C",
     "core": false
   },
   {
@@ -1115,6 +1238,7 @@ export const mathEquations = [
     "unicodemath": "∫ a^xdx = a^x/lna + C",
     "domain": "Calculus & Analysis",
     "description": "Integral of exponential with arbitrary base a",
+    "dictationString": "the integral of a to the x d x equals begin fraction a to the x over natural log of a end fraction plus C",
     "core": false
   },
   {
@@ -1124,6 +1248,7 @@ export const mathEquations = [
     "unicodemath": "∫ sin xdx = -cos x + C",
     "domain": "Calculus & Analysis",
     "description": "Integral of sine",
+    "dictationString": "the integral of sine x d x equals negative cosine x plus C",
     "core": false
   },
   {
@@ -1133,6 +1258,7 @@ export const mathEquations = [
     "unicodemath": "∫ cos xdx = sin x + C",
     "domain": "Calculus & Analysis",
     "description": "Integral of cosine",
+    "dictationString": "the integral of cosine x d x equals sine x plus C",
     "core": false
   },
   {
@@ -1142,6 +1268,7 @@ export const mathEquations = [
     "unicodemath": "∫ tan xdx = -ln|cos x| + C",
     "domain": "Calculus & Analysis",
     "description": "Integral of tangent",
+    "dictationString": "the integral of tangent x d x equals negative natural log of the absolute value of cosine x plus C",
     "core": false
   },
   {
@@ -1151,6 +1278,7 @@ export const mathEquations = [
     "unicodemath": "∫ sec xdx = ln|sec x + tan x| + C",
     "domain": "Calculus & Analysis",
     "description": "Integral of secant",
+    "dictationString": "the integral of secant x d x equals natural log of the absolute value of secant x plus tangent x plus C",
     "core": false
   },
   {
@@ -1160,6 +1288,7 @@ export const mathEquations = [
     "unicodemath": "∫ csc xdx = -ln|csc x + cot x| + C",
     "domain": "Calculus & Analysis",
     "description": "Integral of cosecant",
+    "dictationString": "the integral of cosecant x d x equals negative natural log of the absolute value of cosecant x plus cotangent x plus C",
     "core": false
   },
   {
@@ -1169,6 +1298,7 @@ export const mathEquations = [
     "unicodemath": "∫ sec^2 xdx = tan x + C",
     "domain": "Calculus & Analysis",
     "description": "Integral of secant squared",
+    "dictationString": "the integral of secant squared x d x equals tangent x plus C",
     "core": false
   },
   {
@@ -1178,6 +1308,7 @@ export const mathEquations = [
     "unicodemath": "∫ 1/√(1-x^2)dx = arcsin x + C",
     "domain": "Calculus & Analysis",
     "description": "Integral yielding inverse sine",
+    "dictationString": "the integral of begin fraction one over the square root of begin one minus x squared end end fraction d x equals arcsine x plus C",
     "core": false
   },
   {
@@ -1187,6 +1318,7 @@ export const mathEquations = [
     "unicodemath": "∫ 1/(1+x^2)dx = arctan x + C",
     "domain": "Calculus & Analysis",
     "description": "Integral yielding inverse tangent",
+    "dictationString": "the integral of begin fraction one over one plus x squared end fraction d x equals arctangent x plus C",
     "core": false
   },
   {
@@ -1196,6 +1328,7 @@ export const mathEquations = [
     "unicodemath": "∫ udv = uv - ∫ vdu",
     "domain": "Calculus & Analysis",
     "description": "Integration by parts formula",
+    "dictationString": "the integral of u d v equals u v minus the integral of v d u",
     "core": false
   },
   {
@@ -1205,6 +1338,7 @@ export const mathEquations = [
     "unicodemath": "∬_D f(x,y)dA",
     "domain": "Calculus & Analysis",
     "description": "Double integral over region D",
+    "dictationString": "the double integral over region D of f of x comma y d A",
     "core": false
   },
   {
@@ -1214,6 +1348,7 @@ export const mathEquations = [
     "unicodemath": "∭_V f(x,y,z)dV",
     "domain": "Calculus & Analysis",
     "description": "Triple integral over volume V",
+    "dictationString": "the triple integral over volume V of f of x comma y comma z d V",
     "core": false
   },
   {
@@ -1223,6 +1358,7 @@ export const mathEquations = [
     "unicodemath": "∮_C f(z)dz",
     "domain": "Calculus & Analysis",
     "description": "Contour integral along curve C",
+    "dictationString": "the contour integral along curve C of f of z d z",
     "core": false
   },
   {
@@ -1232,6 +1368,7 @@ export const mathEquations = [
     "unicodemath": "f(x) = ∑_(n=0)^∞ f^((n))(a)/n!(x-a)^n",
     "domain": "Calculus & Analysis",
     "description": "Taylor series expansion of f around x=a",
+    "dictationString": "f of x equals the sum from n equals zero to infinity of begin fraction the nth derivative of f at a over n factorial end fraction times open parenthesis x minus a close parenthesis to the n",
     "core": false
   },
   {
@@ -1241,6 +1378,7 @@ export const mathEquations = [
     "unicodemath": "f(x) = ∑_(n=0)^∞ f^((n))(0)/n!x^n",
     "domain": "Calculus & Analysis",
     "description": "Maclaurin series (Taylor series at a=0)",
+    "dictationString": "f of x equals the sum from n equals zero to infinity of begin fraction the nth derivative of f at zero over n factorial end fraction times x to the n",
     "core": false
   },
   {
@@ -1250,6 +1388,7 @@ export const mathEquations = [
     "unicodemath": "lim_(x→a)f(x)/g(x) = lim_(x→a)f'(x)/g'(x)",
     "domain": "Calculus & Analysis",
     "description": "L'Hopital's rule for indeterminate forms",
+    "dictationString": "the limit as x approaches a of begin fraction f of x over g of x end fraction equals the limit as x approaches a of begin fraction f prime of x over g prime of x end fraction",
     "core": false
   },
   {
@@ -1259,6 +1398,7 @@ export const mathEquations = [
     "unicodemath": "f'(c) = (f(b)-f(a))/(b-a)",
     "domain": "Calculus & Analysis",
     "description": "Mean value theorem: there exists c in (a,b) with this slope",
+    "dictationString": "f prime of c equals begin fraction f of b minus f of a over b minus a end fraction",
     "core": false
   },
   {
@@ -1268,6 +1408,7 @@ export const mathEquations = [
     "unicodemath": "f(a)=f(b) ⟹ f'(c)=0  for some  c ∈ (a,b)",
     "domain": "Calculus & Analysis",
     "description": "Rolle's theorem: horizontal tangent exists between equal values",
+    "dictationString": "if f of a equals f of b then f prime of c equals zero for some c in the open interval a comma b",
     "core": false
   },
   {
@@ -1277,6 +1418,7 @@ export const mathEquations = [
     "unicodemath": "g(x) ≤ f(x) ≤ h(x)  and  lim g = lim h = L ⟹ lim f = L",
     "domain": "Calculus & Analysis",
     "description": "Squeeze theorem for evaluating limits",
+    "dictationString": "if g of x is less than or equal to f of x is less than or equal to h of x, and the limit of g equals the limit of h equals L, then the limit of f equals L",
     "core": false
   },
   {
@@ -1286,6 +1428,7 @@ export const mathEquations = [
     "unicodemath": "lim_(x→0)sinx/x = 1",
     "domain": "Calculus & Analysis",
     "description": "Fundamental trigonometric limit",
+    "dictationString": "the limit as x approaches zero of begin fraction sine x over x end fraction equals one",
     "core": false
   },
   {
@@ -1295,6 +1438,7 @@ export const mathEquations = [
     "unicodemath": "lim_(x→0)(1-cosx)/x = 0",
     "domain": "Calculus & Analysis",
     "description": "Second fundamental trigonometric limit",
+    "dictationString": "the limit as x approaches zero of begin fraction one minus cosine x over x end fraction equals zero",
     "core": false
   },
   {
@@ -1304,6 +1448,7 @@ export const mathEquations = [
     "unicodemath": "f_avg = 1/(b-a)∫_a^b f(x)dx",
     "domain": "Calculus & Analysis",
     "description": "Average value of f(x) on the interval [a,b]",
+    "dictationString": "f sub average equals begin fraction one over b minus a end fraction times the integral from a to b of f of x d x",
     "core": false
   },
   {
@@ -1313,6 +1458,7 @@ export const mathEquations = [
     "unicodemath": "V = π∫_a^b[f(x)]^2dx",
     "domain": "Calculus & Analysis",
     "description": "Volume of solid of revolution using the disk method",
+    "dictationString": "V equals pi times the integral from a to b of open bracket f of x close bracket squared d x",
     "core": false
   },
   {
@@ -1322,6 +1468,7 @@ export const mathEquations = [
     "unicodemath": "V = 2π∫_a^b xf(x)dx",
     "domain": "Calculus & Analysis",
     "description": "Volume of solid of revolution using the shell method",
+    "dictationString": "V equals two pi times the integral from a to b of x times f of x d x",
     "core": false
   },
   {
@@ -1331,6 +1478,7 @@ export const mathEquations = [
     "unicodemath": "V = π∫_a^b[R(x)^2 - r(x)^2]dx",
     "domain": "Calculus & Analysis",
     "description": "Volume of revolution using washers with outer radius R and inner radius r",
+    "dictationString": "V equals pi times the integral from a to b of open bracket R of x squared minus r of x squared close bracket d x",
     "core": false
   },
   {
@@ -1340,6 +1488,7 @@ export const mathEquations = [
     "unicodemath": "L = ∫_a^b√(1+[f'(x)]^2)dx",
     "domain": "Calculus & Analysis",
     "description": "Arc length of y=f(x) from x=a to x=b",
+    "dictationString": "s equals r times theta",
     "core": false
   },
   {
@@ -1349,6 +1498,7 @@ export const mathEquations = [
     "unicodemath": "S = 2π∫_a^b f(x)√(1+[f'(x)]^2)dx",
     "domain": "Calculus & Analysis",
     "description": "Surface area of solid of revolution about the x-axis",
+    "dictationString": "S equals two pi times the integral from a to b of f of x times the square root of begin one plus open bracket f prime of x close bracket squared end d x",
     "core": false
   },
   {
@@ -1358,6 +1508,7 @@ export const mathEquations = [
     "unicodemath": "∑_(n=1)^∞1/n^p  converges if  p > 1",
     "domain": "Calculus & Analysis",
     "description": "p-series convergence criterion",
+    "dictationString": "the sum from n equals one to infinity of begin fraction one over n to the p end fraction converges if p is greater than one",
     "core": false
   },
   {
@@ -1367,6 +1518,7 @@ export const mathEquations = [
     "unicodemath": "lim_(n→∞)|a_(n+1)/a_n| < 1 ⟹ converges",
     "domain": "Calculus & Analysis",
     "description": "Ratio test for absolute convergence of a series",
+    "dictationString": "if the limit as n approaches infinity of the absolute value of begin fraction a sub n plus one over a sub n end fraction is less than one, then the series converges",
     "core": false
   },
   {
@@ -1376,6 +1528,7 @@ export const mathEquations = [
     "unicodemath": "lim_(n→∞)n√(|a_n|) < 1 ⟹ converges",
     "domain": "Calculus & Analysis",
     "description": "Root test for absolute convergence of a series",
+    "dictationString": "if the limit as n approaches infinity of the nth root of the absolute value of a sub n is less than one, then the series converges",
     "core": false
   },
   {
@@ -1385,6 +1538,7 @@ export const mathEquations = [
     "unicodemath": "R = 1/limsup_(n→∞)n√(|a_n|)",
     "domain": "Calculus & Analysis",
     "description": "Radius of convergence of a power series via Cauchy-Hadamard",
+    "dictationString": "R equals begin fraction one over the limit supremum as n approaches infinity of the nth root of the absolute value of a sub n end fraction",
     "core": false
   },
   {
@@ -1394,6 +1548,7 @@ export const mathEquations = [
     "unicodemath": "D_uf = ∇ f ⋅ u",
     "domain": "Calculus & Analysis",
     "description": "Directional derivative of f in the direction of unit vector u",
+    "dictationString": "D sub u f equals the gradient of f dot u",
     "core": false
   },
   {
@@ -1403,6 +1558,7 @@ export const mathEquations = [
     "unicodemath": "D = f_xxf_yy - f_xy^2",
     "domain": "Calculus & Analysis",
     "description": "Discriminant for classifying critical points of f(x,y)",
+    "dictationString": "D equals f sub x x times f sub y y minus f sub x y squared",
     "core": false
   },
   {
@@ -1412,6 +1568,7 @@ export const mathEquations = [
     "unicodemath": "∬_D f(r,θ)rdrdθ",
     "domain": "Calculus & Analysis",
     "description": "Double integral converted to polar coordinates with Jacobian r",
+    "dictationString": "the double integral over region D of f of r comma theta times r d r d theta",
     "core": false
   },
   {
@@ -1421,6 +1578,7 @@ export const mathEquations = [
     "unicodemath": "∬_D f(x,y)dxdy = ∬_(D') f(g,h)|J|dudv",
     "domain": "Calculus & Analysis",
     "description": "Change of variables using the Jacobian determinant",
+    "dictationString": "the double integral over D of f of x comma y d x d y equals the double integral over D prime of f of g comma h times the absolute value of J d u d v",
     "core": false
   },
   {
@@ -1430,6 +1588,7 @@ export const mathEquations = [
     "unicodemath": "∮_C(Pdx + Qdy) = ∬_D(∂Q/∂x-∂P/∂y)dA",
     "domain": "Calculus & Analysis",
     "description": "Green's theorem relating a line integral to a double integral",
+    "dictationString": "the line integral along curve C of open parenthesis P d x plus Q d y close parenthesis equals the double integral over region D of open parenthesis partial Q with respect to x minus partial P with respect to y close parenthesis d A",
     "core": false
   },
   {
@@ -1439,6 +1598,7 @@ export const mathEquations = [
     "unicodemath": "∮_CF⋅ dr = ∬_S(∇×F)⋅ dS",
     "domain": "Calculus & Analysis",
     "description": "Stokes' theorem relating a line integral to a surface integral",
+    "dictationString": "the line integral along curve C of F dot d r equals the double integral over surface S of open parenthesis the curl of F close parenthesis dot d S",
     "core": false
   },
   {
@@ -1448,6 +1608,7 @@ export const mathEquations = [
     "unicodemath": "∯_SF⋅ dS = ∭_V(∇⋅F)dV",
     "domain": "Calculus & Analysis",
     "description": "Divergence theorem relating surface flux to volume divergence",
+    "dictationString": "the closed surface integral over S of F dot d S equals the triple integral over volume V of the divergence of F d V",
     "core": false
   },
   {
@@ -1457,6 +1618,7 @@ export const mathEquations = [
     "unicodemath": "dy/dx + P(x)y = Q(x)",
     "domain": "Calculus & Analysis",
     "description": "Standard form of a first-order linear ODE",
+    "dictationString": "d y over d x plus P of x times y equals Q of x",
     "core": false
   },
   {
@@ -1466,6 +1628,7 @@ export const mathEquations = [
     "unicodemath": "y'' + py' + qy = 0",
     "domain": "Calculus & Analysis",
     "description": "Second-order linear ODE with constant coefficients",
+    "dictationString": "y double prime plus p y prime plus q y equals zero",
     "core": false
   },
   {
@@ -1475,6 +1638,7 @@ export const mathEquations = [
     "unicodemath": "ℒ{f(t)} = ∫_0^∞ f(t)e^(-st)dt",
     "domain": "Calculus & Analysis",
     "description": "Definition of the Laplace transform",
+    "dictationString": "the Laplace transform of f of t equals the integral from zero to infinity of f of t times e to the power of negative s t d t",
     "core": false
   },
   {
@@ -1484,6 +1648,7 @@ export const mathEquations = [
     "unicodemath": "f̂(ω) = ∫_(-∞)^∞ f(t)e^(-iωt)dt",
     "domain": "Calculus & Analysis",
     "description": "Definition of the Fourier transform",
+    "dictationString": "f hat of omega equals the integral from negative infinity to infinity of f of t times e to the power of negative i omega t d t",
     "core": false
   },
   {
@@ -1493,6 +1658,7 @@ export const mathEquations = [
     "unicodemath": "f(t) = 1/2π∫_(-∞)^∞ f̂(ω)e^iωtdω",
     "domain": "Calculus & Analysis",
     "description": "Inverse Fourier transform",
+    "dictationString": "f hat of omega equals the integral from negative infinity to infinity of f of t times e to the power of negative i omega t d t",
     "core": false
   },
   {
@@ -1502,6 +1668,7 @@ export const mathEquations = [
     "unicodemath": "dy/g(y) = f(x)dx",
     "domain": "Calculus & Analysis",
     "description": "Separation of variables technique for solving ODEs",
+    "dictationString": "begin fraction d y over g of y end fraction equals f of x d x",
     "core": false
   },
   {
@@ -1511,6 +1678,7 @@ export const mathEquations = [
     "unicodemath": "μ(x) = e^(∫P(x)dx)",
     "domain": "Calculus & Analysis",
     "description": "Integrating factor for solving first-order linear ODEs",
+    "dictationString": "mu of x equals e to the integral of P of x d x",
     "core": false
   },
   {
@@ -1520,6 +1688,7 @@ export const mathEquations = [
     "unicodemath": "a ⋅ b = |a||b|cosθ",
     "domain": "Linear Algebra & Abstract Algebra",
     "description": "Dot product expressed in terms of magnitudes and angle",
+    "dictationString": "a dot b equals the magnitude of a times the magnitude of b times cosine theta",
     "core": false
   },
   {
@@ -1529,6 +1698,7 @@ export const mathEquations = [
     "unicodemath": "det (■(a&b@c&d)) = ad - bc",
     "domain": "Linear Algebra & Abstract Algebra",
     "description": "Determinant of a 2x2 matrix",
+    "dictationString": "the determinant of the two by two matrix a b c d equals a d minus b c",
     "core": false
   },
   {
@@ -1538,6 +1708,7 @@ export const mathEquations = [
     "unicodemath": "Av = λv",
     "domain": "Linear Algebra & Abstract Algebra",
     "description": "Eigenvalue equation for matrix A",
+    "dictationString": "A times v equals lambda times v",
     "core": false
   },
   {
@@ -1547,6 +1718,7 @@ export const mathEquations = [
     "unicodemath": "det(A - λ I) = 0",
     "domain": "Linear Algebra & Abstract Algebra",
     "description": "Characteristic polynomial used to find eigenvalues",
+    "dictationString": "the determinant of open parenthesis A minus lambda I close parenthesis equals zero",
     "core": false
   },
   {
@@ -1556,6 +1728,7 @@ export const mathEquations = [
     "unicodemath": "proj_vu = u⋅v/|v|^2v",
     "domain": "Linear Algebra & Abstract Algebra",
     "description": "Projection of vector u onto vector v",
+    "dictationString": "the projection of u onto v equals begin fraction u dot v over the magnitude of v squared end fraction times v",
     "core": false
   },
   {
@@ -1565,6 +1738,7 @@ export const mathEquations = [
     "unicodemath": "|a×b| = |a||b|sinθ",
     "domain": "Linear Algebra & Abstract Algebra",
     "description": "Magnitude of the cross product",
+    "dictationString": "the magnitude of a cross b equals the magnitude of a times the magnitude of b times sine theta",
     "core": false
   },
   {
@@ -1574,6 +1748,7 @@ export const mathEquations = [
     "unicodemath": "a×b = |■(i&j&k@a_1&a_2&a_3@b_1&b_2&b_3)|",
     "domain": "Linear Algebra & Abstract Algebra",
     "description": "Cross product in component form via determinant",
+    "dictationString": "the magnitude of a cross b equals the magnitude of a times the magnitude of b times sine theta",
     "core": false
   },
   {
@@ -1583,6 +1758,7 @@ export const mathEquations = [
     "unicodemath": "|a⋅b| ≤ |a||b|",
     "domain": "Linear Algebra & Abstract Algebra",
     "description": "Cauchy-Schwarz inequality for vectors",
+    "dictationString": "the absolute value of a dot b is less than or equal to the magnitude of a times the magnitude of b",
     "core": false
   },
   {
@@ -1592,6 +1768,7 @@ export const mathEquations = [
     "unicodemath": "|G| = |H| ⋅ [G:H]",
     "domain": "Linear Algebra & Abstract Algebra",
     "description": "The order of subgroup H times its index equals the order of group G",
+    "dictationString": "the order of G equals the order of H times the index of H in G",
     "core": false
   },
   {
@@ -1601,6 +1778,7 @@ export const mathEquations = [
     "unicodemath": "φ(ab) = φ(a)φ(b)",
     "domain": "Linear Algebra & Abstract Algebra",
     "description": "A map between groups that preserves the group operation",
+    "dictationString": "phi of a b equals phi of a times phi of b",
     "core": false
   },
   {
@@ -1610,6 +1788,7 @@ export const mathEquations = [
     "unicodemath": "G / kerφ ≅ Im(φ)",
     "domain": "Linear Algebra & Abstract Algebra",
     "description": "The quotient of G by the kernel of a homomorphism is isomorphic to its image",
+    "dictationString": "G modulo the kernel of phi is isomorphic to the image of phi",
     "core": false
   },
   {
@@ -1619,6 +1798,7 @@ export const mathEquations = [
     "unicodemath": "a^(|a|) = e",
     "domain": "Linear Algebra & Abstract Algebra",
     "description": "Raising an element to the power of its order returns the group identity",
+    "dictationString": "a to the power of the order of a equals the identity element",
     "core": false
   },
   {
@@ -1628,6 +1808,7 @@ export const mathEquations = [
     "unicodemath": "∇ f = λ ∇ g",
     "domain": "Linear Algebra & Abstract Algebra",
     "description": "Necessary condition for a constrained extremum: gradients of objective and constraint are parallel",
+    "dictationString": "the gradient of f equals lambda times the gradient of g",
     "core": false
   },
   {
@@ -1637,6 +1818,7 @@ export const mathEquations = [
     "unicodemath": "ℒ(x,λ) = f(x) - λ g(x)",
     "domain": "Linear Algebra & Abstract Algebra",
     "description": "Combines objective f and constraint g with multiplier lambda",
+    "dictationString": "script L of x comma lambda equals f of x minus lambda times g of x",
     "core": false
   },
   {
@@ -1646,6 +1828,7 @@ export const mathEquations = [
     "unicodemath": "∇ f(x^*) = ∑_i λ_i ∇ g_i(x^*)",
     "domain": "Linear Algebra & Abstract Algebra",
     "description": "Necessary condition for optimality with multiple inequality constraints",
+    "dictationString": "the gradient of f of x star equals the sum over i of lambda sub i times the gradient of g sub i of x star",
     "core": false
   },
   {
@@ -1655,6 +1838,7 @@ export const mathEquations = [
     "unicodemath": "P(n,r) = n!/(n-r)!",
     "domain": "Discrete Math & Logic",
     "description": "Number of ordered arrangements of r items from n",
+    "dictationString": "P of n comma r equals begin fraction n factorial over open parenthesis n minus r close parenthesis factorial end fraction",
     "core": false
   },
   {
@@ -1664,6 +1848,7 @@ export const mathEquations = [
     "unicodemath": "C(n,r) = n!/r!(n-r)!",
     "domain": "Discrete Math & Logic",
     "description": "Number of unordered selections of r items from n",
+    "dictationString": "C of n comma r equals begin fraction n factorial over r factorial times open parenthesis n minus r close parenthesis factorial end fraction",
     "core": false
   },
   {
@@ -1673,6 +1858,7 @@ export const mathEquations = [
     "unicodemath": "(n¦k_1,k_2,…,k_r) = n!/k_1!k_2!⋯k_r!",
     "domain": "Discrete Math & Logic",
     "description": "Number of ways to partition n objects into r ordered groups",
+    "dictationString": "n choose k sub one comma k sub two comma dot dot dot comma k sub r equals begin fraction n factorial over k sub one factorial times k sub two factorial times dot dot dot times k sub r factorial end fraction",
     "core": false
   },
   {
@@ -1682,6 +1868,7 @@ export const mathEquations = [
     "unicodemath": "(n+k-1¦k)",
     "domain": "Discrete Math & Logic",
     "description": "Number of ways to place n identical items into k distinct bins",
+    "dictationString": "n plus k minus one choose k",
     "core": false
   },
   {
@@ -1691,6 +1878,7 @@ export const mathEquations = [
     "unicodemath": "C_n = 1/(n+1)(2n¦n)",
     "domain": "Discrete Math & Logic",
     "description": "nth Catalan number counting many combinatorial structures",
+    "dictationString": "C sub n equals begin fraction one over n plus one end fraction times two n choose n",
     "core": false
   },
   {
@@ -1700,6 +1888,7 @@ export const mathEquations = [
     "unicodemath": "D_n = n!∑_(k=0)^n(-1)^k/k!",
     "domain": "Discrete Math & Logic",
     "description": "Number of permutations of n elements with no fixed points",
+    "dictationString": "D sub n equals n factorial times the sum from k equals zero to n of begin fraction negative one to the k over k factorial end fraction",
     "core": false
   },
   {
@@ -1709,6 +1898,7 @@ export const mathEquations = [
     "unicodemath": "|A ∪ B| = |A| + |B| - |A ∩ B|",
     "domain": "Discrete Math & Logic",
     "description": "Inclusion-exclusion principle for two sets",
+    "dictationString": "the cardinality of A union B equals the cardinality of A plus the cardinality of B minus the cardinality of A intersect B",
     "core": false
   },
   {
@@ -1718,6 +1908,7 @@ export const mathEquations = [
     "unicodemath": "|A ∪ B ∪ C| = |A|+|B|+|C|-|A∩ B|-|A∩ C|-|B∩ C|+|A∩ B∩ C|",
     "domain": "Discrete Math & Logic",
     "description": "Inclusion-exclusion principle for three sets",
+    "dictationString": "the cardinality of A union B union C equals the cardinality of A plus B plus C minus the cardinality of A intersect B minus the cardinality of A intersect C minus the cardinality of B intersect C plus the cardinality of A intersect B intersect C",
     "core": false
   },
   {
@@ -1727,6 +1918,7 @@ export const mathEquations = [
     "unicodemath": "(A ∪ B)^c = A^c ∩ B^c; (A ∩ B)^c = A^c ∪ B^c",
     "domain": "Discrete Math & Logic",
     "description": "De Morgan's laws for set complements",
+    "dictationString": "the complement of A union B equals the complement of A intersect the complement of B; the complement of A intersect B equals the complement of A union the complement of B",
     "core": false
   },
   {
@@ -1736,6 +1928,7 @@ export const mathEquations = [
     "unicodemath": "|𝒫(A)| = 2^n",
     "domain": "Discrete Math & Logic",
     "description": "Number of subsets of a set with n elements",
+    "dictationString": "the cardinality of the power set of A equals two to the n",
     "core": false
   },
   {
@@ -1745,6 +1938,7 @@ export const mathEquations = [
     "unicodemath": "|A × B| = |A| ⋅ |B|",
     "domain": "Discrete Math & Logic",
     "description": "Number of ordered pairs in a Cartesian product",
+    "dictationString": "the cardinality of A cross B equals the cardinality of A times the cardinality of B",
     "core": false
   },
   {
@@ -1754,6 +1948,7 @@ export const mathEquations = [
     "unicodemath": "¬(p ∧ q) ≡ ¬ p ∨ ¬ q; ¬(p ∨ q) ≡ ¬ p ∧ ¬ q",
     "domain": "Discrete Math & Logic",
     "description": "De Morgan's laws for logical conjunction and disjunction",
+    "dictationString": "not open parenthesis p and q close parenthesis is equivalent to not p or not q; not open parenthesis p or q close parenthesis is equivalent to not p and not q",
     "core": false
   },
   {
@@ -1763,6 +1958,7 @@ export const mathEquations = [
     "unicodemath": "p ⇒ q ≡ ¬ p ∨ q",
     "domain": "Discrete Math & Logic",
     "description": "Conditional expressed as a disjunction",
+    "dictationString": "p implies q is equivalent to not p or q",
     "core": false
   },
   {
@@ -1772,6 +1968,7 @@ export const mathEquations = [
     "unicodemath": "p ⇒ q ≡ ¬ q ⇒ ¬ p",
     "domain": "Discrete Math & Logic",
     "description": "A conditional and its contrapositive are logically equivalent",
+    "dictationString": "p implies q is equivalent to not q implies not p",
     "core": false
   },
   {
@@ -1781,6 +1978,7 @@ export const mathEquations = [
     "unicodemath": "p ⇔ q ≡ (p ⇒ q) ∧ (q ⇒ p)",
     "domain": "Discrete Math & Logic",
     "description": "Biconditional expressed as two conditionals",
+    "dictationString": "p if and only if q is equivalent to open parenthesis p implies q close parenthesis and open parenthesis q implies p close parenthesis",
     "core": false
   },
   {
@@ -1790,6 +1988,7 @@ export const mathEquations = [
     "unicodemath": "¬¬ p ≡ p",
     "domain": "Discrete Math & Logic",
     "description": "Double negation elimination",
+    "dictationString": "not not p is equivalent to p",
     "core": false
   },
   {
@@ -1799,6 +1998,7 @@ export const mathEquations = [
     "unicodemath": "p p⇒q/q",
     "domain": "Discrete Math & Logic",
     "description": "Modus ponens inference rule",
+    "dictationString": "from p and p implies q, conclude q",
     "core": false
   },
   {
@@ -1808,6 +2008,7 @@ export const mathEquations = [
     "unicodemath": "¬q p⇒q/¬p",
     "domain": "Discrete Math & Logic",
     "description": "Modus tollens inference rule",
+    "dictationString": "from not q and p implies q, conclude not p",
     "core": false
   },
   {
@@ -1817,6 +2018,7 @@ export const mathEquations = [
     "unicodemath": "∑_(v∈V) deg(v) = 2|E|",
     "domain": "Discrete Math & Logic",
     "description": "Sum of all vertex degrees equals twice the number of edges",
+    "dictationString": "the sum over all vertices v of the degree of v equals two times the number of edges",
     "core": false
   },
   {
@@ -1826,6 +2028,7 @@ export const mathEquations = [
     "unicodemath": "V - E + F = 2",
     "domain": "Discrete Math & Logic",
     "description": "Euler's formula for connected planar graphs",
+    "dictationString": "V minus E plus F equals two",
     "core": false
   },
   {
@@ -1835,6 +2038,7 @@ export const mathEquations = [
     "unicodemath": "|E| = n(n-1)/2",
     "domain": "Discrete Math & Logic",
     "description": "Number of edges in a complete graph on n vertices",
+    "dictationString": "the number of edges equals begin fraction n times open parenthesis n minus one close parenthesis over two end fraction",
     "core": false
   },
   {
@@ -1844,6 +2048,7 @@ export const mathEquations = [
     "unicodemath": "F_n = F_(n-1) + F_(n-2)",
     "domain": "Discrete Math & Logic",
     "description": "Fibonacci recurrence with F_1 = F_2 = 1",
+    "dictationString": "F sub n equals F sub n minus one plus F sub n minus two",
     "core": false
   },
   {
@@ -1853,6 +2058,7 @@ export const mathEquations = [
     "unicodemath": "T(n) = aT(n/b) + f(n)",
     "domain": "Discrete Math & Logic",
     "description": "Master theorem for analyzing divide-and-conquer recurrences",
+    "dictationString": "T of n equals a times T of begin fraction n over b end fraction plus f of n",
     "core": false
   },
   {
@@ -1862,6 +2068,7 @@ export const mathEquations = [
     "unicodemath": "∑_(k=1)^n k = n(n+1)/2",
     "domain": "Discrete Math & Logic",
     "description": "Closed form for the sum of the first n positive integers",
+    "dictationString": "the sum from k equals one to n of k equals begin fraction n times open parenthesis n plus one close parenthesis over two end fraction",
     "core": false
   },
   {
@@ -1871,6 +2078,7 @@ export const mathEquations = [
     "unicodemath": "∑_(k=1)^n k^2 = n(n+1)(2n+1)/6",
     "domain": "Discrete Math & Logic",
     "description": "Closed form for the sum of squares of the first n integers",
+    "dictationString": "the sum from k equals one to n of k squared equals begin fraction n times open parenthesis n plus one close parenthesis times open parenthesis two n plus one close parenthesis over six end fraction",
     "core": false
   },
   {
@@ -1880,6 +2088,7 @@ export const mathEquations = [
     "unicodemath": "∑_(k=1)^n k^3 = [n(n+1)/2]^2",
     "domain": "Discrete Math & Logic",
     "description": "Closed form for the sum of cubes of the first n integers",
+    "dictationString": "the sum from k equals one to n of k cubed equals open bracket begin fraction n times open parenthesis n plus one close parenthesis over two end fraction close bracket squared",
     "core": false
   },
   {
@@ -1889,6 +2098,7 @@ export const mathEquations = [
     "unicodemath": "A ⊕ B = (A ∧ ¬ B) ∨ (¬ A ∧ B)",
     "domain": "Discrete Math & Logic",
     "description": "Exclusive OR is true when exactly one input is true",
+    "dictationString": "A exclusive or B equals open parenthesis A and not B close parenthesis or open parenthesis not A and B close parenthesis",
     "core": false
   },
   {
@@ -1898,6 +2108,7 @@ export const mathEquations = [
     "unicodemath": "A ∨ (A ∧ B) = A",
     "domain": "Discrete Math & Logic",
     "description": "A term absorbs a conjunction that already contains it",
+    "dictationString": "A or open parenthesis A and B close parenthesis equals A",
     "core": false
   },
   {
@@ -1907,6 +2118,7 @@ export const mathEquations = [
     "unicodemath": "A ∧ (B ∨ C) = (A ∧ B) ∨ (A ∧ C)",
     "domain": "Discrete Math & Logic",
     "description": "AND distributes over OR in Boolean algebra",
+    "dictationString": "A and open parenthesis B or C close parenthesis equals open parenthesis A and B close parenthesis or open parenthesis A and C close parenthesis",
     "core": false
   },
   {
@@ -1916,6 +2128,7 @@ export const mathEquations = [
     "unicodemath": "A ∧ A = A",
     "domain": "Discrete Math & Logic",
     "description": "Repeating AND or OR with the same variable leaves the value unchanged",
+    "dictationString": "A and A equals A",
     "core": false
   },
   {
@@ -1925,6 +2138,7 @@ export const mathEquations = [
     "unicodemath": "n! ≈ √2πn(n/e)^n",
     "domain": "Discrete Math & Logic",
     "description": "Asymptotic approximation for n! for large n",
+    "dictationString": "n factorial is approximately the square root of two pi n times open parenthesis begin fraction n over e end fraction close parenthesis to the n",
     "core": false
   },
   {
@@ -1934,6 +2148,7 @@ export const mathEquations = [
     "unicodemath": "x̅ = 1/n∑_(i=1)^n x_i",
     "domain": "Probability, Statistics & Data Science",
     "description": "Sample mean of n values",
+    "dictationString": "x bar equals begin fraction one over n end fraction times the sum from i equals one to n of x sub i",
     "core": false
   },
   {
@@ -1943,6 +2158,7 @@ export const mathEquations = [
     "unicodemath": "s^2 = 1/(n-1)∑_(i=1)^n(x_i - x̅)^2",
     "domain": "Probability, Statistics & Data Science",
     "description": "Sample variance",
+    "dictationString": "s squared equals begin fraction one over n minus one end fraction times the sum from i equals one to n of open parenthesis x sub i minus x bar close parenthesis squared",
     "core": false
   },
   {
@@ -1952,6 +2168,7 @@ export const mathEquations = [
     "unicodemath": "σ = √(1/N∑_(i=1)^N(x_i-μ)^2)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Population standard deviation",
+    "dictationString": "sigma equals the square root of begin begin fraction one over N end fraction times the sum from i equals one to N of open parenthesis x sub i minus mu close parenthesis squared end",
     "core": false
   },
   {
@@ -1961,6 +2178,7 @@ export const mathEquations = [
     "unicodemath": "z = (x-μ)/σ",
     "domain": "Probability, Statistics & Data Science",
     "description": "Z-score (standardized value)",
+    "dictationString": "z equals begin fraction x minus mu over sigma end fraction",
     "core": false
   },
   {
@@ -1970,6 +2188,7 @@ export const mathEquations = [
     "unicodemath": "f(x) = 1/σ√2πe^(-1/2((x-μ)/σ)^2)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Normal distribution probability density function",
+    "dictationString": "f of x equals begin fraction one over sigma times the square root of two pi end fraction times e to the power of negative one half times open parenthesis begin fraction x minus mu over sigma end fraction close parenthesis squared",
     "core": false
   },
   {
@@ -1979,6 +2198,7 @@ export const mathEquations = [
     "unicodemath": "P(A ∣ B) = P(B∣A)P(A)/P(B)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Bayes' theorem for conditional probability",
+    "dictationString": "P of A given B equals begin fraction P of B given A times P of A over P of B end fraction",
     "core": false
   },
   {
@@ -1988,6 +2208,7 @@ export const mathEquations = [
     "unicodemath": "E[X] = ∑_x xP(X=x)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Expected value of a discrete random variable",
+    "dictationString": "the expected value of X equals the sum over x of x times P of X equals x",
     "core": false
   },
   {
@@ -1997,6 +2218,7 @@ export const mathEquations = [
     "unicodemath": "E[X] = ∫_(-∞)^∞ xf(x)dx",
     "domain": "Probability, Statistics & Data Science",
     "description": "Expected value of a continuous random variable",
+    "dictationString": "the expected value of X equals the sum over x of x times P of X equals x",
     "core": false
   },
   {
@@ -2006,6 +2228,7 @@ export const mathEquations = [
     "unicodemath": "Cov(X,Y) = E[(X-μ_X)(Y-μ_Y)]",
     "domain": "Probability, Statistics & Data Science",
     "description": "Covariance of X and Y",
+    "dictationString": "covariance of X and Y equals the expected value of open parenthesis X minus mu sub X close parenthesis times open parenthesis Y minus mu sub Y close parenthesis",
     "core": false
   },
   {
@@ -2015,6 +2238,7 @@ export const mathEquations = [
     "unicodemath": "ρ = Cov(X,Y)/σ_Xσ_Y",
     "domain": "Probability, Statistics & Data Science",
     "description": "Pearson correlation coefficient",
+    "dictationString": "rho equals begin fraction covariance of X and Y over sigma sub X times sigma sub Y end fraction",
     "core": false
   },
   {
@@ -2024,6 +2248,7 @@ export const mathEquations = [
     "unicodemath": "P(A ∪ B) = P(A) + P(B) - P(A ∩ B)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Addition rule for the probability of A or B",
+    "dictationString": "P of A union B equals P of A plus P of B minus P of A intersect B",
     "core": false
   },
   {
@@ -2033,6 +2258,7 @@ export const mathEquations = [
     "unicodemath": "P(A ∣ B) = P(A∩B)/P(B)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Definition of conditional probability",
+    "dictationString": "P of A given B equals begin fraction P of A intersect B over P of B end fraction",
     "core": false
   },
   {
@@ -2042,6 +2268,7 @@ export const mathEquations = [
     "unicodemath": "P(A ∩ B) = P(A)⋅ P(B ∣ A)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Multiplication rule for joint probability",
+    "dictationString": "P of A intersect B equals P of A times P of B given A",
     "core": false
   },
   {
@@ -2051,6 +2278,7 @@ export const mathEquations = [
     "unicodemath": "P(A^c) = 1 - P(A)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Probability of the complement of event A",
+    "dictationString": "P of the complement of A equals one minus P of A",
     "core": false
   },
   {
@@ -2060,6 +2288,7 @@ export const mathEquations = [
     "unicodemath": "P(A) = ∑_i P(A ∣ B_i)P(B_i)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Total probability over a partition of the sample space",
+    "dictationString": "P of A equals the sum over i of P of A given B sub i times P of B sub i",
     "core": false
   },
   {
@@ -2069,6 +2298,7 @@ export const mathEquations = [
     "unicodemath": "P(X=k) = (n¦k)p^k(1-p)^(n-k)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Probability mass function of the binomial distribution",
+    "dictationString": "P of X equals k equals n choose k times p to the k times open parenthesis one minus p close parenthesis to the power of begin n minus k end",
     "core": false
   },
   {
@@ -2078,6 +2308,7 @@ export const mathEquations = [
     "unicodemath": "P(X=k) = e^(-λ)λ^k/k!",
     "domain": "Probability, Statistics & Data Science",
     "description": "Probability mass function of the Poisson distribution",
+    "dictationString": "P of X equals k equals begin fraction e to the power of negative lambda times lambda to the k over k factorial end fraction",
     "core": false
   },
   {
@@ -2087,6 +2318,7 @@ export const mathEquations = [
     "unicodemath": "P(X=k) = (1-p)^(k-1)p",
     "domain": "Probability, Statistics & Data Science",
     "description": "PMF of geometric distribution: k trials until first success",
+    "dictationString": "P of X equals k equals open parenthesis one minus p close parenthesis to the power of begin k minus one end times p",
     "core": false
   },
   {
@@ -2096,6 +2328,7 @@ export const mathEquations = [
     "unicodemath": "P(X=k) = (K¦k)(N-K¦n-k)/(N¦n)",
     "domain": "Probability, Statistics & Data Science",
     "description": "PMF for sampling k successes without replacement from population N",
+    "dictationString": "P of X equals k equals begin fraction K choose k times open parenthesis N minus K close parenthesis choose open parenthesis n minus k close parenthesis over N choose n end fraction",
     "core": false
   },
   {
@@ -2105,6 +2338,7 @@ export const mathEquations = [
     "unicodemath": "f(x) = λ e^(-λx)",
     "domain": "Probability, Statistics & Data Science",
     "description": "PDF of the exponential distribution with rate lambda (x >= 0)",
+    "dictationString": "f of x equals lambda times e to the power of negative lambda x",
     "core": false
   },
   {
@@ -2114,6 +2348,7 @@ export const mathEquations = [
     "unicodemath": "f(x) = 1/(b-a)",
     "domain": "Probability, Statistics & Data Science",
     "description": "PDF of a continuous uniform distribution on [a,b]",
+    "dictationString": "f of x equals begin fraction one over b minus a end fraction",
     "core": false
   },
   {
@@ -2123,6 +2358,7 @@ export const mathEquations = [
     "unicodemath": "SE = σ/√n",
     "domain": "Probability, Statistics & Data Science",
     "description": "Standard error of the sample mean",
+    "dictationString": "S E equals begin fraction sigma over the square root of n end fraction",
     "core": false
   },
   {
@@ -2132,6 +2368,7 @@ export const mathEquations = [
     "unicodemath": "x̅ ± z^*σ/√n",
     "domain": "Probability, Statistics & Data Science",
     "description": "Confidence interval for a population mean",
+    "dictationString": "x bar plus or minus z star times begin fraction sigma over the square root of n end fraction",
     "core": false
   },
   {
@@ -2141,6 +2378,7 @@ export const mathEquations = [
     "unicodemath": "t = (x̅-μ)/s/√n",
     "domain": "Probability, Statistics & Data Science",
     "description": "One-sample t-test statistic",
+    "dictationString": "t equals begin fraction x bar minus mu over begin fraction s over the square root of n end fraction end fraction",
     "core": false
   },
   {
@@ -2150,6 +2388,7 @@ export const mathEquations = [
     "unicodemath": "t = (x̅_1-x̅_2)/√(s_1^2/n_1+s_2^2/n_2)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Two-sample t-test statistic for independent groups",
+    "dictationString": "t equals begin fraction x bar sub one minus x bar sub two over the square root of begin begin fraction s sub one squared over n sub one end fraction plus begin fraction s sub two squared over n sub two end fraction end end fraction",
     "core": false
   },
   {
@@ -2159,6 +2398,7 @@ export const mathEquations = [
     "unicodemath": "s_p^2 = ((n_1-1)s_1^2+(n_2-1)s_2^2)/(n_1+n_2-2)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Pooled variance estimate for two samples",
+    "dictationString": "s sub p squared equals begin fraction open parenthesis n sub one minus one close parenthesis s sub one squared plus open parenthesis n sub two minus one close parenthesis s sub two squared over n sub one plus n sub two minus two end fraction",
     "core": false
   },
   {
@@ -2168,6 +2408,7 @@ export const mathEquations = [
     "unicodemath": "χ^2 = ∑ (O_i-E_i)^2/E_i",
     "domain": "Probability, Statistics & Data Science",
     "description": "Chi-squared test statistic comparing observed to expected counts",
+    "dictationString": "chi squared equals the sum of begin fraction open parenthesis O sub i minus E sub i close parenthesis squared over E sub i end fraction",
     "core": false
   },
   {
@@ -2177,6 +2418,7 @@ export const mathEquations = [
     "unicodemath": "F = s_1^2/s_2^2",
     "domain": "Probability, Statistics & Data Science",
     "description": "F-statistic for comparing two sample variances",
+    "dictationString": "F equals begin fraction s sub one squared over s sub two squared end fraction",
     "core": false
   },
   {
@@ -2186,6 +2428,7 @@ export const mathEquations = [
     "unicodemath": "IQR = Q_3 - Q_1",
     "domain": "Probability, Statistics & Data Science",
     "description": "Spread of the middle 50 percent of data",
+    "dictationString": "I Q R equals Q sub three minus Q sub one",
     "core": false
   },
   {
@@ -2195,6 +2438,7 @@ export const mathEquations = [
     "unicodemath": "CV = σ/μ",
     "domain": "Probability, Statistics & Data Science",
     "description": "Relative variability as a ratio of standard deviation to mean",
+    "dictationString": "C V equals begin fraction sigma over mu end fraction",
     "core": false
   },
   {
@@ -2204,6 +2448,7 @@ export const mathEquations = [
     "unicodemath": "skewness = 1/n∑(x_i-x̅)^3/s^3",
     "domain": "Probability, Statistics & Data Science",
     "description": "Measure of asymmetry of a distribution",
+    "dictationString": "skewness equals begin fraction begin fraction one over n end fraction times the sum of open parenthesis x sub i minus x bar close parenthesis cubed over s cubed end fraction",
     "core": false
   },
   {
@@ -2213,6 +2458,7 @@ export const mathEquations = [
     "unicodemath": "kurtosis = 1/n∑(x_i-x̅)^4/s^4 - 3",
     "domain": "Probability, Statistics & Data Science",
     "description": "Measure of tail heaviness relative to a normal distribution",
+    "dictationString": "kurtosis equals begin fraction begin fraction one over n end fraction times the sum of open parenthesis x sub i minus x bar close parenthesis to the fourth over s to the fourth end fraction minus three",
     "core": false
   },
   {
@@ -2222,6 +2468,7 @@ export const mathEquations = [
     "unicodemath": "ŷ = β̂_0 + β̂_1 x",
     "domain": "Probability, Statistics & Data Science",
     "description": "Simple linear regression predicted value",
+    "dictationString": "y hat equals beta hat sub zero plus beta hat sub one times x",
     "core": false
   },
   {
@@ -2231,6 +2478,7 @@ export const mathEquations = [
     "unicodemath": "β̂_1 = ∑(x_i-x̅)(y_i-y̅)/∑(x_i-x̅)^2",
     "domain": "Probability, Statistics & Data Science",
     "description": "Ordinary least squares estimate of regression slope",
+    "dictationString": "m equals begin fraction y sub two minus y sub one over x sub two minus x sub one end fraction",
     "core": false
   },
   {
@@ -2240,6 +2488,7 @@ export const mathEquations = [
     "unicodemath": "β̂_0 = y̅ - β̂_1x̅",
     "domain": "Probability, Statistics & Data Science",
     "description": "Ordinary least squares estimate of regression intercept",
+    "dictationString": "beta hat sub zero equals y bar minus beta hat sub one times x bar",
     "core": false
   },
   {
@@ -2249,6 +2498,7 @@ export const mathEquations = [
     "unicodemath": "R^2 = 1 - SS_res/SS_tot",
     "domain": "Probability, Statistics & Data Science",
     "description": "Proportion of variance in y explained by the regression model",
+    "dictationString": "R squared equals one minus begin fraction S S sub residual over S S sub total end fraction",
     "core": false
   },
   {
@@ -2258,6 +2508,7 @@ export const mathEquations = [
     "unicodemath": "SS_res = ∑_(i=1)^n(y_i - ŷ_i)^2",
     "domain": "Probability, Statistics & Data Science",
     "description": "Sum of squared residuals (unexplained variation)",
+    "dictationString": "S S sub residual equals the sum from i equals one to n of open parenthesis y sub i minus y hat sub i close parenthesis squared",
     "core": false
   },
   {
@@ -2267,6 +2518,7 @@ export const mathEquations = [
     "unicodemath": "MSE = 1/n∑_(i=1)^n(y_i - ŷ_i)^2",
     "domain": "Probability, Statistics & Data Science",
     "description": "Mean squared error of predictions",
+    "dictationString": "M S E equals begin fraction one over n end fraction times the sum from i equals one to n of open parenthesis y sub i minus y hat sub i close parenthesis squared",
     "core": false
   },
   {
@@ -2276,6 +2528,7 @@ export const mathEquations = [
     "unicodemath": "RMSE = √(1/n∑_(i=1)^n(y_i-ŷ_i)^2)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Root mean squared error of predictions",
+    "dictationString": "R M S E equals the square root of begin begin fraction one over n end fraction times the sum from i equals one to n of open parenthesis y sub i minus y hat sub i close parenthesis squared end",
     "core": false
   },
   {
@@ -2285,6 +2538,7 @@ export const mathEquations = [
     "unicodemath": "β̂ = (X^TX)^(-1)X^Ty",
     "domain": "Probability, Statistics & Data Science",
     "description": "OLS estimator in matrix form for multiple regression",
+    "dictationString": "beta hat equals open parenthesis X transpose times X close parenthesis inverse times X transpose times y",
     "core": false
   },
   {
@@ -2294,6 +2548,7 @@ export const mathEquations = [
     "unicodemath": "H(X) = -∑_x p(x)log_2 p(x)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Shannon entropy measuring average information content",
+    "dictationString": "H of X equals negative the sum over x of p of x times log base two of p of x",
     "core": false
   },
   {
@@ -2303,6 +2558,7 @@ export const mathEquations = [
     "unicodemath": "H(p,q) = -∑_x p(x)log q(x)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Cross-entropy between true distribution p and predicted distribution q",
+    "dictationString": "H of p comma q equals negative the sum over x of p of x times log of q of x",
     "core": false
   },
   {
@@ -2312,6 +2568,7 @@ export const mathEquations = [
     "unicodemath": "D_KL(P ‖ Q) = ∑_x P(x)logP(x)/Q(x)",
     "domain": "Probability, Statistics & Data Science",
     "description": "KL divergence measuring difference between distributions P and Q",
+    "dictationString": "D sub K L of P given Q equals the sum over x of P of x times log of begin fraction P of x over Q of x end fraction",
     "core": false
   },
   {
@@ -2321,6 +2578,7 @@ export const mathEquations = [
     "unicodemath": "I(X;Y) = H(X) - H(X ∣ Y)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Mutual information: reduction in uncertainty of X given Y",
+    "dictationString": "I of X semicolon Y equals H of X minus H of X given Y",
     "core": false
   },
   {
@@ -2330,6 +2588,7 @@ export const mathEquations = [
     "unicodemath": "σ(x) = 1/(1+e^(-x))",
     "domain": "Probability, Statistics & Data Science",
     "description": "Sigmoid activation function mapping input to (0,1)",
+    "dictationString": "sigma of x equals begin fraction one over one plus e to the power of negative x end fraction",
     "core": false
   },
   {
@@ -2339,6 +2598,7 @@ export const mathEquations = [
     "unicodemath": "softmax(x_i) = e^(x_i)/∑_je^(x_j)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Softmax function converting logits to a probability distribution",
+    "dictationString": "softmax of x sub i equals begin fraction e to the x sub i over the sum over j of e to the x sub j end fraction",
     "core": false
   },
   {
@@ -2348,6 +2608,7 @@ export const mathEquations = [
     "unicodemath": "L = -1/n∑_(i=1)^n[y_ilogŷ_i + (1-y_i)log(1-ŷ_i)]",
     "domain": "Probability, Statistics & Data Science",
     "description": "Binary cross-entropy loss for classification",
+    "dictationString": "L equals negative begin fraction one over n end fraction times the sum from i equals one to n of open bracket y sub i times log of y hat sub i plus open parenthesis one minus y sub i close parenthesis times log of open parenthesis one minus y hat sub i close parenthesis close bracket",
     "core": false
   },
   {
@@ -2357,6 +2618,7 @@ export const mathEquations = [
     "unicodemath": "θ ← θ - α∇_θ J(θ)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Gradient descent weight update with learning rate alpha",
+    "dictationString": "theta gets theta minus alpha times the gradient of J of theta with respect to theta",
     "core": false
   },
   {
@@ -2366,6 +2628,7 @@ export const mathEquations = [
     "unicodemath": "‖x‖_1 = ∑_i|x_i|",
     "domain": "Probability, Statistics & Data Science",
     "description": "L1 norm used in Lasso regularization",
+    "dictationString": "the L one norm of x equals the sum over i of the absolute value of x sub i",
     "core": false
   },
   {
@@ -2375,6 +2638,7 @@ export const mathEquations = [
     "unicodemath": "‖x‖_2 = √(∑_ix_i^2)",
     "domain": "Probability, Statistics & Data Science",
     "description": "L2 norm used in Ridge regularization",
+    "dictationString": "the L two norm of x equals the square root of begin the sum over i of x sub i squared end",
     "core": false
   },
   {
@@ -2384,6 +2648,7 @@ export const mathEquations = [
     "unicodemath": "J(θ) = MSE + λ∑_jθ_j^2",
     "domain": "Probability, Statistics & Data Science",
     "description": "L2 regularized loss function (Ridge regression)",
+    "dictationString": "J of theta equals M S E plus lambda times the sum over j of theta sub j squared",
     "core": false
   },
   {
@@ -2393,6 +2658,7 @@ export const mathEquations = [
     "unicodemath": "J(θ) = MSE + λ∑_j|θ_j|",
     "domain": "Probability, Statistics & Data Science",
     "description": "L1 regularized loss function (Lasso regression)",
+    "dictationString": "J of theta equals M S E plus lambda times the sum over j of the absolute value of theta sub j",
     "core": false
   },
   {
@@ -2402,6 +2668,7 @@ export const mathEquations = [
     "unicodemath": "E[(y-ŷ)^2] = Bias^2 + Variance + σ^2",
     "domain": "Probability, Statistics & Data Science",
     "description": "Decomposition of expected prediction error",
+    "dictationString": "the expected value of open parenthesis y minus y hat close parenthesis squared equals bias squared plus variance plus sigma squared",
     "core": false
   },
   {
@@ -2411,6 +2678,7 @@ export const mathEquations = [
     "unicodemath": "Accuracy = (TP+TN)/(TP+TN+FP+FN)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Fraction of correctly classified instances",
+    "dictationString": "accuracy equals begin fraction T P plus T N over T P plus T N plus F P plus F N end fraction",
     "core": false
   },
   {
@@ -2420,6 +2688,7 @@ export const mathEquations = [
     "unicodemath": "Precision = TP/(TP+FP)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Fraction of positive predictions that are correct",
+    "dictationString": "precision equals begin fraction T P over T P plus F P end fraction",
     "core": false
   },
   {
@@ -2429,6 +2698,7 @@ export const mathEquations = [
     "unicodemath": "Recall = TP/(TP+FN)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Fraction of actual positives correctly identified",
+    "dictationString": "recall equals begin fraction T P over T P plus F N end fraction",
     "core": false
   },
   {
@@ -2438,6 +2708,7 @@ export const mathEquations = [
     "unicodemath": "F_1 = 2⋅Precision⋅Recall/(Precision+Recall)",
     "domain": "Probability, Statistics & Data Science",
     "description": "Harmonic mean of precision and recall",
+    "dictationString": "F one equals begin fraction two times precision times recall over precision plus recall end fraction",
     "core": false
   },
   {
@@ -2447,6 +2718,7 @@ export const mathEquations = [
     "unicodemath": "F = ma",
     "domain": "Physics",
     "description": "Newton's second law of motion",
+    "dictationString": "F equals m times a",
     "core": false
   },
   {
@@ -2456,6 +2728,7 @@ export const mathEquations = [
     "unicodemath": "KE = 1/2mv^2",
     "domain": "Physics",
     "description": "Kinetic energy of a moving object",
+    "dictationString": "K E equals one half m v squared",
     "core": false
   },
   {
@@ -2465,6 +2738,7 @@ export const mathEquations = [
     "unicodemath": "U = mgh",
     "domain": "Physics",
     "description": "Gravitational potential energy near Earth's surface",
+    "dictationString": "U equals m g h",
     "core": false
   },
   {
@@ -2474,6 +2748,7 @@ export const mathEquations = [
     "unicodemath": "F = kq_1q_2/r^2",
     "domain": "Physics",
     "description": "Coulomb's law for the force between two charges",
+    "dictationString": "F equals k times begin fraction q sub one times q sub two over r squared end fraction",
     "core": false
   },
   {
@@ -2483,6 +2758,7 @@ export const mathEquations = [
     "unicodemath": "V = IR",
     "domain": "Physics",
     "description": "Ohm's law relating voltage current and resistance",
+    "dictationString": "V equals I R",
     "core": false
   },
   {
@@ -2492,6 +2768,7 @@ export const mathEquations = [
     "unicodemath": "v = fλ",
     "domain": "Physics",
     "description": "Wave speed as frequency times wavelength",
+    "dictationString": "v equals f times lambda",
     "core": false
   },
   {
@@ -2501,6 +2778,7 @@ export const mathEquations = [
     "unicodemath": "v = v_0 + at",
     "domain": "Physics",
     "description": "Velocity under constant acceleration",
+    "dictationString": "v equals v sub zero plus a t",
     "core": false
   },
   {
@@ -2510,6 +2788,7 @@ export const mathEquations = [
     "unicodemath": "x = x_0 + v_0 t + 1/2at^2",
     "domain": "Physics",
     "description": "Position under constant acceleration",
+    "dictationString": "x equals x sub zero plus v sub zero times t plus one half a t squared",
     "core": false
   },
   {
@@ -2519,6 +2798,7 @@ export const mathEquations = [
     "unicodemath": "v^2 = v_0^2 + 2aΔ x",
     "domain": "Physics",
     "description": "Velocity-position relation under constant acceleration",
+    "dictationString": "v equals v sub zero plus a t",
     "core": false
   },
   {
@@ -2528,6 +2808,7 @@ export const mathEquations = [
     "unicodemath": "Δ x = 1/2(v + v_0)t",
     "domain": "Physics",
     "description": "Displacement using average velocity",
+    "dictationString": "delta x equals one half times open parenthesis v plus v sub zero close parenthesis times t",
     "core": false
   },
   {
@@ -2537,6 +2818,7 @@ export const mathEquations = [
     "unicodemath": "F = Gm_1m_2/r^2",
     "domain": "Physics",
     "description": "Gravitational force between two masses",
+    "dictationString": "F equals G times begin fraction m sub one times m sub two over r squared end fraction",
     "core": false
   },
   {
@@ -2546,6 +2828,7 @@ export const mathEquations = [
     "unicodemath": "U = -Gm_1m_2/r",
     "domain": "Physics",
     "description": "Gravitational potential energy between two masses",
+    "dictationString": "U equals m g h",
     "core": false
   },
   {
@@ -2555,6 +2838,7 @@ export const mathEquations = [
     "unicodemath": "v_e = √(2GM/R)",
     "domain": "Physics",
     "description": "Minimum speed to escape a gravitational field",
+    "dictationString": "v sub e equals the square root of begin fraction two G M over R end fraction",
     "core": false
   },
   {
@@ -2564,6 +2848,7 @@ export const mathEquations = [
     "unicodemath": "p = mv",
     "domain": "Physics",
     "description": "Linear momentum of an object",
+    "dictationString": "p equals m times v",
     "core": false
   },
   {
@@ -2573,6 +2858,7 @@ export const mathEquations = [
     "unicodemath": "J = FΔ t = Δ p",
     "domain": "Physics",
     "description": "Impulse equals change in momentum",
+    "dictationString": "J equals F times delta t equals delta p",
     "core": false
   },
   {
@@ -2582,6 +2868,7 @@ export const mathEquations = [
     "unicodemath": "m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'",
     "domain": "Physics",
     "description": "Conservation of linear momentum in a collision",
+    "dictationString": "p equals m times v",
     "core": false
   },
   {
@@ -2591,6 +2878,7 @@ export const mathEquations = [
     "unicodemath": "W = Fdcosθ",
     "domain": "Physics",
     "description": "Work done by a force over a displacement",
+    "dictationString": "W equals F d cosine theta",
     "core": false
   },
   {
@@ -2600,6 +2888,7 @@ export const mathEquations = [
     "unicodemath": "P = W/t = Fv",
     "domain": "Physics",
     "description": "Power as rate of doing work",
+    "dictationString": "open parenthesis a to the m close parenthesis to the n equals a to the power of m times n",
     "core": false
   },
   {
@@ -2609,6 +2898,7 @@ export const mathEquations = [
     "unicodemath": "a_c = v^2/r",
     "domain": "Physics",
     "description": "Centripetal acceleration for circular motion",
+    "dictationString": "a sub c equals begin fraction v squared over r end fraction",
     "core": false
   },
   {
@@ -2618,6 +2908,7 @@ export const mathEquations = [
     "unicodemath": "F_c = mv^2/r",
     "domain": "Physics",
     "description": "Net centripetal force for circular motion",
+    "dictationString": "F sub c equals begin fraction m v squared over r end fraction",
     "core": false
   },
   {
@@ -2627,6 +2918,7 @@ export const mathEquations = [
     "unicodemath": "τ = rFsinθ",
     "domain": "Physics",
     "description": "Torque produced by a force",
+    "dictationString": "tau equals r times F times sine theta",
     "core": false
   },
   {
@@ -2636,6 +2928,7 @@ export const mathEquations = [
     "unicodemath": "L = Iω",
     "domain": "Physics",
     "description": "Angular momentum of a rotating body",
+    "dictationString": "p equals m times v",
     "core": false
   },
   {
@@ -2645,6 +2938,7 @@ export const mathEquations = [
     "unicodemath": "KE = 1/2Iω^2",
     "domain": "Physics",
     "description": "Kinetic energy of a rotating body",
+    "dictationString": "K E equals one half m v squared",
     "core": false
   },
   {
@@ -2654,6 +2948,7 @@ export const mathEquations = [
     "unicodemath": "F = -kx",
     "domain": "Physics",
     "description": "Hooke's law for a spring with spring constant k",
+    "dictationString": "F equals negative k times x",
     "core": false
   },
   {
@@ -2663,6 +2958,7 @@ export const mathEquations = [
     "unicodemath": "T = 2π√(m/k)",
     "domain": "Physics",
     "description": "Period of a mass-spring simple harmonic oscillator",
+    "dictationString": "T equals two pi times the square root of begin fraction m over k end fraction",
     "core": false
   },
   {
@@ -2672,6 +2968,7 @@ export const mathEquations = [
     "unicodemath": "T = 2π√(L/g)",
     "domain": "Physics",
     "description": "Period of a simple pendulum of length L",
+    "dictationString": "T equals two pi times the square root of begin fraction L over g end fraction",
     "core": false
   },
   {
@@ -2681,6 +2978,7 @@ export const mathEquations = [
     "unicodemath": "PV = nRT",
     "domain": "Physics",
     "description": "Ideal gas law relating pressure volume temperature and moles",
+    "dictationString": "P V equals n R T",
     "core": false
   },
   {
@@ -2690,6 +2988,7 @@ export const mathEquations = [
     "unicodemath": "Δ U = Q - W",
     "domain": "Physics",
     "description": "First law of thermodynamics (conservation of energy)",
+    "dictationString": "delta U equals Q minus W",
     "core": false
   },
   {
@@ -2699,6 +2998,7 @@ export const mathEquations = [
     "unicodemath": "Q = mcΔ T",
     "domain": "Physics",
     "description": "Heat absorbed or released by a substance",
+    "dictationString": "Q equals m c delta T",
     "core": false
   },
   {
@@ -2708,6 +3008,7 @@ export const mathEquations = [
     "unicodemath": "Δ L = α L_0 Δ T",
     "domain": "Physics",
     "description": "Linear thermal expansion of a solid",
+    "dictationString": "delta L equals alpha times L sub zero times delta T",
     "core": false
   },
   {
@@ -2717,6 +3018,7 @@ export const mathEquations = [
     "unicodemath": "η = 1 - T_c/T_h",
     "domain": "Physics",
     "description": "Maximum efficiency of a heat engine",
+    "dictationString": "eta equals one minus begin fraction T sub c over T sub h end fraction",
     "core": false
   },
   {
@@ -2726,6 +3028,7 @@ export const mathEquations = [
     "unicodemath": "E = kQ/r^2",
     "domain": "Physics",
     "description": "Electric field magnitude from a point charge",
+    "dictationString": "E equals k times begin fraction Q over r squared end fraction",
     "core": false
   },
   {
@@ -2735,6 +3038,7 @@ export const mathEquations = [
     "unicodemath": "U = kq_1q_2/r",
     "domain": "Physics",
     "description": "Electric potential energy between two point charges",
+    "dictationString": "U equals k times begin fraction q sub one times q sub two over r end fraction",
     "core": false
   },
   {
@@ -2744,6 +3048,7 @@ export const mathEquations = [
     "unicodemath": "V = kQ/r",
     "domain": "Physics",
     "description": "Electric potential due to a point charge",
+    "dictationString": "V equals k times begin fraction Q over r end fraction",
     "core": false
   },
   {
@@ -2753,6 +3058,7 @@ export const mathEquations = [
     "unicodemath": "C = Q/V",
     "domain": "Physics",
     "description": "Definition of capacitance",
+    "dictationString": "C equals begin fraction Q over V end fraction",
     "core": false
   },
   {
@@ -2762,6 +3068,7 @@ export const mathEquations = [
     "unicodemath": "U = 1/2CV^2",
     "domain": "Physics",
     "description": "Energy stored in a charged capacitor",
+    "dictationString": "U equals one half C V squared",
     "core": false
   },
   {
@@ -2771,6 +3078,7 @@ export const mathEquations = [
     "unicodemath": "P = IV = I^2R = V^2/R",
     "domain": "Physics",
     "description": "Electrical power dissipated in a resistor",
+    "dictationString": "P equals I V equals I squared R equals begin fraction V squared over R end fraction",
     "core": false
   },
   {
@@ -2780,6 +3088,7 @@ export const mathEquations = [
     "unicodemath": "R_total = R_1 + R_2 + ⋯ + R_n",
     "domain": "Physics",
     "description": "Total resistance of resistors in series",
+    "dictationString": "R sub total equals R sub one plus R sub two plus dot dot dot plus R sub n",
     "core": false
   },
   {
@@ -2789,6 +3098,7 @@ export const mathEquations = [
     "unicodemath": "1/R_total = 1/R_1 + 1/R_2 + ⋯ + 1/R_n",
     "domain": "Physics",
     "description": "Total resistance of resistors in parallel",
+    "dictationString": "begin fraction one over R sub total end fraction equals begin fraction one over R sub one end fraction plus begin fraction one over R sub two end fraction plus dot dot dot plus begin fraction one over R sub n end fraction",
     "core": false
   },
   {
@@ -2798,6 +3108,7 @@ export const mathEquations = [
     "unicodemath": "ℰ = -dΦ_B/dt",
     "domain": "Physics",
     "description": "Faraday's law of electromagnetic induction",
+    "dictationString": "script E equals negative begin fraction d Phi sub B over d t end fraction",
     "core": false
   },
   {
@@ -2807,6 +3118,7 @@ export const mathEquations = [
     "unicodemath": "F = qvBsinθ",
     "domain": "Physics",
     "description": "Magnetic force on a moving charge",
+    "dictationString": "F equals q v B sine theta",
     "core": false
   },
   {
@@ -2816,6 +3128,7 @@ export const mathEquations = [
     "unicodemath": "F = BILsinθ",
     "domain": "Physics",
     "description": "Magnetic force on a current-carrying conductor",
+    "dictationString": "F equals B I L sine theta",
     "core": false
   },
   {
@@ -2825,6 +3138,7 @@ export const mathEquations = [
     "unicodemath": "U = 1/2LI^2",
     "domain": "Physics",
     "description": "Energy stored in an inductor",
+    "dictationString": "U equals one half L I squared",
     "core": false
   },
   {
@@ -2834,6 +3148,7 @@ export const mathEquations = [
     "unicodemath": "n_1sinθ_1 = n_2sinθ_2",
     "domain": "Physics",
     "description": "Snell's law of refraction",
+    "dictationString": "n sub one sine theta sub one equals n sub two sine theta sub two",
     "core": false
   },
   {
@@ -2843,6 +3158,7 @@ export const mathEquations = [
     "unicodemath": "1/f = 1/d_o + 1/d_i",
     "domain": "Physics",
     "description": "Thin lens equation relating focal length and image/object distances",
+    "dictationString": "begin fraction one over f end fraction equals begin fraction one over d sub o end fraction plus begin fraction one over d sub i end fraction",
     "core": false
   },
   {
@@ -2852,6 +3168,7 @@ export const mathEquations = [
     "unicodemath": "m = -d_i/d_o",
     "domain": "Physics",
     "description": "Lateral magnification of a lens or mirror",
+    "dictationString": "m equals negative begin fraction d sub i over d sub o end fraction",
     "core": false
   },
   {
@@ -2861,6 +3178,7 @@ export const mathEquations = [
     "unicodemath": "f = 1/T",
     "domain": "Physics",
     "description": "Relationship between frequency and period",
+    "dictationString": "f equals begin fraction one over T end fraction",
     "core": false
   },
   {
@@ -2870,6 +3188,7 @@ export const mathEquations = [
     "unicodemath": "f' = fv±v_o/v∓v_s",
     "domain": "Physics",
     "description": "Doppler effect for moving source or observer",
+    "dictationString": "f prime equals f times begin fraction v plus or minus v sub o over v minus or plus v sub s end fraction",
     "core": false
   },
   {
@@ -2879,6 +3198,7 @@ export const mathEquations = [
     "unicodemath": "λ_n = 2L/n",
     "domain": "Physics",
     "description": "Wavelengths of standing waves in a string of length L",
+    "dictationString": "lambda sub n equals begin fraction two L over n end fraction",
     "core": false
   },
   {
@@ -2888,6 +3208,7 @@ export const mathEquations = [
     "unicodemath": "dsinθ = mλ",
     "domain": "Physics",
     "description": "Condition for constructive interference in double-slit experiment",
+    "dictationString": "d sine theta equals m lambda",
     "core": false
   },
   {
@@ -2897,6 +3218,7 @@ export const mathEquations = [
     "unicodemath": "dsinθ = (m+1/2)λ",
     "domain": "Physics",
     "description": "Condition for destructive interference in double-slit experiment",
+    "dictationString": "d sine theta equals open parenthesis m plus one half close parenthesis times lambda",
     "core": false
   },
   {
@@ -2906,6 +3228,7 @@ export const mathEquations = [
     "unicodemath": "KE_max = hf - φ",
     "domain": "Physics",
     "description": "Maximum kinetic energy of photoelectrons",
+    "dictationString": "K E sub max equals h f minus phi",
     "core": false
   },
   {
@@ -2915,6 +3238,7 @@ export const mathEquations = [
     "unicodemath": "λ = h/p",
     "domain": "Physics",
     "description": "de Broglie wavelength of a particle with momentum p",
+    "dictationString": "lambda equals begin fraction h over p end fraction",
     "core": false
   },
   {
@@ -2924,6 +3248,7 @@ export const mathEquations = [
     "unicodemath": "Δ xΔ p ≥ ℏ/2",
     "domain": "Physics",
     "description": "Heisenberg position-momentum uncertainty principle",
+    "dictationString": "delta x times delta p is greater than or equal to begin fraction h bar over two end fraction",
     "core": false
   },
   {
@@ -2933,6 +3258,7 @@ export const mathEquations = [
     "unicodemath": "E = mc^2",
     "domain": "Physics",
     "description": "Einstein's mass-energy equivalence (rest energy of a body)",
+    "dictationString": "E equals m c squared",
     "core": false
   },
   {
@@ -2942,6 +3268,7 @@ export const mathEquations = [
     "unicodemath": "N(t) = N_0 e^(-λt)",
     "domain": "Physics",
     "description": "Radioactive decay of initial nuclei",
+    "dictationString": "N of t equals N sub zero times e to the power of negative lambda t",
     "core": false
   },
   {
@@ -2951,6 +3278,7 @@ export const mathEquations = [
     "unicodemath": "t_(1/2) = ln2/λ",
     "domain": "Physics",
     "description": "Half-life in terms of decay constant",
+    "dictationString": "t sub one half equals begin fraction natural log of two over lambda end fraction",
     "core": false
   },
   {
@@ -2960,6 +3288,7 @@ export const mathEquations = [
     "unicodemath": "γ = 1/√(1-v^2/c^2)",
     "domain": "Physics",
     "description": "Relativistic factor quantifying time dilation and length contraction",
+    "dictationString": "gamma equals begin fraction one over the square root of begin one minus v squared over c squared end end fraction",
     "core": false
   },
   {
@@ -2969,6 +3298,7 @@ export const mathEquations = [
     "unicodemath": "Δ t = γ Δ t_0",
     "domain": "Physics",
     "description": "A moving clock ticks slower by the Lorentz factor",
+    "dictationString": "delta t equals gamma times delta t sub zero",
     "core": false
   },
   {
@@ -2978,6 +3308,7 @@ export const mathEquations = [
     "unicodemath": "L = L_0/γ",
     "domain": "Physics",
     "description": "A moving object appears shorter along the direction of motion",
+    "dictationString": "L equals begin fraction L sub zero over gamma end fraction",
     "core": false
   },
   {
@@ -2987,6 +3318,7 @@ export const mathEquations = [
     "unicodemath": "p = γ m v",
     "domain": "Physics",
     "description": "Momentum of a massive object moving at relativistic speed",
+    "dictationString": "p equals m times v",
     "core": false
   },
   {
@@ -2996,6 +3328,7 @@ export const mathEquations = [
     "unicodemath": "E = γ mc^2",
     "domain": "Physics",
     "description": "Total energy of a moving massive object including rest energy",
+    "dictationString": "E equals gamma m c squared",
     "core": false
   },
   {
@@ -3005,6 +3338,7 @@ export const mathEquations = [
     "unicodemath": "E^2 = (pc)^2 + (mc^2)^2",
     "domain": "Physics",
     "description": "Invariant relation between total energy and relativistic momentum",
+    "dictationString": "p equals m times v",
     "core": false
   },
   {
@@ -3014,6 +3348,7 @@ export const mathEquations = [
     "unicodemath": "u' = (u-v)/(1-uv/c^2)",
     "domain": "Physics",
     "description": "Combined velocity when changing reference frames at speed v",
+    "dictationString": "u prime equals begin fraction u minus v over one minus begin fraction u v over c squared end fraction end fraction",
     "core": false
   },
   {
@@ -3023,6 +3358,7 @@ export const mathEquations = [
     "unicodemath": "x' = γ(x - vt)",
     "domain": "Physics",
     "description": "Spatial coordinate in a frame moving at velocity v",
+    "dictationString": "x prime equals gamma times open parenthesis x minus v t close parenthesis",
     "core": false
   },
   {
@@ -3032,6 +3368,7 @@ export const mathEquations = [
     "unicodemath": "t' = γ(t - vx/c^2)",
     "domain": "Physics",
     "description": "Time coordinate in a frame moving at velocity v",
+    "dictationString": "t prime equals gamma times open parenthesis t minus begin fraction v x over c squared end fraction close parenthesis",
     "core": false
   },
   {
@@ -3041,6 +3378,7 @@ export const mathEquations = [
     "unicodemath": "P + 1/2ρ v^2 + ρ g h = const",
     "domain": "Physics",
     "description": "Conservation of energy for steady inviscid flow along a streamline",
+    "dictationString": "P plus one half rho v squared plus rho g h equals a constant",
     "core": false
   },
   {
@@ -3050,6 +3388,7 @@ export const mathEquations = [
     "unicodemath": "A_1 v_1 = A_2 v_2",
     "domain": "Physics",
     "description": "Conservation of mass for incompressible flow",
+    "dictationString": "A sub one v sub one equals A sub two v sub two",
     "core": false
   },
   {
@@ -3059,6 +3398,7 @@ export const mathEquations = [
     "unicodemath": "Re = ρvL/μ",
     "domain": "Physics",
     "description": "Dimensionless ratio of inertial to viscous forces predicting flow regime",
+    "dictationString": "R e equals begin fraction rho v L over mu end fraction",
     "core": false
   },
   {
@@ -3068,6 +3408,7 @@ export const mathEquations = [
     "unicodemath": "Q = πr^4ΔP/8μL",
     "domain": "Physics",
     "description": "Volumetric flow rate through a cylindrical pipe",
+    "dictationString": "Q equals begin fraction pi r to the fourth times delta P over eight mu L end fraction",
     "core": false
   },
   {
@@ -3077,6 +3418,7 @@ export const mathEquations = [
     "unicodemath": "F_d = 1/2 C_d ρ A v^2",
     "domain": "Physics",
     "description": "Resistive force on an object moving through a fluid",
+    "dictationString": "F sub d equals one half C sub d rho A v squared",
     "core": false
   },
   {
@@ -3086,6 +3428,7 @@ export const mathEquations = [
     "unicodemath": "F_b = ρ_f g V",
     "domain": "Physics",
     "description": "Upward force on a submerged object equal to weight of displaced fluid",
+    "dictationString": "F sub b equals rho sub f times g times V",
     "core": false
   },
   {
@@ -3095,6 +3438,7 @@ export const mathEquations = [
     "unicodemath": "-ℏ^2/2md^2ψ/dx^2 + Vψ = Eψ",
     "domain": "Physics",
     "description": "Eigenvalue equation for stationary quantum states",
+    "dictationString": "negative begin fraction h bar squared over two m end fraction times d squared psi over d x squared plus V psi equals E psi",
     "core": false
   },
   {
@@ -3104,6 +3448,7 @@ export const mathEquations = [
     "unicodemath": "iℏ∂ψ/∂t = Ĥψ",
     "domain": "Physics",
     "description": "Fundamental wave equation governing time evolution of a quantum state",
+    "dictationString": "i h bar times begin fraction partial psi over partial t end fraction equals H hat psi",
     "core": false
   },
   {
@@ -3113,6 +3458,7 @@ export const mathEquations = [
     "unicodemath": "∫_(-∞)^∞ |ψ|^2  dx = 1",
     "domain": "Physics",
     "description": "Total probability of finding the particle anywhere must equal one",
+    "dictationString": "the integral from negative infinity to infinity of the absolute value of psi squared d x equals one",
     "core": false
   },
   {
@@ -3122,6 +3468,7 @@ export const mathEquations = [
     "unicodemath": "⟨ x ⟩ = ∫_(-∞)^∞ ψ^* x ψdx",
     "domain": "Physics",
     "description": "Statistical average of a position measurement for a particle in state psi",
+    "dictationString": "the expected value of x equals the integral from negative infinity to infinity of psi star times x times psi d x",
     "core": false
   },
   {
@@ -3131,6 +3478,7 @@ export const mathEquations = [
     "unicodemath": "E_n = n^2π^2ℏ^2/2mL^2",
     "domain": "Physics",
     "description": "Energy levels of a particle confined to a one-dimensional box of length L",
+    "dictationString": "E sub n equals begin fraction n squared pi squared h bar squared over two m L squared end fraction",
     "core": false
   },
   {
@@ -3140,6 +3488,7 @@ export const mathEquations = [
     "unicodemath": "Δ m = Z m_p + N m_n - m_nuc",
     "domain": "Physics",
     "description": "Difference between constituent nucleon masses and the actual nuclear mass",
+    "dictationString": "delta m equals Z times m sub p plus N times m sub n minus m sub nucleus",
     "core": false
   },
   {
@@ -3149,6 +3498,7 @@ export const mathEquations = [
     "unicodemath": "E_b = Δ m ⋅ c^2",
     "domain": "Physics",
     "description": "Energy released when assembling a nucleus from free constituent nucleons",
+    "dictationString": "E sub b equals delta m times c squared",
     "core": false
   },
   {
@@ -3158,6 +3508,7 @@ export const mathEquations = [
     "unicodemath": "Q = (m_reactants - m_products)c^2",
     "domain": "Physics",
     "description": "Energy released or absorbed in a nuclear reaction",
+    "dictationString": "Q equals open parenthesis mass of reactants minus mass of products close parenthesis times c squared",
     "core": false
   },
   {
@@ -3167,6 +3518,7 @@ export const mathEquations = [
     "unicodemath": "β = 10log_10(I/I_0)",
     "domain": "Physics",
     "description": "Sound pressure level in decibels relative to reference intensity I_0",
+    "dictationString": "beta equals ten times log base ten of begin fraction I over I sub zero end fraction",
     "core": false
   },
   {
@@ -3176,6 +3528,7 @@ export const mathEquations = [
     "unicodemath": "I = P/4πr^2",
     "domain": "Physics",
     "description": "Intensity from a point source decreases with the square of distance r",
+    "dictationString": "I equals begin fraction P over four pi r squared end fraction",
     "core": false
   },
   {
@@ -3185,6 +3538,7 @@ export const mathEquations = [
     "unicodemath": "f_1 = 1/2L√(T/μ)",
     "domain": "Physics",
     "description": "Lowest resonant frequency of a string with tension T and linear mass density mu",
+    "dictationString": "f sub one equals begin fraction one over two L end fraction times the square root of begin fraction T over mu end fraction",
     "core": false
   },
   {
@@ -3194,6 +3548,7 @@ export const mathEquations = [
     "unicodemath": "f_n = nv/2L",
     "domain": "Physics",
     "description": "Resonant frequencies of a pipe open at both ends",
+    "dictationString": "f sub n equals begin fraction n v over two L end fraction",
     "core": false
   },
   {
@@ -3203,6 +3558,7 @@ export const mathEquations = [
     "unicodemath": "f_n = (2n-1)v/4L",
     "domain": "Physics",
     "description": "Resonant frequencies of a pipe open at one end and closed at the other",
+    "dictationString": "f sub n equals begin fraction open parenthesis two n minus one close parenthesis times v over four L end fraction",
     "core": false
   },
   {
@@ -3212,6 +3568,7 @@ export const mathEquations = [
     "unicodemath": "T^2 = 4π^2/GMa^3",
     "domain": "Physics",
     "description": "Square of orbital period is proportional to cube of semi-major axis",
+    "dictationString": "T squared equals begin fraction four pi squared over G M end fraction times a cubed",
     "core": false
   },
   {
@@ -3221,6 +3578,7 @@ export const mathEquations = [
     "unicodemath": "v = H_0 d",
     "domain": "Physics",
     "description": "Recession velocity of a distant galaxy is proportional to its distance",
+    "dictationString": "v equals H sub zero times d",
     "core": false
   },
   {
@@ -3230,6 +3588,7 @@ export const mathEquations = [
     "unicodemath": "L = 4π R^2 σ T^4",
     "domain": "Physics",
     "description": "Total power radiated by a star of radius R and surface temperature T",
+    "dictationString": "L equals four pi R squared times sigma times T to the fourth",
     "core": false
   },
   {
@@ -3239,6 +3598,7 @@ export const mathEquations = [
     "unicodemath": "m_1 - m_2 = -2.5log_10(F_1/F_2)",
     "domain": "Physics",
     "description": "Difference in apparent magnitude corresponds to a flux ratio",
+    "dictationString": "m sub one minus m sub two equals negative two point five times log base ten of begin fraction F sub one over F sub two end fraction",
     "core": false
   },
   {
@@ -3248,6 +3608,7 @@ export const mathEquations = [
     "unicodemath": "r_s = 2GM/c^2",
     "domain": "Physics",
     "description": "Radius of the event horizon of a non-rotating black hole of mass M",
+    "dictationString": "r sub s equals begin fraction two G M over c squared end fraction",
     "core": false
   },
   {
@@ -3257,6 +3618,7 @@ export const mathEquations = [
     "unicodemath": "∇ ⋅ E = ρ/ε_0; ∇ ⋅ B = 0; ∇ × E = -∂B/∂t; ∇ × B = μ_0 J + μ_0 ε_0 ∂E/∂t",
     "domain": "Physics",
     "description": "Maxwell's four equations of electromagnetism (differential form)",
+    "dictationString": "divergence of E equals rho over epsilon naught; divergence of B equals zero; curl of E equals negative partial B over partial t; curl of B equals mu naught J plus mu naught epsilon naught partial E over partial t",
     "core": false
   },
   {
@@ -3266,6 +3628,7 @@ export const mathEquations = [
     "unicodemath": "∂^2u/∂t^2 = c^2 ∂^2u/∂x^2",
     "domain": "Physics",
     "description": "Wave equation describing wave propagation at speed c",
+    "dictationString": "begin fraction partial squared u over partial t squared end fraction equals c squared times begin fraction partial squared u over partial x squared end fraction",
     "core": false
   },
   {
@@ -3275,6 +3638,7 @@ export const mathEquations = [
     "unicodemath": "P = σ A T^4",
     "domain": "Physics",
     "description": "Power radiated by a blackbody of area A at temperature T",
+    "dictationString": "P equals sigma A T to the fourth",
     "core": false
   },
   {
@@ -3284,6 +3648,7 @@ export const mathEquations = [
     "unicodemath": "n = m/M",
     "domain": "Chemistry",
     "description": "Moles equals mass divided by molar mass M",
+    "dictationString": "n equals begin fraction m over capital M end fraction",
     "core": false
   },
   {
@@ -3293,6 +3658,7 @@ export const mathEquations = [
     "unicodemath": "N = n × N_A",
     "domain": "Chemistry",
     "description": "Number of particles from moles and Avogadro's number",
+    "dictationString": "N equals n times N sub A",
     "core": false
   },
   {
@@ -3302,6 +3668,7 @@ export const mathEquations = [
     "unicodemath": "w = m_element/m_compound × 100%",
     "domain": "Chemistry",
     "description": "Mass percent of an element in a compound",
+    "dictationString": "w equals begin fraction mass of element over mass of compound end fraction times one hundred percent",
     "core": false
   },
   {
@@ -3311,6 +3678,7 @@ export const mathEquations = [
     "unicodemath": "M = n/V",
     "domain": "Chemistry",
     "description": "Molarity: moles of solute per liter of solution",
+    "dictationString": "capital M equals begin fraction n over V end fraction",
     "core": false
   },
   {
@@ -3320,6 +3688,7 @@ export const mathEquations = [
     "unicodemath": "M_1 V_1 = M_2 V_2",
     "domain": "Chemistry",
     "description": "Dilution relationship between initial and final concentration and volume",
+    "dictationString": "M sub one V sub one equals M sub two V sub two",
     "core": false
   },
   {
@@ -3329,6 +3698,7 @@ export const mathEquations = [
     "unicodemath": "m = n_solute/m_solvent",
     "domain": "Chemistry",
     "description": "Molality: moles of solute per kilogram of solvent",
+    "dictationString": "m equals begin fraction moles of solute over mass of solvent in kilograms end fraction",
     "core": false
   },
   {
@@ -3338,6 +3708,7 @@ export const mathEquations = [
     "unicodemath": "P = X_solvent P^∘",
     "domain": "Chemistry",
     "description": "Vapor pressure of solution equals mole fraction times pure vapor pressure",
+    "dictationString": "P equals X sub solvent times P naught",
     "core": false
   },
   {
@@ -3347,6 +3718,7 @@ export const mathEquations = [
     "unicodemath": "Δ T_b = i K_b m",
     "domain": "Chemistry",
     "description": "Elevation of boiling point by a solute",
+    "dictationString": "delta T sub b equals i times K sub b times m",
     "core": false
   },
   {
@@ -3356,6 +3728,7 @@ export const mathEquations = [
     "unicodemath": "Δ T_f = i K_f m",
     "domain": "Chemistry",
     "description": "Depression of freezing point by a solute",
+    "dictationString": "delta T sub f equals i times K sub f times m",
     "core": false
   },
   {
@@ -3365,6 +3738,7 @@ export const mathEquations = [
     "unicodemath": "π = iMRT",
     "domain": "Chemistry",
     "description": "Osmotic pressure of a solution",
+    "dictationString": "pi equals i M R T",
     "core": false
   },
   {
@@ -3374,6 +3748,7 @@ export const mathEquations = [
     "unicodemath": "P_1 V_1 = P_2 V_2",
     "domain": "Chemistry",
     "description": "Inverse relationship between pressure and volume at constant T",
+    "dictationString": "P sub one V sub one equals P sub two V sub two",
     "core": false
   },
   {
@@ -3383,6 +3758,7 @@ export const mathEquations = [
     "unicodemath": "V_1/T_1 = V_2/T_2",
     "domain": "Chemistry",
     "description": "Direct relationship between volume and temperature at constant P",
+    "dictationString": "begin fraction V sub one over T sub one end fraction equals begin fraction V sub two over T sub two end fraction",
     "core": false
   },
   {
@@ -3392,6 +3768,7 @@ export const mathEquations = [
     "unicodemath": "P_1/T_1 = P_2/T_2",
     "domain": "Chemistry",
     "description": "Direct relationship between pressure and temperature at constant V",
+    "dictationString": "begin fraction P sub one over T sub one end fraction equals begin fraction P sub two over T sub two end fraction",
     "core": false
   },
   {
@@ -3401,6 +3778,7 @@ export const mathEquations = [
     "unicodemath": "P_1V_1/T_1 = P_2V_2/T_2",
     "domain": "Chemistry",
     "description": "Combined relationship of pressure volume and temperature",
+    "dictationString": "begin fraction P sub one V sub one over T sub one end fraction equals begin fraction P sub two V sub two over T sub two end fraction",
     "core": false
   },
   {
@@ -3410,6 +3788,7 @@ export const mathEquations = [
     "unicodemath": "V_1/n_1 = V_2/n_2",
     "domain": "Chemistry",
     "description": "Volume is proportional to moles at constant T and P",
+    "dictationString": "begin fraction V sub one over n sub one end fraction equals begin fraction V sub two over n sub two end fraction",
     "core": false
   },
   {
@@ -3419,6 +3798,7 @@ export const mathEquations = [
     "unicodemath": "P_total = P_1 + P_2 + ⋯ + P_n",
     "domain": "Chemistry",
     "description": "Total pressure equals sum of partial pressures of each gas",
+    "dictationString": "P sub total equals P sub one plus P sub two plus dot dot dot plus P sub n",
     "core": false
   },
   {
@@ -3428,6 +3808,7 @@ export const mathEquations = [
     "unicodemath": "r_1/r_2 = √(M_2/M_1)",
     "domain": "Chemistry",
     "description": "Effusion rate inversely proportional to square root of molar mass",
+    "dictationString": "begin fraction r sub one over r sub two end fraction equals the square root of begin fraction M sub two over M sub one end fraction",
     "core": false
   },
   {
@@ -3437,6 +3818,7 @@ export const mathEquations = [
     "unicodemath": "(P + an^2/V^2)(V - nb) = nRT",
     "domain": "Chemistry",
     "description": "Equation of state for real gases with intermolecular corrections",
+    "dictationString": "open parenthesis P plus begin fraction a n squared over V squared end fraction close parenthesis times open parenthesis V minus n b close parenthesis equals n R T",
     "core": false
   },
   {
@@ -3446,6 +3828,7 @@ export const mathEquations = [
     "unicodemath": "Δ H_rxn = ∑ Δ H_f(products) - ∑ Δ H_f(reactants)",
     "domain": "Chemistry",
     "description": "Standard enthalpy of reaction from heats of formation",
+    "dictationString": "delta H sub reaction equals the sum of delta H sub f of products minus the sum of delta H sub f of reactants",
     "core": false
   },
   {
@@ -3455,6 +3838,7 @@ export const mathEquations = [
     "unicodemath": "Δ G = Δ H - TΔ S",
     "domain": "Chemistry",
     "description": "Gibbs free energy determines spontaneity of a reaction",
+    "dictationString": "delta G equals delta H minus T times delta S",
     "core": false
   },
   {
@@ -3464,6 +3848,7 @@ export const mathEquations = [
     "unicodemath": "Δ G^∘ = -RTln K",
     "domain": "Chemistry",
     "description": "Relationship between standard free energy and equilibrium constant",
+    "dictationString": "delta G naught equals negative R T natural log of K",
     "core": false
   },
   {
@@ -3473,6 +3858,7 @@ export const mathEquations = [
     "unicodemath": "Δ S = q_rev/T",
     "domain": "Chemistry",
     "description": "Entropy change for a reversible process at temperature T",
+    "dictationString": "delta S equals begin fraction q sub reversible over T end fraction",
     "core": false
   },
   {
@@ -3482,6 +3868,7 @@ export const mathEquations = [
     "unicodemath": "K = [products]^coefficients/[reactants]^coefficients",
     "domain": "Chemistry",
     "description": "Equilibrium constant as ratio of product to reactant concentrations",
+    "dictationString": "K equals begin fraction concentrations of products raised to their coefficients over concentrations of reactants raised to their coefficients end fraction",
     "core": false
   },
   {
@@ -3491,6 +3878,7 @@ export const mathEquations = [
     "unicodemath": "K_p = K_c (RT)^Δn",
     "domain": "Chemistry",
     "description": "Relationship between Kp and Kc where delta n is moles gas change",
+    "dictationString": "K sub p equals K sub c times open parenthesis R T close parenthesis to the power of delta n",
     "core": false
   },
   {
@@ -3500,6 +3888,7 @@ export const mathEquations = [
     "unicodemath": "Q = [products]/[reactants]",
     "domain": "Chemistry",
     "description": "Reaction quotient used to predict direction of reaction",
+    "dictationString": "Q equals begin fraction concentrations of products over concentrations of reactants end fraction",
     "core": false
   },
   {
@@ -3509,6 +3898,7 @@ export const mathEquations = [
     "unicodemath": "pH = -log[H^+]",
     "domain": "Chemistry",
     "description": "pH as negative log of hydrogen ion concentration",
+    "dictationString": "pH equals negative log of the concentration of H plus",
     "core": false
   },
   {
@@ -3518,6 +3908,7 @@ export const mathEquations = [
     "unicodemath": "pOH = -log[OH^-]",
     "domain": "Chemistry",
     "description": "pOH as negative log of hydroxide ion concentration",
+    "dictationString": "p O H equals negative log of the concentration of O H minus",
     "core": false
   },
   {
@@ -3527,6 +3918,7 @@ export const mathEquations = [
     "unicodemath": "pH + pOH = 14",
     "domain": "Chemistry",
     "description": "Relationship between pH and pOH in aqueous solution at 25C",
+    "dictationString": "p H plus p O H equals fourteen",
     "core": false
   },
   {
@@ -3536,6 +3928,7 @@ export const mathEquations = [
     "unicodemath": "K_w = [H^+][OH^-] = 1.0 × 10^(-14)",
     "domain": "Chemistry",
     "description": "Ion product of water at 25C",
+    "dictationString": "K sub w equals the concentration of H plus times the concentration of O H minus equals one point zero times ten to the negative fourteen",
     "core": false
   },
   {
@@ -3545,6 +3938,7 @@ export const mathEquations = [
     "unicodemath": "pH = pK_a + log[A^-]/[HA]",
     "domain": "Chemistry",
     "description": "pH of a buffer solution from pKa and concentration ratio",
+    "dictationString": "pH equals p K sub a plus log of begin fraction the concentration of A minus over the concentration of H A end fraction",
     "core": false
   },
   {
@@ -3554,6 +3948,7 @@ export const mathEquations = [
     "unicodemath": "K_a × K_b = K_w",
     "domain": "Chemistry",
     "description": "Product of conjugate acid and base dissociation constants equals Kw",
+    "dictationString": "K sub a times K sub b equals K sub w",
     "core": false
   },
   {
@@ -3563,6 +3958,7 @@ export const mathEquations = [
     "unicodemath": "E^∘_cell = E^∘_cathode - E^∘_anode",
     "domain": "Chemistry",
     "description": "Standard cell potential from half-reaction potentials",
+    "dictationString": "E naught sub cell equals E naught sub cathode minus E naught sub anode",
     "core": false
   },
   {
@@ -3572,6 +3968,7 @@ export const mathEquations = [
     "unicodemath": "E = E^∘ - RT/nFln Q",
     "domain": "Chemistry",
     "description": "Cell potential at non-standard conditions",
+    "dictationString": "E equals E naught minus begin fraction R T over n F end fraction times natural log of Q",
     "core": false
   },
   {
@@ -3581,6 +3978,7 @@ export const mathEquations = [
     "unicodemath": "Δ G^∘ = -nFE^∘",
     "domain": "Chemistry",
     "description": "Relationship between standard free energy and cell potential",
+    "dictationString": "delta G naught equals negative n F E naught",
     "core": false
   },
   {
@@ -3590,6 +3988,7 @@ export const mathEquations = [
     "unicodemath": "m = MIt/nF",
     "domain": "Chemistry",
     "description": "Mass deposited in electrolysis from current I and time t",
+    "dictationString": "m equals begin fraction M times I times t over n times F end fraction",
     "core": false
   },
   {
@@ -3599,6 +3998,7 @@ export const mathEquations = [
     "unicodemath": "rate = k[A]^m[B]^n",
     "domain": "Chemistry",
     "description": "Rate law with rate constant k and reaction orders m and n",
+    "dictationString": "rate equals k times the concentration of A to the m times the concentration of B to the n",
     "core": false
   },
   {
@@ -3608,6 +4008,7 @@ export const mathEquations = [
     "unicodemath": "ln[A] = ln[A]_0 - kt",
     "domain": "Chemistry",
     "description": "Integrated rate law for a first-order reaction",
+    "dictationString": "natural log of the concentration of A equals natural log of the initial concentration of A minus k t",
     "core": false
   },
   {
@@ -3617,6 +4018,7 @@ export const mathEquations = [
     "unicodemath": "1/[A] = 1/[A]_0 + kt",
     "domain": "Chemistry",
     "description": "Integrated rate law for a second-order reaction",
+    "dictationString": "begin fraction one over the concentration of A end fraction equals begin fraction one over the initial concentration of A end fraction plus k t",
     "core": false
   },
   {
@@ -3626,6 +4028,7 @@ export const mathEquations = [
     "unicodemath": "t_(1/2) = ln2/k = 0.693/k",
     "domain": "Chemistry",
     "description": "Half-life of a first-order reaction",
+    "dictationString": "t sub one half equals begin fraction natural log of two over k end fraction equals begin fraction zero point six nine three over k end fraction",
     "core": false
   },
   {
@@ -3635,6 +4038,7 @@ export const mathEquations = [
     "unicodemath": "k = Ae^(-E_a/RT)",
     "domain": "Chemistry",
     "description": "Rate constant dependence on activation energy and temperature",
+    "dictationString": "k equals A times e to the power of negative begin fraction E sub a over R T end fraction",
     "core": false
   },
   {
@@ -3644,6 +4048,7 @@ export const mathEquations = [
     "unicodemath": "1/λ = R_H(1/n_1^2 - 1/n_2^2)",
     "domain": "Chemistry",
     "description": "Wavelengths of hydrogen spectral lines",
+    "dictationString": "begin fraction one over lambda end fraction equals R sub H times open parenthesis begin fraction one over n sub one squared end fraction minus begin fraction one over n sub two squared end fraction close parenthesis",
     "core": false
   },
   {
@@ -3653,6 +4058,7 @@ export const mathEquations = [
     "unicodemath": "E = hf = hc/λ",
     "domain": "Chemistry",
     "description": "Energy of a photon in terms of frequency and wavelength",
+    "dictationString": "E equals h f equals begin fraction h c over lambda end fraction",
     "core": false
   },
   {
@@ -3662,6 +4068,7 @@ export const mathEquations = [
     "unicodemath": "E_n = -13.6eV/n^2",
     "domain": "Chemistry",
     "description": "Energy of the nth electron shell in the Bohr model of hydrogen",
+    "dictationString": "E sub n equals negative thirteen point six electron volts over n squared",
     "core": false
   },
   {
@@ -3671,6 +4078,7 @@ export const mathEquations = [
     "unicodemath": "p^2 + 2pq + q^2 = 1",
     "domain": "Biology & Life Sciences",
     "description": "Allele frequency equilibrium in a non-evolving diploid population with p + q = 1",
+    "dictationString": "p squared plus two p q plus q squared equals one",
     "core": false
   },
   {
@@ -3680,6 +4088,7 @@ export const mathEquations = [
     "unicodemath": "dN/dt = rN(1 - N/K)",
     "domain": "Biology & Life Sciences",
     "description": "Population growth rate decreasing as size N approaches carrying capacity K",
+    "dictationString": "d N over d t equals r N times open parenthesis one minus begin fraction N over K end fraction close parenthesis",
     "core": false
   },
   {
@@ -3689,6 +4098,7 @@ export const mathEquations = [
     "unicodemath": "v = V_max[S]/(K_m+[S])",
     "domain": "Biology & Life Sciences",
     "description": "Reaction rate of an enzyme as a function of substrate concentration S",
+    "dictationString": "v equals begin fraction V sub max times the concentration of S over K sub m plus the concentration of S end fraction",
     "core": false
   },
   {
@@ -3698,6 +4108,7 @@ export const mathEquations = [
     "unicodemath": "N(t) = N_0 e^rt",
     "domain": "Biology & Life Sciences",
     "description": "Unconstrained population growth at constant per-capita growth rate r",
+    "dictationString": "N of t equals N sub zero times e to the power of r t",
     "core": false
   },
   {
@@ -3707,6 +4118,7 @@ export const mathEquations = [
     "unicodemath": "I = Prt",
     "domain": "Finance & Economics",
     "description": "Simple interest where P is principal r is annual rate t is time in years",
+    "dictationString": "I equals P times r times t",
     "core": false
   },
   {
@@ -3716,6 +4128,7 @@ export const mathEquations = [
     "unicodemath": "A = P(1 + r/n)^nt",
     "domain": "Finance & Economics",
     "description": "Compound interest with n compounding periods per year",
+    "dictationString": "A equals P times open parenthesis one plus begin fraction r over n end fraction close parenthesis to the power of n t",
     "core": false
   },
   {
@@ -3725,6 +4138,7 @@ export const mathEquations = [
     "unicodemath": "A = Pe^rt",
     "domain": "Finance & Economics",
     "description": "Continuously compounded interest",
+    "dictationString": "A equals P times e to the power of r t",
     "core": false
   },
   {
@@ -3734,6 +4148,7 @@ export const mathEquations = [
     "unicodemath": "FV = PV(1+r)^n",
     "domain": "Finance & Economics",
     "description": "Future value of a lump sum with rate r over n periods",
+    "dictationString": "F V equals P V times open parenthesis one plus r close parenthesis to the n",
     "core": false
   },
   {
@@ -3743,6 +4158,7 @@ export const mathEquations = [
     "unicodemath": "PV = FV/(1+r)^n",
     "domain": "Finance & Economics",
     "description": "Present value (discount) of a future lump sum",
+    "dictationString": "P V equals begin fraction F V over open parenthesis one plus r close parenthesis to the n end fraction",
     "core": false
   },
   {
@@ -3752,6 +4168,7 @@ export const mathEquations = [
     "unicodemath": "PV = PMT ⋅ (1-(1+r)^(-n))/r",
     "domain": "Finance & Economics",
     "description": "Present value of n equal payments PMT at rate r per period",
+    "dictationString": "P V equals begin fraction F V over open parenthesis one plus r close parenthesis to the n end fraction",
     "core": false
   },
   {
@@ -3761,6 +4178,7 @@ export const mathEquations = [
     "unicodemath": "FV = PMT ⋅ ((1+r)^n-1)/r",
     "domain": "Finance & Economics",
     "description": "Future value of n equal payments PMT at rate r per period",
+    "dictationString": "F V equals P M T times begin fraction open parenthesis one plus r close parenthesis to the n minus one over r end fraction",
     "core": false
   },
   {
@@ -3770,6 +4188,7 @@ export const mathEquations = [
     "unicodemath": "PV = PMT/r",
     "domain": "Finance & Economics",
     "description": "Present value of an infinite series of equal payments",
+    "dictationString": "P V equals begin fraction F V over open parenthesis one plus r close parenthesis to the n end fraction",
     "core": false
   },
   {
@@ -3779,6 +4198,7 @@ export const mathEquations = [
     "unicodemath": "M = P ⋅ r(1+r)^n/((1+r)^n-1)",
     "domain": "Finance & Economics",
     "description": "Periodic payment for a fully amortizing loan of principal P",
+    "dictationString": "M equals P times begin fraction r times open parenthesis one plus r close parenthesis to the n over open parenthesis one plus r close parenthesis to the n minus one end fraction",
     "core": false
   },
   {
@@ -3788,6 +4208,7 @@ export const mathEquations = [
     "unicodemath": "EAR = (1 + r/n)^n - 1",
     "domain": "Finance & Economics",
     "description": "Effective annual rate given nominal rate r compounded n times per year",
+    "dictationString": "E A R equals open parenthesis one plus begin fraction r over n end fraction close parenthesis to the n minus one",
     "core": false
   },
   {
@@ -3797,6 +4218,7 @@ export const mathEquations = [
     "unicodemath": "NPV = ∑_(t=0)^n CF_t/(1+r)^t",
     "domain": "Finance & Economics",
     "description": "Net present value of cash flows CF at discount rate r",
+    "dictationString": "N P V equals the sum from t equals zero to n of begin fraction C F sub t over open parenthesis one plus r close parenthesis to the t end fraction",
     "core": false
   },
   {
@@ -3806,6 +4228,7 @@ export const mathEquations = [
     "unicodemath": "CAGR = (V_f/V_i)^(1/n) - 1",
     "domain": "Finance & Economics",
     "description": "Annualized growth rate from initial value V_i to final value V_f over n years",
+    "dictationString": "C A G R equals open parenthesis begin fraction V sub f over V sub i end fraction close parenthesis to the power of begin one over n end minus one",
     "core": false
   },
   {
@@ -3815,6 +4238,7 @@ export const mathEquations = [
     "unicodemath": "t = ln2/r",
     "domain": "Finance & Economics",
     "description": "Exact time for an investment to double at continuous rate r",
+    "dictationString": "t equals begin fraction natural log of two over r end fraction",
     "core": false
   },
   {
@@ -3824,6 +4248,7 @@ export const mathEquations = [
     "unicodemath": "t ≈ 72/r",
     "domain": "Finance & Economics",
     "description": "Approximate years to double at rate r percent (r as a whole number)",
+    "dictationString": "t is approximately begin fraction seventy two over r end fraction",
     "core": false
   },
   {
@@ -3833,6 +4258,7 @@ export const mathEquations = [
     "unicodemath": "(1 + r_n) = (1 + r_r)(1 + π)",
     "domain": "Finance & Economics",
     "description": "Relates nominal rate r_n real rate r_r and inflation rate pi",
+    "dictationString": "open parenthesis one plus r sub n close parenthesis equals open parenthesis one plus r sub r close parenthesis times open parenthesis one plus pi close parenthesis",
     "core": false
   },
   {
@@ -3842,6 +4268,7 @@ export const mathEquations = [
     "unicodemath": "D = (C-S)/n",
     "domain": "Finance & Economics",
     "description": "Annual depreciation of asset with cost C salvage value S over n years",
+    "dictationString": "D equals begin fraction C minus S over n end fraction",
     "core": false
   },
   {
@@ -3851,6 +4278,7 @@ export const mathEquations = [
     "unicodemath": "ROI = (V_f-V_i)/V_i",
     "domain": "Finance & Economics",
     "description": "Return on investment as a fraction of initial value",
+    "dictationString": "R O I equals begin fraction V sub f minus V sub i over V sub i end fraction",
     "core": false
   },
   {
@@ -3860,6 +4288,7 @@ export const mathEquations = [
     "unicodemath": "P = ∑_(t=1)^n C/(1+r)^t + F/(1+r)^n",
     "domain": "Finance & Economics",
     "description": "Price of a bond with coupon C face value F yield r and n periods",
+    "dictationString": "P equals the sum from t equals one to n of begin fraction C over open parenthesis one plus r close parenthesis to the t end fraction plus begin fraction F over open parenthesis one plus r close parenthesis to the n end fraction",
     "core": false
   },
   {
@@ -3869,6 +4298,7 @@ export const mathEquations = [
     "unicodemath": "ε_d = ΔQ/Q/ΔP/P",
     "domain": "Finance & Economics",
     "description": "Percentage change in quantity demanded per percentage change in price",
+    "dictationString": "epsilon sub d equals begin fraction delta Q over Q over delta P over P end fraction",
     "core": false
   },
   {
@@ -3878,6 +4308,7 @@ export const mathEquations = [
     "unicodemath": "MC = dTC/dQ",
     "domain": "Finance & Economics",
     "description": "Additional cost of producing one more unit of output",
+    "dictationString": "M C equals begin fraction d T C over d Q end fraction",
     "core": false
   },
   {
@@ -3887,6 +4318,7 @@ export const mathEquations = [
     "unicodemath": "MR = dTR/dQ",
     "domain": "Finance & Economics",
     "description": "Additional revenue earned from selling one more unit of output",
+    "dictationString": "M R equals begin fraction d T R over d Q end fraction",
     "core": false
   },
   {
@@ -3896,6 +4328,7 @@ export const mathEquations = [
     "unicodemath": "MR = MC",
     "domain": "Finance & Economics",
     "description": "Profit is maximized at the output level where marginal revenue equals marginal cost",
+    "dictationString": "M R equals M C",
     "core": false
   },
   {
@@ -3905,6 +4338,7 @@ export const mathEquations = [
     "unicodemath": "CS = ∫_0^(Q^*) D(Q)dQ - P^* Q^*",
     "domain": "Finance & Economics",
     "description": "Difference between consumers willingness to pay and the actual market price",
+    "dictationString": "C S equals the integral from zero to Q star of D of Q d Q minus P star times Q star",
     "core": false
   },
   {
@@ -3914,6 +4348,7 @@ export const mathEquations = [
     "unicodemath": "C = S_0 N(d_1) - K e^(-rT) N(d_2)",
     "domain": "Finance & Economics",
     "description": "Black-Scholes formula for the price C of a European call option",
+    "dictationString": "C equals S sub zero times N of d sub one minus K times e to the power of negative r T times N of d sub two",
     "core": false
   },
   {
@@ -3923,6 +4358,7 @@ export const mathEquations = [
     "unicodemath": "Z_C = 1/jωC",
     "domain": "Engineering & Computing",
     "description": "Impedance of a capacitor as a function of angular frequency omega",
+    "dictationString": "Z sub C equals begin fraction one over j omega C end fraction",
     "core": false
   },
   {
@@ -3932,6 +4368,7 @@ export const mathEquations = [
     "unicodemath": "Z_L = jω L",
     "domain": "Engineering & Computing",
     "description": "Impedance of an inductor as a function of angular frequency omega",
+    "dictationString": "Z sub L equals j omega L",
     "core": false
   },
   {
@@ -3941,6 +4378,7 @@ export const mathEquations = [
     "unicodemath": "f_0 = 1/2π√LC",
     "domain": "Engineering & Computing",
     "description": "Natural resonant frequency of an LC tank circuit",
+    "dictationString": "f sub zero equals begin fraction one over two pi times the square root of L C end fraction",
     "core": false
   },
   {
@@ -3950,6 +4388,7 @@ export const mathEquations = [
     "unicodemath": "τ = RC",
     "domain": "Engineering & Computing",
     "description": "Time for a capacitor to charge to about 63 percent of its final voltage through R",
+    "dictationString": "tau equals R C",
     "core": false
   },
   {
@@ -3959,6 +4398,7 @@ export const mathEquations = [
     "unicodemath": "τ = L/R",
     "domain": "Engineering & Computing",
     "description": "Time for current in an RL circuit to reach about 63 percent of its steady-state value",
+    "dictationString": "tau equals begin fraction L over R end fraction",
     "core": false
   },
   {
@@ -3968,6 +4408,7 @@ export const mathEquations = [
     "unicodemath": "V_rms = V_peak/√2",
     "domain": "Engineering & Computing",
     "description": "Equivalent DC voltage of a sinusoidal AC signal",
+    "dictationString": "V sub r m s equals begin fraction V sub peak over the square root of two end fraction",
     "core": false
   },
   {
@@ -3977,6 +4418,7 @@ export const mathEquations = [
     "unicodemath": "1/C_eq = 1/C_1 + 1/C_2",
     "domain": "Engineering & Computing",
     "description": "Equivalent capacitance of capacitors connected in series",
+    "dictationString": "begin fraction one over C sub e q end fraction equals begin fraction one over C sub one end fraction plus begin fraction one over C sub two end fraction",
     "core": false
   },
   {
@@ -3986,6 +4428,7 @@ export const mathEquations = [
     "unicodemath": "C_eq = C_1 + C_2",
     "domain": "Engineering & Computing",
     "description": "Equivalent capacitance of capacitors connected in parallel",
+    "dictationString": "C sub e q equals C sub one plus C sub two",
     "core": false
   },
   {
@@ -3995,6 +4438,7 @@ export const mathEquations = [
     "unicodemath": "f_s ≥ 2 f_max",
     "domain": "Engineering & Computing",
     "description": "A signal must be sampled at least twice its highest frequency to avoid aliasing",
+    "dictationString": "f sub s is greater than or equal to two times f sub max",
     "core": false
   },
   {
@@ -4004,6 +4448,7 @@ export const mathEquations = [
     "unicodemath": "(f * g)(t) = ∫_(-∞)^∞ f(τ)g(t - τ)dτ",
     "domain": "Engineering & Computing",
     "description": "Output of a linear time-invariant system is the convolution of input and impulse response",
+    "dictationString": "open parenthesis f star g close parenthesis of t equals the integral from negative infinity to infinity of f of tau times g of open parenthesis t minus tau close parenthesis d tau",
     "core": false
   },
   {
@@ -4013,6 +4458,7 @@ export const mathEquations = [
     "unicodemath": "X[k] = ∑_(n=0)^(N-1) x[n] e^(-j2πkn/N)",
     "domain": "Engineering & Computing",
     "description": "Transforms a discrete time-domain signal of length N into its frequency components",
+    "dictationString": "f hat of omega equals the integral from negative infinity to infinity of f of t times e to the power of negative i omega t d t",
     "core": false
   },
   {
@@ -4022,6 +4468,7 @@ export const mathEquations = [
     "unicodemath": "SNR = 10log_10(P_signal/P_noise)",
     "domain": "Engineering & Computing",
     "description": "Ratio of signal power to noise power expressed in decibels",
+    "dictationString": "S N R equals ten times log base ten of begin fraction P sub signal over P sub noise end fraction",
     "core": false
   },
   {
@@ -4031,6 +4478,7 @@ export const mathEquations = [
     "unicodemath": "C = Blog_2(1 + S/N)",
     "domain": "Engineering & Computing",
     "description": "Maximum information rate of a channel with bandwidth B and signal-to-noise ratio S/N",
+    "dictationString": "C equals B times log base two of open parenthesis one plus begin fraction S over N end fraction close parenthesis",
     "core": false
   },
   {
@@ -4040,6 +4488,7 @@ export const mathEquations = [
     "unicodemath": "σ = F/A",
     "domain": "Engineering & Computing",
     "description": "Normal force per unit cross-sectional area",
+    "dictationString": "sigma equals begin fraction F over A end fraction",
     "core": false
   },
   {
@@ -4049,6 +4498,7 @@ export const mathEquations = [
     "unicodemath": "ε = δ/L",
     "domain": "Engineering & Computing",
     "description": "Ratio of axial deformation delta to original length L",
+    "dictationString": "epsilon equals begin fraction delta over L end fraction",
     "core": false
   },
   {
@@ -4058,6 +4508,7 @@ export const mathEquations = [
     "unicodemath": "E = σ/ε",
     "domain": "Engineering & Computing",
     "description": "Stress is proportional to strain within the elastic limit; E is Young's modulus",
+    "dictationString": "E equals begin fraction sigma over epsilon end fraction",
     "core": false
   },
   {
@@ -4067,6 +4518,7 @@ export const mathEquations = [
     "unicodemath": "τ = V/A",
     "domain": "Engineering & Computing",
     "description": "Average shear force per unit area on a cross-section",
+    "dictationString": "tau equals begin fraction V over A end fraction",
     "core": false
   },
   {
@@ -4076,6 +4528,7 @@ export const mathEquations = [
     "unicodemath": "G = τ/γ",
     "domain": "Engineering & Computing",
     "description": "Ratio of shear stress to shear strain in an elastic material",
+    "dictationString": "G equals begin fraction tau over gamma end fraction",
     "core": false
   },
   {
@@ -4085,6 +4538,7 @@ export const mathEquations = [
     "unicodemath": "ν = -ε_lat/ε_ax",
     "domain": "Engineering & Computing",
     "description": "Negative ratio of lateral strain to axial strain under uniaxial loading",
+    "dictationString": "nu equals negative begin fraction epsilon sub lateral over epsilon sub axial end fraction",
     "core": false
   },
   {
@@ -4094,6 +4548,7 @@ export const mathEquations = [
     "unicodemath": "σ = Mc/I",
     "domain": "Engineering & Computing",
     "description": "Normal stress at distance c from neutral axis due to bending moment M",
+    "dictationString": "sigma equals begin fraction M c over I end fraction",
     "core": false
   },
   {
@@ -4103,6 +4558,7 @@ export const mathEquations = [
     "unicodemath": "τ = Tc/J",
     "domain": "Engineering & Computing",
     "description": "Shear stress at distance c from center due to applied torque T and polar moment J",
+    "dictationString": "tau equals begin fraction T c over J end fraction",
     "core": false
   },
   {
@@ -4112,6 +4568,7 @@ export const mathEquations = [
     "unicodemath": "σ_T = E α Δ T",
     "domain": "Engineering & Computing",
     "description": "Stress in a constrained member due to a temperature change of Delta T",
+    "dictationString": "sigma sub T equals E times alpha times delta T",
     "core": false
   },
   {
@@ -4121,6 +4578,7 @@ export const mathEquations = [
     "unicodemath": "x_(n+1) = x_n - f(x_n)/f'(x_n)",
     "domain": "Engineering & Computing",
     "description": "Iterative root-finding using tangent line approximation",
+    "dictationString": "x sub n plus one equals x sub n minus begin fraction f of x sub n over f prime of x sub n end fraction",
     "core": false
   },
   {
@@ -4130,6 +4588,7 @@ export const mathEquations = [
     "unicodemath": "∫_a^b f(x)dx ≈ h/2[f(x_0) + 2f(x_1) + ⋯ + 2f(x_(n-1)) + f(x_n)]",
     "domain": "Engineering & Computing",
     "description": "Numerical integration approximation with n equal subintervals of width h",
+    "dictationString": "the integral of f d x is approximately begin fraction h over two end fraction times open bracket f of x sub zero plus two f of x sub one plus ... plus f of x sub n close bracket",
     "core": false
   },
   {
@@ -4139,6 +4598,7 @@ export const mathEquations = [
     "unicodemath": "∫_a^b f(x)dx ≈ h/3[f(x_0) + 4f(x_1) + 2f(x_2) + ⋯ + 4f(x_(n-1)) + f(x_n)]",
     "domain": "Engineering & Computing",
     "description": "Numerical integration using parabolic arcs; n must be even",
+    "dictationString": "the integral of f d x is approximately begin fraction h over three end fraction times open bracket f of x sub zero plus four f of x sub one plus two f of x sub two plus ... plus f of x sub n close bracket",
     "core": false
   },
   {
@@ -4148,6 +4608,7 @@ export const mathEquations = [
     "unicodemath": "y_(n+1) = y_n + h f(x_n, y_n)",
     "domain": "Engineering & Computing",
     "description": "First-order numerical solver for ODEs with step size h",
+    "dictationString": "y sub n plus one equals y sub n plus h times f of x sub n comma y sub n",
     "core": false
   },
   {
@@ -4157,6 +4618,7 @@ export const mathEquations = [
     "unicodemath": "f'(x) ≈ (f(x+h)-f(x))/h",
     "domain": "Engineering & Computing",
     "description": "First-order approximation of a derivative using a forward step of size h",
+    "dictationString": "f prime of x is approximately begin fraction f of open parenthesis x plus h close parenthesis minus f of x over h end fraction",
     "core": false
   },
   {
@@ -4166,6 +4628,7 @@ export const mathEquations = [
     "unicodemath": "f'(x) ≈ (f(x+h)-f(x-h))/2h",
     "domain": "Engineering & Computing",
     "description": "Second-order approximation of a derivative using a symmetric step",
+    "dictationString": "f prime of x is approximately begin fraction f of open parenthesis x plus h close parenthesis minus f of open parenthesis x minus h close parenthesis over two h end fraction",
     "core": false
   },
   {
@@ -4175,6 +4638,7 @@ export const mathEquations = [
     "unicodemath": "y_(n+1) = y_n + h/6(k_1 + 2k_2 + 2k_3 + k_4)",
     "domain": "Engineering & Computing",
     "description": "Fourth-order numerical ODE integrator update step",
+    "dictationString": "y sub n plus one equals y sub n plus begin fraction h over six end fraction times open parenthesis k sub one plus two k sub two plus two k sub three plus k sub four close parenthesis",
     "core": false
   },
   {
@@ -4184,6 +4648,7 @@ export const mathEquations = [
     "unicodemath": "(■(□&□@□&□))",
     "domain": "Building Blocks",
     "description": "2 by 2 matrix with placeholder entries",
+    "dictationString": "begin 2 by 2 matrix row 1 placeholder 1 placeholder 2 row 2 placeholder 3 placeholder 4 end matrix",
     "core": false
   },
   {
@@ -4193,6 +4658,7 @@ export const mathEquations = [
     "unicodemath": "(■(□&□&□@□&□&□@□&□&□))",
     "domain": "Building Blocks",
     "description": "3 by 3 matrix with placeholder entries",
+    "dictationString": "begin 3 by 3 matrix row 1 placeholder 1 placeholder 2 placeholder 3 row 2 placeholder 4 placeholder 5 placeholder 6 row 3 placeholder 7 placeholder 8 placeholder 9 end matrix",
     "core": false
   },
   {
@@ -4202,6 +4668,7 @@ export const mathEquations = [
     "unicodemath": "[■(□&□@□&□)]",
     "domain": "Building Blocks",
     "description": "2 by 2 bracket matrix with placeholder entries",
+    "dictationString": "begin 2 by 2 bracket matrix row 1 placeholder 1 placeholder 2 row 2 placeholder 3 placeholder 4 end matrix",
     "core": false
   },
   {
@@ -4211,6 +4678,7 @@ export const mathEquations = [
     "unicodemath": "[■(□&□&□@□&□&□@□&□&□)]",
     "domain": "Building Blocks",
     "description": "3 by 3 bracket matrix with placeholder entries",
+    "dictationString": "begin 3 by 3 bracket matrix row 1 placeholder 1 placeholder 2 placeholder 3 row 2 placeholder 4 placeholder 5 placeholder 6 row 3 placeholder 7 placeholder 8 placeholder 9 end matrix",
     "core": false
   },
   {
@@ -4220,6 +4688,7 @@ export const mathEquations = [
     "unicodemath": "|■(□&□@□&□)|",
     "domain": "Building Blocks",
     "description": "2 by 2 determinant (vertical bar) matrix with placeholder entries",
+    "dictationString": "begin 2 by 2 determinant matrix row 1 placeholder 1 placeholder 2 row 2 placeholder 3 placeholder 4 end matrix",
     "core": false
   },
   {
@@ -4229,6 +4698,7 @@ export const mathEquations = [
     "unicodemath": "|■(□&□&□@□&□&□@□&□&□)|",
     "domain": "Building Blocks",
     "description": "3 by 3 determinant (vertical bar) matrix with placeholder entries",
+    "dictationString": "begin 3 by 3 determinant matrix row 1 placeholder 1 placeholder 2 placeholder 3 row 2 placeholder 4 placeholder 5 placeholder 6 row 3 placeholder 7 placeholder 8 placeholder 9 end matrix",
     "core": false
   }
 ];
