@@ -11,6 +11,7 @@ import "./EditorToolbar.css";
 const SYMBOL_ITEMS = [
   {
     id: "superscript",
+    accessKey: "0",
     label: "Superscript",
     display: <>x<sup>n</sup></>,
     mathml: `<math><msup><mi>x</mi><mi>&#x25A1;</mi></msup></math>`,
@@ -18,6 +19,7 @@ const SYMBOL_ITEMS = [
   },
   {
     id: "subscript",
+    accessKey: "1",
     label: "Subscript",
     display: <>x<sub>n</sub></>,
     mathml: `<math><msub><mi>x</mi><mi>&#x25A1;</mi></msub></math>`,
@@ -25,6 +27,7 @@ const SYMBOL_ITEMS = [
   },
   {
     id: "fraction",
+    accessKey: "2",
     label: "Fraction",
     display: <span className="toolbar-fraction"><span>x</span><span>y</span></span>,
     mathml: `<math><mfrac><mi>&#x25A1;</mi><mi>&#x25A1;</mi></mfrac></math>`,
@@ -32,6 +35,7 @@ const SYMBOL_ITEMS = [
   },
   {
     id: "sqrt",
+    accessKey: "3",
     label: "Square root",
     display: <>&#x221A;x</>,
     mathml: `<math><msqrt><mi>&#x25A1;</mi></msqrt></math>`,
@@ -39,36 +43,42 @@ const SYMBOL_ITEMS = [
   },
   {
     id: "sum",
+    accessKey: "4",
     label: "Summation",
     display: <>&#x2211;</>,
     symbol: "∑",
   },
   {
     id: "integral",
+    accessKey: "5",
     label: "Integral",
     display: <>&#x222B;</>,
     symbol: "∫",
   },
   {
     id: "pi",
+    accessKey: "6",
     label: "Pi",
     display: <>&#x03C0;</>,
     symbol: "π",
   },
   {
     id: "infinity",
+    accessKey: "7",
     label: "Infinity",
     display: <>&#x221E;</>,
     symbol: "∞",
   },
   {
     id: "leq",
+    accessKey: "8",
     label: "Less than or equal to",
     display: <>&#x2264;</>,
     symbol: "≤",
   },
   {
     id: "geq",
+    accessKey: "9",
     label: "Greater than or equal to",
     display: <>&#x2265;</>,
     symbol: "≥",
@@ -88,17 +98,30 @@ export function EditorToolbar({ editorRef, listRef, onInsert, onDictate, onRetur
   const wrapperRef = useRef(null);
   // Keep a ref so the native listener always sees the latest callback without re-registering.
   const onReturnToListRef = useRef(onReturnToList);
+  const handleItemClickRef = useRef(null);
   useEffect(() => { onReturnToListRef.current = onReturnToList; });
 
   useEffect(() => {
     // window capture fires before tabster's document capture listener,
     // which is what Fluent UI uses to move Tab focus out of the toolbar.
     const handler = (e) => {
-      if (e.key !== "Tab") return;
       if (!wrapperRef.current?.contains(document.activeElement)) return;
-      e.preventDefault();
-      e.stopPropagation();
-      onReturnToListRef.current ? onReturnToListRef.current() : editorRef.current?.focus();
+
+      if (e.key === "Tab") {
+        e.preventDefault();
+        e.stopPropagation();
+        onReturnToListRef.current ? onReturnToListRef.current() : editorRef.current?.focus();
+        return;
+      }
+
+      if (/^[0-9]$/.test(e.key) && !e.ctrlKey && !e.altKey && !e.metaKey) {
+        const item = SYMBOL_ITEMS.find(s => s.accessKey === e.key);
+        if (item) {
+          e.preventDefault();
+          e.stopPropagation();
+          handleItemClickRef.current?.(item);
+        }
+      }
     };
     window.addEventListener("keydown", handler, { capture: true });
     return () => window.removeEventListener("keydown", handler, { capture: true });
@@ -113,6 +136,7 @@ export function EditorToolbar({ editorRef, listRef, onInsert, onDictate, onRetur
     }
     editorRef.current?.focus();
   }
+  handleItemClickRef.current = handleItemClick;
 
   function handleEscapeKeyDown(e) {
     if (e.key === "Escape") {
