@@ -91,18 +91,17 @@ export function EditorToolbar({ editorRef, listRef, onInsert, onDictate, onRetur
   useEffect(() => { onReturnToListRef.current = onReturnToList; });
 
   useEffect(() => {
-    const el = wrapperRef.current;
-    if (!el) return;
-    // Native bubble-phase listener beats document-level tabster/Fluent Tab handling.
-    // stopPropagation prevents Fluent from moving focus out of the dropdown.
+    // window capture fires before tabster's document capture listener,
+    // which is what Fluent UI uses to move Tab focus out of the toolbar.
     const handler = (e) => {
       if (e.key !== "Tab") return;
+      if (!wrapperRef.current?.contains(document.activeElement)) return;
       e.preventDefault();
       e.stopPropagation();
       onReturnToListRef.current ? onReturnToListRef.current() : editorRef.current?.focus();
     };
-    el.addEventListener("keydown", handler);
-    return () => el.removeEventListener("keydown", handler);
+    window.addEventListener("keydown", handler, { capture: true });
+    return () => window.removeEventListener("keydown", handler, { capture: true });
   }, [editorRef]);
 
   function handleItemClick(item) {
