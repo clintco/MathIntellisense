@@ -1,3 +1,4 @@
+import { useRef, useEffect } from "react";
 import {
   Toolbar,
   ToolbarButton,
@@ -84,6 +85,26 @@ function parseMathML(mathmlString) {
 }
 
 export function EditorToolbar({ editorRef, listRef, onInsert, onDictate, onReturnToList }) {
+  const wrapperRef = useRef(null);
+  // Keep a ref so the native listener always sees the latest callback without re-registering.
+  const onReturnToListRef = useRef(onReturnToList);
+  useEffect(() => { onReturnToListRef.current = onReturnToList; });
+
+  useEffect(() => {
+    const el = wrapperRef.current;
+    if (!el) return;
+    // Native bubble-phase listener beats document-level tabster/Fluent Tab handling.
+    // stopPropagation prevents Fluent from moving focus out of the dropdown.
+    const handler = (e) => {
+      if (e.key !== "Tab") return;
+      e.preventDefault();
+      e.stopPropagation();
+      onReturnToListRef.current ? onReturnToListRef.current() : editorRef.current?.focus();
+    };
+    el.addEventListener("keydown", handler);
+    return () => el.removeEventListener("keydown", handler);
+  }, [editorRef]);
+
   function handleItemClick(item) {
     if (item.symbol) {
       onInsert({ type: "symbol", symbol: item.symbol });
@@ -94,43 +115,42 @@ export function EditorToolbar({ editorRef, listRef, onInsert, onDictate, onRetur
     editorRef.current?.focus();
   }
 
-  function handleToolbarKeyDown(e) {
-    if (e.key === "Tab" && !e.shiftKey) {
-      e.preventDefault();
-      onReturnToList ? onReturnToList() : editorRef.current?.focus();
-    } else if (e.key === "Escape") {
+  function handleEscapeKeyDown(e) {
+    if (e.key === "Escape") {
       e.preventDefault();
       editorRef.current?.focus();
     }
   }
 
   return (
-    <Toolbar
-      className="editor-toolbar"
-      aria-label="Math symbols"
-      size="small"
-      onKeyDownCapture={handleToolbarKeyDown}
-    >
-      <Tooltip content="Dictate" relationship="label" showDelay={300}>
-        <ToolbarButton
-          id="toolbar-dictate-btn"
-          className="toolbar-btn--dictate"
-          icon={<MicRegular />}
-          onMouseDown={e => { e.preventDefault(); onDictate?.(); }}
-          onClick={() => onDictate?.()}
-        />
-      </Tooltip>
-
-      {SYMBOL_ITEMS.map(item => (
-        <Tooltip key={item.id} content={item.label} relationship="label" showDelay={300}>
+    <div ref={wrapperRef}>
+      <Toolbar
+        className="editor-toolbar"
+        aria-label="Math symbols"
+        size="small"
+        onKeyDownCapture={handleEscapeKeyDown}
+      >
+        <Tooltip content="Dictate" relationship="label" showDelay={300}>
           <ToolbarButton
-            className="toolbar-btn--symbol"
-            icon={<span aria-hidden="true" className="toolbar-symbol">{item.display}</span>}
-            onMouseDown={e => { e.preventDefault(); handleItemClick(item); }}
-            onClick={() => handleItemClick(item)}
+            id="toolbar-dictate-btn"
+            className="toolbar-btn--dictate"
+            icon={<MicRegular />}
+            onMouseDown={e => { e.preventDefault(); onDictate?.(); }}
+            onClick={() => onDictate?.()}
           />
         </Tooltip>
-      ))}
-    </Toolbar>
+
+        {SYMBOL_ITEMS.map(item => (
+          <Tooltip key={item.id} content={item.label} relationship="label" showDelay={300}>
+            <ToolbarButton
+              className="toolbar-btn--symbol"
+              icon={<span aria-hidden="true" className="toolbar-symbol">{item.display}</span>}
+              onMouseDown={e => { e.preventDefault(); handleItemClick(item); }}
+              onClick={() => handleItemClick(item)}
+            />
+          </Tooltip>
+        ))}
+      </Toolbar>
+    </div>
   );
 }

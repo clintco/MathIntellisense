@@ -149,7 +149,7 @@ export function Editor({ onChange }) {
       setHideActiveDescendant(false);
     }
 
-    if (e.key === "Tab" && e.shiftKey && isOpen) {
+    if (e.key === "Tab" && isOpen) {
       e.preventDefault();
       setSelectedIndex(-1);
       document.getElementById("toolbar-dictate-btn")?.focus();

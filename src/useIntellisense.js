@@ -196,7 +196,7 @@ export function useIntellisense() {
         return true;
       }
     }
-    if (e.key === "Enter" || e.key === "Tab") {
+    if (e.key === "Enter") {
       e.preventDefault();
       const idx = selectedIndex >= 0 ? selectedIndex : 0;
       onAccept(suggestions[idx]);
