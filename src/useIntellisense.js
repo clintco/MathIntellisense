@@ -40,6 +40,7 @@ export function useIntellisense() {
 
   // Saved parent list for going back up from a category drill-in
   const prevSuggestionsRef = useRef([]);
+  const prevSelectedIndexRef = useRef(-1);
 
   const reset = useCallback(() => {
     setSuggestions([]);
@@ -48,13 +49,16 @@ export function useIntellisense() {
     setMode("search");
     setActiveCategory(null);
     prevSuggestionsRef.current = [];
+    prevSelectedIndexRef.current = -1;
   }, []);
 
   const goBack = useCallback(() => {
     if (prevSuggestionsRef.current.length > 0) {
       setSuggestions(prevSuggestionsRef.current);
       prevSuggestionsRef.current = [];
-      setSelectedIndex(-1);
+      const idx = prevSelectedIndexRef.current;
+      prevSelectedIndexRef.current = -1;
+      setSelectedIndex(idx);
       setMode("search");
       setActiveCategory(null);
     } else {
@@ -129,6 +133,7 @@ export function useIntellisense() {
         ? equationsByDomain[item.category]
         : getSymbolsByCategory(item.category).map(s => ({ type: "symbol", ...s }));
       prevSuggestionsRef.current = suggestions;
+      prevSelectedIndexRef.current = suggestions.indexOf(item);
       setMode("category");
       setActiveCategory(item.category);
       setSuggestions(items);
