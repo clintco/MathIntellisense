@@ -48,7 +48,7 @@ export function Editor({ onChange }) {
   const triggerRef = useRef(null); // { node: TextNode, offset: number } of the \ trigger
 
   const is = useIntellisense();
-  const { suggestions, selectedIndex, setSelectedIndex, isOpen, mode, activeCategory, reset: resetIS } = is;
+  const { suggestions, selectedIndex, setSelectedIndex, isOpen, mode, activeCategory, reset: resetIS, goBack } = is;
   const [hideActiveDescendant, setHideActiveDescendant] = useState(false);
 
   // Auto-focus on mount
@@ -290,6 +290,7 @@ export function Editor({ onChange }) {
         editorRef={divRef}
         onInsert={handleToolbarInsert}
         onReturnToList={handleReturnToList}
+        onGoBack={goBack}
       />
     </div>
   );

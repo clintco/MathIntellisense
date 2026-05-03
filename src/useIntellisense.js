@@ -233,6 +233,7 @@ export function useIntellisense() {
     acceptItem,
     onKeyDown,
     reset,
+    goBack,
     isOpen: suggestions.length > 0,
     mode,
     activeCategory,

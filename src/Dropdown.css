@@ -31,10 +31,14 @@
   background: var(--colorNeutralBackground3);
   border-bottom: 1px solid var(--colorNeutralStroke1);
   font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+.dropdown-breadcrumb:hover {
+  background: var(--colorNeutralBackground3Hover);
 }
 .breadcrumb-back {
   color: var(--colorNeutralForeground3);
-  cursor: default;
 }
 .breadcrumb-cat {
   color: var(--colorBrandForeground1);

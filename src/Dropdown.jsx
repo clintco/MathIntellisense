@@ -15,7 +15,7 @@ function HighlightedLabel({ text, query }) {
   );
 }
 
-export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, position, mode, activeCategory, query, unit = "symbols", editorRef, onInsert, onDictate, onReturnToList }) {
+export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, position, mode, activeCategory, query, unit = "symbols", editorRef, onInsert, onDictate, onReturnToList, onGoBack }) {
   const listRef = useRef(null);
 
   useEffect(() => {
@@ -35,7 +35,13 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
       </div>
 
       {mode === "category" && activeCategory && (
-        <div className="dropdown-breadcrumb" aria-hidden="true">
+        <div
+          className="dropdown-breadcrumb"
+          role="button"
+          tabIndex={-1}
+          aria-label={`Back to list, currently in ${activeCategory}`}
+          onMouseDown={(e) => { e.preventDefault(); onGoBack?.(); }}
+        >
           <span className="breadcrumb-back">←</span>
           <span className="breadcrumb-cat">{activeCategory}</span>
           <span className="breadcrumb-count">{suggestions.length}</span>
