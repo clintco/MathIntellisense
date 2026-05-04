@@ -167,6 +167,7 @@ function sharedStyles(bmHeight) {
       margin: 32px 0 10px;
       padding-top: 8px;
       border-top: 1px solid var(--border);
+      scroll-margin-top: calc(var(--bm-h) + 8px);
     }
     h1:first-of-type { border-top: none; }
 
