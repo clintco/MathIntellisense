@@ -19,9 +19,18 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
   const listRef = useRef(null);
 
   useEffect(() => {
-    if (!listRef.current) return;
+    if (!listRef.current || selectedIndex < 0) return;
     const items = listRef.current.querySelectorAll("[data-item]");
-    items[selectedIndex]?.scrollIntoView({ block: "nearest" });
+    const item = items[selectedIndex];
+    if (!item) return;
+    const list = listRef.current;
+    const listRect = list.getBoundingClientRect();
+    const itemRect = item.getBoundingClientRect();
+    if (itemRect.top < listRect.top) {
+      list.scrollTop -= listRect.top - itemRect.top;
+    } else if (itemRect.bottom > listRect.bottom) {
+      list.scrollTop += itemRect.bottom - listRect.bottom;
+    }
   }, [selectedIndex, mode]);
 
   if (!suggestions.length) {
