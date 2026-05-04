@@ -22,7 +22,7 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
     if (!listRef.current) return;
     const items = listRef.current.querySelectorAll("[data-item]");
     items[selectedIndex]?.scrollIntoView({ block: "nearest" });
-  }, [selectedIndex]);
+  }, [selectedIndex, mode]);
 
   if (!suggestions.length) {
     return <ul id="math-symbol-menu" role="menu" aria-label="Math symbol suggestions" style={{ display: "none" }} />;
