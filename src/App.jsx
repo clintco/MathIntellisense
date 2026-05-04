@@ -12,6 +12,8 @@ export default function App() {
         <p className="app-subtitle">
           Type <kbd>\</kbd> followed by a symbol name, alias, or category to insert unicode math symbols
           &nbsp;·&nbsp; <a href="simple.html" style={{ color: "var(--colorBrandForeground1)" }}>Simple version →</a>
+          &nbsp;·&nbsp; <a href="reference.html#symbols" style={{ color: "var(--colorBrandForeground1)" }}>Symbols</a>
+          &nbsp;·&nbsp; <a href="reference.html#equations" style={{ color: "var(--colorBrandForeground1)" }}>Equations</a>
         </p>
       </header>
 
