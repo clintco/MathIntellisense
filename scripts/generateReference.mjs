@@ -1,7 +1,7 @@
 /**
  * generateReference.mjs
  *
- * Generates public/reference.html — a static reference page listing all
+ * Generates symbols.html and equations.html — static reference pages for
  * math symbols (by category) and equations (by domain).
  *
  * Usage:  node scripts/generateReference.mjs
@@ -14,7 +14,6 @@ import { mathSymbols } from "../src/mathSymbols.js";
 import { mathEquations } from "../src/mathEquations.js";
 
 const __dir = dirname(fileURLToPath(import.meta.url));
-const outPath = join(__dir, "../reference.html");
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 
@@ -54,107 +53,13 @@ for (const e of mathEquations) {
 const symCategories = [...symbolsByCategory.keys()].sort((a, b) => a.localeCompare(b));
 const eqDomains     = [...equationsByDomain.keys()].sort((a, b) => a.localeCompare(b));
 
-// ── Bookmarks bar ──────────────────────────────────────────────────────────
-
-function bookmarks() {
-  const symPills = symCategories
-    .map(c => `<a class="bm-pill" href="#sym-${slug(c)}">${esc(c)}</a>`)
-    .join("");
-  const eqPills = eqDomains
-    .map(d => `<a class="bm-pill bm-pill--eq" href="#eq-${slug(d)}">${esc(d)}</a>`)
-    .join("");
-  return `
-  <nav class="bookmarks" aria-label="Section bookmarks">
-    <div class="bm-row">
-      <a class="bm-section" href="#symbols">Symbols</a>
-      <div class="bm-pills">${symPills}</div>
-    </div>
-    <div class="bm-row">
-      <a class="bm-section" href="#equations">Equations</a>
-      <div class="bm-pills">${eqPills}</div>
-    </div>
-  </nav>`;
-}
-
-// ── Symbol tables ──────────────────────────────────────────────────────────
-
-function symbolSection(category) {
-  const items = symbolsByCategory.get(category);
-  const rows = items.map(s => {
-    const aliases = s.aliases.length
-      ? s.aliases.map(a => `<code>\\${esc(a)}</code>`).join(" ")
-      : "";
-    return `
-        <tr>
-          <td class="sym-char">${esc(s.symbol)}</td>
-          <td>${esc(s.name)}</td>
-          <td>${aliases}</td>
-          <td><code>\\${esc(s.code)}</code></td>
-          <td>${rank(s.rank)}</td>
-        </tr>`;
-  }).join("");
-
-  return `
-  <h1 id="sym-${slug(category)}">${esc(category)}</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Symbol</th>
-        <th>Symbol Name</th>
-        <th>Aliases</th>
-        <th>AutoCorrect</th>
-        <th>Rank</th>
-      </tr>
-    </thead>
-    <tbody>${rows}
-    </tbody>
-  </table>`;
-}
-
-// ── Equation tables ────────────────────────────────────────────────────────
-
-function equationSection(domain) {
-  const items = equationsByDomain.get(domain);
-  const rows = items.map(e => {
-    return `
-        <tr>
-          <td>${esc(e.name)}</td>
-          <td class="eq-aliases">${esc(e.aliases)}</td>
-          <td class="eq-math">${e.mathml}</td>
-          <td class="eq-unicode"><code>${esc(e.unicodemath)}</code></td>
-          <td class="eq-desc">${esc(e.description)}</td>
-        </tr>`;
-  }).join("");
-
-  return `
-  <h1 id="eq-${slug(domain)}">${esc(domain)}</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Aliases</th>
-        <th>MathML</th>
-        <th>UnicodeMath</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>${rows}
-    </tbody>
-  </table>`;
-}
-
-// ── Full page ──────────────────────────────────────────────────────────────
-
 const totalSymbols   = mathSymbols.length;
 const totalEquations = mathEquations.length;
 
-const html = `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Math Reference — Symbols &amp; Equations</title>
-  <style>
+// ── Shared styles ──────────────────────────────────────────────────────────
+
+function sharedStyles(bmHeight) {
+  return `
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -167,6 +72,7 @@ const html = `<!DOCTYPE html>
       --accent2:  #9ece6a;
       --code-bg:  #1a1a2e;
       --row-alt:  #252535;
+      --bm-h:     ${bmHeight}px;
     }
 
     body {
@@ -195,11 +101,10 @@ const html = `<!DOCTYPE html>
       color: var(--text);
     }
     .page-header .back { font-size: 13px; color: var(--muted); }
+    .page-header .other { font-size: 13px; color: var(--accent2); }
     .page-header .counts { font-size: 12px; color: var(--muted); margin-left: auto; }
 
     /* ── Bookmarks bar ── */
-    :root { --bm-h: 80px; --sec-h: 57px; }
-
     .bookmarks {
       position: sticky;
       top: 0;
@@ -207,9 +112,6 @@ const html = `<!DOCTYPE html>
       background: var(--surface);
       border-bottom: 1px solid var(--border);
       padding: 8px 32px;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
     }
     .bm-row {
       display: flex;
@@ -258,27 +160,6 @@ const html = `<!DOCTYPE html>
     /* ── Main content ── */
     main { padding: 0 32px 48px; }
 
-    .section-header {
-      position: sticky;
-      top: var(--bm-h);
-      z-index: 10;
-      background: var(--bg);
-      border-bottom: 2px solid var(--accent2);
-      padding: 16px 0 8px;
-      margin: 40px 0 0;
-    }
-    .section-header h2 {
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--accent2);
-    }
-    .section-header .section-count {
-      font-size: 13px;
-      color: var(--muted);
-      font-weight: 400;
-      margin-left: 12px;
-    }
-
     h1 {
       font-size: 16px;
       font-weight: 600;
@@ -307,7 +188,7 @@ const html = `<!DOCTYPE html>
       text-align: left;
       border-bottom: 1px solid var(--border);
       position: sticky;
-      top: calc(var(--bm-h) + var(--sec-h));
+      top: var(--bm-h);
       z-index: 5;
     }
     tbody tr:nth-child(even) { background: var(--row-alt); }
@@ -350,40 +231,166 @@ const html = `<!DOCTYPE html>
     @media (max-width: 800px) {
       main, .page-header, .bookmarks { padding-left: 16px; padding-right: 16px; }
       .eq-desc { max-width: 180px; }
-    }
+    }`;
+}
+
+// ── Symbol section ─────────────────────────────────────────────────────────
+
+function symbolSection(category) {
+  const items = symbolsByCategory.get(category);
+  const rows = items.map(s => {
+    const aliases = s.aliases.length
+      ? s.aliases.map(a => `<code>\\${esc(a)}</code>`).join(" ")
+      : "";
+    return `
+        <tr>
+          <td class="sym-char">${esc(s.symbol)}</td>
+          <td>${esc(s.name)}</td>
+          <td>${aliases}</td>
+          <td><code>\\${esc(s.code)}</code></td>
+          <td>${rank(s.rank)}</td>
+        </tr>`;
+  }).join("");
+
+  return `
+  <h1 id="sym-${slug(category)}">${esc(category)}</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Symbol</th>
+        <th>Symbol Name</th>
+        <th>Aliases</th>
+        <th>AutoCorrect</th>
+        <th>Rank</th>
+      </tr>
+    </thead>
+    <tbody>${rows}
+    </tbody>
+  </table>`;
+}
+
+// ── Equation section ───────────────────────────────────────────────────────
+
+function equationSection(domain) {
+  const items = equationsByDomain.get(domain);
+  const rows = items.map(e => {
+    return `
+        <tr>
+          <td>${esc(e.name)}</td>
+          <td class="eq-aliases">${esc(e.aliases)}</td>
+          <td class="eq-math">${e.mathml}</td>
+          <td class="eq-unicode"><code>${esc(e.unicodemath)}</code></td>
+          <td class="eq-desc">${esc(e.description)}</td>
+        </tr>`;
+  }).join("");
+
+  return `
+  <h1 id="eq-${slug(domain)}">${esc(domain)}</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Aliases</th>
+        <th>MathML</th>
+        <th>UnicodeMath</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>${rows}
+    </tbody>
+  </table>`;
+}
+
+// ── symbols.html ───────────────────────────────────────────────────────────
+
+// Bookmarks bar height: 8px top + 28px row + 8px bottom = 44px
+const BM_H = 44;
+
+const symPills = symCategories
+  .map(c => `<a class="bm-pill" href="#sym-${slug(c)}">${esc(c)}</a>`)
+  .join("");
+
+const symbolsHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math Reference — Symbols</title>
+  <style>${sharedStyles(BM_H)}
   </style>
 </head>
 <body>
 
   <div class="page-header">
-    <h1>Math Reference</h1>
+    <h1>Symbols</h1>
     <a class="back" href="./">← Math Intellisense</a>
-    <span class="counts">${totalSymbols} symbols &nbsp;·&nbsp; ${totalEquations} equations</span>
+    <a class="other" href="equations.html">Equations →</a>
+    <span class="counts">${totalSymbols} symbols across ${symCategories.length} categories</span>
   </div>
 
-  ${bookmarks()}
+  <nav class="bookmarks" aria-label="Symbol categories">
+    <div class="bm-row">
+      <span class="bm-section">Categories</span>
+      <div class="bm-pills">${symPills}</div>
+    </div>
+  </nav>
 
   <main>
-
-    <div class="section-header">
-      <h2 id="symbols">Symbols <span class="section-count">${totalSymbols} entries across ${symCategories.length} categories</span></h2>
-    </div>
-
     ${symCategories.map(symbolSection).join("\n")}
-
-    <div class="section-header">
-      <h2 id="equations">Equations <span class="section-count">${totalEquations} entries across ${eqDomains.length} domains</span></h2>
-    </div>
-
-    ${eqDomains.map(equationSection).join("\n")}
-
   </main>
 
 </body>
 </html>
 `;
 
-writeFileSync(outPath, html, "utf8");
-console.log(`Written: ${outPath}`);
+// ── equations.html ─────────────────────────────────────────────────────────
+
+const eqPills = eqDomains
+  .map(d => `<a class="bm-pill bm-pill--eq" href="#eq-${slug(d)}">${esc(d)}</a>`)
+  .join("");
+
+const equationsHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math Reference — Equations</title>
+  <style>${sharedStyles(BM_H)}
+  </style>
+</head>
+<body>
+
+  <div class="page-header">
+    <h1>Equations</h1>
+    <a class="back" href="./">← Math Intellisense</a>
+    <a class="other" href="symbols.html">Symbols →</a>
+    <span class="counts">${totalEquations} equations across ${eqDomains.length} domains</span>
+  </div>
+
+  <nav class="bookmarks" aria-label="Equation domains">
+    <div class="bm-row">
+      <span class="bm-section">Domains</span>
+      <div class="bm-pills">${eqPills}</div>
+    </div>
+  </nav>
+
+  <main>
+    ${eqDomains.map(equationSection).join("\n")}
+  </main>
+
+</body>
+</html>
+`;
+
+// ── Write files ────────────────────────────────────────────────────────────
+
+const symOut = join(__dir, "../symbols.html");
+const eqOut  = join(__dir, "../equations.html");
+
+writeFileSync(symOut,  symbolsHtml,  "utf8");
+writeFileSync(eqOut,   equationsHtml, "utf8");
+
+console.log(`Written: ${symOut}`);
 console.log(`  ${totalSymbols} symbols in ${symCategories.length} categories`);
+console.log(`Written: ${eqOut}`);
 console.log(`  ${totalEquations} equations in ${eqDomains.length} domains`);

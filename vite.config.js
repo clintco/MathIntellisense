@@ -10,7 +10,8 @@ export default defineConfig({
       input: {
         main:      resolve(__dirname, 'index.html'),
         simple:    resolve(__dirname, 'simple.html'),
-        reference: resolve(__dirname, 'reference.html'),
+        symbols:   resolve(__dirname, 'symbols.html'),
+        equations: resolve(__dirname, 'equations.html'),
       },
     },
   },
