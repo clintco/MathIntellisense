@@ -54,31 +54,24 @@ for (const e of mathEquations) {
 const symCategories = [...symbolsByCategory.keys()].sort((a, b) => a.localeCompare(b));
 const eqDomains     = [...equationsByDomain.keys()].sort((a, b) => a.localeCompare(b));
 
-// ── TOC ────────────────────────────────────────────────────────────────────
+// ── Bookmarks bar ──────────────────────────────────────────────────────────
 
-function toc() {
-  const symLinks = symCategories
-    .map(c => `<li><a href="#sym-${slug(c)}">${esc(c)}</a> <span class="toc-count">${symbolsByCategory.get(c).length}</span></li>`)
-    .join("\n          ");
-  const eqLinks = eqDomains
-    .map(d => `<li><a href="#eq-${slug(d)}">${esc(d)}</a> <span class="toc-count">${equationsByDomain.get(d).length}</span></li>`)
-    .join("\n          ");
+function bookmarks() {
+  const symPills = symCategories
+    .map(c => `<a class="bm-pill" href="#sym-${slug(c)}">${esc(c)}</a>`)
+    .join("");
+  const eqPills = eqDomains
+    .map(d => `<a class="bm-pill bm-pill--eq" href="#eq-${slug(d)}">${esc(d)}</a>`)
+    .join("");
   return `
-  <nav class="toc" aria-label="Table of contents">
-    <h2>Contents</h2>
-    <div class="toc-cols">
-      <div class="toc-group">
-        <a class="toc-section-link" href="#symbols">Symbols</a>
-        <ul>
-          ${symLinks}
-        </ul>
-      </div>
-      <div class="toc-group">
-        <a class="toc-section-link" href="#equations">Equations</a>
-        <ul>
-          ${eqLinks}
-        </ul>
-      </div>
+  <nav class="bookmarks" aria-label="Section bookmarks">
+    <div class="bm-row">
+      <a class="bm-section" href="#symbols">Symbols</a>
+      <div class="bm-pills">${symPills}</div>
+    </div>
+    <div class="bm-row">
+      <a class="bm-section" href="#equations">Equations</a>
+      <div class="bm-pills">${eqPills}</div>
     </div>
   </nav>`;
 }
@@ -204,46 +197,62 @@ const html = `<!DOCTYPE html>
     .page-header .back { font-size: 13px; color: var(--muted); }
     .page-header .counts { font-size: 12px; color: var(--muted); margin-left: auto; }
 
-    /* ── TOC ── */
-    .toc {
+    /* ── Bookmarks bar ── */
+    :root { --bm-h: 80px; --sec-h: 57px; }
+
+    .bookmarks {
+      position: sticky;
+      top: 0;
+      z-index: 20;
       background: var(--surface);
       border-bottom: 1px solid var(--border);
-      padding: 24px 32px;
-    }
-    .toc h2 {
-      font-size: 13px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--muted);
-      margin-bottom: 16px;
-    }
-    .toc-cols {
+      padding: 8px 32px;
       display: flex;
-      gap: 48px;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 5px;
     }
-    .toc-group { min-width: 220px; }
-    .toc-section-link {
-      font-size: 13px;
-      font-weight: 600;
+    .bm-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 28px;
+    }
+    .bm-section {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
       color: var(--accent2);
-      display: block;
-      margin-bottom: 8px;
+      white-space: nowrap;
+      min-width: 70px;
+      text-decoration: none;
     }
-    .toc ul {
-      list-style: none;
-      columns: 2;
-      column-gap: 24px;
+    .bm-section:hover { text-decoration: underline; }
+    .bm-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
     }
-    .toc li {
-      padding: 2px 0;
-      break-inside: avoid;
-    }
-    .toc a { font-size: 13px; }
-    .toc-count {
+    .bm-pill {
       font-size: 11px;
-      color: var(--muted);
+      color: var(--text);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1px 8px;
+      white-space: nowrap;
+      line-height: 18px;
+      text-decoration: none;
+    }
+    .bm-pill:hover {
+      background: var(--accent);
+      color: var(--bg);
+      border-color: var(--accent);
+      text-decoration: none;
+    }
+    .bm-pill--eq:hover {
+      background: var(--accent2);
+      border-color: var(--accent2);
     }
 
     /* ── Main content ── */
@@ -251,7 +260,7 @@ const html = `<!DOCTYPE html>
 
     .section-header {
       position: sticky;
-      top: 0;
+      top: var(--bm-h);
       z-index: 10;
       background: var(--bg);
       border-bottom: 2px solid var(--accent2);
@@ -298,7 +307,7 @@ const html = `<!DOCTYPE html>
       text-align: left;
       border-bottom: 1px solid var(--border);
       position: sticky;
-      top: 57px;
+      top: calc(var(--bm-h) + var(--sec-h));
       z-index: 5;
     }
     tbody tr:nth-child(even) { background: var(--row-alt); }
@@ -339,8 +348,7 @@ const html = `<!DOCTYPE html>
     .eq-desc { color: var(--muted); max-width: 300px; }
 
     @media (max-width: 800px) {
-      main, .page-header, .toc { padding-left: 16px; padding-right: 16px; }
-      .toc ul { columns: 1; }
+      main, .page-header, .bookmarks { padding-left: 16px; padding-right: 16px; }
       .eq-desc { max-width: 180px; }
     }
   </style>
@@ -353,7 +361,7 @@ const html = `<!DOCTYPE html>
     <span class="counts">${totalSymbols} symbols &nbsp;·&nbsp; ${totalEquations} equations</span>
   </div>
 
-  ${toc()}
+  ${bookmarks()}
 
   <main>
 

@@ -47,46 +47,62 @@
     .page-header .back { font-size: 13px; color: var(--muted); }
     .page-header .counts { font-size: 12px; color: var(--muted); margin-left: auto; }
 
-    /* ── TOC ── */
-    .toc {
+    /* ── Bookmarks bar ── */
+    :root { --bm-h: 80px; --sec-h: 57px; }
+
+    .bookmarks {
+      position: sticky;
+      top: 0;
+      z-index: 20;
       background: var(--surface);
       border-bottom: 1px solid var(--border);
-      padding: 24px 32px;
-    }
-    .toc h2 {
-      font-size: 13px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--muted);
-      margin-bottom: 16px;
-    }
-    .toc-cols {
+      padding: 8px 32px;
       display: flex;
-      gap: 48px;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 5px;
     }
-    .toc-group { min-width: 220px; }
-    .toc-section-link {
-      font-size: 13px;
-      font-weight: 600;
+    .bm-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 28px;
+    }
+    .bm-section {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
       color: var(--accent2);
-      display: block;
-      margin-bottom: 8px;
+      white-space: nowrap;
+      min-width: 70px;
+      text-decoration: none;
     }
-    .toc ul {
-      list-style: none;
-      columns: 2;
-      column-gap: 24px;
+    .bm-section:hover { text-decoration: underline; }
+    .bm-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
     }
-    .toc li {
-      padding: 2px 0;
-      break-inside: avoid;
-    }
-    .toc a { font-size: 13px; }
-    .toc-count {
+    .bm-pill {
       font-size: 11px;
-      color: var(--muted);
+      color: var(--text);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1px 8px;
+      white-space: nowrap;
+      line-height: 18px;
+      text-decoration: none;
+    }
+    .bm-pill:hover {
+      background: var(--accent);
+      color: var(--bg);
+      border-color: var(--accent);
+      text-decoration: none;
+    }
+    .bm-pill--eq:hover {
+      background: var(--accent2);
+      border-color: var(--accent2);
     }
 
     /* ── Main content ── */
@@ -94,7 +110,7 @@
 
     .section-header {
       position: sticky;
-      top: 0;
+      top: var(--bm-h);
       z-index: 10;
       background: var(--bg);
       border-bottom: 2px solid var(--accent2);
@@ -141,7 +157,7 @@
       text-align: left;
       border-bottom: 1px solid var(--border);
       position: sticky;
-      top: 57px;
+      top: calc(var(--bm-h) + var(--sec-h));
       z-index: 5;
     }
     tbody tr:nth-child(even) { background: var(--row-alt); }
@@ -182,8 +198,7 @@
     .eq-desc { color: var(--muted); max-width: 300px; }
 
     @media (max-width: 800px) {
-      main, .page-header, .toc { padding-left: 16px; padding-right: 16px; }
-      .toc ul { columns: 1; }
+      main, .page-header, .bookmarks { padding-left: 16px; padding-right: 16px; }
       .eq-desc { max-width: 180px; }
     }
   </style>
@@ -197,47 +212,14 @@
   </div>
 
   
-  <nav class="toc" aria-label="Table of contents">
-    <h2>Contents</h2>
-    <div class="toc-cols">
-      <div class="toc-group">
-        <a class="toc-section-link" href="#symbols">Symbols</a>
-        <ul>
-          <li><a href="#sym-advanced-operators">Advanced Operators</a> <span class="toc-count">110</span></li>
-          <li><a href="#sym-arrows">Arrows</a> <span class="toc-count">74</span></li>
-          <li><a href="#sym-basic-symbols-and-operations">Basic Symbols and Operations</a> <span class="toc-count">17</span></li>
-          <li><a href="#sym-calculus-and-analysis">Calculus and Analysis</a> <span class="toc-count">16</span></li>
-          <li><a href="#sym-chemistry-and-physics">Chemistry and Physics</a> <span class="toc-count">6</span></li>
-          <li><a href="#sym-common-mathematical-relationships">Common Mathematical Relationships</a> <span class="toc-count">12</span></li>
-          <li><a href="#sym-currency-symbols">Currency Symbols</a> <span class="toc-count">1</span></li>
-          <li><a href="#sym-geometry-and-vectors">Geometry and Vectors</a> <span class="toc-count">20</span></li>
-          <li><a href="#sym-greek-letters">Greek Letters</a> <span class="toc-count">54</span></li>
-          <li><a href="#sym-letter-like-symbols">Letter-Like Symbols</a> <span class="toc-count">25</span></li>
-          <li><a href="#sym-matrix-operations">Matrix Operations</a> <span class="toc-count">5</span></li>
-          <li><a href="#sym-miscellaneous-common-symbols">Miscellaneous Common Symbols</a> <span class="toc-count">7</span></li>
-          <li><a href="#sym-number-theory">Number Theory</a> <span class="toc-count">2</span></li>
-          <li><a href="#sym-sets-and-logic">Sets and Logic</a> <span class="toc-count">31</span></li>
-          <li><a href="#sym-special-sets">Special Sets</a> <span class="toc-count">7</span></li>
-          <li><a href="#sym-statistics-and-probability">Statistics and Probability</a> <span class="toc-count">3</span></li>
-        </ul>
-      </div>
-      <div class="toc-group">
-        <a class="toc-section-link" href="#equations">Equations</a>
-        <ul>
-          <li><a href="#eq-algebra-number-systems">Algebra &amp; Number Systems</a> <span class="toc-count">42</span></li>
-          <li><a href="#eq-biology-life-sciences">Biology &amp; Life Sciences</a> <span class="toc-count">4</span></li>
-          <li><a href="#eq-building-blocks">Building Blocks</a> <span class="toc-count">6</span></li>
-          <li><a href="#eq-calculus-analysis">Calculus &amp; Analysis</a> <span class="toc-count">66</span></li>
-          <li><a href="#eq-chemistry">Chemistry</a> <span class="toc-count">43</span></li>
-          <li><a href="#eq-discrete-math-logic">Discrete Math &amp; Logic</a> <span class="toc-count">31</span></li>
-          <li><a href="#eq-engineering-computing">Engineering &amp; Computing</a> <span class="toc-count">29</span></li>
-          <li><a href="#eq-finance-economics">Finance &amp; Economics</a> <span class="toc-count">24</span></li>
-          <li><a href="#eq-geometry-trigonometry">Geometry &amp; Trigonometry</a> <span class="toc-count">59</span></li>
-          <li><a href="#eq-linear-algebra-abstract-algebra">Linear Algebra &amp; Abstract Algebra</a> <span class="toc-count">15</span></li>
-          <li><a href="#eq-physics">Physics</a> <span class="toc-count">93</span></li>
-          <li><a href="#eq-probability-statistics-data-science">Probability, Statistics &amp; Data Science</a> <span class="toc-count">57</span></li>
-        </ul>
-      </div>
+  <nav class="bookmarks" aria-label="Section bookmarks">
+    <div class="bm-row">
+      <a class="bm-section" href="#symbols">Symbols</a>
+      <div class="bm-pills"><a class="bm-pill" href="#sym-advanced-operators">Advanced Operators</a><a class="bm-pill" href="#sym-arrows">Arrows</a><a class="bm-pill" href="#sym-basic-symbols-and-operations">Basic Symbols and Operations</a><a class="bm-pill" href="#sym-calculus-and-analysis">Calculus and Analysis</a><a class="bm-pill" href="#sym-chemistry-and-physics">Chemistry and Physics</a><a class="bm-pill" href="#sym-common-mathematical-relationships">Common Mathematical Relationships</a><a class="bm-pill" href="#sym-currency-symbols">Currency Symbols</a><a class="bm-pill" href="#sym-geometry-and-vectors">Geometry and Vectors</a><a class="bm-pill" href="#sym-greek-letters">Greek Letters</a><a class="bm-pill" href="#sym-letter-like-symbols">Letter-Like Symbols</a><a class="bm-pill" href="#sym-matrix-operations">Matrix Operations</a><a class="bm-pill" href="#sym-miscellaneous-common-symbols">Miscellaneous Common Symbols</a><a class="bm-pill" href="#sym-number-theory">Number Theory</a><a class="bm-pill" href="#sym-sets-and-logic">Sets and Logic</a><a class="bm-pill" href="#sym-special-sets">Special Sets</a><a class="bm-pill" href="#sym-statistics-and-probability">Statistics and Probability</a></div>
+    </div>
+    <div class="bm-row">
+      <a class="bm-section" href="#equations">Equations</a>
+      <div class="bm-pills"><a class="bm-pill bm-pill--eq" href="#eq-algebra-number-systems">Algebra &amp; Number Systems</a><a class="bm-pill bm-pill--eq" href="#eq-biology-life-sciences">Biology &amp; Life Sciences</a><a class="bm-pill bm-pill--eq" href="#eq-building-blocks">Building Blocks</a><a class="bm-pill bm-pill--eq" href="#eq-calculus-analysis">Calculus &amp; Analysis</a><a class="bm-pill bm-pill--eq" href="#eq-chemistry">Chemistry</a><a class="bm-pill bm-pill--eq" href="#eq-discrete-math-logic">Discrete Math &amp; Logic</a><a class="bm-pill bm-pill--eq" href="#eq-engineering-computing">Engineering &amp; Computing</a><a class="bm-pill bm-pill--eq" href="#eq-finance-economics">Finance &amp; Economics</a><a class="bm-pill bm-pill--eq" href="#eq-geometry-trigonometry">Geometry &amp; Trigonometry</a><a class="bm-pill bm-pill--eq" href="#eq-linear-algebra-abstract-algebra">Linear Algebra &amp; Abstract Algebra</a><a class="bm-pill bm-pill--eq" href="#eq-physics">Physics</a><a class="bm-pill bm-pill--eq" href="#eq-probability-statistics-data-science">Probability, Statistics &amp; Data Science</a></div>
     </div>
   </nav>
 
