@@ -102,6 +102,52 @@ const ACCENT = {
   vec:'\u20D7',
 };
 
+// ── Math italic ───────────────────────────────────────────────────────────
+// Single Latin letters in math context use Unicode Mathematical Italic.
+function toMathItalic(c) {
+  const code = c.codePointAt(0);
+  if (code >= 0x61 && code <= 0x7A) { // a–z
+    if (c === 'h') return 'ℎ'; // ℎ (Planck constant, special case)
+    return String.fromCodePoint(0x1D44E + (code - 0x61));
+  }
+  if (code >= 0x41 && code <= 0x5A) // A–Z
+    return String.fromCodePoint(0x1D434 + (code - 0x41));
+  return c;
+}
+
+// Maps regular Greek Unicode chars (output of GREEK map) to italic equivalents.
+const ITALIC_GREEK = {
+  'α':'\u{1D6FC}','β':'\u{1D6FD}','γ':'\u{1D6FE}','δ':'\u{1D6FF}',
+  'ε':'\u{1D700}','ζ':'\u{1D701}','η':'\u{1D702}','θ':'\u{1D703}',
+  'ι':'\u{1D704}','κ':'\u{1D705}','λ':'\u{1D706}','μ':'\u{1D707}',
+  'ν':'\u{1D708}','ξ':'\u{1D709}','π':'\u{1D70B}','ρ':'\u{1D70C}',
+  'σ':'\u{1D70E}','τ':'\u{1D70F}','υ':'\u{1D710}','φ':'\u{1D711}',
+  'χ':'\u{1D712}','ψ':'\u{1D713}','ω':'\u{1D714}',
+  // variant letters
+  'ϑ':'\u{1D717}','ϕ':'\u{1D719}','ϖ':'\u{1D71B}','ϱ':'\u{1D71A}','ς':'\u{1D70D}',
+  // uppercase
+  'Α':'\u{1D6E2}','Β':'\u{1D6E3}','Γ':'\u{1D6E4}','Δ':'\u{1D6E5}',
+  'Ε':'\u{1D6E6}','Ζ':'\u{1D6E7}','Η':'\u{1D6E8}','Θ':'\u{1D6E9}',
+  'Ι':'\u{1D6EA}','Κ':'\u{1D6EB}','Λ':'\u{1D6EC}','Μ':'\u{1D6ED}',
+  'Ν':'\u{1D6EE}','Ξ':'\u{1D6EF}','Π':'\u{1D6F1}','Ρ':'\u{1D6F2}',
+  'Σ':'\u{1D6F4}','Τ':'\u{1D6F5}','Υ':'\u{1D6F6}','Φ':'\u{1D6F7}',
+  'Χ':'\u{1D6F8}','Ψ':'\u{1D6F9}','Ω':'\u{1D6FA}',
+};
+
+// U+2061 FUNCTION APPLICATION — appended after function names (including their
+// subscripts) so a UnicodeMath engine can distinguish e.g. sin⁡θ from sinθ.
+const FUNC_APP = '⁡';
+const FUNC_NAMES = new Set([
+  'sin','cos','tan','cot','sec','csc',
+  'arcsin','arccos','arctan',
+  'sinh','cosh','tanh','coth',
+  'log','ln','exp',
+  'lim','limsup','liminf',
+  'max','min','sup','inf',
+  'det','dim','deg','gcd','lcm',
+  'ker','coker','hom','rank','tr','Pr','arg',
+]);
+
 // Matrix environment delimiters
 const MATRIX_DELIM = {
   matrix:     ['',''],
@@ -155,8 +201,9 @@ function tokenize(input) {
 // ── Parser ────────────────────────────────────────────────────────────────
 class Parser {
   constructor(tokens) {
-    this.toks = tokens;
-    this.pos  = 0;
+    this.toks     = tokens;
+    this.pos      = 0;
+    this.inTextMode = false; // true inside \text{}, \mathrm{} etc. — suppresses italic
   }
 
   peek()  { return this.toks[this.pos]; }
@@ -184,10 +231,14 @@ class Parser {
     return parts.join('');
   }
 
-  // True when the next token is a letter or digit (would extend a script arg)
+  // True when the next non-space token is a letter or digit.
+  // Peeks past space tokens so that "log_b x" inside a keepSpaces=false group
+  // still gets a separating space before x.
   nextIsAlnum() {
-    if (this.done()) return false;
-    const tok = this.peek();
+    let pos = this.pos;
+    while (pos < this.toks.length && this.toks[pos].t === 'space') pos++;
+    if (pos >= this.toks.length) return false;
+    const tok = this.toks[pos];
     return tok.t === 'char' && /^[\p{L}\p{N}]$/u.test(tok.v);
   }
 
@@ -199,6 +250,7 @@ class Parser {
     const tok = this.next();
     let base = this.convertToken(tok);
     let hadScript = false;
+    const isFuncName = tok.t === 'cmd' && FUNC_NAMES.has(tok.v);
 
     // Attach any following ^ or _ scripts
     while (!this.done()) {
@@ -217,10 +269,16 @@ class Parser {
         break;
       }
     }
-    // If the atom ended with a script and the next token is alphanumeric,
-    // add a separating space so it isn't consumed as part of the script
-    // argument when rendered by a UnicodeMath engine.
-    if (hadScript && this.nextIsAlnum()) base += ' ';
+    if (isFuncName) {
+      // U+2061 FUNCTION APPLICATION after the full function expression (including
+      // subscripts like log_b). This lets a UnicodeMath engine distinguish sin⁡θ
+      // from the identifier sinθ, and log_b⁡(xy) from a subscript ambiguity.
+      base += FUNC_APP;
+    } else if (hadScript && this.nextIsAlnum()) {
+      // For non-function subscripts (e.g. x_1 y), add a space so the next
+      // alphanumeric isn't absorbed into the subscript by the renderer.
+      base += ' ';
+    }
     return base;
   }
 
@@ -292,14 +350,16 @@ class Parser {
         if (!this.done() && this.peek().t === 'char' && this.peek().v === '}') this.next();
         return inner;
       }
+      // Italicise single letters in math context (not inside \text{}/\mathrm{})
+      if (!this.inTextMode && /^[a-zA-Z]$/.test(tok.v)) return toMathItalic(tok.v);
       return tok.v;
     }
 
     // cmd token
     const cmd = tok.v;
 
-    // ── Greek
-    if (GREEK[cmd]) return GREEK[cmd];
+    // ── Greek (always italic — Greek letters in math are always slanted)
+    if (GREEK[cmd]) { const g = GREEK[cmd]; return ITALIC_GREEK[g] ?? g; }
 
     // ── Simple substitutions (null means "handle specially")
     if (CMD[cmd] !== undefined && CMD[cmd] !== null) return CMD[cmd];
@@ -338,9 +398,13 @@ class Parser {
       return '\u2003(mod\u2009' + arg + ')';
     }
 
-    // \text{...} / \mbox{...} / \mathrm{...} — keep content with spaces preserved
+    // \text{...} / \mbox{...} / \mathrm{...} — keep content, suppress italic
     if (['text','mbox','mathrm','mathup'].includes(cmd)) {
-      return this.parseTextArg();
+      const prev = this.inTextMode;
+      this.inTextMode = true;
+      const result = this.parseTextArg();
+      this.inTextMode = prev;
+      return result;
     }
 
     // \mathbf{...} / \boldsymbol{...} — keep content (bold hint only)
@@ -581,7 +645,19 @@ function toDoubleStruck(s) {
 }
 
 // ── Post-processing ────────────────────────────────────────────────────────
+// Longest names first so "arcsin" matches before "sin", "limsup" before "sup".
+const _FN_RE = new RegExp(
+  '([\\p{L}\\p{N}])(arcsin|arccos|arctan|limsup|liminf|sinh|cosh|tanh|coth' +
+  '|sin|cos|tan|cot|sec|csc|log|ln|exp|lim|max|min|sup|inf' +
+  '|det|dim|deg|gcd|lcm|ker|coker|hom|rank|tr|arg)',
+  'gu'
+);
+
 function postProcess(s) {
+  // Insert a space before function names immediately preceded by an alphanumeric
+  // character so the renderer sees them as separate tokens. Handles cases like
+  // "𝑖sin⁡𝜃" → "𝑖 sin⁡𝜃" where no LaTeX space existed between i and \sin.
+  s = s.replace(_FN_RE, '$1 $2');
   return s.replace(/  +/g, ' ').trim();
 }
 
