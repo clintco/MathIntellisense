@@ -18,7 +18,7 @@ const require = createRequire(import.meta.url);
 const katex = require("katex");
 
 const __dir = dirname(fileURLToPath(import.meta.url));
-const CSV_PATH  = "C:\\Users\\clintc\\OneDrive - Microsoft\\MathIntellisense\\Math_Templates_V2.txt";
+const CSV_PATH  = resolve(__dir, "../Math_Templates_V2.txt");
 const OUT_PATH  = resolve(__dir, "../src/mathEquations.js");
 
 // ---------------------------------------------------------------------------
@@ -116,7 +116,7 @@ for (const row of data) {
 
   const core       = isCoreEquation({ name, domain });
   const unicodemath = latexToUnicodeMath(preprocessLatex(latexUnescaped));
-  equations.push({ name, aliases, mathml, unicodemath, domain, description, dictationString: dictationString ?? "", core });
+  equations.push({ name, aliases, latex: latexUnescaped, mathml, unicodemath, domain, description, dictationString: dictationString ?? "", core });
 }
 
 // ---------------------------------------------------------------------------
@@ -142,6 +142,7 @@ const js = `/**
  * Each entry:
  *   name        - equation name (used for search)
  *   aliases     - alternate spoken names
+ *   latex       - LaTeX source string
  *   mathml      - MathML string for insertion
  *   unicodemath - UnicodeMath linear format string (null = needs manual review)
  *   domain          - subject domain (used for category browsing)

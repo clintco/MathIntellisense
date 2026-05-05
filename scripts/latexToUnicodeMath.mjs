@@ -184,6 +184,13 @@ class Parser {
     return parts.join('');
   }
 
+  // True when the next token is a letter or digit (would extend a script arg)
+  nextIsAlnum() {
+    if (this.done()) return false;
+    const tok = this.peek();
+    return tok.t === 'char' && /^[\p{L}\p{N}]$/u.test(tok.v);
+  }
+
   // Parse one atom, including any trailing scripts (^ _)
   parseAtom() {
     // Skip leading space tokens (only reach here from parseSeq when keepSpaces=false)
@@ -191,6 +198,7 @@ class Parser {
     if (this.done()) return '';
     const tok = this.next();
     let base = this.convertToken(tok);
+    let hadScript = false;
 
     // Attach any following ^ or _ scripts
     while (!this.done()) {
@@ -199,14 +207,20 @@ class Parser {
         this.next();
         const arg = this.parseArg();
         base += '^' + this.scriptWrap(arg);
+        hadScript = true;
       } else if (next.t === 'char' && next.v === '_') {
         this.next();
         const arg = this.parseArg();
         base += '_' + this.scriptWrap(arg);
+        hadScript = true;
       } else {
         break;
       }
     }
+    // If the atom ended with a script and the next token is alphanumeric,
+    // add a separating space so it isn't consumed as part of the script
+    // argument when rendered by a UnicodeMath engine.
+    if (hadScript && this.nextIsAlnum()) base += ' ';
     return base;
   }
 
@@ -298,7 +312,8 @@ class Parser {
       const den = this.parseArg();
       const n = this.fracWrap(num);
       const d = this.fracWrap(den);
-      return n + '/' + d;
+      const result = n + '/' + d;
+      return this.nextIsAlnum() ? result + ' ' : result;
     }
 
     // \sqrt[n]{x}
@@ -306,7 +321,8 @@ class Parser {
       const deg = this.parseOptArg();
       const arg = this.parseArg();
       const inner = this.sqrtWrap(arg);
-      return deg ? deg + '√' + inner : '√' + inner;
+      const result = deg ? deg + '√' + inner : '√' + inner;
+      return this.nextIsAlnum() ? result + ' ' : result;
     }
 
     // \binom{n}{k}  →  (n¦k)  [U+00A6 broken bar = UnicodeMath "choose"]
@@ -564,6 +580,11 @@ function toDoubleStruck(s) {
   return [...s].map(c => DSTRUCK_MAP[c] || c).join('');
 }
 
+// ── Post-processing ────────────────────────────────────────────────────────
+function postProcess(s) {
+  return s.replace(/  +/g, ' ').trim();
+}
+
 // ── Public API ─────────────────────────────────────────────────────────────
 export function latexToUnicodeMath(latex) {
   if (!latex) return null;
@@ -573,7 +594,7 @@ export function latexToUnicodeMath(latex) {
     const result = parser.parseAll();
     // If result still contains backslash commands, flag for review
     if (result.includes('\\')) return null;
-    return result;
+    return postProcess(result);
   } catch (_) {
     return null;
   }

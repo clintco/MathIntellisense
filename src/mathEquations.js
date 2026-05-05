@@ -4,6 +4,7 @@
  * Each entry:
  *   name        - equation name (used for search)
  *   aliases     - alternate spoken names
+ *   latex       - LaTeX source string
  *   mathml      - MathML string for insertion
  *   unicodemath - UnicodeMath linear format string (null = needs manual review)
  *   domain          - subject domain (used for category browsing)
@@ -14,6 +15,7 @@ export const mathEquations = [
   {
     "name": "exponent product rule",
     "aliases": "multiply same base",
+    "latex": "a^m \\cdot a^n = a^{m+n}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mi>m</mi></msup><mo>⋅</mo><msup><mi>a</mi><mi>n</mi></msup><mo>=</mo><msup><mi>a</mi><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">a^m \\cdot a^n = a^{m+n}</annotation></semantics></math>",
     "unicodemath": "a^m ⋅ a^n = a^(m+n)",
     "domain": "Algebra & Number Systems",
@@ -24,6 +26,7 @@ export const mathEquations = [
   {
     "name": "exponent quotient rule",
     "aliases": "divide same base",
+    "latex": "\\frac{a^m}{a^n} = a^{m-n}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><msup><mi>a</mi><mi>m</mi></msup><msup><mi>a</mi><mi>n</mi></msup></mfrac><mo>=</mo><msup><mi>a</mi><mrow><mi>m</mi><mo>−</mo><mi>n</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">\\frac{a^m}{a^n} = a^{m-n}</annotation></semantics></math>",
     "unicodemath": "a^m/a^n = a^(m-n)",
     "domain": "Algebra & Number Systems",
@@ -34,6 +37,7 @@ export const mathEquations = [
   {
     "name": "exponent power rule",
     "aliases": "power of a power",
+    "latex": "(a^m)^n = a^{mn}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><msup><mi>a</mi><mi>m</mi></msup><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup><mo>=</mo><msup><mi>a</mi><mrow><mi>m</mi><mi>n</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">(a^m)^n = a^{mn}</annotation></semantics></math>",
     "unicodemath": "(a^m)^n = a^mn",
     "domain": "Algebra & Number Systems",
@@ -44,6 +48,7 @@ export const mathEquations = [
   {
     "name": "power of a product",
     "aliases": "(ab) to the n",
+    "latex": "(ab)^n = a^n b^n",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>a</mi><mi>b</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup><mo>=</mo><msup><mi>a</mi><mi>n</mi></msup><msup><mi>b</mi><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">(ab)^n = a^n b^n</annotation></semantics></math>",
     "unicodemath": "(ab)^n = a^n b^n",
     "domain": "Algebra & Number Systems",
@@ -54,6 +59,7 @@ export const mathEquations = [
   {
     "name": "power of a quotient",
     "aliases": "(a over b) to the n",
+    "latex": "\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mrow><mo fence=\"true\">(</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo fence=\"true\">)</mo></mrow><mi>n</mi></msup><mo>=</mo><mfrac><msup><mi>a</mi><mi>n</mi></msup><msup><mi>b</mi><mi>n</mi></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}</annotation></semantics></math>",
     "unicodemath": "(a/b)^n = a^n/b^n",
     "domain": "Algebra & Number Systems",
@@ -64,6 +70,7 @@ export const mathEquations = [
   {
     "name": "negative exponent",
     "aliases": "a to the negative n",
+    "latex": "a^{-n} = \\frac{1}{a^n}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mrow><mo>−</mo><mi>n</mi></mrow></msup><mo>=</mo><mfrac><mn>1</mn><msup><mi>a</mi><mi>n</mi></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">a^{-n} = \\frac{1}{a^n}</annotation></semantics></math>",
     "unicodemath": "a^(-n) = 1/a^n",
     "domain": "Algebra & Number Systems",
@@ -74,6 +81,7 @@ export const mathEquations = [
   {
     "name": "fractional exponent",
     "aliases": "rational exponent",
+    "latex": "a^{m/n} = \\sqrt[n]{a^m}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mrow><mi>m</mi><mi mathvariant=\"normal\">/</mi><mi>n</mi></mrow></msup><mo>=</mo><mroot><msup><mi>a</mi><mi>m</mi></msup><mi>n</mi></mroot></mrow><annotation encoding=\"application/x-tex\">a^{m/n} = \\sqrt[n]{a^m}</annotation></semantics></math>",
     "unicodemath": "a^(m/n) = n√(a^m)",
     "domain": "Algebra & Number Systems",
@@ -84,6 +92,7 @@ export const mathEquations = [
   {
     "name": "logarithm product rule",
     "aliases": "log of a product",
+    "latex": "\\log_b(xy) = \\log_b x + \\log_b y",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mo stretchy=\"false\">(</mo><mi>x</mi><mi>y</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mi>x</mi><mo>+</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">\\log_b(xy) = \\log_b x + \\log_b y</annotation></semantics></math>",
     "unicodemath": "log_b(xy) = log_b x + log_b y",
     "domain": "Algebra & Number Systems",
@@ -94,6 +103,7 @@ export const mathEquations = [
   {
     "name": "logarithm quotient rule",
     "aliases": "log of a quotient",
+    "latex": "\\log_b\\left(\\frac{x}{y}\\right) = \\log_b x - \\log_b y",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mrow><mo fence=\"true\">(</mo><mfrac><mi>x</mi><mi>y</mi></mfrac><mo fence=\"true\">)</mo></mrow><mo>=</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mi>x</mi><mo>−</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">\\log_b\\left(\\frac{x}{y}\\right) = \\log_b x - \\log_b y</annotation></semantics></math>",
     "unicodemath": "log_b(x/y) = log_b x - log_b y",
     "domain": "Algebra & Number Systems",
@@ -104,6 +114,7 @@ export const mathEquations = [
   {
     "name": "logarithm power rule",
     "aliases": "log of a power",
+    "latex": "\\log_b(x^n) = n\\log_b x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mo stretchy=\"false\">(</mo><msup><mi>x</mi><mi>n</mi></msup><mo stretchy=\"false\">)</mo><mo>=</mo><mi>n</mi><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\log_b(x^n) = n\\log_b x</annotation></semantics></math>",
     "unicodemath": "log_b(x^n) = nlog_b x",
     "domain": "Algebra & Number Systems",
@@ -114,6 +125,7 @@ export const mathEquations = [
   {
     "name": "logarithm inverse",
     "aliases": "b to the log base b of x",
+    "latex": "b^{\\log_b x} = x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>b</mi><mrow><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mi>x</mi></mrow></msup><mo>=</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">b^{\\log_b x} = x</annotation></semantics></math>",
     "unicodemath": "b^(log_bx) = x",
     "domain": "Algebra & Number Systems",
@@ -124,6 +136,7 @@ export const mathEquations = [
   {
     "name": "change of base formula",
     "aliases": "logarithm change of base",
+    "latex": "\\log_{b}(x) = \\frac{\\ln x}{\\ln b}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mi>x</mi></mrow><mrow><mi>ln</mi><mo>⁡</mo><mi>b</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\log_{b}(x) = \\frac{\\ln x}{\\ln b}</annotation></semantics></math>",
     "unicodemath": "log_b(x) = lnx/lnb",
     "domain": "Algebra & Number Systems",
@@ -134,8 +147,9 @@ export const mathEquations = [
   {
     "name": "perfect square trinomial",
     "aliases": "(a+b) squared; (a-b) squared",
+    "latex": "(a+b)^2 = a^2 + 2ab + b^2; \\; (a-b)^2 = a^2 - 2ab + b^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo separator=\"true\">;</mo><mtext>  </mtext><mo stretchy=\"false\">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">(a+b)^2 = a^2 + 2ab + b^2; \\; (a-b)^2 = a^2 - 2ab + b^2</annotation></semantics></math>",
-    "unicodemath": "(a+b)^2 = a^2 + 2ab + b^2;  (a-b)^2 = a^2 - 2ab + b^2",
+    "unicodemath": "(a+b)^2 = a^2 + 2ab + b^2; (a-b)^2 = a^2 - 2ab + b^2",
     "domain": "Algebra & Number Systems",
     "description": "Perfect square expansion (both addition and subtraction forms)",
     "dictationString": "(addition form) open parenthesis a plus b close parenthesis squared equals a squared plus two a b plus b squared; (subtraction form) open parenthesis a minus b close parenthesis squared equals a squared minus two a b plus b squared",
@@ -144,6 +158,7 @@ export const mathEquations = [
   {
     "name": "completing the square",
     "aliases": "complete the square",
+    "latex": "x^2 + bx + \\left(\\frac{b}{2}\\right)^2 = \\left(x + \\frac{b}{2}\\right)^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><msup><mrow><mo fence=\"true\">(</mo><mfrac><mi>b</mi><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mrow><mo fence=\"true\">(</mo><mi>x</mi><mo>+</mo><mfrac><mi>b</mi><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">x^2 + bx + \\left(\\frac{b}{2}\\right)^2 = \\left(x + \\frac{b}{2}\\right)^2</annotation></semantics></math>",
     "unicodemath": "x^2 + bx + (b/2)^2 = (x + b/2)^2",
     "domain": "Algebra & Number Systems",
@@ -154,6 +169,7 @@ export const mathEquations = [
   {
     "name": "direct variation",
     "aliases": "y varies directly as x",
+    "latex": "y = kx",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>k</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">y = kx</annotation></semantics></math>",
     "unicodemath": "y = kx",
     "domain": "Algebra & Number Systems",
@@ -164,6 +180,7 @@ export const mathEquations = [
   {
     "name": "inverse variation",
     "aliases": "y varies inversely as x",
+    "latex": "y = \\frac{k}{x}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mi>k</mi><mi>x</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">y = \\frac{k}{x}</annotation></semantics></math>",
     "unicodemath": "y = k/x",
     "domain": "Algebra & Number Systems",
@@ -174,6 +191,7 @@ export const mathEquations = [
   {
     "name": "joint variation",
     "aliases": "y varies jointly as x and z",
+    "latex": "y = kxz",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>k</mi><mi>x</mi><mi>z</mi></mrow><annotation encoding=\"application/x-tex\">y = kxz</annotation></semantics></math>",
     "unicodemath": "y = kxz",
     "domain": "Algebra & Number Systems",
@@ -184,6 +202,7 @@ export const mathEquations = [
   {
     "name": "distance rate time",
     "aliases": "d equals rt",
+    "latex": "d = rt",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>d</mi><mo>=</mo><mi>r</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">d = rt</annotation></semantics></math>",
     "unicodemath": "d = rt",
     "domain": "Algebra & Number Systems",
@@ -194,6 +213,7 @@ export const mathEquations = [
   {
     "name": "absolute value equation",
     "aliases": "absolute value equals b",
+    "latex": "|x - a| = b \\;\\Rightarrow\\; x = a \\pm b",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>x</mi><mo>−</mo><mi>a</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mi>b</mi><mtext>  </mtext><mo>⇒</mo><mtext>  </mtext><mi>x</mi><mo>=</mo><mi>a</mi><mo>±</mo><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">|x - a| = b \\;\\Rightarrow\\; x = a \\pm b</annotation></semantics></math>",
     "unicodemath": "|x - a| = b ⇒ x = a ± b",
     "domain": "Algebra & Number Systems",
@@ -204,6 +224,7 @@ export const mathEquations = [
   {
     "name": "quadratic formula",
     "aliases": "roots of quadratic",
+    "latex": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mo>−</mo><mi>b</mi><mo>±</mo><msqrt><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>a</mi><mi>c</mi></mrow></msqrt></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}</annotation></semantics></math>",
     "unicodemath": "x = (-b±√(b^2-4ac))/2a",
     "domain": "Algebra & Number Systems",
@@ -214,6 +235,7 @@ export const mathEquations = [
   {
     "name": "discriminant",
     "aliases": "b squared minus 4ac",
+    "latex": "b^2 - 4ac",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>a</mi><mi>c</mi></mrow><annotation encoding=\"application/x-tex\">b^2 - 4ac</annotation></semantics></math>",
     "unicodemath": "b^2 - 4ac",
     "domain": "Algebra & Number Systems",
@@ -224,6 +246,7 @@ export const mathEquations = [
   {
     "name": "difference of squares",
     "aliases": "(a+b)(a-b)",
+    "latex": "a^2 - b^2 = (a+b)(a-b)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">a^2 - b^2 = (a+b)(a-b)</annotation></semantics></math>",
     "unicodemath": "a^2 - b^2 = (a+b)(a-b)",
     "domain": "Algebra & Number Systems",
@@ -234,6 +257,7 @@ export const mathEquations = [
   {
     "name": "sum of cubes",
     "aliases": "a cubed plus b cubed",
+    "latex": "a^3 + b^3 = (a+b)(a^2 - ab + b^2)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mn>3</mn></msup><mo>+</mo><msup><mi>b</mi><mn>3</mn></msup><mo>=</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">a^3 + b^3 = (a+b)(a^2 - ab + b^2)</annotation></semantics></math>",
     "unicodemath": "a^3 + b^3 = (a+b)(a^2 - ab + b^2)",
     "domain": "Algebra & Number Systems",
@@ -244,6 +268,7 @@ export const mathEquations = [
   {
     "name": "difference of cubes",
     "aliases": "a cubed minus b cubed",
+    "latex": "a^3 - b^3 = (a-b)(a^2 + ab + b^2)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mn>3</mn></msup><mo>−</mo><msup><mi>b</mi><mn>3</mn></msup><mo>=</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">a^3 - b^3 = (a-b)(a^2 + ab + b^2)</annotation></semantics></math>",
     "unicodemath": "a^3 - b^3 = (a-b)(a^2 + ab + b^2)",
     "domain": "Algebra & Number Systems",
@@ -254,6 +279,7 @@ export const mathEquations = [
   {
     "name": "binomial theorem",
     "aliases": "binomial expansion",
+    "latex": "(a+b)^n = \\sum_{k=0}^{n} \\binom{n}{k} a^{n-k} b^k",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup><mo>=</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mi>n</mi><mi>k</mi></mfrac><mo fence=\"true\">)</mo></mrow><msup><mi>a</mi><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></msup><msup><mi>b</mi><mi>k</mi></msup></mrow><annotation encoding=\"application/x-tex\">(a+b)^n = \\sum_{k=0}^{n} \\binom{n}{k} a^{n-k} b^k</annotation></semantics></math>",
     "unicodemath": "(a+b)^n = ∑_(k=0)^n (n¦k) a^(n-k) b^k",
     "domain": "Algebra & Number Systems",
@@ -264,6 +290,7 @@ export const mathEquations = [
   {
     "name": "geometric series",
     "aliases": "finite geometric sum",
+    "latex": "S_n = \\frac{a(1-r^n)}{1-r}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><mi>a</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><msup><mi>r</mi><mi>n</mi></msup><mo stretchy=\"false\">)</mo></mrow><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">S_n = \\frac{a(1-r^n)}{1-r}</annotation></semantics></math>",
     "unicodemath": "S_n = a(1-r^n)/(1-r)",
     "domain": "Algebra & Number Systems",
@@ -274,6 +301,7 @@ export const mathEquations = [
   {
     "name": "infinite geometric series",
     "aliases": "infinite geo sum",
+    "latex": "S = \\frac{a}{1-r}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mo>=</mo><mfrac><mi>a</mi><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">S = \\frac{a}{1-r}</annotation></semantics></math>",
     "unicodemath": "S = a/(1-r)",
     "domain": "Algebra & Number Systems",
@@ -284,6 +312,7 @@ export const mathEquations = [
   {
     "name": "arithmetic series",
     "aliases": "arithmetic sum",
+    "latex": "S_n = \\frac{n}{2}(a_1 + a_n)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><mfrac><mi>n</mi><mn>2</mn></mfrac><mo stretchy=\"false\">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">S_n = \\frac{n}{2}(a_1 + a_n)</annotation></semantics></math>",
     "unicodemath": "S_n = n/2(a_1 + a_n)",
     "domain": "Algebra & Number Systems",
@@ -294,6 +323,7 @@ export const mathEquations = [
   {
     "name": "nth term of arithmetic sequence",
     "aliases": "arithmetic sequence general term",
+    "latex": "a_n = a_1 + (n-1)d",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mo stretchy=\"false\">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mi>d</mi></mrow><annotation encoding=\"application/x-tex\">a_n = a_1 + (n-1)d</annotation></semantics></math>",
     "unicodemath": "a_n = a_1 + (n-1)d",
     "domain": "Algebra & Number Systems",
@@ -304,6 +334,7 @@ export const mathEquations = [
   {
     "name": "nth term of geometric sequence",
     "aliases": "geometric sequence general term",
+    "latex": "a_n = a_1 \\cdot r^{n-1}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>⋅</mo><msup><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding=\"application/x-tex\">a_n = a_1 \\cdot r^{n-1}</annotation></semantics></math>",
     "unicodemath": "a_n = a_1 ⋅ r^(n-1)",
     "domain": "Algebra & Number Systems",
@@ -314,6 +345,7 @@ export const mathEquations = [
   {
     "name": "vertex form of a parabola",
     "aliases": "vertex form",
+    "latex": "y = a(x-h)^2 + k",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>a</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>−</mo><mi>h</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>+</mo><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">y = a(x-h)^2 + k</annotation></semantics></math>",
     "unicodemath": "y = a(x-h)^2 + k",
     "domain": "Algebra & Number Systems",
@@ -324,6 +356,7 @@ export const mathEquations = [
   {
     "name": "exponential growth and decay",
     "aliases": "exponential model; ODE exponential solution",
+    "latex": "y = y_0\\,e^{kt}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mi>y</mi><mn>0</mn></msub><mtext> </mtext><msup><mi>e</mi><mrow><mi>k</mi><mi>t</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">y = y_0\\,e^{kt}</annotation></semantics></math>",
     "unicodemath": "y = y_0e^kt",
     "domain": "Algebra & Number Systems",
@@ -334,6 +367,7 @@ export const mathEquations = [
   {
     "name": "division algorithm",
     "aliases": "a equals bq plus r",
+    "latex": "a = bq + r \\quad 0 \\leq r < b",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>a</mi><mo>=</mo><mi>b</mi><mi>q</mi><mo>+</mo><mi>r</mi><mspace width=\"1em\"/><mn>0</mn><mo>≤</mo><mi>r</mi><mo>&lt;</mo><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">a = bq + r \\quad 0 \\leq r &lt; b</annotation></semantics></math>",
     "unicodemath": "a = bq + r   0 ≤ r < b",
     "domain": "Algebra & Number Systems",
@@ -344,6 +378,7 @@ export const mathEquations = [
   {
     "name": "Bezout's identity",
     "aliases": "gcd as linear combination",
+    "latex": "\\gcd(a,b) = ax + by",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>gcd</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mo separator=\"true\">,</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">\\gcd(a,b) = ax + by</annotation></semantics></math>",
     "unicodemath": "gcd(a,b) = ax + by",
     "domain": "Algebra & Number Systems",
@@ -354,6 +389,7 @@ export const mathEquations = [
   {
     "name": "Fermat's little theorem",
     "aliases": "a to the p mod p",
+    "latex": "a^p \\equiv a \\pmod{p}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mi>p</mi></msup><mo>≡</mo><mi>a</mi><mspace></mspace><mspace width=\"1em\"/><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">d</mi></mrow><mspace width=\"0.3333em\"/><mi>p</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">a^p \\equiv a \\pmod{p}</annotation></semantics></math>",
     "unicodemath": "a^p ≡ a  (mod p)",
     "domain": "Algebra & Number Systems",
@@ -364,6 +400,7 @@ export const mathEquations = [
   {
     "name": "Euler's totient function",
     "aliases": "phi of n",
+    "latex": "\\varphi(n) = n\\prod_{p \\mid n}\\!\\left(1 - \\frac{1}{p}\\right)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>φ</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>n</mi><munder><mo>∏</mo><mrow><mi>p</mi><mo>∣</mo><mi>n</mi></mrow></munder><mtext> ⁣</mtext><mrow><mo fence=\"true\">(</mo><mn>1</mn><mo>−</mo><mfrac><mn>1</mn><mi>p</mi></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\varphi(n) = n\\prod_{p \\mid n}\\!\\left(1 - \\frac{1}{p}\\right)</annotation></semantics></math>",
     "unicodemath": "ϕ(n) = n∏_(p∣n)(1 - 1/p)",
     "domain": "Algebra & Number Systems",
@@ -374,6 +411,7 @@ export const mathEquations = [
   {
     "name": "Euler's theorem",
     "aliases": "a to the phi n",
+    "latex": "a^{\\varphi(n)} \\equiv 1 \\pmod{n}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mrow><mi>φ</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo></mrow></msup><mo>≡</mo><mn>1</mn><mspace></mspace><mspace width=\"1em\"/><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">d</mi></mrow><mspace width=\"0.3333em\"/><mi>n</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">a^{\\varphi(n)} \\equiv 1 \\pmod{n}</annotation></semantics></math>",
     "unicodemath": "a^(ϕ(n)) ≡ 1  (mod n)",
     "domain": "Algebra & Number Systems",
@@ -384,6 +422,7 @@ export const mathEquations = [
   {
     "name": "modular congruence",
     "aliases": "congruence modulo n",
+    "latex": "a \\equiv b \\pmod{n}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>a</mi><mo>≡</mo><mi>b</mi><mspace></mspace><mspace width=\"1em\"/><mo stretchy=\"false\">(</mo><mrow><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">d</mi></mrow><mspace width=\"0.3333em\"/><mi>n</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">a \\equiv b \\pmod{n}</annotation></semantics></math>",
     "unicodemath": "a ≡ b  (mod n)",
     "domain": "Algebra & Number Systems",
@@ -394,6 +433,7 @@ export const mathEquations = [
   {
     "name": "modulus of a complex number",
     "aliases": "absolute value of z",
+    "latex": "|z| = \\sqrt{a^2+b^2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>z</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">|z| = \\sqrt{a^2+b^2}</annotation></semantics></math>",
     "unicodemath": "|z| = √(a^2+b^2)",
     "domain": "Algebra & Number Systems",
@@ -404,6 +444,7 @@ export const mathEquations = [
   {
     "name": "complex multiplication",
     "aliases": "z1 times z2",
+    "latex": "(a+bi)(c+di) = (ac-bd) + (ad+bc)i",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mi>i</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>c</mi><mo>+</mo><mi>d</mi><mi>i</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mi>c</mi><mo>−</mo><mi>b</mi><mi>d</mi><mo stretchy=\"false\">)</mo><mo>+</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mi>d</mi><mo>+</mo><mi>b</mi><mi>c</mi><mo stretchy=\"false\">)</mo><mi>i</mi></mrow><annotation encoding=\"application/x-tex\">(a+bi)(c+di) = (ac-bd) + (ad+bc)i</annotation></semantics></math>",
     "unicodemath": "(a+bi)(c+di) = (ac-bd) + (ad+bc)i",
     "domain": "Algebra & Number Systems",
@@ -414,6 +455,7 @@ export const mathEquations = [
   {
     "name": "de Moivre's theorem",
     "aliases": "de Moivre",
+    "latex": "(\\cos\\theta + i\\sin\\theta)^n = \\cos(n\\theta) + i\\sin(n\\theta)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi><mo>+</mo><mi>i</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup><mo>=</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>n</mi><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>+</mo><mi>i</mi><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>n</mi><mi>θ</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\cos\\theta + i\\sin\\theta)^n = \\cos(n\\theta) + i\\sin(n\\theta)</annotation></semantics></math>",
     "unicodemath": "(cosθ + isinθ)^n = cos(nθ) + isin(nθ)",
     "domain": "Algebra & Number Systems",
@@ -424,6 +466,7 @@ export const mathEquations = [
   {
     "name": "Euler's identity",
     "aliases": "e to the i pi plus 1 equals 0",
+    "latex": "e^{i\\pi} + 1 = 0",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>e</mi><mrow><mi>i</mi><mi>π</mi></mrow></msup><mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">e^{i\\pi} + 1 = 0</annotation></semantics></math>",
     "unicodemath": "e^iπ + 1 = 0",
     "domain": "Algebra & Number Systems",
@@ -434,6 +477,7 @@ export const mathEquations = [
   {
     "name": "slope",
     "aliases": "slope of a line",
+    "latex": "m = \\frac{y_2 - y_1}{x_2 - x_1}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><msub><mi>y</mi><mn>2</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">m = \\frac{y_2 - y_1}{x_2 - x_1}</annotation></semantics></math>",
     "unicodemath": "m = (y_2-y_1)/(x_2-x_1)",
     "domain": "Geometry & Trigonometry",
@@ -444,6 +488,7 @@ export const mathEquations = [
   {
     "name": "slope intercept form",
     "aliases": "y equals mx plus b",
+    "latex": "y = mx + b",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>m</mi><mi>x</mi><mo>+</mo><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">y = mx + b</annotation></semantics></math>",
     "unicodemath": "y = mx + b",
     "domain": "Geometry & Trigonometry",
@@ -454,6 +499,7 @@ export const mathEquations = [
   {
     "name": "point slope form",
     "aliases": "y minus y1 equals m times x minus x1",
+    "latex": "y - y_1 = m(x - x_1)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub><mo>=</mo><mi>m</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">y - y_1 = m(x - x_1)</annotation></semantics></math>",
     "unicodemath": "y - y_1 = m(x - x_1)",
     "domain": "Geometry & Trigonometry",
@@ -464,6 +510,7 @@ export const mathEquations = [
   {
     "name": "standard form of a line",
     "aliases": "Ax plus By equals C",
+    "latex": "Ax + By = C",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mi>x</mi><mo>+</mo><mi>B</mi><mi>y</mi><mo>=</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">Ax + By = C</annotation></semantics></math>",
     "unicodemath": "Ax + By = C",
     "domain": "Geometry & Trigonometry",
@@ -474,6 +521,7 @@ export const mathEquations = [
   {
     "name": "Pythagorean theorem",
     "aliases": "a squared plus b squared equals c squared",
+    "latex": "a^2 + b^2 = c^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">a^2 + b^2 = c^2</annotation></semantics></math>",
     "unicodemath": "a^2 + b^2 = c^2",
     "domain": "Geometry & Trigonometry",
@@ -484,6 +532,7 @@ export const mathEquations = [
   {
     "name": "distance formula",
     "aliases": "distance between two points",
+    "latex": "d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>d</mi><mo>=</mo><msqrt><mrow><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy=\"false\">(</mo><msub><mi>y</mi><mn>2</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}</annotation></semantics></math>",
     "unicodemath": "d = √((x_2-x_1)^2+(y_2-y_1)^2)",
     "domain": "Geometry & Trigonometry",
@@ -494,6 +543,7 @@ export const mathEquations = [
   {
     "name": "midpoint formula",
     "aliases": "midpoint between two points",
+    "latex": "M = \\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mo>=</mo><mrow><mo fence=\"true\">(</mo><mfrac><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo separator=\"true\">,</mo><mfrac><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><msub><mi>y</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">M = \\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)</annotation></semantics></math>",
     "unicodemath": "M = ((x_1+x_2)/2,(y_1+y_2)/2)",
     "domain": "Geometry & Trigonometry",
@@ -504,6 +554,7 @@ export const mathEquations = [
   {
     "name": "equation of a circle",
     "aliases": "circle equation",
+    "latex": "(x-h)^2 + (y-k)^2 = r^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>x</mi><mo>−</mo><mi>h</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy=\"false\">(</mo><mi>y</mi><mo>−</mo><mi>k</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">(x-h)^2 + (y-k)^2 = r^2</annotation></semantics></math>",
     "unicodemath": "(x-h)^2 + (y-k)^2 = r^2",
     "domain": "Geometry & Trigonometry",
@@ -514,6 +565,7 @@ export const mathEquations = [
   {
     "name": "area of a circle",
     "aliases": "circle area",
+    "latex": "A = \\pi r^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">A = \\pi r^2</annotation></semantics></math>",
     "unicodemath": "A = π r^2",
     "domain": "Geometry & Trigonometry",
@@ -524,6 +576,7 @@ export const mathEquations = [
   {
     "name": "circumference of a circle",
     "aliases": "perimeter of a circle",
+    "latex": "C = 2\\pi r",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mo>=</mo><mn>2</mn><mi>π</mi><mi>r</mi></mrow><annotation encoding=\"application/x-tex\">C = 2\\pi r</annotation></semantics></math>",
     "unicodemath": "C = 2π r",
     "domain": "Geometry & Trigonometry",
@@ -534,8 +587,9 @@ export const mathEquations = [
   {
     "name": "area of a triangle",
     "aliases": "triangle area",
+    "latex": "A = \\frac{1}{2}bh",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>b</mi><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">A = \\frac{1}{2}bh</annotation></semantics></math>",
-    "unicodemath": "A = 1/2bh",
+    "unicodemath": "A = 1/2 bh",
     "domain": "Geometry & Trigonometry",
     "description": "Area of a triangle with base b and height h",
     "dictationString": "A equals one half b h",
@@ -544,6 +598,7 @@ export const mathEquations = [
   {
     "name": "Heron's formula",
     "aliases": "triangle area from three sides",
+    "latex": "A = \\sqrt{s(s-a)(s-b)(s-c)}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><msqrt><mrow><mi>s</mi><mo stretchy=\"false\">(</mo><mi>s</mi><mo>−</mo><mi>a</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>s</mi><mo>−</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>s</mi><mo>−</mo><mi>c</mi><mo stretchy=\"false\">)</mo></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">A = \\sqrt{s(s-a)(s-b)(s-c)}</annotation></semantics></math>",
     "unicodemath": "A = √(s(s-a)(s-b)(s-c))",
     "domain": "Geometry & Trigonometry",
@@ -554,6 +609,7 @@ export const mathEquations = [
   {
     "name": "area of a rectangle",
     "aliases": "rectangle area",
+    "latex": "A = lw",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mi>l</mi><mi>w</mi></mrow><annotation encoding=\"application/x-tex\">A = lw</annotation></semantics></math>",
     "unicodemath": "A = lw",
     "domain": "Geometry & Trigonometry",
@@ -564,6 +620,7 @@ export const mathEquations = [
   {
     "name": "area of a trapezoid",
     "aliases": "trapezoid area",
+    "latex": "A = \\frac{1}{2}(a+b)h",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"false\">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">A = \\frac{1}{2}(a+b)h</annotation></semantics></math>",
     "unicodemath": "A = 1/2(a+b)h",
     "domain": "Geometry & Trigonometry",
@@ -574,6 +631,7 @@ export const mathEquations = [
   {
     "name": "area of an ellipse",
     "aliases": "ellipse area",
+    "latex": "A = \\pi ab",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mi>π</mi><mi>a</mi><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">A = \\pi ab</annotation></semantics></math>",
     "unicodemath": "A = π ab",
     "domain": "Geometry & Trigonometry",
@@ -584,6 +642,7 @@ export const mathEquations = [
   {
     "name": "volume of a sphere",
     "aliases": "sphere volume",
+    "latex": "V = \\frac{4}{3}\\pi r^3",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>r</mi><mn>3</mn></msup></mrow><annotation encoding=\"application/x-tex\">V = \\frac{4}{3}\\pi r^3</annotation></semantics></math>",
     "unicodemath": "V = 4/3π r^3",
     "domain": "Geometry & Trigonometry",
@@ -594,6 +653,7 @@ export const mathEquations = [
   {
     "name": "surface area of a sphere",
     "aliases": "sphere surface area",
+    "latex": "A = 4\\pi r^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mn>4</mn><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">A = 4\\pi r^2</annotation></semantics></math>",
     "unicodemath": "A = 4π r^2",
     "domain": "Geometry & Trigonometry",
@@ -604,6 +664,7 @@ export const mathEquations = [
   {
     "name": "volume of a cylinder",
     "aliases": "cylinder volume",
+    "latex": "V = \\pi r^2 h",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">V = \\pi r^2 h</annotation></semantics></math>",
     "unicodemath": "V = π r^2 h",
     "domain": "Geometry & Trigonometry",
@@ -614,6 +675,7 @@ export const mathEquations = [
   {
     "name": "volume of a cone",
     "aliases": "cone volume",
+    "latex": "V = \\frac{1}{3}\\pi r^2 h",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">V = \\frac{1}{3}\\pi r^2 h</annotation></semantics></math>",
     "unicodemath": "V = 1/3π r^2 h",
     "domain": "Geometry & Trigonometry",
@@ -624,6 +686,7 @@ export const mathEquations = [
   {
     "name": "volume of a cube",
     "aliases": "cube volume",
+    "latex": "V = s^3",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><msup><mi>s</mi><mn>3</mn></msup></mrow><annotation encoding=\"application/x-tex\">V = s^3</annotation></semantics></math>",
     "unicodemath": "V = s^3",
     "domain": "Geometry & Trigonometry",
@@ -634,6 +697,7 @@ export const mathEquations = [
   {
     "name": "volume of a rectangular prism",
     "aliases": "box volume",
+    "latex": "V = lwh",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>l</mi><mi>w</mi><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">V = lwh</annotation></semantics></math>",
     "unicodemath": "V = lwh",
     "domain": "Geometry & Trigonometry",
@@ -644,8 +708,9 @@ export const mathEquations = [
   {
     "name": "volume of a pyramid",
     "aliases": "pyramid volume",
+    "latex": "V = \\frac{1}{3}Bh",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>B</mi><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">V = \\frac{1}{3}Bh</annotation></semantics></math>",
-    "unicodemath": "V = 1/3Bh",
+    "unicodemath": "V = 1/3 Bh",
     "domain": "Geometry & Trigonometry",
     "description": "Volume of a pyramid with base area B and height h",
     "dictationString": "V equals one third B h",
@@ -654,6 +719,7 @@ export const mathEquations = [
   {
     "name": "surface area of a cylinder",
     "aliases": "cylinder surface area",
+    "latex": "SA = 2\\pi r^2 + 2\\pi r h",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mi>A</mi><mo>=</mo><mn>2</mn><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>π</mi><mi>r</mi><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">SA = 2\\pi r^2 + 2\\pi r h</annotation></semantics></math>",
     "unicodemath": "SA = 2π r^2 + 2π r h",
     "domain": "Geometry & Trigonometry",
@@ -664,6 +730,7 @@ export const mathEquations = [
   {
     "name": "surface area of a cone",
     "aliases": "cone surface area",
+    "latex": "SA = \\pi r^2 + \\pi r l",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mi>A</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mi>π</mi><mi>r</mi><mi>l</mi></mrow><annotation encoding=\"application/x-tex\">SA = \\pi r^2 + \\pi r l</annotation></semantics></math>",
     "unicodemath": "SA = π r^2 + π r l",
     "domain": "Geometry & Trigonometry",
@@ -674,6 +741,7 @@ export const mathEquations = [
   {
     "name": "surface area of a rectangular prism",
     "aliases": "box surface area",
+    "latex": "SA = 2(lw + lh + wh)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mi>A</mi><mo>=</mo><mn>2</mn><mo stretchy=\"false\">(</mo><mi>l</mi><mi>w</mi><mo>+</mo><mi>l</mi><mi>h</mi><mo>+</mo><mi>w</mi><mi>h</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">SA = 2(lw + lh + wh)</annotation></semantics></math>",
     "unicodemath": "SA = 2(lw + lh + wh)",
     "domain": "Geometry & Trigonometry",
@@ -684,6 +752,7 @@ export const mathEquations = [
   {
     "name": "sine ratio",
     "aliases": "SOH sin equals opposite over hypotenuse",
+    "latex": "\\sin\\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mtext>opposite</mtext><mtext>hypotenuse</mtext></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sin\\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}</annotation></semantics></math>",
     "unicodemath": "sinθ = opposite/hypotenuse",
     "domain": "Geometry & Trigonometry",
@@ -694,6 +763,7 @@ export const mathEquations = [
   {
     "name": "cosine ratio",
     "aliases": "CAH cos equals adjacent over hypotenuse",
+    "latex": "\\cos\\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mtext>adjacent</mtext><mtext>hypotenuse</mtext></mfrac></mrow><annotation encoding=\"application/x-tex\">\\cos\\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}</annotation></semantics></math>",
     "unicodemath": "cosθ = adjacent/hypotenuse",
     "domain": "Geometry & Trigonometry",
@@ -704,6 +774,7 @@ export const mathEquations = [
   {
     "name": "tangent ratio",
     "aliases": "TOA tan equals opposite over adjacent",
+    "latex": "\\tan\\theta = \\frac{\\text{opposite}}{\\text{adjacent}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mtext>opposite</mtext><mtext>adjacent</mtext></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tan\\theta = \\frac{\\text{opposite}}{\\text{adjacent}}</annotation></semantics></math>",
     "unicodemath": "tanθ = opposite/adjacent",
     "domain": "Geometry & Trigonometry",
@@ -714,6 +785,7 @@ export const mathEquations = [
   {
     "name": "reciprocal trigonometric identities",
     "aliases": "csc equals one over sin; sec equals one over cos; cot equals one over tan",
+    "latex": "\\csc\\theta = \\frac{1}{\\sin\\theta};\\; \\sec\\theta = \\frac{1}{\\cos\\theta};\\; \\cot\\theta = \\frac{1}{\\tan\\theta}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>csc</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mfrac><mo separator=\"true\">;</mo><mtext>  </mtext><mi>sec</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mfrac><mo separator=\"true\">;</mo><mtext>  </mtext><mi>cot</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mi>tan</mi><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\csc\\theta = \\frac{1}{\\sin\\theta};\\; \\sec\\theta = \\frac{1}{\\cos\\theta};\\; \\cot\\theta = \\frac{1}{\\tan\\theta}</annotation></semantics></math>",
     "unicodemath": "cscθ = 1/sinθ; secθ = 1/cosθ; cotθ = 1/tanθ",
     "domain": "Geometry & Trigonometry",
@@ -724,6 +796,7 @@ export const mathEquations = [
   {
     "name": "trigonometric quotient identities",
     "aliases": "tan equals sin over cos; cot equals cos over sin",
+    "latex": "\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta};\\; \\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mfrac><mo separator=\"true\">;</mo><mtext>  </mtext><mi>cot</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta};\\; \\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta}</annotation></semantics></math>",
     "unicodemath": "tanθ = sinθ/cosθ; cotθ = cosθ/sinθ",
     "domain": "Geometry & Trigonometry",
@@ -734,6 +807,7 @@ export const mathEquations = [
   {
     "name": "cofunction identities",
     "aliases": "sin of 90 minus theta; cos of 90 minus theta; tan of 90 minus theta",
+    "latex": "\\sin(90^{\\circ}-\\theta) = \\cos\\theta;\\; \\cos(90^{\\circ}-\\theta) = \\sin\\theta;\\; \\tan(90^{\\circ}-\\theta) = \\cot\\theta",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><msup><mn>90</mn><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi><mo separator=\"true\">;</mo><mtext>  </mtext><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><msup><mn>90</mn><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>sin</mi><mo>⁡</mo><mi>θ</mi><mo separator=\"true\">;</mo><mtext>  </mtext><mi>tan</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><msup><mn>90</mn><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>cot</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\sin(90^{\\circ}-\\theta) = \\cos\\theta;\\; \\cos(90^{\\circ}-\\theta) = \\sin\\theta;\\; \\tan(90^{\\circ}-\\theta) = \\cot\\theta</annotation></semantics></math>",
     "unicodemath": "sin(90^∘-θ) = cosθ; cos(90^∘-θ) = sinθ; tan(90^∘-θ) = cotθ",
     "domain": "Geometry & Trigonometry",
@@ -744,6 +818,7 @@ export const mathEquations = [
   {
     "name": "odd and even trig identities",
     "aliases": "sin of negative theta; cos of negative theta; tan of negative theta",
+    "latex": "\\sin(-\\theta) = -\\sin\\theta;\\; \\cos(-\\theta) = \\cos\\theta;\\; \\tan(-\\theta) = -\\tan\\theta",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo>−</mo><mi>sin</mi><mo>⁡</mo><mi>θ</mi><mo separator=\"true\">;</mo><mtext>  </mtext><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi><mo separator=\"true\">;</mo><mtext>  </mtext><mi>tan</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo>−</mo><mi>tan</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\sin(-\\theta) = -\\sin\\theta;\\; \\cos(-\\theta) = \\cos\\theta;\\; \\tan(-\\theta) = -\\tan\\theta</annotation></semantics></math>",
     "unicodemath": "sin(-θ) = -sinθ; cos(-θ) = cosθ; tan(-θ) = -tanθ",
     "domain": "Geometry & Trigonometry",
@@ -754,6 +829,7 @@ export const mathEquations = [
   {
     "name": "degree to radian conversion",
     "aliases": "degrees to radians",
+    "latex": "\\theta_{\\text{rad}} = \\theta_{\\text{deg}} \\times \\frac{\\pi}{180}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>θ</mi><mtext>rad</mtext></msub><mo>=</mo><msub><mi>θ</mi><mtext>deg</mtext></msub><mo>×</mo><mfrac><mi>π</mi><mn>180</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\theta_{\\text{rad}} = \\theta_{\\text{deg}} \\times \\frac{\\pi}{180}</annotation></semantics></math>",
     "unicodemath": "θ_rad = θ_deg × π/180",
     "domain": "Geometry & Trigonometry",
@@ -764,6 +840,7 @@ export const mathEquations = [
   {
     "name": "radian to degree conversion",
     "aliases": "radians to degrees",
+    "latex": "\\theta_{\\text{deg}} = \\theta_{\\text{rad}} \\times \\frac{180}{\\pi}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>θ</mi><mtext>deg</mtext></msub><mo>=</mo><msub><mi>θ</mi><mtext>rad</mtext></msub><mo>×</mo><mfrac><mn>180</mn><mi>π</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\theta_{\\text{deg}} = \\theta_{\\text{rad}} \\times \\frac{180}{\\pi}</annotation></semantics></math>",
     "unicodemath": "θ_deg = θ_rad × 180/π",
     "domain": "Geometry & Trigonometry",
@@ -774,6 +851,7 @@ export const mathEquations = [
   {
     "name": "Pythagorean trigonometric identities",
     "aliases": "Pythagorean identity; secant identity; cosecant identity; sin squared plus cos squared equals one; one plus tan squared; one plus cot squared",
+    "latex": "\\sin^2\\theta + \\cos^2\\theta = 1;\\; 1 + \\tan^2\\theta = \\sec^2\\theta;\\; 1 + \\cot^2\\theta = \\csc^2\\theta",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mrow><mi>sin</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>+</mo><msup><mrow><mi>cos</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>=</mo><mn>1</mn><mo separator=\"true\">;</mo><mtext>  </mtext><mn>1</mn><mo>+</mo><msup><mrow><mi>tan</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>=</mo><msup><mrow><mi>sec</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo separator=\"true\">;</mo><mtext>  </mtext><mn>1</mn><mo>+</mo><msup><mrow><mi>cot</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>=</mo><msup><mrow><mi>csc</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\sin^2\\theta + \\cos^2\\theta = 1;\\; 1 + \\tan^2\\theta = \\sec^2\\theta;\\; 1 + \\cot^2\\theta = \\csc^2\\theta</annotation></semantics></math>",
     "unicodemath": "sin^2θ + cos^2θ = 1; 1 + tan^2θ = sec^2θ; 1 + cot^2θ = csc^2θ",
     "domain": "Geometry & Trigonometry",
@@ -784,6 +862,7 @@ export const mathEquations = [
   {
     "name": "sine double angle formula",
     "aliases": "double angle sine",
+    "latex": "\\sin(2\\theta) = 2\\sin\\theta\\cos\\theta",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>2</mn><mi>sin</mi><mo>⁡</mo><mi>θ</mi><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\sin(2\\theta) = 2\\sin\\theta\\cos\\theta</annotation></semantics></math>",
     "unicodemath": "sin(2θ) = 2sinθcosθ",
     "domain": "Geometry & Trigonometry",
@@ -794,6 +873,7 @@ export const mathEquations = [
   {
     "name": "cosine double-angle formulas",
     "aliases": "double angle cosine; cosine double angle formula 2; cosine double angle formula 3",
+    "latex": "\\cos(2\\theta) = \\cos^2\\theta - \\sin^2\\theta",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msup><mrow><mi>cos</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>−</mo><msup><mrow><mi>sin</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\cos(2\\theta) = \\cos^2\\theta - \\sin^2\\theta</annotation></semantics></math>",
     "unicodemath": "cos(2θ) = cos^2θ - sin^2θ",
     "domain": "Geometry & Trigonometry",
@@ -804,6 +884,7 @@ export const mathEquations = [
   {
     "name": "tangent double angle formula",
     "aliases": "double angle tangent",
+    "latex": "\\tan(2\\theta) = \\frac{2\\tan\\theta}{1-\\tan^2\\theta}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mn>2</mn><mi>tan</mi><mo>⁡</mo><mi>θ</mi></mrow><mrow><mn>1</mn><mo>−</mo><msup><mrow><mi>tan</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tan(2\\theta) = \\frac{2\\tan\\theta}{1-\\tan^2\\theta}</annotation></semantics></math>",
     "unicodemath": "tan(2θ) = 2tanθ/(1-tan^2θ)",
     "domain": "Geometry & Trigonometry",
@@ -814,6 +895,7 @@ export const mathEquations = [
   {
     "name": "sine addition formula",
     "aliases": "sin of A plus B",
+    "latex": "\\sin(A+B) = \\sin A\\cos B + \\cos A\\sin B",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>sin</mi><mo>⁡</mo><mi>A</mi><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>+</mo><mi>cos</mi><mo>⁡</mo><mi>A</mi><mi>sin</mi><mo>⁡</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">\\sin(A+B) = \\sin A\\cos B + \\cos A\\sin B</annotation></semantics></math>",
     "unicodemath": "sin(A+B) = sin Acos B + cos Asin B",
     "domain": "Geometry & Trigonometry",
@@ -824,6 +906,7 @@ export const mathEquations = [
   {
     "name": "sine subtraction formula",
     "aliases": "sin of A minus B",
+    "latex": "\\sin(A-B) = \\sin A\\cos B - \\cos A\\sin B",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>sin</mi><mo>⁡</mo><mi>A</mi><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>−</mo><mi>cos</mi><mo>⁡</mo><mi>A</mi><mi>sin</mi><mo>⁡</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">\\sin(A-B) = \\sin A\\cos B - \\cos A\\sin B</annotation></semantics></math>",
     "unicodemath": "sin(A-B) = sin Acos B - cos Asin B",
     "domain": "Geometry & Trigonometry",
@@ -834,6 +917,7 @@ export const mathEquations = [
   {
     "name": "cosine addition formula",
     "aliases": "cos of A plus B",
+    "latex": "\\cos(A+B) = \\cos A\\cos B - \\sin A\\sin B",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>cos</mi><mo>⁡</mo><mi>A</mi><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>−</mo><mi>sin</mi><mo>⁡</mo><mi>A</mi><mi>sin</mi><mo>⁡</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">\\cos(A+B) = \\cos A\\cos B - \\sin A\\sin B</annotation></semantics></math>",
     "unicodemath": "cos(A+B) = cos Acos B - sin Asin B",
     "domain": "Geometry & Trigonometry",
@@ -844,6 +928,7 @@ export const mathEquations = [
   {
     "name": "cosine subtraction formula",
     "aliases": "cos of A minus B",
+    "latex": "\\cos(A-B) = \\cos A\\cos B + \\sin A\\sin B",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>cos</mi><mo>⁡</mo><mi>A</mi><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>+</mo><mi>sin</mi><mo>⁡</mo><mi>A</mi><mi>sin</mi><mo>⁡</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">\\cos(A-B) = \\cos A\\cos B + \\sin A\\sin B</annotation></semantics></math>",
     "unicodemath": "cos(A-B) = cos Acos B + sin Asin B",
     "domain": "Geometry & Trigonometry",
@@ -854,6 +939,7 @@ export const mathEquations = [
   {
     "name": "tangent addition formula",
     "aliases": "tan of A plus B",
+    "latex": "\\tan(A+B) = \\frac{\\tan A + \\tan B}{1 - \\tan A\\tan B}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>tan</mi><mo>⁡</mo><mi>A</mi><mo>+</mo><mi>tan</mi><mo>⁡</mo><mi>B</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>tan</mi><mo>⁡</mo><mi>A</mi><mi>tan</mi><mo>⁡</mo><mi>B</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tan(A+B) = \\frac{\\tan A + \\tan B}{1 - \\tan A\\tan B}</annotation></semantics></math>",
     "unicodemath": "tan(A+B) = (tanA+tanB)/(1-tanAtanB)",
     "domain": "Geometry & Trigonometry",
@@ -864,6 +950,7 @@ export const mathEquations = [
   {
     "name": "tangent subtraction formula",
     "aliases": "tan of A minus B",
+    "latex": "\\tan(A-B) = \\frac{\\tan A - \\tan B}{1 + \\tan A\\tan B}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>tan</mi><mo>⁡</mo><mi>A</mi><mo>−</mo><mi>tan</mi><mo>⁡</mo><mi>B</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>tan</mi><mo>⁡</mo><mi>A</mi><mi>tan</mi><mo>⁡</mo><mi>B</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tan(A-B) = \\frac{\\tan A - \\tan B}{1 + \\tan A\\tan B}</annotation></semantics></math>",
     "unicodemath": "tan(A-B) = (tanA-tanB)/(1+tanAtanB)",
     "domain": "Geometry & Trigonometry",
@@ -874,6 +961,7 @@ export const mathEquations = [
   {
     "name": "law of sines",
     "aliases": "sine rule",
+    "latex": "\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>a</mi><mrow><mi>sin</mi><mo>⁡</mo><mi>A</mi></mrow></mfrac><mo>=</mo><mfrac><mi>b</mi><mrow><mi>sin</mi><mo>⁡</mo><mi>B</mi></mrow></mfrac><mo>=</mo><mfrac><mi>c</mi><mrow><mi>sin</mi><mo>⁡</mo><mi>C</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C}</annotation></semantics></math>",
     "unicodemath": "a/sinA = b/sinB = c/sinC",
     "domain": "Geometry & Trigonometry",
@@ -884,6 +972,7 @@ export const mathEquations = [
   {
     "name": "law of cosines",
     "aliases": "cosine rule",
+    "latex": "c^2 = a^2 + b^2 - 2ab\\cos C",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>a</mi><mi>b</mi><mi>cos</mi><mo>⁡</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">c^2 = a^2 + b^2 - 2ab\\cos C</annotation></semantics></math>",
     "unicodemath": "c^2 = a^2 + b^2 - 2abcos C",
     "domain": "Geometry & Trigonometry",
@@ -894,6 +983,7 @@ export const mathEquations = [
   {
     "name": "Euler's formula",
     "aliases": "e to the i theta",
+    "latex": "e^{i\\theta} = \\cos\\theta + i\\sin\\theta",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>e</mi><mrow><mi>i</mi><mi>θ</mi></mrow></msup><mo>=</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi><mo>+</mo><mi>i</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">e^{i\\theta} = \\cos\\theta + i\\sin\\theta</annotation></semantics></math>",
     "unicodemath": "e^iθ = cosθ + isinθ",
     "domain": "Geometry & Trigonometry",
@@ -904,6 +994,7 @@ export const mathEquations = [
   {
     "name": "arc length",
     "aliases": "s equals r theta",
+    "latex": "s = r\\theta",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>s</mi><mo>=</mo><mi>r</mi><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">s = r\\theta</annotation></semantics></math>",
     "unicodemath": "s = rθ",
     "domain": "Geometry & Trigonometry",
@@ -914,8 +1005,9 @@ export const mathEquations = [
   {
     "name": "area of a sector",
     "aliases": "sector area",
+    "latex": "A = \\frac{1}{2}r^2\\theta",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mi>r</mi><mn>2</mn></msup><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">A = \\frac{1}{2}r^2\\theta</annotation></semantics></math>",
-    "unicodemath": "A = 1/2r^2θ",
+    "unicodemath": "A = 1/2 r^2θ",
     "domain": "Geometry & Trigonometry",
     "description": "Area of a circular sector with radius r and central angle in radians",
     "dictationString": "A equals one half r squared theta",
@@ -924,8 +1016,9 @@ export const mathEquations = [
   {
     "name": "area of a triangle using sine",
     "aliases": "triangle area two sides and angle",
+    "latex": "A = \\frac{1}{2}ab\\sin C",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><mi>b</mi><mi>sin</mi><mo>⁡</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">A = \\frac{1}{2}ab\\sin C</annotation></semantics></math>",
-    "unicodemath": "A = 1/2absin C",
+    "unicodemath": "A = 1/2 absin C",
     "domain": "Geometry & Trigonometry",
     "description": "Area of a triangle given two sides a and b and included angle C",
     "dictationString": "A equals one half a b sine C",
@@ -934,6 +1027,7 @@ export const mathEquations = [
   {
     "name": "half-angle formulas",
     "aliases": "half angle sine; half angle cosine; half angle tangent",
+    "latex": "\\sin\\left(\\frac{\\theta}{2}\\right) = \\pm\\sqrt{\\frac{1-\\cos\\theta}{2}};\\; \\cos\\left(\\frac{\\theta}{2}\\right) = \\pm\\sqrt{\\frac{1+\\cos\\theta}{2}};\\; \\tan\\left(\\frac{\\theta}{2}\\right) = \\frac{1-\\cos\\theta}{\\sin\\theta}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mi>θ</mi><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mo>=</mo><mo>±</mo><msqrt><mfrac><mrow><mn>1</mn><mo>−</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mn>2</mn></mfrac></msqrt><mo separator=\"true\">;</mo><mtext>  </mtext><mi>cos</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mi>θ</mi><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mo>=</mo><mo>±</mo><msqrt><mfrac><mrow><mn>1</mn><mo>+</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mn>2</mn></mfrac></msqrt><mo separator=\"true\">;</mo><mtext>  </mtext><mi>tan</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mi>θ</mi><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sin\\left(\\frac{\\theta}{2}\\right) = \\pm\\sqrt{\\frac{1-\\cos\\theta}{2}};\\; \\cos\\left(\\frac{\\theta}{2}\\right) = \\pm\\sqrt{\\frac{1+\\cos\\theta}{2}};\\; \\tan\\left(\\frac{\\theta}{2}\\right) = \\frac{1-\\cos\\theta}{\\sin\\theta}</annotation></semantics></math>",
     "unicodemath": "sin(θ/2) = ±√((1-cosθ)/2); cos(θ/2) = ±√((1+cosθ)/2); tan(θ/2) = (1-cosθ)/sinθ",
     "domain": "Geometry & Trigonometry",
@@ -944,6 +1038,7 @@ export const mathEquations = [
   {
     "name": "power-reducing formulas",
     "aliases": "sin squared power reduction; cos squared power reduction",
+    "latex": "\\sin^2\\theta = \\frac{1-\\cos(2\\theta)}{2};\\; \\cos^2\\theta = \\frac{1+\\cos(2\\theta)}{2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mrow><mi>sin</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>θ</mi><mo stretchy=\"false\">)</mo></mrow><mn>2</mn></mfrac><mo separator=\"true\">;</mo><mtext>  </mtext><msup><mrow><mi>cos</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>θ</mi><mo stretchy=\"false\">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sin^2\\theta = \\frac{1-\\cos(2\\theta)}{2};\\; \\cos^2\\theta = \\frac{1+\\cos(2\\theta)}{2}</annotation></semantics></math>",
     "unicodemath": "sin^2θ = (1-cos(2θ))/2; cos^2θ = (1+cos(2θ))/2",
     "domain": "Geometry & Trigonometry",
@@ -954,6 +1049,7 @@ export const mathEquations = [
   {
     "name": "angular velocity",
     "aliases": "omega equals theta over t",
+    "latex": "\\omega = \\frac{\\theta}{t}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ω</mi><mo>=</mo><mfrac><mi>θ</mi><mi>t</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\omega = \\frac{\\theta}{t}</annotation></semantics></math>",
     "unicodemath": "ω = θ/t",
     "domain": "Geometry & Trigonometry",
@@ -964,6 +1060,7 @@ export const mathEquations = [
   {
     "name": "linear velocity from angular",
     "aliases": "v equals r omega",
+    "latex": "v = r\\omega",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>v</mi><mo>=</mo><mi>r</mi><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">v = r\\omega</annotation></semantics></math>",
     "unicodemath": "v = rω",
     "domain": "Geometry & Trigonometry",
@@ -974,6 +1071,7 @@ export const mathEquations = [
   {
     "name": "product-to-sum identities",
     "aliases": "product to sum sin cos; product to sum cos cos; product to sum sin sin",
+    "latex": "\\sin A\\cos B = \\frac{1}{2}[\\sin(A+B)+\\sin(A-B)];\\; \\cos A\\cos B = \\frac{1}{2}[\\cos(A-B)+\\cos(A+B)];\\; \\sin A\\sin B = \\frac{1}{2}[\\cos(A-B)-\\cos(A+B)]",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mi>A</mi><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"false\">[</mo><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>+</mo><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo><mo separator=\"true\">;</mo><mtext>  </mtext><mi>cos</mi><mo>⁡</mo><mi>A</mi><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"false\">[</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>+</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo><mo separator=\"true\">;</mo><mtext>  </mtext><mi>sin</mi><mo>⁡</mo><mi>A</mi><mi>sin</mi><mo>⁡</mo><mi>B</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"false\">[</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\sin A\\cos B = \\frac{1}{2}[\\sin(A+B)+\\sin(A-B)];\\; \\cos A\\cos B = \\frac{1}{2}[\\cos(A-B)+\\cos(A+B)];\\; \\sin A\\sin B = \\frac{1}{2}[\\cos(A-B)-\\cos(A+B)]</annotation></semantics></math>",
     "unicodemath": "sin Acos B = 1/2[sin(A+B)+sin(A-B)]; cos Acos B = 1/2[cos(A-B)+cos(A+B)]; sin Asin B = 1/2[cos(A-B)-cos(A+B)]",
     "domain": "Geometry & Trigonometry",
@@ -984,6 +1082,7 @@ export const mathEquations = [
   {
     "name": "sum-to-product identities",
     "aliases": "sum to product sine; sum to product cosine",
+    "latex": "\\sin A + \\sin B = 2\\sin\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right);\\; \\cos A + \\cos B = 2\\cos\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mi>A</mi><mo>+</mo><mi>sin</mi><mo>⁡</mo><mi>B</mi><mo>=</mo><mn>2</mn><mi>sin</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mi>cos</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi>A</mi><mo>−</mo><mi>B</mi></mrow><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mo separator=\"true\">;</mo><mtext>  </mtext><mi>cos</mi><mo>⁡</mo><mi>A</mi><mo>+</mo><mi>cos</mi><mo>⁡</mo><mi>B</mi><mo>=</mo><mn>2</mn><mi>cos</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mi>cos</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi>A</mi><mo>−</mo><mi>B</mi></mrow><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\sin A + \\sin B = 2\\sin\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right);\\; \\cos A + \\cos B = 2\\cos\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right)</annotation></semantics></math>",
     "unicodemath": "sin A + sin B = 2sin((A+B)/2)cos((A-B)/2); cos A + cos B = 2cos((A+B)/2)cos((A-B)/2)",
     "domain": "Geometry & Trigonometry",
@@ -994,6 +1093,7 @@ export const mathEquations = [
   {
     "name": "standard form of an ellipse",
     "aliases": "ellipse equation",
+    "latex": "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><msup><mi>x</mi><mn>2</mn></msup><msup><mi>a</mi><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1</annotation></semantics></math>",
     "unicodemath": "x^2/a^2 + y^2/b^2 = 1",
     "domain": "Geometry & Trigonometry",
@@ -1004,6 +1104,7 @@ export const mathEquations = [
   {
     "name": "standard form of a hyperbola",
     "aliases": "hyperbola equation",
+    "latex": "\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><msup><mi>x</mi><mn>2</mn></msup><msup><mi>a</mi><mn>2</mn></msup></mfrac><mo>−</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1</annotation></semantics></math>",
     "unicodemath": "x^2/a^2 - y^2/b^2 = 1",
     "domain": "Geometry & Trigonometry",
@@ -1014,6 +1115,7 @@ export const mathEquations = [
   {
     "name": "standard form of a parabola",
     "aliases": "parabola from focus",
+    "latex": "x^2 = 4py",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>4</mn><mi>p</mi><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">x^2 = 4py</annotation></semantics></math>",
     "unicodemath": "x^2 = 4py",
     "domain": "Geometry & Trigonometry",
@@ -1024,6 +1126,7 @@ export const mathEquations = [
   {
     "name": "chain rule",
     "aliases": "derivative of a composition",
+    "latex": "\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>u</mi></mrow></mfrac><mo>⋅</mo><mfrac><mrow><mi>d</mi><mi>u</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}</annotation></semantics></math>",
     "unicodemath": "dy/dx = dy/du ⋅ du/dx",
     "domain": "Calculus & Analysis",
@@ -1034,6 +1137,7 @@ export const mathEquations = [
   {
     "name": "product rule",
     "aliases": "derivative of a product",
+    "latex": "\\frac{d}{dx}[fg] = f'g + fg'",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>f</mi><mi>g</mi><mo stretchy=\"false\">]</mo><mo>=</mo><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mi>g</mi><mo>+</mo><mi>f</mi><msup><mi>g</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[fg] = f&#x27;g + fg&#x27;</annotation></semantics></math>",
     "unicodemath": "d/dx[fg] = f'g + fg'",
     "domain": "Calculus & Analysis",
@@ -1044,6 +1148,7 @@ export const mathEquations = [
   {
     "name": "quotient rule",
     "aliases": "derivative of a quotient",
+    "latex": "\\frac{d}{dx}\\left[\\frac{f}{g}\\right] = \\frac{f'g - fg'}{g^2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mrow><mo fence=\"true\">[</mo><mfrac><mi>f</mi><mi>g</mi></mfrac><mo fence=\"true\">]</mo></mrow><mo>=</mo><mfrac><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mi>g</mi><mo>−</mo><mi>f</mi><msup><mi>g</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><msup><mi>g</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}\\left[\\frac{f}{g}\\right] = \\frac{f&#x27;g - fg&#x27;}{g^2}</annotation></semantics></math>",
     "unicodemath": "d/dx[f/g] = (f'g-fg')/g^2",
     "domain": "Calculus & Analysis",
@@ -1054,6 +1159,7 @@ export const mathEquations = [
   {
     "name": "power rule for derivatives",
     "aliases": "derivative power rule",
+    "latex": "\\frac{d}{dx}[x^n] = nx^{n-1}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><msup><mi>x</mi><mi>n</mi></msup><mo stretchy=\"false\">]</mo><mo>=</mo><mi>n</mi><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[x^n] = nx^{n-1}</annotation></semantics></math>",
     "unicodemath": "d/dx[x^n] = nx^(n-1)",
     "domain": "Calculus & Analysis",
@@ -1064,6 +1170,7 @@ export const mathEquations = [
   {
     "name": "derivative of sine",
     "aliases": "d dx sin x",
+    "latex": "\\frac{d}{dx}[\\sin x] = \\cos x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>sin</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mi>cos</mi><mo>⁡</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\sin x] = \\cos x</annotation></semantics></math>",
     "unicodemath": "d/dx[sin x] = cos x",
     "domain": "Calculus & Analysis",
@@ -1074,6 +1181,7 @@ export const mathEquations = [
   {
     "name": "derivative of cosine",
     "aliases": "d dx cos x",
+    "latex": "\\frac{d}{dx}[\\cos x] = -\\sin x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>cos</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mo>−</mo><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\cos x] = -\\sin x</annotation></semantics></math>",
     "unicodemath": "d/dx[cos x] = -sin x",
     "domain": "Calculus & Analysis",
@@ -1084,6 +1192,7 @@ export const mathEquations = [
   {
     "name": "derivative of e to the x",
     "aliases": "d dx e to the x",
+    "latex": "\\frac{d}{dx}[e^x] = e^x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><msup><mi>e</mi><mi>x</mi></msup><mo stretchy=\"false\">]</mo><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[e^x] = e^x</annotation></semantics></math>",
     "unicodemath": "d/dx[e^x] = e^x",
     "domain": "Calculus & Analysis",
@@ -1094,6 +1203,7 @@ export const mathEquations = [
   {
     "name": "derivative of natural log",
     "aliases": "d dx ln x",
+    "latex": "\\frac{d}{dx}[\\ln x] = \\frac{1}{x}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>ln</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\ln x] = \\frac{1}{x}</annotation></semantics></math>",
     "unicodemath": "d/dx[ln x] = 1/x",
     "domain": "Calculus & Analysis",
@@ -1104,6 +1214,7 @@ export const mathEquations = [
   {
     "name": "derivative of tangent",
     "aliases": "d dx tan x",
+    "latex": "\\frac{d}{dx}[\\tan x] = \\sec^2 x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>tan</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><msup><mrow><mi>sec</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\tan x] = \\sec^2 x</annotation></semantics></math>",
     "unicodemath": "d/dx[tan x] = sec^2 x",
     "domain": "Calculus & Analysis",
@@ -1114,6 +1225,7 @@ export const mathEquations = [
   {
     "name": "derivative of cotangent",
     "aliases": "d dx cot x",
+    "latex": "\\frac{d}{dx}[\\cot x] = -\\csc^2 x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>cot</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mo>−</mo><msup><mrow><mi>csc</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\cot x] = -\\csc^2 x</annotation></semantics></math>",
     "unicodemath": "d/dx[cot x] = -csc^2 x",
     "domain": "Calculus & Analysis",
@@ -1124,6 +1236,7 @@ export const mathEquations = [
   {
     "name": "derivative of secant",
     "aliases": "d dx sec x",
+    "latex": "\\frac{d}{dx}[\\sec x] = \\sec x\\tan x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>sec</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mi>sec</mi><mo>⁡</mo><mi>x</mi><mi>tan</mi><mo>⁡</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\sec x] = \\sec x\\tan x</annotation></semantics></math>",
     "unicodemath": "d/dx[sec x] = sec xtan x",
     "domain": "Calculus & Analysis",
@@ -1134,6 +1247,7 @@ export const mathEquations = [
   {
     "name": "derivative of cosecant",
     "aliases": "d dx csc x",
+    "latex": "\\frac{d}{dx}[\\csc x] = -\\csc x\\cot x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>csc</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mo>−</mo><mi>csc</mi><mo>⁡</mo><mi>x</mi><mi>cot</mi><mo>⁡</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\csc x] = -\\csc x\\cot x</annotation></semantics></math>",
     "unicodemath": "d/dx[csc x] = -csc xcot x",
     "domain": "Calculus & Analysis",
@@ -1144,6 +1258,7 @@ export const mathEquations = [
   {
     "name": "derivative of a to the x",
     "aliases": "d dx a to the x",
+    "latex": "\\frac{d}{dx}[a^x] = a^x \\ln a",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><msup><mi>a</mi><mi>x</mi></msup><mo stretchy=\"false\">]</mo><mo>=</mo><msup><mi>a</mi><mi>x</mi></msup><mi>ln</mi><mo>⁡</mo><mi>a</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[a^x] = a^x \\ln a</annotation></semantics></math>",
     "unicodemath": "d/dx[a^x] = a^x ln a",
     "domain": "Calculus & Analysis",
@@ -1154,6 +1269,7 @@ export const mathEquations = [
   {
     "name": "derivative of arcsin",
     "aliases": "d dx arcsin x",
+    "latex": "\\frac{d}{dx}[\\arcsin x] = \\frac{1}{\\sqrt{1-x^2}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>arcsin</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\arcsin x] = \\frac{1}{\\sqrt{1-x^2}}</annotation></semantics></math>",
     "unicodemath": "d/dx[arcsin x] = 1/√(1-x^2)",
     "domain": "Calculus & Analysis",
@@ -1164,6 +1280,7 @@ export const mathEquations = [
   {
     "name": "derivative of arccos",
     "aliases": "d dx arccos x",
+    "latex": "\\frac{d}{dx}[\\arccos x] = -\\frac{1}{\\sqrt{1-x^2}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>arccos</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mo>−</mo><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\arccos x] = -\\frac{1}{\\sqrt{1-x^2}}</annotation></semantics></math>",
     "unicodemath": "d/dx[arccos x] = -1/√(1-x^2)",
     "domain": "Calculus & Analysis",
@@ -1174,6 +1291,7 @@ export const mathEquations = [
   {
     "name": "derivative of arctan",
     "aliases": "d dx arctan x",
+    "latex": "\\frac{d}{dx}[\\arctan x] = \\frac{1}{1+x^2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy=\"false\">[</mo><mi>arctan</mi><mo>⁡</mo><mi>x</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{d}{dx}[\\arctan x] = \\frac{1}{1+x^2}</annotation></semantics></math>",
     "unicodemath": "d/dx[arctan x] = 1/(1+x^2)",
     "domain": "Calculus & Analysis",
@@ -1184,6 +1302,7 @@ export const mathEquations = [
   {
     "name": "fundamental theorem of calculus",
     "aliases": "FTC",
+    "latex": "\\int_{a}^{b} f(x)\\,dx = F(b) - F(a)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\int_{a}^{b} f(x)\\,dx = F(b) - F(a)</annotation></semantics></math>",
     "unicodemath": "∫_a^b f(x)dx = F(b) - F(a)",
     "domain": "Calculus & Analysis",
@@ -1194,6 +1313,7 @@ export const mathEquations = [
   {
     "name": "definite integral",
     "aliases": "integral from a to b",
+    "latex": "\\int_{a}^{b} f(x)\\,dx",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\int_{a}^{b} f(x)\\,dx</annotation></semantics></math>",
     "unicodemath": "∫_a^b f(x)dx",
     "domain": "Calculus & Analysis",
@@ -1204,6 +1324,7 @@ export const mathEquations = [
   {
     "name": "power rule for integration",
     "aliases": "integral power rule",
+    "latex": "\\int x^n\\,dx = \\frac{x^{n+1}}{n+1} + C",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><msup><mi>x</mi><mi>n</mi></msup><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mfrac><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int x^n\\,dx = \\frac{x^{n+1}}{n+1} + C</annotation></semantics></math>",
     "unicodemath": "∫ x^ndx = x^(n+1)/(n+1) + C",
     "domain": "Calculus & Analysis",
@@ -1214,6 +1335,7 @@ export const mathEquations = [
   {
     "name": "integral of 1 over x",
     "aliases": "integral of reciprocal",
+    "latex": "\\int \\frac{1}{x}\\,dx = \\ln|x| + C",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><mfrac><mn>1</mn><mi>x</mi></mfrac><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mi>ln</mi><mo>⁡</mo><mi mathvariant=\"normal\">∣</mi><mi>x</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int \\frac{1}{x}\\,dx = \\ln|x| + C</annotation></semantics></math>",
     "unicodemath": "∫ 1/xdx = ln|x| + C",
     "domain": "Calculus & Analysis",
@@ -1224,6 +1346,7 @@ export const mathEquations = [
   {
     "name": "integral of e to the x",
     "aliases": "integral of exponential",
+    "latex": "\\int e^x\\,dx = e^x + C",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><msup><mi>e</mi><mi>x</mi></msup><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int e^x\\,dx = e^x + C</annotation></semantics></math>",
     "unicodemath": "∫ e^xdx = e^x + C",
     "domain": "Calculus & Analysis",
@@ -1234,6 +1357,7 @@ export const mathEquations = [
   {
     "name": "integral of a to the x",
     "aliases": "integral of a to the x",
+    "latex": "\\int a^x\\,dx = \\frac{a^x}{\\ln a} + C",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><msup><mi>a</mi><mi>x</mi></msup><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mfrac><msup><mi>a</mi><mi>x</mi></msup><mrow><mi>ln</mi><mo>⁡</mo><mi>a</mi></mrow></mfrac><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int a^x\\,dx = \\frac{a^x}{\\ln a} + C</annotation></semantics></math>",
     "unicodemath": "∫ a^xdx = a^x/lna + C",
     "domain": "Calculus & Analysis",
@@ -1244,6 +1368,7 @@ export const mathEquations = [
   {
     "name": "integral of sine",
     "aliases": "integral of sin x",
+    "latex": "\\int \\sin x\\,dx = -\\cos x + C",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><mi>sin</mi><mo>⁡</mo><mi>x</mi><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mo>−</mo><mi>cos</mi><mo>⁡</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int \\sin x\\,dx = -\\cos x + C</annotation></semantics></math>",
     "unicodemath": "∫ sin xdx = -cos x + C",
     "domain": "Calculus & Analysis",
@@ -1254,6 +1379,7 @@ export const mathEquations = [
   {
     "name": "integral of cosine",
     "aliases": "integral of cos x",
+    "latex": "\\int \\cos x\\,dx = \\sin x + C",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><mi>cos</mi><mo>⁡</mo><mi>x</mi><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mi>sin</mi><mo>⁡</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int \\cos x\\,dx = \\sin x + C</annotation></semantics></math>",
     "unicodemath": "∫ cos xdx = sin x + C",
     "domain": "Calculus & Analysis",
@@ -1264,6 +1390,7 @@ export const mathEquations = [
   {
     "name": "integral of tangent",
     "aliases": "integral of tan x",
+    "latex": "\\int \\tan x\\,dx = -\\ln|\\cos x| + C",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><mi>tan</mi><mo>⁡</mo><mi>x</mi><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mo>−</mo><mi>ln</mi><mo>⁡</mo><mi mathvariant=\"normal\">∣</mi><mi>cos</mi><mo>⁡</mo><mi>x</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int \\tan x\\,dx = -\\ln|\\cos x| + C</annotation></semantics></math>",
     "unicodemath": "∫ tan xdx = -ln|cos x| + C",
     "domain": "Calculus & Analysis",
@@ -1274,6 +1401,7 @@ export const mathEquations = [
   {
     "name": "integral of secant",
     "aliases": "integral of sec x",
+    "latex": "\\int \\sec x\\,dx = \\ln|\\sec x + \\tan x| + C",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><mi>sec</mi><mo>⁡</mo><mi>x</mi><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mi>ln</mi><mo>⁡</mo><mi mathvariant=\"normal\">∣</mi><mi>sec</mi><mo>⁡</mo><mi>x</mi><mo>+</mo><mi>tan</mi><mo>⁡</mo><mi>x</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int \\sec x\\,dx = \\ln|\\sec x + \\tan x| + C</annotation></semantics></math>",
     "unicodemath": "∫ sec xdx = ln|sec x + tan x| + C",
     "domain": "Calculus & Analysis",
@@ -1284,6 +1412,7 @@ export const mathEquations = [
   {
     "name": "integral of cosecant",
     "aliases": "integral of csc x",
+    "latex": "\\int \\csc x\\,dx = -\\ln|\\csc x + \\cot x| + C",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><mi>csc</mi><mo>⁡</mo><mi>x</mi><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mo>−</mo><mi>ln</mi><mo>⁡</mo><mi mathvariant=\"normal\">∣</mi><mi>csc</mi><mo>⁡</mo><mi>x</mi><mo>+</mo><mi>cot</mi><mo>⁡</mo><mi>x</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int \\csc x\\,dx = -\\ln|\\csc x + \\cot x| + C</annotation></semantics></math>",
     "unicodemath": "∫ csc xdx = -ln|csc x + cot x| + C",
     "domain": "Calculus & Analysis",
@@ -1294,6 +1423,7 @@ export const mathEquations = [
   {
     "name": "integral of sec squared",
     "aliases": "integral of sec squared x",
+    "latex": "\\int \\sec^2 x\\,dx = \\tan x + C",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><msup><mrow><mi>sec</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>x</mi><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mi>tan</mi><mo>⁡</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int \\sec^2 x\\,dx = \\tan x + C</annotation></semantics></math>",
     "unicodemath": "∫ sec^2 xdx = tan x + C",
     "domain": "Calculus & Analysis",
@@ -1304,6 +1434,7 @@ export const mathEquations = [
   {
     "name": "integral of 1 over sqrt 1 minus x squared",
     "aliases": "arcsin integral form",
+    "latex": "\\int \\frac{1}{\\sqrt{1-x^2}}\\,dx = \\arcsin x + C",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mfrac><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mi>arcsin</mi><mo>⁡</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int \\frac{1}{\\sqrt{1-x^2}}\\,dx = \\arcsin x + C</annotation></semantics></math>",
     "unicodemath": "∫ 1/√(1-x^2)dx = arcsin x + C",
     "domain": "Calculus & Analysis",
@@ -1314,6 +1445,7 @@ export const mathEquations = [
   {
     "name": "integral of 1 over 1 plus x squared",
     "aliases": "arctan integral form",
+    "latex": "\\int \\frac{1}{1+x^2}\\,dx = \\arctan x + C",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mi>arctan</mi><mo>⁡</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\int \\frac{1}{1+x^2}\\,dx = \\arctan x + C</annotation></semantics></math>",
     "unicodemath": "∫ 1/(1+x^2)dx = arctan x + C",
     "domain": "Calculus & Analysis",
@@ -1324,6 +1456,7 @@ export const mathEquations = [
   {
     "name": "integration by parts",
     "aliases": "IBP",
+    "latex": "\\int u\\,dv = uv - \\int v\\,du",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>∫</mo><mi>u</mi><mtext> </mtext><mi>d</mi><mi>v</mi><mo>=</mo><mi>u</mi><mi>v</mi><mo>−</mo><mo>∫</mo><mi>v</mi><mtext> </mtext><mi>d</mi><mi>u</mi></mrow><annotation encoding=\"application/x-tex\">\\int u\\,dv = uv - \\int v\\,du</annotation></semantics></math>",
     "unicodemath": "∫ udv = uv - ∫ vdu",
     "domain": "Calculus & Analysis",
@@ -1334,6 +1467,7 @@ export const mathEquations = [
   {
     "name": "double integral",
     "aliases": "integral over a region",
+    "latex": "\\iint_{D} f(x,y)\\,dA",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∬</mo><mi>D</mi></msub><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">\\iint_{D} f(x,y)\\,dA</annotation></semantics></math>",
     "unicodemath": "∬_D f(x,y)dA",
     "domain": "Calculus & Analysis",
@@ -1344,6 +1478,7 @@ export const mathEquations = [
   {
     "name": "triple integral",
     "aliases": "integral over a volume",
+    "latex": "\\iiint_{V} f(x,y,z)\\,dV",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∭</mo><mi>V</mi></msub><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo separator=\"true\">,</mo><mi>z</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">\\iiint_{V} f(x,y,z)\\,dV</annotation></semantics></math>",
     "unicodemath": "∭_V f(x,y,z)dV",
     "domain": "Calculus & Analysis",
@@ -1354,6 +1489,7 @@ export const mathEquations = [
   {
     "name": "contour integral",
     "aliases": "line integral",
+    "latex": "\\oint_{C} f(z)\\,dz",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∮</mo><mi>C</mi></msub><mi>f</mi><mo stretchy=\"false\">(</mo><mi>z</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>z</mi></mrow><annotation encoding=\"application/x-tex\">\\oint_{C} f(z)\\,dz</annotation></semantics></math>",
     "unicodemath": "∮_C f(z)dz",
     "domain": "Calculus & Analysis",
@@ -1364,6 +1500,7 @@ export const mathEquations = [
   {
     "name": "Taylor series",
     "aliases": "Taylor expansion",
+    "latex": "f(x) = \\sum_{n=0}^{\\infty} \\frac{f^{(n)}(a)}{n!}(x-a)^n",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant=\"normal\">∞</mi></munderover><mfrac><mrow><msup><mi>f</mi><mrow><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo></mrow></msup><mo stretchy=\"false\">(</mo><mi>a</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>n</mi><mo stretchy=\"false\">!</mo></mrow></mfrac><mo stretchy=\"false\">(</mo><mi>x</mi><mo>−</mo><mi>a</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">f(x) = \\sum_{n=0}^{\\infty} \\frac{f^{(n)}(a)}{n!}(x-a)^n</annotation></semantics></math>",
     "unicodemath": "f(x) = ∑_(n=0)^∞ f^((n))(a)/n!(x-a)^n",
     "domain": "Calculus & Analysis",
@@ -1374,8 +1511,9 @@ export const mathEquations = [
   {
     "name": "Maclaurin series",
     "aliases": "Maclaurin expansion",
+    "latex": "f(x) = \\sum_{n=0}^{\\infty} \\frac{f^{(n)}(0)}{n!}x^n",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant=\"normal\">∞</mi></munderover><mfrac><mrow><msup><mi>f</mi><mrow><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo></mrow></msup><mo stretchy=\"false\">(</mo><mn>0</mn><mo stretchy=\"false\">)</mo></mrow><mrow><mi>n</mi><mo stretchy=\"false\">!</mo></mrow></mfrac><msup><mi>x</mi><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">f(x) = \\sum_{n=0}^{\\infty} \\frac{f^{(n)}(0)}{n!}x^n</annotation></semantics></math>",
-    "unicodemath": "f(x) = ∑_(n=0)^∞ f^((n))(0)/n!x^n",
+    "unicodemath": "f(x) = ∑_(n=0)^∞ f^((n))(0)/n! x^n",
     "domain": "Calculus & Analysis",
     "description": "Maclaurin series (Taylor series at a=0)",
     "dictationString": "f of x equals the sum from n equals zero to infinity of begin fraction the nth derivative of f at zero over n factorial end fraction times x to the n",
@@ -1384,6 +1522,7 @@ export const mathEquations = [
   {
     "name": "L'Hopital's rule",
     "aliases": "L'Hopital",
+    "latex": "\\lim_{x\\to a}\\frac{f(x)}{g(x)} = \\lim_{x\\to a}\\frac{f'(x)}{g'(x)}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></munder><mfrac><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>g</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow></mfrac><mo>=</mo><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></munder><mfrac><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><mrow><msup><mi>g</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\lim_{x\\to a}\\frac{f(x)}{g(x)} = \\lim_{x\\to a}\\frac{f&#x27;(x)}{g&#x27;(x)}</annotation></semantics></math>",
     "unicodemath": "lim_(x→a)f(x)/g(x) = lim_(x→a)f'(x)/g'(x)",
     "domain": "Calculus & Analysis",
@@ -1394,6 +1533,7 @@ export const mathEquations = [
   {
     "name": "mean value theorem",
     "aliases": "MVT",
+    "latex": "f'(c) = \\frac{f(b)-f(a)}{b-a}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>c</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">f&#x27;(c) = \\frac{f(b)-f(a)}{b-a}</annotation></semantics></math>",
     "unicodemath": "f'(c) = (f(b)-f(a))/(b-a)",
     "domain": "Calculus & Analysis",
@@ -1404,8 +1544,9 @@ export const mathEquations = [
   {
     "name": "Rolle's theorem",
     "aliases": "Rolles theorem",
+    "latex": "f(a)=f(b) \\implies f'(c)=0 \\text{ for some } c \\in (a,b)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>c</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>0</mn><mtext> for some </mtext><mi>c</mi><mo>∈</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mo separator=\"true\">,</mo><mi>b</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">f(a)=f(b) \\implies f&#x27;(c)=0 \\text{ for some } c \\in (a,b)</annotation></semantics></math>",
-    "unicodemath": "f(a)=f(b) ⟹ f'(c)=0  for some  c ∈ (a,b)",
+    "unicodemath": "f(a)=f(b) ⟹ f'(c)=0 for some c ∈ (a,b)",
     "domain": "Calculus & Analysis",
     "description": "Rolle's theorem: horizontal tangent exists between equal values",
     "dictationString": "if f of a equals f of b then f prime of c equals zero for some c in the open interval a comma b",
@@ -1414,8 +1555,9 @@ export const mathEquations = [
   {
     "name": "squeeze theorem",
     "aliases": "sandwich theorem",
+    "latex": "g(x) \\leq f(x) \\leq h(x) \\text{ and } \\lim g = \\lim h = L \\implies \\lim f = L",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>g</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>≤</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>≤</mo><mi>h</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> and </mtext><mi>lim</mi><mo>⁡</mo><mi>g</mi><mo>=</mo><mi>lim</mi><mo>⁡</mo><mi>h</mi><mo>=</mo><mi>L</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>lim</mi><mo>⁡</mo><mi>f</mi><mo>=</mo><mi>L</mi></mrow><annotation encoding=\"application/x-tex\">g(x) \\leq f(x) \\leq h(x) \\text{ and } \\lim g = \\lim h = L \\implies \\lim f = L</annotation></semantics></math>",
-    "unicodemath": "g(x) ≤ f(x) ≤ h(x)  and  lim g = lim h = L ⟹ lim f = L",
+    "unicodemath": "g(x) ≤ f(x) ≤ h(x) and lim g = lim h = L ⟹ lim f = L",
     "domain": "Calculus & Analysis",
     "description": "Squeeze theorem for evaluating limits",
     "dictationString": "if g of x is less than or equal to f of x is less than or equal to h of x, and the limit of g equals the limit of h equals L, then the limit of f equals L",
@@ -1424,6 +1566,7 @@ export const mathEquations = [
   {
     "name": "limit of sin x over x",
     "aliases": "fundamental trig limit",
+    "latex": "\\lim_{x \\to 0}\\frac{\\sin x}{x} = 1",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">\\lim_{x \\to 0}\\frac{\\sin x}{x} = 1</annotation></semantics></math>",
     "unicodemath": "lim_(x→0)sinx/x = 1",
     "domain": "Calculus & Analysis",
@@ -1434,6 +1577,7 @@ export const mathEquations = [
   {
     "name": "limit of 1 minus cos x over x",
     "aliases": "second trig limit",
+    "latex": "\\lim_{x \\to 0}\\frac{1-\\cos x}{x} = 0",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mn>1</mn><mo>−</mo><mi>cos</mi><mo>⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">\\lim_{x \\to 0}\\frac{1-\\cos x}{x} = 0</annotation></semantics></math>",
     "unicodemath": "lim_(x→0)(1-cosx)/x = 0",
     "domain": "Calculus & Analysis",
@@ -1444,6 +1588,7 @@ export const mathEquations = [
   {
     "name": "average value of a function",
     "aliases": "mean value of f",
+    "latex": "f_{\\text{avg}} = \\frac{1}{b-a}\\int_{a}^{b} f(x)\\,dx",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>f</mi><mtext>avg</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow></mfrac><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">f_{\\text{avg}} = \\frac{1}{b-a}\\int_{a}^{b} f(x)\\,dx</annotation></semantics></math>",
     "unicodemath": "f_avg = 1/(b-a)∫_a^b f(x)dx",
     "domain": "Calculus & Analysis",
@@ -1454,6 +1599,7 @@ export const mathEquations = [
   {
     "name": "disk method",
     "aliases": "volume of revolution disk",
+    "latex": "V = \\pi\\int_{a}^{b}[f(x)]^2\\,dx",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>π</mi><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mo stretchy=\"false\">[</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><msup><mo stretchy=\"false\">]</mo><mn>2</mn></msup><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">V = \\pi\\int_{a}^{b}[f(x)]^2\\,dx</annotation></semantics></math>",
     "unicodemath": "V = π∫_a^b[f(x)]^2dx",
     "domain": "Calculus & Analysis",
@@ -1464,6 +1610,7 @@ export const mathEquations = [
   {
     "name": "shell method",
     "aliases": "volume of revolution shell",
+    "latex": "V = 2\\pi\\int_{a}^{b} x\\,f(x)\\,dx",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mn>2</mn><mi>π</mi><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>x</mi><mtext> </mtext><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">V = 2\\pi\\int_{a}^{b} x\\,f(x)\\,dx</annotation></semantics></math>",
     "unicodemath": "V = 2π∫_a^b xf(x)dx",
     "domain": "Calculus & Analysis",
@@ -1474,6 +1621,7 @@ export const mathEquations = [
   {
     "name": "washer method",
     "aliases": "volume of revolution washer",
+    "latex": "V = \\pi\\int_{a}^{b}\\left[R(x)^2 - r(x)^2\\right]\\,dx",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>π</mi><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mo fence=\"true\">[</mo><mi>R</mi><mo stretchy=\"false\">(</mo><mi>x</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>−</mo><mi>r</mi><mo stretchy=\"false\">(</mo><mi>x</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo fence=\"true\">]</mo></mrow><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">V = \\pi\\int_{a}^{b}\\left[R(x)^2 - r(x)^2\\right]\\,dx</annotation></semantics></math>",
     "unicodemath": "V = π∫_a^b[R(x)^2 - r(x)^2]dx",
     "domain": "Calculus & Analysis",
@@ -1484,6 +1632,7 @@ export const mathEquations = [
   {
     "name": "arc length of a curve",
     "aliases": "length of a curve",
+    "latex": "L = \\int_{a}^{b}\\sqrt{1+[f'(x)]^2}\\,dx",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>L</mi><mo>=</mo><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><msqrt><mrow><mn>1</mn><mo>+</mo><mo stretchy=\"false\">[</mo><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><msup><mo stretchy=\"false\">]</mo><mn>2</mn></msup></mrow></msqrt><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">L = \\int_{a}^{b}\\sqrt{1+[f&#x27;(x)]^2}\\,dx</annotation></semantics></math>",
     "unicodemath": "L = ∫_a^b√(1+[f'(x)]^2)dx",
     "domain": "Calculus & Analysis",
@@ -1494,6 +1643,7 @@ export const mathEquations = [
   {
     "name": "surface area of revolution",
     "aliases": "surface area formula",
+    "latex": "S = 2\\pi\\int_{a}^{b} f(x)\\sqrt{1+[f'(x)]^2}\\,dx",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>2</mn><mi>π</mi><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><msqrt><mrow><mn>1</mn><mo>+</mo><mo stretchy=\"false\">[</mo><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><msup><mo stretchy=\"false\">]</mo><mn>2</mn></msup></mrow></msqrt><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">S = 2\\pi\\int_{a}^{b} f(x)\\sqrt{1+[f&#x27;(x)]^2}\\,dx</annotation></semantics></math>",
     "unicodemath": "S = 2π∫_a^b f(x)√(1+[f'(x)]^2)dx",
     "domain": "Calculus & Analysis",
@@ -1504,8 +1654,9 @@ export const mathEquations = [
   {
     "name": "p-series convergence",
     "aliases": "p series",
+    "latex": "\\sum_{n=1}^{\\infty}\\frac{1}{n^p} \\text{ converges if } p > 1",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant=\"normal\">∞</mi></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mi>p</mi></msup></mfrac><mtext> converges if </mtext><mi>p</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">\\sum_{n=1}^{\\infty}\\frac{1}{n^p} \\text{ converges if } p &gt; 1</annotation></semantics></math>",
-    "unicodemath": "∑_(n=1)^∞1/n^p  converges if  p > 1",
+    "unicodemath": "∑_(n=1)^∞1/n^p converges if p > 1",
     "domain": "Calculus & Analysis",
     "description": "p-series convergence criterion",
     "dictationString": "the sum from n equals one to infinity of begin fraction one over n to the p end fraction converges if p is greater than one",
@@ -1514,6 +1665,7 @@ export const mathEquations = [
   {
     "name": "ratio test",
     "aliases": "ratio test for series",
+    "latex": "\\lim_{n\\to\\infty}\\left|\\frac{a_{n+1}}{a_n}\\right| < 1 \\implies \\text{converges}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>n</mi><mo>→</mo><mi mathvariant=\"normal\">∞</mi></mrow></munder><mrow><mo fence=\"true\">∣</mo><mfrac><msub><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><msub><mi>a</mi><mi>n</mi></msub></mfrac><mo fence=\"true\">∣</mo></mrow><mo>&lt;</mo><mn>1</mn><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mtext>converges</mtext></mrow><annotation encoding=\"application/x-tex\">\\lim_{n\\to\\infty}\\left|\\frac{a_{n+1}}{a_n}\\right| &lt; 1 \\implies \\text{converges}</annotation></semantics></math>",
     "unicodemath": "lim_(n→∞)|a_(n+1)/a_n| < 1 ⟹ converges",
     "domain": "Calculus & Analysis",
@@ -1524,6 +1676,7 @@ export const mathEquations = [
   {
     "name": "root test",
     "aliases": "nth root test",
+    "latex": "\\lim_{n\\to\\infty}\\sqrt[n]{|a_n|} < 1 \\implies \\text{converges}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>n</mi><mo>→</mo><mi mathvariant=\"normal\">∞</mi></mrow></munder><mroot><mrow><mi mathvariant=\"normal\">∣</mi><msub><mi>a</mi><mi>n</mi></msub><mi mathvariant=\"normal\">∣</mi></mrow><mi>n</mi></mroot><mo>&lt;</mo><mn>1</mn><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mtext>converges</mtext></mrow><annotation encoding=\"application/x-tex\">\\lim_{n\\to\\infty}\\sqrt[n]{|a_n|} &lt; 1 \\implies \\text{converges}</annotation></semantics></math>",
     "unicodemath": "lim_(n→∞)n√(|a_n|) < 1 ⟹ converges",
     "domain": "Calculus & Analysis",
@@ -1534,6 +1687,7 @@ export const mathEquations = [
   {
     "name": "radius of convergence",
     "aliases": "power series radius",
+    "latex": "R = \\frac{1}{\\limsup_{n\\to\\infty}\\sqrt[n]{|a_n|}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>R</mi><mo>=</mo><mfrac><mn>1</mn><mrow><munder><mrow><mi mathvariant=\"normal\">lim sup</mi><mo>⁡</mo></mrow><mrow><mi>n</mi><mo>→</mo><mi mathvariant=\"normal\">∞</mi></mrow></munder><mroot><mrow><mi mathvariant=\"normal\">∣</mi><msub><mi>a</mi><mi>n</mi></msub><mi mathvariant=\"normal\">∣</mi></mrow><mi>n</mi></mroot></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">R = \\frac{1}{\\limsup_{n\\to\\infty}\\sqrt[n]{|a_n|}}</annotation></semantics></math>",
     "unicodemath": "R = 1/limsup_(n→∞)n√(|a_n|)",
     "domain": "Calculus & Analysis",
@@ -1544,8 +1698,9 @@ export const mathEquations = [
   {
     "name": "directional derivative",
     "aliases": "derivative in direction u",
+    "latex": "D_{\\mathbf{u}}f = \\nabla f \\cdot \\mathbf{u}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>D</mi><mi mathvariant=\"bold\">u</mi></msub><mi>f</mi><mo>=</mo><mi mathvariant=\"normal\">∇</mi><mi>f</mi><mo>⋅</mo><mi mathvariant=\"bold\">u</mi></mrow><annotation encoding=\"application/x-tex\">D_{\\mathbf{u}}f = \\nabla f \\cdot \\mathbf{u}</annotation></semantics></math>",
-    "unicodemath": "D_uf = ∇ f ⋅ u",
+    "unicodemath": "D_u f = ∇ f ⋅ u",
     "domain": "Calculus & Analysis",
     "description": "Directional derivative of f in the direction of unit vector u",
     "dictationString": "D sub u f equals the gradient of f dot u",
@@ -1554,8 +1709,9 @@ export const mathEquations = [
   {
     "name": "multivariable second derivative test",
     "aliases": "second partial test",
+    "latex": "D = f_{xx}f_{yy} - f_{xy}^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>D</mi><mo>=</mo><msub><mi>f</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><msub><mi>f</mi><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo>−</mo><msubsup><mi>f</mi><mrow><mi>x</mi><mi>y</mi></mrow><mn>2</mn></msubsup></mrow><annotation encoding=\"application/x-tex\">D = f_{xx}f_{yy} - f_{xy}^2</annotation></semantics></math>",
-    "unicodemath": "D = f_xxf_yy - f_xy^2",
+    "unicodemath": "D = f_xx f_yy - f_xy^2",
     "domain": "Calculus & Analysis",
     "description": "Discriminant for classifying critical points of f(x,y)",
     "dictationString": "D equals f sub x x times f sub y y minus f sub x y squared",
@@ -1564,6 +1720,7 @@ export const mathEquations = [
   {
     "name": "double integral in polar coordinates",
     "aliases": "polar area element",
+    "latex": "\\iint_{D} f(r,\\theta)\\,r\\,dr\\,d\\theta",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∬</mo><mi>D</mi></msub><mi>f</mi><mo stretchy=\"false\">(</mo><mi>r</mi><mo separator=\"true\">,</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>r</mi><mtext> </mtext><mi>d</mi><mi>r</mi><mtext> </mtext><mi>d</mi><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\iint_{D} f(r,\\theta)\\,r\\,dr\\,d\\theta</annotation></semantics></math>",
     "unicodemath": "∬_D f(r,θ)rdrdθ",
     "domain": "Calculus & Analysis",
@@ -1574,6 +1731,7 @@ export const mathEquations = [
   {
     "name": "change of variables Jacobian",
     "aliases": "substitution in double integral",
+    "latex": "\\iint_{D} f(x,y)\\,dx\\,dy = \\iint_{D'} f(g,h)\\,|J|\\,du\\,dv",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∬</mo><mi>D</mi></msub><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi><mtext> </mtext><mi>d</mi><mi>y</mi><mo>=</mo><msub><mo>∬</mo><msup><mi>D</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></msub><mi>f</mi><mo stretchy=\"false\">(</mo><mi>g</mi><mo separator=\"true\">,</mo><mi>h</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi mathvariant=\"normal\">∣</mi><mi>J</mi><mi mathvariant=\"normal\">∣</mi><mtext> </mtext><mi>d</mi><mi>u</mi><mtext> </mtext><mi>d</mi><mi>v</mi></mrow><annotation encoding=\"application/x-tex\">\\iint_{D} f(x,y)\\,dx\\,dy = \\iint_{D&#x27;} f(g,h)\\,|J|\\,du\\,dv</annotation></semantics></math>",
     "unicodemath": "∬_D f(x,y)dxdy = ∬_(D') f(g,h)|J|dudv",
     "domain": "Calculus & Analysis",
@@ -1584,6 +1742,7 @@ export const mathEquations = [
   {
     "name": "Green's theorem",
     "aliases": "Greens theorem",
+    "latex": "\\oint_{C}(P\\,dx + Q\\,dy) = \\iint_{D}\\!\\left(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y}\\right)dA",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∮</mo><mi>C</mi></msub><mo stretchy=\"false\">(</mo><mi>P</mi><mtext> </mtext><mi>d</mi><mi>x</mi><mo>+</mo><mi>Q</mi><mtext> </mtext><mi>d</mi><mi>y</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mo>∬</mo><mi>D</mi></msub><mtext> ⁣</mtext><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi mathvariant=\"normal\">∂</mi><mi>Q</mi></mrow><mrow><mi mathvariant=\"normal\">∂</mi><mi>x</mi></mrow></mfrac><mo>−</mo><mfrac><mrow><mi mathvariant=\"normal\">∂</mi><mi>P</mi></mrow><mrow><mi mathvariant=\"normal\">∂</mi><mi>y</mi></mrow></mfrac><mo fence=\"true\">)</mo></mrow><mi>d</mi><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">\\oint_{C}(P\\,dx + Q\\,dy) = \\iint_{D}\\!\\left(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y}\\right)dA</annotation></semantics></math>",
     "unicodemath": "∮_C(Pdx + Qdy) = ∬_D(∂Q/∂x-∂P/∂y)dA",
     "domain": "Calculus & Analysis",
@@ -1594,6 +1753,7 @@ export const mathEquations = [
   {
     "name": "Stokes' theorem",
     "aliases": "Stokes theorem",
+    "latex": "\\oint_{C}\\mathbf{F}\\cdot d\\mathbf{r} = \\iint_{S}(\\nabla\\times\\mathbf{F})\\cdot d\\mathbf{S}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∮</mo><mi>C</mi></msub><mi mathvariant=\"bold\">F</mi><mo>⋅</mo><mi>d</mi><mi mathvariant=\"bold\">r</mi><mo>=</mo><msub><mo>∬</mo><mi>S</mi></msub><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∇</mi><mo>×</mo><mi mathvariant=\"bold\">F</mi><mo stretchy=\"false\">)</mo><mo>⋅</mo><mi>d</mi><mi mathvariant=\"bold\">S</mi></mrow><annotation encoding=\"application/x-tex\">\\oint_{C}\\mathbf{F}\\cdot d\\mathbf{r} = \\iint_{S}(\\nabla\\times\\mathbf{F})\\cdot d\\mathbf{S}</annotation></semantics></math>",
     "unicodemath": "∮_CF⋅ dr = ∬_S(∇×F)⋅ dS",
     "domain": "Calculus & Analysis",
@@ -1604,6 +1764,7 @@ export const mathEquations = [
   {
     "name": "divergence theorem",
     "aliases": "Gauss's theorem",
+    "latex": "\\oiint_{S}\\mathbf{F}\\cdot d\\mathbf{S} = \\iiint_{V}(\\nabla\\cdot\\mathbf{F})\\,dV",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mo>∯</mo><mi>S</mi></msub><mi mathvariant=\"bold\">F</mi><mo>⋅</mo><mi>d</mi><mi mathvariant=\"bold\">S</mi><mo>=</mo><msub><mo>∭</mo><mi>V</mi></msub><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∇</mi><mo>⋅</mo><mi mathvariant=\"bold\">F</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">\\oiint_{S}\\mathbf{F}\\cdot d\\mathbf{S} = \\iiint_{V}(\\nabla\\cdot\\mathbf{F})\\,dV</annotation></semantics></math>",
     "unicodemath": "∯_SF⋅ dS = ∭_V(∇⋅F)dV",
     "domain": "Calculus & Analysis",
@@ -1614,6 +1775,7 @@ export const mathEquations = [
   {
     "name": "first order linear ODE",
     "aliases": "first order differential equation",
+    "latex": "\\frac{dy}{dx} + P(x)y = Q(x)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>+</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mi>y</mi><mo>=</mo><mi>Q</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\frac{dy}{dx} + P(x)y = Q(x)</annotation></semantics></math>",
     "unicodemath": "dy/dx + P(x)y = Q(x)",
     "domain": "Calculus & Analysis",
@@ -1624,6 +1786,7 @@ export const mathEquations = [
   {
     "name": "second order linear ODE",
     "aliases": "second order differential equation",
+    "latex": "y'' + py' + qy = 0",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>y</mi><mrow><mo mathvariant=\"normal\">′</mo><mo mathvariant=\"normal\">′</mo></mrow></msup><mo>+</mo><mi>p</mi><msup><mi>y</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>+</mo><mi>q</mi><mi>y</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">y&#x27;&#x27; + py&#x27; + qy = 0</annotation></semantics></math>",
     "unicodemath": "y'' + py' + qy = 0",
     "domain": "Calculus & Analysis",
@@ -1634,6 +1797,7 @@ export const mathEquations = [
   {
     "name": "Laplace transform definition",
     "aliases": "L transform",
+    "latex": "\\mathcal{L}\\{f(t)\\} = \\int_0^{\\infty} f(t)e^{-st}\\,dt",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"script\">L</mi><mo stretchy=\"false\">{</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">}</mo><mo>=</mo><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant=\"normal\">∞</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>s</mi><mi>t</mi></mrow></msup><mtext> </mtext><mi>d</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{L}\\{f(t)\\} = \\int_0^{\\infty} f(t)e^{-st}\\,dt</annotation></semantics></math>",
     "unicodemath": "ℒ{f(t)} = ∫_0^∞ f(t)e^(-st)dt",
     "domain": "Calculus & Analysis",
@@ -1644,6 +1808,7 @@ export const mathEquations = [
   {
     "name": "Fourier transform definition",
     "aliases": "F transform",
+    "latex": "\\hat{f}(\\omega) = \\int_{-\\infty}^{\\infty} f(t)e^{-i\\omega t}\\,dt",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mover accent=\"true\"><mi>f</mi><mo>^</mo></mover><mo stretchy=\"false\">(</mo><mi>ω</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant=\"normal\">∞</mi></mrow><mi mathvariant=\"normal\">∞</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>i</mi><mi>ω</mi><mi>t</mi></mrow></msup><mtext> </mtext><mi>d</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">\\hat{f}(\\omega) = \\int_{-\\infty}^{\\infty} f(t)e^{-i\\omega t}\\,dt</annotation></semantics></math>",
     "unicodemath": "f̂(ω) = ∫_(-∞)^∞ f(t)e^(-iωt)dt",
     "domain": "Calculus & Analysis",
@@ -1654,6 +1819,7 @@ export const mathEquations = [
   {
     "name": "inverse Fourier transform",
     "aliases": "inverse F transform",
+    "latex": "f(t) = \\frac{1}{2\\pi}\\int_{-\\infty}^{\\infty} \\hat{f}(\\omega)e^{i\\omega t}\\,d\\omega",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>π</mi></mrow></mfrac><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant=\"normal\">∞</mi></mrow><mi mathvariant=\"normal\">∞</mi></msubsup><mover accent=\"true\"><mi>f</mi><mo>^</mo></mover><mo stretchy=\"false\">(</mo><mi>ω</mi><mo stretchy=\"false\">)</mo><msup><mi>e</mi><mrow><mi>i</mi><mi>ω</mi><mi>t</mi></mrow></msup><mtext> </mtext><mi>d</mi><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">f(t) = \\frac{1}{2\\pi}\\int_{-\\infty}^{\\infty} \\hat{f}(\\omega)e^{i\\omega t}\\,d\\omega</annotation></semantics></math>",
     "unicodemath": "f(t) = 1/2π∫_(-∞)^∞ f̂(ω)e^iωtdω",
     "domain": "Calculus & Analysis",
@@ -1664,6 +1830,7 @@ export const mathEquations = [
   {
     "name": "separation of variables",
     "aliases": "separable ODE",
+    "latex": "\\frac{dy}{g(y)} = f(x)\\,dx",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>g</mi><mo stretchy=\"false\">(</mo><mi>y</mi><mo stretchy=\"false\">)</mo></mrow></mfrac><mo>=</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{dy}{g(y)} = f(x)\\,dx</annotation></semantics></math>",
     "unicodemath": "dy/g(y) = f(x)dx",
     "domain": "Calculus & Analysis",
@@ -1674,6 +1841,7 @@ export const mathEquations = [
   {
     "name": "integrating factor",
     "aliases": "ODE integrating factor",
+    "latex": "\\mu(x) = e^{\\int P(x)\\,dx}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>μ</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msup><mi>e</mi><mrow><mo>∫</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">\\mu(x) = e^{\\int P(x)\\,dx}</annotation></semantics></math>",
     "unicodemath": "μ(x) = e^(∫P(x)dx)",
     "domain": "Calculus & Analysis",
@@ -1684,6 +1852,7 @@ export const mathEquations = [
   {
     "name": "dot product",
     "aliases": "scalar product",
+    "latex": "\\mathbf{a} \\cdot \\mathbf{b} = |\\mathbf{a}||\\mathbf{b}|\\cos\\theta",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"bold\">a</mi><mo>⋅</mo><mi mathvariant=\"bold\">b</mi><mo>=</mo><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"bold\">b</mi><mi mathvariant=\"normal\">∣</mi><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{a} \\cdot \\mathbf{b} = |\\mathbf{a}||\\mathbf{b}|\\cos\\theta</annotation></semantics></math>",
     "unicodemath": "a ⋅ b = |a||b|cosθ",
     "domain": "Linear Algebra & Abstract Algebra",
@@ -1694,6 +1863,7 @@ export const mathEquations = [
   {
     "name": "determinant of a 2x2 matrix",
     "aliases": "det two by two",
+    "latex": "\\det \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = ad - bc",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>det</mi><mo>⁡</mo><mrow><mo fence=\"true\">(</mo><mtable rowspacing=\"0.16em\" columnalign=\"center center\" columnspacing=\"1em\"><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi>a</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi>b</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi>c</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi>d</mi></mstyle></mtd></mtr></mtable><mo fence=\"true\">)</mo></mrow><mo>=</mo><mi>a</mi><mi>d</mi><mo>−</mo><mi>b</mi><mi>c</mi></mrow><annotation encoding=\"application/x-tex\">\\det \\begin{pmatrix} a &amp; b \\\\ c &amp; d \\end{pmatrix} = ad - bc</annotation></semantics></math>",
     "unicodemath": "det (■(a&b@c&d)) = ad - bc",
     "domain": "Linear Algebra & Abstract Algebra",
@@ -1704,6 +1874,7 @@ export const mathEquations = [
   {
     "name": "eigenvalue equation",
     "aliases": "eigenvector equation",
+    "latex": "A\\mathbf{v} = \\lambda\\mathbf{v}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mi mathvariant=\"bold\">v</mi><mo>=</mo><mi>λ</mi><mi mathvariant=\"bold\">v</mi></mrow><annotation encoding=\"application/x-tex\">A\\mathbf{v} = \\lambda\\mathbf{v}</annotation></semantics></math>",
     "unicodemath": "Av = λv",
     "domain": "Linear Algebra & Abstract Algebra",
@@ -1714,6 +1885,7 @@ export const mathEquations = [
   {
     "name": "characteristic polynomial",
     "aliases": "eigenvalue characteristic equation",
+    "latex": "\\det(A - \\lambda I) = 0",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>det</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>−</mo><mi>λ</mi><mi>I</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">\\det(A - \\lambda I) = 0</annotation></semantics></math>",
     "unicodemath": "det(A - λ I) = 0",
     "domain": "Linear Algebra & Abstract Algebra",
@@ -1724,6 +1896,7 @@ export const mathEquations = [
   {
     "name": "vector projection",
     "aliases": "proj of u onto v",
+    "latex": "\\text{proj}_{\\mathbf{v}}\\mathbf{u} = \\frac{\\mathbf{u}\\cdot\\mathbf{v}}{|\\mathbf{v}|^2}\\mathbf{v}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mtext>proj</mtext><mi mathvariant=\"bold\">v</mi></msub><mi mathvariant=\"bold\">u</mi><mo>=</mo><mfrac><mrow><mi mathvariant=\"bold\">u</mi><mo>⋅</mo><mi mathvariant=\"bold\">v</mi></mrow><mrow><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"bold\">v</mi><msup><mi mathvariant=\"normal\">∣</mi><mn>2</mn></msup></mrow></mfrac><mi mathvariant=\"bold\">v</mi></mrow><annotation encoding=\"application/x-tex\">\\text{proj}_{\\mathbf{v}}\\mathbf{u} = \\frac{\\mathbf{u}\\cdot\\mathbf{v}}{|\\mathbf{v}|^2}\\mathbf{v}</annotation></semantics></math>",
     "unicodemath": "proj_vu = u⋅v/|v|^2v",
     "domain": "Linear Algebra & Abstract Algebra",
@@ -1734,6 +1907,7 @@ export const mathEquations = [
   {
     "name": "cross product magnitude",
     "aliases": "magnitude of a cross b",
+    "latex": "|\\mathbf{a}\\times\\mathbf{b}| = |\\mathbf{a}||\\mathbf{b}|\\sin\\theta",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"bold\">a</mi><mo>×</mo><mi mathvariant=\"bold\">b</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"bold\">b</mi><mi mathvariant=\"normal\">∣</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">|\\mathbf{a}\\times\\mathbf{b}| = |\\mathbf{a}||\\mathbf{b}|\\sin\\theta</annotation></semantics></math>",
     "unicodemath": "|a×b| = |a||b|sinθ",
     "domain": "Linear Algebra & Abstract Algebra",
@@ -1744,6 +1918,7 @@ export const mathEquations = [
   {
     "name": "cross product components",
     "aliases": "a cross b formula",
+    "latex": "\\mathbf{a}\\times\\mathbf{b} = \\begin{vmatrix} \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\ a_1 & a_2 & a_3 \\\\ b_1 & b_2 & b_3 \\end{vmatrix}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"bold\">a</mi><mo>×</mo><mi mathvariant=\"bold\">b</mi><mo>=</mo><mrow><mo fence=\"true\">∣</mo><mtable rowspacing=\"0.16em\" columnalign=\"center center center\" columnspacing=\"1em\"><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"bold\">i</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"bold\">j</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"bold\">k</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><msub><mi>a</mi><mn>1</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><msub><mi>a</mi><mn>2</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><msub><mi>a</mi><mn>3</mn></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><msub><mi>b</mi><mn>1</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><msub><mi>b</mi><mn>2</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><msub><mi>b</mi><mn>3</mn></msub></mstyle></mtd></mtr></mtable><mo fence=\"true\">∣</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\mathbf{a}\\times\\mathbf{b} = \\begin{vmatrix} \\mathbf{i} &amp; \\mathbf{j} &amp; \\mathbf{k} \\\\ a_1 &amp; a_2 &amp; a_3 \\\\ b_1 &amp; b_2 &amp; b_3 \\end{vmatrix}</annotation></semantics></math>",
     "unicodemath": "a×b = |■(i&j&k@a_1&a_2&a_3@b_1&b_2&b_3)|",
     "domain": "Linear Algebra & Abstract Algebra",
@@ -1754,6 +1929,7 @@ export const mathEquations = [
   {
     "name": "Cauchy-Schwarz inequality",
     "aliases": "Cauchy Schwarz",
+    "latex": "|\\mathbf{a}\\cdot\\mathbf{b}| \\leq |\\mathbf{a}||\\mathbf{b}|",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"bold\">a</mi><mo>⋅</mo><mi mathvariant=\"bold\">b</mi><mi mathvariant=\"normal\">∣</mi><mo>≤</mo><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"bold\">b</mi><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">|\\mathbf{a}\\cdot\\mathbf{b}| \\leq |\\mathbf{a}||\\mathbf{b}|</annotation></semantics></math>",
     "unicodemath": "|a⋅b| ≤ |a||b|",
     "domain": "Linear Algebra & Abstract Algebra",
@@ -1764,6 +1940,7 @@ export const mathEquations = [
   {
     "name": "Lagrange's theorem",
     "aliases": "group index theorem",
+    "latex": "|G| = |H| \\cdot [G:H]",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>G</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mi mathvariant=\"normal\">∣</mi><mi>H</mi><mi mathvariant=\"normal\">∣</mi><mo>⋅</mo><mo stretchy=\"false\">[</mo><mi>G</mi><mo>:</mo><mi>H</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">|G| = |H| \\cdot [G:H]</annotation></semantics></math>",
     "unicodemath": "|G| = |H| ⋅ [G:H]",
     "domain": "Linear Algebra & Abstract Algebra",
@@ -1774,6 +1951,7 @@ export const mathEquations = [
   {
     "name": "group homomorphism",
     "aliases": "homomorphism property",
+    "latex": "\\phi(ab) = \\phi(a)\\phi(b)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ϕ</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mi>b</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>ϕ</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo stretchy=\"false\">)</mo><mi>ϕ</mi><mo stretchy=\"false\">(</mo><mi>b</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\phi(ab) = \\phi(a)\\phi(b)</annotation></semantics></math>",
     "unicodemath": "φ(ab) = φ(a)φ(b)",
     "domain": "Linear Algebra & Abstract Algebra",
@@ -1784,6 +1962,7 @@ export const mathEquations = [
   {
     "name": "first isomorphism theorem",
     "aliases": "fundamental homomorphism theorem",
+    "latex": "G / \\ker\\phi \\cong \\text{Im}(\\phi)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>G</mi><mi mathvariant=\"normal\">/</mi><mi>ker</mi><mo>⁡</mo><mi>ϕ</mi><mo>≅</mo><mtext>Im</mtext><mo stretchy=\"false\">(</mo><mi>ϕ</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">G / \\ker\\phi \\cong \\text{Im}(\\phi)</annotation></semantics></math>",
     "unicodemath": "G / kerφ ≅ Im(φ)",
     "domain": "Linear Algebra & Abstract Algebra",
@@ -1794,6 +1973,7 @@ export const mathEquations = [
   {
     "name": "group element order",
     "aliases": "power of group element",
+    "latex": "a^{|a|} = e",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>a</mi><mrow><mi mathvariant=\"normal\">∣</mi><mi>a</mi><mi mathvariant=\"normal\">∣</mi></mrow></msup><mo>=</mo><mi>e</mi></mrow><annotation encoding=\"application/x-tex\">a^{|a|} = e</annotation></semantics></math>",
     "unicodemath": "a^(|a|) = e",
     "domain": "Linear Algebra & Abstract Algebra",
@@ -1804,6 +1984,7 @@ export const mathEquations = [
   {
     "name": "Lagrange multiplier condition",
     "aliases": "gradient parallelism",
+    "latex": "\\nabla f = \\lambda \\nabla g",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∇</mi><mi>f</mi><mo>=</mo><mi>λ</mi><mi mathvariant=\"normal\">∇</mi><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">\\nabla f = \\lambda \\nabla g</annotation></semantics></math>",
     "unicodemath": "∇ f = λ ∇ g",
     "domain": "Linear Algebra & Abstract Algebra",
@@ -1814,6 +1995,7 @@ export const mathEquations = [
   {
     "name": "Lagrangian function",
     "aliases": "augmented objective",
+    "latex": "\\mathcal{L}(x,\\lambda) = f(x) - \\lambda g(x)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"script\">L</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>λ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>λ</mi><mi>g</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathcal{L}(x,\\lambda) = f(x) - \\lambda g(x)</annotation></semantics></math>",
     "unicodemath": "ℒ(x,λ) = f(x) - λ g(x)",
     "domain": "Linear Algebra & Abstract Algebra",
@@ -1824,6 +2006,7 @@ export const mathEquations = [
   {
     "name": "KKT stationarity condition",
     "aliases": "KKT optimality",
+    "latex": "\\nabla f(x^*) = \\sum_i \\lambda_i \\nabla g_i(x^*)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∇</mi><mi>f</mi><mo stretchy=\"false\">(</mo><msup><mi>x</mi><mo>∗</mo></msup><mo stretchy=\"false\">)</mo><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>λ</mi><mi>i</mi></msub><mi mathvariant=\"normal\">∇</mi><msub><mi>g</mi><mi>i</mi></msub><mo stretchy=\"false\">(</mo><msup><mi>x</mi><mo>∗</mo></msup><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\nabla f(x^*) = \\sum_i \\lambda_i \\nabla g_i(x^*)</annotation></semantics></math>",
     "unicodemath": "∇ f(x^*) = ∑_i λ_i ∇ g_i(x^*)",
     "domain": "Linear Algebra & Abstract Algebra",
@@ -1834,6 +2017,7 @@ export const mathEquations = [
   {
     "name": "permutation",
     "aliases": "n permute r",
+    "latex": "P(n,r) = \\frac{n!}{(n-r)!}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo separator=\"true\">,</mo><mi>r</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">!</mo></mrow><mrow><mo stretchy=\"false\">(</mo><mi>n</mi><mo>−</mo><mi>r</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">!</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P(n,r) = \\frac{n!}{(n-r)!}</annotation></semantics></math>",
     "unicodemath": "P(n,r) = n!/(n-r)!",
     "domain": "Discrete Math & Logic",
@@ -1844,6 +2028,7 @@ export const mathEquations = [
   {
     "name": "combination",
     "aliases": "n choose r",
+    "latex": "C(n,r) = \\frac{n!}{r!(n-r)!}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo separator=\"true\">,</mo><mi>r</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">!</mo></mrow><mrow><mi>r</mi><mo stretchy=\"false\">!</mo><mo stretchy=\"false\">(</mo><mi>n</mi><mo>−</mo><mi>r</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">!</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">C(n,r) = \\frac{n!}{r!(n-r)!}</annotation></semantics></math>",
     "unicodemath": "C(n,r) = n!/r!(n-r)!",
     "domain": "Discrete Math & Logic",
@@ -1854,6 +2039,7 @@ export const mathEquations = [
   {
     "name": "multinomial coefficient",
     "aliases": "multinomial",
+    "latex": "\\binom{n}{k_1,k_2,\\ldots,k_r} = \\frac{n!}{k_1!\\,k_2!\\cdots k_r!}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mi>n</mi><mrow><msub><mi>k</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><msub><mi>k</mi><mn>2</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>k</mi><mi>r</mi></msub></mrow></mfrac><mo fence=\"true\">)</mo></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">!</mo></mrow><mrow><msub><mi>k</mi><mn>1</mn></msub><mo stretchy=\"false\">!</mo><mtext> </mtext><msub><mi>k</mi><mn>2</mn></msub><mo stretchy=\"false\">!</mo><mo>⋯</mo><msub><mi>k</mi><mi>r</mi></msub><mo stretchy=\"false\">!</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\binom{n}{k_1,k_2,\\ldots,k_r} = \\frac{n!}{k_1!\\,k_2!\\cdots k_r!}</annotation></semantics></math>",
     "unicodemath": "(n¦k_1,k_2,…,k_r) = n!/k_1!k_2!⋯k_r!",
     "domain": "Discrete Math & Logic",
@@ -1864,6 +2050,7 @@ export const mathEquations = [
   {
     "name": "stars and bars",
     "aliases": "combinations with repetition",
+    "latex": "\\binom{n+k-1}{k}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mrow><mi>n</mi><mo>+</mo><mi>k</mi><mo>−</mo><mn>1</mn></mrow><mi>k</mi></mfrac><mo fence=\"true\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\binom{n+k-1}{k}</annotation></semantics></math>",
     "unicodemath": "(n+k-1¦k)",
     "domain": "Discrete Math & Logic",
@@ -1874,6 +2061,7 @@ export const mathEquations = [
   {
     "name": "Catalan number",
     "aliases": "nth Catalan number",
+    "latex": "C_n = \\frac{1}{n+1}\\binom{2n}{n}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>C</mi><mi>n</mi></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mrow><mn>2</mn><mi>n</mi></mrow><mi>n</mi></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">C_n = \\frac{1}{n+1}\\binom{2n}{n}</annotation></semantics></math>",
     "unicodemath": "C_n = 1/(n+1)(2n¦n)",
     "domain": "Discrete Math & Logic",
@@ -1884,6 +2072,7 @@ export const mathEquations = [
   {
     "name": "derangement",
     "aliases": "number of derangements",
+    "latex": "D_n = n!\\sum_{k=0}^{n}\\frac{(-1)^k}{k!}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>D</mi><mi>n</mi></msub><mo>=</mo><mi>n</mi><mo stretchy=\"false\">!</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mfrac><mrow><mo stretchy=\"false\">(</mo><mo>−</mo><mn>1</mn><msup><mo stretchy=\"false\">)</mo><mi>k</mi></msup></mrow><mrow><mi>k</mi><mo stretchy=\"false\">!</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">D_n = n!\\sum_{k=0}^{n}\\frac{(-1)^k}{k!}</annotation></semantics></math>",
     "unicodemath": "D_n = n!∑_(k=0)^n(-1)^k/k!",
     "domain": "Discrete Math & Logic",
@@ -1894,6 +2083,7 @@ export const mathEquations = [
   {
     "name": "inclusion-exclusion two sets",
     "aliases": "size of A union B",
+    "latex": "|A \\cup B| = |A| + |B| - |A \\cap B|",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>∪</mo><mi>B</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi mathvariant=\"normal\">∣</mi><mi>B</mi><mi mathvariant=\"normal\">∣</mi><mo>−</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>∩</mo><mi>B</mi><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">|A \\cup B| = |A| + |B| - |A \\cap B|</annotation></semantics></math>",
     "unicodemath": "|A ∪ B| = |A| + |B| - |A ∩ B|",
     "domain": "Discrete Math & Logic",
@@ -1904,6 +2094,7 @@ export const mathEquations = [
   {
     "name": "inclusion-exclusion three sets",
     "aliases": "size of A union B union C",
+    "latex": "|A \\cup B \\cup C| = |A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>∪</mo><mi>B</mi><mo>∪</mo><mi>C</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi mathvariant=\"normal\">∣</mi><mi>B</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi mathvariant=\"normal\">∣</mi><mi>C</mi><mi mathvariant=\"normal\">∣</mi><mo>−</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>∩</mo><mi>B</mi><mi mathvariant=\"normal\">∣</mi><mo>−</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>∩</mo><mi>C</mi><mi mathvariant=\"normal\">∣</mi><mo>−</mo><mi mathvariant=\"normal\">∣</mi><mi>B</mi><mo>∩</mo><mi>C</mi><mi mathvariant=\"normal\">∣</mi><mo>+</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>∩</mo><mi>B</mi><mo>∩</mo><mi>C</mi><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">|A \\cup B \\cup C| = |A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|</annotation></semantics></math>",
     "unicodemath": "|A ∪ B ∪ C| = |A|+|B|+|C|-|A∩ B|-|A∩ C|-|B∩ C|+|A∩ B∩ C|",
     "domain": "Discrete Math & Logic",
@@ -1914,6 +2105,7 @@ export const mathEquations = [
   {
     "name": "De Morgan's laws (set theory)",
     "aliases": "complement of union; complement of intersection",
+    "latex": "(A \\cup B)^c = A^c \\cap B^c;\\; (A \\cap B)^c = A^c \\cup B^c",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><msup><mo stretchy=\"false\">)</mo><mi>c</mi></msup><mo>=</mo><msup><mi>A</mi><mi>c</mi></msup><mo>∩</mo><msup><mi>B</mi><mi>c</mi></msup><mo separator=\"true\">;</mo><mtext>  </mtext><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><msup><mo stretchy=\"false\">)</mo><mi>c</mi></msup><mo>=</mo><msup><mi>A</mi><mi>c</mi></msup><mo>∪</mo><msup><mi>B</mi><mi>c</mi></msup></mrow><annotation encoding=\"application/x-tex\">(A \\cup B)^c = A^c \\cap B^c;\\; (A \\cap B)^c = A^c \\cup B^c</annotation></semantics></math>",
     "unicodemath": "(A ∪ B)^c = A^c ∩ B^c; (A ∩ B)^c = A^c ∪ B^c",
     "domain": "Discrete Math & Logic",
@@ -1924,6 +2116,7 @@ export const mathEquations = [
   {
     "name": "power set cardinality",
     "aliases": "size of power set",
+    "latex": "|\\mathcal{P}(A)| = 2^n",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi mathvariant=\"script\">P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mi mathvariant=\"normal\">∣</mi><mo>=</mo><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">|\\mathcal{P}(A)| = 2^n</annotation></semantics></math>",
     "unicodemath": "|𝒫(A)| = 2^n",
     "domain": "Discrete Math & Logic",
@@ -1934,6 +2127,7 @@ export const mathEquations = [
   {
     "name": "Cartesian product cardinality",
     "aliases": "size of A cross B",
+    "latex": "|A \\times B| = |A| \\cdot |B|",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mo>×</mo><mi>B</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mi mathvariant=\"normal\">∣</mi><mi>A</mi><mi mathvariant=\"normal\">∣</mi><mo>⋅</mo><mi mathvariant=\"normal\">∣</mi><mi>B</mi><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">|A \\times B| = |A| \\cdot |B|</annotation></semantics></math>",
     "unicodemath": "|A × B| = |A| ⋅ |B|",
     "domain": "Discrete Math & Logic",
@@ -1944,6 +2138,7 @@ export const mathEquations = [
   {
     "name": "De Morgan's laws (logic)",
     "aliases": "negation of and; negation of or",
+    "latex": "\\lnot(p \\land q) \\equiv \\lnot p \\lor \\lnot q;\\; \\lnot(p \\lor q) \\equiv \\lnot p \\land \\lnot q",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">¬</mi><mo stretchy=\"false\">(</mo><mi>p</mi><mo>∧</mo><mi>q</mi><mo stretchy=\"false\">)</mo><mo>≡</mo><mi mathvariant=\"normal\">¬</mi><mi>p</mi><mo>∨</mo><mi mathvariant=\"normal\">¬</mi><mi>q</mi><mo separator=\"true\">;</mo><mtext>  </mtext><mi mathvariant=\"normal\">¬</mi><mo stretchy=\"false\">(</mo><mi>p</mi><mo>∨</mo><mi>q</mi><mo stretchy=\"false\">)</mo><mo>≡</mo><mi mathvariant=\"normal\">¬</mi><mi>p</mi><mo>∧</mo><mi mathvariant=\"normal\">¬</mi><mi>q</mi></mrow><annotation encoding=\"application/x-tex\">\\lnot(p \\land q) \\equiv \\lnot p \\lor \\lnot q;\\; \\lnot(p \\lor q) \\equiv \\lnot p \\land \\lnot q</annotation></semantics></math>",
     "unicodemath": "¬(p ∧ q) ≡ ¬ p ∨ ¬ q; ¬(p ∨ q) ≡ ¬ p ∧ ¬ q",
     "domain": "Discrete Math & Logic",
@@ -1954,6 +2149,7 @@ export const mathEquations = [
   {
     "name": "conditional equivalence",
     "aliases": "if then as or",
+    "latex": "p \\Rightarrow q \\equiv \\lnot p \\lor q",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>p</mi><mo>⇒</mo><mi>q</mi><mo>≡</mo><mi mathvariant=\"normal\">¬</mi><mi>p</mi><mo>∨</mo><mi>q</mi></mrow><annotation encoding=\"application/x-tex\">p \\Rightarrow q \\equiv \\lnot p \\lor q</annotation></semantics></math>",
     "unicodemath": "p ⇒ q ≡ ¬ p ∨ q",
     "domain": "Discrete Math & Logic",
@@ -1964,6 +2160,7 @@ export const mathEquations = [
   {
     "name": "contrapositive",
     "aliases": "contrapositive equivalence",
+    "latex": "p \\Rightarrow q \\equiv \\lnot q \\Rightarrow \\lnot p",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>p</mi><mo>⇒</mo><mi>q</mi><mo>≡</mo><mi mathvariant=\"normal\">¬</mi><mi>q</mi><mo>⇒</mo><mi mathvariant=\"normal\">¬</mi><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">p \\Rightarrow q \\equiv \\lnot q \\Rightarrow \\lnot p</annotation></semantics></math>",
     "unicodemath": "p ⇒ q ≡ ¬ q ⇒ ¬ p",
     "domain": "Discrete Math & Logic",
@@ -1974,6 +2171,7 @@ export const mathEquations = [
   {
     "name": "biconditional equivalence",
     "aliases": "iff as two conditionals",
+    "latex": "p \\Leftrightarrow q \\equiv (p \\Rightarrow q) \\land (q \\Rightarrow p)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>p</mi><mo>⇔</mo><mi>q</mi><mo>≡</mo><mo stretchy=\"false\">(</mo><mi>p</mi><mo>⇒</mo><mi>q</mi><mo stretchy=\"false\">)</mo><mo>∧</mo><mo stretchy=\"false\">(</mo><mi>q</mi><mo>⇒</mo><mi>p</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">p \\Leftrightarrow q \\equiv (p \\Rightarrow q) \\land (q \\Rightarrow p)</annotation></semantics></math>",
     "unicodemath": "p ⇔ q ≡ (p ⇒ q) ∧ (q ⇒ p)",
     "domain": "Discrete Math & Logic",
@@ -1984,6 +2182,7 @@ export const mathEquations = [
   {
     "name": "double negation",
     "aliases": "not not p",
+    "latex": "\\lnot\\lnot p \\equiv p",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">¬</mi><mi mathvariant=\"normal\">¬</mi><mi>p</mi><mo>≡</mo><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">\\lnot\\lnot p \\equiv p</annotation></semantics></math>",
     "unicodemath": "¬¬ p ≡ p",
     "domain": "Discrete Math & Logic",
@@ -1994,6 +2193,7 @@ export const mathEquations = [
   {
     "name": "modus ponens",
     "aliases": "if p then q",
+    "latex": "\\frac{p \\quad p \\Rightarrow q}{q}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi>p</mi><mspace width=\"1em\"/><mi>p</mi><mo>⇒</mo><mi>q</mi></mrow><mi>q</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{p \\quad p \\Rightarrow q}{q}</annotation></semantics></math>",
     "unicodemath": "p p⇒q/q",
     "domain": "Discrete Math & Logic",
@@ -2004,6 +2204,7 @@ export const mathEquations = [
   {
     "name": "modus tollens",
     "aliases": "not q then not p",
+    "latex": "\\frac{\\lnot q \\quad p \\Rightarrow q}{\\lnot p}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi mathvariant=\"normal\">¬</mi><mi>q</mi><mspace width=\"1em\"/><mi>p</mi><mo>⇒</mo><mi>q</mi></mrow><mrow><mi mathvariant=\"normal\">¬</mi><mi>p</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{\\lnot q \\quad p \\Rightarrow q}{\\lnot p}</annotation></semantics></math>",
     "unicodemath": "¬q p⇒q/¬p",
     "domain": "Discrete Math & Logic",
@@ -2014,6 +2215,7 @@ export const mathEquations = [
   {
     "name": "handshaking lemma",
     "aliases": "sum of degrees",
+    "latex": "\\sum_{v \\in V} \\deg(v) = 2|E|",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munder><mo>∑</mo><mrow><mi>v</mi><mo>∈</mo><mi>V</mi></mrow></munder><mi>deg</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>v</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>2</mn><mi mathvariant=\"normal\">∣</mi><mi>E</mi><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">\\sum_{v \\in V} \\deg(v) = 2|E|</annotation></semantics></math>",
     "unicodemath": "∑_(v∈V) deg(v) = 2|E|",
     "domain": "Discrete Math & Logic",
@@ -2024,6 +2226,7 @@ export const mathEquations = [
   {
     "name": "Euler's planar graph formula",
     "aliases": "V minus E plus F equals 2",
+    "latex": "V - E + F = 2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>−</mo><mi>E</mi><mo>+</mo><mi>F</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">V - E + F = 2</annotation></semantics></math>",
     "unicodemath": "V - E + F = 2",
     "domain": "Discrete Math & Logic",
@@ -2034,6 +2237,7 @@ export const mathEquations = [
   {
     "name": "complete graph edges",
     "aliases": "edges in Kn",
+    "latex": "|E| = \\frac{n(n-1)}{2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∣</mi><mi>E</mi><mi mathvariant=\"normal\">∣</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">|E| = \\frac{n(n-1)}{2}</annotation></semantics></math>",
     "unicodemath": "|E| = n(n-1)/2",
     "domain": "Discrete Math & Logic",
@@ -2044,6 +2248,7 @@ export const mathEquations = [
   {
     "name": "Fibonacci recurrence",
     "aliases": "Fibonacci sequence",
+    "latex": "F_n = F_{n-1} + F_{n-2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>F</mi><mi>n</mi></msub><mo>=</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msub></mrow><annotation encoding=\"application/x-tex\">F_n = F_{n-1} + F_{n-2}</annotation></semantics></math>",
     "unicodemath": "F_n = F_(n-1) + F_(n-2)",
     "domain": "Discrete Math & Logic",
@@ -2054,6 +2259,7 @@ export const mathEquations = [
   {
     "name": "master theorem",
     "aliases": "divide and conquer recurrence",
+    "latex": "T(n) = aT\\left(\\frac{n}{b}\\right) + f(n)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>T</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>a</mi><mi>T</mi><mrow><mo fence=\"true\">(</mo><mfrac><mi>n</mi><mi>b</mi></mfrac><mo fence=\"true\">)</mo></mrow><mo>+</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">T(n) = aT\\left(\\frac{n}{b}\\right) + f(n)</annotation></semantics></math>",
     "unicodemath": "T(n) = aT(n/b) + f(n)",
     "domain": "Discrete Math & Logic",
@@ -2064,6 +2270,7 @@ export const mathEquations = [
   {
     "name": "sum of first n integers",
     "aliases": "triangular number formula",
+    "latex": "\\sum_{k=1}^{n} k = \\frac{n(n+1)}{2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>k</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sum_{k=1}^{n} k = \\frac{n(n+1)}{2}</annotation></semantics></math>",
     "unicodemath": "∑_(k=1)^n k = n(n+1)/2",
     "domain": "Discrete Math & Logic",
@@ -2074,6 +2281,7 @@ export const mathEquations = [
   {
     "name": "sum of first n squares",
     "aliases": "sum of squares formula",
+    "latex": "\\sum_{k=1}^{n} k^2 = \\frac{n(n+1)(2n+1)}{6}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msup><mi>k</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><mn>6</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sum_{k=1}^{n} k^2 = \\frac{n(n+1)(2n+1)}{6}</annotation></semantics></math>",
     "unicodemath": "∑_(k=1)^n k^2 = n(n+1)(2n+1)/6",
     "domain": "Discrete Math & Logic",
@@ -2084,6 +2292,7 @@ export const mathEquations = [
   {
     "name": "sum of first n cubes",
     "aliases": "sum of cubes formula",
+    "latex": "\\sum_{k=1}^{n} k^3 = \\left[\\frac{n(n+1)}{2}\\right]^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msup><mi>k</mi><mn>3</mn></msup><mo>=</mo><msup><mrow><mo fence=\"true\">[</mo><mfrac><mrow><mi>n</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><mn>2</mn></mfrac><mo fence=\"true\">]</mo></mrow><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">\\sum_{k=1}^{n} k^3 = \\left[\\frac{n(n+1)}{2}\\right]^2</annotation></semantics></math>",
     "unicodemath": "∑_(k=1)^n k^3 = [n(n+1)/2]^2",
     "domain": "Discrete Math & Logic",
@@ -2094,6 +2303,7 @@ export const mathEquations = [
   {
     "name": "Boolean XOR",
     "aliases": "exclusive or",
+    "latex": "A \\oplus B = (A \\land \\lnot B) \\lor (\\lnot A \\land B)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>⊕</mo><mi>B</mi><mo>=</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∧</mo><mi mathvariant=\"normal\">¬</mi><mi>B</mi><mo stretchy=\"false\">)</mo><mo>∨</mo><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">¬</mi><mi>A</mi><mo>∧</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">A \\oplus B = (A \\land \\lnot B) \\lor (\\lnot A \\land B)</annotation></semantics></math>",
     "unicodemath": "A ⊕ B = (A ∧ ¬ B) ∨ (¬ A ∧ B)",
     "domain": "Discrete Math & Logic",
@@ -2104,6 +2314,7 @@ export const mathEquations = [
   {
     "name": "Boolean absorption law",
     "aliases": "absorption identity",
+    "latex": "A \\lor (A \\land B) = A",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>∨</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∧</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A \\lor (A \\land B) = A</annotation></semantics></math>",
     "unicodemath": "A ∨ (A ∧ B) = A",
     "domain": "Discrete Math & Logic",
@@ -2114,6 +2325,7 @@ export const mathEquations = [
   {
     "name": "Boolean distributive law",
     "aliases": "Boolean distribution",
+    "latex": "A \\land (B \\lor C) = (A \\land B) \\lor (A \\land C)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>∧</mo><mo stretchy=\"false\">(</mo><mi>B</mi><mo>∨</mo><mi>C</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∧</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>∨</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∧</mo><mi>C</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">A \\land (B \\lor C) = (A \\land B) \\lor (A \\land C)</annotation></semantics></math>",
     "unicodemath": "A ∧ (B ∨ C) = (A ∧ B) ∨ (A ∧ C)",
     "domain": "Discrete Math & Logic",
@@ -2124,6 +2336,7 @@ export const mathEquations = [
   {
     "name": "Boolean idempotent law",
     "aliases": "idempotent identity",
+    "latex": "A \\land A = A",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>∧</mo><mi>A</mi><mo>=</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A \\land A = A</annotation></semantics></math>",
     "unicodemath": "A ∧ A = A",
     "domain": "Discrete Math & Logic",
@@ -2134,6 +2347,7 @@ export const mathEquations = [
   {
     "name": "Stirling's approximation",
     "aliases": "approximate n!",
+    "latex": "n! \\approx \\sqrt{2\\pi n}\\left(\\frac{n}{e}\\right)^n",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>n</mi><mo stretchy=\"false\">!</mo><mo>≈</mo><msqrt><mrow><mn>2</mn><mi>π</mi><mi>n</mi></mrow></msqrt><msup><mrow><mo fence=\"true\">(</mo><mfrac><mi>n</mi><mi>e</mi></mfrac><mo fence=\"true\">)</mo></mrow><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">n! \\approx \\sqrt{2\\pi n}\\left(\\frac{n}{e}\\right)^n</annotation></semantics></math>",
     "unicodemath": "n! ≈ √2πn(n/e)^n",
     "domain": "Discrete Math & Logic",
@@ -2144,6 +2358,7 @@ export const mathEquations = [
   {
     "name": "sample mean",
     "aliases": "arithmetic mean",
+    "latex": "\\bar{x} = \\frac{1}{n}\\sum_{i=1}^{n} x_i",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding=\"application/x-tex\">\\bar{x} = \\frac{1}{n}\\sum_{i=1}^{n} x_i</annotation></semantics></math>",
     "unicodemath": "x̅ = 1/n∑_(i=1)^n x_i",
     "domain": "Probability, Statistics & Data Science",
@@ -2154,6 +2369,7 @@ export const mathEquations = [
   {
     "name": "sample variance",
     "aliases": "variance formula",
+    "latex": "s^2 = \\frac{1}{n-1}\\sum_{i=1}^{n}(x_i - \\bar{x})^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>1</mn><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">s^2 = \\frac{1}{n-1}\\sum_{i=1}^{n}(x_i - \\bar{x})^2</annotation></semantics></math>",
     "unicodemath": "s^2 = 1/(n-1)∑_(i=1)^n(x_i - x̅)^2",
     "domain": "Probability, Statistics & Data Science",
@@ -2164,6 +2380,7 @@ export const mathEquations = [
   {
     "name": "population standard deviation",
     "aliases": "std dev formula",
+    "latex": "\\sigma = \\sqrt{\\frac{1}{N}\\sum_{i=1}^{N}(x_i-\\mu)^2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>σ</mi><mo>=</mo><msqrt><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mi>μ</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">\\sigma = \\sqrt{\\frac{1}{N}\\sum_{i=1}^{N}(x_i-\\mu)^2}</annotation></semantics></math>",
     "unicodemath": "σ = √(1/N∑_(i=1)^N(x_i-μ)^2)",
     "domain": "Probability, Statistics & Data Science",
@@ -2174,6 +2391,7 @@ export const mathEquations = [
   {
     "name": "z-score",
     "aliases": "standard score",
+    "latex": "z = \\frac{x - \\mu}{\\sigma}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mi>μ</mi></mrow><mi>σ</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">z = \\frac{x - \\mu}{\\sigma}</annotation></semantics></math>",
     "unicodemath": "z = (x-μ)/σ",
     "domain": "Probability, Statistics & Data Science",
@@ -2184,6 +2402,7 @@ export const mathEquations = [
   {
     "name": "normal distribution PDF",
     "aliases": "Gaussian density",
+    "latex": "f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}}\\,e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>σ</mi><msqrt><mrow><mn>2</mn><mi>π</mi></mrow></msqrt></mrow></mfrac><mtext> </mtext><msup><mi>e</mi><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mi>μ</mi></mrow><mi>σ</mi></mfrac><mo fence=\"true\">)</mo></mrow><mn>2</mn></msup></mrow></msup></mrow><annotation encoding=\"application/x-tex\">f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}}\\,e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2}</annotation></semantics></math>",
     "unicodemath": "f(x) = 1/σ√2πe^(-1/2((x-μ)/σ)^2)",
     "domain": "Probability, Statistics & Data Science",
@@ -2194,6 +2413,7 @@ export const mathEquations = [
   {
     "name": "Bayes' theorem",
     "aliases": "Bayes rule",
+    "latex": "P(A \\mid B) = \\frac{P(B \\mid A)\\,P(A)}{P(B)}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∣</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>B</mi><mo>∣</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P(A \\mid B) = \\frac{P(B \\mid A)\\,P(A)}{P(B)}</annotation></semantics></math>",
     "unicodemath": "P(A ∣ B) = P(B∣A)P(A)/P(B)",
     "domain": "Probability, Statistics & Data Science",
@@ -2204,6 +2424,7 @@ export const mathEquations = [
   {
     "name": "expected value (discrete)",
     "aliases": "mean of a discrete distribution",
+    "latex": "E[X] = \\sum_{x} x\\,P(X=x)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo stretchy=\"false\">[</mo><mi>X</mi><mo stretchy=\"false\">]</mo><mo>=</mo><munder><mo>∑</mo><mi>x</mi></munder><mi>x</mi><mtext> </mtext><mi>P</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo>=</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">E[X] = \\sum_{x} x\\,P(X=x)</annotation></semantics></math>",
     "unicodemath": "E[X] = ∑_x xP(X=x)",
     "domain": "Probability, Statistics & Data Science",
@@ -2214,6 +2435,7 @@ export const mathEquations = [
   {
     "name": "expected value (continuous)",
     "aliases": "continuous expected value",
+    "latex": "E[X] = \\int_{-\\infty}^{\\infty} x\\,f(x)\\,dx",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo stretchy=\"false\">[</mo><mi>X</mi><mo stretchy=\"false\">]</mo><mo>=</mo><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant=\"normal\">∞</mi></mrow><mi mathvariant=\"normal\">∞</mi></msubsup><mi>x</mi><mtext> </mtext><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">E[X] = \\int_{-\\infty}^{\\infty} x\\,f(x)\\,dx</annotation></semantics></math>",
     "unicodemath": "E[X] = ∫_(-∞)^∞ xf(x)dx",
     "domain": "Probability, Statistics & Data Science",
@@ -2224,6 +2446,7 @@ export const mathEquations = [
   {
     "name": "covariance",
     "aliases": "Cov X Y",
+    "latex": "\\text{Cov}(X,Y) = E[(X-\\mu_X)(Y-\\mu_Y)]",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>Cov</mtext><mo stretchy=\"false\">(</mo><mi>X</mi><mo separator=\"true\">,</mo><mi>Y</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>E</mi><mo stretchy=\"false\">[</mo><mo stretchy=\"false\">(</mo><mi>X</mi><mo>−</mo><msub><mi>μ</mi><mi>X</mi></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>Y</mi><mo>−</mo><msub><mi>μ</mi><mi>Y</mi></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\text{Cov}(X,Y) = E[(X-\\mu_X)(Y-\\mu_Y)]</annotation></semantics></math>",
     "unicodemath": "Cov(X,Y) = E[(X-μ_X)(Y-μ_Y)]",
     "domain": "Probability, Statistics & Data Science",
@@ -2234,6 +2457,7 @@ export const mathEquations = [
   {
     "name": "Pearson correlation",
     "aliases": "correlation coefficient",
+    "latex": "\\rho = \\frac{\\text{Cov}(X,Y)}{\\sigma_X \\sigma_Y}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ρ</mi><mo>=</mo><mfrac><mrow><mtext>Cov</mtext><mo stretchy=\"false\">(</mo><mi>X</mi><mo separator=\"true\">,</mo><mi>Y</mi><mo stretchy=\"false\">)</mo></mrow><mrow><msub><mi>σ</mi><mi>X</mi></msub><msub><mi>σ</mi><mi>Y</mi></msub></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\rho = \\frac{\\text{Cov}(X,Y)}{\\sigma_X \\sigma_Y}</annotation></semantics></math>",
     "unicodemath": "ρ = Cov(X,Y)/σ_Xσ_Y",
     "domain": "Probability, Statistics & Data Science",
@@ -2244,6 +2468,7 @@ export const mathEquations = [
   {
     "name": "addition rule for probability",
     "aliases": "P of A union B",
+    "latex": "P(A \\cup B) = P(A) + P(B) - P(A \\cap B)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mo>+</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">P(A \\cup B) = P(A) + P(B) - P(A \\cap B)</annotation></semantics></math>",
     "unicodemath": "P(A ∪ B) = P(A) + P(B) - P(A ∩ B)",
     "domain": "Probability, Statistics & Data Science",
@@ -2254,6 +2479,7 @@ export const mathEquations = [
   {
     "name": "conditional probability formula",
     "aliases": "P of A given B",
+    "latex": "P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∣</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}</annotation></semantics></math>",
     "unicodemath": "P(A ∣ B) = P(A∩B)/P(B)",
     "domain": "Probability, Statistics & Data Science",
@@ -2264,6 +2490,7 @@ export const mathEquations = [
   {
     "name": "multiplication rule for probability",
     "aliases": "P of A and B",
+    "latex": "P(A \\cap B) = P(A)\\cdot P(B \\mid A)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mo>⋅</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>B</mi><mo>∣</mo><mi>A</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">P(A \\cap B) = P(A)\\cdot P(B \\mid A)</annotation></semantics></math>",
     "unicodemath": "P(A ∩ B) = P(A)⋅ P(B ∣ A)",
     "domain": "Probability, Statistics & Data Science",
@@ -2274,6 +2501,7 @@ export const mathEquations = [
   {
     "name": "complement rule",
     "aliases": "probability of not A",
+    "latex": "P(A^c) = 1 - P(A)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><msup><mi>A</mi><mi>c</mi></msup><mo stretchy=\"false\">)</mo><mo>=</mo><mn>1</mn><mo>−</mo><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">P(A^c) = 1 - P(A)</annotation></semantics></math>",
     "unicodemath": "P(A^c) = 1 - P(A)",
     "domain": "Probability, Statistics & Data Science",
@@ -2284,6 +2512,7 @@ export const mathEquations = [
   {
     "name": "law of total probability",
     "aliases": "total probability",
+    "latex": "P(A) = \\sum_{i} P(A \\mid B_i)\\,P(B_i)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><mi>P</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>∣</mo><msub><mi>B</mi><mi>i</mi></msub><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>P</mi><mo stretchy=\"false\">(</mo><msub><mi>B</mi><mi>i</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">P(A) = \\sum_{i} P(A \\mid B_i)\\,P(B_i)</annotation></semantics></math>",
     "unicodemath": "P(A) = ∑_i P(A ∣ B_i)P(B_i)",
     "domain": "Probability, Statistics & Data Science",
@@ -2294,6 +2523,7 @@ export const mathEquations = [
   {
     "name": "binomial probability",
     "aliases": "binomial PMF",
+    "latex": "P(X=k) = \\binom{n}{k}p^k(1-p)^{n-k}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mi>n</mi><mi>k</mi></mfrac><mo fence=\"true\">)</mo></mrow><msup><mi>p</mi><mi>k</mi></msup><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><msup><mo stretchy=\"false\">)</mo><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">P(X=k) = \\binom{n}{k}p^k(1-p)^{n-k}</annotation></semantics></math>",
     "unicodemath": "P(X=k) = (n¦k)p^k(1-p)^(n-k)",
     "domain": "Probability, Statistics & Data Science",
@@ -2304,6 +2534,7 @@ export const mathEquations = [
   {
     "name": "Poisson probability",
     "aliases": "Poisson PMF",
+    "latex": "P(X=k) = \\frac{e^{-\\lambda}\\lambda^k}{k!}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi></mrow></msup><msup><mi>λ</mi><mi>k</mi></msup></mrow><mrow><mi>k</mi><mo stretchy=\"false\">!</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P(X=k) = \\frac{e^{-\\lambda}\\lambda^k}{k!}</annotation></semantics></math>",
     "unicodemath": "P(X=k) = e^(-λ)λ^k/k!",
     "domain": "Probability, Statistics & Data Science",
@@ -2314,8 +2545,9 @@ export const mathEquations = [
   {
     "name": "geometric distribution PMF",
     "aliases": "geometric PMF",
+    "latex": "P(X=k) = (1-p)^{k-1}p",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><msup><mo stretchy=\"false\">)</mo><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">P(X=k) = (1-p)^{k-1}p</annotation></semantics></math>",
-    "unicodemath": "P(X=k) = (1-p)^(k-1)p",
+    "unicodemath": "P(X=k) = (1-p)^(k-1) p",
     "domain": "Probability, Statistics & Data Science",
     "description": "PMF of geometric distribution: k trials until first success",
     "dictationString": "P of X equals k equals open parenthesis one minus p close parenthesis to the power of begin k minus one end times p",
@@ -2324,6 +2556,7 @@ export const mathEquations = [
   {
     "name": "hypergeometric distribution PMF",
     "aliases": "hypergeometric PMF",
+    "latex": "P(X=k) = \\frac{\\binom{K}{k}\\binom{N-K}{n-k}}{\\binom{N}{n}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mrow><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mi>K</mi><mi>k</mi></mfrac><mo fence=\"true\">)</mo></mrow><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mrow><mi>N</mi><mo>−</mo><mi>K</mi></mrow><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></mfrac><mo fence=\"true\">)</mo></mrow></mrow><mrow><mo fence=\"true\">(</mo><mfrac linethickness=\"0px\"><mi>N</mi><mi>n</mi></mfrac><mo fence=\"true\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P(X=k) = \\frac{\\binom{K}{k}\\binom{N-K}{n-k}}{\\binom{N}{n}}</annotation></semantics></math>",
     "unicodemath": "P(X=k) = (K¦k)(N-K¦n-k)/(N¦n)",
     "domain": "Probability, Statistics & Data Science",
@@ -2334,6 +2567,7 @@ export const mathEquations = [
   {
     "name": "exponential distribution PDF",
     "aliases": "exponential PDF",
+    "latex": "f(x) = \\lambda e^{-\\lambda x}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>λ</mi><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi><mi>x</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">f(x) = \\lambda e^{-\\lambda x}</annotation></semantics></math>",
     "unicodemath": "f(x) = λ e^(-λx)",
     "domain": "Probability, Statistics & Data Science",
@@ -2344,6 +2578,7 @@ export const mathEquations = [
   {
     "name": "uniform distribution PDF",
     "aliases": "uniform PDF",
+    "latex": "f(x) = \\frac{1}{b-a}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">f(x) = \\frac{1}{b-a}</annotation></semantics></math>",
     "unicodemath": "f(x) = 1/(b-a)",
     "domain": "Probability, Statistics & Data Science",
@@ -2354,6 +2589,7 @@ export const mathEquations = [
   {
     "name": "standard error of the mean",
     "aliases": "SEM",
+    "latex": "SE = \\frac{\\sigma}{\\sqrt{n}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mi>E</mi><mo>=</mo><mfrac><mi>σ</mi><msqrt><mi>n</mi></msqrt></mfrac></mrow><annotation encoding=\"application/x-tex\">SE = \\frac{\\sigma}{\\sqrt{n}}</annotation></semantics></math>",
     "unicodemath": "SE = σ/√n",
     "domain": "Probability, Statistics & Data Science",
@@ -2364,6 +2600,7 @@ export const mathEquations = [
   {
     "name": "confidence interval for mean",
     "aliases": "confidence interval",
+    "latex": "\\bar{x} \\pm z^*\\frac{\\sigma}{\\sqrt{n}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><mo>±</mo><msup><mi>z</mi><mo>∗</mo></msup><mfrac><mi>σ</mi><msqrt><mi>n</mi></msqrt></mfrac></mrow><annotation encoding=\"application/x-tex\">\\bar{x} \\pm z^*\\frac{\\sigma}{\\sqrt{n}}</annotation></semantics></math>",
     "unicodemath": "x̅ ± z^*σ/√n",
     "domain": "Probability, Statistics & Data Science",
@@ -2374,6 +2611,7 @@ export const mathEquations = [
   {
     "name": "t-test statistic",
     "aliases": "one sample t-test",
+    "latex": "t = \\frac{\\bar{x} - \\mu}{s/\\sqrt{n}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><mo>−</mo><mi>μ</mi></mrow><mrow><mi>s</mi><mi mathvariant=\"normal\">/</mi><msqrt><mi>n</mi></msqrt></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">t = \\frac{\\bar{x} - \\mu}{s/\\sqrt{n}}</annotation></semantics></math>",
     "unicodemath": "t = (x̅-μ)/s/√n",
     "domain": "Probability, Statistics & Data Science",
@@ -2384,6 +2622,7 @@ export const mathEquations = [
   {
     "name": "two-sample t-test",
     "aliases": "independent samples t-test",
+    "latex": "t = \\frac{\\bar{x}_1 - \\bar{x}_2}{\\sqrt{\\frac{s_1^2}{n_1}+\\frac{s_2^2}{n_2}}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><msub><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><mn>1</mn></msub><mo>−</mo><msub><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><mn>2</mn></msub></mrow><msqrt><mrow><mfrac><msubsup><mi>s</mi><mn>1</mn><mn>2</mn></msubsup><msub><mi>n</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><msubsup><mi>s</mi><mn>2</mn><mn>2</mn></msubsup><msub><mi>n</mi><mn>2</mn></msub></mfrac></mrow></msqrt></mfrac></mrow><annotation encoding=\"application/x-tex\">t = \\frac{\\bar{x}_1 - \\bar{x}_2}{\\sqrt{\\frac{s_1^2}{n_1}+\\frac{s_2^2}{n_2}}}</annotation></semantics></math>",
     "unicodemath": "t = (x̅_1-x̅_2)/√(s_1^2/n_1+s_2^2/n_2)",
     "domain": "Probability, Statistics & Data Science",
@@ -2394,6 +2633,7 @@ export const mathEquations = [
   {
     "name": "pooled variance",
     "aliases": "pooled standard deviation",
+    "latex": "s_p^2 = \\frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mi>s</mi><mi>p</mi><mn>2</mn></msubsup><mo>=</mo><mfrac><mrow><mo stretchy=\"false\">(</mo><msub><mi>n</mi><mn>1</mn></msub><mo>−</mo><mn>1</mn><mo stretchy=\"false\">)</mo><msubsup><mi>s</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><mo stretchy=\"false\">(</mo><msub><mi>n</mi><mn>2</mn></msub><mo>−</mo><mn>1</mn><mo stretchy=\"false\">)</mo><msubsup><mi>s</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>+</mo><msub><mi>n</mi><mn>2</mn></msub><mo>−</mo><mn>2</mn></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">s_p^2 = \\frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}</annotation></semantics></math>",
     "unicodemath": "s_p^2 = ((n_1-1)s_1^2+(n_2-1)s_2^2)/(n_1+n_2-2)",
     "domain": "Probability, Statistics & Data Science",
@@ -2404,6 +2644,7 @@ export const mathEquations = [
   {
     "name": "chi-squared test statistic",
     "aliases": "chi squared goodness of fit",
+    "latex": "\\chi^2 = \\sum \\frac{(O_i - E_i)^2}{E_i}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>χ</mi><mn>2</mn></msup><mo>=</mo><mo>∑</mo><mfrac><mrow><mo stretchy=\"false\">(</mo><msub><mi>O</mi><mi>i</mi></msub><mo>−</mo><msub><mi>E</mi><mi>i</mi></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow><msub><mi>E</mi><mi>i</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\chi^2 = \\sum \\frac{(O_i - E_i)^2}{E_i}</annotation></semantics></math>",
     "unicodemath": "χ^2 = ∑ (O_i-E_i)^2/E_i",
     "domain": "Probability, Statistics & Data Science",
@@ -2414,6 +2655,7 @@ export const mathEquations = [
   {
     "name": "F-statistic",
     "aliases": "F test",
+    "latex": "F = \\frac{s_1^2}{s_2^2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mfrac><msubsup><mi>s</mi><mn>1</mn><mn>2</mn></msubsup><msubsup><mi>s</mi><mn>2</mn><mn>2</mn></msubsup></mfrac></mrow><annotation encoding=\"application/x-tex\">F = \\frac{s_1^2}{s_2^2}</annotation></semantics></math>",
     "unicodemath": "F = s_1^2/s_2^2",
     "domain": "Probability, Statistics & Data Science",
@@ -2424,6 +2666,7 @@ export const mathEquations = [
   {
     "name": "interquartile range",
     "aliases": "IQR",
+    "latex": "IQR = Q_3 - Q_1",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>I</mi><mi>Q</mi><mi>R</mi><mo>=</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>−</mo><msub><mi>Q</mi><mn>1</mn></msub></mrow><annotation encoding=\"application/x-tex\">IQR = Q_3 - Q_1</annotation></semantics></math>",
     "unicodemath": "IQR = Q_3 - Q_1",
     "domain": "Probability, Statistics & Data Science",
@@ -2434,6 +2677,7 @@ export const mathEquations = [
   {
     "name": "coefficient of variation",
     "aliases": "CV",
+    "latex": "CV = \\frac{\\sigma}{\\mu}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mi>V</mi><mo>=</mo><mfrac><mi>σ</mi><mi>μ</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">CV = \\frac{\\sigma}{\\mu}</annotation></semantics></math>",
     "unicodemath": "CV = σ/μ",
     "domain": "Probability, Statistics & Data Science",
@@ -2444,6 +2688,7 @@ export const mathEquations = [
   {
     "name": "skewness",
     "aliases": "sample skewness",
+    "latex": "\\text{skewness} = \\frac{\\frac{1}{n}\\sum(x_i-\\bar{x})^3}{s^3}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>skewness</mtext><mo>=</mo><mfrac><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>∑</mo><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><msup><mo stretchy=\"false\">)</mo><mn>3</mn></msup></mrow><msup><mi>s</mi><mn>3</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">\\text{skewness} = \\frac{\\frac{1}{n}\\sum(x_i-\\bar{x})^3}{s^3}</annotation></semantics></math>",
     "unicodemath": "skewness = 1/n∑(x_i-x̅)^3/s^3",
     "domain": "Probability, Statistics & Data Science",
@@ -2454,6 +2699,7 @@ export const mathEquations = [
   {
     "name": "kurtosis",
     "aliases": "excess kurtosis",
+    "latex": "\\text{kurtosis} = \\frac{\\frac{1}{n}\\sum(x_i-\\bar{x})^4}{s^4} - 3",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>kurtosis</mtext><mo>=</mo><mfrac><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>∑</mo><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><msup><mo stretchy=\"false\">)</mo><mn>4</mn></msup></mrow><msup><mi>s</mi><mn>4</mn></msup></mfrac><mo>−</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">\\text{kurtosis} = \\frac{\\frac{1}{n}\\sum(x_i-\\bar{x})^4}{s^4} - 3</annotation></semantics></math>",
     "unicodemath": "kurtosis = 1/n∑(x_i-x̅)^4/s^4 - 3",
     "domain": "Probability, Statistics & Data Science",
@@ -2464,6 +2710,7 @@ export const mathEquations = [
   {
     "name": "simple linear regression",
     "aliases": "regression line",
+    "latex": "\\hat{y} = \\hat{\\beta}_0 + \\hat{\\beta}_1 x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mo>=</mo><msub><mover accent=\"true\"><mi>β</mi><mo>^</mo></mover><mn>0</mn></msub><mo>+</mo><msub><mover accent=\"true\"><mi>β</mi><mo>^</mo></mover><mn>1</mn></msub><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\hat{y} = \\hat{\\beta}_0 + \\hat{\\beta}_1 x</annotation></semantics></math>",
     "unicodemath": "ŷ = β̂_0 + β̂_1 x",
     "domain": "Probability, Statistics & Data Science",
@@ -2474,6 +2721,7 @@ export const mathEquations = [
   {
     "name": "OLS slope",
     "aliases": "least squares slope",
+    "latex": "\\hat{\\beta}_1 = \\frac{\\sum(x_i-\\bar{x})(y_i-\\bar{y})}{\\sum(x_i-\\bar{x})^2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mover accent=\"true\"><mi>β</mi><mo>^</mo></mover><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mo>∑</mo><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><mover accent=\"true\"><mi>y</mi><mo>ˉ</mo></mover><mo stretchy=\"false\">)</mo></mrow><mrow><mo>∑</mo><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\hat{\\beta}_1 = \\frac{\\sum(x_i-\\bar{x})(y_i-\\bar{y})}{\\sum(x_i-\\bar{x})^2}</annotation></semantics></math>",
     "unicodemath": "β̂_1 = ∑(x_i-x̅)(y_i-y̅)/∑(x_i-x̅)^2",
     "domain": "Probability, Statistics & Data Science",
@@ -2484,6 +2732,7 @@ export const mathEquations = [
   {
     "name": "OLS intercept",
     "aliases": "least squares intercept",
+    "latex": "\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1\\bar{x}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mover accent=\"true\"><mi>β</mi><mo>^</mo></mover><mn>0</mn></msub><mo>=</mo><mover accent=\"true\"><mi>y</mi><mo>ˉ</mo></mover><mo>−</mo><msub><mover accent=\"true\"><mi>β</mi><mo>^</mo></mover><mn>1</mn></msub><mover accent=\"true\"><mi>x</mi><mo>ˉ</mo></mover></mrow><annotation encoding=\"application/x-tex\">\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1\\bar{x}</annotation></semantics></math>",
     "unicodemath": "β̂_0 = y̅ - β̂_1x̅",
     "domain": "Probability, Statistics & Data Science",
@@ -2494,6 +2743,7 @@ export const mathEquations = [
   {
     "name": "R squared",
     "aliases": "coefficient of determination",
+    "latex": "R^2 = 1 - \\frac{SS_{\\text{res}}}{SS_{\\text{tot}}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><mrow><mi>S</mi><msub><mi>S</mi><mtext>res</mtext></msub></mrow><mrow><mi>S</mi><msub><mi>S</mi><mtext>tot</mtext></msub></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">R^2 = 1 - \\frac{SS_{\\text{res}}}{SS_{\\text{tot}}}</annotation></semantics></math>",
     "unicodemath": "R^2 = 1 - SS_res/SS_tot",
     "domain": "Probability, Statistics & Data Science",
@@ -2504,6 +2754,7 @@ export const mathEquations = [
   {
     "name": "sum of squared residuals",
     "aliases": "SSR",
+    "latex": "SS_{\\text{res}} = \\sum_{i=1}^{n}(y_i - \\hat{y}_i)^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><msub><mi>S</mi><mtext>res</mtext></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy=\"false\">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">SS_{\\text{res}} = \\sum_{i=1}^{n}(y_i - \\hat{y}_i)^2</annotation></semantics></math>",
     "unicodemath": "SS_res = ∑_(i=1)^n(y_i - ŷ_i)^2",
     "domain": "Probability, Statistics & Data Science",
@@ -2514,6 +2765,7 @@ export const mathEquations = [
   {
     "name": "mean squared error",
     "aliases": "MSE",
+    "latex": "MSE = \\frac{1}{n}\\sum_{i=1}^{n}(y_i - \\hat{y}_i)^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mi>S</mi><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy=\"false\">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">MSE = \\frac{1}{n}\\sum_{i=1}^{n}(y_i - \\hat{y}_i)^2</annotation></semantics></math>",
     "unicodemath": "MSE = 1/n∑_(i=1)^n(y_i - ŷ_i)^2",
     "domain": "Probability, Statistics & Data Science",
@@ -2524,6 +2776,7 @@ export const mathEquations = [
   {
     "name": "root mean squared error",
     "aliases": "RMSE",
+    "latex": "RMSE = \\sqrt{\\frac{1}{n}\\sum_{i=1}^{n}(y_i - \\hat{y}_i)^2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>R</mi><mi>M</mi><mi>S</mi><mi>E</mi><mo>=</mo><msqrt><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy=\"false\">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">RMSE = \\sqrt{\\frac{1}{n}\\sum_{i=1}^{n}(y_i - \\hat{y}_i)^2}</annotation></semantics></math>",
     "unicodemath": "RMSE = √(1/n∑_(i=1)^n(y_i-ŷ_i)^2)",
     "domain": "Probability, Statistics & Data Science",
@@ -2534,6 +2787,7 @@ export const mathEquations = [
   {
     "name": "OLS normal equations",
     "aliases": "matrix regression",
+    "latex": "\\hat{\\boldsymbol{\\beta}} = (\\mathbf{X}^T\\mathbf{X})^{-1}\\mathbf{X}^T\\mathbf{y}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mover accent=\"true\"><mi mathvariant=\"bold-italic\">β</mi><mo>^</mo></mover><mo>=</mo><mo stretchy=\"false\">(</mo><msup><mi mathvariant=\"bold\">X</mi><mi>T</mi></msup><mi mathvariant=\"bold\">X</mi><msup><mo stretchy=\"false\">)</mo><mrow><mo>−</mo><mn>1</mn></mrow></msup><msup><mi mathvariant=\"bold\">X</mi><mi>T</mi></msup><mi mathvariant=\"bold\">y</mi></mrow><annotation encoding=\"application/x-tex\">\\hat{\\boldsymbol{\\beta}} = (\\mathbf{X}^T\\mathbf{X})^{-1}\\mathbf{X}^T\\mathbf{y}</annotation></semantics></math>",
     "unicodemath": "β̂ = (X^TX)^(-1)X^Ty",
     "domain": "Probability, Statistics & Data Science",
@@ -2544,6 +2798,7 @@ export const mathEquations = [
   {
     "name": "Shannon entropy",
     "aliases": "information entropy",
+    "latex": "H(X) = -\\sum_{x} p(x)\\log_2 p(x)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>H</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo>−</mo><munder><mo>∑</mo><mi>x</mi></munder><mi>p</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>2</mn></msub><mi>p</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">H(X) = -\\sum_{x} p(x)\\log_2 p(x)</annotation></semantics></math>",
     "unicodemath": "H(X) = -∑_x p(x)log_2 p(x)",
     "domain": "Probability, Statistics & Data Science",
@@ -2554,6 +2809,7 @@ export const mathEquations = [
   {
     "name": "cross-entropy",
     "aliases": "cross entropy loss",
+    "latex": "H(p,q) = -\\sum_{x} p(x)\\log q(x)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>H</mi><mo stretchy=\"false\">(</mo><mi>p</mi><mo separator=\"true\">,</mo><mi>q</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo>−</mo><munder><mo>∑</mo><mi>x</mi></munder><mi>p</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mi>log</mi><mo>⁡</mo><mi>q</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">H(p,q) = -\\sum_{x} p(x)\\log q(x)</annotation></semantics></math>",
     "unicodemath": "H(p,q) = -∑_x p(x)log q(x)",
     "domain": "Probability, Statistics & Data Science",
@@ -2564,6 +2820,7 @@ export const mathEquations = [
   {
     "name": "KL divergence",
     "aliases": "Kullback-Leibler divergence",
+    "latex": "D_{KL}(P \\| Q) = \\sum_{x} P(x)\\log\\frac{P(x)}{Q(x)}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>D</mi><mrow><mi>K</mi><mi>L</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>P</mi><mi mathvariant=\"normal\">∥</mi><mi>Q</mi><mo stretchy=\"false\">)</mo><mo>=</mo><munder><mo>∑</mo><mi>x</mi></munder><mi>P</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mi>log</mi><mo>⁡</mo><mfrac><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>Q</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">D_{KL}(P \\| Q) = \\sum_{x} P(x)\\log\\frac{P(x)}{Q(x)}</annotation></semantics></math>",
     "unicodemath": "D_KL(P ‖ Q) = ∑_x P(x)logP(x)/Q(x)",
     "domain": "Probability, Statistics & Data Science",
@@ -2574,6 +2831,7 @@ export const mathEquations = [
   {
     "name": "mutual information",
     "aliases": "I of X and Y",
+    "latex": "I(X;Y) = H(X) - H(X \\mid Y)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>I</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo separator=\"true\">;</mo><mi>Y</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>H</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>H</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo>∣</mo><mi>Y</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">I(X;Y) = H(X) - H(X \\mid Y)</annotation></semantics></math>",
     "unicodemath": "I(X;Y) = H(X) - H(X ∣ Y)",
     "domain": "Probability, Statistics & Data Science",
@@ -2584,6 +2842,7 @@ export const mathEquations = [
   {
     "name": "sigmoid function",
     "aliases": "logistic function",
+    "latex": "\\sigma(x) = \\frac{1}{1+e^{-x}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>σ</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sigma(x) = \\frac{1}{1+e^{-x}}</annotation></semantics></math>",
     "unicodemath": "σ(x) = 1/(1+e^(-x))",
     "domain": "Probability, Statistics & Data Science",
@@ -2594,6 +2853,7 @@ export const mathEquations = [
   {
     "name": "softmax function",
     "aliases": "softmax",
+    "latex": "\\text{softmax}(x_i) = \\frac{e^{x_i}}{\\sum_{j} e^{x_j}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>softmax</mtext><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy=\"false\">)</mo><mo>=</mo><mfrac><msup><mi>e</mi><msub><mi>x</mi><mi>i</mi></msub></msup><mrow><munder><mo>∑</mo><mi>j</mi></munder><msup><mi>e</mi><msub><mi>x</mi><mi>j</mi></msub></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\text{softmax}(x_i) = \\frac{e^{x_i}}{\\sum_{j} e^{x_j}}</annotation></semantics></math>",
     "unicodemath": "softmax(x_i) = e^(x_i)/∑_je^(x_j)",
     "domain": "Probability, Statistics & Data Science",
@@ -2604,6 +2864,7 @@ export const mathEquations = [
   {
     "name": "binary cross-entropy loss",
     "aliases": "log loss",
+    "latex": "L = -\\frac{1}{n}\\sum_{i=1}^{n}\\bigl[y_i\\log\\hat{y}_i + (1-y_i)\\log(1-\\hat{y}_i)\\bigr]",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>L</mi><mo>=</mo><mo>−</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo fence=\"true\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">[</mo><msub><mi>y</mi><mi>i</mi></msub><mi>log</mi><mo>⁡</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><mo>+</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><msub><mi>y</mi><mi>i</mi></msub><mo stretchy=\"false\">)</mo><mi>log</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><msub><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><mo stretchy=\"false\">)</mo><mo fence=\"true\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">]</mo></mrow><annotation encoding=\"application/x-tex\">L = -\\frac{1}{n}\\sum_{i=1}^{n}\\bigl[y_i\\log\\hat{y}_i + (1-y_i)\\log(1-\\hat{y}_i)\\bigr]</annotation></semantics></math>",
     "unicodemath": "L = -1/n∑_(i=1)^n[y_ilogŷ_i + (1-y_i)log(1-ŷ_i)]",
     "domain": "Probability, Statistics & Data Science",
@@ -2614,6 +2875,7 @@ export const mathEquations = [
   {
     "name": "gradient descent update",
     "aliases": "parameter update rule",
+    "latex": "\\theta \\leftarrow \\theta - \\alpha\\,\\nabla_\\theta J(\\theta)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>θ</mi><mo>←</mo><mi>θ</mi><mo>−</mo><mi>α</mi><mtext> </mtext><msub><mi mathvariant=\"normal\">∇</mi><mi>θ</mi></msub><mi>J</mi><mo stretchy=\"false\">(</mo><mi>θ</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\theta \\leftarrow \\theta - \\alpha\\,\\nabla_\\theta J(\\theta)</annotation></semantics></math>",
     "unicodemath": "θ ← θ - α∇_θ J(θ)",
     "domain": "Probability, Statistics & Data Science",
@@ -2624,6 +2886,7 @@ export const mathEquations = [
   {
     "name": "L1 norm",
     "aliases": "Manhattan norm",
+    "latex": "\\|\\mathbf{x}\\|_1 = \\sum_{i}|x_i|",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∥</mi><mi mathvariant=\"bold\">x</mi><msub><mi mathvariant=\"normal\">∥</mi><mn>1</mn></msub><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><mi mathvariant=\"normal\">∣</mi><msub><mi>x</mi><mi>i</mi></msub><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">\\|\\mathbf{x}\\|_1 = \\sum_{i}|x_i|</annotation></semantics></math>",
     "unicodemath": "‖x‖_1 = ∑_i|x_i|",
     "domain": "Probability, Statistics & Data Science",
@@ -2634,8 +2897,9 @@ export const mathEquations = [
   {
     "name": "L2 norm",
     "aliases": "Euclidean norm",
+    "latex": "\\|\\mathbf{x}\\|_2 = \\sqrt{\\sum_{i}x_i^2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∥</mi><mi mathvariant=\"bold\">x</mi><msub><mi mathvariant=\"normal\">∥</mi><mn>2</mn></msub><mo>=</mo><msqrt><mrow><munder><mo>∑</mo><mi>i</mi></munder><msubsup><mi>x</mi><mi>i</mi><mn>2</mn></msubsup></mrow></msqrt></mrow><annotation encoding=\"application/x-tex\">\\|\\mathbf{x}\\|_2 = \\sqrt{\\sum_{i}x_i^2}</annotation></semantics></math>",
-    "unicodemath": "‖x‖_2 = √(∑_ix_i^2)",
+    "unicodemath": "‖x‖_2 = √(∑_i x_i^2)",
     "domain": "Probability, Statistics & Data Science",
     "description": "L2 norm used in Ridge regularization",
     "dictationString": "the L two norm of x equals the square root of begin the sum over i of x sub i squared end",
@@ -2644,6 +2908,7 @@ export const mathEquations = [
   {
     "name": "L2 regularization loss",
     "aliases": "Ridge loss",
+    "latex": "J(\\theta) = MSE + \\lambda\\sum_{j}\\theta_j^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>J</mi><mo stretchy=\"false\">(</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>M</mi><mi>S</mi><mi>E</mi><mo>+</mo><mi>λ</mi><munder><mo>∑</mo><mi>j</mi></munder><msubsup><mi>θ</mi><mi>j</mi><mn>2</mn></msubsup></mrow><annotation encoding=\"application/x-tex\">J(\\theta) = MSE + \\lambda\\sum_{j}\\theta_j^2</annotation></semantics></math>",
     "unicodemath": "J(θ) = MSE + λ∑_jθ_j^2",
     "domain": "Probability, Statistics & Data Science",
@@ -2654,6 +2919,7 @@ export const mathEquations = [
   {
     "name": "L1 regularization loss",
     "aliases": "Lasso loss",
+    "latex": "J(\\theta) = MSE + \\lambda\\sum_{j}|\\theta_j|",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>J</mi><mo stretchy=\"false\">(</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>M</mi><mi>S</mi><mi>E</mi><mo>+</mo><mi>λ</mi><munder><mo>∑</mo><mi>j</mi></munder><mi mathvariant=\"normal\">∣</mi><msub><mi>θ</mi><mi>j</mi></msub><mi mathvariant=\"normal\">∣</mi></mrow><annotation encoding=\"application/x-tex\">J(\\theta) = MSE + \\lambda\\sum_{j}|\\theta_j|</annotation></semantics></math>",
     "unicodemath": "J(θ) = MSE + λ∑_j|θ_j|",
     "domain": "Probability, Statistics & Data Science",
@@ -2664,6 +2930,7 @@ export const mathEquations = [
   {
     "name": "bias-variance decomposition",
     "aliases": "bias variance tradeoff",
+    "latex": "E\\bigl[(y-\\hat{y})^2\\bigr] = \\text{Bias}^2 + \\text{Variance} + \\sigma^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo fence=\"true\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">[</mo><mo stretchy=\"false\">(</mo><mi>y</mi><mo>−</mo><mover accent=\"true\"><mi>y</mi><mo>^</mo></mover><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo fence=\"true\" stretchy=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">]</mo><mo>=</mo><msup><mtext>Bias</mtext><mn>2</mn></msup><mo>+</mo><mtext>Variance</mtext><mo>+</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">E\\bigl[(y-\\hat{y})^2\\bigr] = \\text{Bias}^2 + \\text{Variance} + \\sigma^2</annotation></semantics></math>",
     "unicodemath": "E[(y-ŷ)^2] = Bias^2 + Variance + σ^2",
     "domain": "Probability, Statistics & Data Science",
@@ -2674,6 +2941,7 @@ export const mathEquations = [
   {
     "name": "accuracy",
     "aliases": "classification accuracy",
+    "latex": "\\text{Accuracy} = \\frac{TP+TN}{TP+TN+FP+FN}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>Accuracy</mtext><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>T</mi><mi>N</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>T</mi><mi>N</mi><mo>+</mo><mi>F</mi><mi>P</mi><mo>+</mo><mi>F</mi><mi>N</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\text{Accuracy} = \\frac{TP+TN}{TP+TN+FP+FN}</annotation></semantics></math>",
     "unicodemath": "Accuracy = (TP+TN)/(TP+TN+FP+FN)",
     "domain": "Probability, Statistics & Data Science",
@@ -2684,6 +2952,7 @@ export const mathEquations = [
   {
     "name": "precision",
     "aliases": "positive predictive value",
+    "latex": "\\text{Precision} = \\frac{TP}{TP+FP}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>Precision</mtext><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>F</mi><mi>P</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\text{Precision} = \\frac{TP}{TP+FP}</annotation></semantics></math>",
     "unicodemath": "Precision = TP/(TP+FP)",
     "domain": "Probability, Statistics & Data Science",
@@ -2694,6 +2963,7 @@ export const mathEquations = [
   {
     "name": "recall",
     "aliases": "sensitivity; true positive rate",
+    "latex": "\\text{Recall} = \\frac{TP}{TP+FN}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>Recall</mtext><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>F</mi><mi>N</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\text{Recall} = \\frac{TP}{TP+FN}</annotation></semantics></math>",
     "unicodemath": "Recall = TP/(TP+FN)",
     "domain": "Probability, Statistics & Data Science",
@@ -2704,6 +2974,7 @@ export const mathEquations = [
   {
     "name": "F1 score",
     "aliases": "F1",
+    "latex": "F_1 = \\frac{2 \\cdot \\text{Precision} \\cdot \\text{Recall}}{\\text{Precision} + \\text{Recall}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>F</mi><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⋅</mo><mtext>Precision</mtext><mo>⋅</mo><mtext>Recall</mtext></mrow><mrow><mtext>Precision</mtext><mo>+</mo><mtext>Recall</mtext></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">F_1 = \\frac{2 \\cdot \\text{Precision} \\cdot \\text{Recall}}{\\text{Precision} + \\text{Recall}}</annotation></semantics></math>",
     "unicodemath": "F_1 = 2⋅Precision⋅Recall/(Precision+Recall)",
     "domain": "Probability, Statistics & Data Science",
@@ -2714,6 +2985,7 @@ export const mathEquations = [
   {
     "name": "Newton's second law",
     "aliases": "F equals ma",
+    "latex": "F = ma",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding=\"application/x-tex\">F = ma</annotation></semantics></math>",
     "unicodemath": "F = ma",
     "domain": "Physics",
@@ -2724,8 +2996,9 @@ export const mathEquations = [
   {
     "name": "kinetic energy formula",
     "aliases": "KE equals half mv squared",
+    "latex": "KE = \\frac{1}{2}mv^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>K</mi><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">KE = \\frac{1}{2}mv^2</annotation></semantics></math>",
-    "unicodemath": "KE = 1/2mv^2",
+    "unicodemath": "KE = 1/2 mv^2",
     "domain": "Physics",
     "description": "Kinetic energy of a moving object",
     "dictationString": "K E equals one half m v squared",
@@ -2734,6 +3007,7 @@ export const mathEquations = [
   {
     "name": "gravitational potential energy near surface",
     "aliases": "GPE equals mgh",
+    "latex": "U = mgh",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>U</mi><mo>=</mo><mi>m</mi><mi>g</mi><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">U = mgh</annotation></semantics></math>",
     "unicodemath": "U = mgh",
     "domain": "Physics",
@@ -2744,6 +3018,7 @@ export const mathEquations = [
   {
     "name": "Coulomb's law",
     "aliases": "electrostatic force",
+    "latex": "F = k\\frac{q_1 q_2}{r^2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mi>k</mi><mfrac><mrow><msub><mi>q</mi><mn>1</mn></msub><msub><mi>q</mi><mn>2</mn></msub></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">F = k\\frac{q_1 q_2}{r^2}</annotation></semantics></math>",
     "unicodemath": "F = kq_1q_2/r^2",
     "domain": "Physics",
@@ -2754,6 +3029,7 @@ export const mathEquations = [
   {
     "name": "Ohm's law",
     "aliases": "V equals IR",
+    "latex": "V = IR",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>I</mi><mi>R</mi></mrow><annotation encoding=\"application/x-tex\">V = IR</annotation></semantics></math>",
     "unicodemath": "V = IR",
     "domain": "Physics",
@@ -2764,6 +3040,7 @@ export const mathEquations = [
   {
     "name": "wave speed equation",
     "aliases": "wave speed equals f lambda",
+    "latex": "v = f\\lambda",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>v</mi><mo>=</mo><mi>f</mi><mi>λ</mi></mrow><annotation encoding=\"application/x-tex\">v = f\\lambda</annotation></semantics></math>",
     "unicodemath": "v = fλ",
     "domain": "Physics",
@@ -2774,6 +3051,7 @@ export const mathEquations = [
   {
     "name": "kinematic velocity",
     "aliases": "v equals v0 plus at",
+    "latex": "v = v_0 + at",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>v</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>a</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">v = v_0 + at</annotation></semantics></math>",
     "unicodemath": "v = v_0 + at",
     "domain": "Physics",
@@ -2784,8 +3062,9 @@ export const mathEquations = [
   {
     "name": "kinematic position",
     "aliases": "x equals x0 plus v0t plus half at squared",
+    "latex": "x = x_0 + v_0 t + \\frac{1}{2}at^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>x</mi><mo>=</mo><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><msub><mi>v</mi><mn>0</mn></msub><mi>t</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">x = x_0 + v_0 t + \\frac{1}{2}at^2</annotation></semantics></math>",
-    "unicodemath": "x = x_0 + v_0 t + 1/2at^2",
+    "unicodemath": "x = x_0 + v_0 t + 1/2 at^2",
     "domain": "Physics",
     "description": "Position under constant acceleration",
     "dictationString": "x equals x sub zero plus v sub zero times t plus one half a t squared",
@@ -2794,6 +3073,7 @@ export const mathEquations = [
   {
     "name": "kinematic velocity squared",
     "aliases": "v squared equals v0 squared plus 2a delta x",
+    "latex": "v^2 = v_0^2 + 2a\\Delta x",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>+</mo><mn>2</mn><mi>a</mi><mi mathvariant=\"normal\">Δ</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">v^2 = v_0^2 + 2a\\Delta x</annotation></semantics></math>",
     "unicodemath": "v^2 = v_0^2 + 2aΔ x",
     "domain": "Physics",
@@ -2804,6 +3084,7 @@ export const mathEquations = [
   {
     "name": "kinematic average velocity",
     "aliases": "x equals half v plus v0 times t",
+    "latex": "\\Delta x = \\frac{1}{2}(v + v_0)t",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"false\">(</mo><mi>v</mi><mo>+</mo><msub><mi>v</mi><mn>0</mn></msub><mo stretchy=\"false\">)</mo><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta x = \\frac{1}{2}(v + v_0)t</annotation></semantics></math>",
     "unicodemath": "Δ x = 1/2(v + v_0)t",
     "domain": "Physics",
@@ -2814,6 +3095,7 @@ export const mathEquations = [
   {
     "name": "Newton's law of universal gravitation",
     "aliases": "gravitational force",
+    "latex": "F = G\\frac{m_1 m_2}{r^2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mi>G</mi><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">F = G\\frac{m_1 m_2}{r^2}</annotation></semantics></math>",
     "unicodemath": "F = Gm_1m_2/r^2",
     "domain": "Physics",
@@ -2824,6 +3106,7 @@ export const mathEquations = [
   {
     "name": "gravitational potential energy general",
     "aliases": "universal gravitational PE",
+    "latex": "U = -\\frac{Gm_1 m_2}{r}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>U</mi><mo>=</mo><mo>−</mo><mfrac><mrow><mi>G</mi><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">U = -\\frac{Gm_1 m_2}{r}</annotation></semantics></math>",
     "unicodemath": "U = -Gm_1m_2/r",
     "domain": "Physics",
@@ -2834,6 +3117,7 @@ export const mathEquations = [
   {
     "name": "escape velocity",
     "aliases": "v escape",
+    "latex": "v_e = \\sqrt{\\frac{2GM}{R}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>v</mi><mi>e</mi></msub><mo>=</mo><msqrt><mfrac><mrow><mn>2</mn><mi>G</mi><mi>M</mi></mrow><mi>R</mi></mfrac></msqrt></mrow><annotation encoding=\"application/x-tex\">v_e = \\sqrt{\\frac{2GM}{R}}</annotation></semantics></math>",
     "unicodemath": "v_e = √(2GM/R)",
     "domain": "Physics",
@@ -2844,6 +3128,7 @@ export const mathEquations = [
   {
     "name": "momentum",
     "aliases": "p equals mv",
+    "latex": "p = mv",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>p</mi><mo>=</mo><mi>m</mi><mi>v</mi></mrow><annotation encoding=\"application/x-tex\">p = mv</annotation></semantics></math>",
     "unicodemath": "p = mv",
     "domain": "Physics",
@@ -2854,6 +3139,7 @@ export const mathEquations = [
   {
     "name": "impulse",
     "aliases": "impulse equals F delta t",
+    "latex": "J = F\\Delta t = \\Delta p",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>J</mi><mo>=</mo><mi>F</mi><mi mathvariant=\"normal\">Δ</mi><mi>t</mi><mo>=</mo><mi mathvariant=\"normal\">Δ</mi><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">J = F\\Delta t = \\Delta p</annotation></semantics></math>",
     "unicodemath": "J = FΔ t = Δ p",
     "domain": "Physics",
@@ -2864,6 +3150,7 @@ export const mathEquations = [
   {
     "name": "conservation of momentum",
     "aliases": "momentum before equals momentum after",
+    "latex": "m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>v</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><msub><mi>m</mi><mn>1</mn></msub><msubsup><mi>v</mi><mn>1</mn><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msubsup><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><msubsup><mi>v</mi><mn>2</mn><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msubsup></mrow><annotation encoding=\"application/x-tex\">m_1 v_1 + m_2 v_2 = m_1 v_1&#x27; + m_2 v_2&#x27;</annotation></semantics></math>",
     "unicodemath": "m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'",
     "domain": "Physics",
@@ -2874,6 +3161,7 @@ export const mathEquations = [
   {
     "name": "work",
     "aliases": "W equals Fd cos theta",
+    "latex": "W = Fd\\cos\\theta",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>W</mi><mo>=</mo><mi>F</mi><mi>d</mi><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">W = Fd\\cos\\theta</annotation></semantics></math>",
     "unicodemath": "W = Fdcosθ",
     "domain": "Physics",
@@ -2884,6 +3172,7 @@ export const mathEquations = [
   {
     "name": "power",
     "aliases": "P equals W over t",
+    "latex": "P = \\frac{W}{t} = Fv",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo>=</mo><mfrac><mi>W</mi><mi>t</mi></mfrac><mo>=</mo><mi>F</mi><mi>v</mi></mrow><annotation encoding=\"application/x-tex\">P = \\frac{W}{t} = Fv</annotation></semantics></math>",
     "unicodemath": "P = W/t = Fv",
     "domain": "Physics",
@@ -2894,6 +3183,7 @@ export const mathEquations = [
   {
     "name": "centripetal acceleration",
     "aliases": "a equals v squared over r",
+    "latex": "a_c = \\frac{v^2}{r}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>a</mi><mi>c</mi></msub><mo>=</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">a_c = \\frac{v^2}{r}</annotation></semantics></math>",
     "unicodemath": "a_c = v^2/r",
     "domain": "Physics",
@@ -2904,6 +3194,7 @@ export const mathEquations = [
   {
     "name": "centripetal force",
     "aliases": "F equals mv squared over r",
+    "latex": "F_c = \\frac{mv^2}{r}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>F</mi><mi>c</mi></msub><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">F_c = \\frac{mv^2}{r}</annotation></semantics></math>",
     "unicodemath": "F_c = mv^2/r",
     "domain": "Physics",
@@ -2914,6 +3205,7 @@ export const mathEquations = [
   {
     "name": "torque",
     "aliases": "tau equals r F sin theta",
+    "latex": "\\tau = rF\\sin\\theta",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>τ</mi><mo>=</mo><mi>r</mi><mi>F</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">\\tau = rF\\sin\\theta</annotation></semantics></math>",
     "unicodemath": "τ = rFsinθ",
     "domain": "Physics",
@@ -2924,6 +3216,7 @@ export const mathEquations = [
   {
     "name": "angular momentum",
     "aliases": "L equals I omega",
+    "latex": "L = I\\omega",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>L</mi><mo>=</mo><mi>I</mi><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">L = I\\omega</annotation></semantics></math>",
     "unicodemath": "L = Iω",
     "domain": "Physics",
@@ -2934,8 +3227,9 @@ export const mathEquations = [
   {
     "name": "rotational kinetic energy",
     "aliases": "KE rotation",
+    "latex": "KE = \\frac{1}{2}I\\omega^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>K</mi><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>I</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">KE = \\frac{1}{2}I\\omega^2</annotation></semantics></math>",
-    "unicodemath": "KE = 1/2Iω^2",
+    "unicodemath": "KE = 1/2 Iω^2",
     "domain": "Physics",
     "description": "Kinetic energy of a rotating body",
     "dictationString": "K E equals one half m v squared",
@@ -2944,6 +3238,7 @@ export const mathEquations = [
   {
     "name": "Hooke's law",
     "aliases": "spring force",
+    "latex": "F = -kx",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mo>−</mo><mi>k</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">F = -kx</annotation></semantics></math>",
     "unicodemath": "F = -kx",
     "domain": "Physics",
@@ -2954,6 +3249,7 @@ export const mathEquations = [
   {
     "name": "period of a spring",
     "aliases": "spring oscillation period",
+    "latex": "T = 2\\pi\\sqrt{\\frac{m}{k}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mi>m</mi><mi>k</mi></mfrac></msqrt></mrow><annotation encoding=\"application/x-tex\">T = 2\\pi\\sqrt{\\frac{m}{k}}</annotation></semantics></math>",
     "unicodemath": "T = 2π√(m/k)",
     "domain": "Physics",
@@ -2964,6 +3260,7 @@ export const mathEquations = [
   {
     "name": "period of a pendulum",
     "aliases": "pendulum oscillation period",
+    "latex": "T = 2\\pi\\sqrt{\\frac{L}{g}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mi>L</mi><mi>g</mi></mfrac></msqrt></mrow><annotation encoding=\"application/x-tex\">T = 2\\pi\\sqrt{\\frac{L}{g}}</annotation></semantics></math>",
     "unicodemath": "T = 2π√(L/g)",
     "domain": "Physics",
@@ -2974,6 +3271,7 @@ export const mathEquations = [
   {
     "name": "ideal gas law",
     "aliases": "PV equals nRT",
+    "latex": "PV = nRT",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mi>n</mi><mi>R</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">PV = nRT</annotation></semantics></math>",
     "unicodemath": "PV = nRT",
     "domain": "Physics",
@@ -2984,6 +3282,7 @@ export const mathEquations = [
   {
     "name": "first law of thermodynamics",
     "aliases": "delta U equals Q minus W",
+    "latex": "\\Delta U = Q - W",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>U</mi><mo>=</mo><mi>Q</mi><mo>−</mo><mi>W</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta U = Q - W</annotation></semantics></math>",
     "unicodemath": "Δ U = Q - W",
     "domain": "Physics",
@@ -2994,6 +3293,7 @@ export const mathEquations = [
   {
     "name": "heat transfer",
     "aliases": "Q equals mc delta T",
+    "latex": "Q = mc\\Delta T",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>Q</mi><mo>=</mo><mi>m</mi><mi>c</mi><mi mathvariant=\"normal\">Δ</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">Q = mc\\Delta T</annotation></semantics></math>",
     "unicodemath": "Q = mcΔ T",
     "domain": "Physics",
@@ -3004,6 +3304,7 @@ export const mathEquations = [
   {
     "name": "thermal linear expansion",
     "aliases": "delta L equals alpha L0 delta T",
+    "latex": "\\Delta L = \\alpha L_0 \\Delta T",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>L</mi><mo>=</mo><mi>α</mi><msub><mi>L</mi><mn>0</mn></msub><mi mathvariant=\"normal\">Δ</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta L = \\alpha L_0 \\Delta T</annotation></semantics></math>",
     "unicodemath": "Δ L = α L_0 Δ T",
     "domain": "Physics",
@@ -3014,6 +3315,7 @@ export const mathEquations = [
   {
     "name": "Carnot efficiency",
     "aliases": "Carnot engine efficiency",
+    "latex": "\\eta = 1 - \\frac{T_c}{T_h}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>η</mi><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><msub><mi>T</mi><mi>c</mi></msub><msub><mi>T</mi><mi>h</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\eta = 1 - \\frac{T_c}{T_h}</annotation></semantics></math>",
     "unicodemath": "η = 1 - T_c/T_h",
     "domain": "Physics",
@@ -3024,6 +3326,7 @@ export const mathEquations = [
   {
     "name": "electric field from point charge",
     "aliases": "E equals kQ over r squared",
+    "latex": "E = k\\frac{Q}{r^2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo>=</mo><mi>k</mi><mfrac><mi>Q</mi><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">E = k\\frac{Q}{r^2}</annotation></semantics></math>",
     "unicodemath": "E = kQ/r^2",
     "domain": "Physics",
@@ -3034,6 +3337,7 @@ export const mathEquations = [
   {
     "name": "electric potential energy",
     "aliases": "U equals kq1q2 over r",
+    "latex": "U = k\\frac{q_1 q_2}{r}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>U</mi><mo>=</mo><mi>k</mi><mfrac><mrow><msub><mi>q</mi><mn>1</mn></msub><msub><mi>q</mi><mn>2</mn></msub></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">U = k\\frac{q_1 q_2}{r}</annotation></semantics></math>",
     "unicodemath": "U = kq_1q_2/r",
     "domain": "Physics",
@@ -3044,6 +3348,7 @@ export const mathEquations = [
   {
     "name": "electric potential",
     "aliases": "V equals kQ over r",
+    "latex": "V = k\\frac{Q}{r}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>k</mi><mfrac><mi>Q</mi><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">V = k\\frac{Q}{r}</annotation></semantics></math>",
     "unicodemath": "V = kQ/r",
     "domain": "Physics",
@@ -3054,6 +3359,7 @@ export const mathEquations = [
   {
     "name": "capacitance",
     "aliases": "C equals Q over V",
+    "latex": "C = \\frac{Q}{V}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mo>=</mo><mfrac><mi>Q</mi><mi>V</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">C = \\frac{Q}{V}</annotation></semantics></math>",
     "unicodemath": "C = Q/V",
     "domain": "Physics",
@@ -3064,8 +3370,9 @@ export const mathEquations = [
   {
     "name": "energy stored in a capacitor",
     "aliases": "capacitor energy",
+    "latex": "U = \\frac{1}{2}CV^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>U</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>C</mi><msup><mi>V</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">U = \\frac{1}{2}CV^2</annotation></semantics></math>",
-    "unicodemath": "U = 1/2CV^2",
+    "unicodemath": "U = 1/2 CV^2",
     "domain": "Physics",
     "description": "Energy stored in a charged capacitor",
     "dictationString": "U equals one half C V squared",
@@ -3074,8 +3381,9 @@ export const mathEquations = [
   {
     "name": "electrical power",
     "aliases": "P equals IV",
+    "latex": "P = IV = I^2R = \\frac{V^2}{R}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo>=</mo><mi>I</mi><mi>V</mi><mo>=</mo><msup><mi>I</mi><mn>2</mn></msup><mi>R</mi><mo>=</mo><mfrac><msup><mi>V</mi><mn>2</mn></msup><mi>R</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">P = IV = I^2R = \\frac{V^2}{R}</annotation></semantics></math>",
-    "unicodemath": "P = IV = I^2R = V^2/R",
+    "unicodemath": "P = IV = I^2 R = V^2/R",
     "domain": "Physics",
     "description": "Electrical power dissipated in a resistor",
     "dictationString": "P equals I V equals I squared R equals begin fraction V squared over R end fraction",
@@ -3084,6 +3392,7 @@ export const mathEquations = [
   {
     "name": "resistors in series",
     "aliases": "series resistance",
+    "latex": "R_{\\text{total}} = R_1 + R_2 + \\cdots + R_n",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>R</mi><mtext>total</mtext></msub><mo>=</mo><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>R</mi><mi>n</mi></msub></mrow><annotation encoding=\"application/x-tex\">R_{\\text{total}} = R_1 + R_2 + \\cdots + R_n</annotation></semantics></math>",
     "unicodemath": "R_total = R_1 + R_2 + ⋯ + R_n",
     "domain": "Physics",
@@ -3094,6 +3403,7 @@ export const mathEquations = [
   {
     "name": "resistors in parallel",
     "aliases": "parallel resistance",
+    "latex": "\\frac{1}{R_{\\text{total}}} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\cdots + \\frac{1}{R_n}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mn>1</mn><msub><mi>R</mi><mtext>total</mtext></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>2</mn></msub></mfrac><mo>+</mo><mo>⋯</mo><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mi>n</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{1}{R_{\\text{total}}} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\cdots + \\frac{1}{R_n}</annotation></semantics></math>",
     "unicodemath": "1/R_total = 1/R_1 + 1/R_2 + ⋯ + 1/R_n",
     "domain": "Physics",
@@ -3104,6 +3414,7 @@ export const mathEquations = [
   {
     "name": "Faraday's law",
     "aliases": "induced EMF",
+    "latex": "\\mathcal{E} = -\\frac{d\\Phi_B}{dt}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"script\">E</mi><mo>=</mo><mo>−</mo><mfrac><mrow><mi>d</mi><msub><mi mathvariant=\"normal\">Φ</mi><mi>B</mi></msub></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\mathcal{E} = -\\frac{d\\Phi_B}{dt}</annotation></semantics></math>",
     "unicodemath": "ℰ = -dΦ_B/dt",
     "domain": "Physics",
@@ -3114,6 +3425,7 @@ export const mathEquations = [
   {
     "name": "magnetic force on a charge",
     "aliases": "Lorentz force",
+    "latex": "F = qvB\\sin\\theta",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mi>q</mi><mi>v</mi><mi>B</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">F = qvB\\sin\\theta</annotation></semantics></math>",
     "unicodemath": "F = qvBsinθ",
     "domain": "Physics",
@@ -3124,6 +3436,7 @@ export const mathEquations = [
   {
     "name": "magnetic force on a wire",
     "aliases": "force on current carrying wire",
+    "latex": "F = BIL\\sin\\theta",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mo>=</mo><mi>B</mi><mi>I</mi><mi>L</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">F = BIL\\sin\\theta</annotation></semantics></math>",
     "unicodemath": "F = BILsinθ",
     "domain": "Physics",
@@ -3134,8 +3447,9 @@ export const mathEquations = [
   {
     "name": "energy stored in an inductor",
     "aliases": "inductor energy",
+    "latex": "U = \\frac{1}{2}LI^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>U</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>L</mi><msup><mi>I</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">U = \\frac{1}{2}LI^2</annotation></semantics></math>",
-    "unicodemath": "U = 1/2LI^2",
+    "unicodemath": "U = 1/2 LI^2",
     "domain": "Physics",
     "description": "Energy stored in an inductor",
     "dictationString": "U equals one half L I squared",
@@ -3144,6 +3458,7 @@ export const mathEquations = [
   {
     "name": "Snell's law",
     "aliases": "law of refraction",
+    "latex": "n_1\\sin\\theta_1 = n_2\\sin\\theta_2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mi>sin</mi><mo>⁡</mo><msub><mi>θ</mi><mn>1</mn></msub><mo>=</mo><msub><mi>n</mi><mn>2</mn></msub><mi>sin</mi><mo>⁡</mo><msub><mi>θ</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">n_1\\sin\\theta_1 = n_2\\sin\\theta_2</annotation></semantics></math>",
     "unicodemath": "n_1sinθ_1 = n_2sinθ_2",
     "domain": "Physics",
@@ -3154,6 +3469,7 @@ export const mathEquations = [
   {
     "name": "thin lens equation",
     "aliases": "lens formula",
+    "latex": "\\frac{1}{f} = \\frac{1}{d_o} + \\frac{1}{d_i}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mn>1</mn><mi>f</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>d</mi><mi>o</mi></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>d</mi><mi>i</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{1}{f} = \\frac{1}{d_o} + \\frac{1}{d_i}</annotation></semantics></math>",
     "unicodemath": "1/f = 1/d_o + 1/d_i",
     "domain": "Physics",
@@ -3164,6 +3480,7 @@ export const mathEquations = [
   {
     "name": "magnification",
     "aliases": "lens magnification",
+    "latex": "m = -\\frac{d_i}{d_o}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>m</mi><mo>=</mo><mo>−</mo><mfrac><msub><mi>d</mi><mi>i</mi></msub><msub><mi>d</mi><mi>o</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">m = -\\frac{d_i}{d_o}</annotation></semantics></math>",
     "unicodemath": "m = -d_i/d_o",
     "domain": "Physics",
@@ -3174,6 +3491,7 @@ export const mathEquations = [
   {
     "name": "wave frequency and period",
     "aliases": "f equals one over T",
+    "latex": "f = \\frac{1}{T}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>f</mi><mo>=</mo><mfrac><mn>1</mn><mi>T</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">f = \\frac{1}{T}</annotation></semantics></math>",
     "unicodemath": "f = 1/T",
     "domain": "Physics",
@@ -3184,6 +3502,7 @@ export const mathEquations = [
   {
     "name": "Doppler effect",
     "aliases": "Doppler shift",
+    "latex": "f' = f\\frac{v \\pm v_o}{v \\mp v_s}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>=</mo><mi>f</mi><mfrac><mrow><mi>v</mi><mo>±</mo><msub><mi>v</mi><mi>o</mi></msub></mrow><mrow><mi>v</mi><mo>∓</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">f&#x27; = f\\frac{v \\pm v_o}{v \\mp v_s}</annotation></semantics></math>",
     "unicodemath": "f' = fv±v_o/v∓v_s",
     "domain": "Physics",
@@ -3194,6 +3513,7 @@ export const mathEquations = [
   {
     "name": "standing wave wavelength",
     "aliases": "harmonics",
+    "latex": "\\lambda_n = \\frac{2L}{n}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>λ</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mi>L</mi></mrow><mi>n</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\lambda_n = \\frac{2L}{n}</annotation></semantics></math>",
     "unicodemath": "λ_n = 2L/n",
     "domain": "Physics",
@@ -3204,6 +3524,7 @@ export const mathEquations = [
   {
     "name": "double slit constructive interference",
     "aliases": "constructive interference",
+    "latex": "d\\sin\\theta = m\\lambda",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>d</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mi>m</mi><mi>λ</mi></mrow><annotation encoding=\"application/x-tex\">d\\sin\\theta = m\\lambda</annotation></semantics></math>",
     "unicodemath": "dsinθ = mλ",
     "domain": "Physics",
@@ -3214,6 +3535,7 @@ export const mathEquations = [
   {
     "name": "double slit destructive interference",
     "aliases": "destructive interference",
+    "latex": "d\\sin\\theta = \\left(m+\\frac{1}{2}\\right)\\lambda",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>d</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mrow><mo fence=\"true\">(</mo><mi>m</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo fence=\"true\">)</mo></mrow><mi>λ</mi></mrow><annotation encoding=\"application/x-tex\">d\\sin\\theta = \\left(m+\\frac{1}{2}\\right)\\lambda</annotation></semantics></math>",
     "unicodemath": "dsinθ = (m+1/2)λ",
     "domain": "Physics",
@@ -3224,6 +3546,7 @@ export const mathEquations = [
   {
     "name": "photoelectric effect",
     "aliases": "photon energy minus work function",
+    "latex": "KE_{\\max} = hf - \\phi",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>K</mi><msub><mi>E</mi><mi>max</mi><mo>⁡</mo></msub><mo>=</mo><mi>h</mi><mi>f</mi><mo>−</mo><mi>ϕ</mi></mrow><annotation encoding=\"application/x-tex\">KE_{\\max} = hf - \\phi</annotation></semantics></math>",
     "unicodemath": "KE_max = hf - φ",
     "domain": "Physics",
@@ -3234,6 +3557,7 @@ export const mathEquations = [
   {
     "name": "de Broglie wavelength",
     "aliases": "matter wave",
+    "latex": "\\lambda = \\frac{h}{p}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>λ</mi><mo>=</mo><mfrac><mi>h</mi><mi>p</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\lambda = \\frac{h}{p}</annotation></semantics></math>",
     "unicodemath": "λ = h/p",
     "domain": "Physics",
@@ -3244,6 +3568,7 @@ export const mathEquations = [
   {
     "name": "Heisenberg uncertainty principle",
     "aliases": "uncertainty principle",
+    "latex": "\\Delta x\\,\\Delta p \\geq \\frac{\\hbar}{2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>x</mi><mtext> </mtext><mi mathvariant=\"normal\">Δ</mi><mi>p</mi><mo>≥</mo><mfrac><mi mathvariant=\"normal\">ℏ</mi><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">\\Delta x\\,\\Delta p \\geq \\frac{\\hbar}{2}</annotation></semantics></math>",
     "unicodemath": "Δ xΔ p ≥ ℏ/2",
     "domain": "Physics",
@@ -3254,6 +3579,7 @@ export const mathEquations = [
   {
     "name": "mass-energy equivalence",
     "aliases": "E equals mc squared; rest energy",
+    "latex": "E = mc^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">E = mc^2</annotation></semantics></math>",
     "unicodemath": "E = mc^2",
     "domain": "Physics",
@@ -3264,6 +3590,7 @@ export const mathEquations = [
   {
     "name": "radioactive decay law",
     "aliases": "N equals N0 e to the negative lambda t; exponential decay activity; nuclear decay",
+    "latex": "N(t) = N_0 e^{-\\lambda t}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>N</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi><mi>t</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">N(t) = N_0 e^{-\\lambda t}</annotation></semantics></math>",
     "unicodemath": "N(t) = N_0 e^(-λt)",
     "domain": "Physics",
@@ -3274,6 +3601,7 @@ export const mathEquations = [
   {
     "name": "radioactive half-life",
     "aliases": "half life formula; nuclear half-life",
+    "latex": "t_{1/2} = \\frac{\\ln 2}{\\lambda}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>t</mi><mrow><mn>1</mn><mi mathvariant=\"normal\">/</mi><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mn>2</mn></mrow><mi>λ</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">t_{1/2} = \\frac{\\ln 2}{\\lambda}</annotation></semantics></math>",
     "unicodemath": "t_(1/2) = ln2/λ",
     "domain": "Physics",
@@ -3284,6 +3612,7 @@ export const mathEquations = [
   {
     "name": "Lorentz factor",
     "aliases": "gamma factor",
+    "latex": "\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>γ</mi><mo>=</mo><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>v</mi><mn>2</mn></msup><mi mathvariant=\"normal\">/</mi><msup><mi>c</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow><annotation encoding=\"application/x-tex\">\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}</annotation></semantics></math>",
     "unicodemath": "γ = 1/√(1-v^2/c^2)",
     "domain": "Physics",
@@ -3294,6 +3623,7 @@ export const mathEquations = [
   {
     "name": "time dilation",
     "aliases": "relativistic time dilation",
+    "latex": "\\Delta t = \\gamma \\Delta t_0",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>t</mi><mo>=</mo><mi>γ</mi><mi mathvariant=\"normal\">Δ</mi><msub><mi>t</mi><mn>0</mn></msub></mrow><annotation encoding=\"application/x-tex\">\\Delta t = \\gamma \\Delta t_0</annotation></semantics></math>",
     "unicodemath": "Δ t = γ Δ t_0",
     "domain": "Physics",
@@ -3304,6 +3634,7 @@ export const mathEquations = [
   {
     "name": "length contraction",
     "aliases": "Lorentz contraction",
+    "latex": "L = \\frac{L_0}{\\gamma}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>L</mi><mo>=</mo><mfrac><msub><mi>L</mi><mn>0</mn></msub><mi>γ</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">L = \\frac{L_0}{\\gamma}</annotation></semantics></math>",
     "unicodemath": "L = L_0/γ",
     "domain": "Physics",
@@ -3314,6 +3645,7 @@ export const mathEquations = [
   {
     "name": "relativistic momentum",
     "aliases": "Lorentz momentum",
+    "latex": "p = \\gamma m v",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>p</mi><mo>=</mo><mi>γ</mi><mi>m</mi><mi>v</mi></mrow><annotation encoding=\"application/x-tex\">p = \\gamma m v</annotation></semantics></math>",
     "unicodemath": "p = γ m v",
     "domain": "Physics",
@@ -3324,6 +3656,7 @@ export const mathEquations = [
   {
     "name": "total relativistic energy",
     "aliases": "relativistic total energy",
+    "latex": "E = \\gamma mc^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo>=</mo><mi>γ</mi><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">E = \\gamma mc^2</annotation></semantics></math>",
     "unicodemath": "E = γ mc^2",
     "domain": "Physics",
@@ -3334,6 +3667,7 @@ export const mathEquations = [
   {
     "name": "energy-momentum relation",
     "aliases": "relativistic dispersion",
+    "latex": "E^2 = (pc)^2 + (mc^2)^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>E</mi><mn>2</mn></msup><mo>=</mo><mo stretchy=\"false\">(</mo><mi>p</mi><mi>c</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy=\"false\">(</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">E^2 = (pc)^2 + (mc^2)^2</annotation></semantics></math>",
     "unicodemath": "E^2 = (pc)^2 + (mc^2)^2",
     "domain": "Physics",
@@ -3344,6 +3678,7 @@ export const mathEquations = [
   {
     "name": "relativistic velocity addition",
     "aliases": "velocity composition",
+    "latex": "u' = \\frac{u - v}{1 - uv/c^2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>u</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>=</mo><mfrac><mrow><mi>u</mi><mo>−</mo><mi>v</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>u</mi><mi>v</mi><mi mathvariant=\"normal\">/</mi><msup><mi>c</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">u&#x27; = \\frac{u - v}{1 - uv/c^2}</annotation></semantics></math>",
     "unicodemath": "u' = (u-v)/(1-uv/c^2)",
     "domain": "Physics",
@@ -3354,6 +3689,7 @@ export const mathEquations = [
   {
     "name": "Lorentz transformation position",
     "aliases": "x-prime transform",
+    "latex": "x' = \\gamma(x - vt)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>x</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>=</mo><mi>γ</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>−</mo><mi>v</mi><mi>t</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">x&#x27; = \\gamma(x - vt)</annotation></semantics></math>",
     "unicodemath": "x' = γ(x - vt)",
     "domain": "Physics",
@@ -3364,6 +3700,7 @@ export const mathEquations = [
   {
     "name": "Lorentz transformation time",
     "aliases": "t-prime transform",
+    "latex": "t' = \\gamma\\left(t - \\frac{vx}{c^2}\\right)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>t</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>=</mo><mi>γ</mi><mrow><mo fence=\"true\">(</mo><mi>t</mi><mo>−</mo><mfrac><mrow><mi>v</mi><mi>x</mi></mrow><msup><mi>c</mi><mn>2</mn></msup></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">t&#x27; = \\gamma\\left(t - \\frac{vx}{c^2}\\right)</annotation></semantics></math>",
     "unicodemath": "t' = γ(t - vx/c^2)",
     "domain": "Physics",
@@ -3374,6 +3711,7 @@ export const mathEquations = [
   {
     "name": "Bernoulli's equation",
     "aliases": "Bernoulli principle",
+    "latex": "P + \\frac{1}{2}\\rho v^2 + \\rho g h = \\text{const}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>ρ</mi><msup><mi>v</mi><mn>2</mn></msup><mo>+</mo><mi>ρ</mi><mi>g</mi><mi>h</mi><mo>=</mo><mtext>const</mtext></mrow><annotation encoding=\"application/x-tex\">P + \\frac{1}{2}\\rho v^2 + \\rho g h = \\text{const}</annotation></semantics></math>",
     "unicodemath": "P + 1/2ρ v^2 + ρ g h = const",
     "domain": "Physics",
@@ -3384,6 +3722,7 @@ export const mathEquations = [
   {
     "name": "continuity equation fluid",
     "aliases": "conservation of mass flow",
+    "latex": "A_1 v_1 = A_2 v_2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><msub><mi>A</mi><mn>2</mn></msub><msub><mi>v</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">A_1 v_1 = A_2 v_2</annotation></semantics></math>",
     "unicodemath": "A_1 v_1 = A_2 v_2",
     "domain": "Physics",
@@ -3394,6 +3733,7 @@ export const mathEquations = [
   {
     "name": "Reynolds number",
     "aliases": "Re dimensionless",
+    "latex": "Re = \\frac{\\rho v L}{\\mu}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>R</mi><mi>e</mi><mo>=</mo><mfrac><mrow><mi>ρ</mi><mi>v</mi><mi>L</mi></mrow><mi>μ</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">Re = \\frac{\\rho v L}{\\mu}</annotation></semantics></math>",
     "unicodemath": "Re = ρvL/μ",
     "domain": "Physics",
@@ -3404,6 +3744,7 @@ export const mathEquations = [
   {
     "name": "Poiseuille's law",
     "aliases": "Hagen-Poiseuille flow",
+    "latex": "Q = \\frac{\\pi r^4 \\Delta P}{8 \\mu L}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>Q</mi><mo>=</mo><mfrac><mrow><mi>π</mi><msup><mi>r</mi><mn>4</mn></msup><mi mathvariant=\"normal\">Δ</mi><mi>P</mi></mrow><mrow><mn>8</mn><mi>μ</mi><mi>L</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">Q = \\frac{\\pi r^4 \\Delta P}{8 \\mu L}</annotation></semantics></math>",
     "unicodemath": "Q = πr^4ΔP/8μL",
     "domain": "Physics",
@@ -3414,6 +3755,7 @@ export const mathEquations = [
   {
     "name": "drag force",
     "aliases": "aerodynamic drag",
+    "latex": "F_d = \\frac{1}{2} C_d \\rho A v^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>F</mi><mi>d</mi></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>C</mi><mi>d</mi></msub><mi>ρ</mi><mi>A</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">F_d = \\frac{1}{2} C_d \\rho A v^2</annotation></semantics></math>",
     "unicodemath": "F_d = 1/2 C_d ρ A v^2",
     "domain": "Physics",
@@ -3424,6 +3766,7 @@ export const mathEquations = [
   {
     "name": "buoyancy force",
     "aliases": "Archimedes principle",
+    "latex": "F_b = \\rho_f g V",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>F</mi><mi>b</mi></msub><mo>=</mo><msub><mi>ρ</mi><mi>f</mi></msub><mi>g</mi><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">F_b = \\rho_f g V</annotation></semantics></math>",
     "unicodemath": "F_b = ρ_f g V",
     "domain": "Physics",
@@ -3434,6 +3777,7 @@ export const mathEquations = [
   {
     "name": "time-independent Schrodinger equation",
     "aliases": "TISE",
+    "latex": "-\\frac{\\hbar^2}{2m}\\frac{d^2\\psi}{dx^2} + V\\psi = E\\psi",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo>−</mo><mfrac><msup><mi mathvariant=\"normal\">ℏ</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>ψ</mi></mrow><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mi>V</mi><mi>ψ</mi><mo>=</mo><mi>E</mi><mi>ψ</mi></mrow><annotation encoding=\"application/x-tex\">-\\frac{\\hbar^2}{2m}\\frac{d^2\\psi}{dx^2} + V\\psi = E\\psi</annotation></semantics></math>",
     "unicodemath": "-ℏ^2/2md^2ψ/dx^2 + Vψ = Eψ",
     "domain": "Physics",
@@ -3444,6 +3788,7 @@ export const mathEquations = [
   {
     "name": "time-dependent Schrodinger equation",
     "aliases": "TDSE",
+    "latex": "i\\hbar\\frac{\\partial\\psi}{\\partial t} = \\hat{H}\\psi",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>i</mi><mi mathvariant=\"normal\">ℏ</mi><mfrac><mrow><mi mathvariant=\"normal\">∂</mi><mi>ψ</mi></mrow><mrow><mi mathvariant=\"normal\">∂</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mover accent=\"true\"><mi>H</mi><mo>^</mo></mover><mi>ψ</mi></mrow><annotation encoding=\"application/x-tex\">i\\hbar\\frac{\\partial\\psi}{\\partial t} = \\hat{H}\\psi</annotation></semantics></math>",
     "unicodemath": "iℏ∂ψ/∂t = Ĥψ",
     "domain": "Physics",
@@ -3454,8 +3799,9 @@ export const mathEquations = [
   {
     "name": "wave function normalization",
     "aliases": "probability normalization",
+    "latex": "\\int_{-\\infty}^{\\infty} |\\psi|^2 \\, dx = 1",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant=\"normal\">∞</mi></mrow><mi mathvariant=\"normal\">∞</mi></msubsup><mi mathvariant=\"normal\">∣</mi><mi>ψ</mi><msup><mi mathvariant=\"normal\">∣</mi><mn>2</mn></msup><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">\\int_{-\\infty}^{\\infty} |\\psi|^2 \\, dx = 1</annotation></semantics></math>",
-    "unicodemath": "∫_(-∞)^∞ |ψ|^2  dx = 1",
+    "unicodemath": "∫_(-∞)^∞ |ψ|^2 dx = 1",
     "domain": "Physics",
     "description": "Total probability of finding the particle anywhere must equal one",
     "dictationString": "the integral from negative infinity to infinity of the absolute value of psi squared d x equals one",
@@ -3464,6 +3810,7 @@ export const mathEquations = [
   {
     "name": "quantum expectation value",
     "aliases": "quantum average",
+    "latex": "\\langle x \\rangle = \\int_{-\\infty}^{\\infty} \\psi^* x \\psi\\,dx",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">⟨</mo><mi>x</mi><mo stretchy=\"false\">⟩</mo><mo>=</mo><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant=\"normal\">∞</mi></mrow><mi mathvariant=\"normal\">∞</mi></msubsup><msup><mi>ψ</mi><mo>∗</mo></msup><mi>x</mi><mi>ψ</mi><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\langle x \\rangle = \\int_{-\\infty}^{\\infty} \\psi^* x \\psi\\,dx</annotation></semantics></math>",
     "unicodemath": "⟨ x ⟩ = ∫_(-∞)^∞ ψ^* x ψdx",
     "domain": "Physics",
@@ -3474,6 +3821,7 @@ export const mathEquations = [
   {
     "name": "particle in a box",
     "aliases": "infinite square well",
+    "latex": "E_n = \\frac{n^2 \\pi^2 \\hbar^2}{2mL^2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><msup><mi>n</mi><mn>2</mn></msup><msup><mi>π</mi><mn>2</mn></msup><msup><mi mathvariant=\"normal\">ℏ</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi><msup><mi>L</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">E_n = \\frac{n^2 \\pi^2 \\hbar^2}{2mL^2}</annotation></semantics></math>",
     "unicodemath": "E_n = n^2π^2ℏ^2/2mL^2",
     "domain": "Physics",
@@ -3484,6 +3832,7 @@ export const mathEquations = [
   {
     "name": "mass defect",
     "aliases": "nuclear mass defect",
+    "latex": "\\Delta m = Z m_p + N m_n - m_{nuc}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>m</mi><mo>=</mo><mi>Z</mi><msub><mi>m</mi><mi>p</mi></msub><mo>+</mo><mi>N</mi><msub><mi>m</mi><mi>n</mi></msub><mo>−</mo><msub><mi>m</mi><mrow><mi>n</mi><mi>u</mi><mi>c</mi></mrow></msub></mrow><annotation encoding=\"application/x-tex\">\\Delta m = Z m_p + N m_n - m_{nuc}</annotation></semantics></math>",
     "unicodemath": "Δ m = Z m_p + N m_n - m_nuc",
     "domain": "Physics",
@@ -3494,6 +3843,7 @@ export const mathEquations = [
   {
     "name": "nuclear binding energy",
     "aliases": "total binding energy",
+    "latex": "E_b = \\Delta m \\cdot c^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>E</mi><mi>b</mi></msub><mo>=</mo><mi mathvariant=\"normal\">Δ</mi><mi>m</mi><mo>⋅</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">E_b = \\Delta m \\cdot c^2</annotation></semantics></math>",
     "unicodemath": "E_b = Δ m ⋅ c^2",
     "domain": "Physics",
@@ -3504,6 +3854,7 @@ export const mathEquations = [
   {
     "name": "Q-value",
     "aliases": "nuclear reaction energy",
+    "latex": "Q = \\left(m_{\\text{reactants}} - m_{\\text{products}}\\right)c^2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>Q</mi><mo>=</mo><mrow><mo fence=\"true\">(</mo><msub><mi>m</mi><mtext>reactants</mtext></msub><mo>−</mo><msub><mi>m</mi><mtext>products</mtext></msub><mo fence=\"true\">)</mo></mrow><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">Q = \\left(m_{\\text{reactants}} - m_{\\text{products}}\\right)c^2</annotation></semantics></math>",
     "unicodemath": "Q = (m_reactants - m_products)c^2",
     "domain": "Physics",
@@ -3514,6 +3865,7 @@ export const mathEquations = [
   {
     "name": "sound intensity level",
     "aliases": "decibel level",
+    "latex": "\\beta = 10\\log_{10}\\left(\\frac{I}{I_0}\\right)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>β</mi><mo>=</mo><mn>10</mn><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>10</mn></msub><mrow><mo fence=\"true\">(</mo><mfrac><mi>I</mi><msub><mi>I</mi><mn>0</mn></msub></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\beta = 10\\log_{10}\\left(\\frac{I}{I_0}\\right)</annotation></semantics></math>",
     "unicodemath": "β = 10log_10(I/I_0)",
     "domain": "Physics",
@@ -3524,6 +3876,7 @@ export const mathEquations = [
   {
     "name": "sound intensity point source",
     "aliases": "inverse square sound law",
+    "latex": "I = \\frac{P}{4\\pi r^2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>I</mi><mo>=</mo><mfrac><mi>P</mi><mrow><mn>4</mn><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">I = \\frac{P}{4\\pi r^2}</annotation></semantics></math>",
     "unicodemath": "I = P/4πr^2",
     "domain": "Physics",
@@ -3534,6 +3887,7 @@ export const mathEquations = [
   {
     "name": "fundamental frequency string",
     "aliases": "string vibration",
+    "latex": "f_1 = \\frac{1}{2L}\\sqrt{\\frac{T}{\\mu}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>f</mi><mn>1</mn></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>L</mi></mrow></mfrac><msqrt><mfrac><mi>T</mi><mi>μ</mi></mfrac></msqrt></mrow><annotation encoding=\"application/x-tex\">f_1 = \\frac{1}{2L}\\sqrt{\\frac{T}{\\mu}}</annotation></semantics></math>",
     "unicodemath": "f_1 = 1/2L√(T/μ)",
     "domain": "Physics",
@@ -3544,6 +3898,7 @@ export const mathEquations = [
   {
     "name": "open pipe harmonics",
     "aliases": "open tube resonance",
+    "latex": "f_n = \\frac{nv}{2L}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><mi>n</mi><mi>v</mi></mrow><mrow><mn>2</mn><mi>L</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">f_n = \\frac{nv}{2L}</annotation></semantics></math>",
     "unicodemath": "f_n = nv/2L",
     "domain": "Physics",
@@ -3554,6 +3909,7 @@ export const mathEquations = [
   {
     "name": "closed pipe resonance",
     "aliases": "quarter-wave resonance",
+    "latex": "f_n = \\frac{(2n-1)v}{4L}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><mo stretchy=\"false\">(</mo><mn>2</mn><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mi>v</mi></mrow><mrow><mn>4</mn><mi>L</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">f_n = \\frac{(2n-1)v}{4L}</annotation></semantics></math>",
     "unicodemath": "f_n = (2n-1)v/4L",
     "domain": "Physics",
@@ -3564,8 +3920,9 @@ export const mathEquations = [
   {
     "name": "Kepler's third law",
     "aliases": "orbital period law",
+    "latex": "T^2 = \\frac{4\\pi^2}{GM}a^3",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>T</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow><mrow><mi>G</mi><mi>M</mi></mrow></mfrac><msup><mi>a</mi><mn>3</mn></msup></mrow><annotation encoding=\"application/x-tex\">T^2 = \\frac{4\\pi^2}{GM}a^3</annotation></semantics></math>",
-    "unicodemath": "T^2 = 4π^2/GMa^3",
+    "unicodemath": "T^2 = 4π^2/GM a^3",
     "domain": "Physics",
     "description": "Square of orbital period is proportional to cube of semi-major axis",
     "dictationString": "T squared equals begin fraction four pi squared over G M end fraction times a cubed",
@@ -3574,6 +3931,7 @@ export const mathEquations = [
   {
     "name": "Hubble's law",
     "aliases": "cosmological expansion",
+    "latex": "v = H_0 d",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>v</mi><mo>=</mo><msub><mi>H</mi><mn>0</mn></msub><mi>d</mi></mrow><annotation encoding=\"application/x-tex\">v = H_0 d</annotation></semantics></math>",
     "unicodemath": "v = H_0 d",
     "domain": "Physics",
@@ -3584,6 +3942,7 @@ export const mathEquations = [
   {
     "name": "stellar luminosity",
     "aliases": "Stefan-Boltzmann luminosity",
+    "latex": "L = 4\\pi R^2 \\sigma T^4",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>L</mi><mo>=</mo><mn>4</mn><mi>π</mi><msup><mi>R</mi><mn>2</mn></msup><mi>σ</mi><msup><mi>T</mi><mn>4</mn></msup></mrow><annotation encoding=\"application/x-tex\">L = 4\\pi R^2 \\sigma T^4</annotation></semantics></math>",
     "unicodemath": "L = 4π R^2 σ T^4",
     "domain": "Physics",
@@ -3594,6 +3953,7 @@ export const mathEquations = [
   {
     "name": "apparent magnitude difference",
     "aliases": "Pogson's law",
+    "latex": "m_1 - m_2 = -2.5\\log_{10}(F_1/F_2)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>−</mo><msub><mi>m</mi><mn>2</mn></msub><mo>=</mo><mo>−</mo><mn>2.5</mn><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>10</mn></msub><mo stretchy=\"false\">(</mo><msub><mi>F</mi><mn>1</mn></msub><mi mathvariant=\"normal\">/</mi><msub><mi>F</mi><mn>2</mn></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">m_1 - m_2 = -2.5\\log_{10}(F_1/F_2)</annotation></semantics></math>",
     "unicodemath": "m_1 - m_2 = -2.5log_10(F_1/F_2)",
     "domain": "Physics",
@@ -3604,6 +3964,7 @@ export const mathEquations = [
   {
     "name": "Schwarzschild radius",
     "aliases": "event horizon radius",
+    "latex": "r_s = \\frac{2GM}{c^2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>r</mi><mi>s</mi></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mi>G</mi><mi>M</mi></mrow><msup><mi>c</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">r_s = \\frac{2GM}{c^2}</annotation></semantics></math>",
     "unicodemath": "r_s = 2GM/c^2",
     "domain": "Physics",
@@ -3614,6 +3975,7 @@ export const mathEquations = [
   {
     "name": "Maxwell's equations (grouped)",
     "aliases": "Gauss's law electric; Gauss's law magnetic; Faraday's law; Ampere-Maxwell law",
+    "latex": "\\nabla \\cdot \\mathbf{E} = \\frac{\\rho}{\\varepsilon_0};\\; \\nabla \\cdot \\mathbf{B} = 0;\\; \\nabla \\times \\mathbf{E} = -\\frac{\\partial \\mathbf{B}}{\\partial t};\\; \\nabla \\times \\mathbf{B} = \\mu_0 \\mathbf{J} + \\mu_0 \\varepsilon_0 \\frac{\\partial \\mathbf{E}}{\\partial t}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∇</mi><mo>⋅</mo><mi mathvariant=\"bold\">E</mi><mo>=</mo><mfrac><mi>ρ</mi><msub><mi>ε</mi><mn>0</mn></msub></mfrac><mo separator=\"true\">;</mo><mtext>  </mtext><mi mathvariant=\"normal\">∇</mi><mo>⋅</mo><mi mathvariant=\"bold\">B</mi><mo>=</mo><mn>0</mn><mo separator=\"true\">;</mo><mtext>  </mtext><mi mathvariant=\"normal\">∇</mi><mo>×</mo><mi mathvariant=\"bold\">E</mi><mo>=</mo><mo>−</mo><mfrac><mrow><mi mathvariant=\"normal\">∂</mi><mi mathvariant=\"bold\">B</mi></mrow><mrow><mi mathvariant=\"normal\">∂</mi><mi>t</mi></mrow></mfrac><mo separator=\"true\">;</mo><mtext>  </mtext><mi mathvariant=\"normal\">∇</mi><mo>×</mo><mi mathvariant=\"bold\">B</mi><mo>=</mo><msub><mi>μ</mi><mn>0</mn></msub><mi mathvariant=\"bold\">J</mi><mo>+</mo><msub><mi>μ</mi><mn>0</mn></msub><msub><mi>ε</mi><mn>0</mn></msub><mfrac><mrow><mi mathvariant=\"normal\">∂</mi><mi mathvariant=\"bold\">E</mi></mrow><mrow><mi mathvariant=\"normal\">∂</mi><mi>t</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\nabla \\cdot \\mathbf{E} = \\frac{\\rho}{\\varepsilon_0};\\; \\nabla \\cdot \\mathbf{B} = 0;\\; \\nabla \\times \\mathbf{E} = -\\frac{\\partial \\mathbf{B}}{\\partial t};\\; \\nabla \\times \\mathbf{B} = \\mu_0 \\mathbf{J} + \\mu_0 \\varepsilon_0 \\frac{\\partial \\mathbf{E}}{\\partial t}</annotation></semantics></math>",
     "unicodemath": "∇ ⋅ E = ρ/ε_0; ∇ ⋅ B = 0; ∇ × E = -∂B/∂t; ∇ × B = μ_0 J + μ_0 ε_0 ∂E/∂t",
     "domain": "Physics",
@@ -3624,6 +3986,7 @@ export const mathEquations = [
   {
     "name": "wave equation (1D)",
     "aliases": "classical wave PDE",
+    "latex": "\\frac{\\partial^2 u}{\\partial t^2} = c^2 \\frac{\\partial^2 u}{\\partial x^2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><msup><mi mathvariant=\"normal\">∂</mi><mn>2</mn></msup><mi>u</mi></mrow><mrow><mi mathvariant=\"normal\">∂</mi><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup><mfrac><mrow><msup><mi mathvariant=\"normal\">∂</mi><mn>2</mn></msup><mi>u</mi></mrow><mrow><mi mathvariant=\"normal\">∂</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{\\partial^2 u}{\\partial t^2} = c^2 \\frac{\\partial^2 u}{\\partial x^2}</annotation></semantics></math>",
     "unicodemath": "∂^2u/∂t^2 = c^2 ∂^2u/∂x^2",
     "domain": "Physics",
@@ -3634,6 +3997,7 @@ export const mathEquations = [
   {
     "name": "Stefan-Boltzmann law",
     "aliases": "radiant power",
+    "latex": "P = \\sigma A T^4",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo>=</mo><mi>σ</mi><mi>A</mi><msup><mi>T</mi><mn>4</mn></msup></mrow><annotation encoding=\"application/x-tex\">P = \\sigma A T^4</annotation></semantics></math>",
     "unicodemath": "P = σ A T^4",
     "domain": "Physics",
@@ -3644,6 +4008,7 @@ export const mathEquations = [
   {
     "name": "mole-mass relationship",
     "aliases": "n equals m over M",
+    "latex": "n = \\frac{m}{M}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>n</mi><mo>=</mo><mfrac><mi>m</mi><mi>M</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">n = \\frac{m}{M}</annotation></semantics></math>",
     "unicodemath": "n = m/M",
     "domain": "Chemistry",
@@ -3654,6 +4019,7 @@ export const mathEquations = [
   {
     "name": "number of particles",
     "aliases": "N equals n times NA",
+    "latex": "N = n \\times N_A",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>N</mi><mo>=</mo><mi>n</mi><mo>×</mo><msub><mi>N</mi><mi>A</mi></msub></mrow><annotation encoding=\"application/x-tex\">N = n \\times N_A</annotation></semantics></math>",
     "unicodemath": "N = n × N_A",
     "domain": "Chemistry",
@@ -3664,6 +4030,7 @@ export const mathEquations = [
   {
     "name": "percent composition",
     "aliases": "mass percent",
+    "latex": "w = \\frac{m_{\\text{element}}}{m_{\\text{compound}}} \\times 100\\%",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>w</mi><mo>=</mo><mfrac><msub><mi>m</mi><mtext>element</mtext></msub><msub><mi>m</mi><mtext>compound</mtext></msub></mfrac><mo>×</mo><mn>100</mn><mi mathvariant=\"normal\">%</mi></mrow><annotation encoding=\"application/x-tex\">w = \\frac{m_{\\text{element}}}{m_{\\text{compound}}} \\times 100\\%</annotation></semantics></math>",
     "unicodemath": "w = m_element/m_compound × 100%",
     "domain": "Chemistry",
@@ -3674,6 +4041,7 @@ export const mathEquations = [
   {
     "name": "molarity",
     "aliases": "moles per liter",
+    "latex": "M = \\frac{n}{V}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mo>=</mo><mfrac><mi>n</mi><mi>V</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">M = \\frac{n}{V}</annotation></semantics></math>",
     "unicodemath": "M = n/V",
     "domain": "Chemistry",
@@ -3684,6 +4052,7 @@ export const mathEquations = [
   {
     "name": "dilution formula",
     "aliases": "M1V1 equals M2V2",
+    "latex": "M_1 V_1 = M_2 V_2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>M</mi><mn>1</mn></msub><msub><mi>V</mi><mn>1</mn></msub><mo>=</mo><msub><mi>M</mi><mn>2</mn></msub><msub><mi>V</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">M_1 V_1 = M_2 V_2</annotation></semantics></math>",
     "unicodemath": "M_1 V_1 = M_2 V_2",
     "domain": "Chemistry",
@@ -3694,6 +4063,7 @@ export const mathEquations = [
   {
     "name": "molality",
     "aliases": "moles per kilogram solvent",
+    "latex": "m = \\frac{n_{\\text{solute}}}{m_{\\text{solvent}}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>m</mi><mo>=</mo><mfrac><msub><mi>n</mi><mtext>solute</mtext></msub><msub><mi>m</mi><mtext>solvent</mtext></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">m = \\frac{n_{\\text{solute}}}{m_{\\text{solvent}}}</annotation></semantics></math>",
     "unicodemath": "m = n_solute/m_solvent",
     "domain": "Chemistry",
@@ -3704,6 +4074,7 @@ export const mathEquations = [
   {
     "name": "Raoult's law",
     "aliases": "vapor pressure lowering",
+    "latex": "P = X_{\\text{solvent}} P^{\\circ}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo>=</mo><msub><mi>X</mi><mtext>solvent</mtext></msub><msup><mi>P</mi><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup></mrow><annotation encoding=\"application/x-tex\">P = X_{\\text{solvent}} P^{\\circ}</annotation></semantics></math>",
     "unicodemath": "P = X_solvent P^∘",
     "domain": "Chemistry",
@@ -3714,6 +4085,7 @@ export const mathEquations = [
   {
     "name": "boiling point elevation",
     "aliases": "delta Tb",
+    "latex": "\\Delta T_b = i K_b m",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><msub><mi>T</mi><mi>b</mi></msub><mo>=</mo><mi>i</mi><msub><mi>K</mi><mi>b</mi></msub><mi>m</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta T_b = i K_b m</annotation></semantics></math>",
     "unicodemath": "Δ T_b = i K_b m",
     "domain": "Chemistry",
@@ -3724,6 +4096,7 @@ export const mathEquations = [
   {
     "name": "freezing point depression",
     "aliases": "delta Tf",
+    "latex": "\\Delta T_f = i K_f m",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><msub><mi>T</mi><mi>f</mi></msub><mo>=</mo><mi>i</mi><msub><mi>K</mi><mi>f</mi></msub><mi>m</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta T_f = i K_f m</annotation></semantics></math>",
     "unicodemath": "Δ T_f = i K_f m",
     "domain": "Chemistry",
@@ -3734,6 +4107,7 @@ export const mathEquations = [
   {
     "name": "osmotic pressure",
     "aliases": "pi equals iMRT",
+    "latex": "\\pi = iMRT",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>π</mi><mo>=</mo><mi>i</mi><mi>M</mi><mi>R</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">\\pi = iMRT</annotation></semantics></math>",
     "unicodemath": "π = iMRT",
     "domain": "Chemistry",
@@ -3744,6 +4118,7 @@ export const mathEquations = [
   {
     "name": "Boyle's law",
     "aliases": "P1V1 equals P2V2",
+    "latex": "P_1 V_1 = P_2 V_2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>P</mi><mn>1</mn></msub><msub><mi>V</mi><mn>1</mn></msub><mo>=</mo><msub><mi>P</mi><mn>2</mn></msub><msub><mi>V</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">P_1 V_1 = P_2 V_2</annotation></semantics></math>",
     "unicodemath": "P_1 V_1 = P_2 V_2",
     "domain": "Chemistry",
@@ -3754,6 +4129,7 @@ export const mathEquations = [
   {
     "name": "Charles's law",
     "aliases": "V1 over T1",
+    "latex": "\\frac{V_1}{T_1} = \\frac{V_2}{T_2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><msub><mi>V</mi><mn>1</mn></msub><msub><mi>T</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>V</mi><mn>2</mn></msub><msub><mi>T</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{V_1}{T_1} = \\frac{V_2}{T_2}</annotation></semantics></math>",
     "unicodemath": "V_1/T_1 = V_2/T_2",
     "domain": "Chemistry",
@@ -3764,6 +4140,7 @@ export const mathEquations = [
   {
     "name": "Gay-Lussac's law",
     "aliases": "P1 over T1",
+    "latex": "\\frac{P_1}{T_1} = \\frac{P_2}{T_2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><msub><mi>P</mi><mn>1</mn></msub><msub><mi>T</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>P</mi><mn>2</mn></msub><msub><mi>T</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{P_1}{T_1} = \\frac{P_2}{T_2}</annotation></semantics></math>",
     "unicodemath": "P_1/T_1 = P_2/T_2",
     "domain": "Chemistry",
@@ -3774,6 +4151,7 @@ export const mathEquations = [
   {
     "name": "combined gas law",
     "aliases": "combined gas",
+    "latex": "\\frac{P_1 V_1}{T_1} = \\frac{P_2 V_2}{T_2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><msub><mi>P</mi><mn>1</mn></msub><msub><mi>V</mi><mn>1</mn></msub></mrow><msub><mi>T</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><mrow><msub><mi>P</mi><mn>2</mn></msub><msub><mi>V</mi><mn>2</mn></msub></mrow><msub><mi>T</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{P_1 V_1}{T_1} = \\frac{P_2 V_2}{T_2}</annotation></semantics></math>",
     "unicodemath": "P_1V_1/T_1 = P_2V_2/T_2",
     "domain": "Chemistry",
@@ -3784,6 +4162,7 @@ export const mathEquations = [
   {
     "name": "Avogadro's law",
     "aliases": "V1 over n1",
+    "latex": "\\frac{V_1}{n_1} = \\frac{V_2}{n_2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><msub><mi>V</mi><mn>1</mn></msub><msub><mi>n</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>V</mi><mn>2</mn></msub><msub><mi>n</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{V_1}{n_1} = \\frac{V_2}{n_2}</annotation></semantics></math>",
     "unicodemath": "V_1/n_1 = V_2/n_2",
     "domain": "Chemistry",
@@ -3794,6 +4173,7 @@ export const mathEquations = [
   {
     "name": "Dalton's law of partial pressures",
     "aliases": "total pressure",
+    "latex": "P_{\\text{total}} = P_1 + P_2 + \\cdots + P_n",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>P</mi><mtext>total</mtext></msub><mo>=</mo><msub><mi>P</mi><mn>1</mn></msub><mo>+</mo><msub><mi>P</mi><mn>2</mn></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>P</mi><mi>n</mi></msub></mrow><annotation encoding=\"application/x-tex\">P_{\\text{total}} = P_1 + P_2 + \\cdots + P_n</annotation></semantics></math>",
     "unicodemath": "P_total = P_1 + P_2 + ⋯ + P_n",
     "domain": "Chemistry",
@@ -3804,6 +4184,7 @@ export const mathEquations = [
   {
     "name": "Graham's law of effusion",
     "aliases": "rate of effusion",
+    "latex": "\\frac{r_1}{r_2} = \\sqrt{\\frac{M_2}{M_1}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><msub><mi>r</mi><mn>1</mn></msub><msub><mi>r</mi><mn>2</mn></msub></mfrac><mo>=</mo><msqrt><mfrac><msub><mi>M</mi><mn>2</mn></msub><msub><mi>M</mi><mn>1</mn></msub></mfrac></msqrt></mrow><annotation encoding=\"application/x-tex\">\\frac{r_1}{r_2} = \\sqrt{\\frac{M_2}{M_1}}</annotation></semantics></math>",
     "unicodemath": "r_1/r_2 = √(M_2/M_1)",
     "domain": "Chemistry",
@@ -3814,6 +4195,7 @@ export const mathEquations = [
   {
     "name": "van der Waals equation",
     "aliases": "real gas equation",
+    "latex": "\\left(P + \\frac{an^2}{V^2}\\right)(V - nb) = nRT",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mrow><mo fence=\"true\">(</mo><mi>P</mi><mo>+</mo><mfrac><mrow><mi>a</mi><msup><mi>n</mi><mn>2</mn></msup></mrow><msup><mi>V</mi><mn>2</mn></msup></mfrac><mo fence=\"true\">)</mo></mrow><mo stretchy=\"false\">(</mo><mi>V</mi><mo>−</mo><mi>n</mi><mi>b</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>n</mi><mi>R</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">\\left(P + \\frac{an^2}{V^2}\\right)(V - nb) = nRT</annotation></semantics></math>",
     "unicodemath": "(P + an^2/V^2)(V - nb) = nRT",
     "domain": "Chemistry",
@@ -3824,6 +4206,7 @@ export const mathEquations = [
   {
     "name": "enthalpy of reaction",
     "aliases": "delta H reaction",
+    "latex": "\\Delta H_{\\text{rxn}} = \\sum \\Delta H_f(\\text{products}) - \\sum \\Delta H_f(\\text{reactants})",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><msub><mi>H</mi><mtext>rxn</mtext></msub><mo>=</mo><mo>∑</mo><mi mathvariant=\"normal\">Δ</mi><msub><mi>H</mi><mi>f</mi></msub><mo stretchy=\"false\">(</mo><mtext>products</mtext><mo stretchy=\"false\">)</mo><mo>−</mo><mo>∑</mo><mi mathvariant=\"normal\">Δ</mi><msub><mi>H</mi><mi>f</mi></msub><mo stretchy=\"false\">(</mo><mtext>reactants</mtext><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\Delta H_{\\text{rxn}} = \\sum \\Delta H_f(\\text{products}) - \\sum \\Delta H_f(\\text{reactants})</annotation></semantics></math>",
     "unicodemath": "Δ H_rxn = ∑ Δ H_f(products) - ∑ Δ H_f(reactants)",
     "domain": "Chemistry",
@@ -3834,6 +4217,7 @@ export const mathEquations = [
   {
     "name": "Gibbs free energy",
     "aliases": "delta G",
+    "latex": "\\Delta G = \\Delta H - T\\Delta S",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>G</mi><mo>=</mo><mi mathvariant=\"normal\">Δ</mi><mi>H</mi><mo>−</mo><mi>T</mi><mi mathvariant=\"normal\">Δ</mi><mi>S</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta G = \\Delta H - T\\Delta S</annotation></semantics></math>",
     "unicodemath": "Δ G = Δ H - TΔ S",
     "domain": "Chemistry",
@@ -3844,6 +4228,7 @@ export const mathEquations = [
   {
     "name": "Gibbs free energy and equilibrium",
     "aliases": "delta G naught and K",
+    "latex": "\\Delta G^{\\circ} = -RT\\ln K",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><msup><mi>G</mi><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup><mo>=</mo><mo>−</mo><mi>R</mi><mi>T</mi><mi>ln</mi><mo>⁡</mo><mi>K</mi></mrow><annotation encoding=\"application/x-tex\">\\Delta G^{\\circ} = -RT\\ln K</annotation></semantics></math>",
     "unicodemath": "Δ G^∘ = -RTln K",
     "domain": "Chemistry",
@@ -3854,6 +4239,7 @@ export const mathEquations = [
   {
     "name": "entropy change",
     "aliases": "delta S",
+    "latex": "\\Delta S = \\frac{q_{\\text{rev}}}{T}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>S</mi><mo>=</mo><mfrac><msub><mi>q</mi><mtext>rev</mtext></msub><mi>T</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\Delta S = \\frac{q_{\\text{rev}}}{T}</annotation></semantics></math>",
     "unicodemath": "Δ S = q_rev/T",
     "domain": "Chemistry",
@@ -3864,6 +4250,7 @@ export const mathEquations = [
   {
     "name": "equilibrium constant expression",
     "aliases": "Keq",
+    "latex": "K = \\frac{[\\text{products}]^{\\text{coefficients}}}{[\\text{reactants}]^{\\text{coefficients}}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>K</mi><mo>=</mo><mfrac><mrow><mo stretchy=\"false\">[</mo><mtext>products</mtext><msup><mo stretchy=\"false\">]</mo><mtext>coefficients</mtext></msup></mrow><mrow><mo stretchy=\"false\">[</mo><mtext>reactants</mtext><msup><mo stretchy=\"false\">]</mo><mtext>coefficients</mtext></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">K = \\frac{[\\text{products}]^{\\text{coefficients}}}{[\\text{reactants}]^{\\text{coefficients}}}</annotation></semantics></math>",
     "unicodemath": "K = [products]^coefficients/[reactants]^coefficients",
     "domain": "Chemistry",
@@ -3874,6 +4261,7 @@ export const mathEquations = [
   {
     "name": "Kp Kc relationship",
     "aliases": "Kp equals Kc RT delta n",
+    "latex": "K_p = K_c (RT)^{\\Delta n}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>K</mi><mi>p</mi></msub><mo>=</mo><msub><mi>K</mi><mi>c</mi></msub><mo stretchy=\"false\">(</mo><mi>R</mi><mi>T</mi><msup><mo stretchy=\"false\">)</mo><mrow><mi mathvariant=\"normal\">Δ</mi><mi>n</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">K_p = K_c (RT)^{\\Delta n}</annotation></semantics></math>",
     "unicodemath": "K_p = K_c (RT)^Δn",
     "domain": "Chemistry",
@@ -3884,6 +4272,7 @@ export const mathEquations = [
   {
     "name": "reaction quotient",
     "aliases": "Q compared to K",
+    "latex": "Q = \\frac{[\\text{products}]}{[\\text{reactants}]}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>Q</mi><mo>=</mo><mfrac><mrow><mo stretchy=\"false\">[</mo><mtext>products</mtext><mo stretchy=\"false\">]</mo></mrow><mrow><mo stretchy=\"false\">[</mo><mtext>reactants</mtext><mo stretchy=\"false\">]</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">Q = \\frac{[\\text{products}]}{[\\text{reactants}]}</annotation></semantics></math>",
     "unicodemath": "Q = [products]/[reactants]",
     "domain": "Chemistry",
@@ -3894,6 +4283,7 @@ export const mathEquations = [
   {
     "name": "pH definition",
     "aliases": "pH equals negative log H",
+    "latex": "\\text{pH} = -\\log[\\text{H}^+]",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>pH</mtext><mo>=</mo><mo>−</mo><mi>log</mi><mo>⁡</mo><mo stretchy=\"false\">[</mo><msup><mtext>H</mtext><mo>+</mo></msup><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\text{pH} = -\\log[\\text{H}^+]</annotation></semantics></math>",
     "unicodemath": "pH = -log[H^+]",
     "domain": "Chemistry",
@@ -3904,6 +4294,7 @@ export const mathEquations = [
   {
     "name": "pOH definition",
     "aliases": "pOH equals negative log OH",
+    "latex": "\\text{pOH} = -\\log[\\text{OH}^-]",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>pOH</mtext><mo>=</mo><mo>−</mo><mi>log</mi><mo>⁡</mo><mo stretchy=\"false\">[</mo><msup><mtext>OH</mtext><mo>−</mo></msup><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\text{pOH} = -\\log[\\text{OH}^-]</annotation></semantics></math>",
     "unicodemath": "pOH = -log[OH^-]",
     "domain": "Chemistry",
@@ -3914,6 +4305,7 @@ export const mathEquations = [
   {
     "name": "pH plus pOH",
     "aliases": "pH pOH equals 14",
+    "latex": "\\text{pH} + \\text{pOH} = 14",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>pH</mtext><mo>+</mo><mtext>pOH</mtext><mo>=</mo><mn>14</mn></mrow><annotation encoding=\"application/x-tex\">\\text{pH} + \\text{pOH} = 14</annotation></semantics></math>",
     "unicodemath": "pH + pOH = 14",
     "domain": "Chemistry",
@@ -3924,6 +4316,7 @@ export const mathEquations = [
   {
     "name": "water dissociation constant",
     "aliases": "Kw",
+    "latex": "K_w = [\\text{H}^+][\\text{OH}^-] = 1.0 \\times 10^{-14}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>K</mi><mi>w</mi></msub><mo>=</mo><mo stretchy=\"false\">[</mo><msup><mtext>H</mtext><mo>+</mo></msup><mo stretchy=\"false\">]</mo><mo stretchy=\"false\">[</mo><msup><mtext>OH</mtext><mo>−</mo></msup><mo stretchy=\"false\">]</mo><mo>=</mo><mn>1.0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>14</mn></mrow></msup></mrow><annotation encoding=\"application/x-tex\">K_w = [\\text{H}^+][\\text{OH}^-] = 1.0 \\times 10^{-14}</annotation></semantics></math>",
     "unicodemath": "K_w = [H^+][OH^-] = 1.0 × 10^(-14)",
     "domain": "Chemistry",
@@ -3934,6 +4327,7 @@ export const mathEquations = [
   {
     "name": "Henderson-Hasselbalch equation",
     "aliases": "pH of buffer",
+    "latex": "\\text{pH} = \\text{p}K_a + \\log\\frac{[\\text{A}^-]}{[\\text{HA}]}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>pH</mtext><mo>=</mo><mtext>p</mtext><msub><mi>K</mi><mi>a</mi></msub><mo>+</mo><mi>log</mi><mo>⁡</mo><mfrac><mrow><mo stretchy=\"false\">[</mo><msup><mtext>A</mtext><mo>−</mo></msup><mo stretchy=\"false\">]</mo></mrow><mrow><mo stretchy=\"false\">[</mo><mtext>HA</mtext><mo stretchy=\"false\">]</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\text{pH} = \\text{p}K_a + \\log\\frac{[\\text{A}^-]}{[\\text{HA}]}</annotation></semantics></math>",
     "unicodemath": "pH = pK_a + log[A^-]/[HA]",
     "domain": "Chemistry",
@@ -3944,6 +4338,7 @@ export const mathEquations = [
   {
     "name": "Ka times Kb equals Kw",
     "aliases": "conjugate acid base pair",
+    "latex": "K_a \\times K_b = K_w",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>K</mi><mi>a</mi></msub><mo>×</mo><msub><mi>K</mi><mi>b</mi></msub><mo>=</mo><msub><mi>K</mi><mi>w</mi></msub></mrow><annotation encoding=\"application/x-tex\">K_a \\times K_b = K_w</annotation></semantics></math>",
     "unicodemath": "K_a × K_b = K_w",
     "domain": "Chemistry",
@@ -3954,6 +4349,7 @@ export const mathEquations = [
   {
     "name": "standard cell potential",
     "aliases": "E cell",
+    "latex": "E^{\\circ}_{\\text{cell}} = E^{\\circ}_{\\text{cathode}} - E^{\\circ}_{\\text{anode}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mi>E</mi><mtext>cell</mtext><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msubsup><mo>=</mo><msubsup><mi>E</mi><mtext>cathode</mtext><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msubsup><mo>−</mo><msubsup><mi>E</mi><mtext>anode</mtext><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msubsup></mrow><annotation encoding=\"application/x-tex\">E^{\\circ}_{\\text{cell}} = E^{\\circ}_{\\text{cathode}} - E^{\\circ}_{\\text{anode}}</annotation></semantics></math>",
     "unicodemath": "E^∘_cell = E^∘_cathode - E^∘_anode",
     "domain": "Chemistry",
@@ -3964,6 +4360,7 @@ export const mathEquations = [
   {
     "name": "Nernst equation",
     "aliases": "E cell at non-standard",
+    "latex": "E = E^{\\circ} - \\frac{RT}{nF}\\ln Q",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo>=</mo><msup><mi>E</mi><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup><mo>−</mo><mfrac><mrow><mi>R</mi><mi>T</mi></mrow><mrow><mi>n</mi><mi>F</mi></mrow></mfrac><mi>ln</mi><mo>⁡</mo><mi>Q</mi></mrow><annotation encoding=\"application/x-tex\">E = E^{\\circ} - \\frac{RT}{nF}\\ln Q</annotation></semantics></math>",
     "unicodemath": "E = E^∘ - RT/nFln Q",
     "domain": "Chemistry",
@@ -3974,6 +4371,7 @@ export const mathEquations = [
   {
     "name": "Gibbs and cell potential",
     "aliases": "delta G and E cell",
+    "latex": "\\Delta G^{\\circ} = -nFE^{\\circ}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><msup><mi>G</mi><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup><mo>=</mo><mo>−</mo><mi>n</mi><mi>F</mi><msup><mi>E</mi><mo lspace=\"0em\" rspace=\"0em\">∘</mo></msup></mrow><annotation encoding=\"application/x-tex\">\\Delta G^{\\circ} = -nFE^{\\circ}</annotation></semantics></math>",
     "unicodemath": "Δ G^∘ = -nFE^∘",
     "domain": "Chemistry",
@@ -3984,6 +4382,7 @@ export const mathEquations = [
   {
     "name": "Faraday electrolysis",
     "aliases": "mass deposited",
+    "latex": "m = \\frac{MIt}{nF}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><mi>M</mi><mi>I</mi><mi>t</mi></mrow><mrow><mi>n</mi><mi>F</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">m = \\frac{MIt}{nF}</annotation></semantics></math>",
     "unicodemath": "m = MIt/nF",
     "domain": "Chemistry",
@@ -3994,6 +4393,7 @@ export const mathEquations = [
   {
     "name": "rate law",
     "aliases": "reaction rate",
+    "latex": "\\text{rate} = k[A]^m[B]^n",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mtext>rate</mtext><mo>=</mo><mi>k</mi><mo stretchy=\"false\">[</mo><mi>A</mi><msup><mo stretchy=\"false\">]</mo><mi>m</mi></msup><mo stretchy=\"false\">[</mo><mi>B</mi><msup><mo stretchy=\"false\">]</mo><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">\\text{rate} = k[A]^m[B]^n</annotation></semantics></math>",
     "unicodemath": "rate = k[A]^m[B]^n",
     "domain": "Chemistry",
@@ -4004,6 +4404,7 @@ export const mathEquations = [
   {
     "name": "first order integrated rate law",
     "aliases": "ln A equals ln A0 minus kt",
+    "latex": "\\ln[A] = \\ln[A]_0 - kt",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ln</mi><mo>⁡</mo><mo stretchy=\"false\">[</mo><mi>A</mi><mo stretchy=\"false\">]</mo><mo>=</mo><mi>ln</mi><mo>⁡</mo><mo stretchy=\"false\">[</mo><mi>A</mi><msub><mo stretchy=\"false\">]</mo><mn>0</mn></msub><mo>−</mo><mi>k</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">\\ln[A] = \\ln[A]_0 - kt</annotation></semantics></math>",
     "unicodemath": "ln[A] = ln[A]_0 - kt",
     "domain": "Chemistry",
@@ -4014,6 +4415,7 @@ export const mathEquations = [
   {
     "name": "second order integrated rate law",
     "aliases": "1 over A equals 1 over A0 plus kt",
+    "latex": "\\frac{1}{[A]} = \\frac{1}{[A]_0} + kt",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mn>1</mn><mrow><mo stretchy=\"false\">[</mo><mi>A</mi><mo stretchy=\"false\">]</mo></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mo stretchy=\"false\">[</mo><mi>A</mi><msub><mo stretchy=\"false\">]</mo><mn>0</mn></msub></mrow></mfrac><mo>+</mo><mi>k</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{1}{[A]} = \\frac{1}{[A]_0} + kt</annotation></semantics></math>",
     "unicodemath": "1/[A] = 1/[A]_0 + kt",
     "domain": "Chemistry",
@@ -4024,6 +4426,7 @@ export const mathEquations = [
   {
     "name": "half-life first order",
     "aliases": "t half first order",
+    "latex": "t_{1/2} = \\frac{\\ln 2}{k} = \\frac{0.693}{k}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>t</mi><mrow><mn>1</mn><mi mathvariant=\"normal\">/</mi><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mn>2</mn></mrow><mi>k</mi></mfrac><mo>=</mo><mfrac><mn>0.693</mn><mi>k</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">t_{1/2} = \\frac{\\ln 2}{k} = \\frac{0.693}{k}</annotation></semantics></math>",
     "unicodemath": "t_(1/2) = ln2/k = 0.693/k",
     "domain": "Chemistry",
@@ -4034,6 +4437,7 @@ export const mathEquations = [
   {
     "name": "Arrhenius equation",
     "aliases": "k equals A e to the negative Ea over RT",
+    "latex": "k = Ae^{-E_a/RT}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>k</mi><mo>=</mo><mi>A</mi><msup><mi>e</mi><mrow><mo>−</mo><msub><mi>E</mi><mi>a</mi></msub><mi mathvariant=\"normal\">/</mi><mi>R</mi><mi>T</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">k = Ae^{-E_a/RT}</annotation></semantics></math>",
     "unicodemath": "k = Ae^(-E_a/RT)",
     "domain": "Chemistry",
@@ -4044,6 +4448,7 @@ export const mathEquations = [
   {
     "name": "Rydberg formula",
     "aliases": "hydrogen spectral lines",
+    "latex": "\\frac{1}{\\lambda} = R_H\\left(\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mn>1</mn><mi>λ</mi></mfrac><mo>=</mo><msub><mi>R</mi><mi>H</mi></msub><mrow><mo fence=\"true\">(</mo><mfrac><mn>1</mn><msubsup><mi>n</mi><mn>1</mn><mn>2</mn></msubsup></mfrac><mo>−</mo><mfrac><mn>1</mn><msubsup><mi>n</mi><mn>2</mn><mn>2</mn></msubsup></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\frac{1}{\\lambda} = R_H\\left(\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right)</annotation></semantics></math>",
     "unicodemath": "1/λ = R_H(1/n_1^2 - 1/n_2^2)",
     "domain": "Chemistry",
@@ -4054,6 +4459,7 @@ export const mathEquations = [
   {
     "name": "photon energy",
     "aliases": "E equals hf",
+    "latex": "E = hf = \\frac{hc}{\\lambda}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo>=</mo><mi>h</mi><mi>f</mi><mo>=</mo><mfrac><mrow><mi>h</mi><mi>c</mi></mrow><mi>λ</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">E = hf = \\frac{hc}{\\lambda}</annotation></semantics></math>",
     "unicodemath": "E = hf = hc/λ",
     "domain": "Chemistry",
@@ -4064,6 +4470,7 @@ export const mathEquations = [
   {
     "name": "Bohr model energy levels",
     "aliases": "energy of nth level",
+    "latex": "E_n = -\\frac{13.6\\,\\text{eV}}{n^2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>=</mo><mo>−</mo><mfrac><mrow><mn>13.6</mn><mtext> </mtext><mtext>eV</mtext></mrow><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding=\"application/x-tex\">E_n = -\\frac{13.6\\,\\text{eV}}{n^2}</annotation></semantics></math>",
     "unicodemath": "E_n = -13.6eV/n^2",
     "domain": "Chemistry",
@@ -4074,6 +4481,7 @@ export const mathEquations = [
   {
     "name": "Hardy-Weinberg equilibrium",
     "aliases": "Hardy-Weinberg principle",
+    "latex": "p^2 + 2pq + q^2 = 1",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>p</mi><mi>q</mi><mo>+</mo><msup><mi>q</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">p^2 + 2pq + q^2 = 1</annotation></semantics></math>",
     "unicodemath": "p^2 + 2pq + q^2 = 1",
     "domain": "Biology & Life Sciences",
@@ -4084,6 +4492,7 @@ export const mathEquations = [
   {
     "name": "logistic population growth",
     "aliases": "logistic growth model",
+    "latex": "\\frac{dN}{dt} = rN\\left(1 - \\frac{N}{K}\\right)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi>d</mi><mi>N</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>r</mi><mi>N</mi><mrow><mo fence=\"true\">(</mo><mn>1</mn><mo>−</mo><mfrac><mi>N</mi><mi>K</mi></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\frac{dN}{dt} = rN\\left(1 - \\frac{N}{K}\\right)</annotation></semantics></math>",
     "unicodemath": "dN/dt = rN(1 - N/K)",
     "domain": "Biology & Life Sciences",
@@ -4094,6 +4503,7 @@ export const mathEquations = [
   {
     "name": "Michaelis-Menten kinetics",
     "aliases": "enzyme kinetics",
+    "latex": "v = \\frac{V_{\\max}[S]}{K_m + [S]}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>v</mi><mo>=</mo><mfrac><mrow><msub><mi>V</mi><mi>max</mi><mo>⁡</mo></msub><mo stretchy=\"false\">[</mo><mi>S</mi><mo stretchy=\"false\">]</mo></mrow><mrow><msub><mi>K</mi><mi>m</mi></msub><mo>+</mo><mo stretchy=\"false\">[</mo><mi>S</mi><mo stretchy=\"false\">]</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">v = \\frac{V_{\\max}[S]}{K_m + [S]}</annotation></semantics></math>",
     "unicodemath": "v = V_max[S]/(K_m+[S])",
     "domain": "Biology & Life Sciences",
@@ -4104,6 +4514,7 @@ export const mathEquations = [
   {
     "name": "exponential population growth",
     "aliases": "Malthusian growth",
+    "latex": "N(t) = N_0 e^{rt}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>N</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mi>r</mi><mi>t</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">N(t) = N_0 e^{rt}</annotation></semantics></math>",
     "unicodemath": "N(t) = N_0 e^rt",
     "domain": "Biology & Life Sciences",
@@ -4114,6 +4525,7 @@ export const mathEquations = [
   {
     "name": "simple interest",
     "aliases": "I equals Prt",
+    "latex": "I = Prt",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>I</mi><mo>=</mo><mi>P</mi><mi>r</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">I = Prt</annotation></semantics></math>",
     "unicodemath": "I = Prt",
     "domain": "Finance & Economics",
@@ -4124,6 +4536,7 @@ export const mathEquations = [
   {
     "name": "compound interest",
     "aliases": "A equals P times one plus r over n to the nt",
+    "latex": "A = P\\left(1 + \\frac{r}{n}\\right)^{nt}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mi>P</mi><msup><mrow><mo fence=\"true\">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac><mo fence=\"true\">)</mo></mrow><mrow><mi>n</mi><mi>t</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">A = P\\left(1 + \\frac{r}{n}\\right)^{nt}</annotation></semantics></math>",
     "unicodemath": "A = P(1 + r/n)^nt",
     "domain": "Finance & Economics",
@@ -4134,6 +4547,7 @@ export const mathEquations = [
   {
     "name": "continuously compounded interest",
     "aliases": "A equals Pe to the rt",
+    "latex": "A = Pe^{rt}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>A</mi><mo>=</mo><mi>P</mi><msup><mi>e</mi><mrow><mi>r</mi><mi>t</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">A = Pe^{rt}</annotation></semantics></math>",
     "unicodemath": "A = Pe^rt",
     "domain": "Finance & Economics",
@@ -4144,6 +4558,7 @@ export const mathEquations = [
   {
     "name": "future value",
     "aliases": "FV equals PV times one plus r to the n",
+    "latex": "FV = PV(1+r)^n",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mi>V</mi><mo>=</mo><mi>P</mi><mi>V</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">FV = PV(1+r)^n</annotation></semantics></math>",
     "unicodemath": "FV = PV(1+r)^n",
     "domain": "Finance & Economics",
@@ -4154,6 +4569,7 @@ export const mathEquations = [
   {
     "name": "present value",
     "aliases": "PV equals FV over one plus r to the n",
+    "latex": "PV = \\frac{FV}{(1+r)^n}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mfrac><mrow><mi>F</mi><mi>V</mi></mrow><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">PV = \\frac{FV}{(1+r)^n}</annotation></semantics></math>",
     "unicodemath": "PV = FV/(1+r)^n",
     "domain": "Finance & Economics",
@@ -4164,6 +4580,7 @@ export const mathEquations = [
   {
     "name": "present value of an annuity",
     "aliases": "PVA",
+    "latex": "PV = PMT \\cdot \\frac{1-(1+r)^{-n}}{r}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mi>P</mi><mi>M</mi><mi>T</mi><mo>⋅</mo><mfrac><mrow><mn>1</mn><mo>−</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mrow><mo>−</mo><mi>n</mi></mrow></msup></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">PV = PMT \\cdot \\frac{1-(1+r)^{-n}}{r}</annotation></semantics></math>",
     "unicodemath": "PV = PMT ⋅ (1-(1+r)^(-n))/r",
     "domain": "Finance & Economics",
@@ -4174,6 +4591,7 @@ export const mathEquations = [
   {
     "name": "future value of an annuity",
     "aliases": "FVA",
+    "latex": "FV = PMT \\cdot \\frac{(1+r)^n - 1}{r}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>F</mi><mi>V</mi><mo>=</mo><mi>P</mi><mi>M</mi><mi>T</mi><mo>⋅</mo><mfrac><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">FV = PMT \\cdot \\frac{(1+r)^n - 1}{r}</annotation></semantics></math>",
     "unicodemath": "FV = PMT ⋅ ((1+r)^n-1)/r",
     "domain": "Finance & Economics",
@@ -4184,6 +4602,7 @@ export const mathEquations = [
   {
     "name": "present value of a perpetuity",
     "aliases": "perpetuity formula",
+    "latex": "PV = \\frac{PMT}{r}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mfrac><mrow><mi>P</mi><mi>M</mi><mi>T</mi></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">PV = \\frac{PMT}{r}</annotation></semantics></math>",
     "unicodemath": "PV = PMT/r",
     "domain": "Finance & Economics",
@@ -4194,6 +4613,7 @@ export const mathEquations = [
   {
     "name": "loan payment amortization",
     "aliases": "monthly payment formula",
+    "latex": "M = P \\cdot \\frac{r(1+r)^n}{(1+r)^n - 1}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mo>=</mo><mi>P</mi><mo>⋅</mo><mfrac><mrow><mi>r</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup></mrow><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">M = P \\cdot \\frac{r(1+r)^n}{(1+r)^n - 1}</annotation></semantics></math>",
     "unicodemath": "M = P ⋅ r(1+r)^n/((1+r)^n-1)",
     "domain": "Finance & Economics",
@@ -4204,6 +4624,7 @@ export const mathEquations = [
   {
     "name": "effective annual rate",
     "aliases": "EAR",
+    "latex": "EAR = \\left(1 + \\frac{r}{n}\\right)^n - 1",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mi>A</mi><mi>R</mi><mo>=</mo><msup><mrow><mo fence=\"true\">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac><mo fence=\"true\">)</mo></mrow><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">EAR = \\left(1 + \\frac{r}{n}\\right)^n - 1</annotation></semantics></math>",
     "unicodemath": "EAR = (1 + r/n)^n - 1",
     "domain": "Finance & Economics",
@@ -4214,6 +4635,7 @@ export const mathEquations = [
   {
     "name": "net present value",
     "aliases": "NPV",
+    "latex": "NPV = \\sum_{t=0}^{n} \\frac{CF_t}{(1+r)^t}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>N</mi><mi>P</mi><mi>V</mi><mo>=</mo><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mfrac><mrow><mi>C</mi><msub><mi>F</mi><mi>t</mi></msub></mrow><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>t</mi></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">NPV = \\sum_{t=0}^{n} \\frac{CF_t}{(1+r)^t}</annotation></semantics></math>",
     "unicodemath": "NPV = ∑_(t=0)^n CF_t/(1+r)^t",
     "domain": "Finance & Economics",
@@ -4224,6 +4646,7 @@ export const mathEquations = [
   {
     "name": "compound annual growth rate",
     "aliases": "CAGR",
+    "latex": "CAGR = \\left(\\frac{V_f}{V_i}\\right)^{\\frac{1}{n}} - 1",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mi>A</mi><mi>G</mi><mi>R</mi><mo>=</mo><msup><mrow><mo fence=\"true\">(</mo><mfrac><msub><mi>V</mi><mi>f</mi></msub><msub><mi>V</mi><mi>i</mi></msub></mfrac><mo fence=\"true\">)</mo></mrow><mfrac><mn>1</mn><mi>n</mi></mfrac></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">CAGR = \\left(\\frac{V_f}{V_i}\\right)^{\\frac{1}{n}} - 1</annotation></semantics></math>",
     "unicodemath": "CAGR = (V_f/V_i)^(1/n) - 1",
     "domain": "Finance & Economics",
@@ -4234,6 +4657,7 @@ export const mathEquations = [
   {
     "name": "doubling time",
     "aliases": "rule of 70",
+    "latex": "t = \\frac{\\ln 2}{r}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><mi>ln</mi><mo>⁡</mo><mn>2</mn></mrow><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">t = \\frac{\\ln 2}{r}</annotation></semantics></math>",
     "unicodemath": "t = ln2/r",
     "domain": "Finance & Economics",
@@ -4244,6 +4668,7 @@ export const mathEquations = [
   {
     "name": "rule of 72",
     "aliases": "approximate doubling time",
+    "latex": "t \\approx \\frac{72}{r}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>t</mi><mo>≈</mo><mfrac><mn>72</mn><mi>r</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">t \\approx \\frac{72}{r}</annotation></semantics></math>",
     "unicodemath": "t ≈ 72/r",
     "domain": "Finance & Economics",
@@ -4254,6 +4679,7 @@ export const mathEquations = [
   {
     "name": "Fisher equation",
     "aliases": "nominal versus real rate",
+    "latex": "(1 + r_n) = (1 + r_r)(1 + \\pi)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><msub><mi>r</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo><mo>=</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><msub><mi>r</mi><mi>r</mi></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>π</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(1 + r_n) = (1 + r_r)(1 + \\pi)</annotation></semantics></math>",
     "unicodemath": "(1 + r_n) = (1 + r_r)(1 + π)",
     "domain": "Finance & Economics",
@@ -4264,6 +4690,7 @@ export const mathEquations = [
   {
     "name": "straight-line depreciation",
     "aliases": "SLD",
+    "latex": "D = \\frac{C - S}{n}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>D</mi><mo>=</mo><mfrac><mrow><mi>C</mi><mo>−</mo><mi>S</mi></mrow><mi>n</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">D = \\frac{C - S}{n}</annotation></semantics></math>",
     "unicodemath": "D = (C-S)/n",
     "domain": "Finance & Economics",
@@ -4274,6 +4701,7 @@ export const mathEquations = [
   {
     "name": "return on investment",
     "aliases": "ROI",
+    "latex": "ROI = \\frac{V_f - V_i}{V_i}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>R</mi><mi>O</mi><mi>I</mi><mo>=</mo><mfrac><mrow><msub><mi>V</mi><mi>f</mi></msub><mo>−</mo><msub><mi>V</mi><mi>i</mi></msub></mrow><msub><mi>V</mi><mi>i</mi></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">ROI = \\frac{V_f - V_i}{V_i}</annotation></semantics></math>",
     "unicodemath": "ROI = (V_f-V_i)/V_i",
     "domain": "Finance & Economics",
@@ -4284,6 +4712,7 @@ export const mathEquations = [
   {
     "name": "bond price formula",
     "aliases": "present value of bond",
+    "latex": "P = \\sum_{t=1}^{n} \\frac{C}{(1+r)^t} + \\frac{F}{(1+r)^n}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo>=</mo><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mi>C</mi><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>t</mi></msup></mrow></mfrac><mo>+</mo><mfrac><mi>F</mi><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P = \\sum_{t=1}^{n} \\frac{C}{(1+r)^t} + \\frac{F}{(1+r)^n}</annotation></semantics></math>",
     "unicodemath": "P = ∑_(t=1)^n C/(1+r)^t + F/(1+r)^n",
     "domain": "Finance & Economics",
@@ -4294,6 +4723,7 @@ export const mathEquations = [
   {
     "name": "price elasticity of demand",
     "aliases": "demand elasticity",
+    "latex": "\\varepsilon_d = \\frac{\\Delta Q / Q}{\\Delta P / P}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>ε</mi><mi>d</mi></msub><mo>=</mo><mfrac><mrow><mi mathvariant=\"normal\">Δ</mi><mi>Q</mi><mi mathvariant=\"normal\">/</mi><mi>Q</mi></mrow><mrow><mi mathvariant=\"normal\">Δ</mi><mi>P</mi><mi mathvariant=\"normal\">/</mi><mi>P</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\varepsilon_d = \\frac{\\Delta Q / Q}{\\Delta P / P}</annotation></semantics></math>",
     "unicodemath": "ε_d = ΔQ/Q/ΔP/P",
     "domain": "Finance & Economics",
@@ -4304,6 +4734,7 @@ export const mathEquations = [
   {
     "name": "marginal cost",
     "aliases": "MC formula",
+    "latex": "MC = \\frac{dTC}{dQ}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mi>C</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mi>T</mi><mi>C</mi></mrow><mrow><mi>d</mi><mi>Q</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">MC = \\frac{dTC}{dQ}</annotation></semantics></math>",
     "unicodemath": "MC = dTC/dQ",
     "domain": "Finance & Economics",
@@ -4314,6 +4745,7 @@ export const mathEquations = [
   {
     "name": "marginal revenue",
     "aliases": "MR formula",
+    "latex": "MR = \\frac{dTR}{dQ}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mi>R</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mi>T</mi><mi>R</mi></mrow><mrow><mi>d</mi><mi>Q</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">MR = \\frac{dTR}{dQ}</annotation></semantics></math>",
     "unicodemath": "MR = dTR/dQ",
     "domain": "Finance & Economics",
@@ -4324,6 +4756,7 @@ export const mathEquations = [
   {
     "name": "profit maximization condition",
     "aliases": "MR equals MC",
+    "latex": "MR = MC",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mi>R</mi><mo>=</mo><mi>M</mi><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">MR = MC</annotation></semantics></math>",
     "unicodemath": "MR = MC",
     "domain": "Finance & Economics",
@@ -4334,6 +4767,7 @@ export const mathEquations = [
   {
     "name": "consumer surplus",
     "aliases": "area below demand curve",
+    "latex": "CS = \\int_0^{Q^*} D(Q)\\,dQ - P^* Q^*",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mi>S</mi><mo>=</mo><msubsup><mo>∫</mo><mn>0</mn><msup><mi>Q</mi><mo>∗</mo></msup></msubsup><mi>D</mi><mo stretchy=\"false\">(</mo><mi>Q</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>Q</mi><mo>−</mo><msup><mi>P</mi><mo>∗</mo></msup><msup><mi>Q</mi><mo>∗</mo></msup></mrow><annotation encoding=\"application/x-tex\">CS = \\int_0^{Q^*} D(Q)\\,dQ - P^* Q^*</annotation></semantics></math>",
     "unicodemath": "CS = ∫_0^(Q^*) D(Q)dQ - P^* Q^*",
     "domain": "Finance & Economics",
@@ -4344,6 +4778,7 @@ export const mathEquations = [
   {
     "name": "Black-Scholes formula",
     "aliases": "Black-Scholes model; option pricing",
+    "latex": "C = S_0 N(d_1) - K e^{-rT} N(d_2)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mo>=</mo><msub><mi>S</mi><mn>0</mn></msub><mi>N</mi><mo stretchy=\"false\">(</mo><msub><mi>d</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo><mo>−</mo><mi>K</mi><msup><mi>e</mi><mrow><mo>−</mo><mi>r</mi><mi>T</mi></mrow></msup><mi>N</mi><mo stretchy=\"false\">(</mo><msub><mi>d</mi><mn>2</mn></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">C = S_0 N(d_1) - K e^{-rT} N(d_2)</annotation></semantics></math>",
     "unicodemath": "C = S_0 N(d_1) - K e^(-rT) N(d_2)",
     "domain": "Finance & Economics",
@@ -4354,6 +4789,7 @@ export const mathEquations = [
   {
     "name": "capacitor impedance",
     "aliases": "capacitive reactance",
+    "latex": "Z_C = \\frac{1}{j\\omega C}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>Z</mi><mi>C</mi></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mi>j</mi><mi>ω</mi><mi>C</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">Z_C = \\frac{1}{j\\omega C}</annotation></semantics></math>",
     "unicodemath": "Z_C = 1/jωC",
     "domain": "Engineering & Computing",
@@ -4364,6 +4800,7 @@ export const mathEquations = [
   {
     "name": "inductor impedance",
     "aliases": "inductive reactance",
+    "latex": "Z_L = j\\omega L",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>Z</mi><mi>L</mi></msub><mo>=</mo><mi>j</mi><mi>ω</mi><mi>L</mi></mrow><annotation encoding=\"application/x-tex\">Z_L = j\\omega L</annotation></semantics></math>",
     "unicodemath": "Z_L = jω L",
     "domain": "Engineering & Computing",
@@ -4374,6 +4811,7 @@ export const mathEquations = [
   {
     "name": "LC resonant frequency",
     "aliases": "resonance frequency",
+    "latex": "f_0 = \\frac{1}{2\\pi\\sqrt{LC}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>π</mi><msqrt><mrow><mi>L</mi><mi>C</mi></mrow></msqrt></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">f_0 = \\frac{1}{2\\pi\\sqrt{LC}}</annotation></semantics></math>",
     "unicodemath": "f_0 = 1/2π√LC",
     "domain": "Engineering & Computing",
@@ -4384,6 +4822,7 @@ export const mathEquations = [
   {
     "name": "RC time constant",
     "aliases": "resistor-capacitor time constant",
+    "latex": "\\tau = RC",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>τ</mi><mo>=</mo><mi>R</mi><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\tau = RC</annotation></semantics></math>",
     "unicodemath": "τ = RC",
     "domain": "Engineering & Computing",
@@ -4394,6 +4833,7 @@ export const mathEquations = [
   {
     "name": "RL time constant",
     "aliases": "resistor-inductor time constant",
+    "latex": "\\tau = \\frac{L}{R}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>τ</mi><mo>=</mo><mfrac><mi>L</mi><mi>R</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tau = \\frac{L}{R}</annotation></semantics></math>",
     "unicodemath": "τ = L/R",
     "domain": "Engineering & Computing",
@@ -4404,6 +4844,7 @@ export const mathEquations = [
   {
     "name": "RMS voltage",
     "aliases": "root mean square voltage",
+    "latex": "V_{rms} = \\frac{V_{peak}}{\\sqrt{2}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>V</mi><mrow><mi>r</mi><mi>m</mi><mi>s</mi></mrow></msub><mo>=</mo><mfrac><msub><mi>V</mi><mrow><mi>p</mi><mi>e</mi><mi>a</mi><mi>k</mi></mrow></msub><msqrt><mn>2</mn></msqrt></mfrac></mrow><annotation encoding=\"application/x-tex\">V_{rms} = \\frac{V_{peak}}{\\sqrt{2}}</annotation></semantics></math>",
     "unicodemath": "V_rms = V_peak/√2",
     "domain": "Engineering & Computing",
@@ -4414,6 +4855,7 @@ export const mathEquations = [
   {
     "name": "capacitors in series",
     "aliases": "series capacitance",
+    "latex": "\\frac{1}{C_{eq}} = \\frac{1}{C_1} + \\frac{1}{C_2}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mn>1</mn><msub><mi>C</mi><mrow><mi>e</mi><mi>q</mi></mrow></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>C</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>C</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{1}{C_{eq}} = \\frac{1}{C_1} + \\frac{1}{C_2}</annotation></semantics></math>",
     "unicodemath": "1/C_eq = 1/C_1 + 1/C_2",
     "domain": "Engineering & Computing",
@@ -4424,6 +4866,7 @@ export const mathEquations = [
   {
     "name": "capacitors in parallel",
     "aliases": "parallel capacitance",
+    "latex": "C_{eq} = C_1 + C_2",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>C</mi><mrow><mi>e</mi><mi>q</mi></mrow></msub><mo>=</mo><msub><mi>C</mi><mn>1</mn></msub><mo>+</mo><msub><mi>C</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">C_{eq} = C_1 + C_2</annotation></semantics></math>",
     "unicodemath": "C_eq = C_1 + C_2",
     "domain": "Engineering & Computing",
@@ -4434,6 +4877,7 @@ export const mathEquations = [
   {
     "name": "Nyquist-Shannon sampling theorem",
     "aliases": "sampling theorem",
+    "latex": "f_s \\geq 2 f_{max}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>f</mi><mi>s</mi></msub><mo>≥</mo><mn>2</mn><msub><mi>f</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub></mrow><annotation encoding=\"application/x-tex\">f_s \\geq 2 f_{max}</annotation></semantics></math>",
     "unicodemath": "f_s ≥ 2 f_max",
     "domain": "Engineering & Computing",
@@ -4444,6 +4888,7 @@ export const mathEquations = [
   {
     "name": "convolution integral",
     "aliases": "linear convolution",
+    "latex": "(f * g)(t) = \\int_{-\\infty}^{\\infty} f(\\tau)\\,g(t - \\tau)\\,d\\tau",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>f</mi><mo>∗</mo><mi>g</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant=\"normal\">∞</mi></mrow><mi mathvariant=\"normal\">∞</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>τ</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>g</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo>−</mo><mi>τ</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>τ</mi></mrow><annotation encoding=\"application/x-tex\">(f * g)(t) = \\int_{-\\infty}^{\\infty} f(\\tau)\\,g(t - \\tau)\\,d\\tau</annotation></semantics></math>",
     "unicodemath": "(f * g)(t) = ∫_(-∞)^∞ f(τ)g(t - τ)dτ",
     "domain": "Engineering & Computing",
@@ -4454,6 +4899,7 @@ export const mathEquations = [
   {
     "name": "discrete Fourier transform",
     "aliases": "DFT formula",
+    "latex": "X[k] = \\sum_{n=0}^{N-1} x[n] e^{-j2\\pi kn/N}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>X</mi><mo stretchy=\"false\">[</mo><mi>k</mi><mo stretchy=\"false\">]</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>N</mi><mo>−</mo><mn>1</mn></mrow></munderover><mi>x</mi><mo stretchy=\"false\">[</mo><mi>n</mi><mo stretchy=\"false\">]</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>j</mi><mn>2</mn><mi>π</mi><mi>k</mi><mi>n</mi><mi mathvariant=\"normal\">/</mi><mi>N</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">X[k] = \\sum_{n=0}^{N-1} x[n] e^{-j2\\pi kn/N}</annotation></semantics></math>",
     "unicodemath": "X[k] = ∑_(n=0)^(N-1) x[n] e^(-j2πkn/N)",
     "domain": "Engineering & Computing",
@@ -4464,6 +4910,7 @@ export const mathEquations = [
   {
     "name": "signal-to-noise ratio",
     "aliases": "SNR decibels",
+    "latex": "SNR = 10\\log_{10}\\left(\\frac{P_{signal}}{P_{noise}}\\right)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mi>N</mi><mi>R</mi><mo>=</mo><mn>10</mn><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>10</mn></msub><mrow><mo fence=\"true\">(</mo><mfrac><msub><mi>P</mi><mrow><mi>s</mi><mi>i</mi><mi>g</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><msub><mi>P</mi><mrow><mi>n</mi><mi>o</mi><mi>i</mi><mi>s</mi><mi>e</mi></mrow></msub></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">SNR = 10\\log_{10}\\left(\\frac{P_{signal}}{P_{noise}}\\right)</annotation></semantics></math>",
     "unicodemath": "SNR = 10log_10(P_signal/P_noise)",
     "domain": "Engineering & Computing",
@@ -4474,6 +4921,7 @@ export const mathEquations = [
   {
     "name": "Shannon channel capacity",
     "aliases": "Shannon-Hartley theorem",
+    "latex": "C = B\\log_2\\left(1 + \\frac{S}{N}\\right)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>C</mi><mo>=</mo><mi>B</mi><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>2</mn></msub><mrow><mo fence=\"true\">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>S</mi><mi>N</mi></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">C = B\\log_2\\left(1 + \\frac{S}{N}\\right)</annotation></semantics></math>",
     "unicodemath": "C = Blog_2(1 + S/N)",
     "domain": "Engineering & Computing",
@@ -4484,6 +4932,7 @@ export const mathEquations = [
   {
     "name": "normal stress",
     "aliases": "axial stress",
+    "latex": "\\sigma = \\frac{F}{A}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><mi>F</mi><mi>A</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sigma = \\frac{F}{A}</annotation></semantics></math>",
     "unicodemath": "σ = F/A",
     "domain": "Engineering & Computing",
@@ -4494,6 +4943,7 @@ export const mathEquations = [
   {
     "name": "normal strain",
     "aliases": "axial strain",
+    "latex": "\\varepsilon = \\frac{\\delta}{L}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ε</mi><mo>=</mo><mfrac><mi>δ</mi><mi>L</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\varepsilon = \\frac{\\delta}{L}</annotation></semantics></math>",
     "unicodemath": "ε = δ/L",
     "domain": "Engineering & Computing",
@@ -4504,6 +4954,7 @@ export const mathEquations = [
   {
     "name": "Hooke's law for solids",
     "aliases": "modulus of elasticity; Young's modulus",
+    "latex": "E = \\frac{\\sigma}{\\varepsilon}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mi>σ</mi><mi>ε</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">E = \\frac{\\sigma}{\\varepsilon}</annotation></semantics></math>",
     "unicodemath": "E = σ/ε",
     "domain": "Engineering & Computing",
@@ -4514,6 +4965,7 @@ export const mathEquations = [
   {
     "name": "average shear stress",
     "aliases": "shear force over area",
+    "latex": "\\tau = \\frac{V}{A}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>τ</mi><mo>=</mo><mfrac><mi>V</mi><mi>A</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tau = \\frac{V}{A}</annotation></semantics></math>",
     "unicodemath": "τ = V/A",
     "domain": "Engineering & Computing",
@@ -4524,6 +4976,7 @@ export const mathEquations = [
   {
     "name": "shear modulus",
     "aliases": "modulus of rigidity",
+    "latex": "G = \\frac{\\tau}{\\gamma}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>G</mi><mo>=</mo><mfrac><mi>τ</mi><mi>γ</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">G = \\frac{\\tau}{\\gamma}</annotation></semantics></math>",
     "unicodemath": "G = τ/γ",
     "domain": "Engineering & Computing",
@@ -4534,6 +4987,7 @@ export const mathEquations = [
   {
     "name": "Poisson's ratio",
     "aliases": "lateral strain ratio",
+    "latex": "\\nu = -\\frac{\\varepsilon_{lat}}{\\varepsilon_{ax}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ν</mi><mo>=</mo><mo>−</mo><mfrac><msub><mi>ε</mi><mrow><mi>l</mi><mi>a</mi><mi>t</mi></mrow></msub><msub><mi>ε</mi><mrow><mi>a</mi><mi>x</mi></mrow></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">\\nu = -\\frac{\\varepsilon_{lat}}{\\varepsilon_{ax}}</annotation></semantics></math>",
     "unicodemath": "ν = -ε_lat/ε_ax",
     "domain": "Engineering & Computing",
@@ -4544,6 +4998,7 @@ export const mathEquations = [
   {
     "name": "bending stress",
     "aliases": "flexure formula",
+    "latex": "\\sigma = \\frac{Mc}{I}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><mrow><mi>M</mi><mi>c</mi></mrow><mi>I</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\sigma = \\frac{Mc}{I}</annotation></semantics></math>",
     "unicodemath": "σ = Mc/I",
     "domain": "Engineering & Computing",
@@ -4554,6 +5009,7 @@ export const mathEquations = [
   {
     "name": "torsional shear stress",
     "aliases": "torsion formula",
+    "latex": "\\tau = \\frac{Tc}{J}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>τ</mi><mo>=</mo><mfrac><mrow><mi>T</mi><mi>c</mi></mrow><mi>J</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">\\tau = \\frac{Tc}{J}</annotation></semantics></math>",
     "unicodemath": "τ = Tc/J",
     "domain": "Engineering & Computing",
@@ -4564,6 +5020,7 @@ export const mathEquations = [
   {
     "name": "thermal stress",
     "aliases": "temperature-induced stress",
+    "latex": "\\sigma_T = E \\alpha \\Delta T",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>σ</mi><mi>T</mi></msub><mo>=</mo><mi>E</mi><mi>α</mi><mi mathvariant=\"normal\">Δ</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">\\sigma_T = E \\alpha \\Delta T</annotation></semantics></math>",
     "unicodemath": "σ_T = E α Δ T",
     "domain": "Engineering & Computing",
@@ -4574,6 +5031,7 @@ export const mathEquations = [
   {
     "name": "Newton's method",
     "aliases": "Newton-Raphson method",
+    "latex": "x_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mfrac><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo></mrow><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">x_{n+1} = x_n - \\frac{f(x_n)}{f&#x27;(x_n)}</annotation></semantics></math>",
     "unicodemath": "x_(n+1) = x_n - f(x_n)/f'(x_n)",
     "domain": "Engineering & Computing",
@@ -4584,6 +5042,7 @@ export const mathEquations = [
   {
     "name": "trapezoidal rule",
     "aliases": "trapezoid integration rule",
+    "latex": "\\int_a^b f(x)\\,dx \\approx \\frac{h}{2}[f(x_0) + 2f(x_1) + \\cdots + 2f(x_{n-1}) + f(x_n)]",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi><mo>≈</mo><mfrac><mi>h</mi><mn>2</mn></mfrac><mo stretchy=\"false\">[</mo><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mn>2</mn><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mo>⋯</mo><mo>+</mo><mn>2</mn><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\int_a^b f(x)\\,dx \\approx \\frac{h}{2}[f(x_0) + 2f(x_1) + \\cdots + 2f(x_{n-1}) + f(x_n)]</annotation></semantics></math>",
     "unicodemath": "∫_a^b f(x)dx ≈ h/2[f(x_0) + 2f(x_1) + ⋯ + 2f(x_(n-1)) + f(x_n)]",
     "domain": "Engineering & Computing",
@@ -4594,6 +5053,7 @@ export const mathEquations = [
   {
     "name": "Simpson's rule",
     "aliases": "Simpson one-third rule",
+    "latex": "\\int_a^b f(x)\\,dx \\approx \\frac{h}{3}[f(x_0) + 4f(x_1) + 2f(x_2) + \\cdots + 4f(x_{n-1}) + f(x_n)]",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi><mo>≈</mo><mfrac><mi>h</mi><mn>3</mn></mfrac><mo stretchy=\"false\">[</mo><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mn>4</mn><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mn>2</mn><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mo>⋯</mo><mo>+</mo><mn>4</mn><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy=\"false\">)</mo><mo>+</mo><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\int_a^b f(x)\\,dx \\approx \\frac{h}{3}[f(x_0) + 4f(x_1) + 2f(x_2) + \\cdots + 4f(x_{n-1}) + f(x_n)]</annotation></semantics></math>",
     "unicodemath": "∫_a^b f(x)dx ≈ h/3[f(x_0) + 4f(x_1) + 2f(x_2) + ⋯ + 4f(x_(n-1)) + f(x_n)]",
     "domain": "Engineering & Computing",
@@ -4604,6 +5064,7 @@ export const mathEquations = [
   {
     "name": "Euler's method",
     "aliases": "Euler ODE method",
+    "latex": "y_{n+1} = y_n + h f(x_n, y_n)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>y</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>y</mi><mi>n</mi></msub><mo>+</mo><mi>h</mi><mi>f</mi><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo separator=\"true\">,</mo><msub><mi>y</mi><mi>n</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">y_{n+1} = y_n + h f(x_n, y_n)</annotation></semantics></math>",
     "unicodemath": "y_(n+1) = y_n + h f(x_n, y_n)",
     "domain": "Engineering & Computing",
@@ -4614,6 +5075,7 @@ export const mathEquations = [
   {
     "name": "forward difference",
     "aliases": "forward finite difference",
+    "latex": "f'(x) \\approx \\frac{f(x+h) - f(x)}{h}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>≈</mo><mfrac><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>+</mo><mi>h</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><mi>h</mi></mfrac></mrow><annotation encoding=\"application/x-tex\">f&#x27;(x) \\approx \\frac{f(x+h) - f(x)}{h}</annotation></semantics></math>",
     "unicodemath": "f'(x) ≈ (f(x+h)-f(x))/h",
     "domain": "Engineering & Computing",
@@ -4624,6 +5086,7 @@ export const mathEquations = [
   {
     "name": "central difference",
     "aliases": "centered finite difference",
+    "latex": "f'(x) \\approx \\frac{f(x+h) - f(x-h)}{2h}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>≈</mo><mfrac><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>+</mo><mi>h</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo>−</mo><mi>h</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mn>2</mn><mi>h</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">f&#x27;(x) \\approx \\frac{f(x+h) - f(x-h)}{2h}</annotation></semantics></math>",
     "unicodemath": "f'(x) ≈ (f(x+h)-f(x-h))/2h",
     "domain": "Engineering & Computing",
@@ -4634,6 +5097,7 @@ export const mathEquations = [
   {
     "name": "Runge-Kutta 4",
     "aliases": "RK4 method",
+    "latex": "y_{n+1} = y_n + \\frac{h}{6}(k_1 + 2k_2 + 2k_3 + k_4)",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>y</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>y</mi><mi>n</mi></msub><mo>+</mo><mfrac><mi>h</mi><mn>6</mn></mfrac><mo stretchy=\"false\">(</mo><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><mn>2</mn><msub><mi>k</mi><mn>2</mn></msub><mo>+</mo><mn>2</mn><msub><mi>k</mi><mn>3</mn></msub><mo>+</mo><msub><mi>k</mi><mn>4</mn></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">y_{n+1} = y_n + \\frac{h}{6}(k_1 + 2k_2 + 2k_3 + k_4)</annotation></semantics></math>",
     "unicodemath": "y_(n+1) = y_n + h/6(k_1 + 2k_2 + 2k_3 + k_4)",
     "domain": "Engineering & Computing",
@@ -4644,6 +5108,7 @@ export const mathEquations = [
   {
     "name": "2x2 matrix",
     "aliases": "2 by 2 matrix,pmatrix,parentheses matrix",
+    "latex": "\\pmatrix{\\placeholder{1} & \\placeholder{2} \\\\ \\placeholder{3} & \\placeholder{4}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo fence=\"true\">(</mo><mtable rowspacing=\"0.16em\" columnalign=\"center center\" columnspacing=\"1em\"><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr></mtable><mo fence=\"true\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\begin{pmatrix}\\square &amp; \\square \\\\ \\square &amp; \\square\\end{pmatrix}</annotation></semantics></math>",
     "unicodemath": "(■(□&□@□&□))",
     "domain": "Building Blocks",
@@ -4654,6 +5119,7 @@ export const mathEquations = [
   {
     "name": "3x3 matrix",
     "aliases": "3 by 3 matrix,pmatrix,parentheses matrix",
+    "latex": "\\pmatrix{\\placeholder{1} & \\placeholder{2} & \\placeholder{3} \\\\ \\placeholder{4} & \\placeholder{5} & \\placeholder{6} \\\\ \\placeholder{7} & \\placeholder{8} & \\placeholder{9}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo fence=\"true\">(</mo><mtable rowspacing=\"0.16em\" columnalign=\"center center center\" columnspacing=\"1em\"><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr></mtable><mo fence=\"true\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\begin{pmatrix}\\square &amp; \\square &amp; \\square \\\\ \\square &amp; \\square &amp; \\square \\\\ \\square &amp; \\square &amp; \\square\\end{pmatrix}</annotation></semantics></math>",
     "unicodemath": "(■(□&□&□@□&□&□@□&□&□))",
     "domain": "Building Blocks",
@@ -4664,6 +5130,7 @@ export const mathEquations = [
   {
     "name": "2x2 bracket matrix",
     "aliases": "2 by 2 bmatrix,bracket matrix",
+    "latex": "\\bmatrix{\\placeholder{1} & \\placeholder{2} \\\\ \\placeholder{3} & \\placeholder{4}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo fence=\"true\">[</mo><mtable rowspacing=\"0.16em\" columnalign=\"center center\" columnspacing=\"1em\"><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr></mtable><mo fence=\"true\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\begin{bmatrix}\\square &amp; \\square \\\\ \\square &amp; \\square\\end{bmatrix}</annotation></semantics></math>",
     "unicodemath": "[■(□&□@□&□)]",
     "domain": "Building Blocks",
@@ -4674,6 +5141,7 @@ export const mathEquations = [
   {
     "name": "3x3 bracket matrix",
     "aliases": "3 by 3 bmatrix,bracket matrix",
+    "latex": "\\bmatrix{\\placeholder{1} & \\placeholder{2} & \\placeholder{3} \\\\ \\placeholder{4} & \\placeholder{5} & \\placeholder{6} \\\\ \\placeholder{7} & \\placeholder{8} & \\placeholder{9}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo fence=\"true\">[</mo><mtable rowspacing=\"0.16em\" columnalign=\"center center center\" columnspacing=\"1em\"><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr></mtable><mo fence=\"true\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\begin{bmatrix}\\square &amp; \\square &amp; \\square \\\\ \\square &amp; \\square &amp; \\square \\\\ \\square &amp; \\square &amp; \\square\\end{bmatrix}</annotation></semantics></math>",
     "unicodemath": "[■(□&□&□@□&□&□@□&□&□)]",
     "domain": "Building Blocks",
@@ -4684,6 +5152,7 @@ export const mathEquations = [
   {
     "name": "2x2 determinant",
     "aliases": "2 by 2 vmatrix,determinant matrix,vertical bar matrix",
+    "latex": "\\vmatrix{\\placeholder{1} & \\placeholder{2} \\\\ \\placeholder{3} & \\placeholder{4}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo fence=\"true\">∣</mo><mtable rowspacing=\"0.16em\" columnalign=\"center center\" columnspacing=\"1em\"><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr></mtable><mo fence=\"true\">∣</mo></mrow><annotation encoding=\"application/x-tex\">\\begin{vmatrix}\\square &amp; \\square \\\\ \\square &amp; \\square\\end{vmatrix}</annotation></semantics></math>",
     "unicodemath": "|■(□&□@□&□)|",
     "domain": "Building Blocks",
@@ -4694,6 +5163,7 @@ export const mathEquations = [
   {
     "name": "3x3 determinant",
     "aliases": "3 by 3 vmatrix,determinant matrix,vertical bar matrix",
+    "latex": "\\vmatrix{\\placeholder{1} & \\placeholder{2} & \\placeholder{3} \\\\ \\placeholder{4} & \\placeholder{5} & \\placeholder{6} \\\\ \\placeholder{7} & \\placeholder{8} & \\placeholder{9}}",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo fence=\"true\">∣</mo><mtable rowspacing=\"0.16em\" columnalign=\"center center center\" columnspacing=\"1em\"><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd><mtd><mstyle scriptlevel=\"0\" displaystyle=\"false\"><mi mathvariant=\"normal\">□</mi></mstyle></mtd></mtr></mtable><mo fence=\"true\">∣</mo></mrow><annotation encoding=\"application/x-tex\">\\begin{vmatrix}\\square &amp; \\square &amp; \\square \\\\ \\square &amp; \\square &amp; \\square \\\\ \\square &amp; \\square &amp; \\square\\end{vmatrix}</annotation></semantics></math>",
     "unicodemath": "|■(□&□&□@□&□&□@□&□&□)|",
     "domain": "Building Blocks",
