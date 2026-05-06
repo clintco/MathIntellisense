@@ -653,11 +653,16 @@ const _FN_RE = new RegExp(
   'gu'
 );
 
+// Binary and relational operators around which spaces are stripped.
+const _OP_RE = / *(=|\+|-|<|>|×|÷|±|∓|⋅|≤|≥|≠|≈|≡|∼|≃|≅|∝|⊂|⊃|⊆|⊇|⊊|⊋|∈|∉|∋|⊥|∥|∣|∤|≪|≫|⟺|⟹|⟸|⟼|↔|⇔|⇒|⇐|→|←|↦|↗|↘|∧|∨|∩|∪|⊕|⊖|⊗|⊘|⊙|⊓|⊔|∖) */g;
+
 function postProcess(s) {
   // Insert a space before function names immediately preceded by an alphanumeric
   // character so the renderer sees them as separate tokens. Handles cases like
   // "𝑖sin⁡𝜃" → "𝑖 sin⁡𝜃" where no LaTeX space existed between i and \sin.
   s = s.replace(_FN_RE, '$1 $2');
+  // Remove spaces around binary/relational operators.
+  s = s.replace(_OP_RE, '$1');
   return s.replace(/  +/g, ' ').trim();
 }
 
