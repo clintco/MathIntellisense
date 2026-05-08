@@ -2,13 +2,12 @@ import { useRef, useEffect } from "react";
 import {
   Toolbar,
   ToolbarButton,
-  ToolbarDivider,
   Tooltip,
 } from "@fluentui/react-components";
 import { MicRegular } from "@fluentui/react-icons";
 import "./EditorToolbar.css";
 
-const SYMBOL_ITEMS = [
+export const SYMBOL_ITEMS = [
   {
     id: "superscript",
     accessKey: "0",
@@ -85,6 +84,8 @@ const SYMBOL_ITEMS = [
   },
 ];
 
+export const TOOLBAR_BUTTON_COUNT = 1 + SYMBOL_ITEMS.length;
+
 /** Parse a MathML string and return an inline <math> element. */
 function parseMathML(mathmlString) {
   const tmp = document.createElement("div");
@@ -94,60 +95,19 @@ function parseMathML(mathmlString) {
   return math;
 }
 
-export function EditorToolbar({ editorRef, listRef, onInsert, onDictate, onReturnToList }) {
+export function EditorToolbar({ editorRef, onInsert, onDictate, highlightIndex = -1 }) {
   const wrapperRef = useRef(null);
-  // Keep a ref so the native listener always sees the latest callback without re-registering.
-  const onReturnToListRef = useRef(onReturnToList);
-  const handleItemClickRef = useRef(null);
-  useEffect(() => { onReturnToListRef.current = onReturnToList; });
 
+  // Drive visual focus ring from highlightIndex prop; DOM focus stays on the editor.
   useEffect(() => {
     const wrapper = wrapperRef.current;
     if (!wrapper) return;
-    const onFocusIn = (e) => {
-      if (wrapper.contains(e.target)) {
-        wrapper.querySelectorAll("[data-toolbar-focus]").forEach(b => b.removeAttribute("data-toolbar-focus"));
-        e.target.setAttribute("data-toolbar-focus", "");
-      }
-    };
-    const onFocusOut = (e) => {
-      if (!wrapper.contains(e.relatedTarget)) {
-        wrapper.querySelectorAll("[data-toolbar-focus]").forEach(b => b.removeAttribute("data-toolbar-focus"));
-      }
-    };
-    wrapper.addEventListener("focusin", onFocusIn);
-    wrapper.addEventListener("focusout", onFocusOut);
-    return () => {
-      wrapper.removeEventListener("focusin", onFocusIn);
-      wrapper.removeEventListener("focusout", onFocusOut);
-    };
-  }, []);
-
-  useEffect(() => {
-    // window capture fires before tabster's document capture listener,
-    // which is what Fluent UI uses to move Tab focus out of the toolbar.
-    const handler = (e) => {
-      if (!wrapperRef.current?.contains(document.activeElement)) return;
-
-      if (e.key === "Tab" || e.key === "ArrowDown") {
-        e.preventDefault();
-        e.stopImmediatePropagation();
-        onReturnToListRef.current ? onReturnToListRef.current() : editorRef.current?.focus();
-        return;
-      }
-
-      if (/^[0-9]$/.test(e.key) && !e.ctrlKey && !e.altKey && !e.metaKey) {
-        const item = SYMBOL_ITEMS.find(s => s.accessKey === e.key);
-        if (item) {
-          e.preventDefault();
-          e.stopPropagation();
-          handleItemClickRef.current?.(item);
-        }
-      }
-    };
-    window.addEventListener("keydown", handler, { capture: true });
-    return () => window.removeEventListener("keydown", handler, { capture: true });
-  }, [editorRef]);
+    wrapper.querySelectorAll("[data-toolbar-focus]").forEach(b => b.removeAttribute("data-toolbar-focus"));
+    if (highlightIndex >= 0) {
+      const btn = wrapper.querySelector(`[data-toolbar-index="${highlightIndex}"]`);
+      if (btn) btn.setAttribute("data-toolbar-focus", "");
+    }
+  }, [highlightIndex]);
 
   function handleItemClick(item) {
     if (item.symbol) {
@@ -158,26 +118,19 @@ export function EditorToolbar({ editorRef, listRef, onInsert, onDictate, onRetur
     }
     editorRef.current?.focus();
   }
-  handleItemClickRef.current = handleItemClick;
-
-  function handleEscapeKeyDown(e) {
-    if (e.key === "Escape") {
-      e.preventDefault();
-      editorRef.current?.focus();
-    }
-  }
 
   return (
-    <div ref={wrapperRef}>
+    <div ref={wrapperRef} id="editor-toolbar-container">
       <Toolbar
         className="editor-toolbar"
         aria-label="Math symbols"
         size="small"
-        onKeyDownCapture={handleEscapeKeyDown}
       >
         <Tooltip content="Dictate" relationship="label" showDelay={300}>
           <ToolbarButton
-            id="toolbar-dictate-btn"
+            id="toolbar-btn-0"
+            data-toolbar-index={0}
+            aria-label="Dictate"
             className="toolbar-btn--dictate"
             icon={<MicRegular />}
             onMouseDown={e => { e.preventDefault(); onDictate?.(); }}
@@ -185,9 +138,12 @@ export function EditorToolbar({ editorRef, listRef, onInsert, onDictate, onRetur
           />
         </Tooltip>
 
-        {SYMBOL_ITEMS.map(item => (
+        {SYMBOL_ITEMS.map((item, i) => (
           <Tooltip key={item.id} content={item.label} relationship="label" showDelay={300}>
             <ToolbarButton
+              id={`toolbar-btn-${i + 1}`}
+              data-toolbar-index={i + 1}
+              aria-label={item.label}
               className="toolbar-btn--symbol"
               icon={<span aria-hidden="true" className="toolbar-symbol">{item.display}</span>}
               onMouseDown={e => { e.preventDefault(); handleItemClick(item); }}

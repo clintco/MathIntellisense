@@ -2,6 +2,7 @@ import { useRef, useCallback, useState, useEffect } from "react";
 import { useIntellisense } from "./useIntellisense";
 import { Dropdown } from "./Dropdown";
 import { applyAutocorrect } from "./mathSymbols";
+import { SYMBOL_ITEMS, TOOLBAR_BUTTON_COUNT } from "./EditorToolbar";
 import "./Editor.css";
 
 /** Pixel position of the caret using the Selection API. */
@@ -51,8 +52,24 @@ export function Editor({ onChange }) {
   const { suggestions, selectedIndex, setSelectedIndex, isOpen, mode, activeCategory, reset: resetIS, goBack } = is;
   const [hideActiveDescendant, setHideActiveDescendant] = useState(false);
 
+  // Toolbar highlight: ref for synchronous reads inside callbacks, state for rendering.
+  const toolbarHighlightRef = useRef(-1);
+  const [toolbarHighlightIndex, setToolbarHighlightRaw] = useState(-1);
+  const setToolbarHighlightIndex = useCallback((val) => {
+    toolbarHighlightRef.current = val;
+    setToolbarHighlightRaw(val);
+  }, []);
+
   // Auto-focus on mount
   useEffect(() => { divRef.current?.focus(); }, []);
+
+  // Reset toolbar highlight when dropdown closes
+  useEffect(() => {
+    if (!isOpen) {
+      toolbarHighlightRef.current = -1;
+      setToolbarHighlightRaw(-1);
+    }
+  }, [isOpen]);
 
   /** Replace \query with content (string → text, Element → MathML). */
   const insertAtTrigger = useCallback((content) => {
@@ -138,69 +155,6 @@ export function Editor({ onChange }) {
     onChange?.(divRef.current.innerHTML);
   }, [is, resetIS, insertAtTrigger, onChange]);
 
-  const handleKeyDown = useCallback((e) => {
-    const div = divRef.current;
-
-    // Clear aria-activedescendant when moving the text cursor so NVDA/JAWS
-    // can read the input value instead of the focused list item (FluentUI pattern)
-    if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
-      setHideActiveDescendant(true);
-    } else {
-      setHideActiveDescendant(false);
-    }
-
-    if (e.key === "ArrowDown" && isOpen && selectedIndex < 0) {
-      e.preventDefault();
-      setSelectedIndex(-1);
-      document.getElementById("toolbar-dictate-btn")?.focus();
-      return;
-    }
-    if (e.key === "ArrowUp" && isOpen && selectedIndex === 0) {
-      e.preventDefault();
-      setSelectedIndex(-1);
-      document.getElementById("toolbar-dictate-btn")?.focus();
-      return;
-    }
-    if (e.key === "Tab" && isOpen) {
-      e.preventDefault();
-      setSelectedIndex(-1);
-      document.getElementById("toolbar-dictate-btn")?.focus();
-      return;
-    }
-
-    is.onKeyDown(e, "", 0, handleAccept);
-
-    // Autocorrect
-    if ((e.key === " " || e.key === "\\") && !e.defaultPrevented) {
-      const ctx = getCaretTextContext();
-      if (ctx) {
-        const result = applyAutocorrect(ctx.textNode.textContent, ctx.offset, e.key === "\\");
-        if (result) {
-          e.preventDefault();
-          ctx.textNode.textContent = result.newValue;
-          const sel = window.getSelection();
-          const range = document.createRange();
-          range.setStart(ctx.textNode, result.newCursor);
-          range.collapse(true);
-          sel.removeAllRanges();
-          sel.addRange(range);
-          resetIS();
-          setQuery("");
-          onChange?.(div.innerHTML);
-          // Re-trigger search if backslash was appended (chaining)
-          if (e.key === "\\") {
-            const newCtx = getCaretTextContext();
-            if (newCtx?.backslashIdx !== -1) {
-              triggerRef.current = { node: newCtx.textNode, offset: newCtx.backslashIdx };
-              is.onValueChange(newCtx.textNode.textContent, newCtx.offset);
-              setCaretPos(getCaretPixelPos());
-            }
-          }
-        }
-      }
-    }
-  }, [is, resetIS, handleAccept, onChange]);
-
   const handleToolbarInsert = useCallback(({ type, symbol, element, cursorSlot }) => {
     const div = divRef.current;
     if (!div) return;
@@ -262,14 +216,133 @@ export function Editor({ onChange }) {
     onChange?.(div.innerHTML);
   }, [onChange, resetIS, insertAtTrigger]);
 
-  const handleReturnToList = useCallback(() => {
-    setSelectedIndex(0);
-    divRef.current?.focus();
-  }, [setSelectedIndex]);
+  const handleKeyDown = useCallback((e) => {
+    const div = divRef.current;
 
-  const activeOptionId = isOpen && selectedIndex >= 0 && !hideActiveDescendant ? `math-option-${selectedIndex}` : undefined;
+    // Toolbar mode: all keys handled here, never passed to intellisense.
+    // DOM focus stays on the editor; toolbarHighlightRef drives the visual ring.
+    if (toolbarHighlightRef.current >= 0) {
+      if (e.key === "ArrowRight") {
+        e.preventDefault();
+        setToolbarHighlightIndex((toolbarHighlightRef.current + 1) % TOOLBAR_BUTTON_COUNT);
+        return;
+      }
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        setToolbarHighlightIndex((toolbarHighlightRef.current - 1 + TOOLBAR_BUTTON_COUNT) % TOOLBAR_BUTTON_COUNT);
+        return;
+      }
+      if (e.key === "ArrowDown" || (e.key === "Tab" && !e.shiftKey)) {
+        e.preventDefault();
+        setToolbarHighlightIndex(-1);
+        setSelectedIndex(0);
+        return;
+      }
+      if (e.key === "ArrowUp" || (e.key === "Tab" && e.shiftKey)) {
+        e.preventDefault();
+        setToolbarHighlightIndex(-1);
+        return;
+      }
+      if (e.key === "Escape") {
+        e.preventDefault();
+        setToolbarHighlightIndex(-1);
+        return;
+      }
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        const idx = toolbarHighlightRef.current;
+        if (idx > 0) {
+          const item = SYMBOL_ITEMS[idx - 1];
+          if (item) {
+            if (item.symbol) {
+              handleToolbarInsert({ type: "symbol", symbol: item.symbol });
+            } else if (item.mathml) {
+              const el = parseMathML(item.mathml);
+              if (el) handleToolbarInsert({ type: "mathml", element: el, cursorSlot: item.cursorSlot });
+            }
+          }
+        }
+        setToolbarHighlightIndex(-1);
+        return;
+      }
+      if (/^[0-9]$/.test(e.key) && !e.ctrlKey && !e.altKey && !e.metaKey) {
+        const item = SYMBOL_ITEMS.find(s => s.accessKey === e.key);
+        if (item) {
+          e.preventDefault();
+          if (item.symbol) {
+            handleToolbarInsert({ type: "symbol", symbol: item.symbol });
+          } else if (item.mathml) {
+            const el = parseMathML(item.mathml);
+            if (el) handleToolbarInsert({ type: "mathml", element: el, cursorSlot: item.cursorSlot });
+          }
+          setToolbarHighlightIndex(-1);
+          return;
+        }
+      }
+      return; // consume all other keys in toolbar mode
+    }
 
+    // Clear aria-activedescendant when moving the text cursor so NVDA/JAWS
+    // can read the input value instead of the focused list item (FluentUI pattern)
+    if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
+      setHideActiveDescendant(true);
+    } else {
+      setHideActiveDescendant(false);
+    }
 
+    if (e.key === "ArrowDown" && isOpen && selectedIndex < 0) {
+      e.preventDefault();
+      setToolbarHighlightIndex(0);
+      return;
+    }
+    if (e.key === "ArrowUp" && isOpen && selectedIndex === 0) {
+      e.preventDefault();
+      setSelectedIndex(-1);
+      setToolbarHighlightIndex(0);
+      return;
+    }
+    if (e.key === "Tab" && isOpen) {
+      e.preventDefault();
+      setToolbarHighlightIndex(0);
+      return;
+    }
+
+    is.onKeyDown(e, "", 0, handleAccept);
+
+    // Autocorrect
+    if ((e.key === " " || e.key === "\\") && !e.defaultPrevented) {
+      const ctx = getCaretTextContext();
+      if (ctx) {
+        const result = applyAutocorrect(ctx.textNode.textContent, ctx.offset, e.key === "\\");
+        if (result) {
+          e.preventDefault();
+          ctx.textNode.textContent = result.newValue;
+          const sel = window.getSelection();
+          const range = document.createRange();
+          range.setStart(ctx.textNode, result.newCursor);
+          range.collapse(true);
+          sel.removeAllRanges();
+          sel.addRange(range);
+          resetIS();
+          setQuery("");
+          onChange?.(div.innerHTML);
+          // Re-trigger search if backslash was appended (chaining)
+          if (e.key === "\\") {
+            const newCtx = getCaretTextContext();
+            if (newCtx?.backslashIdx !== -1) {
+              triggerRef.current = { node: newCtx.textNode, offset: newCtx.backslashIdx };
+              is.onValueChange(newCtx.textNode.textContent, newCtx.offset);
+              setCaretPos(getCaretPixelPos());
+            }
+          }
+        }
+      }
+    }
+  }, [is, resetIS, handleAccept, onChange, setSelectedIndex, setToolbarHighlightIndex, handleToolbarInsert, isOpen, selectedIndex]);
+
+  const activeOptionId = toolbarHighlightIndex >= 0
+    ? `toolbar-btn-${toolbarHighlightIndex}`
+    : (isOpen && selectedIndex >= 0 && !hideActiveDescendant ? `math-option-${selectedIndex}` : undefined);
 
   return (
     <div className="editor-wrapper">
@@ -284,7 +357,7 @@ export function Editor({ onChange }) {
         aria-multiline="true"
         aria-label="Math editor"
         aria-expanded={isOpen}
-        aria-owns={isOpen ? "math-symbol-menu" : undefined}
+        aria-owns={isOpen ? "math-symbol-menu editor-toolbar-container" : undefined}
         aria-controls="math-symbol-menu"
         aria-activedescendant={activeOptionId}
         spellCheck={false}
@@ -301,7 +374,7 @@ export function Editor({ onChange }) {
         onHover={setSelectedIndex}
         editorRef={divRef}
         onInsert={handleToolbarInsert}
-        onReturnToList={handleReturnToList}
+        toolbarHighlightIndex={toolbarHighlightIndex}
         onGoBack={goBack}
       />
     </div>

@@ -15,7 +15,7 @@ function HighlightedLabel({ text, query }) {
   );
 }
 
-export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, position, mode, activeCategory, query, unit = "symbols", editorRef, onInsert, onDictate, onReturnToList, onGoBack }) {
+export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, position, mode, activeCategory, query, unit = "symbols", editorRef, onInsert, onDictate, onGoBack, toolbarHighlightIndex = -1 }) {
   const listRef = useRef(null);
 
   useEffect(() => {
@@ -43,7 +43,7 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
       onMouseDown={(e) => e.preventDefault()}
     >
       <div className="dropdown-header">
-        <EditorToolbar editorRef={editorRef} listRef={listRef} onInsert={onInsert} onDictate={onDictate} onReturnToList={onReturnToList} />
+        <EditorToolbar editorRef={editorRef} onInsert={onInsert} onDictate={onDictate} highlightIndex={toolbarHighlightIndex} />
       </div>
 
       {mode === "category" && activeCategory && (
