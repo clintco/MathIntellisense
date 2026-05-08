@@ -10,14 +10,14 @@ import "./EditorToolbar.css";
 export const SYMBOL_ITEMS = [
   { id: "leq",      accessKey: "0", label: "Less than or equal to",    display: <>&#x2264;</>, symbol: "≤" },
   { id: "geq",      accessKey: "1", label: "Greater than or equal to", display: <>&#x2265;</>, symbol: "≥" },
-  { id: "sqrt",     accessKey: "2", label: "Square root",              display: <>&#x221A;</>, symbol: "√" },
+  { id: "neq",      accessKey: "2", label: "Not equal to",             display: <>&#x2260;</>, symbol: "≠" },
   { id: "pi",       accessKey: "3", label: "Pi",                       display: <>&#x03C0;</>, symbol: "π" },
-  { id: "infinity", accessKey: "4", label: "Infinity",                 display: <>&#x221E;</>, symbol: "∞" },
-  { id: "approx",   accessKey: "5", label: "Approximately equal to",   display: <>&#x2248;</>, symbol: "≈" },
+  { id: "plusminus",accessKey: "4", label: "Plus-minus",               display: <>&#x00B1;</>, symbol: "±" },
+  { id: "sqrt",     accessKey: "5", label: "Square root",              display: <>&#x221A;</>, symbol: "√" },
   { id: "sum",      accessKey: "6", label: "Summation",                display: <>&#x2211;</>, symbol: "∑" },
   { id: "integral", accessKey: "7", label: "Integral",                 display: <>&#x222B;</>, symbol: "∫" },
-  { id: "emptyset", accessKey: "8", label: "Empty set",                display: <>&#x2205;</>, symbol: "∅" },
-  { id: "neq",      accessKey: "9", label: "Not equal to",             display: <>&#x2260;</>, symbol: "≠" },
+  { id: "infinity", accessKey: "8", label: "Infinity",                 display: <>&#x221E;</>, symbol: "∞" },
+  { id: "approx",   accessKey: "9", label: "Approximately equal to",   display: <>&#x2248;</>, symbol: "≈" },
 ];
 
 export const TOOLBAR_BUTTON_COUNT = 1 + SYMBOL_ITEMS.length;
