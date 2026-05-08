@@ -131,7 +131,7 @@ export function EditorToolbar({ editorRef, listRef, onInsert, onDictate, onRetur
 
       if (e.key === "Tab" || e.key === "ArrowDown") {
         e.preventDefault();
-        e.stopPropagation();
+        e.stopImmediatePropagation();
         onReturnToListRef.current ? onReturnToListRef.current() : editorRef.current?.focus();
         return;
       }
