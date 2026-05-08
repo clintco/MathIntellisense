@@ -9,7 +9,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main:      resolve(__dirname, 'index.html'),
-        simple:    resolve(__dirname, 'simple.html'),
         symbols:   resolve(__dirname, 'symbols.html'),
         equations: resolve(__dirname, 'equations.html'),
       },
