@@ -28,6 +28,12 @@
   padding-bottom: 1px;
 }
 
+/* Keyboard focus ring for toolbar buttons — inset avoids overflow:hidden clipping */
+[data-toolbar-focus] {
+  outline: none !important;
+  box-shadow: inset 0 0 0 2px var(--colorBrandForeground1) !important;
+}
+
 /* Remove top border radius from editor when toolbar is present */
 .editor-wrapper--with-toolbar .editor-textarea {
   border-top-left-radius: 0;

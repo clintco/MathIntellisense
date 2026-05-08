@@ -33,12 +33,15 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
     }
   }, [selectedIndex, mode]);
 
-  if (!suggestions.length) {
-    return <ul id="math-symbol-menu" role="menu" aria-label="Math symbol suggestions" style={{ display: "none" }} />;
-  }
+  const hasItems = suggestions.length > 0;
 
   return (
-    <div className="dropdown" style={{ top: position.top, left: position.left }} onMouseDown={(e) => e.preventDefault()}>
+    <div
+      className="dropdown"
+      style={hasItems ? { top: position.top, left: position.left } : { display: "none" }}
+      aria-hidden={!hasItems}
+      onMouseDown={(e) => e.preventDefault()}
+    >
       <div className="dropdown-header">
         <EditorToolbar editorRef={editorRef} listRef={listRef} onInsert={onInsert} onDictate={onDictate} onReturnToList={onReturnToList} />
       </div>

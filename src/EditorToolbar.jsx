@@ -102,6 +102,28 @@ export function EditorToolbar({ editorRef, listRef, onInsert, onDictate, onRetur
   useEffect(() => { onReturnToListRef.current = onReturnToList; });
 
   useEffect(() => {
+    const wrapper = wrapperRef.current;
+    if (!wrapper) return;
+    const onFocusIn = (e) => {
+      if (wrapper.contains(e.target)) {
+        wrapper.querySelectorAll("[data-toolbar-focus]").forEach(b => b.removeAttribute("data-toolbar-focus"));
+        e.target.setAttribute("data-toolbar-focus", "");
+      }
+    };
+    const onFocusOut = (e) => {
+      if (!wrapper.contains(e.relatedTarget)) {
+        wrapper.querySelectorAll("[data-toolbar-focus]").forEach(b => b.removeAttribute("data-toolbar-focus"));
+      }
+    };
+    wrapper.addEventListener("focusin", onFocusIn);
+    wrapper.addEventListener("focusout", onFocusOut);
+    return () => {
+      wrapper.removeEventListener("focusin", onFocusIn);
+      wrapper.removeEventListener("focusout", onFocusOut);
+    };
+  }, []);
+
+  useEffect(() => {
     // window capture fires before tabster's document capture listener,
     // which is what Fluent UI uses to move Tab focus out of the toolbar.
     const handler = (e) => {
