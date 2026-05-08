@@ -149,6 +149,18 @@ export function Editor({ onChange }) {
       setHideActiveDescendant(false);
     }
 
+    if (e.key === "ArrowDown" && isOpen && selectedIndex < 0) {
+      e.preventDefault();
+      setSelectedIndex(-1);
+      document.getElementById("toolbar-dictate-btn")?.focus();
+      return;
+    }
+    if (e.key === "ArrowUp" && isOpen && selectedIndex === 0) {
+      e.preventDefault();
+      setSelectedIndex(-1);
+      document.getElementById("toolbar-dictate-btn")?.focus();
+      return;
+    }
     if (e.key === "Tab" && isOpen) {
       e.preventDefault();
       setSelectedIndex(-1);

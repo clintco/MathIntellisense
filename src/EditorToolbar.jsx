@@ -107,7 +107,7 @@ export function EditorToolbar({ editorRef, listRef, onInsert, onDictate, onRetur
     const handler = (e) => {
       if (!wrapperRef.current?.contains(document.activeElement)) return;
 
-      if (e.key === "Tab") {
+      if (e.key === "Tab" || e.key === "ArrowDown") {
         e.preventDefault();
         e.stopPropagation();
         onReturnToListRef.current ? onReturnToListRef.current() : editorRef.current?.focus();
