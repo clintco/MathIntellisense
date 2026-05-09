@@ -37,6 +37,7 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
 
   return (
     <div
+      role="presentation"
       className="dropdown"
       style={hasItems ? { top: position.top, left: position.left } : { display: "none" }}
       aria-hidden={!hasItems}
