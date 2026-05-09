@@ -130,10 +130,12 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
                 <span className="item-cat">{item.category}</span>
               </li>
             );
-          // Separator between the two sections — placed before whichever section comes second
-          const prevSection = suggestions[idx - 1]?.section;
-          const sep = (mode === "search" && prevSection && item.section && item.section !== prevSection)
-            ? <li key="__sep" className="dropdown-separator" role="separator" aria-hidden="true" />
+          // Separator between sections, and between pinned vs unpinned categories within a section
+          const prev = suggestions[idx - 1];
+          const crossesSection = mode === "search" && prev?.section && item.section && prev.section !== item.section;
+          const crossesPinBoundary = prev?.section === item.section && prev?.pinned && item.pinned === false;
+          const sep = (crossesSection || crossesPinBoundary)
+            ? <li key={`__sep-${idx}`} className="dropdown-separator" role="separator" aria-hidden="true" />
             : null;
           return sep ? [sep, el] : el;
         })}

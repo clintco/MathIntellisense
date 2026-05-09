@@ -11,13 +11,38 @@ const equationsByDomain = allEquationItems.reduce((acc, e) => {
   return acc;
 }, {});
 
+const PINNED_SYMBOL_CATEGORIES = [
+  "Basic Symbols and Operations",
+  "Calculus and Analysis",
+  "Geometry and Vectors",
+];
+const PINNED_EQUATION_DOMAINS = [
+  "Algebra & Number Systems",
+  "Calculus & Analysis",
+  "Geometry & Trigonometry",
+];
+
+function sortWithPinned(items, pinned) {
+  const pinnedIdx = new Map(pinned.map((c, i) => [c, i]));
+  return [...items]
+    .map(it => ({ ...it, pinned: pinnedIdx.has(it.category) }))
+    .sort((a, b) => {
+      const ai = pinnedIdx.has(a.category) ? pinnedIdx.get(a.category) : Infinity;
+      const bi = pinnedIdx.has(b.category) ? pinnedIdx.get(b.category) : Infinity;
+      if (ai !== bi) return ai - bi;
+      return a.category.localeCompare(b.category);
+    });
+}
+
 const allCategoryItems = [
-  ...allCategories
-    .map(cat => ({ type: "category", section: "unicode", category: cat, count: getSymbolsByCategory(cat).length, score: 0 }))
-    .sort((a, b) => a.category.localeCompare(b.category)),
-  ...Object.keys(equationsByDomain)
-    .sort()
-    .map(domain => ({ type: "category", section: "equations", category: domain, count: equationsByDomain[domain].length, score: 0 })),
+  ...sortWithPinned(
+    allCategories.map(cat => ({ type: "category", section: "unicode", category: cat, count: getSymbolsByCategory(cat).length, score: 0 })),
+    PINNED_SYMBOL_CATEGORIES,
+  ),
+  ...sortWithPinned(
+    Object.keys(equationsByDomain).map(domain => ({ type: "category", section: "equations", category: domain, count: equationsByDomain[domain].length, score: 0 })),
+    PINNED_EQUATION_DOMAINS,
+  ),
 ];
 
 /**
