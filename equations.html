@@ -256,7 +256,7 @@
           <td>fractional exponent</td>
           <td class="eq-aliases">rational exponent</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>a</mi><mrow><mi>m</mi><mi mathvariant="normal">/</mi><mi>n</mi></mrow></msup><mo>=</mo><mroot><msup><mi>a</mi><mi>m</mi></msup><mi>n</mi></mroot></mrow><annotation encoding="application/x-tex">a^{m/n} = \sqrt[n]{a^m}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑎^(𝑚/𝑛)=𝑛√(𝑎^𝑚)</code></td>
+          <td class="eq-unicode"><code>𝑎^(𝑚/𝑛)=√(𝑛&amp;𝑎^𝑚)</code></td>
           <td class="eq-desc">Fractional exponent as a radical</td>
         </tr>
         <tr>
@@ -973,21 +973,21 @@
           <td>root test</td>
           <td class="eq-aliases">nth root test</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mroot><mrow><mi mathvariant="normal">∣</mi><msub><mi>a</mi><mi>n</mi></msub><mi mathvariant="normal">∣</mi></mrow><mi>n</mi></mroot><mo>&lt;</mo><mn>1</mn><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mtext>converges</mtext></mrow><annotation encoding="application/x-tex">\lim_{n\to\infty}\sqrt[n]{|a_n|} &lt; 1 \implies \text{converges}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>lim_(𝑛→∞)⁡𝑛√(|𝑎_𝑛|)&lt;1⟹converges</code></td>
+          <td class="eq-unicode"><code>lim_(𝑛→∞)⁡√(𝑛&amp;|𝑎_𝑛|)&lt;1⟹converges</code></td>
           <td class="eq-desc">Root test for absolute convergence of a series</td>
         </tr>
         <tr>
           <td>radius of convergence</td>
           <td class="eq-aliases">power series radius</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>R</mi><mo>=</mo><mfrac><mn>1</mn><mrow><munder><mrow><mi mathvariant="normal">lim sup</mi><mo>⁡</mo></mrow><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mroot><mrow><mi mathvariant="normal">∣</mi><msub><mi>a</mi><mi>n</mi></msub><mi mathvariant="normal">∣</mi></mrow><mi>n</mi></mroot></mrow></mfrac></mrow><annotation encoding="application/x-tex">R = \frac{1}{\limsup_{n\to\infty}\sqrt[n]{|a_n|}}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑅=1/lim sup_(𝑛→∞)⁡𝑛√(|𝑎_𝑛|)</code></td>
+          <td class="eq-unicode"><code>𝑅=1/lim sup_(𝑛→∞)⁡√(𝑛&amp;|𝑎_𝑛|)</code></td>
           <td class="eq-desc">Radius of convergence of a power series via Cauchy-Hadamard</td>
         </tr>
         <tr>
           <td>directional derivative</td>
           <td class="eq-aliases">derivative in direction u</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>D</mi><mi mathvariant="bold">u</mi></msub><mi>f</mi><mo>=</mo><mi mathvariant="normal">∇</mi><mi>f</mi><mo>⋅</mo><mi mathvariant="bold">u</mi></mrow><annotation encoding="application/x-tex">D_{\mathbf{u}}f = \nabla f \cdot \mathbf{u}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐷_𝑢 𝑓=∇ 𝑓⋅𝑢</code></td>
+          <td class="eq-unicode"><code>𝐷_𝐮 𝑓=∇ 𝑓⋅𝐮</code></td>
           <td class="eq-desc">Directional derivative of f in the direction of unit vector u</td>
         </tr>
         <tr>
@@ -1022,14 +1022,14 @@
           <td>Stokes' theorem</td>
           <td class="eq-aliases">Stokes theorem</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mo>∮</mo><mi>C</mi></msub><mi mathvariant="bold">F</mi><mo>⋅</mo><mi>d</mi><mi mathvariant="bold">r</mi><mo>=</mo><msub><mo>∬</mo><mi>S</mi></msub><mo stretchy="false">(</mo><mi mathvariant="normal">∇</mi><mo>×</mo><mi mathvariant="bold">F</mi><mo stretchy="false">)</mo><mo>⋅</mo><mi>d</mi><mi mathvariant="bold">S</mi></mrow><annotation encoding="application/x-tex">\oint_{C}\mathbf{F}\cdot d\mathbf{r} = \iint_{S}(\nabla\times\mathbf{F})\cdot d\mathbf{S}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>∮_𝐶𝐹⋅𝑑𝑟=∬_𝑆(∇×𝐹)⋅𝑑𝑆</code></td>
+          <td class="eq-unicode"><code>∮_𝐶𝐅⋅𝑑𝐫=∬_𝑆(∇×𝐅)⋅𝑑𝐒</code></td>
           <td class="eq-desc">Stokes' theorem relating a line integral to a surface integral</td>
         </tr>
         <tr>
           <td>divergence theorem</td>
           <td class="eq-aliases">Gauss's theorem</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mo>∯</mo><mi>S</mi></msub><mi mathvariant="bold">F</mi><mo>⋅</mo><mi>d</mi><mi mathvariant="bold">S</mi><mo>=</mo><msub><mo>∭</mo><mi>V</mi></msub><mo stretchy="false">(</mo><mi mathvariant="normal">∇</mi><mo>⋅</mo><mi mathvariant="bold">F</mi><mo stretchy="false">)</mo><mtext> </mtext><mi>d</mi><mi>V</mi></mrow><annotation encoding="application/x-tex">\oiint_{S}\mathbf{F}\cdot d\mathbf{S} = \iiint_{V}(\nabla\cdot\mathbf{F})\,dV</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>∯_𝑆𝐹⋅𝑑𝑆=∭_𝑉(∇⋅𝐹)𝑑𝑉</code></td>
+          <td class="eq-unicode"><code>∯_𝑆𝐅⋅𝑑𝐒=∭_𝑉(∇⋅𝐅)𝑑𝑉</code></td>
           <td class="eq-desc">Divergence theorem relating surface flux to volume divergence</td>
         </tr>
         <tr>
@@ -2477,7 +2477,7 @@
           <td>dot product</td>
           <td class="eq-aliases">scalar product</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="bold">a</mi><mo>⋅</mo><mi mathvariant="bold">b</mi><mo>=</mo><mi mathvariant="normal">∣</mi><mi mathvariant="bold">a</mi><mi mathvariant="normal">∣</mi><mi mathvariant="normal">∣</mi><mi mathvariant="bold">b</mi><mi mathvariant="normal">∣</mi><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding="application/x-tex">\mathbf{a} \cdot \mathbf{b} = |\mathbf{a}||\mathbf{b}|\cos\theta</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑎⋅𝑏=|𝑎||𝑏|cos⁡𝜃</code></td>
+          <td class="eq-unicode"><code>𝐚⋅𝐛=|𝐚||𝐛|cos⁡𝜃</code></td>
           <td class="eq-desc">Dot product expressed in terms of magnitudes and angle</td>
         </tr>
         <tr>
@@ -2491,7 +2491,7 @@
           <td>eigenvalue equation</td>
           <td class="eq-aliases">eigenvector equation</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mi mathvariant="bold">v</mi><mo>=</mo><mi>λ</mi><mi mathvariant="bold">v</mi></mrow><annotation encoding="application/x-tex">A\mathbf{v} = \lambda\mathbf{v}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐴𝑣=𝜆𝑣</code></td>
+          <td class="eq-unicode"><code>𝐴𝐯=𝜆𝐯</code></td>
           <td class="eq-desc">Eigenvalue equation for matrix A</td>
         </tr>
         <tr>
@@ -2505,28 +2505,28 @@
           <td>vector projection</td>
           <td class="eq-aliases">proj of u onto v</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mtext>proj</mtext><mi mathvariant="bold">v</mi></msub><mi mathvariant="bold">u</mi><mo>=</mo><mfrac><mrow><mi mathvariant="bold">u</mi><mo>⋅</mo><mi mathvariant="bold">v</mi></mrow><mrow><mi mathvariant="normal">∣</mi><mi mathvariant="bold">v</mi><msup><mi mathvariant="normal">∣</mi><mn>2</mn></msup></mrow></mfrac><mi mathvariant="bold">v</mi></mrow><annotation encoding="application/x-tex">\text{proj}_{\mathbf{v}}\mathbf{u} = \frac{\mathbf{u}\cdot\mathbf{v}}{|\mathbf{v}|^2}\mathbf{v}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>proj_𝑣𝑢=𝑢⋅𝑣/|𝑣|^2𝑣</code></td>
+          <td class="eq-unicode"><code>proj_𝐯𝐮=𝐮⋅𝐯/|𝐯|^2𝐯</code></td>
           <td class="eq-desc">Projection of vector u onto vector v</td>
         </tr>
         <tr>
           <td>cross product magnitude</td>
           <td class="eq-aliases">magnitude of a cross b</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∣</mi><mi mathvariant="bold">a</mi><mo>×</mo><mi mathvariant="bold">b</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mi mathvariant="normal">∣</mi><mi mathvariant="bold">a</mi><mi mathvariant="normal">∣</mi><mi mathvariant="normal">∣</mi><mi mathvariant="bold">b</mi><mi mathvariant="normal">∣</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding="application/x-tex">|\mathbf{a}\times\mathbf{b}| = |\mathbf{a}||\mathbf{b}|\sin\theta</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>|𝑎×𝑏|=|𝑎||𝑏|sin⁡𝜃</code></td>
+          <td class="eq-unicode"><code>|𝐚×𝐛|=|𝐚||𝐛|sin⁡𝜃</code></td>
           <td class="eq-desc">Magnitude of the cross product</td>
         </tr>
         <tr>
           <td>cross product components</td>
           <td class="eq-aliases">a cross b formula</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="bold">a</mi><mo>×</mo><mi mathvariant="bold">b</mi><mo>=</mo><mrow><mo fence="true">∣</mo><mtable rowspacing="0.16em" columnalign="center center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi mathvariant="bold">i</mi></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mi mathvariant="bold">j</mi></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mi mathvariant="bold">k</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mn>1</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mn>2</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mn>3</mn></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>b</mi><mn>1</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>b</mi><mn>2</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>b</mi><mn>3</mn></msub></mstyle></mtd></mtr></mtable><mo fence="true">∣</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbf{a}\times\mathbf{b} = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ a_1 &amp; a_2 &amp; a_3 \\ b_1 &amp; b_2 &amp; b_3 \end{vmatrix}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑎×𝑏=𝑖&amp;𝑗&amp;𝑘𝑎_1&amp;𝑎_2&amp;𝑎_3𝑏_1&amp;𝑏_2&amp;𝑏_3</code></td>
+          <td class="eq-unicode"><code>𝐚×𝐛=𝐢&amp;𝐣&amp;𝐤𝑎_1&amp;𝑎_2&amp;𝑎_3𝑏_1&amp;𝑏_2&amp;𝑏_3</code></td>
           <td class="eq-desc">Cross product in component form via determinant</td>
         </tr>
         <tr>
           <td>Cauchy-Schwarz inequality</td>
           <td class="eq-aliases">Cauchy Schwarz</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∣</mi><mi mathvariant="bold">a</mi><mo>⋅</mo><mi mathvariant="bold">b</mi><mi mathvariant="normal">∣</mi><mo>≤</mo><mi mathvariant="normal">∣</mi><mi mathvariant="bold">a</mi><mi mathvariant="normal">∣</mi><mi mathvariant="normal">∣</mi><mi mathvariant="bold">b</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|\mathbf{a}\cdot\mathbf{b}| \leq |\mathbf{a}||\mathbf{b}|</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>|𝑎⋅𝑏|≤|𝑎||𝑏|</code></td>
+          <td class="eq-unicode"><code>|𝐚⋅𝐛|≤|𝐚||𝐛|</code></td>
           <td class="eq-desc">Cauchy-Schwarz inequality for vectors</td>
         </tr>
         <tr>
@@ -3227,7 +3227,7 @@
           <td>Maxwell's equations (grouped)</td>
           <td class="eq-aliases">Gauss's law electric; Gauss's law magnetic; Faraday's law; Ampere-Maxwell law</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∇</mi><mo>⋅</mo><mi mathvariant="bold">E</mi><mo>=</mo><mfrac><mi>ρ</mi><msub><mi>ε</mi><mn>0</mn></msub></mfrac><mo separator="true">;</mo><mtext>  </mtext><mi mathvariant="normal">∇</mi><mo>⋅</mo><mi mathvariant="bold">B</mi><mo>=</mo><mn>0</mn><mo separator="true">;</mo><mtext>  </mtext><mi mathvariant="normal">∇</mi><mo>×</mo><mi mathvariant="bold">E</mi><mo>=</mo><mo>−</mo><mfrac><mrow><mi mathvariant="normal">∂</mi><mi mathvariant="bold">B</mi></mrow><mrow><mi mathvariant="normal">∂</mi><mi>t</mi></mrow></mfrac><mo separator="true">;</mo><mtext>  </mtext><mi mathvariant="normal">∇</mi><mo>×</mo><mi mathvariant="bold">B</mi><mo>=</mo><msub><mi>μ</mi><mn>0</mn></msub><mi mathvariant="bold">J</mi><mo>+</mo><msub><mi>μ</mi><mn>0</mn></msub><msub><mi>ε</mi><mn>0</mn></msub><mfrac><mrow><mi mathvariant="normal">∂</mi><mi mathvariant="bold">E</mi></mrow><mrow><mi mathvariant="normal">∂</mi><mi>t</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\nabla \cdot \mathbf{E} = \frac{\rho}{\varepsilon_0};\; \nabla \cdot \mathbf{B} = 0;\; \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t};\; \nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>∇⋅𝐸=𝜌/𝜀_0; ∇⋅𝐵=0; ∇×𝐸=-∂𝐵/∂𝑡; ∇×𝐵=𝜇_0 𝐽+𝜇_0 𝜀_0 ∂𝐸/∂𝑡</code></td>
+          <td class="eq-unicode"><code>∇⋅𝐄=𝜌/𝜀_0; ∇⋅𝐁=0; ∇×𝐄=-∂𝐁/∂𝑡; ∇×𝐁=𝜇_0 𝐉+𝜇_0 𝜀_0 ∂𝐄/∂𝑡</code></td>
           <td class="eq-desc">Maxwell's four equations of electromagnetism (differential form)</td>
         </tr>
         <tr>
@@ -3536,7 +3536,7 @@
           <td>OLS normal equations</td>
           <td class="eq-aliases">matrix regression</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mover accent="true"><mi mathvariant="bold-italic">β</mi><mo>^</mo></mover><mo>=</mo><mo stretchy="false">(</mo><msup><mi mathvariant="bold">X</mi><mi>T</mi></msup><mi mathvariant="bold">X</mi><msup><mo stretchy="false">)</mo><mrow><mo>−</mo><mn>1</mn></mrow></msup><msup><mi mathvariant="bold">X</mi><mi>T</mi></msup><mi mathvariant="bold">y</mi></mrow><annotation encoding="application/x-tex">\hat{\boldsymbol{\beta}} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{y}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝛽̂=(𝑋^𝑇𝑋)^(-1)𝑋^𝑇𝑦</code></td>
+          <td class="eq-unicode"><code>𝜷̂=(𝐗^𝑇𝐗)^(-1)𝐗^𝑇𝐲</code></td>
           <td class="eq-desc">OLS estimator in matrix form for multiple regression</td>
         </tr>
         <tr>
@@ -3599,14 +3599,14 @@
           <td>L1 norm</td>
           <td class="eq-aliases">Manhattan norm</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∥</mi><mi mathvariant="bold">x</mi><msub><mi mathvariant="normal">∥</mi><mn>1</mn></msub><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><mi mathvariant="normal">∣</mi><msub><mi>x</mi><mi>i</mi></msub><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">\|\mathbf{x}\|_1 = \sum_{i}|x_i|</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>‖𝑥‖_1=∑_𝑖|𝑥_𝑖|</code></td>
+          <td class="eq-unicode"><code>‖𝐱‖_1=∑_𝑖|𝑥_𝑖|</code></td>
           <td class="eq-desc">L1 norm used in Lasso regularization</td>
         </tr>
         <tr>
           <td>L2 norm</td>
           <td class="eq-aliases">Euclidean norm</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∥</mi><mi mathvariant="bold">x</mi><msub><mi mathvariant="normal">∥</mi><mn>2</mn></msub><mo>=</mo><msqrt><mrow><munder><mo>∑</mo><mi>i</mi></munder><msubsup><mi>x</mi><mi>i</mi><mn>2</mn></msubsup></mrow></msqrt></mrow><annotation encoding="application/x-tex">\|\mathbf{x}\|_2 = \sqrt{\sum_{i}x_i^2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>‖𝑥‖_2=√(∑_𝑖 𝑥_𝑖^2)</code></td>
+          <td class="eq-unicode"><code>‖𝐱‖_2=√(∑_𝑖 𝑥_𝑖^2)</code></td>
           <td class="eq-desc">L2 norm used in Ridge regularization</td>
         </tr>
         <tr>

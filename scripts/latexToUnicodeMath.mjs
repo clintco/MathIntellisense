@@ -10,7 +10,7 @@
 
 // ── Greek letters ──────────────────────────────────────────────────────────
 const GREEK = {
-  alpha:'α',beta:'β',gamma:'γ',delta:'δ',epsilon:'ε',varepsilon:'ε',
+  alpha:'α',beta:'β',gamma:'γ',delta:'δ',epsilon:'ϵ',varepsilon:'ε',
   zeta:'ζ',eta:'η',theta:'θ',vartheta:'ϑ',iota:'ι',kappa:'κ',
   lambda:'λ',mu:'μ',nu:'ν',xi:'ξ',pi:'π',varpi:'ϖ',
   rho:'ρ',varrho:'ϱ',sigma:'σ',varsigma:'ς',tau:'τ',upsilon:'υ',
@@ -124,7 +124,7 @@ const ITALIC_GREEK = {
   'σ':'\u{1D70E}','τ':'\u{1D70F}','υ':'\u{1D710}','φ':'\u{1D711}',
   'χ':'\u{1D712}','ψ':'\u{1D713}','ω':'\u{1D714}',
   // variant letters
-  'ϑ':'\u{1D717}','ϕ':'\u{1D719}','ϖ':'\u{1D71B}','ϱ':'\u{1D71A}','ς':'\u{1D70D}',
+  'ϵ':'\u{1D716}','ϑ':'\u{1D717}','ϕ':'\u{1D719}','ϖ':'\u{1D71B}','ϱ':'\u{1D71A}','ς':'\u{1D70D}',
   // uppercase
   'Α':'\u{1D6E2}','Β':'\u{1D6E3}','Γ':'\u{1D6E4}','Δ':'\u{1D6E5}',
   'Ε':'\u{1D6E6}','Ζ':'\u{1D6E7}','Η':'\u{1D6E8}','Θ':'\u{1D6E9}',
@@ -380,8 +380,15 @@ class Parser {
     if (cmd === 'sqrt') {
       const deg = this.parseOptArg();
       const arg = this.parseArg();
-      const inner = this.sqrtWrap(arg);
-      const result = deg ? deg + '√' + inner : '√' + inner;
+      if (deg !== null && deg !== '') {
+        // UnicodeMath n-ary root: √(degree&radicand).  The "&" is the
+        // n-ary argument separator; the surrounding parens are
+        // required so the build-up engine groups both args under the
+        // radical.
+        const result = '√(' + deg + '&' + arg + ')';
+        return this.nextIsAlnum() ? result + ' ' : result;
+      }
+      const result = '√' + this.sqrtWrap(arg);
       return this.nextIsAlnum() ? result + ' ' : result;
     }
 
@@ -407,9 +414,14 @@ class Parser {
       return result;
     }
 
-    // \mathbf{...} / \boldsymbol{...} — keep content (bold hint only)
-    if (['mathbf','boldsymbol','bm'].includes(cmd)) {
-      return this.parseArg();
+    // \mathbf{...}   → upright bold (Latin block U+1D400, Greek U+1D6A8)
+    // \boldsymbol{}  → italic  bold (Latin block U+1D468, Greek U+1D71C)
+    // \bm            → same as boldsymbol (the `bm` package)
+    if (cmd === 'mathbf') {
+      return applyBold(this.parseArg(), false);
+    }
+    if (cmd === 'boldsymbol' || cmd === 'bm') {
+      return applyBold(this.parseArg(), true);
     }
 
     // \mathit{...}
@@ -642,6 +654,61 @@ const DSTRUCK_MAP = {
 };
 function toDoubleStruck(s) {
   return [...s].map(c => DSTRUCK_MAP[c] || c).join('');
+}
+
+// ── Math bold ─────────────────────────────────────────────────────────────
+// `\mathbf` produces *upright* bold; `\boldsymbol`/`\bm` produce bold *italic*.
+// The input is already post-parsing, so single Latin letters arrive as math
+// italic (U+1D434..U+1D467) and Greek as math italic Greek (U+1D6E2..U+1D71B).
+// We convert by simple block-to-block offsets:
+//   Latin italic  → bold        : -0x34   (U+1D434 → U+1D400)
+//   Latin italic  → bold italic : +0x34   (U+1D434 → U+1D468)
+//   Greek italic  → bold        : -0x3A   (U+1D6E2 → U+1D6A8)
+//   Greek italic  → bold italic : +0x3A   (U+1D6E2 → U+1D71C)
+// Plain ASCII / Greek chars and digits also get bolded so input that
+// happened to skip italic conversion (e.g. inside \text) still ends up bold.
+function applyBold(s, italic /* boolean: true → bold-italic */) {
+  const latinOffset = italic ?  0x34 : -0x34;
+  const greekOffset = italic ?  0x3A : -0x3A;
+  let out = '';
+  for (const c of s) {
+    const code = c.codePointAt(0);
+    // Already math-italic Latin (U+1D434..U+1D467, with U+1D455 unused)
+    if (code >= 0x1D434 && code <= 0x1D467) {
+      out += String.fromCodePoint(code + latinOffset);
+      continue;
+    }
+    // Math italic h is special-cased as U+210E (Planck constant ℎ)
+    if (code === 0x210E) {
+      out += italic ? '𝒉' : '𝐡';
+      continue;
+    }
+    // Already math-italic Greek (U+1D6E2..U+1D71B)
+    if (code >= 0x1D6E2 && code <= 0x1D71B) {
+      out += String.fromCodePoint(code + greekOffset);
+      continue;
+    }
+    // Plain ASCII A–Z
+    if (code >= 0x41 && code <= 0x5A) {
+      const base = italic ? 0x1D468 : 0x1D400;
+      out += String.fromCodePoint(base + (code - 0x41));
+      continue;
+    }
+    // Plain ASCII a–z
+    if (code >= 0x61 && code <= 0x7A) {
+      const base = italic ? 0x1D482 : 0x1D41A;
+      out += String.fromCodePoint(base + (code - 0x61));
+      continue;
+    }
+    // Digits → math bold digits (no italic-bold digit block exists; the
+    // bold variants are used for both `\mathbf` and `\boldsymbol`)
+    if (code >= 0x30 && code <= 0x39) {
+      out += String.fromCodePoint(0x1D7CE + (code - 0x30));
+      continue;
+    }
+    out += c;
+  }
+  return out;
 }
 
 // ── Post-processing ────────────────────────────────────────────────────────
