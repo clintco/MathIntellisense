@@ -733,6 +733,21 @@ function postProcess(s) {
   return s.replace(/  +/g, ' ').trim();
 }
 
+// ── Supported-command allowlist ─────────────────────────────────────────────
+// The set of LaTeX command names this converter recognizes. Used by the input
+// detector (latex-vs-description classifier) as the single source of truth for
+// "is this a known \command".  GREEK/CMD/ACCENT cover the table-driven commands;
+// the explicit list below covers the arg-taking / specially-handled commands
+// that live in convertToken() branches rather than those maps.
+export const SUPPORTED_COMMANDS = new Set([
+  ...Object.keys(GREEK), ...Object.keys(CMD), ...Object.keys(ACCENT),
+  'frac','dfrac','tfrac','sqrt','binom','tbinom','dbinom','pmod',
+  'text','mbox','mathrm','mathup','mathbf','boldsymbol','bm','mathit',
+  'mathcal','mathscr','mathbb','operatorname','vec',
+  'overline','underline','overbrace','underbrace','overset','stackrel','underset',
+  'left','right','not','begin','end',
+]);
+
 // ── Public API ─────────────────────────────────────────────────────────────
 export function latexToUnicodeMath(latex) {
   if (!latex) return null;
