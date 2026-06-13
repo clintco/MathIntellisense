@@ -505,6 +505,15 @@ class Parser {
       return next + '\u0338'; // combining long solidus overlay
     }
 
+    // \placeholder{n} — empty-argument box (Word / UnicodeMath placeholder □)
+    if (cmd === 'placeholder') { this.parseArg(); return '□'; }
+
+    // \pmatrix{...}, \bmatrix{...}, … — plainTeX matrix macros (body in a {group};
+    // cf. parseEnvironment for the \begin{pmatrix} … \end{pmatrix} form).
+    if (MATRIX_DELIM[cmd] !== undefined) {
+      return this.parseMatrixMacro(cmd);
+    }
+
     // \begin{env} ... \end{env}
     if (cmd === 'begin') {
       return this.parseEnvironment();
@@ -618,6 +627,31 @@ class Parser {
 
     const inner = rows.map(r => r.join('&')).join('@');
     const [L, R] = envName === 'cases' ? ['{',''] : (MATRIX_DELIM[envName] || ['','']);
+    return L + '\u25A0(' + inner + ')' + R;
+  }
+
+  // Parse \pmatrix{ body } \u2014 the plainTeX matrix macro form. Same &/\\ cell & row
+  // separators as parseMatrix, but the body is delimited by a { } group rather than
+  // \begin{env} \u2026 \end{env}.
+  parseMatrixMacro(name) {
+    while (!this.done() && this.peek().t === 'space') this.next();
+    if (!this.done() && this.peek().t === 'char' && this.peek().v === '{') this.next();
+    const rows = [];
+    let   row  = [];
+    const parts = [];
+    while (!this.done()) {
+      while (!this.done() && this.peek().t === 'space') this.next();
+      if (this.done()) break;
+      const tok = this.peek();
+      if (tok.t === 'char' && tok.v === '}') { this.next(); break; } // end of macro group
+      if (tok.t === 'cmd'  && tok.v === '\\') { this.next(); row.push(parts.splice(0).join('')); rows.push(row); row = []; continue; }
+      if (tok.t === 'char' && tok.v === '&')  { this.next(); row.push(parts.splice(0).join('')); continue; }
+      parts.push(this.parseAtom());
+    }
+    row.push(parts.join(''));
+    if (row.some(c => c !== '')) rows.push(row);
+    const inner = rows.map(r => r.join('&')).join('@');
+    const [L, R] = MATRIX_DELIM[name] || ['', ''];
     return L + '\u25A0(' + inner + ')' + R;
   }
 }
@@ -746,6 +780,8 @@ export const SUPPORTED_COMMANDS = new Set([
   'mathcal','mathscr','mathbb','operatorname','vec',
   'overline','underline','overbrace','underbrace','overset','stackrel','underset',
   'left','right','not','begin','end',
+  // plainTeX matrix macros (\pmatrix{…}) + Word-style empty-slot placeholder.
+  'matrix','pmatrix','bmatrix','vmatrix','Vmatrix','Bmatrix','smallmatrix','placeholder',
 ]);
 
 // ── Public API ─────────────────────────────────────────────────────────────
