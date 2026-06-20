@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Editor } from "./Editor";
+import { lastUpdated } from "./lastUpdated";
 import "./App.css";
 
 export default function App() {
@@ -8,6 +9,7 @@ export default function App() {
   return (
     <div className="app">
       <header className="app-header">
+        <span className="app-updated">Last updated: {lastUpdated}</span>
         <h1 className="app-title">Math Intellisense</h1>
         <p className="app-subtitle">
           Type <kbd>\</kbd> followed by a symbol name, alias, or category to insert unicode math symbols

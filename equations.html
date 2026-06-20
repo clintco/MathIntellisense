@@ -48,6 +48,7 @@
     .page-header .back { font-size: 13px; color: var(--muted); }
     .page-header .other { font-size: 13px; color: var(--accent2); }
     .page-header .counts { font-size: 12px; color: var(--muted); margin-left: auto; }
+    .page-header .updated { font-size: 12px; color: var(--muted); }
 
     /* ── Bookmarks bar ── */
     .bookmarks {
@@ -187,6 +188,7 @@
     <a class="back" href="./">← Math Intellisense</a>
     <a class="other" href="symbols.html">Symbols →</a>
     <span class="counts">474 equations across 12 domains</span>
+    <span class="updated">Last updated: Jun 20, 2026, 2:39 PM</span>
   </div>
 
   <nav class="bookmarks" aria-label="Equation domains">
@@ -228,7 +230,7 @@
           <td>exponent power rule</td>
           <td class="eq-aliases">power of a power</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><msup><mi>a</mi><mi>m</mi></msup><msup><mo stretchy="false">)</mo><mi>n</mi></msup><mo>=</mo><msup><mi>a</mi><mrow><mi>m</mi><mi>n</mi></mrow></msup></mrow><annotation encoding="application/x-tex">(a^m)^n = a^{mn}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>(𝑎^𝑚)^𝑛=𝑎^(𝑚𝑛)</code></td>
+          <td class="eq-unicode"><code>(𝑎^𝑚)^𝑛=𝑎^𝑚𝑛</code></td>
           <td class="eq-desc">Raising a power to a power multiplies exponents</td>
         </tr>
         <tr>
@@ -249,14 +251,14 @@
           <td>negative exponent</td>
           <td class="eq-aliases">a to the negative n</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>a</mi><mrow><mo>−</mo><mi>n</mi></mrow></msup><mo>=</mo><mfrac><mn>1</mn><msup><mi>a</mi><mi>n</mi></msup></mfrac></mrow><annotation encoding="application/x-tex">a^{-n} = \frac{1}{a^n}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑎^(-𝑛)=1/𝑎^𝑛</code></td>
+          <td class="eq-unicode"><code>𝑎^-𝑛=1/𝑎^𝑛</code></td>
           <td class="eq-desc">Negative exponent means reciprocal</td>
         </tr>
         <tr>
           <td>fractional exponent</td>
           <td class="eq-aliases">rational exponent</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>a</mi><mrow><mi>m</mi><mi mathvariant="normal">/</mi><mi>n</mi></mrow></msup><mo>=</mo><mroot><msup><mi>a</mi><mi>m</mi></msup><mi>n</mi></mroot></mrow><annotation encoding="application/x-tex">a^{m/n} = \sqrt[n]{a^m}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑎^(𝑚\/𝑛)=√(𝑛&amp;𝑎^𝑚)</code></td>
+          <td class="eq-unicode"><code>𝑎^𝑚\/𝑛=√(𝑛&amp;𝑎^𝑚)</code></td>
           <td class="eq-desc">Fractional exponent as a radical</td>
         </tr>
         <tr>
@@ -270,7 +272,7 @@
           <td>logarithm quotient rule</td>
           <td class="eq-aliases">log of a quotient</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mrow><mo fence="true">(</mo><mfrac><mi>x</mi><mi>y</mi></mfrac><mo fence="true">)</mo></mrow><mo>=</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mi>x</mi><mo>−</mo><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mi>b</mi></msub><mi>y</mi></mrow><annotation encoding="application/x-tex">\log_b\left(\frac{x}{y}\right) = \log_b x - \log_b y</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>log_𝑏(𝑥/𝑦)=log_𝑏 𝑥-log_𝑏 𝑦</code></td>
+          <td class="eq-unicode"><code>log_𝑏 (𝑥/𝑦)=log_𝑏 𝑥-log_𝑏 𝑦</code></td>
           <td class="eq-desc">Logarithm of a quotient equals difference of logarithms</td>
         </tr>
         <tr>
@@ -298,14 +300,14 @@
           <td>perfect square trinomial</td>
           <td class="eq-aliases">(a+b) squared; (a-b) squared</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo separator="true">;</mo><mtext>  </mtext><mo stretchy="false">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(a+b)^2 = a^2 + 2ab + b^2; \; (a-b)^2 = a^2 - 2ab + b^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>(𝑎+𝑏)^2=𝑎^2+2𝑎𝑏+𝑏^2; (𝑎-𝑏)^2=𝑎^2-2𝑎𝑏+𝑏^2</code></td>
+          <td class="eq-unicode"><code>(𝑎+𝑏)²=𝑎²+2𝑎𝑏+𝑏²; (𝑎-𝑏)²=𝑎²-2𝑎𝑏+𝑏²</code></td>
           <td class="eq-desc">Perfect square expansion (both addition and subtraction forms)</td>
         </tr>
         <tr>
           <td>completing the square</td>
           <td class="eq-aliases">complete the square</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><msup><mrow><mo fence="true">(</mo><mfrac><mi>b</mi><mn>2</mn></mfrac><mo fence="true">)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mrow><mo fence="true">(</mo><mi>x</mi><mo>+</mo><mfrac><mi>b</mi><mn>2</mn></mfrac><mo fence="true">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">x^2 + bx + \left(\frac{b}{2}\right)^2 = \left(x + \frac{b}{2}\right)^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑥^2+𝑏𝑥+(𝑏/2)^2=(𝑥+𝑏/2)^2</code></td>
+          <td class="eq-unicode"><code>𝑥²+𝑏𝑥+(𝑏/2)²=(𝑥+𝑏/2)²</code></td>
           <td class="eq-desc">Completing the square identity</td>
         </tr>
         <tr>
@@ -354,28 +356,28 @@
           <td>discriminant</td>
           <td class="eq-aliases">b squared minus 4ac</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>a</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">b^2 - 4ac</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑏^2-4𝑎𝑐</code></td>
+          <td class="eq-unicode"><code>𝑏²-4𝑎𝑐</code></td>
           <td class="eq-desc">Discriminant of a quadratic equation</td>
         </tr>
         <tr>
           <td>difference of squares</td>
           <td class="eq-aliases">(a+b)(a-b)</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a^2 - b^2 = (a+b)(a-b)</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑎^2-𝑏^2=(𝑎+𝑏)(𝑎-𝑏)</code></td>
+          <td class="eq-unicode"><code>𝑎³-𝑏³=(𝑎+𝑏)(𝑎-𝑏)</code></td>
           <td class="eq-desc">Difference of squares factoring identity</td>
         </tr>
         <tr>
           <td>sum of cubes</td>
           <td class="eq-aliases">a cubed plus b cubed</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>a</mi><mn>3</mn></msup><mo>+</mo><msup><mi>b</mi><mn>3</mn></msup><mo>=</mo><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a^3 + b^3 = (a+b)(a^2 - ab + b^2)</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑎^3+𝑏^3=(𝑎+𝑏)(𝑎^2-𝑎𝑏+𝑏^2)</code></td>
+          <td class="eq-unicode"><code>𝑎³+𝑏³=(𝑎+𝑏)(𝑎²-𝑎𝑏+𝑏²)</code></td>
           <td class="eq-desc">Sum of cubes factoring</td>
         </tr>
         <tr>
           <td>difference of cubes</td>
           <td class="eq-aliases">a cubed minus b cubed</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>a</mi><mn>3</mn></msup><mo>−</mo><msup><mi>b</mi><mn>3</mn></msup><mo>=</mo><mo stretchy="false">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a^3 - b^3 = (a-b)(a^2 + ab + b^2)</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑎^3-𝑏^3=(𝑎-𝑏)(𝑎^2+𝑎𝑏+𝑏^2)</code></td>
+          <td class="eq-unicode"><code>𝑎³-𝑏³=(𝑎-𝑏)(𝑎²+𝑎𝑏+𝑏²)</code></td>
           <td class="eq-desc">Difference of cubes factoring</td>
         </tr>
         <tr>
@@ -403,7 +405,7 @@
           <td>arithmetic series</td>
           <td class="eq-aliases">arithmetic sum</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><mfrac><mi>n</mi><mn>2</mn></mfrac><mo stretchy="false">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">S_n = \frac{n}{2}(a_1 + a_n)</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑆_𝑛=𝑛/2 (𝑎_1+𝑎_𝑛)</code></td>
+          <td class="eq-unicode"><code>𝑆_𝑛=𝑛/2 (𝑎₁+𝑎_𝑛)</code></td>
           <td class="eq-desc">Sum of an arithmetic series</td>
         </tr>
         <tr>
@@ -424,14 +426,14 @@
           <td>vertex form of a parabola</td>
           <td class="eq-aliases">vertex form</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>y</mi><mo>=</mo><mi>a</mi><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>h</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">y = a(x-h)^2 + k</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑦=𝑎(𝑥-ℎ)^2+𝑘</code></td>
+          <td class="eq-unicode"><code>𝑦=𝑎(𝑥-ℎ)²+𝑘</code></td>
           <td class="eq-desc">Parabola with vertex at (h,k)</td>
         </tr>
         <tr>
           <td>exponential growth and decay</td>
           <td class="eq-aliases">exponential model; ODE exponential solution</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mi>y</mi><mn>0</mn></msub><mtext> </mtext><msup><mi>e</mi><mrow><mi>k</mi><mi>t</mi></mrow></msup></mrow><annotation encoding="application/x-tex">y = y_0\,e^{kt}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑦=𝑦_0 𝑒^𝑘𝑡</code></td>
+          <td class="eq-unicode"><code>𝑦=𝑦₀𝑒^𝑘𝑡</code></td>
           <td class="eq-desc">Exponential growth (k&gt;0) or decay (k&lt;0) model; also general solution to dy/dt = ky</td>
         </tr>
         <tr>
@@ -480,7 +482,7 @@
           <td>modulus of a complex number</td>
           <td class="eq-aliases">absolute value of z</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>z</mi><mi mathvariant="normal">∣</mi><mo>=</mo><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">|z| = \sqrt{a^2+b^2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>|𝑧|=√(𝑎^2+𝑏^2)</code></td>
+          <td class="eq-unicode"><code>|𝑧|=√(𝑎²+𝑏²)</code></td>
           <td class="eq-desc">Modulus (magnitude) of complex number z = a+bi</td>
         </tr>
         <tr>
@@ -523,7 +525,7 @@
           <td>Hardy-Weinberg equilibrium</td>
           <td class="eq-aliases">Hardy-Weinberg principle</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>p</mi><mi>q</mi><mo>+</mo><msup><mi>q</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p^2 + 2pq + q^2 = 1</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑝^2+2𝑝𝑞+𝑞^2=1</code></td>
+          <td class="eq-unicode"><code>𝑝²+2𝑝𝑞+𝑞²=1</code></td>
           <td class="eq-desc">Allele frequency equilibrium in a non-evolving diploid population with p + q = 1</td>
         </tr>
         <tr>
@@ -544,7 +546,7 @@
           <td>exponential population growth</td>
           <td class="eq-aliases">Malthusian growth</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>N</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mi>r</mi><mi>t</mi></mrow></msup></mrow><annotation encoding="application/x-tex">N(t) = N_0 e^{rt}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑁(𝑡)=𝑁_0 𝑒^𝑟𝑡</code></td>
+          <td class="eq-unicode"><code>𝑁(𝑡)=𝑁₀𝑒^𝑟𝑡</code></td>
           <td class="eq-desc">Unconstrained population growth at constant per-capita growth rate r</td>
         </tr>
     </tbody>
@@ -679,14 +681,14 @@
           <td>derivative of tangent</td>
           <td class="eq-aliases">d dx tan x</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy="false">[</mo><mi>tan</mi><mo>⁡</mo><mi>x</mi><mo stretchy="false">]</mo><mo>=</mo><msup><mrow><mi>sec</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>x</mi></mrow><annotation encoding="application/x-tex">\frac{d}{dx}[\tan x] = \sec^2 x</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>ⅆ/ⅆ𝑥 [tan 𝑥]=sec^2 𝑥</code></td>
+          <td class="eq-unicode"><code>ⅆ/ⅆ𝑥 [tan 𝑥]=sec² 𝑥</code></td>
           <td class="eq-desc">Derivative of tangent</td>
         </tr>
         <tr>
           <td>derivative of cotangent</td>
           <td class="eq-aliases">d dx cot x</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy="false">[</mo><mi>cot</mi><mo>⁡</mo><mi>x</mi><mo stretchy="false">]</mo><mo>=</mo><mo>−</mo><msup><mrow><mi>csc</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>x</mi></mrow><annotation encoding="application/x-tex">\frac{d}{dx}[\cot x] = -\csc^2 x</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>ⅆ/ⅆ𝑥 [cot 𝑥]=-csc^2 𝑥</code></td>
+          <td class="eq-unicode"><code>ⅆ/ⅆ𝑥 [cot 𝑥]=-csc² 𝑥</code></td>
           <td class="eq-desc">Derivative of cotangent</td>
         </tr>
         <tr>
@@ -714,21 +716,21 @@
           <td>derivative of arcsin</td>
           <td class="eq-aliases">d dx arcsin x</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy="false">[</mo><mi>arcsin</mi><mo>⁡</mo><mi>x</mi><mo stretchy="false">]</mo><mo>=</mo><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow><annotation encoding="application/x-tex">\frac{d}{dx}[\arcsin x] = \frac{1}{\sqrt{1-x^2}}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>ⅆ/ⅆ𝑥 [arcsin 𝑥]=1/√(1-𝑥^2)</code></td>
+          <td class="eq-unicode"><code>ⅆ/ⅆ𝑥 [arcsin 𝑥]=1/√(1-𝑥²)</code></td>
           <td class="eq-desc">Derivative of inverse sine</td>
         </tr>
         <tr>
           <td>derivative of arccos</td>
           <td class="eq-aliases">d dx arccos x</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy="false">[</mo><mi>arccos</mi><mo>⁡</mo><mi>x</mi><mo stretchy="false">]</mo><mo>=</mo><mo>−</mo><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow><annotation encoding="application/x-tex">\frac{d}{dx}[\arccos x] = -\frac{1}{\sqrt{1-x^2}}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>ⅆ/ⅆ𝑥 [arccos 𝑥]=-1/√(1-𝑥^2)</code></td>
+          <td class="eq-unicode"><code>ⅆ/ⅆ𝑥 [arccos 𝑥]=-1/√(1-𝑥²)</code></td>
           <td class="eq-desc">Derivative of inverse cosine</td>
         </tr>
         <tr>
           <td>derivative of arctan</td>
           <td class="eq-aliases">d dx arctan x</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy="false">[</mo><mi>arctan</mi><mo>⁡</mo><mi>x</mi><mo stretchy="false">]</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{d}{dx}[\arctan x] = \frac{1}{1+x^2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>ⅆ/ⅆ𝑥 [arctan 𝑥]=1/(1+𝑥^2)</code></td>
+          <td class="eq-unicode"><code>ⅆ/ⅆ𝑥 [arctan 𝑥]=1/(1+𝑥²)</code></td>
           <td class="eq-desc">Derivative of inverse tangent</td>
         </tr>
         <tr>
@@ -763,7 +765,7 @@
           <td>integral of e to the x</td>
           <td class="eq-aliases">integral of exponential</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>∫</mo><msup><mi>e</mi><mi>x</mi></msup><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">\int e^x\,dx = e^x + C</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>∫ 𝑒^𝑥ⅆ𝑥=𝑒^𝑥+𝐶</code></td>
+          <td class="eq-unicode"><code>∫ 𝑒^𝑥 ⅆ𝑥=𝑒^𝑥+𝐶</code></td>
           <td class="eq-desc">Integral of the natural exponential</td>
         </tr>
         <tr>
@@ -812,21 +814,21 @@
           <td>integral of sec squared</td>
           <td class="eq-aliases">integral of sec squared x</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>∫</mo><msup><mrow><mi>sec</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>x</mi><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mi>tan</mi><mo>⁡</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">\int \sec^2 x\,dx = \tan x + C</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>∫ sec^2 𝑥ⅆ𝑥=tan 𝑥+𝐶</code></td>
+          <td class="eq-unicode"><code>∫ sec² 𝑥ⅆ𝑥=tan 𝑥+𝐶</code></td>
           <td class="eq-desc">Integral of secant squared</td>
         </tr>
         <tr>
           <td>integral of 1 over sqrt 1 minus x squared</td>
           <td class="eq-aliases">arcsin integral form</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>∫</mo><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mfrac><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mi>arcsin</mi><mo>⁡</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">\int \frac{1}{\sqrt{1-x^2}}\,dx = \arcsin x + C</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>∫ 1/√(1-𝑥^2) ⅆ𝑥=arcsin 𝑥+𝐶</code></td>
+          <td class="eq-unicode"><code>∫ 1/√(1-𝑥²) ⅆ𝑥=arcsin 𝑥+𝐶</code></td>
           <td class="eq-desc">Integral yielding inverse sine</td>
         </tr>
         <tr>
           <td>integral of 1 over 1 plus x squared</td>
           <td class="eq-aliases">arctan integral form</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>∫</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mi>arctan</mi><mo>⁡</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">\int \frac{1}{1+x^2}\,dx = \arctan x + C</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>∫ 1/(1+𝑥^2) ⅆ𝑥=arctan 𝑥+𝐶</code></td>
+          <td class="eq-unicode"><code>∫ 1/(1+𝑥²) ⅆ𝑥=arctan 𝑥+𝐶</code></td>
           <td class="eq-desc">Integral yielding inverse tangent</td>
         </tr>
         <tr>
@@ -903,7 +905,7 @@
           <td>limit of 1 minus cos x over x</td>
           <td class="eq-aliases">second trig limit</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mn>1</mn><mo>−</mo><mi>cos</mi><mo>⁡</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim_{x \to 0}\frac{1-\cos x}{x} = 0</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>lim_(𝑥→0) (1-cos 𝑥)/𝑥=0</code></td>
+          <td class="eq-unicode"><code>lim_(𝑥→0) 〖(1-cos 𝑥)/𝑥〗=0</code></td>
           <td class="eq-desc">Second fundamental trigonometric limit</td>
         </tr>
         <tr>
@@ -917,7 +919,7 @@
           <td>disk method</td>
           <td class="eq-aliases">volume of revolution disk</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>V</mi><mo>=</mo><mi>π</mi><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mo stretchy="false">[</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><msup><mo stretchy="false">]</mo><mn>2</mn></msup><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">V = \pi\int_{a}^{b}[f(x)]^2\,dx</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑉=𝜋∫_𝑎^𝑏 [𝑓(𝑥)]^2ⅆ𝑥</code></td>
+          <td class="eq-unicode"><code>𝑉=𝜋∫_𝑎^𝑏 [𝑓(𝑥)]²ⅆ𝑥</code></td>
           <td class="eq-desc">Volume of solid of revolution using the disk method</td>
         </tr>
         <tr>
@@ -931,7 +933,7 @@
           <td>washer method</td>
           <td class="eq-aliases">volume of revolution washer</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>V</mi><mo>=</mo><mi>π</mi><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mo fence="true">[</mo><mi>R</mi><mo stretchy="false">(</mo><mi>x</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>−</mo><mi>r</mi><mo stretchy="false">(</mo><mi>x</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo fence="true">]</mo></mrow><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">V = \pi\int_{a}^{b}\left[R(x)^2 - r(x)^2\right]\,dx</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑉=𝜋∫_𝑎^𝑏 ([𝑅(𝑥)]^2-[𝑟(𝑥)]^2)ⅆ𝑥</code></td>
+          <td class="eq-unicode"><code>𝑉=𝜋∫_𝑎^𝑏 ([𝑅(𝑥)]²-[𝑟(𝑥)]²)ⅆ𝑥</code></td>
           <td class="eq-desc">Volume of revolution using washers with outer radius R and inner radius r</td>
         </tr>
         <tr>
@@ -987,7 +989,7 @@
           <td>multivariable second derivative test</td>
           <td class="eq-aliases">second partial test</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>D</mi><mo>=</mo><msub><mi>f</mi><mrow><mi>x</mi><mi>x</mi></mrow></msub><msub><mi>f</mi><mrow><mi>y</mi><mi>y</mi></mrow></msub><mo>−</mo><msubsup><mi>f</mi><mrow><mi>x</mi><mi>y</mi></mrow><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">D = f_{xx}f_{yy} - f_{xy}^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐷=𝑓_(𝑥𝑥) 𝑓_(𝑦𝑦)-𝑓_(𝑥𝑦)^2</code></td>
+          <td class="eq-unicode"><code>𝐷=𝑓_𝑥𝑥 𝑓_𝑦𝑦-𝑓_𝑥𝑦²</code></td>
           <td class="eq-desc">Discriminant for classifying critical points of f(x,y)</td>
         </tr>
         <tr>
@@ -1057,7 +1059,7 @@
           <td>inverse Fourier transform</td>
           <td class="eq-aliases">inverse F transform</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>π</mi></mrow></mfrac><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mover accent="true"><mi>f</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo><msup><mi>e</mi><mrow><mi>i</mi><mi>ω</mi><mi>t</mi></mrow></msup><mtext> </mtext><mi>d</mi><mi>ω</mi></mrow><annotation encoding="application/x-tex">f(t) = \frac{1}{2\pi}\int_{-\infty}^{\infty} \hat{f}(\omega)e^{i\omega t}\,d\omega</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑓(𝑡)=1/2𝜋∫_-∞^∞ 𝑓̂(𝜔)𝑒^𝑖𝜔𝑡 ⅆ𝜔</code></td>
+          <td class="eq-unicode"><code>𝑓(𝑡)=1/2𝜋 ∫_-∞^∞ 𝑓̂(𝜔)𝑒^𝑖𝜔𝑡 ⅆ𝜔</code></td>
           <td class="eq-desc">Inverse Fourier transform</td>
         </tr>
         <tr>
@@ -1163,7 +1165,7 @@
           <td>dilution formula</td>
           <td class="eq-aliases">M1V1 equals M2V2</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>M</mi><mn>1</mn></msub><msub><mi>V</mi><mn>1</mn></msub><mo>=</mo><msub><mi>M</mi><mn>2</mn></msub><msub><mi>V</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">M_1 V_1 = M_2 V_2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑀_1 𝑉_1=𝑀_2 𝑉_2</code></td>
+          <td class="eq-unicode"><code>𝑀₁𝑉₁=𝑀₂𝑉₂</code></td>
           <td class="eq-desc">Dilution relationship between initial and final concentration and volume</td>
         </tr>
         <tr>
@@ -1177,7 +1179,7 @@
           <td>Raoult's law</td>
           <td class="eq-aliases">vapor pressure lowering</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo>=</mo><msub><mi>X</mi><mtext>solvent</mtext></msub><msup><mi>P</mi><mo lspace="0em" rspace="0em">∘</mo></msup></mrow><annotation encoding="application/x-tex">P = X_{\text{solvent}} P^{\circ}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑃=𝑋_&quot;solvent&quot;  𝑃^∘</code></td>
+          <td class="eq-unicode"><code>𝑃=𝑋_&quot;solvent&quot;  𝑃°</code></td>
           <td class="eq-desc">Vapor pressure of solution equals mole fraction times pure vapor pressure</td>
         </tr>
         <tr>
@@ -1205,56 +1207,56 @@
           <td>Boyle's law</td>
           <td class="eq-aliases">P1V1 equals P2V2</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>P</mi><mn>1</mn></msub><msub><mi>V</mi><mn>1</mn></msub><mo>=</mo><msub><mi>P</mi><mn>2</mn></msub><msub><mi>V</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">P_1 V_1 = P_2 V_2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑃_1 𝑉_1=𝑃_2 𝑉_2</code></td>
+          <td class="eq-unicode"><code>𝑃₁𝑉₁=𝑃₂𝑉₂</code></td>
           <td class="eq-desc">Inverse relationship between pressure and volume at constant T</td>
         </tr>
         <tr>
           <td>Charles's law</td>
           <td class="eq-aliases">V1 over T1</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><msub><mi>V</mi><mn>1</mn></msub><msub><mi>T</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>V</mi><mn>2</mn></msub><msub><mi>T</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">\frac{V_1}{T_1} = \frac{V_2}{T_2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑉_1/𝑇_1=𝑉_2/𝑇_2</code></td>
+          <td class="eq-unicode"><code>𝑉₁/𝑇₁=𝑉₂/𝑇₂</code></td>
           <td class="eq-desc">Direct relationship between volume and temperature at constant P</td>
         </tr>
         <tr>
           <td>Gay-Lussac's law</td>
           <td class="eq-aliases">P1 over T1</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><msub><mi>P</mi><mn>1</mn></msub><msub><mi>T</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>P</mi><mn>2</mn></msub><msub><mi>T</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">\frac{P_1}{T_1} = \frac{P_2}{T_2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑃_1/𝑇_1=𝑃_2/𝑇_2</code></td>
+          <td class="eq-unicode"><code>𝑃₁/𝑇₁=𝑃₂/𝑇₂</code></td>
           <td class="eq-desc">Direct relationship between pressure and temperature at constant V</td>
         </tr>
         <tr>
           <td>combined gas law</td>
           <td class="eq-aliases">combined gas</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><msub><mi>P</mi><mn>1</mn></msub><msub><mi>V</mi><mn>1</mn></msub></mrow><msub><mi>T</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><mrow><msub><mi>P</mi><mn>2</mn></msub><msub><mi>V</mi><mn>2</mn></msub></mrow><msub><mi>T</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">\frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑃_1 𝑉_1/𝑇_1=𝑃_2 𝑉_2/𝑇_2</code></td>
+          <td class="eq-unicode"><code>𝑃₁𝑉₁/𝑇₁=𝑃₂𝑉₂/𝑇₂</code></td>
           <td class="eq-desc">Combined relationship of pressure volume and temperature</td>
         </tr>
         <tr>
           <td>Avogadro's law</td>
           <td class="eq-aliases">V1 over n1</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><msub><mi>V</mi><mn>1</mn></msub><msub><mi>n</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>V</mi><mn>2</mn></msub><msub><mi>n</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">\frac{V_1}{n_1} = \frac{V_2}{n_2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑉_1/𝑛_1=𝑉_2/𝑛_2</code></td>
+          <td class="eq-unicode"><code>𝑉₁/𝑛₁=𝑉₂/𝑛₂</code></td>
           <td class="eq-desc">Volume is proportional to moles at constant T and P</td>
         </tr>
         <tr>
           <td>Dalton's law of partial pressures</td>
           <td class="eq-aliases">total pressure</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>P</mi><mtext>total</mtext></msub><mo>=</mo><msub><mi>P</mi><mn>1</mn></msub><mo>+</mo><msub><mi>P</mi><mn>2</mn></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>P</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">P_{\text{total}} = P_1 + P_2 + \cdots + P_n</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑃_&quot;total&quot;=𝑃_1+𝑃_2+⋯+𝑃_𝑛</code></td>
+          <td class="eq-unicode"><code>𝑃_&quot;total&quot;=𝑃₁+𝑃₂+⋯+𝑃_𝑛</code></td>
           <td class="eq-desc">Total pressure equals sum of partial pressures of each gas</td>
         </tr>
         <tr>
           <td>Graham's law of effusion</td>
           <td class="eq-aliases">rate of effusion</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><msub><mi>r</mi><mn>1</mn></msub><msub><mi>r</mi><mn>2</mn></msub></mfrac><mo>=</mo><msqrt><mfrac><msub><mi>M</mi><mn>2</mn></msub><msub><mi>M</mi><mn>1</mn></msub></mfrac></msqrt></mrow><annotation encoding="application/x-tex">\frac{r_1}{r_2} = \sqrt{\frac{M_2}{M_1}}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑟_1/𝑟_2=√(𝑀_2/𝑀_1)</code></td>
+          <td class="eq-unicode"><code>𝑟₁/𝑟₂=√(𝑀₂/𝑀₁)</code></td>
           <td class="eq-desc">Effusion rate inversely proportional to square root of molar mass</td>
         </tr>
         <tr>
           <td>van der Waals equation</td>
           <td class="eq-aliases">real gas equation</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mo fence="true">(</mo><mi>P</mi><mo>+</mo><mfrac><mrow><mi>a</mi><msup><mi>n</mi><mn>2</mn></msup></mrow><msup><mi>V</mi><mn>2</mn></msup></mfrac><mo fence="true">)</mo></mrow><mo stretchy="false">(</mo><mi>V</mi><mo>−</mo><mi>n</mi><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mi>n</mi><mi>R</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">\left(P + \frac{an^2}{V^2}\right)(V - nb) = nRT</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>(𝑃+𝑎𝑛^2/𝑉^2)(𝑉-𝑛𝑏)=𝑛𝑅𝑇</code></td>
+          <td class="eq-unicode"><code>(𝑃+𝑎𝑛²/𝑉²)(𝑉-𝑛𝑏)=𝑛𝑅𝑇</code></td>
           <td class="eq-desc">Equation of state for real gases with intermolecular corrections</td>
         </tr>
         <tr>
@@ -1275,7 +1277,7 @@
           <td>Gibbs free energy and equilibrium</td>
           <td class="eq-aliases">delta G naught and K</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">Δ</mi><msup><mi>G</mi><mo lspace="0em" rspace="0em">∘</mo></msup><mo>=</mo><mo>−</mo><mi>R</mi><mi>T</mi><mi>ln</mi><mo>⁡</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">\Delta G^{\circ} = -RT\ln K</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>Δ𝐺^∘=-𝑅𝑇 ln⁡𝐾</code></td>
+          <td class="eq-unicode"><code>Δ𝐺°=-𝑅𝑇 ln⁡𝐾</code></td>
           <td class="eq-desc">Relationship between standard free energy and equilibrium constant</td>
         </tr>
         <tr>
@@ -1296,7 +1298,7 @@
           <td>Kp Kc relationship</td>
           <td class="eq-aliases">Kp equals Kc RT delta n</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>K</mi><mi>p</mi></msub><mo>=</mo><msub><mi>K</mi><mi>c</mi></msub><mo stretchy="false">(</mo><mi>R</mi><mi>T</mi><msup><mo stretchy="false">)</mo><mrow><mi mathvariant="normal">Δ</mi><mi>n</mi></mrow></msup></mrow><annotation encoding="application/x-tex">K_p = K_c (RT)^{\Delta n}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐾_𝑝=𝐾_𝑐 (𝑅𝑇)^(𝛥𝑛)</code></td>
+          <td class="eq-unicode"><code>𝐾_𝑝=𝐾_𝑐 (𝑅𝑇)^𝛥𝑛</code></td>
           <td class="eq-desc">Relationship between Kp and Kc where delta n is moles gas change</td>
         </tr>
         <tr>
@@ -1331,7 +1333,7 @@
           <td>water dissociation constant</td>
           <td class="eq-aliases">Kw</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>K</mi><mi>w</mi></msub><mo>=</mo><mo stretchy="false">[</mo><msup><mtext>H</mtext><mo>+</mo></msup><mo stretchy="false">]</mo><mo stretchy="false">[</mo><msup><mtext>OH</mtext><mo>−</mo></msup><mo stretchy="false">]</mo><mo>=</mo><mn>1.0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>14</mn></mrow></msup></mrow><annotation encoding="application/x-tex">K_w = [\text{H}^+][\text{OH}^-] = 1.0 \times 10^{-14}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐾_𝑤=[H^+][OH^-]=1.0×10^(-14)</code></td>
+          <td class="eq-unicode"><code>𝐾_𝑤=[H^+][OH^-]=1.0×10^-14</code></td>
           <td class="eq-desc">Ion product of water at 25C</td>
         </tr>
         <tr>
@@ -1352,21 +1354,21 @@
           <td>standard cell potential</td>
           <td class="eq-aliases">E cell</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mi>E</mi><mtext>cell</mtext><mo lspace="0em" rspace="0em">∘</mo></msubsup><mo>=</mo><msubsup><mi>E</mi><mtext>cathode</mtext><mo lspace="0em" rspace="0em">∘</mo></msubsup><mo>−</mo><msubsup><mi>E</mi><mtext>anode</mtext><mo lspace="0em" rspace="0em">∘</mo></msubsup></mrow><annotation encoding="application/x-tex">E^{\circ}_{\text{cell}} = E^{\circ}_{\text{cathode}} - E^{\circ}_{\text{anode}}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐸^∘_cell=𝐸^∘_cathode-𝐸^∘_anode</code></td>
+          <td class="eq-unicode"><code>𝐸°_&quot;cell&quot;=𝐸°_&quot;cathode&quot;-𝐸°_&quot;anode&quot;</code></td>
           <td class="eq-desc">Standard cell potential from half-reaction potentials</td>
         </tr>
         <tr>
           <td>Nernst equation</td>
           <td class="eq-aliases">E cell at non-standard</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>E</mi><mo>=</mo><msup><mi>E</mi><mo lspace="0em" rspace="0em">∘</mo></msup><mo>−</mo><mfrac><mrow><mi>R</mi><mi>T</mi></mrow><mrow><mi>n</mi><mi>F</mi></mrow></mfrac><mi>ln</mi><mo>⁡</mo><mi>Q</mi></mrow><annotation encoding="application/x-tex">E = E^{\circ} - \frac{RT}{nF}\ln Q</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐸=𝐸^∘-𝑅𝑇/𝑛𝐹 ln 𝑄</code></td>
+          <td class="eq-unicode"><code>𝐸=𝐸°-𝑅𝑇/𝑛𝐹 ln 𝑄</code></td>
           <td class="eq-desc">Cell potential at non-standard conditions</td>
         </tr>
         <tr>
           <td>Gibbs and cell potential</td>
           <td class="eq-aliases">delta G and E cell</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">Δ</mi><msup><mi>G</mi><mo lspace="0em" rspace="0em">∘</mo></msup><mo>=</mo><mo>−</mo><mi>n</mi><mi>F</mi><msup><mi>E</mi><mo lspace="0em" rspace="0em">∘</mo></msup></mrow><annotation encoding="application/x-tex">\Delta G^{\circ} = -nFE^{\circ}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>Δ𝐺^∘=-𝑛𝐹𝐸^∘</code></td>
+          <td class="eq-unicode"><code>Δ𝐺°=-𝑛𝐹𝐸°</code></td>
           <td class="eq-desc">Relationship between standard free energy and cell potential</td>
         </tr>
         <tr>
@@ -1387,14 +1389,14 @@
           <td>first order integrated rate law</td>
           <td class="eq-aliases">ln A equals ln A0 minus kt</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>ln</mi><mo>⁡</mo><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mo>=</mo><mi>ln</mi><mo>⁡</mo><mo stretchy="false">[</mo><mi>A</mi><msub><mo stretchy="false">]</mo><mn>0</mn></msub><mo>−</mo><mi>k</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\ln[A] = \ln[A]_0 - kt</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>ln⁡[𝐴]=ln⁡[𝐴]_0-𝑘𝑡</code></td>
+          <td class="eq-unicode"><code>ln⁡[𝐴]=ln⁡[𝐴]₀-𝑘𝑡</code></td>
           <td class="eq-desc">Integrated rate law for a first-order reaction</td>
         </tr>
         <tr>
           <td>second order integrated rate law</td>
           <td class="eq-aliases">1 over A equals 1 over A0 plus kt</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>1</mn><mrow><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mo stretchy="false">[</mo><mi>A</mi><msub><mo stretchy="false">]</mo><mn>0</mn></msub></mrow></mfrac><mo>+</mo><mi>k</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\frac{1}{[A]} = \frac{1}{[A]_0} + kt</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>1/[𝐴]=1/[𝐴]_0+𝑘𝑡</code></td>
+          <td class="eq-unicode"><code>1/[𝐴]=1/[𝐴]₀+𝑘𝑡</code></td>
           <td class="eq-desc">Integrated rate law for a second-order reaction</td>
         </tr>
         <tr>
@@ -1415,7 +1417,7 @@
           <td>Rydberg formula</td>
           <td class="eq-aliases">hydrogen spectral lines</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>1</mn><mi>λ</mi></mfrac><mo>=</mo><msub><mi>R</mi><mi>H</mi></msub><mrow><mo fence="true">(</mo><mfrac><mn>1</mn><msubsup><mi>n</mi><mn>1</mn><mn>2</mn></msubsup></mfrac><mo>−</mo><mfrac><mn>1</mn><msubsup><mi>n</mi><mn>2</mn><mn>2</mn></msubsup></mfrac><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">\frac{1}{\lambda} = R_H\left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>1/𝜆=𝑅_𝐻 (1/𝑛_1^2-1/𝑛_2^2)</code></td>
+          <td class="eq-unicode"><code>1/𝜆=𝑅_𝐻 (1/𝑛₁²-1/𝑛₂²)</code></td>
           <td class="eq-desc">Wavelengths of hydrogen spectral lines</td>
         </tr>
         <tr>
@@ -1429,7 +1431,7 @@
           <td>Bohr model energy levels</td>
           <td class="eq-aliases">energy of nth level</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>=</mo><mo>−</mo><mfrac><mrow><mn>13.6</mn><mtext> </mtext><mtext>eV</mtext></mrow><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">E_n = -\frac{13.6\,\text{eV}}{n^2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐸_𝑛=-13.6eV/𝑛^2</code></td>
+          <td class="eq-unicode"><code>𝐸_𝑛=-13.6eV/𝑛²</code></td>
           <td class="eq-desc">Energy of the nth electron shell in the Bohr model of hydrogen</td>
         </tr>
     </tbody>
@@ -1465,7 +1467,7 @@
           <td>multinomial coefficient</td>
           <td class="eq-aliases">multinomial</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mi>n</mi><mrow><msub><mi>k</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>k</mi><mn>2</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>k</mi><mi>r</mi></msub></mrow></mfrac><mo fence="true">)</mo></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy="false">!</mo></mrow><mrow><msub><mi>k</mi><mn>1</mn></msub><mo stretchy="false">!</mo><mtext> </mtext><msub><mi>k</mi><mn>2</mn></msub><mo stretchy="false">!</mo><mo>⋯</mo><msub><mi>k</mi><mi>r</mi></msub><mo stretchy="false">!</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">\binom{n}{k_1,k_2,\ldots,k_r} = \frac{n!}{k_1!\,k_2!\cdots k_r!}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>(𝑛¦(𝑘_1,𝑘_2,…,𝑘_𝑟))=𝑛!/(𝑘_1 !𝑘_2 !⋯𝑘_𝑟 !)</code></td>
+          <td class="eq-unicode"><code>(𝑛¦(𝑘₁,𝑘₂,…,𝑘ᵣ))=𝑛!/(𝑘₁!𝑘₂!⋯𝑘ᵣ!)</code></td>
           <td class="eq-desc">Number of ways to partition n objects into r ordered groups</td>
         </tr>
         <tr>
@@ -1563,7 +1565,7 @@
           <td>modus ponens</td>
           <td class="eq-aliases">if p then q</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><mi>p</mi><mspace width="1em"/><mi>p</mi><mo>⇒</mo><mi>q</mi></mrow><mi>q</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{p \quad p \Rightarrow q}{q}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑝 𝑝⇒𝑞/𝑞</code></td>
+          <td class="eq-unicode"><code>(𝑝 𝑝⇒𝑞)/𝑞</code></td>
           <td class="eq-desc">Modus ponens inference rule</td>
         </tr>
         <tr>
@@ -1619,14 +1621,14 @@
           <td>sum of first n squares</td>
           <td class="eq-aliases">sum of squares formula</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msup><mi>k</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>6</mn></mfrac></mrow><annotation encoding="application/x-tex">\sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>∑_(𝑘=1)^𝑛 𝑘^2=𝑛(𝑛+1)(2𝑛+1)/6</code></td>
+          <td class="eq-unicode"><code>∑_(𝑘=1)^𝑛 𝑘²=𝑛(𝑛+1)(2𝑛+1)/6</code></td>
           <td class="eq-desc">Closed form for the sum of squares of the first n integers</td>
         </tr>
         <tr>
           <td>sum of first n cubes</td>
           <td class="eq-aliases">sum of cubes formula</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msup><mi>k</mi><mn>3</mn></msup><mo>=</mo><msup><mrow><mo fence="true">[</mo><mfrac><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac><mo fence="true">]</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\sum_{k=1}^{n} k^3 = \left[\frac{n(n+1)}{2}\right]^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>∑_(𝑘=1)^𝑛 𝑘^3=[𝑛(𝑛+1)/2]^2</code></td>
+          <td class="eq-unicode"><code>∑_(𝑘=1)^𝑛 𝑘³=[𝑛(𝑛+1)/2]²</code></td>
           <td class="eq-desc">Closed form for the sum of cubes of the first n integers</td>
         </tr>
         <tr>
@@ -1725,21 +1727,21 @@
           <td>capacitors in series</td>
           <td class="eq-aliases">series capacitance</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>1</mn><msub><mi>C</mi><mrow><mi>e</mi><mi>q</mi></mrow></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>C</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>C</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{C_{eq}} = \frac{1}{C_1} + \frac{1}{C_2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>1/𝐶_𝑒𝑞=1/𝐶_1+1/𝐶_2</code></td>
+          <td class="eq-unicode"><code>1/𝐶_𝑒𝑞=1/𝐶₁+1/𝐶₂</code></td>
           <td class="eq-desc">Equivalent capacitance of capacitors connected in series</td>
         </tr>
         <tr>
           <td>capacitors in parallel</td>
           <td class="eq-aliases">parallel capacitance</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>C</mi><mrow><mi>e</mi><mi>q</mi></mrow></msub><mo>=</mo><msub><mi>C</mi><mn>1</mn></msub><mo>+</mo><msub><mi>C</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">C_{eq} = C_1 + C_2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐶_𝑒𝑞=𝐶_1+𝐶_2</code></td>
+          <td class="eq-unicode"><code>𝐶_𝑒𝑞=𝐶₁+𝐶₂</code></td>
           <td class="eq-desc">Equivalent capacitance of capacitors connected in parallel</td>
         </tr>
         <tr>
           <td>Nyquist-Shannon sampling theorem</td>
           <td class="eq-aliases">sampling theorem</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>f</mi><mi>s</mi></msub><mo>≥</mo><mn>2</mn><msub><mi>f</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub></mrow><annotation encoding="application/x-tex">f_s \geq 2 f_{max}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑓_𝑠≥2 𝑓_(max)</code></td>
+          <td class="eq-unicode"><code>𝑓_𝑠≥2 𝑓_&quot;max&quot;</code></td>
           <td class="eq-desc">A signal must be sampled at least twice its highest frequency to avoid aliasing</td>
         </tr>
         <tr>
@@ -1753,7 +1755,7 @@
           <td>discrete Fourier transform</td>
           <td class="eq-aliases">DFT formula</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>X</mi><mo stretchy="false">[</mo><mi>k</mi><mo stretchy="false">]</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>N</mi><mo>−</mo><mn>1</mn></mrow></munderover><mi>x</mi><mo stretchy="false">[</mo><mi>n</mi><mo stretchy="false">]</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>j</mi><mn>2</mn><mi>π</mi><mi>k</mi><mi>n</mi><mi mathvariant="normal">/</mi><mi>N</mi></mrow></msup></mrow><annotation encoding="application/x-tex">X[k] = \sum_{n=0}^{N-1} x[n] e^{-j2\pi kn/N}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑋[𝑘]=∑_(𝑛=0)^(𝑁-1) 𝑥[𝑛] 𝑒^(-2𝜋𝑗𝑘𝑛\/𝑁)</code></td>
+          <td class="eq-unicode"><code>𝑋[𝑘]=∑_(𝑛=0)^(𝑁-1) 𝑥[𝑛] 𝑒^-2𝜋𝑗𝑘𝑛\/𝑁</code></td>
           <td class="eq-desc">Transforms a discrete time-domain signal of length N into its frequency components</td>
         </tr>
         <tr>
@@ -1844,14 +1846,14 @@
           <td>trapezoidal rule</td>
           <td class="eq-aliases">trapezoid integration rule</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi><mo>≈</mo><mfrac><mi>h</mi><mn>2</mn></mfrac><mo stretchy="false">[</mo><mi>f</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy="false">)</mo><mo>+</mo><mn>2</mn><mi>f</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo><mo>+</mo><mo>⋯</mo><mo>+</mo><mn>2</mn><mi>f</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo><mo>+</mo><mi>f</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\int_a^b f(x)\,dx \approx \frac{h}{2}[f(x_0) + 2f(x_1) + \cdots + 2f(x_{n-1}) + f(x_n)]</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>∫_𝑎^𝑏 𝑓(𝑥)ⅆ𝑥≈ℎ/2 [𝑓(𝑥_0)+2𝑓(𝑥_1)+⋯+2𝑓(𝑥_(𝑛-1))+𝑓(𝑥_𝑛)]</code></td>
+          <td class="eq-unicode"><code>∫_𝑎^𝑏 𝑓(𝑥)ⅆ𝑥≈ℎ/2 [𝑓(𝑥₀)+2𝑓(𝑥₁)+⋯+2𝑓(𝑥_(𝑛-1))+𝑓(𝑥_𝑛)]</code></td>
           <td class="eq-desc">Numerical integration approximation with n equal subintervals of width h</td>
         </tr>
         <tr>
           <td>Simpson's rule</td>
           <td class="eq-aliases">Simpson one-third rule</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi><mo>≈</mo><mfrac><mi>h</mi><mn>3</mn></mfrac><mo stretchy="false">[</mo><mi>f</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy="false">)</mo><mo>+</mo><mn>4</mn><mi>f</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo><mo>+</mo><mn>2</mn><mi>f</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false">)</mo><mo>+</mo><mo>⋯</mo><mo>+</mo><mn>4</mn><mi>f</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo><mo>+</mo><mi>f</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\int_a^b f(x)\,dx \approx \frac{h}{3}[f(x_0) + 4f(x_1) + 2f(x_2) + \cdots + 4f(x_{n-1}) + f(x_n)]</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>∫_𝑎^𝑏 𝑓(𝑥)ⅆ𝑥≈ℎ/3 [𝑓(𝑥_0)+4𝑓(𝑥_1)+2𝑓(𝑥_2)+⋯+4𝑓(𝑥_(𝑛-1))+𝑓(𝑥_𝑛)]</code></td>
+          <td class="eq-unicode"><code>∫_𝑎^𝑏 𝑓(𝑥)ⅆ𝑥≈ℎ/3 [𝑓(𝑥₀)+4𝑓(𝑥₁)+2𝑓(𝑥₂)+⋯+4𝑓(𝑥_(𝑛-1))+𝑓(𝑥_𝑛)]</code></td>
           <td class="eq-desc">Numerical integration using parabolic arcs; n must be even</td>
         </tr>
         <tr>
@@ -1879,7 +1881,7 @@
           <td>Runge-Kutta 4</td>
           <td class="eq-aliases">RK4 method</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>y</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>y</mi><mi>n</mi></msub><mo>+</mo><mfrac><mi>h</mi><mn>6</mn></mfrac><mo stretchy="false">(</mo><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><mn>2</mn><msub><mi>k</mi><mn>2</mn></msub><mo>+</mo><mn>2</mn><msub><mi>k</mi><mn>3</mn></msub><mo>+</mo><msub><mi>k</mi><mn>4</mn></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">y_{n+1} = y_n + \frac{h}{6}(k_1 + 2k_2 + 2k_3 + k_4)</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑦_(𝑛+1)=𝑦_𝑛+ℎ/6 (𝑘_1+2𝑘_2+2𝑘_3+𝑘_4)</code></td>
+          <td class="eq-unicode"><code>𝑦_(𝑛+1)=𝑦_𝑛+ℎ/6 (𝑘₁+2𝑘₂+2𝑘₃+𝑘₄)</code></td>
           <td class="eq-desc">Fourth-order numerical ODE integrator update step</td>
         </tr>
     </tbody>
@@ -1908,7 +1910,7 @@
           <td>compound interest</td>
           <td class="eq-aliases">A equals P times one plus r over n to the nt</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mo>=</mo><mi>P</mi><msup><mrow><mo fence="true">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>n</mi></mfrac><mo fence="true">)</mo></mrow><mrow><mi>n</mi><mi>t</mi></mrow></msup></mrow><annotation encoding="application/x-tex">A = P\left(1 + \frac{r}{n}\right)^{nt}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐴=𝑃(1+𝑟/𝑛)^(𝑛𝑡)</code></td>
+          <td class="eq-unicode"><code>𝐴=𝑃(1+𝑟/𝑛)^𝑛𝑡</code></td>
           <td class="eq-desc">Compound interest with n compounding periods per year</td>
         </tr>
         <tr>
@@ -1936,7 +1938,7 @@
           <td>present value of an annuity</td>
           <td class="eq-aliases">PVA</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mi>P</mi><mi>M</mi><mi>T</mi><mo>⋅</mo><mfrac><mrow><mn>1</mn><mo>−</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><msup><mo stretchy="false">)</mo><mrow><mo>−</mo><mi>n</mi></mrow></msup></mrow><mi>r</mi></mfrac></mrow><annotation encoding="application/x-tex">PV = PMT \cdot \frac{1-(1+r)^{-n}}{r}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑃𝑉=𝑃𝑀𝑇⋅(1-(1+𝑟)^(-𝑛))/𝑟</code></td>
+          <td class="eq-unicode"><code>𝑃𝑉=𝑃𝑀𝑇⋅(1-(1+𝑟)^-𝑛)/𝑟</code></td>
           <td class="eq-desc">Present value of n equal payments PMT at rate r per period</td>
         </tr>
         <tr>
@@ -2027,7 +2029,7 @@
           <td>price elasticity of demand</td>
           <td class="eq-aliases">demand elasticity</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>ε</mi><mi>d</mi></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>Q</mi><mi mathvariant="normal">/</mi><mi>Q</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>P</mi><mi mathvariant="normal">/</mi><mi>P</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\varepsilon_d = \frac{\Delta Q / Q}{\Delta P / P}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝜀_𝑑=𝛥𝑄/𝑄/𝛥𝑃/𝑃</code></td>
+          <td class="eq-unicode"><code>𝜀_𝑑=𝛥𝑄\/𝑄/𝛥𝑃\/𝑃</code></td>
           <td class="eq-desc">Percentage change in quantity demanded per percentage change in price</td>
         </tr>
         <tr>
@@ -2062,7 +2064,7 @@
           <td>Black-Scholes formula</td>
           <td class="eq-aliases">Black-Scholes model; option pricing</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>C</mi><mo>=</mo><msub><mi>S</mi><mn>0</mn></msub><mi>N</mi><mo stretchy="false">(</mo><msub><mi>d</mi><mn>1</mn></msub><mo stretchy="false">)</mo><mo>−</mo><mi>K</mi><msup><mi>e</mi><mrow><mo>−</mo><mi>r</mi><mi>T</mi></mrow></msup><mi>N</mi><mo stretchy="false">(</mo><msub><mi>d</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">C = S_0 N(d_1) - K e^{-rT} N(d_2)</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐶=𝑆_0 𝑁(𝑑_1)-𝐾 𝑒^(-𝑟𝑇) 𝑁(𝑑_2)</code></td>
+          <td class="eq-unicode"><code>𝐶=𝑆_0 𝑁(𝑑₁)-𝐾 𝑒^-𝑟𝑇 𝑁(𝑑₂)</code></td>
           <td class="eq-desc">Black-Scholes formula for the price C of a European call option</td>
         </tr>
     </tbody>
@@ -2098,7 +2100,7 @@
           <td>point slope form</td>
           <td class="eq-aliases">y minus y1 equals m times x minus x1</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>y</mi><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub><mo>=</mo><mi>m</mi><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">y - y_1 = m(x - x_1)</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑦-𝑦_1=𝑚(𝑥-𝑥_1)</code></td>
+          <td class="eq-unicode"><code>𝑦-𝑦₁=𝑚(𝑥-𝑥₁)</code></td>
           <td class="eq-desc">Point-slope form of a line</td>
         </tr>
         <tr>
@@ -2119,35 +2121,35 @@
           <td>distance formula</td>
           <td class="eq-aliases">distance between two points</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>d</mi><mo>=</mo><msqrt><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy="false">(</mo><msub><mi>y</mi><mn>2</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑑=√((𝑥_2-𝑥_1)^2+(𝑦_2-𝑦_1)^2)</code></td>
+          <td class="eq-unicode"><code>𝑑=√((𝑥₂-𝑥₁)²+(𝑦₂-𝑦₁)²)</code></td>
           <td class="eq-desc">Distance between two points in the plane</td>
         </tr>
         <tr>
           <td>midpoint formula</td>
           <td class="eq-aliases">midpoint between two points</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>M</mi><mo>=</mo><mrow><mo fence="true">(</mo><mfrac><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo separator="true">,</mo><mfrac><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><msub><mi>y</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">M = \left(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2}\right)</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑀=((𝑥_1+𝑥_2)/2,(𝑦_1+𝑦_2)/2)</code></td>
+          <td class="eq-unicode"><code>𝑀=((𝑥₁+𝑥₂)/2,(𝑦₁+𝑦₂)/2)</code></td>
           <td class="eq-desc">Midpoint between two points</td>
         </tr>
         <tr>
           <td>equation of a circle</td>
           <td class="eq-aliases">circle equation</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>h</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy="false">(</mo><mi>y</mi><mo>−</mo><mi>k</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(x-h)^2 + (y-k)^2 = r^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>(𝑥-ℎ)^2+(𝑦-𝑘)^2=𝑟^2</code></td>
+          <td class="eq-unicode"><code>(𝑥-ℎ)²+(𝑦-𝑘)²=𝑟²</code></td>
           <td class="eq-desc">Equation of a circle centered at (h,k) with radius r</td>
         </tr>
         <tr>
           <td>area of a circle</td>
           <td class="eq-aliases">circle area</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">A = \pi r^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐴=𝜋𝑟^2</code></td>
+          <td class="eq-unicode"><code>𝐴=𝜋𝑟²</code></td>
           <td class="eq-desc">Area of a circle with radius r</td>
         </tr>
         <tr>
           <td>circumference of a circle</td>
           <td class="eq-aliases">perimeter of a circle</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>C</mi><mo>=</mo><mn>2</mn><mi>π</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">C = 2\pi r</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐶=2𝜋 𝑟</code></td>
+          <td class="eq-unicode"><code>𝐶=2𝜋𝑟</code></td>
           <td class="eq-desc">Circumference of a circle</td>
         </tr>
         <tr>
@@ -2182,42 +2184,42 @@
           <td>area of an ellipse</td>
           <td class="eq-aliases">ellipse area</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mo>=</mo><mi>π</mi><mi>a</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">A = \pi ab</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐴=𝜋 𝑎𝑏</code></td>
+          <td class="eq-unicode"><code>𝐴=𝜋𝑎𝑏</code></td>
           <td class="eq-desc">Area of an ellipse with semi-axes a and b</td>
         </tr>
         <tr>
           <td>volume of a sphere</td>
           <td class="eq-aliases">sphere volume</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>r</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">V = \frac{4}{3}\pi r^3</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑉=4/3 𝜋𝑟^3</code></td>
+          <td class="eq-unicode"><code>𝑉=4/3 𝜋𝑟³</code></td>
           <td class="eq-desc">Volume of a sphere</td>
         </tr>
         <tr>
           <td>surface area of a sphere</td>
           <td class="eq-aliases">sphere surface area</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mo>=</mo><mn>4</mn><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">A = 4\pi r^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐴=4𝜋𝑟^2</code></td>
+          <td class="eq-unicode"><code>𝐴=4𝜋𝑟²</code></td>
           <td class="eq-desc">Surface area of a sphere</td>
         </tr>
         <tr>
           <td>volume of a cylinder</td>
           <td class="eq-aliases">cylinder volume</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>V</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi></mrow><annotation encoding="application/x-tex">V = \pi r^2 h</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑉=𝜋𝑟^2 ℎ</code></td>
+          <td class="eq-unicode"><code>𝑉=𝜋𝑟²ℎ</code></td>
           <td class="eq-desc">Volume of a cylinder</td>
         </tr>
         <tr>
           <td>volume of a cone</td>
           <td class="eq-aliases">cone volume</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi></mrow><annotation encoding="application/x-tex">V = \frac{1}{3}\pi r^2 h</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑉=1/3 𝜋𝑟^2 ℎ</code></td>
+          <td class="eq-unicode"><code>𝑉=1/3 𝜋𝑟²ℎ</code></td>
           <td class="eq-desc">Volume of a cone</td>
         </tr>
         <tr>
           <td>volume of a cube</td>
           <td class="eq-aliases">cube volume</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>V</mi><mo>=</mo><msup><mi>s</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">V = s^3</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑉=𝑠^3</code></td>
+          <td class="eq-unicode"><code>𝑉=𝑠³</code></td>
           <td class="eq-desc">Volume of a cube with side s</td>
         </tr>
         <tr>
@@ -2238,14 +2240,14 @@
           <td>surface area of a cylinder</td>
           <td class="eq-aliases">cylinder surface area</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>S</mi><mi>A</mi><mo>=</mo><mn>2</mn><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>π</mi><mi>r</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">SA = 2\pi r^2 + 2\pi r h</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑆𝐴=2𝜋𝑟^2+2𝜋𝑟ℎ</code></td>
+          <td class="eq-unicode"><code>𝑆𝐴=2𝜋𝑟²+2𝜋𝑟ℎ</code></td>
           <td class="eq-desc">Total surface area of a cylinder</td>
         </tr>
         <tr>
           <td>surface area of a cone</td>
           <td class="eq-aliases">cone surface area</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>S</mi><mi>A</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mi>π</mi><mi>r</mi><mi>l</mi></mrow><annotation encoding="application/x-tex">SA = \pi r^2 + \pi r l</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑆𝐴=𝜋𝑟^2+𝜋𝑟𝑙</code></td>
+          <td class="eq-unicode"><code>𝑆𝐴=𝜋𝑟²+𝜋𝑟𝑙</code></td>
           <td class="eq-desc">Total surface area of a cone where l is slant height</td>
         </tr>
         <tr>
@@ -2273,7 +2275,7 @@
           <td>tangent ratio</td>
           <td class="eq-aliases">TOA tan equals opposite over adjacent</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>tan</mi><mo>⁡</mo><mi>θ</mi><mo>=</mo><mfrac><mtext>opposite</mtext><mtext>adjacent</mtext></mfrac></mrow><annotation encoding="application/x-tex">\tan\theta = \frac{\text{opposite}}{\text{adjacent}}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>tan⁡𝜃=opposite/adjacent</code></td>
+          <td class="eq-unicode"><code>tan⁡𝜃=&quot;opposite&quot;/&quot;adjacent&quot;</code></td>
           <td class="eq-desc">Definition of tangent as ratio of opposite to adjacent side</td>
         </tr>
         <tr>
@@ -2294,7 +2296,7 @@
           <td>cofunction identities</td>
           <td class="eq-aliases">sin of 90 minus theta; cos of 90 minus theta; tan of 90 minus theta</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mo stretchy="false">(</mo><msup><mn>90</mn><mo lspace="0em" rspace="0em">∘</mo></msup><mo>−</mo><mi>θ</mi><mo stretchy="false">)</mo><mo>=</mo><mi>cos</mi><mo>⁡</mo><mi>θ</mi><mo separator="true">;</mo><mtext>  </mtext><mi>cos</mi><mo>⁡</mo><mo stretchy="false">(</mo><msup><mn>90</mn><mo lspace="0em" rspace="0em">∘</mo></msup><mo>−</mo><mi>θ</mi><mo stretchy="false">)</mo><mo>=</mo><mi>sin</mi><mo>⁡</mo><mi>θ</mi><mo separator="true">;</mo><mtext>  </mtext><mi>tan</mi><mo>⁡</mo><mo stretchy="false">(</mo><msup><mn>90</mn><mo lspace="0em" rspace="0em">∘</mo></msup><mo>−</mo><mi>θ</mi><mo stretchy="false">)</mo><mo>=</mo><mi>cot</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding="application/x-tex">\sin(90^{\circ}-\theta) = \cos\theta;\; \cos(90^{\circ}-\theta) = \sin\theta;\; \tan(90^{\circ}-\theta) = \cot\theta</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>sin⁡(90^∘-𝜃)=cos⁡𝜃; cos⁡(90^∘-𝜃)=sin⁡𝜃; tan⁡(90^∘-𝜃)=cot⁡𝜃</code></td>
+          <td class="eq-unicode"><code>sin⁡(90°-𝜃)=cos⁡𝜃; cos⁡(90°-𝜃)=sin⁡𝜃; tan⁡(90°-𝜃)=cot⁡𝜃</code></td>
           <td class="eq-desc">Trigonometric cofunction identities</td>
         </tr>
         <tr>
@@ -2399,7 +2401,7 @@
           <td>law of cosines</td>
           <td class="eq-aliases">cosine rule</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>a</mi><mi>b</mi><mi>cos</mi><mo>⁡</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">c^2 = a^2 + b^2 - 2ab\cos C</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑐^2=𝑎^2+𝑏^2-2𝑎𝑏 cos 𝐶</code></td>
+          <td class="eq-unicode"><code>𝑐²=𝑎²+𝑏²-2𝑎𝑏 cos 𝐶</code></td>
           <td class="eq-desc">Law of cosines for any triangle</td>
         </tr>
         <tr>
@@ -2420,7 +2422,7 @@
           <td>area of a sector</td>
           <td class="eq-aliases">sector area</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mi>r</mi><mn>2</mn></msup><mi>θ</mi></mrow><annotation encoding="application/x-tex">A = \frac{1}{2}r^2\theta</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐴=1/2 𝑟^2 𝜃</code></td>
+          <td class="eq-unicode"><code>𝐴=1/2 𝑟²𝜃</code></td>
           <td class="eq-desc">Area of a circular sector with radius r and central angle in radians</td>
         </tr>
         <tr>
@@ -2476,21 +2478,21 @@
           <td>standard form of an ellipse</td>
           <td class="eq-aliases">ellipse equation</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><msup><mi>x</mi><mn>2</mn></msup><msup><mi>a</mi><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑥^2/𝑎^2+𝑦^2/𝑏^2=1</code></td>
+          <td class="eq-unicode"><code>𝑥²/𝑎²+𝑦²/𝑏²=1</code></td>
           <td class="eq-desc">Ellipse centered at origin with semi-axes a and b</td>
         </tr>
         <tr>
           <td>standard form of a hyperbola</td>
           <td class="eq-aliases">hyperbola equation</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><msup><mi>x</mi><mn>2</mn></msup><msup><mi>a</mi><mn>2</mn></msup></mfrac><mo>−</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑥^2/𝑎^2-𝑦^2/𝑏^2=1</code></td>
+          <td class="eq-unicode"><code>𝑥²/𝑎²-𝑦²/𝑏²=1</code></td>
           <td class="eq-desc">Horizontal hyperbola centered at origin</td>
         </tr>
         <tr>
           <td>standard form of a parabola</td>
           <td class="eq-aliases">parabola from focus</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>4</mn><mi>p</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">x^2 = 4py</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑥^2=4𝑝𝑦</code></td>
+          <td class="eq-unicode"><code>𝑥²=4𝑝𝑦</code></td>
           <td class="eq-desc">Parabola with vertex at origin opening upward (focus at (0,p))</td>
         </tr>
     </tbody>
@@ -2540,7 +2542,7 @@
           <td>vector projection</td>
           <td class="eq-aliases">proj of u onto v</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mtext>proj</mtext><mi mathvariant="bold">v</mi></msub><mi mathvariant="bold">u</mi><mo>=</mo><mfrac><mrow><mi mathvariant="bold">u</mi><mo>⋅</mo><mi mathvariant="bold">v</mi></mrow><mrow><mi mathvariant="normal">∣</mi><mi mathvariant="bold">v</mi><msup><mi mathvariant="normal">∣</mi><mn>2</mn></msup></mrow></mfrac><mi mathvariant="bold">v</mi></mrow><annotation encoding="application/x-tex">\text{proj}_{\mathbf{v}}\mathbf{u} = \frac{\mathbf{u}\cdot\mathbf{v}}{|\mathbf{v}|^2}\mathbf{v}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>proj_𝐯𝐮=𝐮⋅𝐯/|𝐯|^2𝐯</code></td>
+          <td class="eq-unicode"><code>proj_𝐯𝐮=𝐮⋅𝐯/|𝐯|²𝐯</code></td>
           <td class="eq-desc">Projection of vector u onto vector v</td>
         </tr>
         <tr>
@@ -2589,7 +2591,7 @@
           <td>group element order</td>
           <td class="eq-aliases">power of group element</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>a</mi><mrow><mi mathvariant="normal">∣</mi><mi>a</mi><mi mathvariant="normal">∣</mi></mrow></msup><mo>=</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">a^{|a|} = e</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑎^(|𝑎|)=𝑒</code></td>
+          <td class="eq-unicode"><code>𝑎^|𝑎|=𝑒</code></td>
           <td class="eq-desc">Raising an element to the power of its order returns the group identity</td>
         </tr>
         <tr>
@@ -2639,7 +2641,7 @@
           <td>kinetic energy formula</td>
           <td class="eq-aliases">KE equals half mv squared</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>K</mi><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">KE = \frac{1}{2}mv^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐾𝐸=1/2 𝑚𝑣^2</code></td>
+          <td class="eq-unicode"><code>𝐾𝐸=1/2 𝑚𝑣²</code></td>
           <td class="eq-desc">Kinetic energy of a moving object</td>
         </tr>
         <tr>
@@ -2653,7 +2655,7 @@
           <td>Coulomb's law</td>
           <td class="eq-aliases">electrostatic force</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo>=</mo><mi>k</mi><mfrac><mrow><msub><mi>q</mi><mn>1</mn></msub><msub><mi>q</mi><mn>2</mn></msub></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">F = k\frac{q_1 q_2}{r^2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐹=𝑘𝑞_1 𝑞_2/𝑟^2</code></td>
+          <td class="eq-unicode"><code>𝐹=𝑘𝑞₁𝑞₂/𝑟²</code></td>
           <td class="eq-desc">Coulomb's law for the force between two charges</td>
         </tr>
         <tr>
@@ -2681,35 +2683,35 @@
           <td>kinematic position</td>
           <td class="eq-aliases">x equals x0 plus v0t plus half at squared</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>x</mi><mo>=</mo><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><msub><mi>v</mi><mn>0</mn></msub><mi>t</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">x = x_0 + v_0 t + \frac{1}{2}at^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑥=𝑥_0+𝑣_0 𝑡+1/2 𝑎𝑡^2</code></td>
+          <td class="eq-unicode"><code>𝑥=𝑥_0+𝑣_0 𝑡+1/2 𝑎𝑡²</code></td>
           <td class="eq-desc">Position under constant acceleration</td>
         </tr>
         <tr>
           <td>kinematic velocity squared</td>
           <td class="eq-aliases">v squared equals v0 squared plus 2a delta x</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>+</mo><mn>2</mn><mi>a</mi><mi mathvariant="normal">Δ</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">v^2 = v_0^2 + 2a\Delta x</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑣^2=𝑣_0^2+2𝑎Δ𝑥</code></td>
+          <td class="eq-unicode"><code>𝑣²=𝑣_0²+2𝑎Δ𝑥</code></td>
           <td class="eq-desc">Velocity-position relation under constant acceleration</td>
         </tr>
         <tr>
           <td>kinematic average velocity</td>
           <td class="eq-aliases">x equals half v plus v0 times t</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false">(</mo><mi>v</mi><mo>+</mo><msub><mi>v</mi><mn>0</mn></msub><mo stretchy="false">)</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">\Delta x = \frac{1}{2}(v + v_0)t</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>Δ𝑥=1/2(𝑣+𝑣_0)𝑡</code></td>
+          <td class="eq-unicode"><code>Δ𝑥=1/2 (𝑣+𝑣_0)𝑡</code></td>
           <td class="eq-desc">Displacement using average velocity</td>
         </tr>
         <tr>
           <td>Newton's law of universal gravitation</td>
           <td class="eq-aliases">gravitational force</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo>=</mo><mi>G</mi><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">F = G\frac{m_1 m_2}{r^2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐹=𝐺𝑚_1 𝑚_2/𝑟^2</code></td>
+          <td class="eq-unicode"><code>𝐹=𝐺𝑚₁𝑚₂/𝑟²</code></td>
           <td class="eq-desc">Gravitational force between two masses</td>
         </tr>
         <tr>
           <td>gravitational potential energy general</td>
           <td class="eq-aliases">universal gravitational PE</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>U</mi><mo>=</mo><mo>−</mo><mfrac><mrow><mi>G</mi><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow><mi>r</mi></mfrac></mrow><annotation encoding="application/x-tex">U = -\frac{Gm_1 m_2}{r}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑈=-𝐺𝑚_1 𝑚_2/𝑟</code></td>
+          <td class="eq-unicode"><code>𝑈=-𝐺𝑚₁𝑚₂/𝑟</code></td>
           <td class="eq-desc">Gravitational potential energy between two masses</td>
         </tr>
         <tr>
@@ -2737,7 +2739,7 @@
           <td>conservation of momentum</td>
           <td class="eq-aliases">momentum before equals momentum after</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>v</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><msub><mi>m</mi><mn>1</mn></msub><msubsup><mi>v</mi><mn>1</mn><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msubsup><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><msubsup><mi>v</mi><mn>2</mn><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msubsup></mrow><annotation encoding="application/x-tex">m_1 v_1 + m_2 v_2 = m_1 v_1&#x27; + m_2 v_2&#x27;</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑚_1 𝑣_1+𝑚_2 𝑣_2=𝑚_1 𝑣_1'+𝑚_2 𝑣_2'</code></td>
+          <td class="eq-unicode"><code>𝑚₁𝑣₁+𝑚₂𝑣₂=𝑚₁𝑣₁'+𝑚₂𝑣₂′</code></td>
           <td class="eq-desc">Conservation of linear momentum in a collision</td>
         </tr>
         <tr>
@@ -2758,14 +2760,14 @@
           <td>centripetal acceleration</td>
           <td class="eq-aliases">a equals v squared over r</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>a</mi><mi>c</mi></msub><mo>=</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>r</mi></mfrac></mrow><annotation encoding="application/x-tex">a_c = \frac{v^2}{r}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑎_𝑐=𝑣^2/𝑟</code></td>
+          <td class="eq-unicode"><code>𝑎_𝑐=𝑣²/𝑟</code></td>
           <td class="eq-desc">Centripetal acceleration for circular motion</td>
         </tr>
         <tr>
           <td>centripetal force</td>
           <td class="eq-aliases">F equals mv squared over r</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>F</mi><mi>c</mi></msub><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mi>r</mi></mfrac></mrow><annotation encoding="application/x-tex">F_c = \frac{mv^2}{r}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐹_𝑐=𝑚𝑣^2/𝑟</code></td>
+          <td class="eq-unicode"><code>𝐹_𝑐=𝑚𝑣²/𝑟</code></td>
           <td class="eq-desc">Net centripetal force for circular motion</td>
         </tr>
         <tr>
@@ -2786,7 +2788,7 @@
           <td>rotational kinetic energy</td>
           <td class="eq-aliases">KE rotation</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>K</mi><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>I</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">KE = \frac{1}{2}I\omega^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐾𝐸=1/2 𝐼𝜔^2</code></td>
+          <td class="eq-unicode"><code>𝐾𝐸=1/2 𝐼𝜔²</code></td>
           <td class="eq-desc">Kinetic energy of a rotating body</td>
         </tr>
         <tr>
@@ -2849,14 +2851,14 @@
           <td>electric field from point charge</td>
           <td class="eq-aliases">E equals kQ over r squared</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>E</mi><mo>=</mo><mi>k</mi><mfrac><mi>Q</mi><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">E = k\frac{Q}{r^2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐸=𝑘𝑄/𝑟^2</code></td>
+          <td class="eq-unicode"><code>𝐸=𝑘𝑄/𝑟²</code></td>
           <td class="eq-desc">Electric field magnitude from a point charge</td>
         </tr>
         <tr>
           <td>electric potential energy</td>
           <td class="eq-aliases">U equals kq1q2 over r</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>U</mi><mo>=</mo><mi>k</mi><mfrac><mrow><msub><mi>q</mi><mn>1</mn></msub><msub><mi>q</mi><mn>2</mn></msub></mrow><mi>r</mi></mfrac></mrow><annotation encoding="application/x-tex">U = k\frac{q_1 q_2}{r}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑈=𝑘𝑞_1 𝑞_2/𝑟</code></td>
+          <td class="eq-unicode"><code>𝑈=𝑘𝑞₁𝑞₂/𝑟</code></td>
           <td class="eq-desc">Electric potential energy between two point charges</td>
         </tr>
         <tr>
@@ -2877,28 +2879,28 @@
           <td>energy stored in a capacitor</td>
           <td class="eq-aliases">capacitor energy</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>U</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>C</mi><msup><mi>V</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">U = \frac{1}{2}CV^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑈=1/2 𝐶𝑉^2</code></td>
+          <td class="eq-unicode"><code>𝑈=1/2 𝐶𝑉²</code></td>
           <td class="eq-desc">Energy stored in a charged capacitor</td>
         </tr>
         <tr>
           <td>electrical power</td>
           <td class="eq-aliases">P equals IV</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo>=</mo><mi>I</mi><mi>V</mi><mo>=</mo><msup><mi>I</mi><mn>2</mn></msup><mi>R</mi><mo>=</mo><mfrac><msup><mi>V</mi><mn>2</mn></msup><mi>R</mi></mfrac></mrow><annotation encoding="application/x-tex">P = IV = I^2R = \frac{V^2}{R}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑃=𝐼𝑉=𝐼^2 𝑅=𝑉^2/𝑅</code></td>
+          <td class="eq-unicode"><code>𝑃=𝐼𝑉=𝐼²𝑅=𝑉²/𝑅</code></td>
           <td class="eq-desc">Electrical power dissipated in a resistor</td>
         </tr>
         <tr>
           <td>resistors in series</td>
           <td class="eq-aliases">series resistance</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>R</mi><mtext>total</mtext></msub><mo>=</mo><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>R</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">R_{\text{total}} = R_1 + R_2 + \cdots + R_n</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑅_&quot;total&quot;=𝑅_1+𝑅_2+⋯+𝑅_𝑛</code></td>
+          <td class="eq-unicode"><code>𝑅_&quot;total&quot;=𝑅₁+𝑅₂+⋯+𝑅_𝑛</code></td>
           <td class="eq-desc">Total resistance of resistors in series</td>
         </tr>
         <tr>
           <td>resistors in parallel</td>
           <td class="eq-aliases">parallel resistance</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>1</mn><msub><mi>R</mi><mtext>total</mtext></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>2</mn></msub></mfrac><mo>+</mo><mo>⋯</mo><mo>+</mo><mfrac><mn>1</mn><msub><mi>R</mi><mi>n</mi></msub></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{R_{\text{total}}} = \frac{1}{R_1} + \frac{1}{R_2} + \cdots + \frac{1}{R_n}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>1/𝑅_&quot;total&quot;=1/𝑅_1+1/𝑅_2+⋯+1/𝑅_𝑛</code></td>
+          <td class="eq-unicode"><code>1/𝑅_&quot;total&quot;=1/𝑅₁+1/𝑅₂+⋯+1/𝑅_𝑛</code></td>
           <td class="eq-desc">Total resistance of resistors in parallel</td>
         </tr>
         <tr>
@@ -2926,14 +2928,14 @@
           <td>energy stored in an inductor</td>
           <td class="eq-aliases">inductor energy</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>U</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>L</mi><msup><mi>I</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">U = \frac{1}{2}LI^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑈=1/2 𝐿𝐼^2</code></td>
+          <td class="eq-unicode"><code>𝑈=1/2 𝐿𝐼²</code></td>
           <td class="eq-desc">Energy stored in an inductor</td>
         </tr>
         <tr>
           <td>Snell's law</td>
           <td class="eq-aliases">law of refraction</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mi>sin</mi><mo>⁡</mo><msub><mi>θ</mi><mn>1</mn></msub><mo>=</mo><msub><mi>n</mi><mn>2</mn></msub><mi>sin</mi><mo>⁡</mo><msub><mi>θ</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">n_1\sin\theta_1 = n_2\sin\theta_2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑛_1 sin⁡𝜃_1=𝑛_2 sin⁡𝜃_2</code></td>
+          <td class="eq-unicode"><code>𝑛₁ sin⁡𝜃₁=𝑛₂ sin⁡𝜃₂</code></td>
           <td class="eq-desc">Snell's law of refraction</td>
         </tr>
         <tr>
@@ -3010,7 +3012,7 @@
           <td>mass-energy equivalence</td>
           <td class="eq-aliases">E equals mc squared; rest energy</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">E = mc^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐸=𝑚𝑐^2</code></td>
+          <td class="eq-unicode"><code>𝐸=𝑚𝑐²</code></td>
           <td class="eq-desc">Einstein's mass-energy equivalence (rest energy of a body)</td>
         </tr>
         <tr>
@@ -3031,7 +3033,7 @@
           <td>Lorentz factor</td>
           <td class="eq-aliases">gamma factor</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>γ</mi><mo>=</mo><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>v</mi><mn>2</mn></msup><mi mathvariant="normal">/</mi><msup><mi>c</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow><annotation encoding="application/x-tex">\gamma = \frac{1}{\sqrt{1 - v^2/c^2}}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝛾=1/√(1-𝑣^2/𝑐^2)</code></td>
+          <td class="eq-unicode"><code>𝛾=1/√(1-𝑣²/𝑐²)</code></td>
           <td class="eq-desc">Relativistic factor quantifying time dilation and length contraction</td>
         </tr>
         <tr>
@@ -3052,28 +3054,28 @@
           <td>relativistic momentum</td>
           <td class="eq-aliases">Lorentz momentum</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>p</mi><mo>=</mo><mi>γ</mi><mi>m</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">p = \gamma m v</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑝=𝛾 𝑚 𝑣</code></td>
+          <td class="eq-unicode"><code>𝑝=𝛾𝑚𝑣</code></td>
           <td class="eq-desc">Momentum of a massive object moving at relativistic speed</td>
         </tr>
         <tr>
           <td>total relativistic energy</td>
           <td class="eq-aliases">relativistic total energy</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>E</mi><mo>=</mo><mi>γ</mi><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">E = \gamma mc^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐸=𝛾 𝑚𝑐^2</code></td>
+          <td class="eq-unicode"><code>𝐸=𝛾𝑚𝑐²</code></td>
           <td class="eq-desc">Total energy of a moving massive object including rest energy</td>
         </tr>
         <tr>
           <td>energy-momentum relation</td>
           <td class="eq-aliases">relativistic dispersion</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>E</mi><mn>2</mn></msup><mo>=</mo><mo stretchy="false">(</mo><mi>p</mi><mi>c</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy="false">(</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">E^2 = (pc)^2 + (mc^2)^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐸^2=(𝑝𝑐)^2+(𝑚𝑐^2)^2</code></td>
+          <td class="eq-unicode"><code>𝐸²=(𝑝𝑐)²+(𝑚𝑐²)²</code></td>
           <td class="eq-desc">Invariant relation between total energy and relativistic momentum</td>
         </tr>
         <tr>
           <td>relativistic velocity addition</td>
           <td class="eq-aliases">velocity composition</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>u</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo>=</mo><mfrac><mrow><mi>u</mi><mo>−</mo><mi>v</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>u</mi><mi>v</mi><mi mathvariant="normal">/</mi><msup><mi>c</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">u&#x27; = \frac{u - v}{1 - uv/c^2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑢'=(𝑢-𝑣)/(1-𝑢𝑣/𝑐^2)</code></td>
+          <td class="eq-unicode"><code>𝑢'=(𝑢-𝑣)/(1-𝑢𝑣/𝑐²)</code></td>
           <td class="eq-desc">Combined velocity when changing reference frames at speed v</td>
         </tr>
         <tr>
@@ -3087,21 +3089,21 @@
           <td>Lorentz transformation time</td>
           <td class="eq-aliases">t-prime transform</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>t</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo>=</mo><mi>γ</mi><mrow><mo fence="true">(</mo><mi>t</mi><mo>−</mo><mfrac><mrow><mi>v</mi><mi>x</mi></mrow><msup><mi>c</mi><mn>2</mn></msup></mfrac><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">t&#x27; = \gamma\left(t - \frac{vx}{c^2}\right)</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑡'=𝛾(𝑡-𝑣𝑥/𝑐^2)</code></td>
+          <td class="eq-unicode"><code>𝑡'=𝛾(𝑡-𝑣𝑥/𝑐²)</code></td>
           <td class="eq-desc">Time coordinate in a frame moving at velocity v</td>
         </tr>
         <tr>
           <td>Bernoulli's equation</td>
           <td class="eq-aliases">Bernoulli principle</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>ρ</mi><msup><mi>v</mi><mn>2</mn></msup><mo>+</mo><mi>ρ</mi><mi>g</mi><mi>h</mi><mo>=</mo><mtext>const</mtext></mrow><annotation encoding="application/x-tex">P + \frac{1}{2}\rho v^2 + \rho g h = \text{const}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑃+1/2𝜌 𝑣^2+𝜌 𝑔 ℎ=&quot;const&quot;</code></td>
+          <td class="eq-unicode"><code>𝑃+1/2 𝜌𝑣²+𝜌𝑔ℎ=&quot;const&quot;</code></td>
           <td class="eq-desc">Conservation of energy for steady inviscid flow along a streamline</td>
         </tr>
         <tr>
           <td>continuity equation fluid</td>
           <td class="eq-aliases">conservation of mass flow</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><msub><mi>A</mi><mn>2</mn></msub><msub><mi>v</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">A_1 v_1 = A_2 v_2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐴_1 𝑣_1=𝐴_2 𝑣_2</code></td>
+          <td class="eq-unicode"><code>𝐴₁𝑣₁=𝐴₂𝑣₂</code></td>
           <td class="eq-desc">Conservation of mass for incompressible flow</td>
         </tr>
         <tr>
@@ -3122,7 +3124,7 @@
           <td>drag force</td>
           <td class="eq-aliases">aerodynamic drag</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>F</mi><mi>d</mi></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>C</mi><mi>d</mi></msub><mi>ρ</mi><mi>A</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">F_d = \frac{1}{2} C_d \rho A v^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐹_𝑑=1/2 𝐶_𝑑 𝜌 𝐴 𝑣^2</code></td>
+          <td class="eq-unicode"><code>𝐹_𝑑=1/2 𝐶_𝑑 𝜌𝐴𝑣²</code></td>
           <td class="eq-desc">Resistive force on an object moving through a fluid</td>
         </tr>
         <tr>
@@ -3136,7 +3138,7 @@
           <td>time-independent Schrodinger equation</td>
           <td class="eq-aliases">TISE</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>−</mo><mfrac><msup><mi mathvariant="normal">ℏ</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>ψ</mi></mrow><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mi>V</mi><mi>ψ</mi><mo>=</mo><mi>E</mi><mi>ψ</mi></mrow><annotation encoding="application/x-tex">-\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2} + V\psi = E\psi</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>-ℏ^2/2𝑚  ⅆ^2 𝜓/ⅆ𝑥^2+𝑉𝜓=𝐸𝜓</code></td>
+          <td class="eq-unicode"><code>-ℏ²/2𝑚  ⅆ²𝜓/ⅆ𝑥²+𝑉𝜓=𝐸𝜓</code></td>
           <td class="eq-desc">Eigenvalue equation for stationary quantum states</td>
         </tr>
         <tr>
@@ -3150,7 +3152,7 @@
           <td>wave function normalization</td>
           <td class="eq-aliases">probability normalization</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mi mathvariant="normal">∣</mi><mi>ψ</mi><msup><mi mathvariant="normal">∣</mi><mn>2</mn></msup><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\int_{-\infty}^{\infty} |\psi|^2 \, dx = 1</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>∫_-∞^∞ |𝜓|^2 ⅆ𝑥=1</code></td>
+          <td class="eq-unicode"><code>∫_-∞^∞ |𝜓|²ⅆ𝑥=1</code></td>
           <td class="eq-desc">Total probability of finding the particle anywhere must equal one</td>
         </tr>
         <tr>
@@ -3164,14 +3166,14 @@
           <td>particle in a box</td>
           <td class="eq-aliases">infinite square well</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><msup><mi>n</mi><mn>2</mn></msup><msup><mi>π</mi><mn>2</mn></msup><msup><mi mathvariant="normal">ℏ</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>m</mi><msup><mi>L</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">E_n = \frac{n^2 \pi^2 \hbar^2}{2mL^2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐸_𝑛=𝑛^2 𝜋^2 ℏ^2/2𝑚𝐿^2</code></td>
+          <td class="eq-unicode"><code>𝐸_𝑛=𝑛²𝜋²ℏ²/2𝑚𝐿²</code></td>
           <td class="eq-desc">Energy levels of a particle confined to a one-dimensional box of length L</td>
         </tr>
         <tr>
           <td>mass defect</td>
           <td class="eq-aliases">nuclear mass defect</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>m</mi><mo>=</mo><mi>Z</mi><msub><mi>m</mi><mi>p</mi></msub><mo>+</mo><mi>N</mi><msub><mi>m</mi><mi>n</mi></msub><mo>−</mo><msub><mi>m</mi><mrow><mi>n</mi><mi>u</mi><mi>c</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\Delta m = Z m_p + N m_n - m_{nuc}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>Δ𝑚=𝑍 𝑚_𝑝+𝑁 𝑚_𝑛-𝑚_(𝑛𝑢𝑐)</code></td>
+          <td class="eq-unicode"><code>Δ𝑚=𝑍𝑚_𝑝+𝑁 𝑚_𝑛-𝑚_(𝑛𝑢𝑐)</code></td>
           <td class="eq-desc">Difference between constituent nucleon masses and the actual nuclear mass</td>
         </tr>
         <tr>
@@ -3199,7 +3201,7 @@
           <td>sound intensity point source</td>
           <td class="eq-aliases">inverse square sound law</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>I</mi><mo>=</mo><mfrac><mi>P</mi><mrow><mn>4</mn><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">I = \frac{P}{4\pi r^2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐼=𝑃/4𝜋𝑟^2</code></td>
+          <td class="eq-unicode"><code>𝐼=𝑃/4𝜋𝑟²</code></td>
           <td class="eq-desc">Intensity from a point source decreases with the square of distance r</td>
         </tr>
         <tr>
@@ -3227,7 +3229,7 @@
           <td>Kepler's third law</td>
           <td class="eq-aliases">orbital period law</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>T</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow><mrow><mi>G</mi><mi>M</mi></mrow></mfrac><msup><mi>a</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">T^2 = \frac{4\pi^2}{GM}a^3</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑇^2=4𝜋^2/𝐺𝑀 𝑎^3</code></td>
+          <td class="eq-unicode"><code>𝑇²=4𝜋²/𝐺𝑀 𝑎³</code></td>
           <td class="eq-desc">Square of orbital period is proportional to cube of semi-major axis</td>
         </tr>
         <tr>
@@ -3241,42 +3243,42 @@
           <td>stellar luminosity</td>
           <td class="eq-aliases">Stefan-Boltzmann luminosity</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>L</mi><mo>=</mo><mn>4</mn><mi>π</mi><msup><mi>R</mi><mn>2</mn></msup><mi>σ</mi><msup><mi>T</mi><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">L = 4\pi R^2 \sigma T^4</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐿=4𝜋𝑅^2 𝜎𝑇^4</code></td>
+          <td class="eq-unicode"><code>𝐿=4𝜋𝑅² 𝜎𝑇⁴</code></td>
           <td class="eq-desc">Total power radiated by a star of radius R and surface temperature T</td>
         </tr>
         <tr>
           <td>apparent magnitude difference</td>
           <td class="eq-aliases">Pogson's law</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>−</mo><msub><mi>m</mi><mn>2</mn></msub><mo>=</mo><mo>−</mo><mn>2.5</mn><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>10</mn></msub><mo stretchy="false">(</mo><msub><mi>F</mi><mn>1</mn></msub><mi mathvariant="normal">/</mi><msub><mi>F</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">m_1 - m_2 = -2.5\log_{10}(F_1/F_2)</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑚_1-𝑚_2=-2.5 log_10 〖𝐹_1/𝐹_2〗</code></td>
+          <td class="eq-unicode"><code>𝑚₁-𝑚₂=-2.5 log_10⁡〖𝐹₁/𝐹₂〗</code></td>
           <td class="eq-desc">Difference in apparent magnitude corresponds to a flux ratio</td>
         </tr>
         <tr>
           <td>Schwarzschild radius</td>
           <td class="eq-aliases">event horizon radius</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>r</mi><mi>s</mi></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mi>G</mi><mi>M</mi></mrow><msup><mi>c</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">r_s = \frac{2GM}{c^2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑟_𝑠=2𝐺𝑀/𝑐^2</code></td>
+          <td class="eq-unicode"><code>𝑟_𝑠=2𝐺𝑀/𝑐²</code></td>
           <td class="eq-desc">Radius of the event horizon of a non-rotating black hole of mass M</td>
         </tr>
         <tr>
           <td>Maxwell's equations (grouped)</td>
           <td class="eq-aliases">Gauss's law electric; Gauss's law magnetic; Faraday's law; Ampere-Maxwell law</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∇</mi><mo>⋅</mo><mi mathvariant="bold">E</mi><mo>=</mo><mfrac><mi>ρ</mi><msub><mi>ε</mi><mn>0</mn></msub></mfrac><mo separator="true">;</mo><mtext>  </mtext><mi mathvariant="normal">∇</mi><mo>⋅</mo><mi mathvariant="bold">B</mi><mo>=</mo><mn>0</mn><mo separator="true">;</mo><mtext>  </mtext><mi mathvariant="normal">∇</mi><mo>×</mo><mi mathvariant="bold">E</mi><mo>=</mo><mo>−</mo><mfrac><mrow><mi mathvariant="normal">∂</mi><mi mathvariant="bold">B</mi></mrow><mrow><mi mathvariant="normal">∂</mi><mi>t</mi></mrow></mfrac><mo separator="true">;</mo><mtext>  </mtext><mi mathvariant="normal">∇</mi><mo>×</mo><mi mathvariant="bold">B</mi><mo>=</mo><msub><mi>μ</mi><mn>0</mn></msub><mi mathvariant="bold">J</mi><mo>+</mo><msub><mi>μ</mi><mn>0</mn></msub><msub><mi>ε</mi><mn>0</mn></msub><mfrac><mrow><mi mathvariant="normal">∂</mi><mi mathvariant="bold">E</mi></mrow><mrow><mi mathvariant="normal">∂</mi><mi>t</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\nabla \cdot \mathbf{E} = \frac{\rho}{\varepsilon_0};\; \nabla \cdot \mathbf{B} = 0;\; \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t};\; \nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>∇⋅𝐄=𝜌/𝜖_0; ∇⋅𝐁=0; ∇×𝐄=-∂𝐁/∂𝑡; ∇×𝐁=𝜇_0 𝐉+𝜇_0 𝜖_0 ∂𝐄/∂𝑡</code></td>
+          <td class="eq-unicode"><code>∇⋅𝐄=𝜌/𝜖₀; ∇⋅𝐁=0; ∇×𝐄=-∂𝐁/∂𝑡; ∇×𝐁=𝜇₀𝐉+𝜇₀𝜖₀ ∂𝐄/∂𝑡</code></td>
           <td class="eq-desc">Maxwell's four equations of electromagnetism (differential form)</td>
         </tr>
         <tr>
           <td>wave equation (1D)</td>
           <td class="eq-aliases">classical wave PDE</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><msup><mi mathvariant="normal">∂</mi><mn>2</mn></msup><mi>u</mi></mrow><mrow><mi mathvariant="normal">∂</mi><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup><mfrac><mrow><msup><mi mathvariant="normal">∂</mi><mn>2</mn></msup><mi>u</mi></mrow><mrow><mi mathvariant="normal">∂</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{\partial^2 u}{\partial t^2} = c^2 \frac{\partial^2 u}{\partial x^2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>∂^2 𝑢/∂𝑡^2=𝑐^2  ∂^2 𝑢/∂𝑥^2</code></td>
+          <td class="eq-unicode"><code>∂²𝑢/∂𝑡²=𝑐²  ∂²𝑢/∂𝑥²</code></td>
           <td class="eq-desc">Wave equation describing wave propagation at speed c</td>
         </tr>
         <tr>
           <td>Stefan-Boltzmann law</td>
           <td class="eq-aliases">radiant power</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo>=</mo><mi>σ</mi><mi>A</mi><msup><mi>T</mi><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">P = \sigma A T^4</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑃=𝜎 𝐴 𝑇^4</code></td>
+          <td class="eq-unicode"><code>𝑃=𝜎𝐴𝑇⁴</code></td>
           <td class="eq-desc">Power radiated by a blackbody of area A at temperature T</td>
         </tr>
     </tbody>
@@ -3305,14 +3307,14 @@
           <td>sample variance</td>
           <td class="eq-aliases">variance formula</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>1</mn><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover accent="true"><mi>x</mi><mo>ˉ</mo></mover><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑠^2=1/(𝑛-1) ∑_(𝑖=1)^𝑛 (𝑥_𝑖-𝑥̅)^2</code></td>
+          <td class="eq-unicode"><code>𝑠²=1/(𝑛-1) ∑_(𝑖=1)^𝑛 (𝑥_𝑖-𝑥̅)²</code></td>
           <td class="eq-desc">Sample variance</td>
         </tr>
         <tr>
           <td>population standard deviation</td>
           <td class="eq-aliases">std dev formula</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>σ</mi><mo>=</mo><msqrt><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mi>μ</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">\sigma = \sqrt{\frac{1}{N}\sum_{i=1}^{N}(x_i-\mu)^2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝜎=√(1/𝑁 ∑_(𝑖=1)^𝑁 (𝑥_𝑖-𝜇)^2)</code></td>
+          <td class="eq-unicode"><code>𝜎=√(1/𝑁 ∑_(𝑖=1)^𝑁 (𝑥ᵢ-𝜇)²)</code></td>
           <td class="eq-desc">Population standard deviation</td>
         </tr>
         <tr>
@@ -3326,7 +3328,7 @@
           <td>normal distribution PDF</td>
           <td class="eq-aliases">Gaussian density</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>σ</mi><msqrt><mrow><mn>2</mn><mi>π</mi></mrow></msqrt></mrow></mfrac><mtext> </mtext><msup><mi>e</mi><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mrow><mo fence="true">(</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mi>μ</mi></mrow><mi>σ</mi></mfrac><mo fence="true">)</mo></mrow><mn>2</mn></msup></mrow></msup></mrow><annotation encoding="application/x-tex">f(x) = \frac{1}{\sigma\sqrt{2\pi}}\,e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑓(𝑥)=1/√(2𝜋𝜎^2) 𝑒^(-(𝑥-𝜇)^2/2𝜎^2)</code></td>
+          <td class="eq-unicode"><code>𝑓(𝑥)=1/√(2𝜋𝜎²) 𝑒^(-(𝑥-𝜇)²/2𝜎²)</code></td>
           <td class="eq-desc">Normal distribution probability density function</td>
         </tr>
         <tr>
@@ -3424,7 +3426,7 @@
           <td>hypergeometric distribution PMF</td>
           <td class="eq-aliases">hypergeometric PMF</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mi>K</mi><mi>k</mi></mfrac><mo fence="true">)</mo></mrow><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mrow><mi>N</mi><mo>−</mo><mi>K</mi></mrow><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></mfrac><mo fence="true">)</mo></mrow></mrow><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mi>N</mi><mi>n</mi></mfrac><mo fence="true">)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">P(X=k) = \frac{\binom{K}{k}\binom{N-K}{n-k}}{\binom{N}{n}}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑃(𝑋=𝑘)=(𝐾¦𝑘)(𝑁-𝐾¦𝑛-𝑘)/((𝑁¦𝑛))</code></td>
+          <td class="eq-unicode"><code>𝑃(𝑋=𝑘)=(𝐾¦𝑘)((𝑁-𝐾)¦(𝑛-𝑘))/((𝑁¦𝑛))</code></td>
           <td class="eq-desc">PMF for sampling k successes without replacement from population N</td>
         </tr>
         <tr>
@@ -3466,35 +3468,35 @@
           <td>two-sample t-test</td>
           <td class="eq-aliases">independent samples t-test</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><msub><mover accent="true"><mi>x</mi><mo>ˉ</mo></mover><mn>1</mn></msub><mo>−</mo><msub><mover accent="true"><mi>x</mi><mo>ˉ</mo></mover><mn>2</mn></msub></mrow><msqrt><mrow><mfrac><msubsup><mi>s</mi><mn>1</mn><mn>2</mn></msubsup><msub><mi>n</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><msubsup><mi>s</mi><mn>2</mn><mn>2</mn></msubsup><msub><mi>n</mi><mn>2</mn></msub></mfrac></mrow></msqrt></mfrac></mrow><annotation encoding="application/x-tex">t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑡=(𝑥̅_1-𝑥̅_2)/√(𝑠_1^2/𝑛_1+𝑠_2^2/𝑛_2)</code></td>
+          <td class="eq-unicode"><code>𝑡=(𝑥̅_1-𝑥̅_2)/√(𝑠₁²/𝑛₁+𝑠₂²/𝑛₂)</code></td>
           <td class="eq-desc">Two-sample t-test statistic for independent groups</td>
         </tr>
         <tr>
           <td>pooled variance</td>
           <td class="eq-aliases">pooled standard deviation</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mi>s</mi><mi>p</mi><mn>2</mn></msubsup><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><msub><mi>n</mi><mn>1</mn></msub><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><msubsup><mi>s</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><mo stretchy="false">(</mo><msub><mi>n</mi><mn>2</mn></msub><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><msubsup><mi>s</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>+</mo><msub><mi>n</mi><mn>2</mn></msub><mo>−</mo><mn>2</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">s_p^2 = \frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑠_𝑝^2=((𝑛_1-1)𝑠_1^2+(𝑛_2-1)𝑠_2^2)/(𝑛_1+𝑛_2-2)</code></td>
+          <td class="eq-unicode"><code>𝑠_𝑝²=((𝑛₁-1)𝑠₁²+(𝑛₂-1)𝑠₂²)/(𝑛₁+𝑛₂-2)</code></td>
           <td class="eq-desc">Pooled variance estimate for two samples</td>
         </tr>
         <tr>
           <td>chi-squared test statistic</td>
           <td class="eq-aliases">chi squared goodness of fit</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>χ</mi><mn>2</mn></msup><mo>=</mo><mo>∑</mo><mfrac><mrow><mo stretchy="false">(</mo><msub><mi>O</mi><mi>i</mi></msub><mo>−</mo><msub><mi>E</mi><mi>i</mi></msub><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><msub><mi>E</mi><mi>i</mi></msub></mfrac></mrow><annotation encoding="application/x-tex">\chi^2 = \sum \frac{(O_i - E_i)^2}{E_i}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝜒^2=∑ (𝑂_𝑖-𝐸_𝑖)^2/𝐸_𝑖</code></td>
+          <td class="eq-unicode"><code>𝜒²=∑ (𝑂_𝑖-𝐸_𝑖)²/𝐸_𝑖</code></td>
           <td class="eq-desc">Chi-squared test statistic comparing observed to expected counts</td>
         </tr>
         <tr>
           <td>F-statistic</td>
           <td class="eq-aliases">F test</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo>=</mo><mfrac><msubsup><mi>s</mi><mn>1</mn><mn>2</mn></msubsup><msubsup><mi>s</mi><mn>2</mn><mn>2</mn></msubsup></mfrac></mrow><annotation encoding="application/x-tex">F = \frac{s_1^2}{s_2^2}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐹=𝑠_1^2/𝑠_2^2</code></td>
+          <td class="eq-unicode"><code>𝐹=𝑠₁²/𝑠₂²</code></td>
           <td class="eq-desc">F-statistic for comparing two sample variances</td>
         </tr>
         <tr>
           <td>interquartile range</td>
           <td class="eq-aliases">IQR</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>I</mi><mi>Q</mi><mi>R</mi><mo>=</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>−</mo><msub><mi>Q</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">IQR = Q_3 - Q_1</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐼𝑄𝑅=𝑄_3-𝑄_1</code></td>
+          <td class="eq-unicode"><code>𝐼𝑄𝑅=𝑄₃-𝑄₁</code></td>
           <td class="eq-desc">Spread of the middle 50 percent of data</td>
         </tr>
         <tr>
@@ -3515,7 +3517,7 @@
           <td>kurtosis</td>
           <td class="eq-aliases">excess kurtosis</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>kurtosis</mtext><mo>=</mo><mfrac><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>∑</mo><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover accent="true"><mi>x</mi><mo>ˉ</mo></mover><msup><mo stretchy="false">)</mo><mn>4</mn></msup></mrow><msup><mi>s</mi><mn>4</mn></msup></mfrac><mo>−</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\text{kurtosis} = \frac{\frac{1}{n}\sum(x_i-\bar{x})^4}{s^4} - 3</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>kurtosis=1/𝑛 ∑ (𝑥_𝑖-𝑥̅)^4/𝑠^4-3</code></td>
+          <td class="eq-unicode"><code>kurtosis=1/𝑛 ∑ (𝑥_𝑖-𝑥̅)⁴/𝑠⁴-3</code></td>
           <td class="eq-desc">Measure of tail heaviness relative to a normal distribution</td>
         </tr>
         <tr>
@@ -3550,14 +3552,14 @@
           <td>sum of squared residuals</td>
           <td class="eq-aliases">SSR</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>S</mi><msub><mi>S</mi><mtext>res</mtext></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy="false">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><msub><mover accent="true"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">SS_{\text{res}} = \sum_{i=1}^{n}(y_i - \hat{y}_i)^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝑆𝑆_res=∑_(𝑖=1)^𝑛 (𝑦_𝑖-𝑦̂_𝑖)^2</code></td>
+          <td class="eq-unicode"><code>𝑆𝑆_res=∑_(𝑖=1)^𝑛 (𝑦_𝑖-𝑦̂_𝑖)²</code></td>
           <td class="eq-desc">Sum of squared residuals (unexplained variation)</td>
         </tr>
         <tr>
           <td>mean squared error</td>
           <td class="eq-aliases">MSE</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>M</mi><mi>S</mi><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy="false">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><msub><mover accent="true"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">MSE = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>&quot;MSE&quot;=1/𝑛 ∑_(𝑖=1)^𝑛 (𝑦_𝑖-𝑦̂_𝑖)^2</code></td>
+          <td class="eq-unicode"><code>&quot;MSE&quot;=1/𝑛 ∑_(𝑖=1)^𝑛 (𝑦_𝑖-𝑦̂_𝑖)²</code></td>
           <td class="eq-desc">Mean squared error of predictions</td>
         </tr>
         <tr>
@@ -3662,7 +3664,7 @@
           <td>bias-variance decomposition</td>
           <td class="eq-aliases">bias variance tradeoff</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>E</mi><mo fence="true" stretchy="true" minsize="1.2em" maxsize="1.2em">[</mo><mo stretchy="false">(</mo><mi>y</mi><mo>−</mo><mover accent="true"><mi>y</mi><mo>^</mo></mover><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo fence="true" stretchy="true" minsize="1.2em" maxsize="1.2em">]</mo><mo>=</mo><msup><mtext>Bias</mtext><mn>2</mn></msup><mo>+</mo><mtext>Variance</mtext><mo>+</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">E\bigl[(y-\hat{y})^2\bigr] = \text{Bias}^2 + \text{Variance} + \sigma^2</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐸[(𝑦-𝑦̂)^2]=&quot;Bias&quot;^2+&quot;Variance&quot;+𝜎^2</code></td>
+          <td class="eq-unicode"><code>𝐸[(𝑦-𝑦̂)²]=&quot;Bias&quot;²+&quot;Variance&quot;+𝜎²</code></td>
           <td class="eq-desc">Decomposition of expected prediction error</td>
         </tr>
         <tr>
@@ -3690,7 +3692,7 @@
           <td>F1 score</td>
           <td class="eq-aliases">F1</td>
           <td class="eq-math"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>F</mi><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⋅</mo><mtext>Precision</mtext><mo>⋅</mo><mtext>Recall</mtext></mrow><mrow><mtext>Precision</mtext><mo>+</mo><mtext>Recall</mtext></mrow></mfrac></mrow><annotation encoding="application/x-tex">F_1 = \frac{2 \cdot \text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}</annotation></semantics></math></td>
-          <td class="eq-unicode"><code>𝐹_1=2⋅&quot;Precision&quot;⋅&quot;Recall&quot;/(&quot;Precision&quot;+&quot;Recall&quot;)</code></td>
+          <td class="eq-unicode"><code>𝐹₁=2⋅&quot;Precision&quot;⋅&quot;Recall&quot;/(&quot;Precision&quot;+&quot;Recall&quot;)</code></td>
           <td class="eq-desc">Harmonic mean of precision and recall</td>
         </tr>
     </tbody>
