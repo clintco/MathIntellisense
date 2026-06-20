@@ -12,6 +12,18 @@ import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import { mathSymbols } from "../src/mathSymbols.js";
 import { mathEquations } from "../src/mathEquations.js";
+import { convertUnicodeMathToMathML } from "unicodemathml";
+
+// Derive display MathML from each equation's UnicodeMath via Murray Sargent's unicodemathml
+// (the canonical UnicodeMath -> MathML translator). The parser rejects a few expressions and
+// returns a red error node (mathcolor="#F00"); surface those as "generator error" in the cell
+// rather than masking them. Output is bare <math>; promote it to display="block" for the table.
+function equationMathML(e) {
+  let ml = "";
+  try { ml = convertUnicodeMathToMathML(e.unicodemath || ""); } catch { ml = ""; }
+  if (!ml || ml.includes('mathcolor="#F00"')) return '<span class="gen-error">generator error</span>';
+  return ml.replace(/^<math>/, '<math display="block">');
+}
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 
@@ -226,6 +238,7 @@ function sharedStyles(bmHeight) {
       text-align: center;
     }
     .eq-math math { font-size: 16px; }
+    .gen-error { color: #f7768e; font-style: italic; font-size: 12px; }
     .eq-aliases { color: var(--muted); }
     .eq-unicode code { color: var(--accent2); }
     .eq-desc { color: var(--muted); max-width: 300px; }
@@ -280,7 +293,7 @@ function equationSection(domain) {
         <tr>
           <td>${esc(e.name)}</td>
           <td class="eq-aliases">${esc(e.aliases)}</td>
-          <td class="eq-math">${e.mathml}</td>
+          <td class="eq-math">${equationMathML(e)}</td>
           <td class="eq-unicode"><code>${esc(e.unicodemath)}</code></td>
           <td class="eq-desc">${esc(e.description)}</td>
         </tr>`;

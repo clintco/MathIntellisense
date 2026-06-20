@@ -2744,7 +2744,7 @@ export const mathEquations = [
     "description": "Fundamental wave equation governing time evolution of a quantum state",
     "domain": "Physics",
     "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>i</mi><mi mathvariant=\"normal\">ℏ</mi><mfrac><mrow><mi mathvariant=\"normal\">∂</mi><mi>ψ</mi></mrow><mrow><mi mathvariant=\"normal\">∂</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mover accent=\"true\"><mi>H</mi><mo>^</mo></mover><mi>ψ</mi></mrow><annotation encoding=\"application/x-tex\">i\\hbar\\frac{\\partial\\psi}{\\partial t} = \\hat{H}\\psi</annotation></semantics></math>",
-    "unicodemath": "𝑖ℏ ∂𝜓/∂𝑡=𝐻 ̂𝜓"
+    "unicodemath": "𝑖ℏ ∂𝜓/∂𝑡=𝐻̂𝜓"
   },
   {
     "name": "wave function normalization",
