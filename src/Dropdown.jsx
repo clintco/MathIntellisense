@@ -61,7 +61,7 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
         </div>
       )}
 
-      <ul ref={listRef} id="math-symbol-menu" className="dropdown-list" role="menu" aria-label="Math symbol suggestions">
+      <ul ref={listRef} id="math-symbol-menu" className="dropdown-list" role="listbox" aria-label="Math symbol suggestions">
         {suggestions.flatMap((item, idx) => {
           const el = item.type === "category"
             ? (
@@ -69,8 +69,10 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
                 key={`${item.section ?? "unicode"}-${item.category}`}
                 id={`math-option-${idx}`}
                 data-item
-                role="menuitem"
+                role="option"
                 aria-label={`${item.category}, ${item.count} ${item.section === "equations" ? "equations" : "symbols"}`}
+                aria-selected={idx === selectedIndex}
+                aria-haspopup="listbox"
                 className={`dropdown-item dropdown-item--category${idx === selectedIndex ? " selected" : ""}`}
                 onMouseEnter={() => onHover(idx)}
                 onMouseDown={(e) => { e.preventDefault(); onSelect(item); }}
@@ -89,8 +91,9 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
                 key={item.name}
                 id={`math-option-${idx}`}
                 data-item
-                role="menuitem"
+                role="option"
                 aria-label={`${item.name}, ${item.domain}`}
+                aria-selected={idx === selectedIndex}
                 className={`dropdown-item dropdown-item--equation${idx === selectedIndex ? " selected" : ""}`}
                 onMouseEnter={() => onHover(idx)}
                 onMouseDown={(e) => { e.preventDefault(); onSelect(item); }}
@@ -106,8 +109,9 @@ export function Dropdown({ suggestions, selectedIndex, onSelect, onHover, positi
                 key={item.code}
                 id={`math-option-${idx}`}
                 data-item
-                role="menuitem"
+                role="option"
                 aria-label={`${item.symbol} ${item.name}, code backslash ${item.code}, ${item.category}`}
+                aria-selected={idx === selectedIndex}
                 className={`dropdown-item${idx === selectedIndex ? " selected" : ""}`}
                 onMouseEnter={() => onHover(idx)}
                 onMouseDown={(e) => { e.preventDefault(); onSelect(item); }}

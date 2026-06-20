@@ -232,13 +232,13 @@ export function Editor({ onChange }) {
         setToolbarHighlightIndex((toolbarHighlightRef.current - 1 + TOOLBAR_BUTTON_COUNT) % TOOLBAR_BUTTON_COUNT);
         return;
       }
-      if (e.key === "ArrowDown" || (e.key === "Tab" && !e.shiftKey)) {
+      if (e.key === "ArrowDown") {
         e.preventDefault();
         setToolbarHighlightIndex(-1);
         setSelectedIndex(0);
         return;
       }
-      if (e.key === "ArrowUp" || (e.key === "Tab" && e.shiftKey)) {
+      if (e.key === "ArrowUp") {
         e.preventDefault();
         setToolbarHighlightIndex(-1);
         return;
@@ -290,19 +290,16 @@ export function Editor({ onChange }) {
       setHideActiveDescendant(false);
     }
 
+    // First ArrowDown after the menu opens lands on the first list item.
+    // The toolbar is still reachable via ArrowUp from list[0].
     if (e.key === "ArrowDown" && isOpen && selectedIndex < 0) {
       e.preventDefault();
-      setToolbarHighlightIndex(0);
+      setSelectedIndex(0);
       return;
     }
     if (e.key === "ArrowUp" && isOpen && selectedIndex === 0) {
       e.preventDefault();
       setSelectedIndex(-1);
-      setToolbarHighlightIndex(0);
-      return;
-    }
-    if (e.key === "Tab" && isOpen) {
-      e.preventDefault();
       setToolbarHighlightIndex(0);
       return;
     }
@@ -353,9 +350,11 @@ export function Editor({ onChange }) {
         suppressContentEditableWarning={true}
         onInput={handleInput}
         onKeyDown={handleKeyDown}
-        role="textbox"
+        role="combobox"
         aria-multiline="true"
         aria-label="Math editor"
+        aria-autocomplete="list"
+        aria-haspopup="listbox"
         aria-expanded={isOpen}
         aria-owns={isOpen ? "math-symbol-menu editor-toolbar-container" : undefined}
         aria-controls="math-symbol-menu"
