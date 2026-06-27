@@ -3287,21 +3287,21 @@ export const mathEquations = [
   },
   {
     "name": "gamma function",
-    "aliases": "",
+    "aliases": "generalized factorial",
     "description": "Extends the factorial to complex numbers via an integral",
     "domain": "Calculus & Analysis",
     "unicodemath": "⁅Γ(𝑧)=∫_0^∞ 𝑡^(𝑧-1) 𝑒^−𝑡 ⅆ𝑡⁆"
   },
   {
     "name": "Gaussian integral",
-    "aliases": "Euler-Poisson inBoolean idempotent lawtegral",
+    "aliases": "Euler-Poisson integral",
     "description": "The Gaussian integral over the real line",
     "domain": "Calculus & Analysis",
     "unicodemath": "⁅∫_-∞^∞ e^-𝑥² ⅆ𝑥=√𝜋⁆"
   },
   {
     "name": "limit definition of e",
-    "aliases": "",
+    "aliases": "e as a limit",
     "description": "Euler's number as the limit of (1 + 1/n) to the n",
     "domain": "Calculus & Analysis",
     "unicodemath": "⁅𝑒=lim_(𝑛→∞) (1+1/𝑛)^𝑛⁆"
@@ -3314,9 +3314,9 @@ export const mathEquations = [
     "unicodemath": "⁅1/2𝜋 ∫_0^2𝜋 ⅆ𝜃/(𝑎+𝑏 sin⁡𝜃)=1/√(𝑎²−𝑏²)⁆"
   },
   {
-    "name": "triple integral in polar coordinates",
-    "aliases": "",
-    "description": "Triple integral transformed to polar coordinates",
+    "name": "triple integral in spherical coordinates",
+    "aliases": "volume integral in spherical coordinates",
+    "description": "Triple integral transformed to spherical coordinates",
     "domain": "Calculus & Analysis",
     "unicodemath": "⁅∭_𝑉 𝑓(𝑟,𝜃,𝜙)𝑟ⅆ𝑟ⅆ𝜃ⅆ𝜙⁆"
   }

@@ -8,9 +8,12 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main:      resolve(__dirname, 'index.html'),
-        symbols:   resolve(__dirname, 'symbols.html'),
-        equations: resolve(__dirname, 'equations.html'),
+        main:         resolve(__dirname, 'index.html'),
+        symbols:      resolve(__dirname, 'symbols.html'),
+        equations:    resolve(__dirname, 'equations.html'),
+        equations_es: resolve(__dirname, 'equations.es.html'),
+        equations_de: resolve(__dirname, 'equations.de.html'),
+        equations_fr: resolve(__dirname, 'equations.fr.html'),
       },
     },
   },

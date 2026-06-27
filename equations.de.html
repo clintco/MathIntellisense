@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math Reference — Equations (Deutsch)</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #1e1e2e;
+      --surface:  #2a2a3e;
+      --border:   #3a3a5a;
+      --text:     #e0e0f0;
+      --muted:    #8888aa;
+      --accent:   #7aa2f7;
+      --accent2:  #9ece6a;
+      --code-bg:  #1a1a2e;
+      --row-alt:  #252535;
+      --bm-h:     0px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Page header ── */
+    .page-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 32px;
+      display: flex;
+      align-items: baseline;
+      gap: 24px;
+    }
+    .page-header h1 {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .page-header .back { font-size: 13px; color: var(--muted); }
+    .page-header .other { font-size: 13px; color: var(--accent2); }
+    .page-header .counts { font-size: 12px; color: var(--muted); margin-left: auto; }
+    .page-header .updated { font-size: 12px; color: var(--muted); }
+
+    /* ── Bookmarks bar ── */
+    .bookmarks {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 32px;
+    }
+    .bm-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 28px;
+    }
+    .bm-section {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent2);
+      white-space: nowrap;
+      min-width: 70px;
+      text-decoration: none;
+    }
+    .bm-section:hover { text-decoration: underline; }
+    .bm-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .bm-pill {
+      font-size: 11px;
+      color: var(--text);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1px 8px;
+      white-space: nowrap;
+      line-height: 18px;
+      text-decoration: none;
+    }
+    .bm-pill:hover {
+      background: var(--accent);
+      color: var(--bg);
+      border-color: var(--accent);
+      text-decoration: none;
+    }
+    .bm-pill--eq:hover {
+      background: var(--accent2);
+      border-color: var(--accent2);
+    }
+
+    /* ── Main content ── */
+    main { padding: 0 32px 48px; }
+
+    h1 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--accent);
+      margin: 32px 0 10px;
+      padding-top: 8px;
+      border-top: 1px solid var(--border);
+      scroll-margin-top: calc(var(--bm-h) + 20px);
+    }
+    h1:first-of-type { border-top: none; }
+
+    /* ── Tables ── */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+    thead th {
+      background: var(--surface);
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: var(--bm-h);
+      z-index: 5;
+    }
+    tbody tr:nth-child(even) { background: var(--row-alt); }
+    tbody tr:hover { background: #2e2e48; }
+    td {
+      padding: 7px 12px;
+      vertical-align: middle;
+      border-bottom: 1px solid #2a2a3a;
+    }
+
+    /* Symbol column */
+    .sym-char {
+      font-size: 22px;
+      text-align: center;
+      width: 48px;
+      color: var(--text);
+    }
+
+    code {
+      font-family: "Cascadia Code", "Fira Code", monospace;
+      font-size: 12px;
+      background: var(--code-bg);
+      color: var(--accent);
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+
+    .rank { color: #f9e2af; letter-spacing: -1px; font-size: 13px; }
+
+    /* Equation columns */
+    .eq-math {
+      min-width: 180px;
+      text-align: center;
+    }
+    .eq-math math { font-size: 16px; }
+    .gen-error { color: #f7768e; font-style: italic; font-size: 12px; }
+    .eq-aliases { color: var(--muted); }
+    .eq-unicode code { color: var(--accent2); }
+    .eq-desc { color: var(--muted); max-width: 300px; }
+
+    /* Localized validation pages */
+    .eq-name-loc { font-weight: 600; color: var(--text); }
+    .eq-name-en  { color: var(--muted); font-size: 11px; margin-top: 2px; }
+    .eq-dict     { color: var(--text); min-width: 320px; }
+    .l10n        { font-size: 13px; color: var(--muted); }
+    .l10n a      { color: var(--accent2); }
+    .pilot-note  { color: var(--muted); margin: 16px 0 4px; max-width: 70ch; }
+
+    @media (max-width: 800px) {
+      main, .page-header, .bookmarks { padding-left: 16px; padding-right: 16px; }
+      .eq-desc { max-width: 180px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-header">
+    <h1>Equations — Deutsch</h1>
+    <a class="back" href="./">← Math Intellisense</a>
+    <a class="other" href="equations.html">English →</a>
+    <a class="other" href="equations.es.html">Español</a>
+    <a class="other" href="equations.fr.html">Français</a>
+    <span class="counts">18 pilot equations</span>
+    <span class="updated">Last updated: Jun 26, 2026, 5:27 PM</span>
+  </div>
+
+  <main>
+    <p class="pilot-note">Pilot localization for native-speaker review. The <strong>Dictation</strong>
+    column is the test corpus for engine localization — how a native speaker says the equation,
+    faithful to the UnicodeMath. Names and dictation are model-generated drafts; please flag corrections.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Equation (UnicodeMath)</th>
+          <th>Dictation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="eq-name-loc">Mitternachtsformel</div>
+            <div class="eq-name-en">quadratic formula</div>
+            <div class="eq-aliases">abc-Formel; Lösungsformel für quadratische Gleichungen</div>
+          </td>
+          <td class="eq-math">
+            <math display="block"><mi>𝑥</mi><mo>=</mo><mfrac><mrow><mo>−</mo><mi>𝑏</mi><mo>±</mo><msqrt><msup><mi>𝑏</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>𝑎</mi><mi>𝑐</mi></msqrt></mrow><mrow><mn>2</mn><mi>𝑎</mi></mrow></mfrac></math>
+            <div class="eq-unicode"><code>𝑥=(-𝑏±√(𝑏²-4𝑎𝑐))/2𝑎</code></div>
+          </td>
+          <td class="eq-dict">iks gleich Klammer auf minus be plus minus Wurzel aus Klammer auf be Quadrat minus vier mal a mal ze Klammer zu Klammer zu durch zwei a</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">Satz des Pythagoras</div>
+            <div class="eq-name-en">Pythagorean theorem</div>
+            <div class="eq-aliases">a Quadrat plus be Quadrat gleich ze Quadrat</div>
+          </td>
+          <td class="eq-math">
+            <math display="block"><msup><mi>𝑎</mi><mn>2</mn></msup><mo>+</mo><msup><mi>𝑏</mi><mn>2</mn></msup><mo>=</mo><msup><mi>𝑐</mi><mn>2</mn></msup></math>
+            <div class="eq-unicode"><code>𝑎²+𝑏²=𝑐²</code></div>
+          </td>
+          <td class="eq-dict">a Quadrat plus be Quadrat gleich ze Quadrat</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">eulersche Identität</div>
+            <div class="eq-name-en">Euler's identity</div>
+            <div class="eq-aliases">e hoch i pi plus eins gleich null</div>
+          </td>
+          <td class="eq-math">
+            <math display="block"><msup><mi>𝑒</mi><mrow><mi>𝑖</mi><mi>𝜋</mi></mrow></msup><mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn></math>
+            <div class="eq-unicode"><code>𝑒^𝑖𝜋+1=0</code></div>
+          </td>
+          <td class="eq-dict">e hoch i mal pi plus eins gleich null</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">Kosinussatz</div>
+            <div class="eq-name-en">law of cosines</div>
+            <div class="eq-aliases">Kosinusregel</div>
+          </td>
+          <td class="eq-math">
+            <math display="block"><msup><mi>𝑐</mi><mn>2</mn></msup><mo>=</mo><msup><mi>𝑎</mi><mn>2</mn></msup><mo>+</mo><msup><mi>𝑏</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>𝑎</mi><mi>𝑏</mi><mrow intent=":function"><mi>cos</mi><mo>⁡</mo><mi>𝐶</mi></mrow></math>
+            <div class="eq-unicode"><code>𝑐²=𝑎²+𝑏²-2𝑎𝑏 cos 𝐶</code></div>
+          </td>
+          <td class="eq-dict">ze Quadrat gleich a Quadrat plus be Quadrat minus zwei mal a mal be mal Kosinus ze groß</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">Kreisfläche</div>
+            <div class="eq-name-en">area of a circle</div>
+            <div class="eq-aliases">Flächeninhalt des Kreises</div>
+          </td>
+          <td class="eq-math">
+            <math display="block"><mi>𝐴</mi><mo>=</mo><mi>𝜋</mi><msup><mi>𝑟</mi><mn>2</mn></msup></math>
+            <div class="eq-unicode"><code>𝐴=𝜋𝑟²</code></div>
+          </td>
+          <td class="eq-dict">a gleich pi mal er Quadrat</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">ohmsches Gesetz</div>
+            <div class="eq-name-en">Ohm's law</div>
+            <div class="eq-aliases">vau gleich i mal er</div>
+          </td>
+          <td class="eq-math">
+            <math display="block"><mi>𝑉</mi><mo>=</mo><mi>𝐼</mi><mi>𝑅</mi></math>
+            <div class="eq-unicode"><code>𝑉=𝐼𝑅</code></div>
+          </td>
+          <td class="eq-dict">vau gleich i mal er</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">zweites newtonsches Gesetz</div>
+            <div class="eq-name-en">Newton's second law</div>
+            <div class="eq-aliases">Grundgleichung der Mechanik; Kraft gleich Masse mal Beschleunigung</div>
+          </td>
+          <td class="eq-math">
+            <math display="block"><mi>𝐹</mi><mo>=</mo><mi>𝑚</mi><mi>𝑎</mi></math>
+            <div class="eq-unicode"><code>𝐹=𝑚𝑎</code></div>
+          </td>
+          <td class="eq-dict">ef gleich em mal a</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">Hauptsatz der Differential- und Integralrechnung</div>
+            <div class="eq-name-en">fundamental theorem of calculus</div>
+            <div class="eq-aliases">Fundamentalsatz der Analysis</div>
+          </td>
+          <td class="eq-math">
+            <math display="block"><mrow intent=":nary(𝑎,𝑏,$naryand)"><msubsup><mo>∫</mo><mi>𝑎</mi><mi>𝑏</mi></msubsup><mrow arg="naryand"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mrow><mo>=</mo><mi>𝐹</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑏</mi><mo>)</mo></mrow><mo>−</mo><mi>𝐹</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑎</mi><mo>)</mo></mrow></math>
+            <div class="eq-unicode"><code>∫_𝑎^𝑏 𝑓(𝑥)ⅆ𝑥=𝐹(𝑏)-𝐹(𝑎)</code></div>
+          </td>
+          <td class="eq-dict">das Integral von a bis be über ef von iks de iks gleich ef groß von be minus ef groß von a</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">Abstandsformel</div>
+            <div class="eq-name-en">distance formula</div>
+            <div class="eq-aliases">Distanzformel</div>
+          </td>
+          <td class="eq-math">
+            <math display="block"><mi>𝑑</mi><mo>=</mo><msqrt><msup><mrow intent=":fenced"><mo>(</mo><mrow><msub><mi>𝑥</mi><mn>2</mn></msub><mo>−</mo><msub><mi>𝑥</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow intent=":fenced"><mo>(</mo><mrow><msub><mi>𝑦</mi><mn>2</mn></msub><mo>−</mo><msub><mi>𝑦</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mn>2</mn></msup></msqrt></math>
+            <div class="eq-unicode"><code>𝑑=√((𝑥₂-𝑥₁)²+(𝑦₂-𝑦₁)²)</code></div>
+          </td>
+          <td class="eq-dict">de gleich Wurzel aus Klammer auf Klammer auf iks Index zwei minus iks Index eins Klammer zu Quadrat plus Klammer auf üpsilon Index zwei minus üpsilon Index eins Klammer zu Quadrat Klammer zu</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">Zinseszins</div>
+            <div class="eq-name-en">compound interest</div>
+            <div class="eq-aliases">Zinseszinsformel</div>
+          </td>
+          <td class="eq-math">
+            <math display="block"><mi>𝐴</mi><mo>=</mo><mi>𝑃</mi><msup><mrow intent=":fenced"><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>𝑟</mi><mi>𝑛</mi></mfrac></mrow><mo>)</mo></mrow><mrow><mi>𝑛</mi><mi>𝑡</mi></mrow></msup></math>
+            <div class="eq-unicode"><code>𝐴=𝑃(1+𝑟/𝑛)^𝑛𝑡</code></div>
+          </td>
+          <td class="eq-dict">a gleich pe mal Klammer auf eins plus er durch en Klammer zu hoch en mal te</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">Skalarprodukt</div>
+            <div class="eq-name-en">dot product</div>
+            <div class="eq-aliases">inneres Produkt; Punktprodukt</div>
+          </td>
+          <td class="eq-math">
+            <math display="block"><mi>𝐚</mi><mo>⋅</mo><mi>𝐛</mi><mo>=</mo><mrow intent="absolute-value(𝐚)"><mo>|</mo><mi>𝐚</mi><mo>|</mo></mrow><mrow intent="absolute-value(𝐛)"><mo>|</mo><mi>𝐛</mi><mo>|</mo></mrow><mrow intent=":function"><mi>cos</mi><mo>⁡</mo><mi>𝜃</mi></mrow></math>
+            <div class="eq-unicode"><code>𝐚⋅𝐛=|𝐚||𝐛|cos⁡𝜃</code></div>
+          </td>
+          <td class="eq-dict">a Punkt be gleich Betrag von a mal Betrag von be mal Kosinus theta</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">binomischer Lehrsatz</div>
+            <div class="eq-name-en">binomial theorem</div>
+            <div class="eq-aliases">binomische Formel</div>
+          </td>
+          <td class="eq-math">
+            <math display="block"><msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑎</mi><mo>+</mo><mi>𝑏</mi></mrow><mo>)</mo></mrow><mi>𝑛</mi></msup><mo>=</mo><mrow intent=":nary($l,𝑛,$naryand)"><msubsup><mo>∑</mo><mrow arg="l"><mi>𝑘</mi><mo>=</mo><mn>0</mn></mrow><mi>𝑛</mi></msubsup><mrow arg="naryand"><mrow intent=":fenced"><mo>(</mo><mfrac linethickness="0"><mi>𝑛</mi><mi>𝑘</mi></mfrac><mo>)</mo></mrow></mrow></mrow><msup><mi>𝑎</mi><mrow><mi>𝑛</mi><mo>−</mo><mi>𝑘</mi></mrow></msup><msup><mi>𝑏</mi><mi>𝑘</mi></msup></math>
+            <div class="eq-unicode"><code>(𝑎+𝑏)^𝑛=∑_(𝑘=0)^𝑛 (𝑛¦𝑘) 𝑎^(𝑛-𝑘) 𝑏^𝑘</code></div>
+          </td>
+          <td class="eq-dict">Klammer auf a plus be Klammer zu hoch en gleich die Summe von ka gleich null bis en über en über ka mal a hoch Klammer auf en minus ka Klammer zu mal be hoch ka</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">Kettenregel</div>
+            <div class="eq-name-en">chain rule</div>
+            <div class="eq-aliases">Ableitung einer verketteten Funktion</div>
+          </td>
+          <td class="eq-math">
+            <math display="block"><mfrac intent="derivative(1,𝑦,𝑥)"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑦</mi></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mfrac><mo>=</mo><mfrac intent="derivative(1,𝑦,𝑢)"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑦</mi></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑢</mi></mrow></mfrac><mo>⋅</mo><mfrac intent="derivative(1,𝑢,𝑥)"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑢</mi></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mfrac></math>
+            <div class="eq-unicode"><code>ⅆ𝑦/ⅆ𝑥=ⅆ𝑦/ⅆ𝑢⋅ⅆ𝑢/ⅆ𝑥</code></div>
+          </td>
+          <td class="eq-dict">de üpsilon durch de iks gleich de üpsilon durch de u mal de u durch de iks</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">geometrische Reihe</div>
+            <div class="eq-name-en">geometric series</div>
+            <div class="eq-aliases">Summe einer geometrischen Folge</div>
+          </td>
+          <td class="eq-math">
+            <math display="block"><msub><mi>𝑆</mi><mi>𝑛</mi></msub><mo>=</mo><mfrac><mrow><mi>𝑎</mi><mrow intent=":fenced"><mo>(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>𝑟</mi><mi>𝑛</mi></msup></mrow><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>−</mo><mi>𝑟</mi></mrow></mfrac></math>
+            <div class="eq-unicode"><code>𝑆_𝑛=𝑎(1-𝑟^𝑛)/(1-𝑟)</code></div>
+          </td>
+          <td class="eq-dict">es Index en gleich Klammer auf a mal Klammer auf eins minus er hoch en Klammer zu Klammer zu durch Klammer auf eins minus er Klammer zu</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">Standardabweichung der Grundgesamtheit</div>
+            <div class="eq-name-en">population standard deviation</div>
+            <div class="eq-aliases">Populationsstandardabweichung</div>
+          </td>
+          <td class="eq-math">
+            <math display="block"><mi>𝜎</mi><mo>=</mo><msqrt><mfrac><mn>1</mn><mi>𝑁</mi></mfrac><mrow intent=":nary($l,𝑁,$naryand)"><msubsup><mo>∑</mo><mrow arg="l"><mi>𝑖</mi><mo>=</mo><mn>1</mn></mrow><mi>𝑁</mi></msubsup><mrow arg="naryand"><msup><mrow intent=":fenced"><mo>(</mo><mrow><msub><mi>𝑥</mi><mi>𝑖</mi></msub><mo>−</mo><mi>𝜇</mi></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow></mrow></msqrt></math>
+            <div class="eq-unicode"><code>𝜎=√(1/𝑁 ∑_(𝑖=1)^𝑁 (𝑥ᵢ-𝜇)²)</code></div>
+          </td>
+          <td class="eq-dict">sigma gleich Wurzel aus Klammer auf eins durch en groß mal die Summe von i gleich eins bis en groß über Klammer auf iks Index i minus mü Klammer zu Quadrat Klammer zu</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">Regel von de L'Hospital</div>
+            <div class="eq-name-en">L'Hopital's rule</div>
+            <div class="eq-aliases">l'Hospitalsche Regel</div>
+          </td>
+          <td class="eq-math">
+            <math display="block"><mrow intent=":function"><msub><mi>lim</mi><mrow><mi>𝑥</mi><mo stretchy="true">→</mo><mi>𝑎</mi></mrow></msub><mo>⁡</mo><mrow intent=":fenced"><mo></mo><mfrac><mrow><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow><mrow><mi>𝑔</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></mfrac><mo></mo></mrow></mrow><mo>=</mo><mrow intent=":function"><msub><mi>lim</mi><mrow><mi>𝑥</mi><mo stretchy="true">→</mo><mi>𝑎</mi></mrow></msub><mo>⁡</mo><mrow intent=":fenced"><mo></mo><mfrac><mrow><msup><mi>𝑓</mi><mo>′</mo></msup><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow><mrow><msup><mi>𝑔</mi><mo>′</mo></msup><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></mfrac><mo></mo></mrow></mrow></math>
+            <div class="eq-unicode"><code>lim_(𝑥→𝑎) 〖𝑓(𝑥)/𝑔(𝑥)〗=lim_(𝑥→𝑎) 〖𝑓'(𝑥)/𝑔'(𝑥)〗</code></div>
+          </td>
+          <td class="eq-dict">der Limes für iks gegen a von Klammer auf ef von iks durch ge von iks Klammer zu gleich der Limes für iks gegen a von Klammer auf ef Strich von iks durch ge Strich von iks Klammer zu</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">Potenzregel</div>
+            <div class="eq-name-en">power rule for derivatives</div>
+            <div class="eq-aliases">Ableitung einer Potenz</div>
+          </td>
+          <td class="eq-math">
+            <math display="block"><mfrac intent="derivative(1,$f,𝑥)"><mi intent="ⅆ">𝑑</mi><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mfrac><mrow arg="f"><mrow intent=":fenced"><mo>[</mo><msup><mi>𝑥</mi><mi>𝑛</mi></msup><mo>]</mo></mrow></mrow><mo>=</mo><mi>𝑛</mi><msup><mi>𝑥</mi><mrow><mi>𝑛</mi><mo>−</mo><mn>1</mn></mrow></msup></math>
+            <div class="eq-unicode"><code>ⅆ/ⅆ𝑥 [𝑥^𝑛]=𝑛𝑥^(𝑛-1)</code></div>
+          </td>
+          <td class="eq-dict">die Ableitung nach iks von eckige Klammer auf iks hoch en eckige Klammer zu gleich en mal iks hoch Klammer auf en minus eins Klammer zu</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">stirlingsche Formel</div>
+            <div class="eq-name-en">Stirling's approximation</div>
+            <div class="eq-aliases">Stirling-Näherung</div>
+          </td>
+          <td class="eq-math">
+            <math display="block"><mi>𝑛</mi><mo>!</mo><mo>≈</mo><msqrt><mn>2</mn><mi>𝜋</mi><mi>𝑛</mi></msqrt><msup><mrow intent=":fenced"><mo>(</mo><mfrac><mi>𝑛</mi><mi>𝑒</mi></mfrac><mo>)</mo></mrow><mi>𝑛</mi></msup></math>
+            <div class="eq-unicode"><code>𝑛!≈√2𝜋𝑛 (𝑛/𝑒)^𝑛</code></div>
+          </td>
+          <td class="eq-dict">en Fakultät ungefähr gleich Wurzel aus Klammer auf zwei mal pi mal en Klammer zu mal Klammer auf en durch e Klammer zu hoch en</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+</body>
+</html>

@@ -12,6 +12,7 @@ import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import { mathSymbols } from "../src/mathSymbols.js";
 import { mathEquations } from "../src/mathEquations.js";
+import { localizedEquations, localizedLocales } from "../src/localizedEquations.js";
 import { convertUnicodeMathToMathML } from "unicodemathml";
 
 // Derive display MathML from each equation's UnicodeMath via Murray Sargent's unicodemathml
@@ -243,6 +244,14 @@ function sharedStyles(bmHeight) {
     .eq-unicode code { color: var(--accent2); }
     .eq-desc { color: var(--muted); max-width: 300px; }
 
+    /* Localized validation pages */
+    .eq-name-loc { font-weight: 600; color: var(--text); }
+    .eq-name-en  { color: var(--muted); font-size: 11px; margin-top: 2px; }
+    .eq-dict     { color: var(--text); min-width: 320px; }
+    .l10n        { font-size: 13px; color: var(--muted); }
+    .l10n a      { color: var(--accent2); }
+    .pilot-note  { color: var(--muted); margin: 16px 0 4px; max-width: 70ch; }
+
     @media (max-width: 800px) {
       main, .page-header, .bookmarks { padding-left: 16px; padding-right: 16px; }
       .eq-desc { max-width: 180px; }
@@ -319,6 +328,72 @@ function equationSection(domain) {
 // Timestamp shown top-right on each page (and written to src/lastUpdated.js for the app).
 const lastUpdated = new Date().toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" });
 
+// ── Localized validation pages (pilot) ───────────────────────────────────────
+
+function localizedRows(items) {
+  return items.map(e => `
+        <tr>
+          <td>
+            <div class="eq-name-loc">${esc(e.name)}</div>
+            <div class="eq-name-en">${esc(e.englishName)}</div>
+            ${e.aliases && e.aliases.length ? `<div class="eq-aliases">${esc(e.aliases.join("; "))}</div>` : ""}
+          </td>
+          <td class="eq-math">
+            ${equationMathML(e)}
+            <div class="eq-unicode"><code>${esc(e.unicodemath)}</code></div>
+          </td>
+          <td class="eq-dict">${esc(e.dictation)}</td>
+        </tr>`).join("");
+}
+
+function languagePage(locale) {
+  const items = localizedEquations[locale.code] || [];
+  const otherLinks = localizedLocales
+    .filter(l => l.code !== locale.code)
+    .map(l => `<a class="other" href="equations.${l.code}.html">${esc(l.label)}</a>`)
+    .join("\n    ");
+  return `<!DOCTYPE html>
+<html lang="${locale.code}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math Reference — Equations (${esc(locale.label)})</title>
+  <style>${sharedStyles(0)}
+  </style>
+</head>
+<body>
+
+  <div class="page-header">
+    <h1>Equations — ${esc(locale.label)}</h1>
+    <a class="back" href="./">← Math Intellisense</a>
+    <a class="other" href="equations.html">English →</a>
+    ${otherLinks}
+    <span class="counts">${items.length} pilot equations</span>
+    <span class="updated">Last updated: ${lastUpdated}</span>
+  </div>
+
+  <main>
+    <p class="pilot-note">Pilot localization for native-speaker review. The <strong>Dictation</strong>
+    column is the test corpus for engine localization — how a native speaker says the equation,
+    faithful to the UnicodeMath. Names and dictation are model-generated drafts; please flag corrections.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Equation (UnicodeMath)</th>
+          <th>Dictation</th>
+        </tr>
+      </thead>
+      <tbody>${localizedRows(items)}
+      </tbody>
+    </table>
+  </main>
+
+</body>
+</html>
+`;
+}
+
 // ── symbols.html ───────────────────────────────────────────────────────────
 
 // Bookmarks bar height: 8px top + 28px row + 8px bottom = 44px
@@ -383,6 +458,7 @@ const equationsHtml = `<!DOCTYPE html>
     <h1>Equations</h1>
     <a class="back" href="./">← Math Intellisense</a>
     <a class="other" href="symbols.html">Symbols →</a>
+    <span class="l10n">Localization pilot: ${localizedLocales.map(l => `<a href="equations.${l.code}.html">${esc(l.label)}</a>`).join(" · ")}</span>
     <span class="counts">${totalEquations} equations across ${eqDomains.length} domains</span>
     <span class="updated">Last updated: ${lastUpdated}</span>
   </div>
@@ -409,6 +485,13 @@ const eqOut  = join(__dir, "../equations.html");
 
 writeFileSync(symOut,  symbolsHtml,  "utf8");
 writeFileSync(eqOut,   equationsHtml, "utf8");
+
+// Localized validation pages (pilot).
+for (const locale of localizedLocales) {
+  const locOut = join(__dir, `../equations.${locale.code}.html`);
+  writeFileSync(locOut, languagePage(locale), "utf8");
+  console.log(`Written: ${locOut}  (${(localizedEquations[locale.code] || []).length} ${locale.code})`);
+}
 
 // Expose the timestamp to the React app (App.jsx imports this) so all three pages agree.
 const luOut = join(__dir, "../src/lastUpdated.js");
