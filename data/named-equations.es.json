@@ -1,115 +1,3854 @@
 {
   "schemaVersion": 1,
   "locale": "es",
-  "note": "Pilot draft for native review. `dictation` is a test-corpus utterance for engine localization — native phrasing, faithful to the master `unicodemath` (never the English string). Grouping uses explicit 'abre/cierra paréntesis'. See docs/equation-dictation-localization.md.",
+  "note": "Native-review draft covering the full master corpus (474 equations). `dictation` is a test-corpus utterance for engine localization — native phrasing, faithful to the master `unicodemath` (never the English string). Grouping uses explicit abre/cierra markers (paréntesis, corchete, llave); powers use al cuadrado / al cubo / elevado a; subscripts use sub; fractions use partido por (binomial coefficient uses número combinatorio … sobre …). Capital letters are spelled bare (uve, erre, efe) and marked with a following \"mayúscula\" only to resolve a same-letter case clash within a formula. See [[dictation-localization-progress]].",
   "equations": [
+    {
+      "id": 1000,
+      "name": "producto de potencias de igual base",
+      "aliases": [
+        "multiplicar potencias de la misma base"
+      ],
+      "dictation": "a elevado a eme por a elevado a ene igual a a elevado a abre paréntesis eme más ene cierra paréntesis"
+    },
+    {
+      "id": 1001,
+      "name": "cociente de potencias de igual base",
+      "aliases": [
+        "dividir potencias de la misma base"
+      ],
+      "dictation": "a elevado a eme partido por a elevado a ene igual a a elevado a abre paréntesis eme menos ene cierra paréntesis"
+    },
+    {
+      "id": 1002,
+      "name": "potencia de una potencia",
+      "aliases": [
+        "potencia de potencia"
+      ],
+      "dictation": "abre paréntesis a elevado a eme cierra paréntesis elevado a ene igual a a elevado a abre paréntesis eme por ene cierra paréntesis"
+    },
+    {
+      "id": 1003,
+      "name": "potencia de un producto",
+      "aliases": [
+        "producto elevado a ene"
+      ],
+      "dictation": "abre paréntesis a por be cierra paréntesis elevado a ene igual a a elevado a ene por be elevado a ene"
+    },
+    {
+      "id": 1004,
+      "name": "potencia de un cociente",
+      "aliases": [
+        "cociente elevado a ene"
+      ],
+      "dictation": "abre paréntesis a partido por be cierra paréntesis elevado a ene igual a a elevado a ene partido por be elevado a ene"
+    },
+    {
+      "id": 1005,
+      "name": "exponente negativo",
+      "aliases": [
+        "potencia negativa"
+      ],
+      "dictation": "a elevado a menos ene igual a uno partido por a elevado a ene"
+    },
+    {
+      "id": 1006,
+      "name": "exponente fraccionario",
+      "aliases": [
+        "exponente racional"
+      ],
+      "dictation": "a elevado a abre paréntesis eme partido por ene cierra paréntesis igual a raíz ene-ésima de a elevado a eme"
+    },
+    {
+      "id": 1007,
+      "name": "logaritmo de un producto",
+      "aliases": [
+        "regla del logaritmo del producto"
+      ],
+      "dictation": "logaritmo en base be de abre paréntesis equis por i griega cierra paréntesis igual a logaritmo en base be de equis más logaritmo en base be de i griega"
+    },
+    {
+      "id": 1008,
+      "name": "logaritmo de un cociente",
+      "aliases": [
+        "regla del logaritmo del cociente"
+      ],
+      "dictation": "logaritmo en base be de abre paréntesis equis partido por i griega cierra paréntesis igual a logaritmo en base be de equis menos logaritmo en base be de i griega"
+    },
+    {
+      "id": 1009,
+      "name": "logaritmo de una potencia",
+      "aliases": [
+        "regla del logaritmo de la potencia"
+      ],
+      "dictation": "logaritmo en base be de abre paréntesis equis elevado a ene cierra paréntesis igual a ene por logaritmo en base be de equis"
+    },
+    {
+      "id": 1010,
+      "name": "logaritmo inverso",
+      "aliases": [
+        "be elevado al logaritmo en base be de equis"
+      ],
+      "dictation": "be elevado a abre paréntesis logaritmo en base be de equis cierra paréntesis igual a equis"
+    },
+    {
+      "id": 1011,
+      "name": "fórmula del cambio de base",
+      "aliases": [
+        "cambio de base del logaritmo"
+      ],
+      "dictation": "logaritmo en base be de equis igual a logaritmo natural de equis partido por logaritmo natural de be"
+    },
+    {
+      "id": 1012,
+      "name": "trinomio cuadrado perfecto",
+      "aliases": [
+        "cuadrado de una suma",
+        "cuadrado de una resta"
+      ],
+      "dictation": "forma con suma, abre paréntesis a más be cierra paréntesis al cuadrado igual a a al cuadrado más dos por a por be más be al cuadrado punto y coma forma con resta, abre paréntesis a menos be cierra paréntesis al cuadrado igual a a al cuadrado menos dos por a por be más be al cuadrado"
+    },
+    {
+      "id": 1013,
+      "name": "completar el cuadrado",
+      "aliases": [
+        "compleción de cuadrados"
+      ],
+      "dictation": "equis al cuadrado más be por equis más abre paréntesis be partido por dos cierra paréntesis al cuadrado igual a abre paréntesis equis más be partido por dos cierra paréntesis al cuadrado"
+    },
+    {
+      "id": 1014,
+      "name": "proporcionalidad directa",
+      "aliases": [
+        "i griega varía directamente con equis"
+      ],
+      "dictation": "i griega igual a ka por equis"
+    },
+    {
+      "id": 1015,
+      "name": "proporcionalidad inversa",
+      "aliases": [
+        "i griega varía inversamente con equis"
+      ],
+      "dictation": "i griega igual a ka partido por equis"
+    },
+    {
+      "id": 1016,
+      "name": "proporcionalidad conjunta",
+      "aliases": [
+        "i griega varía conjuntamente con equis y zeta"
+      ],
+      "dictation": "i griega igual a ka por equis por zeta"
+    },
+    {
+      "id": 1017,
+      "name": "distancia velocidad tiempo",
+      "aliases": [
+        "de igual a erre por te"
+      ],
+      "dictation": "de igual a erre por te"
+    },
+    {
+      "id": 1018,
+      "name": "ecuación con valor absoluto",
+      "aliases": [
+        "valor absoluto igual a be"
+      ],
+      "dictation": "el valor absoluto de abre paréntesis equis menos a cierra paréntesis igual a be implica equis igual a a más menos be"
+    },
     {
       "id": 1019,
       "name": "fórmula cuadrática",
-      "aliases": ["fórmula general", "raíces de la ecuación de segundo grado"],
+      "aliases": [
+        "fórmula general",
+        "raíces de la ecuación de segundo grado"
+      ],
       "dictation": "equis igual a abre paréntesis menos be más menos raíz cuadrada de abre paréntesis be al cuadrado menos cuatro por a por ce cierra paréntesis cierra paréntesis partido por dos a"
     },
     {
-      "id": 1046,
-      "name": "teorema de Pitágoras",
-      "aliases": ["a al cuadrado más be al cuadrado igual a ce al cuadrado"],
-      "dictation": "a al cuadrado más be al cuadrado igual a ce al cuadrado"
+      "id": 1020,
+      "name": "discriminante",
+      "aliases": [
+        "be al cuadrado menos cuatro a ce",
+        "delta"
+      ],
+      "dictation": "be al cuadrado menos cuatro por a por ce"
     },
     {
-      "id": 1041,
-      "name": "identidad de Euler",
-      "aliases": ["e elevado a i pi más uno igual a cero"],
-      "dictation": "e elevado a i por pi más uno igual a cero"
+      "id": 1021,
+      "name": "diferencia de cuadrados",
+      "aliases": [
+        "suma por diferencia"
+      ],
+      "dictation": "a al cubo menos be al cubo igual a abre paréntesis a más be cierra paréntesis por abre paréntesis a menos be cierra paréntesis"
     },
     {
-      "id": 1087,
-      "name": "teorema del coseno",
-      "aliases": ["ley de cosenos"],
-      "dictation": "ce al cuadrado igual a a al cuadrado más be al cuadrado menos dos por a por be por coseno de ce mayúscula"
+      "id": 1022,
+      "name": "suma de cubos",
+      "aliases": [
+        "factorización de la suma de cubos"
+      ],
+      "dictation": "a al cubo más be al cubo igual a abre paréntesis a más be cierra paréntesis por abre paréntesis a al cuadrado menos a por be más be al cuadrado cierra paréntesis"
     },
     {
-      "id": 1050,
-      "name": "área del círculo",
-      "aliases": ["superficie del círculo"],
-      "dictation": "a igual a pi por erre al cuadrado"
-    },
-    {
-      "id": 1273,
-      "name": "ley de Ohm",
-      "aliases": ["uve igual a i por erre"],
-      "dictation": "uve igual a i por erre"
-    },
-    {
-      "id": 1269,
-      "name": "segunda ley de Newton",
-      "aliases": ["fuerza igual a masa por aceleración", "efe igual a eme por a"],
-      "dictation": "efe igual a eme por a"
-    },
-    {
-      "id": 1117,
-      "name": "teorema fundamental del cálculo",
-      "aliases": ["TFC"],
-      "dictation": "la integral de a a be de efe de equis diferencial de equis igual a efe mayúscula de be menos efe mayúscula de a"
-    },
-    {
-      "id": 1047,
-      "name": "fórmula de la distancia",
-      "aliases": ["distancia entre dos puntos"],
-      "dictation": "de igual a raíz cuadrada de abre paréntesis abre paréntesis equis sub dos menos equis sub uno cierra paréntesis al cuadrado más abre paréntesis i griega sub dos menos i griega sub uno cierra paréntesis al cuadrado cierra paréntesis"
-    },
-    {
-      "id": 1410,
-      "name": "interés compuesto",
-      "aliases": ["fórmula del interés compuesto"],
-      "dictation": "a igual a pe por abre paréntesis uno más erre partido por ene cierra paréntesis elevado a ene por te"
-    },
-    {
-      "id": 1166,
-      "name": "producto escalar",
-      "aliases": ["producto punto"],
-      "dictation": "a punto be igual a el módulo de a por el módulo de be por coseno de theta"
+      "id": 1023,
+      "name": "diferencia de cubos",
+      "aliases": [
+        "factorización de la diferencia de cubos"
+      ],
+      "dictation": "a al cubo menos be al cubo igual a abre paréntesis a menos be cierra paréntesis por abre paréntesis a al cuadrado más a por be más be al cuadrado cierra paréntesis"
     },
     {
       "id": 1024,
       "name": "teorema del binomio",
-      "aliases": ["binomio de Newton"],
+      "aliases": [
+        "binomio de Newton"
+      ],
       "dictation": "abre paréntesis a más be cierra paréntesis elevado a ene igual a el sumatorio desde ka igual a cero hasta ene de número combinatorio ene sobre ka por a elevado a abre paréntesis ene menos ka cierra paréntesis por be elevado a ka"
-    },
-    {
-      "id": 1101,
-      "name": "regla de la cadena",
-      "aliases": ["derivada de una función compuesta"],
-      "dictation": "de i griega partido por de equis igual a de i griega partido por de u por de u partido por de equis"
     },
     {
       "id": 1025,
       "name": "serie geométrica",
-      "aliases": ["suma de una progresión geométrica"],
+      "aliases": [
+        "suma de una progresión geométrica"
+      ],
       "dictation": "ese sub ene igual a abre paréntesis a por abre paréntesis uno menos erre elevado a ene cierra paréntesis cierra paréntesis partido por abre paréntesis uno menos erre cierra paréntesis"
     },
     {
-      "id": 1214,
-      "name": "desviación típica poblacional",
-      "aliases": ["desviación estándar de la población"],
-      "dictation": "sigma igual a raíz cuadrada de abre paréntesis uno partido por ene mayúscula por el sumatorio desde i igual a uno hasta ene mayúscula de abre paréntesis equis sub i menos mu cierra paréntesis al cuadrado cierra paréntesis"
+      "id": 1026,
+      "name": "serie geométrica infinita",
+      "aliases": [
+        "suma de una serie geométrica infinita"
+      ],
+      "dictation": "ese igual a a partido por abre paréntesis uno menos erre cierra paréntesis"
     },
     {
-      "id": 1136,
-      "name": "regla de L'Hôpital",
-      "aliases": ["regla de l'Hôpital"],
-      "dictation": "el límite cuando equis tiende a a de abre paréntesis efe de equis partido por ge de equis cierra paréntesis igual a el límite cuando equis tiende a a de abre paréntesis efe prima de equis partido por ge prima de equis cierra paréntesis"
+      "id": 1027,
+      "name": "serie aritmética",
+      "aliases": [
+        "suma de una progresión aritmética"
+      ],
+      "dictation": "ese sub ene igual a ene partido por dos por abre paréntesis a sub uno más a sub ene cierra paréntesis"
+    },
+    {
+      "id": 1028,
+      "name": "término general de una progresión aritmética",
+      "aliases": [
+        "ene-ésimo término de una progresión aritmética"
+      ],
+      "dictation": "a sub ene igual a a sub uno más abre paréntesis ene menos uno cierra paréntesis por de"
+    },
+    {
+      "id": 1029,
+      "name": "término general de una progresión geométrica",
+      "aliases": [
+        "ene-ésimo término de una progresión geométrica"
+      ],
+      "dictation": "a sub ene igual a a sub uno por erre elevado a abre paréntesis ene menos uno cierra paréntesis"
+    },
+    {
+      "id": 1030,
+      "name": "forma canónica de una parábola",
+      "aliases": [
+        "forma de vértice"
+      ],
+      "dictation": "i griega igual a a por abre paréntesis equis menos hache cierra paréntesis al cuadrado más ka"
+    },
+    {
+      "id": 1031,
+      "name": "crecimiento y decaimiento exponencial",
+      "aliases": [
+        "modelo exponencial",
+        "solución exponencial de una ecuación diferencial"
+      ],
+      "dictation": "i griega igual a i griega sub cero por e elevado a abre paréntesis ka por te cierra paréntesis"
+    },
+    {
+      "id": 1032,
+      "name": "algoritmo de la división",
+      "aliases": [
+        "a igual a be cu más erre"
+      ],
+      "dictation": "a igual a be por cu más erre, donde cero es menor o igual que erre, y erre es menor que be"
+    },
+    {
+      "id": 1033,
+      "name": "identidad de Bézout",
+      "aliases": [
+        "mcd como combinación lineal"
+      ],
+      "dictation": "el máximo común divisor de a y be igual a a por equis más be por i griega"
+    },
+    {
+      "id": 1034,
+      "name": "pequeño teorema de Fermat",
+      "aliases": [
+        "a elevado a pe módulo pe"
+      ],
+      "dictation": "a elevado a pe es congruente con a módulo pe"
+    },
+    {
+      "id": 1035,
+      "name": "función phi de Euler",
+      "aliases": [
+        "indicatriz de Euler",
+        "phi de ene"
+      ],
+      "dictation": "phi de ene igual a ene por el productorio sobre todos los primos pe que dividen a ene de abre paréntesis uno menos uno partido por pe cierra paréntesis"
+    },
+    {
+      "id": 1036,
+      "name": "teorema de Euler",
+      "aliases": [
+        "a elevado a phi de ene"
+      ],
+      "dictation": "a elevado a phi de ene es congruente con uno módulo ene"
+    },
+    {
+      "id": 1037,
+      "name": "congruencia modular",
+      "aliases": [
+        "congruencia módulo ene"
+      ],
+      "dictation": "a es congruente con be módulo ene"
+    },
+    {
+      "id": 1038,
+      "name": "módulo de un número complejo",
+      "aliases": [
+        "valor absoluto de zeta"
+      ],
+      "dictation": "el módulo de zeta igual a raíz cuadrada de abre paréntesis a al cuadrado más be al cuadrado cierra paréntesis"
+    },
+    {
+      "id": 1039,
+      "name": "multiplicación de números complejos",
+      "aliases": [
+        "producto de dos números complejos"
+      ],
+      "dictation": "abre paréntesis a más be por i cierra paréntesis por abre paréntesis ce más de por i cierra paréntesis igual a abre paréntesis a por ce menos be por de cierra paréntesis más abre paréntesis a por de más be por ce cierra paréntesis por i"
+    },
+    {
+      "id": 1040,
+      "name": "teorema de De Moivre",
+      "aliases": [
+        "fórmula de De Moivre"
+      ],
+      "dictation": "abre paréntesis coseno de theta más i por seno de theta cierra paréntesis elevado a ene igual a coseno de abre paréntesis ene por theta cierra paréntesis más i por seno de abre paréntesis ene por theta cierra paréntesis"
+    },
+    {
+      "id": 1041,
+      "name": "identidad de Euler",
+      "aliases": [
+        "e elevado a i pi más uno igual a cero"
+      ],
+      "dictation": "e elevado a i por pi más uno igual a cero"
+    },
+    {
+      "id": 1405,
+      "name": "equilibrio de Hardy-Weinberg",
+      "aliases": [
+        "principio de Hardy-Weinberg"
+      ],
+      "dictation": "pe al cuadrado más dos por pe por cu más cu al cuadrado igual a uno"
+    },
+    {
+      "id": 1406,
+      "name": "crecimiento logístico de una población",
+      "aliases": [
+        "modelo de crecimiento logístico"
+      ],
+      "dictation": "de ene partido por de te igual a erre por ene por abre paréntesis uno menos ene partido por ka cierra paréntesis"
+    },
+    {
+      "id": 1407,
+      "name": "cinética de Michaelis-Menten",
+      "aliases": [
+        "cinética enzimática"
+      ],
+      "dictation": "uve igual a uve mayúscula sub max por abre corchete ese cierra corchete partido por abre paréntesis ka sub eme más abre corchete ese cierra corchete cierra paréntesis"
+    },
+    {
+      "id": 1408,
+      "name": "crecimiento exponencial de una población",
+      "aliases": [
+        "crecimiento malthusiano"
+      ],
+      "dictation": "ene de te igual a ene sub cero por e elevado a abre paréntesis erre por te cierra paréntesis"
+    },
+    {
+      "id": 1462,
+      "name": "matriz 2 × 2",
+      "aliases": [
+        "matriz 2 por 2",
+        "matriz entre paréntesis"
+      ],
+      "dictation": "matriz dos por dos entre paréntesis"
+    },
+    {
+      "id": 1463,
+      "name": "matriz 3 × 3",
+      "aliases": [
+        "matriz 3 por 3",
+        "matriz entre paréntesis"
+      ],
+      "dictation": "matriz tres por tres entre paréntesis"
+    },
+    {
+      "id": 1464,
+      "name": "matriz 2 × 2 entre corchetes",
+      "aliases": [
+        "matriz 2 por 2 entre corchetes"
+      ],
+      "dictation": "matriz dos por dos entre corchetes"
+    },
+    {
+      "id": 1465,
+      "name": "matriz 3 × 3 entre corchetes",
+      "aliases": [
+        "matriz 3 por 3 entre corchetes"
+      ],
+      "dictation": "matriz tres por tres entre corchetes"
+    },
+    {
+      "id": 1466,
+      "name": "determinante 2 × 2",
+      "aliases": [
+        "determinante 2 por 2",
+        "matriz entre barras verticales"
+      ],
+      "dictation": "determinante dos por dos entre barras verticales"
+    },
+    {
+      "id": 1467,
+      "name": "determinante 3 × 3",
+      "aliases": [
+        "determinante 3 por 3",
+        "matriz entre barras verticales"
+      ],
+      "dictation": "determinante tres por tres entre barras verticales"
+    },
+    {
+      "id": 1101,
+      "name": "regla de la cadena",
+      "aliases": [
+        "derivada de una función compuesta"
+      ],
+      "dictation": "de i griega partido por de equis igual a de i griega partido por de u por de u partido por de equis"
+    },
+    {
+      "id": 1102,
+      "name": "regla del producto",
+      "aliases": [
+        "derivada de un producto"
+      ],
+      "dictation": "la derivada respecto a equis de abre corchete efe por ge cierra corchete igual a efe prima por ge más efe por ge prima"
+    },
+    {
+      "id": 1103,
+      "name": "regla del cociente",
+      "aliases": [
+        "derivada de un cociente"
+      ],
+      "dictation": "la derivada respecto a equis de abre corchete efe partido por ge cierra corchete igual a abre paréntesis efe prima por ge menos efe por ge prima cierra paréntesis partido por ge al cuadrado"
     },
     {
       "id": 1104,
       "name": "regla de la potencia",
-      "aliases": ["derivada de una potencia"],
+      "aliases": [
+        "derivada de una potencia"
+      ],
       "dictation": "la derivada respecto a equis de abre corchete equis elevado a ene cierra corchete igual a ene por equis elevado a abre paréntesis ene menos uno cierra paréntesis"
+    },
+    {
+      "id": 1105,
+      "name": "derivada del seno",
+      "aliases": [
+        "derivada de seno de equis"
+      ],
+      "dictation": "la derivada respecto a equis de abre corchete seno de equis cierra corchete igual a coseno de equis"
+    },
+    {
+      "id": 1106,
+      "name": "derivada del coseno",
+      "aliases": [
+        "derivada de coseno de equis"
+      ],
+      "dictation": "la derivada respecto a equis de abre corchete coseno de equis cierra corchete igual a menos seno de equis"
+    },
+    {
+      "id": 1107,
+      "name": "derivada de e elevado a equis",
+      "aliases": [
+        "derivada de la exponencial"
+      ],
+      "dictation": "la derivada respecto a equis de abre corchete e elevado a equis cierra corchete igual a e elevado a equis"
+    },
+    {
+      "id": 1108,
+      "name": "derivada del logaritmo natural",
+      "aliases": [
+        "derivada de ele ene de equis"
+      ],
+      "dictation": "la derivada respecto a equis de abre corchete logaritmo natural de equis cierra corchete igual a uno partido por equis"
+    },
+    {
+      "id": 1109,
+      "name": "derivada de la tangente",
+      "aliases": [
+        "derivada de tangente de equis"
+      ],
+      "dictation": "la derivada respecto a equis de abre corchete tangente de equis cierra corchete igual a secante al cuadrado de equis"
+    },
+    {
+      "id": 1110,
+      "name": "derivada de la cotangente",
+      "aliases": [
+        "derivada de cotangente de equis"
+      ],
+      "dictation": "la derivada respecto a equis de abre corchete cotangente de equis cierra corchete igual a menos cosecante al cuadrado de equis"
+    },
+    {
+      "id": 1111,
+      "name": "derivada de la secante",
+      "aliases": [
+        "derivada de secante de equis"
+      ],
+      "dictation": "la derivada respecto a equis de abre corchete secante de equis cierra corchete igual a secante de equis por tangente de equis"
+    },
+    {
+      "id": 1112,
+      "name": "derivada de la cosecante",
+      "aliases": [
+        "derivada de cosecante de equis"
+      ],
+      "dictation": "la derivada respecto a equis de abre corchete cosecante de equis cierra corchete igual a menos cosecante de equis por cotangente de equis"
+    },
+    {
+      "id": 1113,
+      "name": "derivada de a elevado a equis",
+      "aliases": [
+        "derivada de una exponencial de base a"
+      ],
+      "dictation": "la derivada respecto a equis de abre corchete a elevado a equis cierra corchete igual a a elevado a equis por logaritmo natural de a"
+    },
+    {
+      "id": 1114,
+      "name": "derivada del arcoseno",
+      "aliases": [
+        "derivada de arcoseno de equis"
+      ],
+      "dictation": "la derivada respecto a equis de abre corchete arcoseno de equis cierra corchete igual a uno partido por raíz cuadrada de abre paréntesis uno menos equis al cuadrado cierra paréntesis"
+    },
+    {
+      "id": 1115,
+      "name": "derivada del arcocoseno",
+      "aliases": [
+        "derivada de arcocoseno de equis"
+      ],
+      "dictation": "la derivada respecto a equis de abre corchete arcocoseno de equis cierra corchete igual a menos uno partido por raíz cuadrada de abre paréntesis uno menos equis al cuadrado cierra paréntesis"
+    },
+    {
+      "id": 1116,
+      "name": "derivada del arcotangente",
+      "aliases": [
+        "derivada de arcotangente de equis"
+      ],
+      "dictation": "la derivada respecto a equis de abre corchete arcotangente de equis cierra corchete igual a uno partido por abre paréntesis uno más equis al cuadrado cierra paréntesis"
+    },
+    {
+      "id": 1117,
+      "name": "teorema fundamental del cálculo",
+      "aliases": [
+        "TFC"
+      ],
+      "dictation": "la integral de a a be de efe de equis diferencial de equis igual a efe mayúscula de be menos efe mayúscula de a"
+    },
+    {
+      "id": 1118,
+      "name": "integral definida",
+      "aliases": [
+        "integral de a a be"
+      ],
+      "dictation": "la integral de a a be de efe de equis diferencial de equis"
+    },
+    {
+      "id": 1119,
+      "name": "regla de la potencia para la integración",
+      "aliases": [
+        "integral de una potencia"
+      ],
+      "dictation": "la integral de equis elevado a ene diferencial de equis igual a equis elevado a abre paréntesis ene más uno cierra paréntesis partido por abre paréntesis ene más uno cierra paréntesis más ce"
+    },
+    {
+      "id": 1120,
+      "name": "integral de uno partido por equis",
+      "aliases": [
+        "integral del inverso"
+      ],
+      "dictation": "la integral de uno partido por equis diferencial de equis igual a logaritmo natural de el valor absoluto de equis más ce"
+    },
+    {
+      "id": 1121,
+      "name": "integral de e elevado a equis",
+      "aliases": [
+        "integral de la exponencial"
+      ],
+      "dictation": "la integral de e elevado a equis diferencial de equis igual a e elevado a equis más ce"
+    },
+    {
+      "id": 1122,
+      "name": "integral de a elevado a equis",
+      "aliases": [
+        "integral de una exponencial de base a"
+      ],
+      "dictation": "la integral de a elevado a equis diferencial de equis igual a a elevado a equis partido por logaritmo natural de a más ce"
+    },
+    {
+      "id": 1123,
+      "name": "integral del seno",
+      "aliases": [
+        "integral de seno de equis"
+      ],
+      "dictation": "la integral de seno de equis diferencial de equis igual a menos coseno de equis más ce"
+    },
+    {
+      "id": 1124,
+      "name": "integral del coseno",
+      "aliases": [
+        "integral de coseno de equis"
+      ],
+      "dictation": "la integral de coseno de equis diferencial de equis igual a seno de equis más ce"
+    },
+    {
+      "id": 1125,
+      "name": "integral de la tangente",
+      "aliases": [
+        "integral de tangente de equis"
+      ],
+      "dictation": "la integral de tangente de equis diferencial de equis igual a menos logaritmo natural de el valor absoluto de coseno de equis más ce"
+    },
+    {
+      "id": 1126,
+      "name": "integral de la secante",
+      "aliases": [
+        "integral de secante de equis"
+      ],
+      "dictation": "la integral de secante de equis diferencial de equis igual a logaritmo natural de el valor absoluto de abre paréntesis secante de equis más tangente de equis cierra paréntesis más ce"
+    },
+    {
+      "id": 1127,
+      "name": "integral de la cosecante",
+      "aliases": [
+        "integral de cosecante de equis"
+      ],
+      "dictation": "la integral de cosecante de equis diferencial de equis igual a menos logaritmo natural de el valor absoluto de abre paréntesis cosecante de equis más cotangente de equis cierra paréntesis más ce"
+    },
+    {
+      "id": 1128,
+      "name": "integral de secante al cuadrado",
+      "aliases": [
+        "integral de secante al cuadrado de equis"
+      ],
+      "dictation": "la integral de secante al cuadrado de equis diferencial de equis igual a tangente de equis más ce"
+    },
+    {
+      "id": 1129,
+      "name": "integral del arcoseno",
+      "aliases": [
+        "forma integral del arcoseno"
+      ],
+      "dictation": "la integral de uno partido por raíz cuadrada de abre paréntesis uno menos equis al cuadrado cierra paréntesis diferencial de equis igual a arcoseno de equis más ce"
+    },
+    {
+      "id": 1130,
+      "name": "integral del arcotangente",
+      "aliases": [
+        "forma integral del arcotangente"
+      ],
+      "dictation": "la integral de uno partido por abre paréntesis uno más equis al cuadrado cierra paréntesis diferencial de equis igual a arcotangente de equis más ce"
+    },
+    {
+      "id": 1131,
+      "name": "integración por partes",
+      "aliases": [
+        "IPP"
+      ],
+      "dictation": "la integral de u diferencial de uve igual a u por uve menos la integral de uve diferencial de u"
+    },
+    {
+      "id": 1132,
+      "name": "integral triple",
+      "aliases": [
+        "integral sobre un volumen"
+      ],
+      "dictation": "la integral triple sobre uve mayúscula de efe de abre paréntesis equis coma i griega coma zeta cierra paréntesis diferencial de uve mayúscula"
+    },
+    {
+      "id": 1133,
+      "name": "integral de contorno",
+      "aliases": [
+        "integral curvilínea"
+      ],
+      "dictation": "la integral de contorno sobre ce mayúscula de efe de zeta diferencial de zeta"
+    },
+    {
+      "id": 1134,
+      "name": "serie de Taylor",
+      "aliases": [
+        "desarrollo de Taylor"
+      ],
+      "dictation": "efe de equis igual a el sumatorio desde ene igual a cero hasta infinito de efe elevado a abre paréntesis ene cierra paréntesis de a partido por ene factorial por abre paréntesis equis menos a cierra paréntesis elevado a ene"
+    },
+    {
+      "id": 1135,
+      "name": "serie de Maclaurin",
+      "aliases": [
+        "desarrollo de Maclaurin"
+      ],
+      "dictation": "efe de equis igual a el sumatorio desde ene igual a cero hasta infinito de efe elevado a abre paréntesis ene cierra paréntesis de cero partido por ene factorial por equis elevado a ene"
+    },
+    {
+      "id": 1136,
+      "name": "regla de L'Hôpital",
+      "aliases": [
+        "regla de l'Hôpital"
+      ],
+      "dictation": "el límite cuando equis tiende a a de abre paréntesis efe de equis partido por ge de equis cierra paréntesis igual a el límite cuando equis tiende a a de abre paréntesis efe prima de equis partido por ge prima de equis cierra paréntesis"
+    },
+    {
+      "id": 1137,
+      "name": "teorema del valor medio",
+      "aliases": [
+        "TVM"
+      ],
+      "dictation": "efe prima de ce igual a abre paréntesis efe de be menos efe de a cierra paréntesis partido por abre paréntesis be menos a cierra paréntesis"
+    },
+    {
+      "id": 1138,
+      "name": "teorema de Rolle",
+      "aliases": [
+        "teorema de Rolle"
+      ],
+      "dictation": "si efe de a igual a efe de be entonces efe prima de ce igual a cero para algún ce que pertenece al intervalo abierto a coma be"
+    },
+    {
+      "id": 1139,
+      "name": "teorema del sándwich",
+      "aliases": [
+        "teorema del encaje",
+        "teorema de compresión"
+      ],
+      "dictation": "si ge de equis es menor o igual que efe de equis menor o igual que hache de equis y el límite de ge igual a el límite de hache igual a ele entonces el límite de efe igual a ele"
+    },
+    {
+      "id": 1140,
+      "name": "límite de seno de equis partido por equis",
+      "aliases": [
+        "límite trigonométrico fundamental"
+      ],
+      "dictation": "el límite cuando equis tiende a cero de abre paréntesis seno de equis partido por equis cierra paréntesis igual a uno"
+    },
+    {
+      "id": 1141,
+      "name": "límite de uno menos coseno de equis partido por equis",
+      "aliases": [
+        "segundo límite trigonométrico"
+      ],
+      "dictation": "el límite cuando equis tiende a cero de abre paréntesis abre paréntesis uno menos coseno de equis cierra paréntesis partido por equis cierra paréntesis igual a cero"
+    },
+    {
+      "id": 1142,
+      "name": "valor medio de una función",
+      "aliases": [
+        "promedio de una función"
+      ],
+      "dictation": "efe sub media igual a uno partido por abre paréntesis be menos a cierra paréntesis por la integral de a a be de efe de equis diferencial de equis"
+    },
+    {
+      "id": 1143,
+      "name": "método de los discos",
+      "aliases": [
+        "volumen de revolución por discos"
+      ],
+      "dictation": "uve igual a pi por la integral de a a be de abre corchete efe de equis cierra corchete al cuadrado diferencial de equis"
+    },
+    {
+      "id": 1144,
+      "name": "método de las capas",
+      "aliases": [
+        "volumen de revolución por capas cilíndricas"
+      ],
+      "dictation": "uve igual a dos por pi por la integral de a a be de equis por efe de equis diferencial de equis"
+    },
+    {
+      "id": 1145,
+      "name": "método de las arandelas",
+      "aliases": [
+        "volumen de revolución por arandelas"
+      ],
+      "dictation": "uve igual a pi por la integral de a a be de abre paréntesis abre corchete erre mayúscula de equis cierra corchete al cuadrado menos abre corchete erre de equis cierra corchete al cuadrado cierra paréntesis diferencial de equis"
+    },
+    {
+      "id": 1146,
+      "name": "longitud de arco de una curva",
+      "aliases": [
+        "longitud de una curva"
+      ],
+      "dictation": "ele igual a la integral de a a be de raíz cuadrada de abre paréntesis uno más abre corchete efe prima de equis cierra corchete al cuadrado cierra paréntesis diferencial de equis"
+    },
+    {
+      "id": 1147,
+      "name": "área de una superficie de revolución",
+      "aliases": [
+        "área de revolución"
+      ],
+      "dictation": "ese igual a dos por pi por la integral de a a be de efe de equis por raíz cuadrada de abre paréntesis uno más abre corchete efe prima de equis cierra corchete al cuadrado cierra paréntesis diferencial de equis"
+    },
+    {
+      "id": 1148,
+      "name": "convergencia de la serie p",
+      "aliases": [
+        "serie p"
+      ],
+      "dictation": "el sumatorio desde ene igual a uno hasta infinito de uno partido por ene elevado a pe converge si pe es mayor que uno"
+    },
+    {
+      "id": 1149,
+      "name": "criterio del cociente",
+      "aliases": [
+        "criterio de d'Alembert"
+      ],
+      "dictation": "si el límite cuando ene tiende a infinito de el valor absoluto de abre paréntesis a sub abre paréntesis ene más uno cierra paréntesis partido por a sub ene cierra paréntesis es menor que uno entonces la serie converge"
+    },
+    {
+      "id": 1150,
+      "name": "criterio de la raíz",
+      "aliases": [
+        "criterio de Cauchy"
+      ],
+      "dictation": "si el límite cuando ene tiende a infinito de raíz ene-ésima de el valor absoluto de a sub ene es menor que uno entonces la serie converge"
+    },
+    {
+      "id": 1151,
+      "name": "radio de convergencia",
+      "aliases": [
+        "radio de una serie de potencias"
+      ],
+      "dictation": "erre igual a uno partido por el límite superior cuando ene tiende a infinito de raíz ene-ésima de el valor absoluto de a sub ene"
+    },
+    {
+      "id": 1152,
+      "name": "derivada direccional",
+      "aliases": [
+        "derivada en la dirección u"
+      ],
+      "dictation": "de sub u de efe igual a gradiente de efe punto u"
+    },
+    {
+      "id": 1153,
+      "name": "criterio de las segundas derivadas en varias variables",
+      "aliases": [
+        "criterio del hessiano"
+      ],
+      "dictation": "de igual a efe sub equis equis por efe sub i griega i griega menos efe sub equis i griega al cuadrado"
+    },
+    {
+      "id": 1154,
+      "name": "integral doble en coordenadas polares",
+      "aliases": [
+        "elemento de área en coordenadas polares"
+      ],
+      "dictation": "la integral doble sobre de mayúscula de efe de abre paréntesis erre coma theta cierra paréntesis por erre diferencial de erre diferencial de theta"
+    },
+    {
+      "id": 1155,
+      "name": "cambio de variables y jacobiano",
+      "aliases": [
+        "sustitución en una integral doble"
+      ],
+      "dictation": "la integral doble sobre de mayúscula de efe de abre paréntesis equis coma i griega cierra paréntesis diferencial de equis diferencial de i griega igual a la integral doble sobre de mayúscula prima de efe de abre paréntesis ge coma hache cierra paréntesis por el valor absoluto de jota mayúscula diferencial de u diferencial de uve"
+    },
+    {
+      "id": 1156,
+      "name": "teorema de Green",
+      "aliases": [
+        "teorema de Green-Riemann"
+      ],
+      "dictation": "la integral de contorno sobre ce mayúscula de abre paréntesis pe diferencial de equis más cu diferencial de i griega cierra paréntesis igual a la integral doble sobre de mayúscula de abre paréntesis parcial de cu partido por parcial de equis menos parcial de pe partido por parcial de i griega cierra paréntesis diferencial de a"
+    },
+    {
+      "id": 1157,
+      "name": "teorema de Stokes",
+      "aliases": [
+        "teorema del rotacional"
+      ],
+      "dictation": "la integral de contorno sobre ce mayúscula de efe punto diferencial de erre igual a la integral doble sobre ese mayúscula de abre paréntesis nabla producto vectorial efe cierra paréntesis punto diferencial de ese mayúscula"
+    },
+    {
+      "id": 1158,
+      "name": "teorema de la divergencia",
+      "aliases": [
+        "teorema de Gauss-Ostrogradski"
+      ],
+      "dictation": "la integral de superficie cerrada sobre ese mayúscula de efe punto diferencial de ese mayúscula igual a la integral triple sobre uve mayúscula de abre paréntesis nabla punto efe cierra paréntesis diferencial de uve mayúscula"
+    },
+    {
+      "id": 1159,
+      "name": "ecuación diferencial lineal de primer orden",
+      "aliases": [
+        "EDO lineal de primer orden"
+      ],
+      "dictation": "de i griega partido por de equis más pe de equis por i griega igual a cu de equis"
+    },
+    {
+      "id": 1160,
+      "name": "ecuación diferencial lineal de segundo orden",
+      "aliases": [
+        "EDO lineal de segundo orden"
+      ],
+      "dictation": "i griega segunda más pe por i griega prima más cu por i griega igual a cero"
+    },
+    {
+      "id": 1161,
+      "name": "definición de la transformada de Laplace",
+      "aliases": [
+        "transformada de Laplace"
+      ],
+      "dictation": "ele de abre llave efe de te cierra llave igual a la integral de cero a infinito de efe de te por e elevado a abre paréntesis menos ese por te cierra paréntesis diferencial de te"
+    },
+    {
+      "id": 1162,
+      "name": "definición de la transformada de Fourier",
+      "aliases": [
+        "transformada de Fourier"
+      ],
+      "dictation": "efe gorro de omega igual a la integral de menos infinito a infinito de efe de te por e elevado a abre paréntesis menos i por omega por te cierra paréntesis diferencial de te"
+    },
+    {
+      "id": 1163,
+      "name": "transformada de Fourier inversa",
+      "aliases": [
+        "transformada inversa de Fourier"
+      ],
+      "dictation": "efe de te igual a uno partido por dos pi por la integral de menos infinito a infinito de efe gorro de omega por e elevado a abre paréntesis i por omega por te cierra paréntesis diferencial de omega"
+    },
+    {
+      "id": 1164,
+      "name": "separación de variables",
+      "aliases": [
+        "ecuación de variables separables"
+      ],
+      "dictation": "de i griega partido por ge de i griega igual a efe de equis diferencial de equis"
+    },
+    {
+      "id": 1165,
+      "name": "factor integrante",
+      "aliases": [
+        "factor de integración"
+      ],
+      "dictation": "mu de equis igual a e elevado a abre paréntesis la integral de pe de equis diferencial de equis cierra paréntesis"
+    },
+    {
+      "id": 1468,
+      "name": "integral doble",
+      "aliases": [
+        "integral de área"
+      ],
+      "dictation": "la integral doble sobre de mayúscula de efe de abre paréntesis equis coma i griega cierra paréntesis diferencial de a"
+    },
+    {
+      "id": 1469,
+      "name": "función gamma",
+      "aliases": [
+        "factorial generalizado"
+      ],
+      "dictation": "gamma mayúscula de zeta igual a la integral de cero a infinito de te elevado a abre paréntesis zeta menos uno cierra paréntesis por e elevado a menos te diferencial de te"
+    },
+    {
+      "id": 1470,
+      "name": "integral de Gauss",
+      "aliases": [
+        "integral de Euler-Poisson"
+      ],
+      "dictation": "la integral de menos infinito a infinito de e elevado a menos equis al cuadrado diferencial de equis igual a raíz cuadrada de pi"
+    },
+    {
+      "id": 1471,
+      "name": "definición de e como límite",
+      "aliases": [
+        "e como límite"
+      ],
+      "dictation": "e igual a el límite cuando ene tiende a infinito de abre paréntesis uno más uno partido por ene cierra paréntesis elevado a ene"
+    },
+    {
+      "id": 1472,
+      "name": "integral definida trigonométrica",
+      "aliases": [
+        "integral de tipo Weierstrass"
+      ],
+      "dictation": "uno partido por dos pi por la integral de cero a dos pi de diferencial de theta partido por abre paréntesis a más be por seno de theta cierra paréntesis igual a uno partido por raíz cuadrada de abre paréntesis a al cuadrado menos be al cuadrado cierra paréntesis"
+    },
+    {
+      "id": 1473,
+      "name": "integral triple en coordenadas esféricas",
+      "aliases": [
+        "integral de volumen en coordenadas esféricas"
+      ],
+      "dictation": "la integral triple sobre uve mayúscula de efe de abre paréntesis erre coma theta coma phi cierra paréntesis por erre diferencial de erre diferencial de theta diferencial de phi"
+    },
+    {
+      "id": 1362,
+      "name": "relación cantidad de sustancia y masa",
+      "aliases": [
+        "ene igual a eme partido por eme mayúscula"
+      ],
+      "dictation": "ene igual a eme partido por eme mayúscula"
+    },
+    {
+      "id": 1363,
+      "name": "número de partículas",
+      "aliases": [
+        "ene mayúscula igual a ene por número de Avogadro"
+      ],
+      "dictation": "ene mayúscula igual a ene por ene mayúscula sub a"
+    },
+    {
+      "id": 1364,
+      "name": "composición porcentual en masa",
+      "aliases": [
+        "porcentaje en masa"
+      ],
+      "dictation": "doble uve igual a eme sub elemento partido por eme sub compuesto por cien por ciento"
+    },
+    {
+      "id": 1365,
+      "name": "molaridad",
+      "aliases": [
+        "concentración molar",
+        "moles por litro"
+      ],
+      "dictation": "eme igual a ene partido por uve"
+    },
+    {
+      "id": 1366,
+      "name": "fórmula de dilución",
+      "aliases": [
+        "eme uno uve uno igual a eme dos uve dos"
+      ],
+      "dictation": "eme sub uno por uve sub uno igual a eme sub dos por uve sub dos"
+    },
+    {
+      "id": 1367,
+      "name": "molalidad",
+      "aliases": [
+        "moles por kilogramo de disolvente"
+      ],
+      "dictation": "eme igual a ene sub soluto partido por eme sub disolvente"
+    },
+    {
+      "id": 1368,
+      "name": "ley de Raoult",
+      "aliases": [
+        "descenso de la presión de vapor"
+      ],
+      "dictation": "pe igual a equis sub disolvente por pe grados"
+    },
+    {
+      "id": 1369,
+      "name": "aumento ebulloscópico",
+      "aliases": [
+        "elevación del punto de ebullición"
+      ],
+      "dictation": "delta te sub be igual a i por ka sub be por eme"
+    },
+    {
+      "id": 1370,
+      "name": "descenso crioscópico",
+      "aliases": [
+        "descenso del punto de congelación"
+      ],
+      "dictation": "delta te sub efe igual a i por ka sub efe por eme"
+    },
+    {
+      "id": 1371,
+      "name": "presión osmótica",
+      "aliases": [
+        "pi igual a i eme erre te"
+      ],
+      "dictation": "pi igual a i por eme por erre por te"
+    },
+    {
+      "id": 1372,
+      "name": "ley de Boyle-Mariotte",
+      "aliases": [
+        "ley de Boyle",
+        "pe uno uve uno igual a pe dos uve dos"
+      ],
+      "dictation": "pe sub uno por uve sub uno igual a pe sub dos por uve sub dos"
+    },
+    {
+      "id": 1373,
+      "name": "ley de Charles",
+      "aliases": [
+        "ley de Charles y Gay-Lussac"
+      ],
+      "dictation": "uve sub uno partido por te sub uno igual a uve sub dos partido por te sub dos"
+    },
+    {
+      "id": 1374,
+      "name": "ley de Gay-Lussac",
+      "aliases": [
+        "pe uno partido por te uno"
+      ],
+      "dictation": "pe sub uno partido por te sub uno igual a pe sub dos partido por te sub dos"
+    },
+    {
+      "id": 1375,
+      "name": "ley combinada de los gases",
+      "aliases": [
+        "ley general de los gases"
+      ],
+      "dictation": "pe sub uno por uve sub uno partido por te sub uno igual a pe sub dos por uve sub dos partido por te sub dos"
+    },
+    {
+      "id": 1376,
+      "name": "ley de Avogadro",
+      "aliases": [
+        "uve uno partido por ene uno igual a uve dos partido por ene dos"
+      ],
+      "dictation": "uve sub uno partido por ene sub uno igual a uve sub dos partido por ene sub dos"
+    },
+    {
+      "id": 1377,
+      "name": "ley de las presiones parciales de Dalton",
+      "aliases": [
+        "ley de Dalton",
+        "presión total"
+      ],
+      "dictation": "pe sub total igual a pe sub uno más pe sub dos más etcétera más pe sub ene"
+    },
+    {
+      "id": 1378,
+      "name": "ley de efusión de Graham",
+      "aliases": [
+        "ley de Graham",
+        "velocidad de efusión"
+      ],
+      "dictation": "erre sub uno partido por erre sub dos igual a raíz cuadrada de abre paréntesis eme sub dos partido por eme sub uno cierra paréntesis"
+    },
+    {
+      "id": 1379,
+      "name": "ecuación de van der Waals",
+      "aliases": [
+        "ecuación de los gases reales"
+      ],
+      "dictation": "abre paréntesis pe más a por ene al cuadrado partido por uve al cuadrado cierra paréntesis por abre paréntesis uve menos ene por be cierra paréntesis igual a ene por erre por te"
+    },
+    {
+      "id": 1380,
+      "name": "entalpía de reacción",
+      "aliases": [
+        "ley de Hess",
+        "delta hache de reacción"
+      ],
+      "dictation": "delta hache sub reacción igual a el sumatorio de delta hache sub efe de los productos menos el sumatorio de delta hache sub efe de los reactivos"
+    },
+    {
+      "id": 1381,
+      "name": "energía libre de Gibbs",
+      "aliases": [
+        "delta ge"
+      ],
+      "dictation": "delta ge igual a delta hache menos te por delta ese"
+    },
+    {
+      "id": 1382,
+      "name": "energía libre estándar y equilibrio",
+      "aliases": [
+        "delta ge grados y constante de equilibrio"
+      ],
+      "dictation": "delta ge grados igual a menos erre por te por logaritmo natural de ka"
+    },
+    {
+      "id": 1383,
+      "name": "variación de entropía",
+      "aliases": [
+        "delta ese"
+      ],
+      "dictation": "delta ese igual a cu sub reversible partido por te"
+    },
+    {
+      "id": 1384,
+      "name": "constante de equilibrio",
+      "aliases": [
+        "ley de acción de masas"
+      ],
+      "dictation": "ka igual a abre corchete productos cierra corchete elevado a coeficientes partido por abre corchete reactivos cierra corchete elevado a coeficientes"
+    },
+    {
+      "id": 1385,
+      "name": "relación entre ka pe y ka ce",
+      "aliases": [
+        "ka pe igual a ka ce por erre te elevado a delta ene"
+      ],
+      "dictation": "ka sub pe igual a ka sub ce por abre paréntesis erre por te cierra paréntesis elevado a delta ene"
+    },
+    {
+      "id": 1386,
+      "name": "cociente de reacción",
+      "aliases": [
+        "cociente de reacción cu"
+      ],
+      "dictation": "cu igual a abre corchete productos cierra corchete partido por abre corchete reactivos cierra corchete"
+    },
+    {
+      "id": 1387,
+      "name": "definición de pH",
+      "aliases": [
+        "pe hache igual a menos logaritmo de la concentración de hidrógeno"
+      ],
+      "dictation": "pe hache igual a menos logaritmo decimal de abre corchete hache elevado a más cierra corchete"
+    },
+    {
+      "id": 1388,
+      "name": "definición de pOH",
+      "aliases": [
+        "pe o hache"
+      ],
+      "dictation": "pe o hache igual a menos logaritmo decimal de abre corchete o hache elevado a menos cierra corchete"
+    },
+    {
+      "id": 1389,
+      "name": "relación entre pH y pOH",
+      "aliases": [
+        "pe hache más pe o hache igual a catorce"
+      ],
+      "dictation": "pe hache más pe o hache igual a catorce"
+    },
+    {
+      "id": 1390,
+      "name": "producto iónico del agua",
+      "aliases": [
+        "ka doble uve",
+        "constante de disociación del agua"
+      ],
+      "dictation": "ka sub doble uve igual a abre corchete hache elevado a más cierra corchete por abre corchete o hache elevado a menos cierra corchete igual a uno coma cero por diez elevado a menos catorce"
+    },
+    {
+      "id": 1391,
+      "name": "ecuación de Henderson-Hasselbalch",
+      "aliases": [
+        "pH de una disolución amortiguadora"
+      ],
+      "dictation": "pe hache igual a pe ka sub a más logaritmo decimal de abre paréntesis abre corchete a elevado a menos cierra corchete partido por abre corchete hache a cierra corchete cierra paréntesis"
+    },
+    {
+      "id": 1392,
+      "name": "relación entre ka a, ka be y ka doble uve",
+      "aliases": [
+        "par ácido-base conjugado"
+      ],
+      "dictation": "ka sub a por ka sub be igual a ka sub doble uve"
+    },
+    {
+      "id": 1393,
+      "name": "potencial estándar de una pila",
+      "aliases": [
+        "potencial estándar de celda",
+        "fuerza electromotriz estándar"
+      ],
+      "dictation": "e grados sub pila igual a e grados sub cátodo menos e grados sub ánodo"
+    },
+    {
+      "id": 1394,
+      "name": "ecuación de Nernst",
+      "aliases": [
+        "potencial de pila fuera de condiciones estándar"
+      ],
+      "dictation": "e igual a e grados menos erre por te partido por ene por efe por logaritmo natural de cu"
+    },
+    {
+      "id": 1395,
+      "name": "energía libre y potencial de pila",
+      "aliases": [
+        "delta ge y potencial de pila"
+      ],
+      "dictation": "delta ge grados igual a menos ene por efe por e grados"
+    },
+    {
+      "id": 1396,
+      "name": "ley de electrólisis de Faraday",
+      "aliases": [
+        "masa depositada"
+      ],
+      "dictation": "eme igual a eme mayúscula por i por te partido por ene por efe"
+    },
+    {
+      "id": 1397,
+      "name": "ley de velocidad",
+      "aliases": [
+        "velocidad de reacción"
+      ],
+      "dictation": "velocidad igual a ka por abre corchete a cierra corchete elevado a eme por abre corchete be cierra corchete elevado a ene"
+    },
+    {
+      "id": 1398,
+      "name": "ley de velocidad integrada de primer orden",
+      "aliases": [
+        "cinética de primer orden"
+      ],
+      "dictation": "logaritmo natural de abre corchete a cierra corchete igual a logaritmo natural de abre corchete a cierra corchete sub cero menos ka por te"
+    },
+    {
+      "id": 1399,
+      "name": "ley de velocidad integrada de segundo orden",
+      "aliases": [
+        "cinética de segundo orden"
+      ],
+      "dictation": "uno partido por abre corchete a cierra corchete igual a uno partido por abre corchete a cierra corchete sub cero más ka por te"
+    },
+    {
+      "id": 1400,
+      "name": "tiempo de vida media de primer orden",
+      "aliases": [
+        "semivida de primer orden"
+      ],
+      "dictation": "te sub un medio igual a logaritmo natural de dos partido por ka igual a cero coma seiscientos noventa y tres partido por ka"
+    },
+    {
+      "id": 1401,
+      "name": "ecuación de Arrhenius",
+      "aliases": [
+        "constante de velocidad según Arrhenius"
+      ],
+      "dictation": "ka igual a a por e elevado a abre paréntesis menos e sub a partido por erre por te cierra paréntesis"
+    },
+    {
+      "id": 1402,
+      "name": "fórmula de Rydberg",
+      "aliases": [
+        "líneas espectrales del hidrógeno"
+      ],
+      "dictation": "uno partido por lambda igual a erre sub hache por abre paréntesis uno partido por ene sub uno al cuadrado menos uno partido por ene sub dos al cuadrado cierra paréntesis"
+    },
+    {
+      "id": 1403,
+      "name": "energía del fotón",
+      "aliases": [
+        "e igual a hache efe"
+      ],
+      "dictation": "e igual a hache por efe igual a hache por ce partido por lambda"
+    },
+    {
+      "id": 1404,
+      "name": "niveles de energía del modelo de Bohr",
+      "aliases": [
+        "energía del ene-ésimo nivel"
+      ],
+      "dictation": "e sub ene igual a menos trece coma seis electronvoltios partido por ene al cuadrado"
+    },
+    {
+      "id": 1181,
+      "name": "variación",
+      "aliases": [
+        "número de variaciones",
+        "variaciones sin repetición"
+      ],
+      "dictation": "pe de abre paréntesis ene coma erre cierra paréntesis igual a ene factorial partido por abre paréntesis ene menos erre cierra paréntesis factorial"
+    },
+    {
+      "id": 1182,
+      "name": "combinación",
+      "aliases": [
+        "número de combinaciones",
+        "número combinatorio",
+        "ene sobre erre"
+      ],
+      "dictation": "ce de abre paréntesis ene coma erre cierra paréntesis igual a ene factorial partido por erre factorial por abre paréntesis ene menos erre cierra paréntesis factorial"
+    },
+    {
+      "id": 1183,
+      "name": "coeficiente multinomial",
+      "aliases": [
+        "número multinomial"
+      ],
+      "dictation": "número combinatorio ene sobre abre paréntesis ka sub uno coma ka sub dos coma etcétera coma ka sub erre cierra paréntesis igual a ene factorial partido por abre paréntesis ka sub uno factorial por ka sub dos factorial por etcétera por ka sub erre factorial cierra paréntesis"
+    },
+    {
+      "id": 1184,
+      "name": "combinaciones con repetición",
+      "aliases": [
+        "método de estrellas y barras"
+      ],
+      "dictation": "número combinatorio abre paréntesis ene más ka menos uno cierra paréntesis sobre ka"
+    },
+    {
+      "id": 1185,
+      "name": "número de Catalan",
+      "aliases": [
+        "ene-ésimo número de Catalan"
+      ],
+      "dictation": "ce sub ene igual a uno partido por abre paréntesis ene más uno cierra paréntesis por número combinatorio dos por ene sobre ene"
+    },
+    {
+      "id": 1186,
+      "name": "número de desórdenes",
+      "aliases": [
+        "subfactorial",
+        "desarreglo"
+      ],
+      "dictation": "de sub ene igual a ene factorial por el sumatorio desde ka igual a cero hasta ene de abre paréntesis menos uno cierra paréntesis elevado a ka partido por ka factorial"
+    },
+    {
+      "id": 1187,
+      "name": "principio de inclusión-exclusión para dos conjuntos",
+      "aliases": [
+        "cardinal de a unión be"
+      ],
+      "dictation": "el cardinal de abre paréntesis a unión be cierra paréntesis igual a el cardinal de a más el cardinal de be menos el cardinal de abre paréntesis a intersección be cierra paréntesis"
+    },
+    {
+      "id": 1188,
+      "name": "principio de inclusión-exclusión para tres conjuntos",
+      "aliases": [
+        "cardinal de a unión be unión ce"
+      ],
+      "dictation": "el cardinal de abre paréntesis a unión be unión ce cierra paréntesis igual a el cardinal de a más el cardinal de be más el cardinal de ce menos el cardinal de abre paréntesis a intersección be cierra paréntesis menos el cardinal de abre paréntesis a intersección ce cierra paréntesis menos el cardinal de abre paréntesis be intersección ce cierra paréntesis más el cardinal de abre paréntesis a intersección be intersección ce cierra paréntesis"
+    },
+    {
+      "id": 1189,
+      "name": "leyes de De Morgan en teoría de conjuntos",
+      "aliases": [
+        "complementario de una unión",
+        "complementario de una intersección"
+      ],
+      "dictation": "abre paréntesis a unión be cierra paréntesis elevado a ce igual a a elevado a ce intersección be elevado a ce punto y coma abre paréntesis a intersección be cierra paréntesis elevado a ce igual a a elevado a ce unión be elevado a ce"
+    },
+    {
+      "id": 1190,
+      "name": "cardinal del conjunto potencia",
+      "aliases": [
+        "tamaño del conjunto de partes"
+      ],
+      "dictation": "el cardinal de pe de a igual a dos elevado a ene"
+    },
+    {
+      "id": 1191,
+      "name": "cardinal de un producto cartesiano",
+      "aliases": [
+        "cardinal de a por be"
+      ],
+      "dictation": "el cardinal de abre paréntesis a producto cartesiano be cierra paréntesis igual a el cardinal de a por el cardinal de be"
+    },
+    {
+      "id": 1192,
+      "name": "leyes de De Morgan en lógica",
+      "aliases": [
+        "negación de una conjunción",
+        "negación de una disyunción"
+      ],
+      "dictation": "no abre paréntesis pe y cu cierra paréntesis es equivalente a no pe o no cu punto y coma no abre paréntesis pe o cu cierra paréntesis es equivalente a no pe y no cu"
+    },
+    {
+      "id": 1193,
+      "name": "equivalencia de la implicación",
+      "aliases": [
+        "implicación como disyunción"
+      ],
+      "dictation": "pe implica cu es equivalente a no pe o cu"
+    },
+    {
+      "id": 1194,
+      "name": "contrarrecíproco",
+      "aliases": [
+        "equivalencia por contraposición"
+      ],
+      "dictation": "pe implica cu es equivalente a no cu implica no pe"
+    },
+    {
+      "id": 1195,
+      "name": "equivalencia del bicondicional",
+      "aliases": [
+        "doble implicación"
+      ],
+      "dictation": "pe si y solo si cu es equivalente a abre paréntesis pe implica cu cierra paréntesis y abre paréntesis cu implica pe cierra paréntesis"
+    },
+    {
+      "id": 1196,
+      "name": "doble negación",
+      "aliases": [
+        "no no pe"
+      ],
+      "dictation": "no no pe es equivalente a pe"
+    },
+    {
+      "id": 1197,
+      "name": "modus ponens",
+      "aliases": [
+        "regla de separación"
+      ],
+      "dictation": "abre paréntesis pe coma pe implica cu cierra paréntesis partido por cu"
+    },
+    {
+      "id": 1198,
+      "name": "modus tollens",
+      "aliases": [
+        "razonamiento por contraposición"
+      ],
+      "dictation": "abre paréntesis no cu coma pe implica cu cierra paréntesis partido por no pe"
+    },
+    {
+      "id": 1199,
+      "name": "lema del apretón de manos",
+      "aliases": [
+        "suma de los grados"
+      ],
+      "dictation": "el sumatorio sobre uve que pertenece a uve mayúscula de el grado de uve igual a dos por el cardinal de e mayúscula"
+    },
+    {
+      "id": 1200,
+      "name": "fórmula de Euler para grafos planos",
+      "aliases": [
+        "uve menos e más efe igual a dos"
+      ],
+      "dictation": "uve menos e mayúscula más efe igual a dos"
+    },
+    {
+      "id": 1201,
+      "name": "número de aristas de un grafo completo",
+      "aliases": [
+        "aristas de ka ene"
+      ],
+      "dictation": "el cardinal de e mayúscula igual a ene por abre paréntesis ene menos uno cierra paréntesis partido por dos"
+    },
+    {
+      "id": 1202,
+      "name": "recurrencia de Fibonacci",
+      "aliases": [
+        "sucesión de Fibonacci"
+      ],
+      "dictation": "efe sub ene igual a efe sub abre paréntesis ene menos uno cierra paréntesis más efe sub abre paréntesis ene menos dos cierra paréntesis"
+    },
+    {
+      "id": 1203,
+      "name": "teorema maestro",
+      "aliases": [
+        "recurrencia divide y vencerás"
+      ],
+      "dictation": "te de ene igual a a por te de abre paréntesis ene partido por be cierra paréntesis más efe de ene"
+    },
+    {
+      "id": 1204,
+      "name": "suma de los primeros ene números naturales",
+      "aliases": [
+        "número triangular",
+        "fórmula de Gauss"
+      ],
+      "dictation": "el sumatorio desde ka igual a uno hasta ene de ka igual a ene por abre paréntesis ene más uno cierra paréntesis partido por dos"
+    },
+    {
+      "id": 1205,
+      "name": "suma de los primeros ene cuadrados",
+      "aliases": [
+        "suma de cuadrados"
+      ],
+      "dictation": "el sumatorio desde ka igual a uno hasta ene de ka al cuadrado igual a ene por abre paréntesis ene más uno cierra paréntesis por abre paréntesis dos por ene más uno cierra paréntesis partido por seis"
+    },
+    {
+      "id": 1206,
+      "name": "suma de los primeros ene cubos",
+      "aliases": [
+        "suma de cubos"
+      ],
+      "dictation": "el sumatorio desde ka igual a uno hasta ene de ka al cubo igual a abre corchete ene por abre paréntesis ene más uno cierra paréntesis partido por dos cierra corchete al cuadrado"
+    },
+    {
+      "id": 1207,
+      "name": "o exclusivo booleano",
+      "aliases": [
+        "o exclusivo",
+        "disyunción exclusiva"
+      ],
+      "dictation": "a o exclusivo be igual a abre paréntesis a y no be cierra paréntesis o abre paréntesis no a y be cierra paréntesis"
+    },
+    {
+      "id": 1208,
+      "name": "ley de absorción booleana",
+      "aliases": [
+        "identidad de absorción"
+      ],
+      "dictation": "a o abre paréntesis a y be cierra paréntesis igual a a"
+    },
+    {
+      "id": 1209,
+      "name": "ley distributiva booleana",
+      "aliases": [
+        "distributividad booleana"
+      ],
+      "dictation": "a y abre paréntesis be o ce cierra paréntesis igual a abre paréntesis a y be cierra paréntesis o abre paréntesis a y ce cierra paréntesis"
+    },
+    {
+      "id": 1210,
+      "name": "ley de idempotencia booleana",
+      "aliases": [
+        "identidad de idempotencia"
+      ],
+      "dictation": "a y a igual a a"
     },
     {
       "id": 1211,
       "name": "aproximación de Stirling",
-      "aliases": ["fórmula de Stirling"],
+      "aliases": [
+        "fórmula de Stirling"
+      ],
       "dictation": "ene factorial es aproximadamente igual a raíz cuadrada de abre paréntesis dos por pi por ene cierra paréntesis por abre paréntesis ene partido por e cierra paréntesis elevado a ene"
+    },
+    {
+      "id": 1433,
+      "name": "impedancia de un condensador",
+      "aliases": [
+        "reactancia capacitiva"
+      ],
+      "dictation": "zeta sub ce igual a uno partido por jota por omega por ce"
+    },
+    {
+      "id": 1434,
+      "name": "impedancia de una bobina",
+      "aliases": [
+        "reactancia inductiva"
+      ],
+      "dictation": "zeta sub ele igual a jota por omega por ele"
+    },
+    {
+      "id": 1435,
+      "name": "frecuencia de resonancia de un circuito LC",
+      "aliases": [
+        "frecuencia de resonancia"
+      ],
+      "dictation": "efe sub cero igual a uno partido por dos pi por raíz cuadrada de abre paréntesis ele por ce cierra paréntesis"
+    },
+    {
+      "id": 1436,
+      "name": "constante de tiempo RC",
+      "aliases": [
+        "constante de tiempo resistencia-condensador"
+      ],
+      "dictation": "tau igual a erre por ce"
+    },
+    {
+      "id": 1437,
+      "name": "constante de tiempo RL",
+      "aliases": [
+        "constante de tiempo resistencia-bobina"
+      ],
+      "dictation": "tau igual a ele partido por erre"
+    },
+    {
+      "id": 1438,
+      "name": "tensión eficaz",
+      "aliases": [
+        "valor eficaz de la tensión"
+      ],
+      "dictation": "uve sub eficaz igual a uve sub pico partido por raíz cuadrada de dos"
+    },
+    {
+      "id": 1439,
+      "name": "condensadores en serie",
+      "aliases": [
+        "capacidad equivalente en serie"
+      ],
+      "dictation": "uno partido por ce sub equivalente igual a uno partido por ce sub uno más uno partido por ce sub dos"
+    },
+    {
+      "id": 1440,
+      "name": "condensadores en paralelo",
+      "aliases": [
+        "capacidad equivalente en paralelo"
+      ],
+      "dictation": "ce sub equivalente igual a ce sub uno más ce sub dos"
+    },
+    {
+      "id": 1441,
+      "name": "teorema de muestreo de Nyquist-Shannon",
+      "aliases": [
+        "teorema del muestreo"
+      ],
+      "dictation": "efe sub ese es mayor o igual que dos por efe sub max"
+    },
+    {
+      "id": 1442,
+      "name": "integral de convolución",
+      "aliases": [
+        "convolución lineal"
+      ],
+      "dictation": "abre paréntesis efe convolución ge cierra paréntesis de te igual a la integral de menos infinito a infinito de efe de tau por ge de abre paréntesis te menos tau cierra paréntesis diferencial de tau"
+    },
+    {
+      "id": 1443,
+      "name": "transformada discreta de Fourier",
+      "aliases": [
+        "fórmula de la TDF"
+      ],
+      "dictation": "equis mayúscula abre corchete ka cierra corchete igual a el sumatorio desde ene igual a cero hasta ene mayúscula menos uno de equis abre corchete ene cierra corchete por e elevado a abre paréntesis menos dos por pi por jota por ka por ene partido por ene mayúscula cierra paréntesis"
+    },
+    {
+      "id": 1444,
+      "name": "relación señal-ruido",
+      "aliases": [
+        "relación señal-ruido en decibelios"
+      ],
+      "dictation": "ese ene erre igual a diez por logaritmo en base diez de abre paréntesis pe sub señal partido por pe sub ruido cierra paréntesis"
+    },
+    {
+      "id": 1445,
+      "name": "capacidad de canal de Shannon",
+      "aliases": [
+        "teorema de Shannon-Hartley"
+      ],
+      "dictation": "ce igual a be por logaritmo en base dos de abre paréntesis uno más ese partido por ene cierra paréntesis"
+    },
+    {
+      "id": 1446,
+      "name": "esfuerzo normal",
+      "aliases": [
+        "esfuerzo axial"
+      ],
+      "dictation": "sigma igual a efe partido por a"
+    },
+    {
+      "id": 1447,
+      "name": "deformación normal",
+      "aliases": [
+        "deformación axial"
+      ],
+      "dictation": "épsilon igual a delta partido por ele"
+    },
+    {
+      "id": 1448,
+      "name": "ley de Hooke para sólidos",
+      "aliases": [
+        "módulo de elasticidad",
+        "módulo de Young"
+      ],
+      "dictation": "e igual a sigma partido por épsilon"
+    },
+    {
+      "id": 1449,
+      "name": "esfuerzo cortante medio",
+      "aliases": [
+        "fuerza cortante entre área"
+      ],
+      "dictation": "tau igual a uve partido por a"
+    },
+    {
+      "id": 1450,
+      "name": "módulo de cizalladura",
+      "aliases": [
+        "módulo de rigidez"
+      ],
+      "dictation": "ge igual a tau partido por gamma"
+    },
+    {
+      "id": 1451,
+      "name": "coeficiente de Poisson",
+      "aliases": [
+        "relación entre deformación lateral y axial"
+      ],
+      "dictation": "nu igual a menos épsilon sub lateral partido por épsilon sub axial"
+    },
+    {
+      "id": 1452,
+      "name": "esfuerzo de flexión",
+      "aliases": [
+        "fórmula de la flexión"
+      ],
+      "dictation": "sigma igual a eme por ce partido por i"
+    },
+    {
+      "id": 1453,
+      "name": "esfuerzo cortante por torsión",
+      "aliases": [
+        "fórmula de la torsión"
+      ],
+      "dictation": "tau igual a te por ce partido por jota"
+    },
+    {
+      "id": 1454,
+      "name": "esfuerzo térmico",
+      "aliases": [
+        "esfuerzo de origen térmico"
+      ],
+      "dictation": "sigma sub te igual a e por alfa por delta te"
+    },
+    {
+      "id": 1455,
+      "name": "método de Newton",
+      "aliases": [
+        "método de Newton-Raphson"
+      ],
+      "dictation": "equis sub abre paréntesis ene más uno cierra paréntesis igual a equis sub ene menos efe de equis sub ene partido por efe prima de equis sub ene"
+    },
+    {
+      "id": 1456,
+      "name": "regla del trapecio",
+      "aliases": [
+        "método del trapecio"
+      ],
+      "dictation": "la integral de a a be de efe de equis diferencial de equis es aproximadamente igual a hache partido por dos por abre corchete efe de equis sub cero más dos por efe de equis sub uno más etcétera más dos por efe de equis sub abre paréntesis ene menos uno cierra paréntesis más efe de equis sub ene cierra corchete"
+    },
+    {
+      "id": 1457,
+      "name": "regla de Simpson",
+      "aliases": [
+        "regla de Simpson un tercio"
+      ],
+      "dictation": "la integral de a a be de efe de equis diferencial de equis es aproximadamente igual a hache partido por tres por abre corchete efe de equis sub cero más cuatro por efe de equis sub uno más dos por efe de equis sub dos más etcétera más cuatro por efe de equis sub abre paréntesis ene menos uno cierra paréntesis más efe de equis sub ene cierra corchete"
+    },
+    {
+      "id": 1458,
+      "name": "método de Euler",
+      "aliases": [
+        "método de Euler para ecuaciones diferenciales"
+      ],
+      "dictation": "i griega sub abre paréntesis ene más uno cierra paréntesis igual a i griega sub ene más hache por efe de abre paréntesis equis sub ene coma i griega sub ene cierra paréntesis"
+    },
+    {
+      "id": 1459,
+      "name": "diferencia hacia adelante",
+      "aliases": [
+        "diferencia finita progresiva"
+      ],
+      "dictation": "efe prima de equis es aproximadamente igual a abre paréntesis efe de abre paréntesis equis más hache cierra paréntesis menos efe de equis cierra paréntesis partido por hache"
+    },
+    {
+      "id": 1460,
+      "name": "diferencia central",
+      "aliases": [
+        "diferencia finita centrada"
+      ],
+      "dictation": "efe prima de equis es aproximadamente igual a abre paréntesis efe de abre paréntesis equis más hache cierra paréntesis menos efe de abre paréntesis equis menos hache cierra paréntesis cierra paréntesis partido por dos por hache"
+    },
+    {
+      "id": 1461,
+      "name": "método de Runge-Kutta de cuarto orden",
+      "aliases": [
+        "método RK4"
+      ],
+      "dictation": "i griega sub abre paréntesis ene más uno cierra paréntesis igual a i griega sub ene más hache partido por seis por abre paréntesis ka sub uno más dos por ka sub dos más dos por ka sub tres más ka sub cuatro cierra paréntesis"
+    },
+    {
+      "id": 1409,
+      "name": "interés simple",
+      "aliases": [
+        "i igual a pe erre te"
+      ],
+      "dictation": "i igual a pe por erre por te"
+    },
+    {
+      "id": 1410,
+      "name": "interés compuesto",
+      "aliases": [
+        "fórmula del interés compuesto"
+      ],
+      "dictation": "a igual a pe por abre paréntesis uno más erre partido por ene cierra paréntesis elevado a ene por te"
+    },
+    {
+      "id": 1411,
+      "name": "interés compuesto continuo",
+      "aliases": [
+        "capitalización continua"
+      ],
+      "dictation": "a igual a pe por e elevado a abre paréntesis erre por te cierra paréntesis"
+    },
+    {
+      "id": 1412,
+      "name": "valor futuro",
+      "aliases": [
+        "valor final"
+      ],
+      "dictation": "efe uve igual a pe uve por abre paréntesis uno más erre cierra paréntesis elevado a ene"
+    },
+    {
+      "id": 1413,
+      "name": "valor presente",
+      "aliases": [
+        "valor actual"
+      ],
+      "dictation": "pe uve igual a efe uve partido por abre paréntesis uno más erre cierra paréntesis elevado a ene"
+    },
+    {
+      "id": 1414,
+      "name": "valor presente de una anualidad",
+      "aliases": [
+        "valor actual de una renta"
+      ],
+      "dictation": "pe uve igual a pe eme te por abre paréntesis uno menos abre paréntesis uno más erre cierra paréntesis elevado a menos ene cierra paréntesis partido por erre"
+    },
+    {
+      "id": 1415,
+      "name": "valor futuro de una anualidad",
+      "aliases": [
+        "valor final de una renta"
+      ],
+      "dictation": "efe uve igual a pe eme te por abre paréntesis abre paréntesis uno más erre cierra paréntesis elevado a ene menos uno cierra paréntesis partido por erre"
+    },
+    {
+      "id": 1416,
+      "name": "valor presente de una renta perpetua",
+      "aliases": [
+        "fórmula de la perpetuidad"
+      ],
+      "dictation": "pe uve igual a pe eme te partido por erre"
+    },
+    {
+      "id": 1417,
+      "name": "amortización de un préstamo",
+      "aliases": [
+        "fórmula de la cuota"
+      ],
+      "dictation": "eme igual a pe por erre por abre paréntesis uno más erre cierra paréntesis elevado a ene partido por abre paréntesis abre paréntesis uno más erre cierra paréntesis elevado a ene menos uno cierra paréntesis"
+    },
+    {
+      "id": 1418,
+      "name": "tasa anual efectiva",
+      "aliases": [
+        "TAE"
+      ],
+      "dictation": "e a erre igual a abre paréntesis uno más erre partido por ene cierra paréntesis elevado a ene menos uno"
+    },
+    {
+      "id": 1419,
+      "name": "valor actual neto",
+      "aliases": [
+        "VAN"
+      ],
+      "dictation": "ene pe uve igual a el sumatorio desde te igual a cero hasta ene de ce efe sub te partido por abre paréntesis uno más erre cierra paréntesis elevado a te"
+    },
+    {
+      "id": 1420,
+      "name": "tasa de crecimiento anual compuesta",
+      "aliases": [
+        "TCAC"
+      ],
+      "dictation": "ce a ge erre igual a abre paréntesis uve sub efe partido por uve sub i cierra paréntesis elevado a abre paréntesis uno partido por ene cierra paréntesis menos uno"
+    },
+    {
+      "id": 1421,
+      "name": "tiempo de duplicación",
+      "aliases": [
+        "regla del 70"
+      ],
+      "dictation": "te igual a logaritmo natural de dos partido por erre"
+    },
+    {
+      "id": 1422,
+      "name": "regla del 72",
+      "aliases": [
+        "tiempo de duplicación aproximado"
+      ],
+      "dictation": "te es aproximadamente igual a setenta y dos partido por erre"
+    },
+    {
+      "id": 1423,
+      "name": "ecuación de Fisher",
+      "aliases": [
+        "tasa nominal y tasa real"
+      ],
+      "dictation": "abre paréntesis uno más erre sub ene cierra paréntesis igual a abre paréntesis uno más erre sub erre cierra paréntesis por abre paréntesis uno más pi cierra paréntesis"
+    },
+    {
+      "id": 1424,
+      "name": "depreciación lineal",
+      "aliases": [
+        "amortización lineal"
+      ],
+      "dictation": "de igual a abre paréntesis ce menos ese cierra paréntesis partido por ene"
+    },
+    {
+      "id": 1425,
+      "name": "retorno de la inversión",
+      "aliases": [
+        "rentabilidad de la inversión"
+      ],
+      "dictation": "erre o i igual a abre paréntesis uve sub efe menos uve sub i cierra paréntesis partido por uve sub i"
+    },
+    {
+      "id": 1426,
+      "name": "precio de un bono",
+      "aliases": [
+        "valor actual de un bono"
+      ],
+      "dictation": "pe igual a el sumatorio desde te igual a uno hasta ene de ce partido por abre paréntesis uno más erre cierra paréntesis elevado a te más efe partido por abre paréntesis uno más erre cierra paréntesis elevado a ene"
+    },
+    {
+      "id": 1427,
+      "name": "elasticidad-precio de la demanda",
+      "aliases": [
+        "elasticidad de la demanda"
+      ],
+      "dictation": "épsilon sub de igual a abre paréntesis delta cu partido por cu cierra paréntesis partido por abre paréntesis delta pe partido por pe cierra paréntesis"
+    },
+    {
+      "id": 1428,
+      "name": "coste marginal",
+      "aliases": [
+        "fórmula del coste marginal"
+      ],
+      "dictation": "eme ce igual a de te ce partido por de cu"
+    },
+    {
+      "id": 1429,
+      "name": "ingreso marginal",
+      "aliases": [
+        "fórmula del ingreso marginal"
+      ],
+      "dictation": "eme erre igual a de te erre partido por de cu"
+    },
+    {
+      "id": 1430,
+      "name": "condición de maximización del beneficio",
+      "aliases": [
+        "ingreso marginal igual a coste marginal"
+      ],
+      "dictation": "eme erre igual a eme ce"
+    },
+    {
+      "id": 1431,
+      "name": "excedente del consumidor",
+      "aliases": [
+        "área bajo la curva de demanda"
+      ],
+      "dictation": "ce ese igual a la integral de cero a cu asterisco de de de cu diferencial de cu menos pe asterisco por cu asterisco"
+    },
+    {
+      "id": 1432,
+      "name": "fórmula de Black-Scholes",
+      "aliases": [
+        "modelo de Black-Scholes",
+        "valoración de opciones"
+      ],
+      "dictation": "ce igual a ese sub cero por ene de de sub uno menos ka por e elevado a abre paréntesis menos erre por te cierra paréntesis por ene de de sub dos"
+    },
+    {
+      "id": 1042,
+      "name": "pendiente",
+      "aliases": [
+        "pendiente de una recta"
+      ],
+      "dictation": "eme igual a abre paréntesis i griega sub dos menos i griega sub uno cierra paréntesis partido por abre paréntesis equis sub dos menos equis sub uno cierra paréntesis"
+    },
+    {
+      "id": 1043,
+      "name": "ecuación explícita de la recta",
+      "aliases": [
+        "forma pendiente-ordenada"
+      ],
+      "dictation": "i griega igual a eme por equis más be"
+    },
+    {
+      "id": 1044,
+      "name": "ecuación punto-pendiente",
+      "aliases": [
+        "forma punto-pendiente"
+      ],
+      "dictation": "i griega menos i griega sub uno igual a eme por abre paréntesis equis menos equis sub uno cierra paréntesis"
+    },
+    {
+      "id": 1045,
+      "name": "ecuación general de la recta",
+      "aliases": [
+        "forma general de la recta"
+      ],
+      "dictation": "a por equis más be por i griega igual a ce"
+    },
+    {
+      "id": 1046,
+      "name": "teorema de Pitágoras",
+      "aliases": [
+        "a al cuadrado más be al cuadrado igual a ce al cuadrado"
+      ],
+      "dictation": "a al cuadrado más be al cuadrado igual a ce al cuadrado"
+    },
+    {
+      "id": 1047,
+      "name": "fórmula de la distancia",
+      "aliases": [
+        "distancia entre dos puntos"
+      ],
+      "dictation": "de igual a raíz cuadrada de abre paréntesis abre paréntesis equis sub dos menos equis sub uno cierra paréntesis al cuadrado más abre paréntesis i griega sub dos menos i griega sub uno cierra paréntesis al cuadrado cierra paréntesis"
+    },
+    {
+      "id": 1048,
+      "name": "fórmula del punto medio",
+      "aliases": [
+        "punto medio de dos puntos"
+      ],
+      "dictation": "eme igual a abre paréntesis abre paréntesis equis sub uno más equis sub dos cierra paréntesis partido por dos coma abre paréntesis i griega sub uno más i griega sub dos cierra paréntesis partido por dos cierra paréntesis"
+    },
+    {
+      "id": 1049,
+      "name": "ecuación de la circunferencia",
+      "aliases": [
+        "ecuación del círculo"
+      ],
+      "dictation": "abre paréntesis equis menos hache cierra paréntesis al cuadrado más abre paréntesis i griega menos ka cierra paréntesis al cuadrado igual a erre al cuadrado"
+    },
+    {
+      "id": 1050,
+      "name": "área del círculo",
+      "aliases": [
+        "superficie del círculo"
+      ],
+      "dictation": "a igual a pi por erre al cuadrado"
+    },
+    {
+      "id": 1051,
+      "name": "longitud de la circunferencia",
+      "aliases": [
+        "perímetro del círculo"
+      ],
+      "dictation": "ce igual a dos por pi por erre"
+    },
+    {
+      "id": 1052,
+      "name": "área de un triángulo",
+      "aliases": [
+        "superficie de un triángulo"
+      ],
+      "dictation": "a igual a un medio por be por hache"
+    },
+    {
+      "id": 1053,
+      "name": "fórmula de Herón",
+      "aliases": [
+        "área de un triángulo a partir de los tres lados"
+      ],
+      "dictation": "a igual a raíz cuadrada de abre paréntesis ese por abre paréntesis ese menos a cierra paréntesis por abre paréntesis ese menos be cierra paréntesis por abre paréntesis ese menos ce cierra paréntesis cierra paréntesis"
+    },
+    {
+      "id": 1054,
+      "name": "área de un rectángulo",
+      "aliases": [
+        "superficie de un rectángulo"
+      ],
+      "dictation": "a igual a ele por doble uve"
+    },
+    {
+      "id": 1055,
+      "name": "área de un trapecio",
+      "aliases": [
+        "superficie de un trapecio"
+      ],
+      "dictation": "a igual a un medio por abre paréntesis a más be cierra paréntesis por hache"
+    },
+    {
+      "id": 1056,
+      "name": "área de una elipse",
+      "aliases": [
+        "superficie de una elipse"
+      ],
+      "dictation": "a igual a pi por a por be"
+    },
+    {
+      "id": 1057,
+      "name": "volumen de una esfera",
+      "aliases": [
+        "volumen de la esfera"
+      ],
+      "dictation": "uve igual a cuatro tercios por pi por erre al cubo"
+    },
+    {
+      "id": 1058,
+      "name": "área de una esfera",
+      "aliases": [
+        "superficie de una esfera"
+      ],
+      "dictation": "a igual a cuatro por pi por erre al cuadrado"
+    },
+    {
+      "id": 1059,
+      "name": "volumen de un cilindro",
+      "aliases": [
+        "volumen del cilindro"
+      ],
+      "dictation": "uve igual a pi por erre al cuadrado por hache"
+    },
+    {
+      "id": 1060,
+      "name": "volumen de un cono",
+      "aliases": [
+        "volumen del cono"
+      ],
+      "dictation": "uve igual a un tercio por pi por erre al cuadrado por hache"
+    },
+    {
+      "id": 1061,
+      "name": "volumen de un cubo",
+      "aliases": [
+        "volumen del cubo"
+      ],
+      "dictation": "uve igual a ese al cubo"
+    },
+    {
+      "id": 1062,
+      "name": "volumen de un ortoedro",
+      "aliases": [
+        "volumen de un prisma rectangular"
+      ],
+      "dictation": "uve igual a ele por doble uve por hache"
+    },
+    {
+      "id": 1063,
+      "name": "volumen de una pirámide",
+      "aliases": [
+        "volumen de la pirámide"
+      ],
+      "dictation": "uve igual a un tercio por be por hache"
+    },
+    {
+      "id": 1064,
+      "name": "área de un cilindro",
+      "aliases": [
+        "área total de un cilindro"
+      ],
+      "dictation": "ese a igual a dos por pi por erre al cuadrado más dos por pi por erre por hache"
+    },
+    {
+      "id": 1065,
+      "name": "área de un cono",
+      "aliases": [
+        "área total de un cono"
+      ],
+      "dictation": "ese a igual a pi por erre al cuadrado más pi por erre por ele"
+    },
+    {
+      "id": 1066,
+      "name": "área de un ortoedro",
+      "aliases": [
+        "área total de un prisma rectangular"
+      ],
+      "dictation": "ese a igual a dos por abre paréntesis ele por doble uve más ele por hache más doble uve por hache cierra paréntesis"
+    },
+    {
+      "id": 1067,
+      "name": "razón seno",
+      "aliases": [
+        "seno igual a cateto opuesto partido por hipotenusa"
+      ],
+      "dictation": "seno de theta igual a cateto opuesto partido por hipotenusa"
+    },
+    {
+      "id": 1068,
+      "name": "razón coseno",
+      "aliases": [
+        "coseno igual a cateto adyacente partido por hipotenusa"
+      ],
+      "dictation": "coseno de theta igual a cateto adyacente partido por hipotenusa"
+    },
+    {
+      "id": 1069,
+      "name": "razón tangente",
+      "aliases": [
+        "tangente igual a cateto opuesto partido por cateto adyacente"
+      ],
+      "dictation": "tangente de theta igual a cateto opuesto partido por cateto adyacente"
+    },
+    {
+      "id": 1070,
+      "name": "identidades trigonométricas recíprocas",
+      "aliases": [
+        "cosecante inversa del seno",
+        "secante inversa del coseno",
+        "cotangente inversa de la tangente"
+      ],
+      "dictation": "cosecante de theta igual a uno partido por seno de theta punto y coma secante de theta igual a uno partido por coseno de theta punto y coma cotangente de theta igual a uno partido por tangente de theta"
+    },
+    {
+      "id": 1071,
+      "name": "identidades trigonométricas de cociente",
+      "aliases": [
+        "tangente como seno partido por coseno",
+        "cotangente como coseno partido por seno"
+      ],
+      "dictation": "tangente de theta igual a seno de theta partido por coseno de theta punto y coma cotangente de theta igual a coseno de theta partido por seno de theta"
+    },
+    {
+      "id": 1072,
+      "name": "identidades de cofunción",
+      "aliases": [
+        "seno de 90 grados menos theta",
+        "coseno de 90 grados menos theta",
+        "tangente de 90 grados menos theta"
+      ],
+      "dictation": "seno de abre paréntesis noventa grados menos theta cierra paréntesis igual a coseno de theta punto y coma coseno de abre paréntesis noventa grados menos theta cierra paréntesis igual a seno de theta punto y coma tangente de abre paréntesis noventa grados menos theta cierra paréntesis igual a cotangente de theta"
+    },
+    {
+      "id": 1073,
+      "name": "identidades de paridad trigonométricas",
+      "aliases": [
+        "seno de menos theta",
+        "coseno de menos theta",
+        "tangente de menos theta"
+      ],
+      "dictation": "seno de abre paréntesis menos theta cierra paréntesis igual a menos seno de theta punto y coma coseno de abre paréntesis menos theta cierra paréntesis igual a coseno de theta punto y coma tangente de abre paréntesis menos theta cierra paréntesis igual a menos tangente de theta"
+    },
+    {
+      "id": 1074,
+      "name": "conversión de grados a radianes",
+      "aliases": [
+        "de grados a radianes"
+      ],
+      "dictation": "theta sub rad igual a theta sub grados por pi partido por ciento ochenta"
+    },
+    {
+      "id": 1075,
+      "name": "conversión de radianes a grados",
+      "aliases": [
+        "de radianes a grados"
+      ],
+      "dictation": "theta sub grados igual a theta sub rad por ciento ochenta partido por pi"
+    },
+    {
+      "id": 1076,
+      "name": "identidades trigonométricas de Pitágoras",
+      "aliases": [
+        "identidad fundamental",
+        "identidad de la secante",
+        "identidad de la cosecante"
+      ],
+      "dictation": "seno al cuadrado de theta más coseno al cuadrado de theta igual a uno punto y coma uno más tangente al cuadrado de theta igual a secante al cuadrado de theta punto y coma uno más cotangente al cuadrado de theta igual a cosecante al cuadrado de theta"
+    },
+    {
+      "id": 1077,
+      "name": "fórmula del seno del ángulo doble",
+      "aliases": [
+        "seno del ángulo doble"
+      ],
+      "dictation": "seno de abre paréntesis dos por theta cierra paréntesis igual a dos por seno de theta por coseno de theta"
+    },
+    {
+      "id": 1078,
+      "name": "fórmulas del coseno del ángulo doble",
+      "aliases": [
+        "coseno del ángulo doble",
+        "segunda fórmula del coseno doble",
+        "tercera fórmula del coseno doble"
+      ],
+      "dictation": "coseno de abre paréntesis dos por theta cierra paréntesis igual a coseno al cuadrado de theta menos seno al cuadrado de theta"
+    },
+    {
+      "id": 1079,
+      "name": "fórmula de la tangente del ángulo doble",
+      "aliases": [
+        "tangente del ángulo doble"
+      ],
+      "dictation": "tangente de abre paréntesis dos por theta cierra paréntesis igual a dos por tangente de theta partido por abre paréntesis uno menos tangente al cuadrado de theta cierra paréntesis"
+    },
+    {
+      "id": 1080,
+      "name": "fórmula del seno de una suma",
+      "aliases": [
+        "seno de a más be"
+      ],
+      "dictation": "seno de abre paréntesis a más be cierra paréntesis igual a seno de a por coseno de be más coseno de a por seno de be"
+    },
+    {
+      "id": 1081,
+      "name": "fórmula del seno de una diferencia",
+      "aliases": [
+        "seno de a menos be"
+      ],
+      "dictation": "seno de abre paréntesis a menos be cierra paréntesis igual a seno de a por coseno de be menos coseno de a por seno de be"
+    },
+    {
+      "id": 1082,
+      "name": "fórmula del coseno de una suma",
+      "aliases": [
+        "coseno de a más be"
+      ],
+      "dictation": "coseno de abre paréntesis a más be cierra paréntesis igual a coseno de a por coseno de be menos seno de a por seno de be"
+    },
+    {
+      "id": 1083,
+      "name": "fórmula del coseno de una diferencia",
+      "aliases": [
+        "coseno de a menos be"
+      ],
+      "dictation": "coseno de abre paréntesis a menos be cierra paréntesis igual a coseno de a por coseno de be más seno de a por seno de be"
+    },
+    {
+      "id": 1084,
+      "name": "fórmula de la tangente de una suma",
+      "aliases": [
+        "tangente de a más be"
+      ],
+      "dictation": "tangente de abre paréntesis a más be cierra paréntesis igual a abre paréntesis tangente de a más tangente de be cierra paréntesis partido por abre paréntesis uno menos tangente de a por tangente de be cierra paréntesis"
+    },
+    {
+      "id": 1085,
+      "name": "fórmula de la tangente de una diferencia",
+      "aliases": [
+        "tangente de a menos be"
+      ],
+      "dictation": "tangente de abre paréntesis a menos be cierra paréntesis igual a abre paréntesis tangente de a menos tangente de be cierra paréntesis partido por abre paréntesis uno más tangente de a por tangente de be cierra paréntesis"
+    },
+    {
+      "id": 1086,
+      "name": "teorema del seno",
+      "aliases": [
+        "ley de senos"
+      ],
+      "dictation": "a partido por seno de a mayúscula igual a be partido por seno de be mayúscula igual a ce partido por seno de ce mayúscula"
+    },
+    {
+      "id": 1087,
+      "name": "teorema del coseno",
+      "aliases": [
+        "ley de cosenos"
+      ],
+      "dictation": "ce al cuadrado igual a a al cuadrado más be al cuadrado menos dos por a por be por coseno de ce mayúscula"
+    },
+    {
+      "id": 1088,
+      "name": "fórmula de Euler",
+      "aliases": [
+        "e elevado a i theta"
+      ],
+      "dictation": "e elevado a abre paréntesis i por theta cierra paréntesis igual a coseno de theta más i por seno de theta"
+    },
+    {
+      "id": 1089,
+      "name": "longitud de arco",
+      "aliases": [
+        "ese igual a erre theta"
+      ],
+      "dictation": "ese igual a erre por theta"
+    },
+    {
+      "id": 1090,
+      "name": "área de un sector circular",
+      "aliases": [
+        "área de un sector"
+      ],
+      "dictation": "a igual a un medio por erre al cuadrado por theta"
+    },
+    {
+      "id": 1091,
+      "name": "área de un triángulo con el seno",
+      "aliases": [
+        "área de un triángulo a partir de dos lados y el ángulo"
+      ],
+      "dictation": "a mayúscula igual a un medio por a por be por seno de ce mayúscula"
+    },
+    {
+      "id": 1092,
+      "name": "fórmulas del ángulo mitad",
+      "aliases": [
+        "seno del ángulo mitad",
+        "coseno del ángulo mitad",
+        "tangente del ángulo mitad"
+      ],
+      "dictation": "seno de abre paréntesis theta partido por dos cierra paréntesis igual a más menos raíz cuadrada de abre paréntesis abre paréntesis uno menos coseno de theta cierra paréntesis partido por dos cierra paréntesis punto y coma coseno de abre paréntesis theta partido por dos cierra paréntesis igual a más menos raíz cuadrada de abre paréntesis abre paréntesis uno más coseno de theta cierra paréntesis partido por dos cierra paréntesis punto y coma tangente de abre paréntesis theta partido por dos cierra paréntesis igual a abre paréntesis uno menos coseno de theta cierra paréntesis partido por seno de theta"
+    },
+    {
+      "id": 1093,
+      "name": "fórmulas de reducción de potencia",
+      "aliases": [
+        "reducción del cuadrado del seno",
+        "reducción del cuadrado del coseno"
+      ],
+      "dictation": "seno al cuadrado de theta igual a abre paréntesis uno menos coseno de abre paréntesis dos por theta cierra paréntesis cierra paréntesis partido por dos punto y coma coseno al cuadrado de theta igual a abre paréntesis uno más coseno de abre paréntesis dos por theta cierra paréntesis cierra paréntesis partido por dos"
+    },
+    {
+      "id": 1094,
+      "name": "velocidad angular",
+      "aliases": [
+        "omega igual a theta partido por te"
+      ],
+      "dictation": "omega igual a theta partido por te"
+    },
+    {
+      "id": 1095,
+      "name": "velocidad lineal a partir de la angular",
+      "aliases": [
+        "uve igual a erre omega"
+      ],
+      "dictation": "uve igual a erre por omega"
+    },
+    {
+      "id": 1096,
+      "name": "identidades de producto a suma",
+      "aliases": [
+        "producto a suma seno coseno",
+        "producto a suma coseno coseno",
+        "producto a suma seno seno"
+      ],
+      "dictation": "seno de a por coseno de be igual a un medio por abre corchete seno de abre paréntesis a más be cierra paréntesis más seno de abre paréntesis a menos be cierra paréntesis cierra corchete punto y coma coseno de a por coseno de be igual a un medio por abre corchete coseno de abre paréntesis a menos be cierra paréntesis más coseno de abre paréntesis a más be cierra paréntesis cierra corchete punto y coma seno de a por seno de be igual a un medio por abre corchete coseno de abre paréntesis a menos be cierra paréntesis menos coseno de abre paréntesis a más be cierra paréntesis cierra corchete"
+    },
+    {
+      "id": 1097,
+      "name": "identidades de suma a producto",
+      "aliases": [
+        "suma a producto del seno",
+        "suma a producto del coseno"
+      ],
+      "dictation": "seno de a más seno de be igual a dos por seno de abre paréntesis abre paréntesis a más be cierra paréntesis partido por dos cierra paréntesis por coseno de abre paréntesis abre paréntesis a menos be cierra paréntesis partido por dos cierra paréntesis punto y coma coseno de a más coseno de be igual a dos por coseno de abre paréntesis abre paréntesis a más be cierra paréntesis partido por dos cierra paréntesis por coseno de abre paréntesis abre paréntesis a menos be cierra paréntesis partido por dos cierra paréntesis"
+    },
+    {
+      "id": 1098,
+      "name": "ecuación canónica de la elipse",
+      "aliases": [
+        "ecuación de la elipse"
+      ],
+      "dictation": "equis al cuadrado partido por a al cuadrado más i griega al cuadrado partido por be al cuadrado igual a uno"
+    },
+    {
+      "id": 1099,
+      "name": "ecuación canónica de la hipérbola",
+      "aliases": [
+        "ecuación de la hipérbola"
+      ],
+      "dictation": "equis al cuadrado partido por a al cuadrado menos i griega al cuadrado partido por be al cuadrado igual a uno"
+    },
+    {
+      "id": 1100,
+      "name": "ecuación canónica de la parábola",
+      "aliases": [
+        "parábola a partir del foco"
+      ],
+      "dictation": "equis al cuadrado igual a cuatro por pe por i griega"
+    },
+    {
+      "id": 1166,
+      "name": "producto escalar",
+      "aliases": [
+        "producto punto"
+      ],
+      "dictation": "a punto be igual a el módulo de a por el módulo de be por coseno de theta"
+    },
+    {
+      "id": 1167,
+      "name": "determinante de una matriz 2 × 2",
+      "aliases": [
+        "determinante dos por dos"
+      ],
+      "dictation": "determinante de la matriz primera fila a coma be y segunda fila ce coma de igual a a por de menos be por ce"
+    },
+    {
+      "id": 1168,
+      "name": "ecuación de valores propios",
+      "aliases": [
+        "ecuación de vectores propios"
+      ],
+      "dictation": "a por uve igual a lambda por uve"
+    },
+    {
+      "id": 1169,
+      "name": "polinomio característico",
+      "aliases": [
+        "ecuación característica"
+      ],
+      "dictation": "determinante de abre paréntesis a menos lambda por matriz identidad cierra paréntesis igual a cero"
+    },
+    {
+      "id": 1170,
+      "name": "proyección de un vector",
+      "aliases": [
+        "proyección de u sobre uve"
+      ],
+      "dictation": "proyección de u sobre uve igual a u punto uve partido por el módulo de uve al cuadrado por uve"
+    },
+    {
+      "id": 1171,
+      "name": "módulo del producto vectorial",
+      "aliases": [
+        "módulo de a producto vectorial be"
+      ],
+      "dictation": "el módulo de abre paréntesis a producto vectorial be cierra paréntesis igual a el módulo de a por el módulo de be por seno de theta"
+    },
+    {
+      "id": 1172,
+      "name": "componentes del producto vectorial",
+      "aliases": [
+        "fórmula de a producto vectorial be"
+      ],
+      "dictation": "a producto vectorial be igual a el determinante de la matriz primera fila i coma jota coma ka, segunda fila a sub uno coma a sub dos coma a sub tres, tercera fila be sub uno coma be sub dos coma be sub tres"
+    },
+    {
+      "id": 1173,
+      "name": "desigualdad de Cauchy-Schwarz",
+      "aliases": [
+        "desigualdad de Cauchy-Schwarz-Buniakovski"
+      ],
+      "dictation": "el valor absoluto de abre paréntesis a punto be cierra paréntesis es menor o igual que el módulo de a por el módulo de be"
+    },
+    {
+      "id": 1174,
+      "name": "teorema de Lagrange",
+      "aliases": [
+        "teorema del índice de un subgrupo"
+      ],
+      "dictation": "el orden de ge igual a el orden de hache por abre corchete ge dos puntos hache cierra corchete"
+    },
+    {
+      "id": 1175,
+      "name": "homomorfismo de grupos",
+      "aliases": [
+        "propiedad de homomorfismo"
+      ],
+      "dictation": "phi de abre paréntesis a por be cierra paréntesis igual a phi de a por phi de be"
+    },
+    {
+      "id": 1176,
+      "name": "primer teorema de isomorfía",
+      "aliases": [
+        "teorema fundamental de homomorfismos"
+      ],
+      "dictation": "ge partido por núcleo de phi es isomorfo a imagen de phi"
+    },
+    {
+      "id": 1177,
+      "name": "orden de un elemento de un grupo",
+      "aliases": [
+        "potencia de un elemento de grupo"
+      ],
+      "dictation": "a elevado a el orden de a igual a e"
+    },
+    {
+      "id": 1178,
+      "name": "condición de los multiplicadores de Lagrange",
+      "aliases": [
+        "paralelismo de los gradientes"
+      ],
+      "dictation": "gradiente de efe igual a lambda por gradiente de ge"
+    },
+    {
+      "id": 1179,
+      "name": "función lagrangiana",
+      "aliases": [
+        "lagrangiano",
+        "función objetivo aumentada"
+      ],
+      "dictation": "ele de abre paréntesis equis coma lambda cierra paréntesis igual a efe de equis menos lambda por ge de equis"
+    },
+    {
+      "id": 1180,
+      "name": "condición de estacionariedad de KKT",
+      "aliases": [
+        "condiciones de optimalidad de Karush-Kuhn-Tucker"
+      ],
+      "dictation": "gradiente de efe de equis asterisco igual a el sumatorio sobre i de lambda sub i por gradiente de ge sub i de equis asterisco"
+    },
+    {
+      "id": 1269,
+      "name": "segunda ley de Newton",
+      "aliases": [
+        "fuerza igual a masa por aceleración",
+        "efe igual a eme por a"
+      ],
+      "dictation": "efe igual a eme por a"
+    },
+    {
+      "id": 1270,
+      "name": "energía cinética",
+      "aliases": [
+        "energía cinética de traslación"
+      ],
+      "dictation": "ka e igual a un medio por eme por uve al cuadrado"
+    },
+    {
+      "id": 1271,
+      "name": "energía potencial gravitatoria cerca de la superficie",
+      "aliases": [
+        "energía potencial de altura"
+      ],
+      "dictation": "u igual a eme por ge por hache"
+    },
+    {
+      "id": 1272,
+      "name": "ley de Coulomb",
+      "aliases": [
+        "fuerza electrostática"
+      ],
+      "dictation": "efe igual a ka por cu sub uno por cu sub dos partido por erre al cuadrado"
+    },
+    {
+      "id": 1273,
+      "name": "ley de Ohm",
+      "aliases": [
+        "uve igual a i por erre"
+      ],
+      "dictation": "uve igual a i por erre"
+    },
+    {
+      "id": 1274,
+      "name": "velocidad de una onda",
+      "aliases": [
+        "velocidad igual a frecuencia por longitud de onda"
+      ],
+      "dictation": "uve igual a efe por lambda"
+    },
+    {
+      "id": 1275,
+      "name": "velocidad en cinemática",
+      "aliases": [
+        "uve igual a uve cero más a te"
+      ],
+      "dictation": "uve igual a uve sub cero más a por te"
+    },
+    {
+      "id": 1276,
+      "name": "posición en cinemática",
+      "aliases": [
+        "ecuación de la posición"
+      ],
+      "dictation": "equis igual a equis sub cero más uve sub cero por te más un medio por a por te al cuadrado"
+    },
+    {
+      "id": 1277,
+      "name": "velocidad al cuadrado en cinemática",
+      "aliases": [
+        "ecuación independiente del tiempo"
+      ],
+      "dictation": "uve al cuadrado igual a uve sub cero al cuadrado más dos por a por delta equis"
+    },
+    {
+      "id": 1278,
+      "name": "desplazamiento y velocidad media",
+      "aliases": [
+        "desplazamiento a partir de la velocidad media"
+      ],
+      "dictation": "delta equis igual a un medio por abre paréntesis uve más uve sub cero cierra paréntesis por te"
+    },
+    {
+      "id": 1279,
+      "name": "ley de la gravitación universal de Newton",
+      "aliases": [
+        "fuerza gravitatoria"
+      ],
+      "dictation": "efe igual a ge por eme sub uno por eme sub dos partido por erre al cuadrado"
+    },
+    {
+      "id": 1280,
+      "name": "energía potencial gravitatoria general",
+      "aliases": [
+        "energía potencial de gravitación universal"
+      ],
+      "dictation": "u igual a menos ge por eme sub uno por eme sub dos partido por erre"
+    },
+    {
+      "id": 1281,
+      "name": "velocidad de escape",
+      "aliases": [
+        "segunda velocidad cósmica"
+      ],
+      "dictation": "uve sub e igual a raíz cuadrada de abre paréntesis dos por ge por eme partido por erre cierra paréntesis"
+    },
+    {
+      "id": 1282,
+      "name": "cantidad de movimiento",
+      "aliases": [
+        "momento lineal",
+        "pe igual a eme uve"
+      ],
+      "dictation": "pe igual a eme por uve"
+    },
+    {
+      "id": 1283,
+      "name": "impulso",
+      "aliases": [
+        "impulso igual a fuerza por tiempo"
+      ],
+      "dictation": "jota igual a efe por delta te igual a delta pe"
+    },
+    {
+      "id": 1284,
+      "name": "conservación de la cantidad de movimiento",
+      "aliases": [
+        "momento antes igual a momento después"
+      ],
+      "dictation": "eme sub uno por uve sub uno más eme sub dos por uve sub dos igual a eme sub uno por uve sub uno prima más eme sub dos por uve sub dos prima"
+    },
+    {
+      "id": 1285,
+      "name": "trabajo",
+      "aliases": [
+        "trabajo de una fuerza"
+      ],
+      "dictation": "doble uve igual a efe por de por coseno de theta"
+    },
+    {
+      "id": 1286,
+      "name": "potencia",
+      "aliases": [
+        "pe igual a trabajo partido por tiempo"
+      ],
+      "dictation": "pe igual a doble uve partido por te igual a efe por uve"
+    },
+    {
+      "id": 1287,
+      "name": "aceleración centrípeta",
+      "aliases": [
+        "a igual a uve al cuadrado partido por erre"
+      ],
+      "dictation": "a sub ce igual a uve al cuadrado partido por erre"
+    },
+    {
+      "id": 1288,
+      "name": "fuerza centrípeta",
+      "aliases": [
+        "efe igual a eme uve al cuadrado partido por erre"
+      ],
+      "dictation": "efe sub ce igual a eme por uve al cuadrado partido por erre"
+    },
+    {
+      "id": 1289,
+      "name": "momento de una fuerza",
+      "aliases": [
+        "par",
+        "tau igual a erre efe seno theta"
+      ],
+      "dictation": "tau igual a erre por efe por seno de theta"
+    },
+    {
+      "id": 1290,
+      "name": "momento angular",
+      "aliases": [
+        "ele igual a i omega"
+      ],
+      "dictation": "ele igual a i por omega"
+    },
+    {
+      "id": 1291,
+      "name": "energía cinética de rotación",
+      "aliases": [
+        "energía cinética rotacional"
+      ],
+      "dictation": "ka e igual a un medio por i por omega al cuadrado"
+    },
+    {
+      "id": 1292,
+      "name": "ley de Hooke",
+      "aliases": [
+        "fuerza recuperadora de un resorte"
+      ],
+      "dictation": "efe igual a menos ka por equis"
+    },
+    {
+      "id": 1293,
+      "name": "periodo de un resorte",
+      "aliases": [
+        "periodo de oscilación de un resorte"
+      ],
+      "dictation": "te igual a dos por pi por raíz cuadrada de abre paréntesis eme partido por ka cierra paréntesis"
+    },
+    {
+      "id": 1294,
+      "name": "periodo de un péndulo",
+      "aliases": [
+        "periodo de oscilación de un péndulo"
+      ],
+      "dictation": "te igual a dos por pi por raíz cuadrada de abre paréntesis ele partido por ge cierra paréntesis"
+    },
+    {
+      "id": 1295,
+      "name": "ley de los gases ideales",
+      "aliases": [
+        "pe uve igual a ene erre te"
+      ],
+      "dictation": "pe por uve igual a ene por erre por te"
+    },
+    {
+      "id": 1296,
+      "name": "primer principio de la termodinámica",
+      "aliases": [
+        "delta u igual a cu menos doble uve"
+      ],
+      "dictation": "delta u igual a cu menos doble uve"
+    },
+    {
+      "id": 1297,
+      "name": "calor",
+      "aliases": [
+        "transferencia de calor",
+        "cu igual a eme ce delta te"
+      ],
+      "dictation": "cu igual a eme por ce por delta te"
+    },
+    {
+      "id": 1298,
+      "name": "dilatación térmica lineal",
+      "aliases": [
+        "delta ele igual a alfa ele cero delta te"
+      ],
+      "dictation": "delta ele igual a alfa por ele sub cero por delta te"
+    },
+    {
+      "id": 1299,
+      "name": "rendimiento de Carnot",
+      "aliases": [
+        "rendimiento de una máquina de Carnot"
+      ],
+      "dictation": "eta igual a uno menos te sub ce partido por te sub hache"
+    },
+    {
+      "id": 1300,
+      "name": "campo eléctrico de una carga puntual",
+      "aliases": [
+        "e igual a ka cu partido por erre al cuadrado"
+      ],
+      "dictation": "e igual a ka por cu partido por erre al cuadrado"
+    },
+    {
+      "id": 1301,
+      "name": "energía potencial eléctrica",
+      "aliases": [
+        "u igual a ka cu uno cu dos partido por erre"
+      ],
+      "dictation": "u igual a ka por cu sub uno por cu sub dos partido por erre"
+    },
+    {
+      "id": 1302,
+      "name": "potencial eléctrico",
+      "aliases": [
+        "uve igual a ka cu partido por erre"
+      ],
+      "dictation": "uve igual a ka por cu partido por erre"
+    },
+    {
+      "id": 1303,
+      "name": "capacidad eléctrica",
+      "aliases": [
+        "ce igual a cu partido por uve"
+      ],
+      "dictation": "ce igual a cu partido por uve"
+    },
+    {
+      "id": 1304,
+      "name": "energía almacenada en un condensador",
+      "aliases": [
+        "energía de un condensador"
+      ],
+      "dictation": "u igual a un medio por ce por uve al cuadrado"
+    },
+    {
+      "id": 1305,
+      "name": "potencia eléctrica",
+      "aliases": [
+        "pe igual a i uve"
+      ],
+      "dictation": "pe igual a i por uve igual a i al cuadrado por erre igual a uve al cuadrado partido por erre"
+    },
+    {
+      "id": 1306,
+      "name": "resistencias en serie",
+      "aliases": [
+        "resistencia equivalente en serie"
+      ],
+      "dictation": "erre sub total igual a erre sub uno más erre sub dos más etcétera más erre sub ene"
+    },
+    {
+      "id": 1307,
+      "name": "resistencias en paralelo",
+      "aliases": [
+        "resistencia equivalente en paralelo"
+      ],
+      "dictation": "uno partido por erre sub total igual a uno partido por erre sub uno más uno partido por erre sub dos más etcétera más uno partido por erre sub ene"
+    },
+    {
+      "id": 1308,
+      "name": "ley de Faraday",
+      "aliases": [
+        "fuerza electromotriz inducida"
+      ],
+      "dictation": "e igual a menos de phi sub be partido por de te"
+    },
+    {
+      "id": 1309,
+      "name": "fuerza magnética sobre una carga",
+      "aliases": [
+        "fuerza de Lorentz"
+      ],
+      "dictation": "efe igual a cu por uve por be por seno de theta"
+    },
+    {
+      "id": 1310,
+      "name": "fuerza magnética sobre un conductor",
+      "aliases": [
+        "fuerza sobre un conductor con corriente"
+      ],
+      "dictation": "efe igual a be por i por ele por seno de theta"
+    },
+    {
+      "id": 1311,
+      "name": "energía almacenada en una bobina",
+      "aliases": [
+        "energía de una inductancia"
+      ],
+      "dictation": "u igual a un medio por ele por i al cuadrado"
+    },
+    {
+      "id": 1312,
+      "name": "ley de Snell",
+      "aliases": [
+        "ley de la refracción"
+      ],
+      "dictation": "ene sub uno por seno de theta sub uno igual a ene sub dos por seno de theta sub dos"
+    },
+    {
+      "id": 1313,
+      "name": "ecuación de las lentes delgadas",
+      "aliases": [
+        "fórmula de las lentes"
+      ],
+      "dictation": "uno partido por efe igual a uno partido por de sub o más uno partido por de sub i"
+    },
+    {
+      "id": 1314,
+      "name": "aumento",
+      "aliases": [
+        "aumento de una lente"
+      ],
+      "dictation": "eme igual a menos de sub i partido por de sub o"
+    },
+    {
+      "id": 1315,
+      "name": "frecuencia y periodo de una onda",
+      "aliases": [
+        "efe igual a uno partido por te"
+      ],
+      "dictation": "efe igual a uno partido por te"
+    },
+    {
+      "id": 1316,
+      "name": "efecto Doppler",
+      "aliases": [
+        "desplazamiento Doppler"
+      ],
+      "dictation": "efe prima igual a efe por uve más menos uve sub o partido por uve menos más uve sub ese"
+    },
+    {
+      "id": 1317,
+      "name": "longitud de onda de una onda estacionaria",
+      "aliases": [
+        "armónicos"
+      ],
+      "dictation": "lambda sub ene igual a dos por ele partido por ene"
+    },
+    {
+      "id": 1318,
+      "name": "interferencia constructiva en doble rendija",
+      "aliases": [
+        "interferencia constructiva"
+      ],
+      "dictation": "de por seno de theta igual a eme por lambda"
+    },
+    {
+      "id": 1319,
+      "name": "interferencia destructiva en doble rendija",
+      "aliases": [
+        "interferencia destructiva"
+      ],
+      "dictation": "de por seno de theta igual a abre paréntesis eme más un medio cierra paréntesis por lambda"
+    },
+    {
+      "id": 1320,
+      "name": "efecto fotoeléctrico",
+      "aliases": [
+        "energía del fotón menos trabajo de extracción"
+      ],
+      "dictation": "ka e sub max igual a hache por efe menos phi"
+    },
+    {
+      "id": 1321,
+      "name": "longitud de onda de De Broglie",
+      "aliases": [
+        "onda de materia"
+      ],
+      "dictation": "lambda igual a hache partido por pe"
+    },
+    {
+      "id": 1322,
+      "name": "principio de incertidumbre de Heisenberg",
+      "aliases": [
+        "principio de indeterminación"
+      ],
+      "dictation": "delta equis por delta pe es mayor o igual que hache barra partido por dos"
+    },
+    {
+      "id": 1323,
+      "name": "equivalencia masa-energía",
+      "aliases": [
+        "e igual a eme ce al cuadrado",
+        "energía en reposo"
+      ],
+      "dictation": "e igual a eme por ce al cuadrado"
+    },
+    {
+      "id": 1324,
+      "name": "ley de desintegración radiactiva",
+      "aliases": [
+        "decaimiento exponencial",
+        "desintegración nuclear"
+      ],
+      "dictation": "ene de te igual a ene sub cero por e elevado a abre paréntesis menos lambda por te cierra paréntesis"
+    },
+    {
+      "id": 1325,
+      "name": "semivida radiactiva",
+      "aliases": [
+        "periodo de semidesintegración"
+      ],
+      "dictation": "te sub un medio igual a logaritmo natural de dos partido por lambda"
+    },
+    {
+      "id": 1326,
+      "name": "factor de Lorentz",
+      "aliases": [
+        "factor gamma"
+      ],
+      "dictation": "gamma igual a uno partido por raíz cuadrada de abre paréntesis uno menos uve al cuadrado partido por ce al cuadrado cierra paréntesis"
+    },
+    {
+      "id": 1327,
+      "name": "dilatación del tiempo",
+      "aliases": [
+        "dilatación relativista del tiempo"
+      ],
+      "dictation": "delta te igual a gamma por delta te sub cero"
+    },
+    {
+      "id": 1328,
+      "name": "contracción de la longitud",
+      "aliases": [
+        "contracción de Lorentz"
+      ],
+      "dictation": "ele igual a ele sub cero partido por gamma"
+    },
+    {
+      "id": 1329,
+      "name": "cantidad de movimiento relativista",
+      "aliases": [
+        "momento relativista"
+      ],
+      "dictation": "pe igual a gamma por eme por uve"
+    },
+    {
+      "id": 1330,
+      "name": "energía relativista total",
+      "aliases": [
+        "energía total relativista"
+      ],
+      "dictation": "e igual a gamma por eme por ce al cuadrado"
+    },
+    {
+      "id": 1331,
+      "name": "relación energía-momento",
+      "aliases": [
+        "relación de dispersión relativista"
+      ],
+      "dictation": "e al cuadrado igual a abre paréntesis pe por ce cierra paréntesis al cuadrado más abre paréntesis eme por ce al cuadrado cierra paréntesis al cuadrado"
+    },
+    {
+      "id": 1332,
+      "name": "suma relativista de velocidades",
+      "aliases": [
+        "composición de velocidades"
+      ],
+      "dictation": "u prima igual a abre paréntesis u menos uve cierra paréntesis partido por abre paréntesis uno menos u por uve partido por ce al cuadrado cierra paréntesis"
+    },
+    {
+      "id": 1333,
+      "name": "transformación de Lorentz de la posición",
+      "aliases": [
+        "transformación de equis prima"
+      ],
+      "dictation": "equis prima igual a gamma por abre paréntesis equis menos uve por te cierra paréntesis"
+    },
+    {
+      "id": 1334,
+      "name": "transformación de Lorentz del tiempo",
+      "aliases": [
+        "transformación de te prima"
+      ],
+      "dictation": "te prima igual a gamma por abre paréntesis te menos uve por equis partido por ce al cuadrado cierra paréntesis"
+    },
+    {
+      "id": 1335,
+      "name": "ecuación de Bernoulli",
+      "aliases": [
+        "principio de Bernoulli"
+      ],
+      "dictation": "pe más un medio por rho por uve al cuadrado más rho por ge por hache igual a constante"
+    },
+    {
+      "id": 1336,
+      "name": "ecuación de continuidad de un fluido",
+      "aliases": [
+        "conservación del caudal"
+      ],
+      "dictation": "a sub uno por uve sub uno igual a a sub dos por uve sub dos"
+    },
+    {
+      "id": 1337,
+      "name": "número de Reynolds",
+      "aliases": [
+        "número adimensional de Reynolds"
+      ],
+      "dictation": "erre e igual a rho por uve por ele partido por mu"
+    },
+    {
+      "id": 1338,
+      "name": "ley de Poiseuille",
+      "aliases": [
+        "flujo de Hagen-Poiseuille"
+      ],
+      "dictation": "cu igual a pi por erre elevado a cuatro por delta pe partido por ocho por mu por ele"
+    },
+    {
+      "id": 1339,
+      "name": "fuerza de arrastre",
+      "aliases": [
+        "resistencia aerodinámica"
+      ],
+      "dictation": "efe sub de igual a un medio por ce sub de por rho por a por uve al cuadrado"
+    },
+    {
+      "id": 1340,
+      "name": "fuerza de empuje",
+      "aliases": [
+        "principio de Arquímedes"
+      ],
+      "dictation": "efe sub be igual a rho sub efe por ge por uve"
+    },
+    {
+      "id": 1341,
+      "name": "ecuación de Schrödinger independiente del tiempo",
+      "aliases": [
+        "ecuación de Schrödinger estacionaria"
+      ],
+      "dictation": "menos hache barra al cuadrado partido por dos por eme por de al cuadrado psi partido por de equis al cuadrado más uve por psi igual a e por psi"
+    },
+    {
+      "id": 1342,
+      "name": "ecuación de Schrödinger dependiente del tiempo",
+      "aliases": [
+        "ecuación de Schrödinger de evolución"
+      ],
+      "dictation": "i por hache barra por parcial de psi partido por parcial de te igual a hache gorro psi"
+    },
+    {
+      "id": 1343,
+      "name": "normalización de la función de onda",
+      "aliases": [
+        "normalización de la probabilidad"
+      ],
+      "dictation": "la integral de menos infinito a infinito de el valor absoluto de psi al cuadrado diferencial de equis igual a uno"
+    },
+    {
+      "id": 1344,
+      "name": "valor esperado cuántico",
+      "aliases": [
+        "valor medio cuántico"
+      ],
+      "dictation": "abre ángulo equis cierra ángulo igual a la integral de menos infinito a infinito de psi asterisco por equis por psi diferencial de equis"
+    },
+    {
+      "id": 1345,
+      "name": "partícula en una caja",
+      "aliases": [
+        "pozo de potencial infinito"
+      ],
+      "dictation": "e sub ene igual a ene al cuadrado por pi al cuadrado por hache barra al cuadrado partido por dos por eme por ele al cuadrado"
+    },
+    {
+      "id": 1346,
+      "name": "defecto de masa",
+      "aliases": [
+        "defecto de masa nuclear"
+      ],
+      "dictation": "delta eme igual a zeta por eme sub pe más ene por eme sub ene menos eme sub núcleo"
+    },
+    {
+      "id": 1347,
+      "name": "energía de enlace nuclear",
+      "aliases": [
+        "energía de enlace total"
+      ],
+      "dictation": "e sub be igual a delta eme por ce al cuadrado"
+    },
+    {
+      "id": 1348,
+      "name": "valor Q de una reacción nuclear",
+      "aliases": [
+        "energía de una reacción nuclear"
+      ],
+      "dictation": "cu igual a abre paréntesis eme sub reactivos menos eme sub productos cierra paréntesis por ce al cuadrado"
+    },
+    {
+      "id": 1349,
+      "name": "nivel de intensidad sonora",
+      "aliases": [
+        "nivel en decibelios"
+      ],
+      "dictation": "beta igual a diez por logaritmo en base diez de abre paréntesis i partido por i sub cero cierra paréntesis"
+    },
+    {
+      "id": 1350,
+      "name": "intensidad sonora de una fuente puntual",
+      "aliases": [
+        "ley del inverso del cuadrado del sonido"
+      ],
+      "dictation": "i igual a pe partido por cuatro por pi por erre al cuadrado"
+    },
+    {
+      "id": 1351,
+      "name": "frecuencia fundamental de una cuerda",
+      "aliases": [
+        "vibración de una cuerda"
+      ],
+      "dictation": "efe sub uno igual a uno partido por dos por ele por raíz cuadrada de abre paréntesis te partido por mu cierra paréntesis"
+    },
+    {
+      "id": 1352,
+      "name": "armónicos de un tubo abierto",
+      "aliases": [
+        "resonancia de un tubo abierto"
+      ],
+      "dictation": "efe sub ene igual a ene por uve partido por dos por ele"
+    },
+    {
+      "id": 1353,
+      "name": "resonancia de un tubo cerrado",
+      "aliases": [
+        "resonancia en cuarto de onda"
+      ],
+      "dictation": "efe sub ene igual a abre paréntesis dos por ene menos uno cierra paréntesis por uve partido por cuatro por ele"
+    },
+    {
+      "id": 1354,
+      "name": "tercera ley de Kepler",
+      "aliases": [
+        "ley de los periodos"
+      ],
+      "dictation": "te al cuadrado igual a cuatro por pi al cuadrado partido por ge por eme por a al cubo"
+    },
+    {
+      "id": 1355,
+      "name": "ley de Hubble",
+      "aliases": [
+        "expansión cosmológica"
+      ],
+      "dictation": "uve igual a hache sub cero por de"
+    },
+    {
+      "id": 1356,
+      "name": "luminosidad estelar",
+      "aliases": [
+        "luminosidad de Stefan-Boltzmann"
+      ],
+      "dictation": "ele igual a cuatro por pi por erre al cuadrado por sigma por te elevado a cuatro"
+    },
+    {
+      "id": 1357,
+      "name": "diferencia de magnitud aparente",
+      "aliases": [
+        "ley de Pogson"
+      ],
+      "dictation": "eme sub uno menos eme sub dos igual a menos dos coma cinco por logaritmo en base diez de abre paréntesis efe sub uno partido por efe sub dos cierra paréntesis"
+    },
+    {
+      "id": 1358,
+      "name": "radio de Schwarzschild",
+      "aliases": [
+        "radio del horizonte de sucesos"
+      ],
+      "dictation": "erre sub ese igual a dos por ge por eme partido por ce al cuadrado"
+    },
+    {
+      "id": 1359,
+      "name": "ecuaciones de Maxwell agrupadas",
+      "aliases": [
+        "ley de Gauss eléctrica",
+        "ley de Gauss magnética",
+        "ley de Ampère-Maxwell"
+      ],
+      "dictation": "nabla punto e mayúscula igual a rho partido por épsilon sub cero punto y coma nabla punto be igual a cero punto y coma nabla producto vectorial e mayúscula igual a menos parcial de be partido por parcial de te punto y coma nabla producto vectorial be igual a mu sub cero por jota más mu sub cero por épsilon sub cero por parcial de e mayúscula partido por parcial de te"
+    },
+    {
+      "id": 1360,
+      "name": "ecuación de ondas unidimensional",
+      "aliases": [
+        "ecuación de onda clásica"
+      ],
+      "dictation": "parcial de al cuadrado u partido por parcial de te al cuadrado igual a ce al cuadrado por parcial de al cuadrado u partido por parcial de equis al cuadrado"
+    },
+    {
+      "id": 1361,
+      "name": "ley de Stefan-Boltzmann",
+      "aliases": [
+        "potencia radiada"
+      ],
+      "dictation": "pe igual a sigma por a por te elevado a cuatro"
+    },
+    {
+      "id": 1212,
+      "name": "media muestral",
+      "aliases": [
+        "media aritmética"
+      ],
+      "dictation": "equis barra igual a uno partido por ene por el sumatorio desde i igual a uno hasta ene de equis sub i"
+    },
+    {
+      "id": 1213,
+      "name": "varianza muestral",
+      "aliases": [
+        "cuasivarianza"
+      ],
+      "dictation": "ese al cuadrado igual a uno partido por abre paréntesis ene menos uno cierra paréntesis por el sumatorio desde i igual a uno hasta ene de abre paréntesis equis sub i menos equis barra cierra paréntesis al cuadrado"
+    },
+    {
+      "id": 1214,
+      "name": "desviación típica poblacional",
+      "aliases": [
+        "desviación estándar de la población"
+      ],
+      "dictation": "sigma igual a raíz cuadrada de abre paréntesis uno partido por ene mayúscula por el sumatorio desde i igual a uno hasta ene mayúscula de abre paréntesis equis sub i menos mu cierra paréntesis al cuadrado cierra paréntesis"
+    },
+    {
+      "id": 1215,
+      "name": "puntuación z",
+      "aliases": [
+        "puntuación típica",
+        "valor z"
+      ],
+      "dictation": "zeta igual a abre paréntesis equis menos mu cierra paréntesis partido por sigma"
+    },
+    {
+      "id": 1216,
+      "name": "densidad de la distribución normal",
+      "aliases": [
+        "densidad gaussiana"
+      ],
+      "dictation": "efe de equis igual a uno partido por raíz cuadrada de abre paréntesis dos por pi por sigma al cuadrado cierra paréntesis por e elevado a abre paréntesis menos abre paréntesis equis menos mu cierra paréntesis al cuadrado partido por dos por sigma al cuadrado cierra paréntesis"
+    },
+    {
+      "id": 1217,
+      "name": "teorema de Bayes",
+      "aliases": [
+        "regla de Bayes"
+      ],
+      "dictation": "pe de abre paréntesis a dado be cierra paréntesis igual a pe de abre paréntesis be dado a cierra paréntesis por pe de a partido por pe de be"
+    },
+    {
+      "id": 1218,
+      "name": "esperanza en el caso discreto",
+      "aliases": [
+        "media de una distribución discreta"
+      ],
+      "dictation": "el valor esperado de equis mayúscula igual a el sumatorio sobre equis de equis por pe de abre paréntesis equis mayúscula igual a equis cierra paréntesis"
+    },
+    {
+      "id": 1219,
+      "name": "esperanza en el caso continuo",
+      "aliases": [
+        "esperanza continua"
+      ],
+      "dictation": "el valor esperado de equis mayúscula igual a la integral de menos infinito a infinito de equis por efe de equis diferencial de equis"
+    },
+    {
+      "id": 1220,
+      "name": "covarianza",
+      "aliases": [
+        "covarianza de equis mayúscula e i griega mayúscula"
+      ],
+      "dictation": "covarianza de abre paréntesis equis mayúscula coma i griega mayúscula cierra paréntesis igual a el valor esperado de abre paréntesis abre paréntesis equis mayúscula menos mu sub equis mayúscula cierra paréntesis por abre paréntesis i griega mayúscula menos mu sub i griega mayúscula cierra paréntesis cierra paréntesis"
+    },
+    {
+      "id": 1221,
+      "name": "correlación de Pearson",
+      "aliases": [
+        "coeficiente de correlación"
+      ],
+      "dictation": "rho igual a covarianza de abre paréntesis equis mayúscula coma i griega mayúscula cierra paréntesis partido por sigma sub equis mayúscula por sigma sub i griega mayúscula"
+    },
+    {
+      "id": 1222,
+      "name": "regla de la suma de probabilidades",
+      "aliases": [
+        "pe de a unión be"
+      ],
+      "dictation": "pe de abre paréntesis a unión be cierra paréntesis igual a pe de a más pe de be menos pe de abre paréntesis a intersección be cierra paréntesis"
+    },
+    {
+      "id": 1223,
+      "name": "probabilidad condicionada",
+      "aliases": [
+        "pe de a dado be"
+      ],
+      "dictation": "pe de abre paréntesis a dado be cierra paréntesis igual a pe de abre paréntesis a intersección be cierra paréntesis partido por pe de be"
+    },
+    {
+      "id": 1224,
+      "name": "regla del producto de probabilidades",
+      "aliases": [
+        "pe de a y be"
+      ],
+      "dictation": "pe de abre paréntesis a intersección be cierra paréntesis igual a pe de a por pe de abre paréntesis be dado a cierra paréntesis"
+    },
+    {
+      "id": 1225,
+      "name": "regla del complementario",
+      "aliases": [
+        "probabilidad de no a"
+      ],
+      "dictation": "pe de abre paréntesis a elevado a ce cierra paréntesis igual a uno menos pe de a"
+    },
+    {
+      "id": 1226,
+      "name": "teorema de la probabilidad total",
+      "aliases": [
+        "probabilidad total"
+      ],
+      "dictation": "pe de a igual a el sumatorio sobre i de pe de abre paréntesis a dado be sub i cierra paréntesis por pe de be sub i"
+    },
+    {
+      "id": 1227,
+      "name": "distribución binomial",
+      "aliases": [
+        "función de masa binomial"
+      ],
+      "dictation": "pe de abre paréntesis equis mayúscula igual a ka cierra paréntesis igual a número combinatorio ene sobre ka por pe elevado a ka por abre paréntesis uno menos pe cierra paréntesis elevado a abre paréntesis ene menos ka cierra paréntesis"
+    },
+    {
+      "id": 1228,
+      "name": "distribución de Poisson",
+      "aliases": [
+        "función de masa de Poisson"
+      ],
+      "dictation": "pe de abre paréntesis equis mayúscula igual a ka cierra paréntesis igual a e elevado a menos lambda por lambda elevado a ka partido por ka factorial"
+    },
+    {
+      "id": 1229,
+      "name": "distribución geométrica",
+      "aliases": [
+        "función de masa geométrica"
+      ],
+      "dictation": "pe de abre paréntesis equis mayúscula igual a ka cierra paréntesis igual a abre paréntesis uno menos pe cierra paréntesis elevado a abre paréntesis ka menos uno cierra paréntesis por pe"
+    },
+    {
+      "id": 1230,
+      "name": "distribución hipergeométrica",
+      "aliases": [
+        "función de masa hipergeométrica"
+      ],
+      "dictation": "pe de abre paréntesis equis mayúscula igual a ka cierra paréntesis igual a número combinatorio ka mayúscula sobre ka por número combinatorio abre paréntesis ene mayúscula menos ka mayúscula cierra paréntesis sobre abre paréntesis ene menos ka cierra paréntesis partido por número combinatorio ene mayúscula sobre ene"
+    },
+    {
+      "id": 1231,
+      "name": "densidad de la distribución exponencial",
+      "aliases": [
+        "densidad exponencial"
+      ],
+      "dictation": "efe de equis igual a lambda por e elevado a abre paréntesis menos lambda por equis cierra paréntesis"
+    },
+    {
+      "id": 1232,
+      "name": "densidad de la distribución uniforme",
+      "aliases": [
+        "densidad uniforme"
+      ],
+      "dictation": "efe de equis igual a uno partido por abre paréntesis be menos a cierra paréntesis"
+    },
+    {
+      "id": 1233,
+      "name": "error típico de la media",
+      "aliases": [
+        "error estándar"
+      ],
+      "dictation": "ese e igual a sigma partido por raíz cuadrada de ene"
+    },
+    {
+      "id": 1234,
+      "name": "intervalo de confianza para la media",
+      "aliases": [
+        "intervalo de confianza"
+      ],
+      "dictation": "equis barra más menos zeta asterisco por sigma partido por raíz cuadrada de ene"
+    },
+    {
+      "id": 1235,
+      "name": "estadístico t",
+      "aliases": [
+        "prueba t de una muestra"
+      ],
+      "dictation": "te igual a abre paréntesis equis barra menos mu cierra paréntesis partido por ese partido por raíz cuadrada de ene"
+    },
+    {
+      "id": 1236,
+      "name": "prueba t de dos muestras",
+      "aliases": [
+        "prueba t para muestras independientes"
+      ],
+      "dictation": "te igual a abre paréntesis equis barra sub uno menos equis barra sub dos cierra paréntesis partido por raíz cuadrada de abre paréntesis ese sub uno al cuadrado partido por ene sub uno más ese sub dos al cuadrado partido por ene sub dos cierra paréntesis"
+    },
+    {
+      "id": 1237,
+      "name": "varianza combinada",
+      "aliases": [
+        "desviación típica combinada"
+      ],
+      "dictation": "ese sub pe al cuadrado igual a abre paréntesis abre paréntesis ene sub uno menos uno cierra paréntesis por ese sub uno al cuadrado más abre paréntesis ene sub dos menos uno cierra paréntesis por ese sub dos al cuadrado cierra paréntesis partido por abre paréntesis ene sub uno más ene sub dos menos dos cierra paréntesis"
+    },
+    {
+      "id": 1238,
+      "name": "estadístico ji-cuadrado",
+      "aliases": [
+        "prueba de bondad de ajuste ji-cuadrado"
+      ],
+      "dictation": "ji al cuadrado igual a el sumatorio de abre paréntesis o sub i menos e sub i cierra paréntesis al cuadrado partido por e sub i"
+    },
+    {
+      "id": 1239,
+      "name": "estadístico F",
+      "aliases": [
+        "prueba F"
+      ],
+      "dictation": "efe igual a ese sub uno al cuadrado partido por ese sub dos al cuadrado"
+    },
+    {
+      "id": 1240,
+      "name": "rango intercuartílico",
+      "aliases": [
+        "IQR"
+      ],
+      "dictation": "i cu erre igual a cu sub tres menos cu sub uno"
+    },
+    {
+      "id": 1241,
+      "name": "coeficiente de variación",
+      "aliases": [
+        "CV"
+      ],
+      "dictation": "ce uve igual a sigma partido por mu"
+    },
+    {
+      "id": 1242,
+      "name": "asimetría",
+      "aliases": [
+        "asimetría muestral"
+      ],
+      "dictation": "asimetría igual a uno partido por ene por el sumatorio de abre paréntesis equis sub i menos equis barra cierra paréntesis al cubo partido por ese al cubo"
+    },
+    {
+      "id": 1243,
+      "name": "curtosis",
+      "aliases": [
+        "exceso de curtosis"
+      ],
+      "dictation": "curtosis igual a uno partido por ene por el sumatorio de abre paréntesis equis sub i menos equis barra cierra paréntesis elevado a cuatro partido por ese elevado a cuatro menos tres"
+    },
+    {
+      "id": 1244,
+      "name": "regresión lineal simple",
+      "aliases": [
+        "recta de regresión"
+      ],
+      "dictation": "i griega gorro igual a beta gorro sub cero más beta gorro sub uno por equis"
+    },
+    {
+      "id": 1245,
+      "name": "pendiente de mínimos cuadrados",
+      "aliases": [
+        "pendiente de la regresión"
+      ],
+      "dictation": "beta gorro sub uno igual a el sumatorio de abre paréntesis equis sub i menos equis barra cierra paréntesis por abre paréntesis i griega sub i menos i griega barra cierra paréntesis partido por el sumatorio de abre paréntesis equis sub i menos equis barra cierra paréntesis al cuadrado"
+    },
+    {
+      "id": 1246,
+      "name": "ordenada en el origen de mínimos cuadrados",
+      "aliases": [
+        "término independiente de la regresión"
+      ],
+      "dictation": "beta gorro sub cero igual a i griega barra menos beta gorro sub uno por equis barra"
+    },
+    {
+      "id": 1247,
+      "name": "coeficiente de determinación",
+      "aliases": [
+        "erre al cuadrado"
+      ],
+      "dictation": "erre al cuadrado igual a uno menos ese ese sub res partido por ese ese sub tot"
+    },
+    {
+      "id": 1248,
+      "name": "suma de cuadrados de los residuos",
+      "aliases": [
+        "SCR"
+      ],
+      "dictation": "ese ese sub res igual a el sumatorio desde i igual a uno hasta ene de abre paréntesis i griega sub i menos i griega gorro sub i cierra paréntesis al cuadrado"
+    },
+    {
+      "id": 1249,
+      "name": "error cuadrático medio",
+      "aliases": [
+        "MSE"
+      ],
+      "dictation": "eme ese e igual a uno partido por ene por el sumatorio desde i igual a uno hasta ene de abre paréntesis i griega sub i menos i griega gorro sub i cierra paréntesis al cuadrado"
+    },
+    {
+      "id": 1250,
+      "name": "raíz del error cuadrático medio",
+      "aliases": [
+        "RMSE"
+      ],
+      "dictation": "erre eme ese e igual a raíz cuadrada de abre paréntesis uno partido por ene por el sumatorio desde i igual a uno hasta ene de abre paréntesis i griega sub i menos i griega gorro sub i cierra paréntesis al cuadrado cierra paréntesis"
+    },
+    {
+      "id": 1251,
+      "name": "ecuaciones normales de mínimos cuadrados",
+      "aliases": [
+        "regresión matricial"
+      ],
+      "dictation": "beta gorro igual a abre paréntesis equis mayúscula traspuesta por equis mayúscula cierra paréntesis elevado a menos uno por equis mayúscula traspuesta por i griega"
+    },
+    {
+      "id": 1252,
+      "name": "entropía de Shannon",
+      "aliases": [
+        "entropía de la información"
+      ],
+      "dictation": "hache de equis mayúscula igual a menos el sumatorio sobre equis de pe de equis por logaritmo en base dos de pe de equis"
+    },
+    {
+      "id": 1253,
+      "name": "entropía cruzada",
+      "aliases": [
+        "pérdida de entropía cruzada"
+      ],
+      "dictation": "hache de abre paréntesis pe coma cu cierra paréntesis igual a menos el sumatorio sobre equis de pe de equis por logaritmo de cu de equis"
+    },
+    {
+      "id": 1254,
+      "name": "divergencia de Kullback-Leibler",
+      "aliases": [
+        "divergencia KL"
+      ],
+      "dictation": "de sub ka ele de abre paréntesis pe mayúscula doble barra cu mayúscula cierra paréntesis igual a el sumatorio sobre equis de pe mayúscula de equis por logaritmo de abre paréntesis pe mayúscula de equis partido por cu mayúscula de equis cierra paréntesis"
+    },
+    {
+      "id": 1255,
+      "name": "información mutua",
+      "aliases": [
+        "información mutua de equis e i griega"
+      ],
+      "dictation": "i de abre paréntesis equis mayúscula punto y coma i griega mayúscula cierra paréntesis igual a hache de equis mayúscula menos hache de abre paréntesis equis mayúscula dado i griega mayúscula cierra paréntesis"
+    },
+    {
+      "id": 1256,
+      "name": "función sigmoide",
+      "aliases": [
+        "función logística"
+      ],
+      "dictation": "sigma de equis igual a uno partido por abre paréntesis uno más e elevado a menos equis cierra paréntesis"
+    },
+    {
+      "id": 1257,
+      "name": "función softmax",
+      "aliases": [
+        "softmax"
+      ],
+      "dictation": "softmax de equis sub i igual a e elevado a abre paréntesis equis sub i cierra paréntesis partido por el sumatorio sobre jota de e elevado a abre paréntesis equis sub jota cierra paréntesis"
+    },
+    {
+      "id": 1258,
+      "name": "función de pérdida de entropía cruzada binaria",
+      "aliases": [
+        "pérdida logarítmica"
+      ],
+      "dictation": "ele igual a menos uno partido por ene por el sumatorio desde i igual a uno hasta ene de abre corchete i griega sub i por logaritmo de i griega gorro sub i más abre paréntesis uno menos i griega sub i cierra paréntesis por logaritmo de abre paréntesis uno menos i griega gorro sub i cierra paréntesis cierra corchete"
+    },
+    {
+      "id": 1259,
+      "name": "actualización por descenso de gradiente",
+      "aliases": [
+        "regla de actualización de parámetros"
+      ],
+      "dictation": "theta se actualiza a theta menos alfa por gradiente sub theta de jota de theta"
+    },
+    {
+      "id": 1260,
+      "name": "norma L1",
+      "aliases": [
+        "norma de Manhattan"
+      ],
+      "dictation": "la norma sub uno de equis igual a el sumatorio sobre i de el valor absoluto de equis sub i"
+    },
+    {
+      "id": 1261,
+      "name": "norma L2",
+      "aliases": [
+        "norma euclídea"
+      ],
+      "dictation": "la norma sub dos de equis igual a raíz cuadrada de abre paréntesis el sumatorio sobre i de equis sub i al cuadrado cierra paréntesis"
+    },
+    {
+      "id": 1262,
+      "name": "pérdida con regularización L2",
+      "aliases": [
+        "pérdida Ridge"
+      ],
+      "dictation": "jota de theta igual a eme ese e más lambda por el sumatorio sobre jota de theta sub jota al cuadrado"
+    },
+    {
+      "id": 1263,
+      "name": "pérdida con regularización L1",
+      "aliases": [
+        "pérdida Lasso"
+      ],
+      "dictation": "jota de theta igual a eme ese e más lambda por el sumatorio sobre jota de el valor absoluto de theta sub jota"
+    },
+    {
+      "id": 1264,
+      "name": "descomposición sesgo-varianza",
+      "aliases": [
+        "compromiso sesgo-varianza"
+      ],
+      "dictation": "el valor esperado de abre paréntesis abre paréntesis i griega menos i griega gorro cierra paréntesis al cuadrado cierra paréntesis igual a sesgo al cuadrado más varianza más sigma al cuadrado"
+    },
+    {
+      "id": 1265,
+      "name": "exactitud",
+      "aliases": [
+        "tasa de aciertos"
+      ],
+      "dictation": "exactitud igual a abre paréntesis te pe más te ene cierra paréntesis partido por abre paréntesis te pe más te ene más efe pe más efe ene cierra paréntesis"
+    },
+    {
+      "id": 1266,
+      "name": "precisión",
+      "aliases": [
+        "valor predictivo positivo"
+      ],
+      "dictation": "precisión igual a te pe partido por abre paréntesis te pe más efe pe cierra paréntesis"
+    },
+    {
+      "id": 1267,
+      "name": "exhaustividad",
+      "aliases": [
+        "sensibilidad",
+        "tasa de verdaderos positivos"
+      ],
+      "dictation": "exhaustividad igual a te pe partido por abre paréntesis te pe más efe ene cierra paréntesis"
+    },
+    {
+      "id": 1268,
+      "name": "valor F1",
+      "aliases": [
+        "F1"
+      ],
+      "dictation": "efe sub uno igual a dos por precisión por exhaustividad partido por abre paréntesis precisión más exhaustividad cierra paréntesis"
     }
   ]
 }
