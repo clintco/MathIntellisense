@@ -1568,7 +1568,7 @@
       "aliases": [
         "integral of sin x"
       ],
-      "unicodemath": "∫ sin 𝑥ⅆ𝑥=-cos 𝑥+𝐶",
+      "unicodemath": "∫ sin 𝑥 ⅆ𝑥=-cos 𝑥+𝐶",
       "domainId": "calculus-analysis",
       "description": "Integral of sine",
       "dictation": "the integral of sine x d x equals negative cosine x plus C",
@@ -1580,7 +1580,7 @@
       "aliases": [
         "integral of cos x"
       ],
-      "unicodemath": "∫ cos 𝑥ⅆ𝑥=sin 𝑥+𝐶",
+      "unicodemath": "∫ cos 𝑥 ⅆ𝑥=sin 𝑥+𝐶",
       "domainId": "calculus-analysis",
       "description": "Integral of cosine",
       "dictation": "the integral of cosine x d x equals sine x plus C",
@@ -1592,7 +1592,7 @@
       "aliases": [
         "integral of tan x"
       ],
-      "unicodemath": "∫ tan 𝑥ⅆ𝑥=-ln⁡|cos 𝑥|+𝐶",
+      "unicodemath": "∫ tan 𝑥 ⅆ𝑥=-ln⁡|cos 𝑥|+𝐶",
       "domainId": "calculus-analysis",
       "description": "Integral of tangent",
       "dictation": "the integral of tangent x d x equals negative natural log of the absolute value of cosine x plus C",
@@ -1604,7 +1604,7 @@
       "aliases": [
         "integral of sec x"
       ],
-      "unicodemath": "∫ sec 𝑥ⅆ𝑥=ln⁡|sec 𝑥+tan 𝑥|+𝐶",
+      "unicodemath": "∫ sec 𝑥 ⅆ𝑥=ln⁡|sec 𝑥+tan 𝑥|+𝐶",
       "domainId": "calculus-analysis",
       "description": "Integral of secant",
       "dictation": "the integral of secant x d x equals natural log of the absolute value of secant x plus tangent x plus C",
@@ -1616,7 +1616,7 @@
       "aliases": [
         "integral of csc x"
       ],
-      "unicodemath": "∫ csc 𝑥ⅆ𝑥=-ln⁡|csc 𝑥+cot 𝑥|+𝐶",
+      "unicodemath": "∫ csc 𝑥 ⅆ𝑥=-ln⁡|csc 𝑥+cot 𝑥|+𝐶",
       "domainId": "calculus-analysis",
       "description": "Integral of cosecant",
       "dictation": "the integral of cosecant x d x equals negative natural log of the absolute value of cosecant x plus cotangent x plus C",
@@ -1628,7 +1628,7 @@
       "aliases": [
         "integral of sec squared x"
       ],
-      "unicodemath": "∫ sec² 𝑥ⅆ𝑥=tan 𝑥+𝐶",
+      "unicodemath": "∫ sec² 𝑥 ⅆ𝑥=tan 𝑥+𝐶",
       "domainId": "calculus-analysis",
       "description": "Integral of secant squared",
       "dictation": "the integral of secant squared x d x equals tangent x plus C",
@@ -1976,7 +1976,7 @@
       "aliases": [
         "Stokes theorem"
       ],
-      "unicodemath": "∮_𝐶 𝐅⋅ⅆ𝐫=∬_𝑆 (∇×𝐅)⋅ⅆ𝐒",
+      "unicodemath": "∮_𝐶 𝐅⋅ⅆ𝐫=∬_𝑆 (∇⨯𝐅)⋅ⅆ𝐒",
       "domainId": "calculus-analysis",
       "description": "Stokes' theorem relating a line integral to a surface integral",
       "dictation": "the line integral along curve C of F dot d r equals the double integral over surface S of open parenthesis the curl of F close parenthesis dot d S",
@@ -1988,7 +1988,7 @@
       "aliases": [
         "Gauss's theorem"
       ],
-      "unicodemath": "∯_𝑆 𝐅⋅𝑑𝐒=∭_𝑉 (∇⋅𝐅)ⅆ𝑉",
+      "unicodemath": "∯_𝑆 𝐅⋅ⅆ𝐒=∭_𝑉 (∇⋅𝐅)ⅆ𝑉",
       "domainId": "calculus-analysis",
       "description": "Divergence theorem relating surface flux to volume divergence",
       "dictation": "the closed surface integral over S of F dot d S equals the triple integral over volume V of the divergence of F d V",
@@ -5551,7 +5551,7 @@
       "aliases": [
         "temperature-induced stress"
       ],
-      "unicodemath": "𝜎_𝑇=𝐸 𝛼 Δ𝑇",
+      "unicodemath": "𝜎_𝑇=𝐸𝛼Δ𝑇",
       "domainId": "engineering-computing",
       "description": "Stress in a constrained member due to a temperature change of Delta T",
       "dictation": "sigma sub T equals E times alpha times delta T",
@@ -5599,7 +5599,7 @@
       "aliases": [
         "Euler ODE method"
       ],
-      "unicodemath": "𝑦_(𝑛+1)=𝑦_𝑛+ℎ 𝑓(𝑥_𝑛,𝑦_𝑛)",
+      "unicodemath": "𝑦_(𝑛+1)=𝑦_𝑛+ℎ𝑓(𝑥_𝑛,𝑦_𝑛)",
       "domainId": "engineering-computing",
       "description": "First-order numerical solver for ODEs with step size h",
       "dictation": "y sub n plus one equals y sub n plus h times f of x sub n comma y sub n",

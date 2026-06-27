@@ -867,42 +867,42 @@ export const mathEquations = [
     "aliases": "integral of sin x",
     "description": "Integral of sine",
     "domain": "Calculus & Analysis",
-    "unicodemath": "⁅∫ sin 𝑥ⅆ𝑥=-cos 𝑥+𝐶⁆"
+    "unicodemath": "⁅∫ sin 𝑥 ⅆ𝑥=-cos 𝑥+𝐶⁆"
   },
   {
     "name": "integral of cosine",
     "aliases": "integral of cos x",
     "description": "Integral of cosine",
     "domain": "Calculus & Analysis",
-    "unicodemath": "⁅∫ cos 𝑥ⅆ𝑥=sin 𝑥+𝐶⁆"
+    "unicodemath": "⁅∫ cos 𝑥 ⅆ𝑥=sin 𝑥+𝐶⁆"
   },
   {
     "name": "integral of tangent",
     "aliases": "integral of tan x",
     "description": "Integral of tangent",
     "domain": "Calculus & Analysis",
-    "unicodemath": "⁅∫ tan 𝑥ⅆ𝑥=-ln⁡|cos 𝑥|+𝐶⁆"
+    "unicodemath": "⁅∫ tan 𝑥 ⅆ𝑥=-ln⁡|cos 𝑥|+𝐶⁆"
   },
   {
     "name": "integral of secant",
     "aliases": "integral of sec x",
     "description": "Integral of secant",
     "domain": "Calculus & Analysis",
-    "unicodemath": "⁅∫ sec 𝑥ⅆ𝑥=ln⁡|sec 𝑥+tan 𝑥|+𝐶⁆"
+    "unicodemath": "⁅∫ sec 𝑥 ⅆ𝑥=ln⁡|sec 𝑥+tan 𝑥|+𝐶⁆"
   },
   {
     "name": "integral of cosecant",
     "aliases": "integral of csc x",
     "description": "Integral of cosecant",
     "domain": "Calculus & Analysis",
-    "unicodemath": "⁅∫ csc 𝑥ⅆ𝑥=-ln⁡|csc 𝑥+cot 𝑥|+𝐶⁆"
+    "unicodemath": "⁅∫ csc 𝑥 ⅆ𝑥=-ln⁡|csc 𝑥+cot 𝑥|+𝐶⁆"
   },
   {
     "name": "integral of sec squared",
     "aliases": "integral of sec squared x",
     "description": "Integral of secant squared",
     "domain": "Calculus & Analysis",
-    "unicodemath": "⁅∫ sec² 𝑥ⅆ𝑥=tan 𝑥+𝐶⁆"
+    "unicodemath": "⁅∫ sec² 𝑥 ⅆ𝑥=tan 𝑥+𝐶⁆"
   },
   {
     "name": "integral of 1 over sqrt 1 minus x squared",
@@ -1105,14 +1105,14 @@ export const mathEquations = [
     "aliases": "Stokes theorem",
     "description": "Stokes' theorem relating a line integral to a surface integral",
     "domain": "Calculus & Analysis",
-    "unicodemath": "⁅∮_𝐶 𝐅⋅ⅆ𝐫=∬_𝑆 (∇×𝐅)⋅ⅆ𝐒⁆"
+    "unicodemath": "⁅∮_𝐶 𝐅⋅ⅆ𝐫=∬_𝑆 (∇⨯𝐅)⋅ⅆ𝐒⁆"
   },
   {
     "name": "divergence theorem",
     "aliases": "Gauss's theorem",
     "description": "Divergence theorem relating surface flux to volume divergence",
     "domain": "Calculus & Analysis",
-    "unicodemath": "⁅∯_𝑆 𝐅⋅𝑑𝐒=∭_𝑉 (∇⋅𝐅)ⅆ𝑉⁆"
+    "unicodemath": "⁅∯_𝑆 𝐅⋅ⅆ𝐒=∭_𝑉 (∇⋅𝐅)ⅆ𝑉⁆"
   },
   {
     "name": "first order linear ODE",
@@ -3184,7 +3184,7 @@ export const mathEquations = [
     "aliases": "temperature-induced stress",
     "description": "Stress in a constrained member due to a temperature change of Delta T",
     "domain": "Engineering & Computing",
-    "unicodemath": "⁅𝜎_𝑇=𝐸 𝛼 Δ𝑇⁆"
+    "unicodemath": "⁅𝜎_𝑇=𝐸𝛼Δ𝑇⁆"
   },
   {
     "name": "Newton's method",
@@ -3212,7 +3212,7 @@ export const mathEquations = [
     "aliases": "Euler ODE method",
     "description": "First-order numerical solver for ODEs with step size h",
     "domain": "Engineering & Computing",
-    "unicodemath": "⁅𝑦_(𝑛+1)=𝑦_𝑛+ℎ 𝑓(𝑥_𝑛,𝑦_𝑛)⁆"
+    "unicodemath": "⁅𝑦_(𝑛+1)=𝑦_𝑛+ℎ𝑓(𝑥_𝑛,𝑦_𝑛)⁆"
   },
   {
     "name": "forward difference",
