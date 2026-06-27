@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "locale": "es",
+  "note": "Pilot draft for native review. `dictation` is a test-corpus utterance for engine localization — native phrasing, faithful to the master `unicodemath` (never the English string). Grouping uses explicit 'abre/cierra paréntesis'. See docs/equation-dictation-localization.md.",
+  "equations": [
+    {
+      "id": 1019,
+      "name": "fórmula cuadrática",
+      "aliases": ["fórmula general", "raíces de la ecuación de segundo grado"],
+      "dictation": "equis igual a abre paréntesis menos be más menos raíz cuadrada de abre paréntesis be al cuadrado menos cuatro por a por ce cierra paréntesis cierra paréntesis partido por dos a"
+    },
+    {
+      "id": 1046,
+      "name": "teorema de Pitágoras",
+      "aliases": ["a al cuadrado más be al cuadrado igual a ce al cuadrado"],
+      "dictation": "a al cuadrado más be al cuadrado igual a ce al cuadrado"
+    },
+    {
+      "id": 1041,
+      "name": "identidad de Euler",
+      "aliases": ["e elevado a i pi más uno igual a cero"],
+      "dictation": "e elevado a i por pi más uno igual a cero"
+    },
+    {
+      "id": 1087,
+      "name": "teorema del coseno",
+      "aliases": ["ley de cosenos"],
+      "dictation": "ce al cuadrado igual a a al cuadrado más be al cuadrado menos dos por a por be por coseno de ce mayúscula"
+    },
+    {
+      "id": 1050,
+      "name": "área del círculo",
+      "aliases": ["superficie del círculo"],
+      "dictation": "a igual a pi por erre al cuadrado"
+    },
+    {
+      "id": 1273,
+      "name": "ley de Ohm",
+      "aliases": ["uve igual a i por erre"],
+      "dictation": "uve igual a i por erre"
+    },
+    {
+      "id": 1269,
+      "name": "segunda ley de Newton",
+      "aliases": ["fuerza igual a masa por aceleración", "efe igual a eme por a"],
+      "dictation": "efe igual a eme por a"
+    },
+    {
+      "id": 1117,
+      "name": "teorema fundamental del cálculo",
+      "aliases": ["TFC"],
+      "dictation": "la integral de a a be de efe de equis diferencial de equis igual a efe mayúscula de be menos efe mayúscula de a"
+    },
+    {
+      "id": 1047,
+      "name": "fórmula de la distancia",
+      "aliases": ["distancia entre dos puntos"],
+      "dictation": "de igual a raíz cuadrada de abre paréntesis abre paréntesis equis sub dos menos equis sub uno cierra paréntesis al cuadrado más abre paréntesis i griega sub dos menos i griega sub uno cierra paréntesis al cuadrado cierra paréntesis"
+    },
+    {
+      "id": 1410,
+      "name": "interés compuesto",
+      "aliases": ["fórmula del interés compuesto"],
+      "dictation": "a igual a pe por abre paréntesis uno más erre partido por ene cierra paréntesis elevado a ene por te"
+    },
+    {
+      "id": 1166,
+      "name": "producto escalar",
+      "aliases": ["producto punto"],
+      "dictation": "a punto be igual a el módulo de a por el módulo de be por coseno de theta"
+    },
+    {
+      "id": 1024,
+      "name": "teorema del binomio",
+      "aliases": ["binomio de Newton"],
+      "dictation": "abre paréntesis a más be cierra paréntesis elevado a ene igual a el sumatorio desde ka igual a cero hasta ene de número combinatorio ene sobre ka por a elevado a abre paréntesis ene menos ka cierra paréntesis por be elevado a ka"
+    },
+    {
+      "id": 1101,
+      "name": "regla de la cadena",
+      "aliases": ["derivada de una función compuesta"],
+      "dictation": "de i griega partido por de equis igual a de i griega partido por de u por de u partido por de equis"
+    },
+    {
+      "id": 1025,
+      "name": "serie geométrica",
+      "aliases": ["suma de una progresión geométrica"],
+      "dictation": "ese sub ene igual a abre paréntesis a por abre paréntesis uno menos erre elevado a ene cierra paréntesis cierra paréntesis partido por abre paréntesis uno menos erre cierra paréntesis"
+    },
+    {
+      "id": 1214,
+      "name": "desviación típica poblacional",
+      "aliases": ["desviación estándar de la población"],
+      "dictation": "sigma igual a raíz cuadrada de abre paréntesis uno partido por ene mayúscula por el sumatorio desde i igual a uno hasta ene mayúscula de abre paréntesis equis sub i menos mu cierra paréntesis al cuadrado cierra paréntesis"
+    },
+    {
+      "id": 1136,
+      "name": "regla de L'Hôpital",
+      "aliases": ["regla de l'Hôpital"],
+      "dictation": "el límite cuando equis tiende a a de abre paréntesis efe de equis partido por ge de equis cierra paréntesis igual a el límite cuando equis tiende a a de abre paréntesis efe prima de equis partido por ge prima de equis cierra paréntesis"
+    },
+    {
+      "id": 1104,
+      "name": "regla de la potencia",
+      "aliases": ["derivada de una potencia"],
+      "dictation": "la derivada respecto a equis de abre corchete equis elevado a ene cierra corchete igual a ene por equis elevado a abre paréntesis ene menos uno cierra paréntesis"
+    },
+    {
+      "id": 1211,
+      "name": "aproximación de Stirling",
+      "aliases": ["fórmula de Stirling"],
+      "dictation": "ene factorial es aproximadamente igual a raíz cuadrada de abre paréntesis dos por pi por ene cierra paréntesis por abre paréntesis ene partido por e cierra paréntesis elevado a ene"
+    }
+  ]
+}

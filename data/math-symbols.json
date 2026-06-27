@@ -1,0 +1,3429 @@
+{
+  "schemaVersion": 1,
+  "defaultLocale": "en",
+  "categories": [
+    {
+      "id": "basic-symbols-and-operations",
+      "label": "Basic Symbols and Operations",
+      "order": 10
+    },
+    {
+      "id": "common-mathematical-relationships",
+      "label": "Common Mathematical Relationships",
+      "order": 20
+    },
+    {
+      "id": "sets-and-logic",
+      "label": "Sets and Logic",
+      "order": 30
+    },
+    {
+      "id": "special-sets",
+      "label": "Special Sets",
+      "order": 40
+    },
+    {
+      "id": "greek-letters",
+      "label": "Greek Letters",
+      "order": 50
+    },
+    {
+      "id": "calculus-and-analysis",
+      "label": "Calculus and Analysis",
+      "order": 60
+    },
+    {
+      "id": "geometry-and-vectors",
+      "label": "Geometry and Vectors",
+      "order": 70
+    },
+    {
+      "id": "chemistry-and-physics",
+      "label": "Chemistry and Physics",
+      "order": 80
+    },
+    {
+      "id": "matrix-operations",
+      "label": "Matrix Operations",
+      "order": 90
+    },
+    {
+      "id": "miscellaneous-common-symbols",
+      "label": "Miscellaneous Common Symbols",
+      "order": 100
+    },
+    {
+      "id": "letter-like-symbols",
+      "label": "Letter-Like Symbols",
+      "order": 110
+    },
+    {
+      "id": "arrows",
+      "label": "Arrows",
+      "order": 120
+    },
+    {
+      "id": "number-theory",
+      "label": "Number Theory",
+      "order": 130
+    },
+    {
+      "id": "statistics-and-probability",
+      "label": "Statistics and Probability",
+      "order": 140
+    },
+    {
+      "id": "currency-symbols",
+      "label": "Currency Symbols",
+      "order": 150
+    },
+    {
+      "id": "advanced-operators",
+      "label": "Advanced Operators",
+      "order": 160
+    }
+  ],
+  "symbols": [
+    {
+      "code": "cents",
+      "aliases": [],
+      "symbol": "¢",
+      "name": "Cents sign",
+      "categoryId": "currency-symbols",
+      "rank": 3
+    },
+    {
+      "code": "pm",
+      "aliases": [
+        "plusminus"
+      ],
+      "symbol": "±",
+      "name": "Plus minus",
+      "categoryId": "basic-symbols-and-operations",
+      "rank": 1
+    },
+    {
+      "code": "mp",
+      "aliases": [
+        "minusplus"
+      ],
+      "symbol": "∓",
+      "name": "Minus plus",
+      "categoryId": "basic-symbols-and-operations",
+      "rank": 2
+    },
+    {
+      "code": "infty",
+      "aliases": [
+        "infinity",
+        "inf"
+      ],
+      "symbol": "∞",
+      "name": "Infinity",
+      "categoryId": "basic-symbols-and-operations",
+      "rank": 1
+    },
+    {
+      "code": "times",
+      "aliases": [],
+      "symbol": "×",
+      "name": "Multiplication sign",
+      "categoryId": "basic-symbols-and-operations",
+      "rank": 1
+    },
+    {
+      "code": "div",
+      "aliases": [
+        "divide"
+      ],
+      "symbol": "÷",
+      "name": "Division sign",
+      "categoryId": "basic-symbols-and-operations",
+      "rank": 2
+    },
+    {
+      "code": "sqrt",
+      "aliases": [
+        "2root"
+      ],
+      "symbol": "√",
+      "name": "Radical sign",
+      "categoryId": "basic-symbols-and-operations",
+      "rank": 1
+    },
+    {
+      "code": "cbrt",
+      "aliases": [
+        "3root"
+      ],
+      "symbol": "∛",
+      "name": "Cube root",
+      "categoryId": "basic-symbols-and-operations",
+      "rank": 2
+    },
+    {
+      "code": "qdrt",
+      "aliases": [
+        "4root"
+      ],
+      "symbol": "∜",
+      "name": "Fourth root",
+      "categoryId": "basic-symbols-and-operations",
+      "rank": 3
+    },
+    {
+      "code": "inc",
+      "aliases": [
+        "laplace"
+      ],
+      "symbol": "∆",
+      "name": "Increment",
+      "categoryId": "basic-symbols-and-operations",
+      "rank": 2
+    },
+    {
+      "code": "overbar",
+      "aliases": [
+        "overline",
+        "vinculum",
+        "repeat",
+        "repeating"
+      ],
+      "symbol": "‾",
+      "name": "Repeating decimal / overline",
+      "categoryId": "basic-symbols-and-operations",
+      "rank": 2
+    },
+    {
+      "code": "degree",
+      "aliases": [
+        "deg"
+      ],
+      "symbol": "°",
+      "name": "Degrees",
+      "categoryId": "basic-symbols-and-operations",
+      "rank": 1
+    },
+    {
+      "code": "rad",
+      "aliases": [],
+      "symbol": "㎭",
+      "name": "Radians",
+      "categoryId": "basic-symbols-and-operations",
+      "rank": 3
+    },
+    {
+      "code": "ast",
+      "aliases": [],
+      "symbol": "∗",
+      "name": "Asterisk operator",
+      "categoryId": "basic-symbols-and-operations",
+      "rank": 2
+    },
+    {
+      "code": "bullet",
+      "aliases": [],
+      "symbol": "∙",
+      "name": "Bullet operator",
+      "categoryId": "basic-symbols-and-operations",
+      "rank": 2
+    },
+    {
+      "code": "circ",
+      "aliases": [
+        "comp"
+      ],
+      "symbol": "∘",
+      "name": "Ring operator / composition",
+      "categoryId": "basic-symbols-and-operations",
+      "rank": 2
+    },
+    {
+      "code": "cdot",
+      "aliases": [
+        "dot"
+      ],
+      "symbol": "⋅",
+      "name": "Dot operator",
+      "categoryId": "basic-symbols-and-operations",
+      "rank": 1
+    },
+    {
+      "code": "prime",
+      "aliases": [],
+      "symbol": "′",
+      "name": "Prime",
+      "categoryId": "basic-symbols-and-operations",
+      "rank": 1
+    },
+    {
+      "code": "neq",
+      "aliases": [
+        "ne",
+        "notequal"
+      ],
+      "symbol": "≠",
+      "name": "Not equal to",
+      "categoryId": "common-mathematical-relationships",
+      "rank": 1
+    },
+    {
+      "code": "sim",
+      "aliases": [],
+      "symbol": "∼",
+      "name": "Approximately (similar to)",
+      "categoryId": "common-mathematical-relationships",
+      "rank": 2
+    },
+    {
+      "code": "propto",
+      "aliases": [
+        "proportional"
+      ],
+      "symbol": "∝",
+      "name": "Proportional to",
+      "categoryId": "common-mathematical-relationships",
+      "rank": 2
+    },
+    {
+      "code": "ll",
+      "aliases": [
+        "muchless"
+      ],
+      "symbol": "≪",
+      "name": "Much less than",
+      "categoryId": "common-mathematical-relationships",
+      "rank": 2
+    },
+    {
+      "code": "gg",
+      "aliases": [
+        "muchgreater"
+      ],
+      "symbol": "≫",
+      "name": "Much greater than",
+      "categoryId": "common-mathematical-relationships",
+      "rank": 2
+    },
+    {
+      "code": "leq",
+      "aliases": [
+        "le",
+        "lte"
+      ],
+      "symbol": "≤",
+      "name": "Less than or equal to",
+      "categoryId": "common-mathematical-relationships",
+      "rank": 1
+    },
+    {
+      "code": "geq",
+      "aliases": [
+        "ge",
+        "gte"
+      ],
+      "symbol": "≥",
+      "name": "Greater than or equal to",
+      "categoryId": "common-mathematical-relationships",
+      "rank": 1
+    },
+    {
+      "code": "cong",
+      "aliases": [
+        "congruent"
+      ],
+      "symbol": "≅",
+      "name": "Congruent to",
+      "categoryId": "common-mathematical-relationships",
+      "rank": 2
+    },
+    {
+      "code": "approx",
+      "aliases": [
+        "app"
+      ],
+      "symbol": "≈",
+      "name": "Almost equal to",
+      "categoryId": "common-mathematical-relationships",
+      "rank": 1
+    },
+    {
+      "code": "equiv",
+      "aliases": [
+        "identical"
+      ],
+      "symbol": "≡",
+      "name": "Identical to",
+      "categoryId": "common-mathematical-relationships",
+      "rank": 1
+    },
+    {
+      "code": "simeq",
+      "aliases": [],
+      "symbol": "≃",
+      "name": "Asymptotically equal to",
+      "categoryId": "common-mathematical-relationships",
+      "rank": 3
+    },
+    {
+      "code": "approxeq",
+      "aliases": [],
+      "symbol": "≊",
+      "name": "Almost equal or equivalent",
+      "categoryId": "common-mathematical-relationships",
+      "rank": 3
+    },
+    {
+      "code": "emptyset",
+      "aliases": [
+        "empty",
+        "null"
+      ],
+      "symbol": "∅",
+      "name": "Empty set",
+      "categoryId": "sets-and-logic",
+      "rank": 1
+    },
+    {
+      "code": "complement",
+      "aliases": [
+        "compl"
+      ],
+      "symbol": "∁",
+      "name": "Set complement",
+      "categoryId": "sets-and-logic",
+      "rank": 3
+    },
+    {
+      "code": "forall",
+      "aliases": [
+        "foreach",
+        "all"
+      ],
+      "symbol": "∀",
+      "name": "For all",
+      "categoryId": "sets-and-logic",
+      "rank": 1
+    },
+    {
+      "code": "exists",
+      "aliases": [
+        "forsome",
+        "exist"
+      ],
+      "symbol": "∃",
+      "name": "There exists",
+      "categoryId": "sets-and-logic",
+      "rank": 1
+    },
+    {
+      "code": "nexists",
+      "aliases": [
+        "notexists"
+      ],
+      "symbol": "∄",
+      "name": "There does not exist",
+      "categoryId": "sets-and-logic",
+      "rank": 3
+    },
+    {
+      "code": "in",
+      "aliases": [
+        "element",
+        "belongs"
+      ],
+      "symbol": "∈",
+      "name": "Element of (belongs to)",
+      "categoryId": "sets-and-logic",
+      "rank": 1
+    },
+    {
+      "code": "ni",
+      "aliases": [
+        "contains",
+        "owns"
+      ],
+      "symbol": "∋",
+      "name": "Contains as member",
+      "categoryId": "sets-and-logic",
+      "rank": 3
+    },
+    {
+      "code": "neg",
+      "aliases": [
+        "not",
+        "lnot"
+      ],
+      "symbol": "¬",
+      "name": "Not sign",
+      "categoryId": "sets-and-logic",
+      "rank": 1
+    },
+    {
+      "code": "notin",
+      "aliases": [],
+      "symbol": "∉",
+      "name": "Not an element of",
+      "categoryId": "sets-and-logic",
+      "rank": 1
+    },
+    {
+      "code": "subset",
+      "aliases": [],
+      "symbol": "⊂",
+      "name": "Subset of",
+      "categoryId": "sets-and-logic",
+      "rank": 1
+    },
+    {
+      "code": "supset",
+      "aliases": [
+        "superset"
+      ],
+      "symbol": "⊃",
+      "name": "Superset of",
+      "categoryId": "sets-and-logic",
+      "rank": 2
+    },
+    {
+      "code": "subseteq",
+      "aliases": [],
+      "symbol": "⊆",
+      "name": "Subset of or equal to",
+      "categoryId": "sets-and-logic",
+      "rank": 1
+    },
+    {
+      "code": "supseteq",
+      "aliases": [
+        "superseteq"
+      ],
+      "symbol": "⊇",
+      "name": "Superset of or equal to",
+      "categoryId": "sets-and-logic",
+      "rank": 2
+    },
+    {
+      "code": "notsubset",
+      "aliases": [],
+      "symbol": "⊄",
+      "name": "Not a subset of",
+      "categoryId": "sets-and-logic",
+      "rank": 3
+    },
+    {
+      "code": "notsuperset",
+      "aliases": [],
+      "symbol": "⊅",
+      "name": "Not a superset of",
+      "categoryId": "sets-and-logic",
+      "rank": 3
+    },
+    {
+      "code": "notsubseteq",
+      "aliases": [],
+      "symbol": "⊈",
+      "name": "Neither subset nor equal",
+      "categoryId": "sets-and-logic",
+      "rank": 3
+    },
+    {
+      "code": "notsuperseteq",
+      "aliases": [],
+      "symbol": "⊉",
+      "name": "Neither superset nor equal",
+      "categoryId": "sets-and-logic",
+      "rank": 3
+    },
+    {
+      "code": "subsetnoteq",
+      "aliases": [],
+      "symbol": "⊊",
+      "name": "Subset with not equal to",
+      "categoryId": "sets-and-logic",
+      "rank": 3
+    },
+    {
+      "code": "supsetnoteq",
+      "aliases": [
+        "supsetneq"
+      ],
+      "symbol": "⊋",
+      "name": "Superset with not equal to",
+      "categoryId": "sets-and-logic",
+      "rank": 3
+    },
+    {
+      "code": "notni",
+      "aliases": [],
+      "symbol": "∌",
+      "name": "Not contains as member",
+      "categoryId": "sets-and-logic",
+      "rank": 3
+    },
+    {
+      "code": "cup",
+      "aliases": [
+        "union"
+      ],
+      "symbol": "∪",
+      "name": "Union",
+      "categoryId": "sets-and-logic",
+      "rank": 1
+    },
+    {
+      "code": "cap",
+      "aliases": [
+        "intersection"
+      ],
+      "symbol": "∩",
+      "name": "Intersection",
+      "categoryId": "sets-and-logic",
+      "rank": 1
+    },
+    {
+      "code": "bigcup",
+      "aliases": [
+        "Union"
+      ],
+      "symbol": "⋃",
+      "name": "N-ary union",
+      "categoryId": "sets-and-logic",
+      "rank": 1
+    },
+    {
+      "code": "bigcap",
+      "aliases": [
+        "Intersection"
+      ],
+      "symbol": "⋂",
+      "name": "N-ary intersection",
+      "categoryId": "sets-and-logic",
+      "rank": 1
+    },
+    {
+      "code": "setminus",
+      "aliases": [
+        "diff"
+      ],
+      "symbol": "∖",
+      "name": "Set minus (backslash)",
+      "categoryId": "sets-and-logic",
+      "rank": 2
+    },
+    {
+      "code": "wedge",
+      "aliases": [
+        "and",
+        "land"
+      ],
+      "symbol": "∧",
+      "name": "Logical AND (conjunction)",
+      "categoryId": "sets-and-logic",
+      "rank": 1
+    },
+    {
+      "code": "vee",
+      "aliases": [
+        "or",
+        "lor"
+      ],
+      "symbol": "∨",
+      "name": "Logical OR (disjunction)",
+      "categoryId": "sets-and-logic",
+      "rank": 1
+    },
+    {
+      "code": "nand",
+      "aliases": [],
+      "symbol": "⊼",
+      "name": "NAND",
+      "categoryId": "sets-and-logic",
+      "rank": 3
+    },
+    {
+      "code": "nor",
+      "aliases": [],
+      "symbol": "⊽",
+      "name": "NOR",
+      "categoryId": "sets-and-logic",
+      "rank": 3
+    },
+    {
+      "code": "oplus",
+      "aliases": [
+        "xor"
+      ],
+      "symbol": "⊕",
+      "name": "Exclusive OR (XOR)",
+      "categoryId": "sets-and-logic",
+      "rank": 2
+    },
+    {
+      "code": "odot",
+      "aliases": [
+        "xnor"
+      ],
+      "symbol": "⊙",
+      "name": "Exclusive NOR (XNOR)",
+      "categoryId": "sets-and-logic",
+      "rank": 3
+    },
+    {
+      "code": "doubleC",
+      "aliases": [
+        "complex"
+      ],
+      "symbol": "ℂ",
+      "name": "Complex numbers",
+      "categoryId": "special-sets",
+      "rank": 1
+    },
+    {
+      "code": "doubleN",
+      "aliases": [
+        "naturals"
+      ],
+      "symbol": "ℕ",
+      "name": "Natural numbers",
+      "categoryId": "special-sets",
+      "rank": 1
+    },
+    {
+      "code": "doubleQ",
+      "aliases": [
+        "rationals"
+      ],
+      "symbol": "ℚ",
+      "name": "Rational numbers",
+      "categoryId": "special-sets",
+      "rank": 1
+    },
+    {
+      "code": "doubleR",
+      "aliases": [
+        "reals"
+      ],
+      "symbol": "ℝ",
+      "name": "Real numbers",
+      "categoryId": "special-sets",
+      "rank": 1
+    },
+    {
+      "code": "doubleZ",
+      "aliases": [
+        "integers"
+      ],
+      "symbol": "ℤ",
+      "name": "Integers",
+      "categoryId": "special-sets",
+      "rank": 1
+    },
+    {
+      "code": "doubleE",
+      "aliases": [
+        "expect"
+      ],
+      "symbol": "𝔼",
+      "name": "Expected value",
+      "categoryId": "special-sets",
+      "rank": 2
+    },
+    {
+      "code": "doubleP",
+      "aliases": [
+        "prob"
+      ],
+      "symbol": "ℙ",
+      "name": "Probability",
+      "categoryId": "special-sets",
+      "rank": 2
+    },
+    {
+      "code": "alpha",
+      "aliases": [],
+      "symbol": "α",
+      "name": "Alpha (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 1
+    },
+    {
+      "code": "Alpha",
+      "aliases": [],
+      "symbol": "Α",
+      "name": "Alpha (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "beta",
+      "aliases": [],
+      "symbol": "β",
+      "name": "Beta (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 1
+    },
+    {
+      "code": "Beta",
+      "aliases": [],
+      "symbol": "Β",
+      "name": "Beta (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "gamma",
+      "aliases": [],
+      "symbol": "γ",
+      "name": "Gamma (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 1
+    },
+    {
+      "code": "Gamma",
+      "aliases": [],
+      "symbol": "Γ",
+      "name": "Gamma (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 2
+    },
+    {
+      "code": "delta",
+      "aliases": [],
+      "symbol": "δ",
+      "name": "Delta (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 1
+    },
+    {
+      "code": "Delta",
+      "aliases": [],
+      "symbol": "Δ",
+      "name": "Delta (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 1
+    },
+    {
+      "code": "epsilon",
+      "aliases": [],
+      "symbol": "ε",
+      "name": "Epsilon (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 1
+    },
+    {
+      "code": "varepsilon",
+      "aliases": [],
+      "symbol": "ϵ",
+      "name": "Variant epsilon",
+      "categoryId": "greek-letters",
+      "rank": 2
+    },
+    {
+      "code": "Epsilon",
+      "aliases": [],
+      "symbol": "Ε",
+      "name": "Epsilon (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "zeta",
+      "aliases": [],
+      "symbol": "ζ",
+      "name": "Zeta (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 2
+    },
+    {
+      "code": "Zeta",
+      "aliases": [],
+      "symbol": "Ζ",
+      "name": "Zeta (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "eta",
+      "aliases": [],
+      "symbol": "η",
+      "name": "Eta (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 2
+    },
+    {
+      "code": "Eta",
+      "aliases": [],
+      "symbol": "Η",
+      "name": "Eta (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "theta",
+      "aliases": [],
+      "symbol": "θ",
+      "name": "Theta (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 1
+    },
+    {
+      "code": "vartheta",
+      "aliases": [],
+      "symbol": "ϑ",
+      "name": "Variant theta",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "Theta",
+      "aliases": [],
+      "symbol": "Θ",
+      "name": "Theta (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 2
+    },
+    {
+      "code": "iota",
+      "aliases": [],
+      "symbol": "ι",
+      "name": "Iota (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "Iota",
+      "aliases": [],
+      "symbol": "Ι",
+      "name": "Iota (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "kappa",
+      "aliases": [],
+      "symbol": "κ",
+      "name": "Kappa (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 2
+    },
+    {
+      "code": "Kappa",
+      "aliases": [],
+      "symbol": "Κ",
+      "name": "Kappa (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "lambda",
+      "aliases": [],
+      "symbol": "λ",
+      "name": "Lambda (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 1
+    },
+    {
+      "code": "Lambda",
+      "aliases": [],
+      "symbol": "Λ",
+      "name": "Lambda (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 2
+    },
+    {
+      "code": "mu",
+      "aliases": [],
+      "symbol": "μ",
+      "name": "Mu (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 1
+    },
+    {
+      "code": "Mu",
+      "aliases": [],
+      "symbol": "Μ",
+      "name": "Mu (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "nu",
+      "aliases": [],
+      "symbol": "ν",
+      "name": "Nu (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 2
+    },
+    {
+      "code": "Nu",
+      "aliases": [],
+      "symbol": "Ν",
+      "name": "Nu (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "xi",
+      "aliases": [],
+      "symbol": "ξ",
+      "name": "Xi (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 2
+    },
+    {
+      "code": "Xi",
+      "aliases": [],
+      "symbol": "Ξ",
+      "name": "Xi (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "omicron",
+      "aliases": [],
+      "symbol": "ο",
+      "name": "Omicron (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "Omicron",
+      "aliases": [],
+      "symbol": "Ο",
+      "name": "Omicron (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "pi",
+      "aliases": [],
+      "symbol": "π",
+      "name": "Pi (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 1
+    },
+    {
+      "code": "varpi",
+      "aliases": [],
+      "symbol": "ϖ",
+      "name": "Variant pi",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "Pi",
+      "aliases": [],
+      "symbol": "Π",
+      "name": "Pi (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 2
+    },
+    {
+      "code": "rho",
+      "aliases": [],
+      "symbol": "ρ",
+      "name": "Rho (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 2
+    },
+    {
+      "code": "varrho",
+      "aliases": [],
+      "symbol": "ϱ",
+      "name": "Variant rho",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "Rho",
+      "aliases": [],
+      "symbol": "Ρ",
+      "name": "Rho (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "sigma",
+      "aliases": [],
+      "symbol": "σ",
+      "name": "Sigma (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 1
+    },
+    {
+      "code": "varsigma",
+      "aliases": [],
+      "symbol": "ς",
+      "name": "Variant sigma",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "Sigma",
+      "aliases": [],
+      "symbol": "Σ",
+      "name": "Sigma (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 1
+    },
+    {
+      "code": "tau",
+      "aliases": [],
+      "symbol": "τ",
+      "name": "Tau (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 2
+    },
+    {
+      "code": "Tau",
+      "aliases": [],
+      "symbol": "Τ",
+      "name": "Tau (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "upsilon",
+      "aliases": [],
+      "symbol": "υ",
+      "name": "Upsilon (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "Upsilon",
+      "aliases": [],
+      "symbol": "Υ",
+      "name": "Upsilon (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "phi",
+      "aliases": [],
+      "symbol": "ϕ",
+      "name": "Phi (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 1
+    },
+    {
+      "code": "varphi",
+      "aliases": [],
+      "symbol": "φ",
+      "name": "Variant phi",
+      "categoryId": "greek-letters",
+      "rank": 2
+    },
+    {
+      "code": "Phi",
+      "aliases": [],
+      "symbol": "Φ",
+      "name": "Phi (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 2
+    },
+    {
+      "code": "chi",
+      "aliases": [],
+      "symbol": "χ",
+      "name": "Chi (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 2
+    },
+    {
+      "code": "Chi",
+      "aliases": [],
+      "symbol": "Χ",
+      "name": "Chi (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 3
+    },
+    {
+      "code": "psi",
+      "aliases": [],
+      "symbol": "ψ",
+      "name": "Psi (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 2
+    },
+    {
+      "code": "Psi",
+      "aliases": [],
+      "symbol": "Ψ",
+      "name": "Psi (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 2
+    },
+    {
+      "code": "omega",
+      "aliases": [],
+      "symbol": "ω",
+      "name": "Omega (lowercase)",
+      "categoryId": "greek-letters",
+      "rank": 1
+    },
+    {
+      "code": "Omega",
+      "aliases": [],
+      "symbol": "Ω",
+      "name": "Omega (uppercase)",
+      "categoryId": "greek-letters",
+      "rank": 2
+    },
+    {
+      "code": "partial",
+      "aliases": [],
+      "symbol": "∂",
+      "name": "Partial differential",
+      "categoryId": "calculus-and-analysis",
+      "rank": 1
+    },
+    {
+      "code": "nabla",
+      "aliases": [
+        "grad"
+      ],
+      "symbol": "∇",
+      "name": "Nabla / Gradient",
+      "categoryId": "calculus-and-analysis",
+      "rank": 2
+    },
+    {
+      "code": "sum",
+      "aliases": [],
+      "symbol": "∑",
+      "name": "Summation",
+      "categoryId": "calculus-and-analysis",
+      "rank": 1
+    },
+    {
+      "code": "prod",
+      "aliases": [
+        "product"
+      ],
+      "symbol": "∏",
+      "name": "Product",
+      "categoryId": "calculus-and-analysis",
+      "rank": 1
+    },
+    {
+      "code": "int",
+      "aliases": [
+        "integral"
+      ],
+      "symbol": "∫",
+      "name": "Integral",
+      "categoryId": "calculus-and-analysis",
+      "rank": 1
+    },
+    {
+      "code": "iint",
+      "aliases": [
+        "doubleint"
+      ],
+      "symbol": "∬",
+      "name": "Double integral",
+      "categoryId": "calculus-and-analysis",
+      "rank": 2
+    },
+    {
+      "code": "iiint",
+      "aliases": [
+        "tripleint"
+      ],
+      "symbol": "∭",
+      "name": "Triple integral",
+      "categoryId": "calculus-and-analysis",
+      "rank": 2
+    },
+    {
+      "code": "oint",
+      "aliases": [
+        "contint"
+      ],
+      "symbol": "∮",
+      "name": "Contour integral",
+      "categoryId": "calculus-and-analysis",
+      "rank": 2
+    },
+    {
+      "code": "oiint",
+      "aliases": [],
+      "symbol": "∯",
+      "name": "Surface integral",
+      "categoryId": "calculus-and-analysis",
+      "rank": 3
+    },
+    {
+      "code": "oiiint",
+      "aliases": [],
+      "symbol": "∰",
+      "name": "Volume integral",
+      "categoryId": "calculus-and-analysis",
+      "rank": 3
+    },
+    {
+      "code": "cwint",
+      "aliases": [],
+      "symbol": "∱",
+      "name": "Clockwise integral",
+      "categoryId": "calculus-and-analysis",
+      "rank": 3
+    },
+    {
+      "code": "coint",
+      "aliases": [],
+      "symbol": "∲",
+      "name": "Clockwise contour integral",
+      "categoryId": "calculus-and-analysis",
+      "rank": 3
+    },
+    {
+      "code": "aoint",
+      "aliases": [],
+      "symbol": "∳",
+      "name": "Anticlockwise contour integral",
+      "categoryId": "calculus-and-analysis",
+      "rank": 3
+    },
+    {
+      "code": "pprime",
+      "aliases": [
+        "dprime",
+        "doubleprime"
+      ],
+      "symbol": "″",
+      "name": "Double prime",
+      "categoryId": "calculus-and-analysis",
+      "rank": 2
+    },
+    {
+      "code": "ppprime",
+      "aliases": [
+        "tprime",
+        "tripleprime"
+      ],
+      "symbol": "‴",
+      "name": "Triple prime",
+      "categoryId": "calculus-and-analysis",
+      "rank": 3
+    },
+    {
+      "code": "pppprime",
+      "aliases": [
+        "qprime",
+        "quadprime"
+      ],
+      "symbol": "⁗",
+      "name": "Quadruple prime",
+      "categoryId": "calculus-and-analysis",
+      "rank": 3
+    },
+    {
+      "code": "circle",
+      "aliases": [],
+      "symbol": "◯",
+      "name": "Circle",
+      "categoryId": "geometry-and-vectors",
+      "rank": 1
+    },
+    {
+      "code": "circledot",
+      "aliases": [
+        "odotgeo"
+      ],
+      "symbol": "⊙",
+      "name": "Circle with dot inside",
+      "categoryId": "geometry-and-vectors",
+      "rank": 2
+    },
+    {
+      "code": "tvec",
+      "aliases": [
+        "line"
+      ],
+      "symbol": "⃡",
+      "name": "Line (left-right arrow above)",
+      "categoryId": "geometry-and-vectors",
+      "rank": 2
+    },
+    {
+      "code": "seg",
+      "aliases": [
+        "segment"
+      ],
+      "symbol": "¯",
+      "name": "Segment",
+      "categoryId": "geometry-and-vectors",
+      "rank": 2
+    },
+    {
+      "code": "rightangle",
+      "aliases": [],
+      "symbol": "∟",
+      "name": "Right angle",
+      "categoryId": "geometry-and-vectors",
+      "rank": 1
+    },
+    {
+      "code": "angle",
+      "aliases": [],
+      "symbol": "∠",
+      "name": "Angle",
+      "categoryId": "geometry-and-vectors",
+      "rank": 1
+    },
+    {
+      "code": "angmsd",
+      "aliases": [
+        "measangle"
+      ],
+      "symbol": "∡",
+      "name": "Measured angle",
+      "categoryId": "geometry-and-vectors",
+      "rank": 2
+    },
+    {
+      "code": "angsph",
+      "aliases": [],
+      "symbol": "∢",
+      "name": "Spherical angle",
+      "categoryId": "geometry-and-vectors",
+      "rank": 3
+    },
+    {
+      "code": "angrtvb",
+      "aliases": [],
+      "symbol": "⊾",
+      "name": "Right angle with arc",
+      "categoryId": "geometry-and-vectors",
+      "rank": 2
+    },
+    {
+      "code": "rtriangle",
+      "aliases": [
+        "righttriangle"
+      ],
+      "symbol": "⊿",
+      "name": "Right triangle",
+      "categoryId": "geometry-and-vectors",
+      "rank": 2
+    },
+    {
+      "code": "triangle",
+      "aliases": [],
+      "symbol": "△",
+      "name": "Triangle",
+      "categoryId": "geometry-and-vectors",
+      "rank": 1
+    },
+    {
+      "code": "parallelogram",
+      "aliases": [],
+      "symbol": "▱",
+      "name": "Parallelogram",
+      "categoryId": "geometry-and-vectors",
+      "rank": 2
+    },
+    {
+      "code": "epar",
+      "aliases": [
+        "equalparallel"
+      ],
+      "symbol": "⋕",
+      "name": "Equal and parallel to",
+      "categoryId": "geometry-and-vectors",
+      "rank": 2
+    },
+    {
+      "code": "nparallel",
+      "aliases": [
+        "notparallel"
+      ],
+      "symbol": "∦",
+      "name": "Not parallel to",
+      "categoryId": "geometry-and-vectors",
+      "rank": 2
+    },
+    {
+      "code": "parallel",
+      "aliases": [
+        "parallelto"
+      ],
+      "symbol": "∥",
+      "name": "Parallel to",
+      "categoryId": "geometry-and-vectors",
+      "rank": 2
+    },
+    {
+      "code": "perp",
+      "aliases": [
+        "perpendicular"
+      ],
+      "symbol": "⊥",
+      "name": "Perpendicular to",
+      "categoryId": "geometry-and-vectors",
+      "rank": 2
+    },
+    {
+      "code": "ratio",
+      "aliases": [],
+      "symbol": "∶",
+      "name": "Ratio",
+      "categoryId": "geometry-and-vectors",
+      "rank": 2
+    },
+    {
+      "code": "Colon",
+      "aliases": [
+        "proportion"
+      ],
+      "symbol": "∷",
+      "name": "Proportion",
+      "categoryId": "geometry-and-vectors",
+      "rank": 2
+    },
+    {
+      "code": "qed",
+      "aliases": [
+        "endproof"
+      ],
+      "symbol": "∎",
+      "name": "End of proof (Q.E.D.)",
+      "categoryId": "geometry-and-vectors",
+      "rank": 2
+    },
+    {
+      "code": "overparen",
+      "aliases": [
+        "arc"
+      ],
+      "symbol": "⌢",
+      "name": "Arc",
+      "categoryId": "geometry-and-vectors",
+      "rank": 2
+    },
+    {
+      "code": "degc",
+      "aliases": [],
+      "symbol": "℃",
+      "name": "Degrees Celsius",
+      "categoryId": "chemistry-and-physics",
+      "rank": 3
+    },
+    {
+      "code": "degf",
+      "aliases": [],
+      "symbol": "℉",
+      "name": "Degrees Fahrenheit",
+      "categoryId": "chemistry-and-physics",
+      "rank": 3
+    },
+    {
+      "code": "hbar",
+      "aliases": [],
+      "symbol": "ℏ",
+      "name": "Planck constant over two pi",
+      "categoryId": "chemistry-and-physics",
+      "rank": 2
+    },
+    {
+      "code": "planck",
+      "aliases": [],
+      "symbol": "ℎ",
+      "name": "Planck constant",
+      "categoryId": "chemistry-and-physics",
+      "rank": 2
+    },
+    {
+      "code": "mho",
+      "aliases": [],
+      "symbol": "℧",
+      "name": "Inverted ohm (mho)",
+      "categoryId": "chemistry-and-physics",
+      "rank": 3
+    },
+    {
+      "code": "AA",
+      "aliases": [],
+      "symbol": "Å",
+      "name": "Angstrom",
+      "categoryId": "chemistry-and-physics",
+      "rank": 3
+    },
+    {
+      "code": "kron",
+      "aliases": [],
+      "symbol": "⊗",
+      "name": "Kronecker product",
+      "categoryId": "matrix-operations",
+      "rank": 2
+    },
+    {
+      "code": "hadamard",
+      "aliases": [],
+      "symbol": "⊙",
+      "name": "Hadamard product",
+      "categoryId": "matrix-operations",
+      "rank": 3
+    },
+    {
+      "code": "adjoint",
+      "aliases": [],
+      "symbol": "†",
+      "name": "Adjoint / Hermitian transpose",
+      "categoryId": "matrix-operations",
+      "rank": 2
+    },
+    {
+      "code": "identity",
+      "aliases": [],
+      "symbol": "𝐈",
+      "name": "Identity matrix",
+      "categoryId": "matrix-operations",
+      "rank": 2
+    },
+    {
+      "code": "directsum",
+      "aliases": [],
+      "symbol": "⊕",
+      "name": "Direct sum",
+      "categoryId": "matrix-operations",
+      "rank": 2
+    },
+    {
+      "code": "therefore",
+      "aliases": [],
+      "symbol": "∴",
+      "name": "Therefore",
+      "categoryId": "miscellaneous-common-symbols",
+      "rank": 2
+    },
+    {
+      "code": "because",
+      "aliases": [
+        "since"
+      ],
+      "symbol": "∵",
+      "name": "Because",
+      "categoryId": "miscellaneous-common-symbols",
+      "rank": 2
+    },
+    {
+      "code": "cdots",
+      "aliases": [],
+      "symbol": "⋯",
+      "name": "Midline horizontal ellipsis",
+      "categoryId": "miscellaneous-common-symbols",
+      "rank": 2
+    },
+    {
+      "code": "vdots",
+      "aliases": [],
+      "symbol": "⋮",
+      "name": "Vertical ellipsis",
+      "categoryId": "miscellaneous-common-symbols",
+      "rank": 2
+    },
+    {
+      "code": "ddots",
+      "aliases": [],
+      "symbol": "⋱",
+      "name": "Downward right diagonal ellipsis",
+      "categoryId": "miscellaneous-common-symbols",
+      "rank": 2
+    },
+    {
+      "code": "rddots",
+      "aliases": [],
+      "symbol": "⋰",
+      "name": "Upward right diagonal ellipsis",
+      "categoryId": "miscellaneous-common-symbols",
+      "rank": 3
+    },
+    {
+      "code": "dots",
+      "aliases": [
+        "ldots",
+        "ellipsis"
+      ],
+      "symbol": "…",
+      "name": "Horizontal ellipsis",
+      "categoryId": "miscellaneous-common-symbols",
+      "rank": 1
+    },
+    {
+      "code": "aleph",
+      "aliases": [],
+      "symbol": "ℵ",
+      "name": "Aleph",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "beth",
+      "aliases": [],
+      "symbol": "ℶ",
+      "name": "Beth",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "scriptl",
+      "aliases": [],
+      "symbol": "ℓ",
+      "name": "Script small L",
+      "categoryId": "letter-like-symbols",
+      "rank": 2
+    },
+    {
+      "code": "scriptL",
+      "aliases": [],
+      "symbol": "ℒ",
+      "name": "Laplace transform",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "Im",
+      "aliases": [
+        "frakturI"
+      ],
+      "symbol": "ℑ",
+      "name": "Imaginary part",
+      "categoryId": "letter-like-symbols",
+      "rank": 1
+    },
+    {
+      "code": "Re",
+      "aliases": [
+        "frakturR"
+      ],
+      "symbol": "ℜ",
+      "name": "Real part",
+      "categoryId": "letter-like-symbols",
+      "rank": 1
+    },
+    {
+      "code": "wp",
+      "aliases": [
+        "powerset"
+      ],
+      "symbol": "℘",
+      "name": "Power set / Weierstrass P",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "imath",
+      "aliases": [],
+      "symbol": "ı",
+      "name": "Dotless i",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "eth",
+      "aliases": [],
+      "symbol": "ð",
+      "name": "Latin small letter eth",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "euler",
+      "aliases": [],
+      "symbol": "ℇ",
+      "name": "Euler constant",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "Digamma",
+      "aliases": [],
+      "symbol": "Ϝ",
+      "name": "Greek capital digamma",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "turnedF",
+      "aliases": [],
+      "symbol": "Ⅎ",
+      "name": "Turned capital F",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "scriptg",
+      "aliases": [],
+      "symbol": "ℊ",
+      "name": "Script small G",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "scriptH",
+      "aliases": [],
+      "symbol": "ℋ",
+      "name": "Script capital H",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "frakturH",
+      "aliases": [],
+      "symbol": "ℌ",
+      "name": "Hilbert space",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "varkappa",
+      "aliases": [],
+      "symbol": "ϰ",
+      "name": "Greek kappa symbol",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "gimel",
+      "aliases": [],
+      "symbol": "ℷ",
+      "name": "Gimel",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "daleth",
+      "aliases": [],
+      "symbol": "ℸ",
+      "name": "Daleth",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "euro",
+      "aliases": [],
+      "symbol": "℮",
+      "name": "Estimated symbol",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "mathscr",
+      "aliases": [],
+      "symbol": "ℬ",
+      "name": "Script capital B",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "scriptE",
+      "aliases": [],
+      "symbol": "ℰ",
+      "name": "Script capital E",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "scriptF",
+      "aliases": [],
+      "symbol": "ℱ",
+      "name": "Script capital F",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "scriptM",
+      "aliases": [],
+      "symbol": "ℳ",
+      "name": "Script capital M",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "scripto",
+      "aliases": [],
+      "symbol": "ℴ",
+      "name": "Script small O",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "turnediota",
+      "aliases": [],
+      "symbol": "℩",
+      "name": "Turned Greek iota",
+      "categoryId": "letter-like-symbols",
+      "rank": 3
+    },
+    {
+      "code": "rightarrow",
+      "aliases": [
+        "to"
+      ],
+      "symbol": "→",
+      "name": "Right arrow",
+      "categoryId": "arrows",
+      "rank": 1
+    },
+    {
+      "code": "leftarrow",
+      "aliases": [
+        "gets"
+      ],
+      "symbol": "←",
+      "name": "Left arrow",
+      "categoryId": "arrows",
+      "rank": 2
+    },
+    {
+      "code": "uparrow",
+      "aliases": [],
+      "symbol": "↑",
+      "name": "Up arrow",
+      "categoryId": "arrows",
+      "rank": 2
+    },
+    {
+      "code": "downarrow",
+      "aliases": [],
+      "symbol": "↓",
+      "name": "Down arrow",
+      "categoryId": "arrows",
+      "rank": 2
+    },
+    {
+      "code": "leftrightarrow",
+      "aliases": [
+        "biconditional"
+      ],
+      "symbol": "↔",
+      "name": "Left-right arrow",
+      "categoryId": "arrows",
+      "rank": 2
+    },
+    {
+      "code": "updownarrow",
+      "aliases": [],
+      "symbol": "↕",
+      "name": "Up-down arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "Rightarrow",
+      "aliases": [
+        "Implies",
+        "Implication"
+      ],
+      "symbol": "⇒",
+      "name": "Double right arrow (implies)",
+      "categoryId": "arrows",
+      "rank": 1
+    },
+    {
+      "code": "Leftarrow",
+      "aliases": [],
+      "symbol": "⇐",
+      "name": "Double left arrow",
+      "categoryId": "arrows",
+      "rank": 2
+    },
+    {
+      "code": "Leftrightarrow",
+      "aliases": [
+        "Biconditional",
+        "iff"
+      ],
+      "symbol": "⇔",
+      "name": "Biconditional (if and only if)",
+      "categoryId": "arrows",
+      "rank": 1
+    },
+    {
+      "code": "Uparrow",
+      "aliases": [],
+      "symbol": "⇑",
+      "name": "Double up arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "Downarrow",
+      "aliases": [],
+      "symbol": "⇓",
+      "name": "Double down arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "Updownarrow",
+      "aliases": [],
+      "symbol": "⇕",
+      "name": "Up-down double arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "longrightarrow",
+      "aliases": [],
+      "symbol": "⟶",
+      "name": "Long right arrow",
+      "categoryId": "arrows",
+      "rank": 2
+    },
+    {
+      "code": "longleftarrow",
+      "aliases": [],
+      "symbol": "⟵",
+      "name": "Long left arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "longleftrightarrow",
+      "aliases": [],
+      "symbol": "⟷",
+      "name": "Long left-right arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "Longrightarrow",
+      "aliases": [
+        "implies"
+      ],
+      "symbol": "⟹",
+      "name": "Long double right arrow",
+      "categoryId": "arrows",
+      "rank": 2
+    },
+    {
+      "code": "Longleftarrow",
+      "aliases": [],
+      "symbol": "⟸",
+      "name": "Long double left arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "Longleftrightarrow",
+      "aliases": [],
+      "symbol": "⟺",
+      "name": "Long biconditional",
+      "categoryId": "arrows",
+      "rank": 2
+    },
+    {
+      "code": "nearrow",
+      "aliases": [],
+      "symbol": "↗",
+      "name": "Diagonal upward right arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "nwarrow",
+      "aliases": [],
+      "symbol": "↖",
+      "name": "Diagonal upward left arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "searrow",
+      "aliases": [],
+      "symbol": "↘",
+      "name": "Diagonal downward right arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "swarrow",
+      "aliases": [],
+      "symbol": "↙",
+      "name": "Diagonal downward left arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "nleftarrow",
+      "aliases": [],
+      "symbol": "↚",
+      "name": "Left arrow with stroke",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "nrightarrow",
+      "aliases": [],
+      "symbol": "↛",
+      "name": "Right arrow with stroke",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "nleftrightarrow",
+      "aliases": [],
+      "symbol": "↮",
+      "name": "Left-right arrow with stroke",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "nLeftarrow",
+      "aliases": [],
+      "symbol": "⇍",
+      "name": "Left double arrow with stroke",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "nRightarrow",
+      "aliases": [],
+      "symbol": "⇏",
+      "name": "Right double arrow with stroke",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "nLeftrightarrow",
+      "aliases": [],
+      "symbol": "⇎",
+      "name": "Left-right double arrow with stroke",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "dasharrowleft",
+      "aliases": [],
+      "symbol": "⇠",
+      "name": "Left dashed arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "dasharrowright",
+      "aliases": [],
+      "symbol": "⇢",
+      "name": "Right dashed arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "mapstoleft",
+      "aliases": [],
+      "symbol": "↤",
+      "name": "Left arrow from bar",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "mapsto",
+      "aliases": [
+        "maps"
+      ],
+      "symbol": "↦",
+      "name": "Maps to (right arrow from bar)",
+      "categoryId": "arrows",
+      "rank": 2
+    },
+    {
+      "code": "longmapstoleft",
+      "aliases": [],
+      "symbol": "⟻",
+      "name": "Long left arrow from bar",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "longmapsto",
+      "aliases": [],
+      "symbol": "⟼",
+      "name": "Long maps to",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "hookleftarrow",
+      "aliases": [],
+      "symbol": "↩",
+      "name": "Left arrow with hook",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "hookrightarrow",
+      "aliases": [
+        "hook"
+      ],
+      "symbol": "↪",
+      "name": "Right arrow with hook",
+      "categoryId": "arrows",
+      "rank": 2
+    },
+    {
+      "code": "leftharpoonup",
+      "aliases": [],
+      "symbol": "↼",
+      "name": "Left harpoon up",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "leftharpoondown",
+      "aliases": [],
+      "symbol": "↽",
+      "name": "Left harpoon down",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "rightharpoonup",
+      "aliases": [],
+      "symbol": "⇀",
+      "name": "Right harpoon up",
+      "categoryId": "arrows",
+      "rank": 2
+    },
+    {
+      "code": "rightharpoondown",
+      "aliases": [],
+      "symbol": "⇁",
+      "name": "Right harpoon down",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "upharpoonleft",
+      "aliases": [],
+      "symbol": "↿",
+      "name": "Upward harpoon left",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "upharpoonright",
+      "aliases": [],
+      "symbol": "↾",
+      "name": "Upward harpoon right",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "downharpoonleft",
+      "aliases": [],
+      "symbol": "⇃",
+      "name": "Downward harpoon left",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "downharpoonright",
+      "aliases": [],
+      "symbol": "⇂",
+      "name": "Downward harpoon right",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "leftrightharpoons",
+      "aliases": [],
+      "symbol": "⇋",
+      "name": "Left-right harpoons",
+      "categoryId": "arrows",
+      "rank": 2
+    },
+    {
+      "code": "rightleftharpoons",
+      "aliases": [],
+      "symbol": "⇌",
+      "name": "Right-left harpoons",
+      "categoryId": "arrows",
+      "rank": 2
+    },
+    {
+      "code": "leftleftarrows",
+      "aliases": [],
+      "symbol": "⇇",
+      "name": "Left paired arrows",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "rightrightarrows",
+      "aliases": [],
+      "symbol": "⇉",
+      "name": "Right paired arrows",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "upuparrows",
+      "aliases": [],
+      "symbol": "⇈",
+      "name": "Upwards paired arrows",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "downdownarrows",
+      "aliases": [
+        "downarrows"
+      ],
+      "symbol": "⇊",
+      "name": "Downwards paired arrows",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "leftrightarrows",
+      "aliases": [],
+      "symbol": "⇆",
+      "name": "Left arrow over right arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "rightleftarrows",
+      "aliases": [],
+      "symbol": "⇄",
+      "name": "Right arrow over left arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "looparrowleft",
+      "aliases": [],
+      "symbol": "↫",
+      "name": "Left arrow with loop",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "looparrowright",
+      "aliases": [],
+      "symbol": "↬",
+      "name": "Right arrow with loop",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "leftarrowtail",
+      "aliases": [],
+      "symbol": "↢",
+      "name": "Left arrow with tail",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "rightarrowtail",
+      "aliases": [],
+      "symbol": "↣",
+      "name": "Right arrow with tail",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "Lsh",
+      "aliases": [],
+      "symbol": "↰",
+      "name": "Upward arrow with tip on left",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "Rsh",
+      "aliases": [],
+      "symbol": "↱",
+      "name": "Upward arrow with tip on right",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "ldsh",
+      "aliases": [],
+      "symbol": "↲",
+      "name": "Downward arrow with tip on left",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "rdsh",
+      "aliases": [],
+      "symbol": "↳",
+      "name": "Downward arrow with tip on right",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "Lleftarrow",
+      "aliases": [],
+      "symbol": "⇚",
+      "name": "Triple left arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "Rrightarrow",
+      "aliases": [],
+      "symbol": "⇛",
+      "name": "Triple right arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "twoheadleftarrow",
+      "aliases": [],
+      "symbol": "↞",
+      "name": "Two-headed left arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "twoheadrightarrow",
+      "aliases": [],
+      "symbol": "↠",
+      "name": "Two-headed right arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "curvearrowleft",
+      "aliases": [],
+      "symbol": "↶",
+      "name": "Anticlockwise arc arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "curvearrowright",
+      "aliases": [],
+      "symbol": "↷",
+      "name": "Clockwise arc arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "circlearrowleft",
+      "aliases": [],
+      "symbol": "↺",
+      "name": "Anticlockwise circle arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "circlearrowright",
+      "aliases": [],
+      "symbol": "↻",
+      "name": "Clockwise circle arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "multimap",
+      "aliases": [],
+      "symbol": "⊸",
+      "name": "Multimap",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "leftrightwavearrow",
+      "aliases": [],
+      "symbol": "↭",
+      "name": "Left-right wave arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "leftwavearrow",
+      "aliases": [],
+      "symbol": "↜",
+      "name": "Left wave arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "rightwavearrow",
+      "aliases": [],
+      "symbol": "↝",
+      "name": "Right wave arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "leftsquigarrow",
+      "aliases": [],
+      "symbol": "⇜",
+      "name": "Left squiggle arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "rightsquigarrow",
+      "aliases": [],
+      "symbol": "⇝",
+      "name": "Right squiggle arrow",
+      "categoryId": "arrows",
+      "rank": 3
+    },
+    {
+      "code": "mid",
+      "aliases": [
+        "divides"
+      ],
+      "symbol": "∣",
+      "name": "Divides (is divisible by)",
+      "categoryId": "number-theory",
+      "rank": 2
+    },
+    {
+      "code": "notdivide",
+      "aliases": [
+        "nmid"
+      ],
+      "symbol": "∤",
+      "name": "Does not divide",
+      "categoryId": "number-theory",
+      "rank": 3
+    },
+    {
+      "code": "stddev",
+      "aliases": [],
+      "symbol": "σ",
+      "name": "Standard deviation",
+      "categoryId": "statistics-and-probability",
+      "rank": 1
+    },
+    {
+      "code": "mean",
+      "aliases": [],
+      "symbol": "μ",
+      "name": "Population mean",
+      "categoryId": "statistics-and-probability",
+      "rank": 1
+    },
+    {
+      "code": "corr",
+      "aliases": [],
+      "symbol": "ρ",
+      "name": "Correlation coefficient",
+      "categoryId": "statistics-and-probability",
+      "rank": 2
+    },
+    {
+      "code": "ldiv",
+      "aliases": [],
+      "symbol": "∕",
+      "name": "Division slash",
+      "categoryId": "advanced-operators",
+      "rank": 2
+    },
+    {
+      "code": "uplus",
+      "aliases": [],
+      "symbol": "⊎",
+      "name": "Multiset union",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "sqcap",
+      "aliases": [],
+      "symbol": "⊓",
+      "name": "Square cap",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "sqcup",
+      "aliases": [],
+      "symbol": "⊔",
+      "name": "Square cup",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "nlt",
+      "aliases": [
+        "notlt"
+      ],
+      "symbol": "≮",
+      "name": "Not less than",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "nleq",
+      "aliases": [],
+      "symbol": "≰",
+      "name": "Not less than or equal",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "ngt",
+      "aliases": [
+        "notgt"
+      ],
+      "symbol": "≯",
+      "name": "Not greater than",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "ngeq",
+      "aliases": [],
+      "symbol": "≱",
+      "name": "Not greater than or equal",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "nequiv",
+      "aliases": [],
+      "symbol": "≢",
+      "name": "Not identical to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "nsimeq",
+      "aliases": [],
+      "symbol": "≄",
+      "name": "Not asymptotically equal",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "notapprox",
+      "aliases": [],
+      "symbol": "≉",
+      "name": "Not almost equal to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "ncong",
+      "aliases": [
+        "notcong"
+      ],
+      "symbol": "≇",
+      "name": "Not congruent to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "prec",
+      "aliases": [],
+      "symbol": "≺",
+      "name": "Precedes",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "succ",
+      "aliases": [],
+      "symbol": "≻",
+      "name": "Succeeds",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "preceq",
+      "aliases": [],
+      "symbol": "≼",
+      "name": "Precedes or equal to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "succeq",
+      "aliases": [],
+      "symbol": "≽",
+      "name": "Succeeds or equal to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "sqsubset",
+      "aliases": [],
+      "symbol": "⊏",
+      "name": "Square subset",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "sqsupset",
+      "aliases": [],
+      "symbol": "⊐",
+      "name": "Square superset",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "sqsubseteq",
+      "aliases": [],
+      "symbol": "⊑",
+      "name": "Square subset or equal",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "sqsupseteq",
+      "aliases": [],
+      "symbol": "⊒",
+      "name": "Square superset or equal",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "vdash",
+      "aliases": [
+        "proves"
+      ],
+      "symbol": "⊢",
+      "name": "Proves",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "dashv",
+      "aliases": [],
+      "symbol": "⊣",
+      "name": "Does not yield",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "top",
+      "aliases": [
+        "tautology"
+      ],
+      "symbol": "⊤",
+      "name": "Tautology (always true)",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "bot",
+      "aliases": [
+        "false",
+        "contradiction"
+      ],
+      "symbol": "⊥",
+      "name": "Contradiction (always false)",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "bowtie",
+      "aliases": [
+        "join"
+      ],
+      "symbol": "⋈",
+      "name": "Natural join",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "asymp",
+      "aliases": [],
+      "symbol": "≍",
+      "name": "Approximately equal or image of",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "amalg",
+      "aliases": [
+        "coprod"
+      ],
+      "symbol": "∐",
+      "name": "Coproduct",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "bigwedge",
+      "aliases": [],
+      "symbol": "⋀",
+      "name": "N-ary logical AND",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "bigvee",
+      "aliases": [],
+      "symbol": "⋁",
+      "name": "N-ary logical OR",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "bigodot",
+      "aliases": [],
+      "symbol": "⨀",
+      "name": "N-ary circled dot operator",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "bigotimes",
+      "aliases": [],
+      "symbol": "⨂",
+      "name": "N-ary circled times operator",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "biguplus",
+      "aliases": [],
+      "symbol": "⨄",
+      "name": "N-ary union operator with plus",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "bigcapdot",
+      "aliases": [
+        "bigudot"
+      ],
+      "symbol": "⨃",
+      "name": "N-ary intersection with dot",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "dotplus",
+      "aliases": [],
+      "symbol": "∔",
+      "name": "Dot plus",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "dotminus",
+      "aliases": [],
+      "symbol": "∸",
+      "name": "Dot minus",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "Cap",
+      "aliases": [],
+      "symbol": "⋒",
+      "name": "Double intersection",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "Cup",
+      "aliases": [],
+      "symbol": "⋓",
+      "name": "Double union",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "boxminus",
+      "aliases": [],
+      "symbol": "⊟",
+      "name": "Squared minus",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "boxtimes",
+      "aliases": [],
+      "symbol": "⊠",
+      "name": "Squared times",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "boxdot",
+      "aliases": [],
+      "symbol": "⊡",
+      "name": "Squared dot operator",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "boxplus",
+      "aliases": [],
+      "symbol": "⊞",
+      "name": "Squared plus",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "divideontimes",
+      "aliases": [],
+      "symbol": "⋇",
+      "name": "Division times",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "ltimes",
+      "aliases": [],
+      "symbol": "⋉",
+      "name": "Left semidirect product",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "rtimes",
+      "aliases": [],
+      "symbol": "⋊",
+      "name": "Right semidirect product",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "leftthreetimes",
+      "aliases": [],
+      "symbol": "⋋",
+      "name": "Left three times",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "rightthreetimes",
+      "aliases": [],
+      "symbol": "⋌",
+      "name": "Right three times",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "curlywedge",
+      "aliases": [],
+      "symbol": "⋏",
+      "name": "Curly logical AND",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "curlyvee",
+      "aliases": [],
+      "symbol": "⋎",
+      "name": "Curly logical OR",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "odash",
+      "aliases": [],
+      "symbol": "⊝",
+      "name": "Circled dash",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "intercal",
+      "aliases": [],
+      "symbol": "⊺",
+      "name": "Intercalate",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "ominus",
+      "aliases": [],
+      "symbol": "⊖",
+      "name": "Circled minus",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "otimes",
+      "aliases": [
+        "tensor"
+      ],
+      "symbol": "⊗",
+      "name": "Circled times / tensor product",
+      "categoryId": "advanced-operators",
+      "rank": 2
+    },
+    {
+      "code": "oslash",
+      "aliases": [],
+      "symbol": "⊘",
+      "name": "Circled division slash",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "oast",
+      "aliases": [],
+      "symbol": "⊛",
+      "name": "Circled asterisk operator",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "ocirc",
+      "aliases": [],
+      "symbol": "⊚",
+      "name": "Circled ring operator",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "dagger",
+      "aliases": [
+        "dag"
+      ],
+      "symbol": "†",
+      "name": "Dagger",
+      "categoryId": "advanced-operators",
+      "rank": 2
+    },
+    {
+      "code": "ddag",
+      "aliases": [
+        "ddagger"
+      ],
+      "symbol": "‡",
+      "name": "Double dagger",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "star",
+      "aliases": [],
+      "symbol": "⋆",
+      "name": "Star operator",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "diamond",
+      "aliases": [],
+      "symbol": "⋄",
+      "name": "Diamond operator",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "wr",
+      "aliases": [],
+      "symbol": "≀",
+      "name": "Wreath product",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "bigoplus",
+      "aliases": [],
+      "symbol": "⨁",
+      "name": "N-ary circled plus operator",
+      "categoryId": "advanced-operators",
+      "rank": 2
+    },
+    {
+      "code": "bigsqcap",
+      "aliases": [],
+      "symbol": "⨅",
+      "name": "N-ary square intersection",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "bigsqcup",
+      "aliases": [],
+      "symbol": "⨆",
+      "name": "N-ary square union",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "lll",
+      "aliases": [],
+      "symbol": "⋘",
+      "name": "Very much less than",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "ggg",
+      "aliases": [],
+      "symbol": "⋙",
+      "name": "Very much greater than",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "leqq",
+      "aliases": [],
+      "symbol": "≦",
+      "name": "Less than over equal to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "geqq",
+      "aliases": [],
+      "symbol": "≧",
+      "name": "Greater than over equal to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "lesssim",
+      "aliases": [],
+      "symbol": "≲",
+      "name": "Less than and similar to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "gtrsim",
+      "aliases": [],
+      "symbol": "≳",
+      "name": "Greater than and similar to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "lessdot",
+      "aliases": [],
+      "symbol": "⋖",
+      "name": "Less than with dot",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "gtrdot",
+      "aliases": [],
+      "symbol": "⋗",
+      "name": "Greater than with dot",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "lessgtr",
+      "aliases": [],
+      "symbol": "≶",
+      "name": "Less than or greater than",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "lesseqgtr",
+      "aliases": [],
+      "symbol": "⋚",
+      "name": "Less than but not equivalent to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "gtrless",
+      "aliases": [],
+      "symbol": "≷",
+      "name": "Greater than or less than",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "gtreqless",
+      "aliases": [],
+      "symbol": "⋛",
+      "name": "Greater than but not equivalent to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "Doteq",
+      "aliases": [],
+      "symbol": "≑",
+      "name": "Geometrically equal to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "fallingdotseq",
+      "aliases": [],
+      "symbol": "≒",
+      "name": "Approximately equal or image of",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "risingdotseq",
+      "aliases": [],
+      "symbol": "≓",
+      "name": "Image of or approximately equal to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "backsim",
+      "aliases": [],
+      "symbol": "∽",
+      "name": "Reversed tilde",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "backsimeq",
+      "aliases": [],
+      "symbol": "⋍",
+      "name": "Reversed tilde equals",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "eqless",
+      "aliases": [],
+      "symbol": "⋜",
+      "name": "Equal to or less than",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "eqgtr",
+      "aliases": [],
+      "symbol": "⋝",
+      "name": "Equal to or greater than",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "precsim",
+      "aliases": [],
+      "symbol": "≾",
+      "name": "Precedes but not equivalent",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "succsim",
+      "aliases": [],
+      "symbol": "≿",
+      "name": "Succeeds or equivalent to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "vartriangleleft",
+      "aliases": [],
+      "symbol": "⊲",
+      "name": "Normal subgroup of",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "vartriangleright",
+      "aliases": [],
+      "symbol": "⊳",
+      "name": "Contains as normal subgroup",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "trianglelefteq",
+      "aliases": [],
+      "symbol": "⊴",
+      "name": "Normal subgroup or equal",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "trianglerighteq",
+      "aliases": [],
+      "symbol": "⊵",
+      "name": "Contains as normal subgroup or equal",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "models",
+      "aliases": [
+        "entailment",
+        "true"
+      ],
+      "symbol": "⊨",
+      "name": "Entailment / models",
+      "categoryId": "advanced-operators",
+      "rank": 2
+    },
+    {
+      "code": "Subset",
+      "aliases": [],
+      "symbol": "⋐",
+      "name": "Nested subset",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "Supset",
+      "aliases": [],
+      "symbol": "⋑",
+      "name": "Nested superset",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "vDash",
+      "aliases": [
+        "forces"
+      ],
+      "symbol": "⊩",
+      "name": "Forces",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "Vvdash",
+      "aliases": [],
+      "symbol": "⊪",
+      "name": "Triple vertical bar with turnstile",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "eqcirc",
+      "aliases": [],
+      "symbol": "≖",
+      "name": "Circle with equals sign",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "circeq",
+      "aliases": [],
+      "symbol": "≗",
+      "name": "Ring equal to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "Deltaeq",
+      "aliases": [],
+      "symbol": "≜",
+      "name": "Delta equal to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "bumpe",
+      "aliases": [],
+      "symbol": "≏",
+      "name": "Difference between",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "bumpeq",
+      "aliases": [],
+      "symbol": "≎",
+      "name": "Geometrically equivalent to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "between",
+      "aliases": [],
+      "symbol": "≬",
+      "name": "Between",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "pitchfork",
+      "aliases": [],
+      "symbol": "⋔",
+      "name": "Pitchfork",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "doteq",
+      "aliases": [],
+      "symbol": "≐",
+      "name": "Approaches the limit",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "nsim",
+      "aliases": [],
+      "symbol": "≁",
+      "name": "Not tilde",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "nasymp",
+      "aliases": [],
+      "symbol": "≭",
+      "name": "Not equivalent to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "lneqq",
+      "aliases": [],
+      "symbol": "≨",
+      "name": "Less than but not equal to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "gneqq",
+      "aliases": [],
+      "symbol": "≩",
+      "name": "Greater than but not equal to",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "nprec",
+      "aliases": [],
+      "symbol": "⊀",
+      "name": "Does not precede",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "nsucc",
+      "aliases": [],
+      "symbol": "⊁",
+      "name": "Does not succeed",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "npreceq",
+      "aliases": [],
+      "symbol": "⋠",
+      "name": "Does not precede or equal",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "nsucceq",
+      "aliases": [],
+      "symbol": "⋡",
+      "name": "Does not succeed or equal",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    },
+    {
+      "code": "nsqsubseteq",
+      "aliases": [],
+      "symbol": "⋢",
+      "name": "Not square subset or equal",
+      "categoryId": "advanced-operators",
+      "rank": 3
+    }
+  ]
+}

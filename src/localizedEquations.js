@@ -1,5 +1,4 @@
-// GENERATED from the MathIntellisenseRN master + locale JSONs by
-// scripts/push-localized-equations-to-web.mjs. Do not edit by hand. Pilot data.
+// GENERATED from data/named-equations.{es,de,fr}.json by scripts/generateData.mjs. Do not edit by hand.
 
 export const localizedLocales = [
   {

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "locale": "fr",
+  "note": "Pilot draft for native review. `dictation` is a test-corpus utterance for engine localization — native phrasing, faithful to the master `unicodemath` (never the English string). Grouping uses explicit 'parenthèse ouvrante/fermante'. Note: binomial coefficient is 'parmi' while a fraction is 'sur', which disambiguates naturally. See docs/equation-dictation-localization.md.",
+  "equations": [
+    {
+      "id": 1019,
+      "name": "formule quadratique",
+      "aliases": ["racines de l'équation du second degré", "résolution du trinôme"],
+      "dictation": "iks égale parenthèse ouvrante moins bé plus ou moins racine carrée de parenthèse ouvrante bé au carré moins quatre fois a fois cé parenthèse fermante parenthèse fermante sur deux a"
+    },
+    {
+      "id": 1046,
+      "name": "théorème de Pythagore",
+      "aliases": ["a au carré plus bé au carré égale cé au carré"],
+      "dictation": "a au carré plus bé au carré égale cé au carré"
+    },
+    {
+      "id": 1041,
+      "name": "identité d'Euler",
+      "aliases": ["e puissance i pi plus un égale zéro"],
+      "dictation": "e puissance i fois pi plus un égale zéro"
+    },
+    {
+      "id": 1087,
+      "name": "théorème d'Al-Kashi",
+      "aliases": ["loi des cosinus"],
+      "dictation": "cé au carré égale a au carré plus bé au carré moins deux fois a fois bé fois cosinus de cé majuscule"
+    },
+    {
+      "id": 1050,
+      "name": "aire d'un cercle",
+      "aliases": ["surface du cercle"],
+      "dictation": "a égale pi fois erre au carré"
+    },
+    {
+      "id": 1273,
+      "name": "loi d'Ohm",
+      "aliases": ["vé égale i fois erre"],
+      "dictation": "vé égale i fois erre"
+    },
+    {
+      "id": 1269,
+      "name": "deuxième loi de Newton",
+      "aliases": ["principe fondamental de la dynamique", "force égale masse fois accélération"],
+      "dictation": "effe égale emme fois a"
+    },
+    {
+      "id": 1117,
+      "name": "théorème fondamental de l'analyse",
+      "aliases": ["théorème fondamental du calcul intégral"],
+      "dictation": "l'intégrale de a à bé de effe de iks dé iks égale effe majuscule de bé moins effe majuscule de a"
+    },
+    {
+      "id": 1047,
+      "name": "formule de la distance",
+      "aliases": ["distance entre deux points"],
+      "dictation": "dé égale racine carrée de parenthèse ouvrante parenthèse ouvrante iks indice deux moins iks indice un parenthèse fermante au carré plus parenthèse ouvrante i grec indice deux moins i grec indice un parenthèse fermante au carré parenthèse fermante"
+    },
+    {
+      "id": 1410,
+      "name": "intérêts composés",
+      "aliases": ["formule des intérêts composés"],
+      "dictation": "a égale pé fois parenthèse ouvrante un plus erre sur ène parenthèse fermante puissance ène fois té"
+    },
+    {
+      "id": 1166,
+      "name": "produit scalaire",
+      "aliases": ["produit point"],
+      "dictation": "a point bé égale norme de a fois norme de bé fois cosinus de thêta"
+    },
+    {
+      "id": 1024,
+      "name": "formule du binôme",
+      "aliases": ["binôme de Newton"],
+      "dictation": "parenthèse ouvrante a plus bé parenthèse fermante puissance ène égale la somme de ka égale zéro à ène de coefficient binomial ène parmi ka fois a puissance parenthèse ouvrante ène moins ka parenthèse fermante fois bé puissance ka"
+    },
+    {
+      "id": 1101,
+      "name": "règle de dérivation en chaîne",
+      "aliases": ["dérivée d'une fonction composée"],
+      "dictation": "dé i grec sur dé iks égale dé i grec sur dé u fois dé u sur dé iks"
+    },
+    {
+      "id": 1025,
+      "name": "série géométrique",
+      "aliases": ["somme d'une suite géométrique"],
+      "dictation": "esse indice ène égale parenthèse ouvrante a fois parenthèse ouvrante un moins erre puissance ène parenthèse fermante parenthèse fermante sur parenthèse ouvrante un moins erre parenthèse fermante"
+    },
+    {
+      "id": 1214,
+      "name": "écart-type de la population",
+      "aliases": ["écart-type populationnel"],
+      "dictation": "sigma égale racine carrée de parenthèse ouvrante un sur ène majuscule fois la somme de i égale un à ène majuscule de parenthèse ouvrante iks indice i moins mu parenthèse fermante au carré parenthèse fermante"
+    },
+    {
+      "id": 1136,
+      "name": "règle de L'Hôpital",
+      "aliases": ["règle de l'Hospital"],
+      "dictation": "la limite quand iks tend vers a de parenthèse ouvrante effe de iks sur gé de iks parenthèse fermante égale la limite quand iks tend vers a de parenthèse ouvrante effe prime de iks sur gé prime de iks parenthèse fermante"
+    },
+    {
+      "id": 1104,
+      "name": "règle de dérivation des puissances",
+      "aliases": ["dérivée d'une puissance"],
+      "dictation": "la dérivée par rapport à iks de crochet ouvrant iks puissance ène crochet fermant égale ène fois iks puissance parenthèse ouvrante ène moins un parenthèse fermante"
+    },
+    {
+      "id": 1211,
+      "name": "formule de Stirling",
+      "aliases": ["approximation de Stirling"],
+      "dictation": "factorielle de ène environ égale racine carrée de parenthèse ouvrante deux fois pi fois ène parenthèse fermante fois parenthèse ouvrante ène sur e parenthèse fermante puissance ène"
+    }
+  ]
+}

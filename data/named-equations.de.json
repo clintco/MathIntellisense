@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "locale": "de",
+  "note": "Pilot draft for native review. `dictation` is a test-corpus utterance for engine localization — native phrasing, faithful to the master `unicodemath` (never the English string). Grouping uses explicit 'Klammer auf/zu'. Note: binomial coefficient is 'über' while a fraction is 'durch', which disambiguates naturally. See docs/equation-dictation-localization.md.",
+  "equations": [
+    {
+      "id": 1019,
+      "name": "Mitternachtsformel",
+      "aliases": ["abc-Formel", "Lösungsformel für quadratische Gleichungen"],
+      "dictation": "iks gleich Klammer auf minus be plus minus Wurzel aus Klammer auf be Quadrat minus vier mal a mal ze Klammer zu Klammer zu durch zwei a"
+    },
+    {
+      "id": 1046,
+      "name": "Satz des Pythagoras",
+      "aliases": ["a Quadrat plus be Quadrat gleich ze Quadrat"],
+      "dictation": "a Quadrat plus be Quadrat gleich ze Quadrat"
+    },
+    {
+      "id": 1041,
+      "name": "eulersche Identität",
+      "aliases": ["e hoch i pi plus eins gleich null"],
+      "dictation": "e hoch i mal pi plus eins gleich null"
+    },
+    {
+      "id": 1087,
+      "name": "Kosinussatz",
+      "aliases": ["Kosinusregel"],
+      "dictation": "ze Quadrat gleich a Quadrat plus be Quadrat minus zwei mal a mal be mal Kosinus ze groß"
+    },
+    {
+      "id": 1050,
+      "name": "Kreisfläche",
+      "aliases": ["Flächeninhalt des Kreises"],
+      "dictation": "a gleich pi mal er Quadrat"
+    },
+    {
+      "id": 1273,
+      "name": "ohmsches Gesetz",
+      "aliases": ["vau gleich i mal er"],
+      "dictation": "vau gleich i mal er"
+    },
+    {
+      "id": 1269,
+      "name": "zweites newtonsches Gesetz",
+      "aliases": ["Grundgleichung der Mechanik", "Kraft gleich Masse mal Beschleunigung"],
+      "dictation": "ef gleich em mal a"
+    },
+    {
+      "id": 1117,
+      "name": "Hauptsatz der Differential- und Integralrechnung",
+      "aliases": ["Fundamentalsatz der Analysis"],
+      "dictation": "das Integral von a bis be über ef von iks de iks gleich ef groß von be minus ef groß von a"
+    },
+    {
+      "id": 1047,
+      "name": "Abstandsformel",
+      "aliases": ["Distanzformel"],
+      "dictation": "de gleich Wurzel aus Klammer auf Klammer auf iks Index zwei minus iks Index eins Klammer zu Quadrat plus Klammer auf üpsilon Index zwei minus üpsilon Index eins Klammer zu Quadrat Klammer zu"
+    },
+    {
+      "id": 1410,
+      "name": "Zinseszins",
+      "aliases": ["Zinseszinsformel"],
+      "dictation": "a gleich pe mal Klammer auf eins plus er durch en Klammer zu hoch en mal te"
+    },
+    {
+      "id": 1166,
+      "name": "Skalarprodukt",
+      "aliases": ["inneres Produkt", "Punktprodukt"],
+      "dictation": "a Punkt be gleich Betrag von a mal Betrag von be mal Kosinus theta"
+    },
+    {
+      "id": 1024,
+      "name": "binomischer Lehrsatz",
+      "aliases": ["binomische Formel"],
+      "dictation": "Klammer auf a plus be Klammer zu hoch en gleich die Summe von ka gleich null bis en über en über ka mal a hoch Klammer auf en minus ka Klammer zu mal be hoch ka"
+    },
+    {
+      "id": 1101,
+      "name": "Kettenregel",
+      "aliases": ["Ableitung einer verketteten Funktion"],
+      "dictation": "de üpsilon durch de iks gleich de üpsilon durch de u mal de u durch de iks"
+    },
+    {
+      "id": 1025,
+      "name": "geometrische Reihe",
+      "aliases": ["Summe einer geometrischen Folge"],
+      "dictation": "es Index en gleich Klammer auf a mal Klammer auf eins minus er hoch en Klammer zu Klammer zu durch Klammer auf eins minus er Klammer zu"
+    },
+    {
+      "id": 1214,
+      "name": "Standardabweichung der Grundgesamtheit",
+      "aliases": ["Populationsstandardabweichung"],
+      "dictation": "sigma gleich Wurzel aus Klammer auf eins durch en groß mal die Summe von i gleich eins bis en groß über Klammer auf iks Index i minus mü Klammer zu Quadrat Klammer zu"
+    },
+    {
+      "id": 1136,
+      "name": "Regel von de L'Hospital",
+      "aliases": ["l'Hospitalsche Regel"],
+      "dictation": "der Limes für iks gegen a von Klammer auf ef von iks durch ge von iks Klammer zu gleich der Limes für iks gegen a von Klammer auf ef Strich von iks durch ge Strich von iks Klammer zu"
+    },
+    {
+      "id": 1104,
+      "name": "Potenzregel",
+      "aliases": ["Ableitung einer Potenz"],
+      "dictation": "die Ableitung nach iks von eckige Klammer auf iks hoch en eckige Klammer zu gleich en mal iks hoch Klammer auf en minus eins Klammer zu"
+    },
+    {
+      "id": 1211,
+      "name": "stirlingsche Formel",
+      "aliases": ["Stirling-Näherung"],
+      "dictation": "en Fakultät ungefähr gleich Wurzel aus Klammer auf zwei mal pi mal en Klammer zu mal Klammer auf en durch e Klammer zu hoch en"
+    }
+  ]
+}

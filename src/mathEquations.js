@@ -1,5 +1,4 @@
-// GENERATED from the MathIntellisenseRN JSON master by scripts/push-equations-to-web.mjs.
-// Do not edit by hand.
+// GENERATED from data/named-equations.json by scripts/generateData.mjs. Do not edit by hand.
 
 export const mathEquations = [
   {
