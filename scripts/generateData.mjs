@@ -63,6 +63,7 @@ for (const { code } of LOCALES) {
       aliases: e.aliases ?? [],
       dictation: e.dictation ?? "",
       unicodemath: m.unicodemath ?? "",
+      domain: domainLabel.get(m.domainId) ?? m.domainId ?? "",
     };
   });
 }

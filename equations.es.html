@@ -17,7 +17,7 @@
       --accent2:  #9ece6a;
       --code-bg:  #1a1a2e;
       --row-alt:  #252535;
-      --bm-h:     0px;
+      --bm-h:     44px;
     }
 
     body {
@@ -198,241 +198,321 @@
     <a class="other" href="equations.html">English →</a>
     <a class="other" href="equations.de.html">Deutsch</a>
     <a class="other" href="equations.fr.html">Français</a>
-    <span class="counts">18 pilot equations</span>
-    <span class="updated">Last updated: Jun 27, 2026, 2:15 PM</span>
+    <span class="counts">18 equations across 8 domains</span>
+    <span class="updated">Last updated: Jun 27, 2026, 2:39 PM</span>
   </div>
 
+  <nav class="bookmarks" aria-label="Equation domains">
+    <div class="bm-row">
+      <span class="bm-section">Domains</span>
+      <div class="bm-pills"><a class="bm-pill bm-pill--eq" href="#eq-algebra-number-systems">Algebra &amp; Number Systems</a><a class="bm-pill bm-pill--eq" href="#eq-calculus-analysis">Calculus &amp; Analysis</a><a class="bm-pill bm-pill--eq" href="#eq-discrete-math-logic">Discrete Math &amp; Logic</a><a class="bm-pill bm-pill--eq" href="#eq-finance-economics">Finance &amp; Economics</a><a class="bm-pill bm-pill--eq" href="#eq-geometry-trigonometry">Geometry &amp; Trigonometry</a><a class="bm-pill bm-pill--eq" href="#eq-linear-algebra-abstract-algebra">Linear Algebra &amp; Abstract Algebra</a><a class="bm-pill bm-pill--eq" href="#eq-physics">Physics</a><a class="bm-pill bm-pill--eq" href="#eq-probability-statistics-data-science">Probability, Statistics &amp; Data Science</a></div>
+    </div>
+  </nav>
+
   <main>
-    <p class="pilot-note">Pilot localization for native-speaker review. The <strong>Dictation</strong>
+    <p class="pilot-note">Localization for native-speaker review. The <strong>Dictation</strong>
     column is the test corpus for engine localization — how a native speaker says the equation,
     faithful to the UnicodeMath. Names and dictation are model-generated drafts; please flag corrections.</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Equation (UnicodeMath)</th>
-          <th>Dictation</th>
-        </tr>
-      </thead>
-      <tbody>
+    
+  <h1 id="eq-algebra-number-systems">Algebra &amp; Number Systems</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Aliases</th>
+        <th>MathML</th>
+        <th>UnicodeMath</th>
+        <th>Dictation</th>
+      </tr>
+    </thead>
+    <tbody>
         <tr>
           <td>
             <div class="eq-name-loc">fórmula cuadrática</div>
             <div class="eq-name-en">quadratic formula</div>
-            <div class="eq-aliases">fórmula general; raíces de la ecuación de segundo grado</div>
           </td>
-          <td class="eq-math">
-            <math display="block"><mi>𝑥</mi><mo>=</mo><mfrac><mrow><mo>−</mo><mi>𝑏</mi><mo>±</mo><msqrt><msup><mi>𝑏</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>𝑎</mi><mi>𝑐</mi></msqrt></mrow><mrow><mn>2</mn><mi>𝑎</mi></mrow></mfrac></math>
-            <div class="eq-unicode"><code>𝑥=(-𝑏±√(𝑏²-4𝑎𝑐))/2𝑎</code></div>
-          </td>
+          <td class="eq-aliases">fórmula general; raíces de la ecuación de segundo grado</td>
+          <td class="eq-math"><math display="block"><mi>𝑥</mi><mo>=</mo><mfrac><mrow><mo>−</mo><mi>𝑏</mi><mo>±</mo><msqrt><msup><mi>𝑏</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>𝑎</mi><mi>𝑐</mi></msqrt></mrow><mrow><mn>2</mn><mi>𝑎</mi></mrow></mfrac></math></td>
+          <td class="eq-unicode"><code>𝑥=(-𝑏±√(𝑏²-4𝑎𝑐))/2𝑎</code></td>
           <td class="eq-dict">equis igual a abre paréntesis menos be más menos raíz cuadrada de abre paréntesis be al cuadrado menos cuatro por a por ce cierra paréntesis cierra paréntesis partido por dos a</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="eq-name-loc">teorema de Pitágoras</div>
-            <div class="eq-name-en">Pythagorean theorem</div>
-            <div class="eq-aliases">a al cuadrado más be al cuadrado igual a ce al cuadrado</div>
-          </td>
-          <td class="eq-math">
-            <math display="block"><msup><mi>𝑎</mi><mn>2</mn></msup><mo>+</mo><msup><mi>𝑏</mi><mn>2</mn></msup><mo>=</mo><msup><mi>𝑐</mi><mn>2</mn></msup></math>
-            <div class="eq-unicode"><code>𝑎²+𝑏²=𝑐²</code></div>
-          </td>
-          <td class="eq-dict">a al cuadrado más be al cuadrado igual a ce al cuadrado</td>
         </tr>
         <tr>
           <td>
             <div class="eq-name-loc">identidad de Euler</div>
             <div class="eq-name-en">Euler's identity</div>
-            <div class="eq-aliases">e elevado a i pi más uno igual a cero</div>
           </td>
-          <td class="eq-math">
-            <math display="block"><msup><mi>𝑒</mi><mrow><mi>𝑖</mi><mi>𝜋</mi></mrow></msup><mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn></math>
-            <div class="eq-unicode"><code>𝑒^𝑖𝜋+1=0</code></div>
-          </td>
+          <td class="eq-aliases">e elevado a i pi más uno igual a cero</td>
+          <td class="eq-math"><math display="block"><msup><mi>𝑒</mi><mrow><mi>𝑖</mi><mi>𝜋</mi></mrow></msup><mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn></math></td>
+          <td class="eq-unicode"><code>𝑒^𝑖𝜋+1=0</code></td>
           <td class="eq-dict">e elevado a i por pi más uno igual a cero</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="eq-name-loc">teorema del coseno</div>
-            <div class="eq-name-en">law of cosines</div>
-            <div class="eq-aliases">ley de cosenos</div>
-          </td>
-          <td class="eq-math">
-            <math display="block"><msup><mi>𝑐</mi><mn>2</mn></msup><mo>=</mo><msup><mi>𝑎</mi><mn>2</mn></msup><mo>+</mo><msup><mi>𝑏</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>𝑎</mi><mi>𝑏</mi><mrow intent=":function"><mi>cos</mi><mo>⁡</mo><mi>𝐶</mi></mrow></math>
-            <div class="eq-unicode"><code>𝑐²=𝑎²+𝑏²-2𝑎𝑏 cos 𝐶</code></div>
-          </td>
-          <td class="eq-dict">ce al cuadrado igual a a al cuadrado más be al cuadrado menos dos por a por be por coseno de ce mayúscula</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="eq-name-loc">área del círculo</div>
-            <div class="eq-name-en">area of a circle</div>
-            <div class="eq-aliases">superficie del círculo</div>
-          </td>
-          <td class="eq-math">
-            <math display="block"><mi>𝐴</mi><mo>=</mo><mi>𝜋</mi><msup><mi>𝑟</mi><mn>2</mn></msup></math>
-            <div class="eq-unicode"><code>𝐴=𝜋𝑟²</code></div>
-          </td>
-          <td class="eq-dict">a igual a pi por erre al cuadrado</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="eq-name-loc">ley de Ohm</div>
-            <div class="eq-name-en">Ohm's law</div>
-            <div class="eq-aliases">uve igual a i por erre</div>
-          </td>
-          <td class="eq-math">
-            <math display="block"><mi>𝑉</mi><mo>=</mo><mi>𝐼</mi><mi>𝑅</mi></math>
-            <div class="eq-unicode"><code>𝑉=𝐼𝑅</code></div>
-          </td>
-          <td class="eq-dict">uve igual a i por erre</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="eq-name-loc">segunda ley de Newton</div>
-            <div class="eq-name-en">Newton's second law</div>
-            <div class="eq-aliases">fuerza igual a masa por aceleración; efe igual a eme por a</div>
-          </td>
-          <td class="eq-math">
-            <math display="block"><mi>𝐹</mi><mo>=</mo><mi>𝑚</mi><mi>𝑎</mi></math>
-            <div class="eq-unicode"><code>𝐹=𝑚𝑎</code></div>
-          </td>
-          <td class="eq-dict">efe igual a eme por a</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="eq-name-loc">teorema fundamental del cálculo</div>
-            <div class="eq-name-en">fundamental theorem of calculus</div>
-            <div class="eq-aliases">TFC</div>
-          </td>
-          <td class="eq-math">
-            <math display="block"><mrow intent=":nary(𝑎,𝑏,$naryand)"><msubsup><mo>∫</mo><mi>𝑎</mi><mi>𝑏</mi></msubsup><mrow arg="naryand"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mrow><mo>=</mo><mi>𝐹</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑏</mi><mo>)</mo></mrow><mo>−</mo><mi>𝐹</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑎</mi><mo>)</mo></mrow></math>
-            <div class="eq-unicode"><code>∫_𝑎^𝑏 𝑓(𝑥)ⅆ𝑥=𝐹(𝑏)-𝐹(𝑎)</code></div>
-          </td>
-          <td class="eq-dict">la integral de a a be de efe de equis diferencial de equis igual a efe mayúscula de be menos efe mayúscula de a</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="eq-name-loc">fórmula de la distancia</div>
-            <div class="eq-name-en">distance formula</div>
-            <div class="eq-aliases">distancia entre dos puntos</div>
-          </td>
-          <td class="eq-math">
-            <math display="block"><mi>𝑑</mi><mo>=</mo><msqrt><msup><mrow intent=":fenced"><mo>(</mo><mrow><msub><mi>𝑥</mi><mn>2</mn></msub><mo>−</mo><msub><mi>𝑥</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow intent=":fenced"><mo>(</mo><mrow><msub><mi>𝑦</mi><mn>2</mn></msub><mo>−</mo><msub><mi>𝑦</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mn>2</mn></msup></msqrt></math>
-            <div class="eq-unicode"><code>𝑑=√((𝑥₂-𝑥₁)²+(𝑦₂-𝑦₁)²)</code></div>
-          </td>
-          <td class="eq-dict">de igual a raíz cuadrada de abre paréntesis abre paréntesis equis sub dos menos equis sub uno cierra paréntesis al cuadrado más abre paréntesis i griega sub dos menos i griega sub uno cierra paréntesis al cuadrado cierra paréntesis</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="eq-name-loc">interés compuesto</div>
-            <div class="eq-name-en">compound interest</div>
-            <div class="eq-aliases">fórmula del interés compuesto</div>
-          </td>
-          <td class="eq-math">
-            <math display="block"><mi>𝐴</mi><mo>=</mo><mi>𝑃</mi><msup><mrow intent=":fenced"><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>𝑟</mi><mi>𝑛</mi></mfrac></mrow><mo>)</mo></mrow><mrow><mi>𝑛</mi><mi>𝑡</mi></mrow></msup></math>
-            <div class="eq-unicode"><code>𝐴=𝑃(1+𝑟/𝑛)^𝑛𝑡</code></div>
-          </td>
-          <td class="eq-dict">a igual a pe por abre paréntesis uno más erre partido por ene cierra paréntesis elevado a ene por te</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="eq-name-loc">producto escalar</div>
-            <div class="eq-name-en">dot product</div>
-            <div class="eq-aliases">producto punto</div>
-          </td>
-          <td class="eq-math">
-            <math display="block"><mi>𝐚</mi><mo>⋅</mo><mi>𝐛</mi><mo>=</mo><mrow intent="absolute-value(𝐚)"><mo>|</mo><mi>𝐚</mi><mo>|</mo></mrow><mrow intent="absolute-value(𝐛)"><mo>|</mo><mi>𝐛</mi><mo>|</mo></mrow><mrow intent=":function"><mi>cos</mi><mo>⁡</mo><mi>𝜃</mi></mrow></math>
-            <div class="eq-unicode"><code>𝐚⋅𝐛=|𝐚||𝐛|cos⁡𝜃</code></div>
-          </td>
-          <td class="eq-dict">a punto be igual a el módulo de a por el módulo de be por coseno de theta</td>
         </tr>
         <tr>
           <td>
             <div class="eq-name-loc">teorema del binomio</div>
             <div class="eq-name-en">binomial theorem</div>
-            <div class="eq-aliases">binomio de Newton</div>
           </td>
-          <td class="eq-math">
-            <math display="block"><msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑎</mi><mo>+</mo><mi>𝑏</mi></mrow><mo>)</mo></mrow><mi>𝑛</mi></msup><mo>=</mo><mrow intent=":nary($l,𝑛,$naryand)"><msubsup><mo>∑</mo><mrow arg="l"><mi>𝑘</mi><mo>=</mo><mn>0</mn></mrow><mi>𝑛</mi></msubsup><mrow arg="naryand"><mrow intent=":fenced"><mo>(</mo><mfrac linethickness="0"><mi>𝑛</mi><mi>𝑘</mi></mfrac><mo>)</mo></mrow></mrow></mrow><msup><mi>𝑎</mi><mrow><mi>𝑛</mi><mo>−</mo><mi>𝑘</mi></mrow></msup><msup><mi>𝑏</mi><mi>𝑘</mi></msup></math>
-            <div class="eq-unicode"><code>(𝑎+𝑏)^𝑛=∑_(𝑘=0)^𝑛 (𝑛¦𝑘) 𝑎^(𝑛-𝑘) 𝑏^𝑘</code></div>
-          </td>
+          <td class="eq-aliases">binomio de Newton</td>
+          <td class="eq-math"><math display="block"><msup><mrow intent=":fenced"><mo>(</mo><mrow><mi>𝑎</mi><mo>+</mo><mi>𝑏</mi></mrow><mo>)</mo></mrow><mi>𝑛</mi></msup><mo>=</mo><mrow intent=":nary($l,𝑛,$naryand)"><msubsup><mo>∑</mo><mrow arg="l"><mi>𝑘</mi><mo>=</mo><mn>0</mn></mrow><mi>𝑛</mi></msubsup><mrow arg="naryand"><mrow intent=":fenced"><mo>(</mo><mfrac linethickness="0"><mi>𝑛</mi><mi>𝑘</mi></mfrac><mo>)</mo></mrow></mrow></mrow><msup><mi>𝑎</mi><mrow><mi>𝑛</mi><mo>−</mo><mi>𝑘</mi></mrow></msup><msup><mi>𝑏</mi><mi>𝑘</mi></msup></math></td>
+          <td class="eq-unicode"><code>(𝑎+𝑏)^𝑛=∑_(𝑘=0)^𝑛 (𝑛¦𝑘) 𝑎^(𝑛-𝑘) 𝑏^𝑘</code></td>
           <td class="eq-dict">abre paréntesis a más be cierra paréntesis elevado a ene igual a el sumatorio desde ka igual a cero hasta ene de número combinatorio ene sobre ka por a elevado a abre paréntesis ene menos ka cierra paréntesis por be elevado a ka</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="eq-name-loc">regla de la cadena</div>
-            <div class="eq-name-en">chain rule</div>
-            <div class="eq-aliases">derivada de una función compuesta</div>
-          </td>
-          <td class="eq-math">
-            <math display="block"><mfrac intent="derivative(1,𝑦,𝑥)"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑦</mi></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mfrac><mo>=</mo><mfrac intent="derivative(1,𝑦,𝑢)"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑦</mi></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑢</mi></mrow></mfrac><mo>⋅</mo><mfrac intent="derivative(1,𝑢,𝑥)"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑢</mi></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mfrac></math>
-            <div class="eq-unicode"><code>ⅆ𝑦/ⅆ𝑥=ⅆ𝑦/ⅆ𝑢⋅ⅆ𝑢/ⅆ𝑥</code></div>
-          </td>
-          <td class="eq-dict">de i griega partido por de equis igual a de i griega partido por de u por de u partido por de equis</td>
         </tr>
         <tr>
           <td>
             <div class="eq-name-loc">serie geométrica</div>
             <div class="eq-name-en">geometric series</div>
-            <div class="eq-aliases">suma de una progresión geométrica</div>
           </td>
-          <td class="eq-math">
-            <math display="block"><msub><mi>𝑆</mi><mi>𝑛</mi></msub><mo>=</mo><mfrac><mrow><mi>𝑎</mi><mrow intent=":fenced"><mo>(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>𝑟</mi><mi>𝑛</mi></msup></mrow><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>−</mo><mi>𝑟</mi></mrow></mfrac></math>
-            <div class="eq-unicode"><code>𝑆_𝑛=𝑎(1-𝑟^𝑛)/(1-𝑟)</code></div>
-          </td>
+          <td class="eq-aliases">suma de una progresión geométrica</td>
+          <td class="eq-math"><math display="block"><msub><mi>𝑆</mi><mi>𝑛</mi></msub><mo>=</mo><mfrac><mrow><mi>𝑎</mi><mrow intent=":fenced"><mo>(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi>𝑟</mi><mi>𝑛</mi></msup></mrow><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>−</mo><mi>𝑟</mi></mrow></mfrac></math></td>
+          <td class="eq-unicode"><code>𝑆_𝑛=𝑎(1-𝑟^𝑛)/(1-𝑟)</code></td>
           <td class="eq-dict">ese sub ene igual a abre paréntesis a por abre paréntesis uno menos erre elevado a ene cierra paréntesis cierra paréntesis partido por abre paréntesis uno menos erre cierra paréntesis</td>
+        </tr>
+    </tbody>
+  </table>
+
+  <h1 id="eq-calculus-analysis">Calculus &amp; Analysis</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Aliases</th>
+        <th>MathML</th>
+        <th>UnicodeMath</th>
+        <th>Dictation</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+            <div class="eq-name-loc">teorema fundamental del cálculo</div>
+            <div class="eq-name-en">fundamental theorem of calculus</div>
+          </td>
+          <td class="eq-aliases">TFC</td>
+          <td class="eq-math"><math display="block"><mrow intent=":nary(𝑎,𝑏,$naryand)"><msubsup><mo>∫</mo><mi>𝑎</mi><mi>𝑏</mi></msubsup><mrow arg="naryand"><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mrow><mo>=</mo><mi>𝐹</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑏</mi><mo>)</mo></mrow><mo>−</mo><mi>𝐹</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑎</mi><mo>)</mo></mrow></math></td>
+          <td class="eq-unicode"><code>∫_𝑎^𝑏 𝑓(𝑥)ⅆ𝑥=𝐹(𝑏)-𝐹(𝑎)</code></td>
+          <td class="eq-dict">la integral de a a be de efe de equis diferencial de equis igual a efe mayúscula de be menos efe mayúscula de a</td>
         </tr>
         <tr>
           <td>
-            <div class="eq-name-loc">desviación típica poblacional</div>
-            <div class="eq-name-en">population standard deviation</div>
-            <div class="eq-aliases">desviación estándar de la población</div>
+            <div class="eq-name-loc">regla de la cadena</div>
+            <div class="eq-name-en">chain rule</div>
           </td>
-          <td class="eq-math">
-            <math display="block"><mi>𝜎</mi><mo>=</mo><msqrt><mfrac><mn>1</mn><mi>𝑁</mi></mfrac><mrow intent=":nary($l,𝑁,$naryand)"><msubsup><mo>∑</mo><mrow arg="l"><mi>𝑖</mi><mo>=</mo><mn>1</mn></mrow><mi>𝑁</mi></msubsup><mrow arg="naryand"><msup><mrow intent=":fenced"><mo>(</mo><mrow><msub><mi>𝑥</mi><mi>𝑖</mi></msub><mo>−</mo><mi>𝜇</mi></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow></mrow></msqrt></math>
-            <div class="eq-unicode"><code>𝜎=√(1/𝑁 ∑_(𝑖=1)^𝑁 (𝑥ᵢ-𝜇)²)</code></div>
-          </td>
-          <td class="eq-dict">sigma igual a raíz cuadrada de abre paréntesis uno partido por ene mayúscula por el sumatorio desde i igual a uno hasta ene mayúscula de abre paréntesis equis sub i menos mu cierra paréntesis al cuadrado cierra paréntesis</td>
+          <td class="eq-aliases">derivada de una función compuesta</td>
+          <td class="eq-math"><math display="block"><mfrac intent="derivative(1,𝑦,𝑥)"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑦</mi></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mfrac><mo>=</mo><mfrac intent="derivative(1,𝑦,𝑢)"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑦</mi></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑢</mi></mrow></mfrac><mo>⋅</mo><mfrac intent="derivative(1,𝑢,𝑥)"><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑢</mi></mrow><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mfrac></math></td>
+          <td class="eq-unicode"><code>ⅆ𝑦/ⅆ𝑥=ⅆ𝑦/ⅆ𝑢⋅ⅆ𝑢/ⅆ𝑥</code></td>
+          <td class="eq-dict">de i griega partido por de equis igual a de i griega partido por de u por de u partido por de equis</td>
         </tr>
         <tr>
           <td>
             <div class="eq-name-loc">regla de L'Hôpital</div>
             <div class="eq-name-en">L'Hopital's rule</div>
-            <div class="eq-aliases">regla de l'Hôpital</div>
           </td>
-          <td class="eq-math">
-            <math display="block"><mrow intent=":function"><msub><mi>lim</mi><mrow><mi>𝑥</mi><mo stretchy="true">→</mo><mi>𝑎</mi></mrow></msub><mo>⁡</mo><mrow intent=":fenced"><mo></mo><mfrac><mrow><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow><mrow><mi>𝑔</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></mfrac><mo></mo></mrow></mrow><mo>=</mo><mrow intent=":function"><msub><mi>lim</mi><mrow><mi>𝑥</mi><mo stretchy="true">→</mo><mi>𝑎</mi></mrow></msub><mo>⁡</mo><mrow intent=":fenced"><mo></mo><mfrac><mrow><msup><mi>𝑓</mi><mo>′</mo></msup><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow><mrow><msup><mi>𝑔</mi><mo>′</mo></msup><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></mfrac><mo></mo></mrow></mrow></math>
-            <div class="eq-unicode"><code>lim_(𝑥→𝑎) 〖𝑓(𝑥)/𝑔(𝑥)〗=lim_(𝑥→𝑎) 〖𝑓'(𝑥)/𝑔'(𝑥)〗</code></div>
-          </td>
+          <td class="eq-aliases">regla de l'Hôpital</td>
+          <td class="eq-math"><math display="block"><mrow intent=":function"><msub><mi>lim</mi><mrow><mi>𝑥</mi><mo stretchy="true">→</mo><mi>𝑎</mi></mrow></msub><mo>⁡</mo><mrow intent=":fenced"><mo></mo><mfrac><mrow><mi>𝑓</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow><mrow><mi>𝑔</mi><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></mfrac><mo></mo></mrow></mrow><mo>=</mo><mrow intent=":function"><msub><mi>lim</mi><mrow><mi>𝑥</mi><mo stretchy="true">→</mo><mi>𝑎</mi></mrow></msub><mo>⁡</mo><mrow intent=":fenced"><mo></mo><mfrac><mrow><msup><mi>𝑓</mi><mo>′</mo></msup><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow><mrow><msup><mi>𝑔</mi><mo>′</mo></msup><mrow intent=":fenced"><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow></mfrac><mo></mo></mrow></mrow></math></td>
+          <td class="eq-unicode"><code>lim_(𝑥→𝑎) 〖𝑓(𝑥)/𝑔(𝑥)〗=lim_(𝑥→𝑎) 〖𝑓'(𝑥)/𝑔'(𝑥)〗</code></td>
           <td class="eq-dict">el límite cuando equis tiende a a de abre paréntesis efe de equis partido por ge de equis cierra paréntesis igual a el límite cuando equis tiende a a de abre paréntesis efe prima de equis partido por ge prima de equis cierra paréntesis</td>
         </tr>
         <tr>
           <td>
             <div class="eq-name-loc">regla de la potencia</div>
             <div class="eq-name-en">power rule for derivatives</div>
-            <div class="eq-aliases">derivada de una potencia</div>
           </td>
-          <td class="eq-math">
-            <math display="block"><mfrac intent="derivative(1,$f,𝑥)"><mi intent="ⅆ">𝑑</mi><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mfrac><mrow arg="f"><mrow intent=":fenced"><mo>[</mo><msup><mi>𝑥</mi><mi>𝑛</mi></msup><mo>]</mo></mrow></mrow><mo>=</mo><mi>𝑛</mi><msup><mi>𝑥</mi><mrow><mi>𝑛</mi><mo>−</mo><mn>1</mn></mrow></msup></math>
-            <div class="eq-unicode"><code>ⅆ/ⅆ𝑥 [𝑥^𝑛]=𝑛𝑥^(𝑛-1)</code></div>
-          </td>
+          <td class="eq-aliases">derivada de una potencia</td>
+          <td class="eq-math"><math display="block"><mfrac intent="derivative(1,$f,𝑥)"><mi intent="ⅆ">𝑑</mi><mrow><mi intent="ⅆ">𝑑</mi><mi>𝑥</mi></mrow></mfrac><mrow arg="f"><mrow intent=":fenced"><mo>[</mo><msup><mi>𝑥</mi><mi>𝑛</mi></msup><mo>]</mo></mrow></mrow><mo>=</mo><mi>𝑛</mi><msup><mi>𝑥</mi><mrow><mi>𝑛</mi><mo>−</mo><mn>1</mn></mrow></msup></math></td>
+          <td class="eq-unicode"><code>ⅆ/ⅆ𝑥 [𝑥^𝑛]=𝑛𝑥^(𝑛-1)</code></td>
           <td class="eq-dict">la derivada respecto a equis de abre corchete equis elevado a ene cierra corchete igual a ene por equis elevado a abre paréntesis ene menos uno cierra paréntesis</td>
         </tr>
+    </tbody>
+  </table>
+
+  <h1 id="eq-discrete-math-logic">Discrete Math &amp; Logic</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Aliases</th>
+        <th>MathML</th>
+        <th>UnicodeMath</th>
+        <th>Dictation</th>
+      </tr>
+    </thead>
+    <tbody>
         <tr>
           <td>
             <div class="eq-name-loc">aproximación de Stirling</div>
             <div class="eq-name-en">Stirling's approximation</div>
-            <div class="eq-aliases">fórmula de Stirling</div>
           </td>
-          <td class="eq-math">
-            <math display="block"><mi>𝑛</mi><mo>!</mo><mo>≈</mo><msqrt><mn>2</mn><mi>𝜋</mi><mi>𝑛</mi></msqrt><msup><mrow intent=":fenced"><mo>(</mo><mfrac><mi>𝑛</mi><mi>𝑒</mi></mfrac><mo>)</mo></mrow><mi>𝑛</mi></msup></math>
-            <div class="eq-unicode"><code>𝑛!≈√2𝜋𝑛 (𝑛/𝑒)^𝑛</code></div>
-          </td>
+          <td class="eq-aliases">fórmula de Stirling</td>
+          <td class="eq-math"><math display="block"><mi>𝑛</mi><mo>!</mo><mo>≈</mo><msqrt><mn>2</mn><mi>𝜋</mi><mi>𝑛</mi></msqrt><msup><mrow intent=":fenced"><mo>(</mo><mfrac><mi>𝑛</mi><mi>𝑒</mi></mfrac><mo>)</mo></mrow><mi>𝑛</mi></msup></math></td>
+          <td class="eq-unicode"><code>𝑛!≈√2𝜋𝑛 (𝑛/𝑒)^𝑛</code></td>
           <td class="eq-dict">ene factorial es aproximadamente igual a raíz cuadrada de abre paréntesis dos por pi por ene cierra paréntesis por abre paréntesis ene partido por e cierra paréntesis elevado a ene</td>
         </tr>
-      </tbody>
-    </table>
+    </tbody>
+  </table>
+
+  <h1 id="eq-finance-economics">Finance &amp; Economics</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Aliases</th>
+        <th>MathML</th>
+        <th>UnicodeMath</th>
+        <th>Dictation</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+            <div class="eq-name-loc">interés compuesto</div>
+            <div class="eq-name-en">compound interest</div>
+          </td>
+          <td class="eq-aliases">fórmula del interés compuesto</td>
+          <td class="eq-math"><math display="block"><mi>𝐴</mi><mo>=</mo><mi>𝑃</mi><msup><mrow intent=":fenced"><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>𝑟</mi><mi>𝑛</mi></mfrac></mrow><mo>)</mo></mrow><mrow><mi>𝑛</mi><mi>𝑡</mi></mrow></msup></math></td>
+          <td class="eq-unicode"><code>𝐴=𝑃(1+𝑟/𝑛)^𝑛𝑡</code></td>
+          <td class="eq-dict">a igual a pe por abre paréntesis uno más erre partido por ene cierra paréntesis elevado a ene por te</td>
+        </tr>
+    </tbody>
+  </table>
+
+  <h1 id="eq-geometry-trigonometry">Geometry &amp; Trigonometry</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Aliases</th>
+        <th>MathML</th>
+        <th>UnicodeMath</th>
+        <th>Dictation</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+            <div class="eq-name-loc">teorema de Pitágoras</div>
+            <div class="eq-name-en">Pythagorean theorem</div>
+          </td>
+          <td class="eq-aliases">a al cuadrado más be al cuadrado igual a ce al cuadrado</td>
+          <td class="eq-math"><math display="block"><msup><mi>𝑎</mi><mn>2</mn></msup><mo>+</mo><msup><mi>𝑏</mi><mn>2</mn></msup><mo>=</mo><msup><mi>𝑐</mi><mn>2</mn></msup></math></td>
+          <td class="eq-unicode"><code>𝑎²+𝑏²=𝑐²</code></td>
+          <td class="eq-dict">a al cuadrado más be al cuadrado igual a ce al cuadrado</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">teorema del coseno</div>
+            <div class="eq-name-en">law of cosines</div>
+          </td>
+          <td class="eq-aliases">ley de cosenos</td>
+          <td class="eq-math"><math display="block"><msup><mi>𝑐</mi><mn>2</mn></msup><mo>=</mo><msup><mi>𝑎</mi><mn>2</mn></msup><mo>+</mo><msup><mi>𝑏</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>𝑎</mi><mi>𝑏</mi><mrow intent=":function"><mi>cos</mi><mo>⁡</mo><mi>𝐶</mi></mrow></math></td>
+          <td class="eq-unicode"><code>𝑐²=𝑎²+𝑏²-2𝑎𝑏 cos 𝐶</code></td>
+          <td class="eq-dict">ce al cuadrado igual a a al cuadrado más be al cuadrado menos dos por a por be por coseno de ce mayúscula</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">área del círculo</div>
+            <div class="eq-name-en">area of a circle</div>
+          </td>
+          <td class="eq-aliases">superficie del círculo</td>
+          <td class="eq-math"><math display="block"><mi>𝐴</mi><mo>=</mo><mi>𝜋</mi><msup><mi>𝑟</mi><mn>2</mn></msup></math></td>
+          <td class="eq-unicode"><code>𝐴=𝜋𝑟²</code></td>
+          <td class="eq-dict">a igual a pi por erre al cuadrado</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">fórmula de la distancia</div>
+            <div class="eq-name-en">distance formula</div>
+          </td>
+          <td class="eq-aliases">distancia entre dos puntos</td>
+          <td class="eq-math"><math display="block"><mi>𝑑</mi><mo>=</mo><msqrt><msup><mrow intent=":fenced"><mo>(</mo><mrow><msub><mi>𝑥</mi><mn>2</mn></msub><mo>−</mo><msub><mi>𝑥</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow intent=":fenced"><mo>(</mo><mrow><msub><mi>𝑦</mi><mn>2</mn></msub><mo>−</mo><msub><mi>𝑦</mi><mn>1</mn></msub></mrow><mo>)</mo></mrow><mn>2</mn></msup></msqrt></math></td>
+          <td class="eq-unicode"><code>𝑑=√((𝑥₂-𝑥₁)²+(𝑦₂-𝑦₁)²)</code></td>
+          <td class="eq-dict">de igual a raíz cuadrada de abre paréntesis abre paréntesis equis sub dos menos equis sub uno cierra paréntesis al cuadrado más abre paréntesis i griega sub dos menos i griega sub uno cierra paréntesis al cuadrado cierra paréntesis</td>
+        </tr>
+    </tbody>
+  </table>
+
+  <h1 id="eq-linear-algebra-abstract-algebra">Linear Algebra &amp; Abstract Algebra</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Aliases</th>
+        <th>MathML</th>
+        <th>UnicodeMath</th>
+        <th>Dictation</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+            <div class="eq-name-loc">producto escalar</div>
+            <div class="eq-name-en">dot product</div>
+          </td>
+          <td class="eq-aliases">producto punto</td>
+          <td class="eq-math"><math display="block"><mi>𝐚</mi><mo>⋅</mo><mi>𝐛</mi><mo>=</mo><mrow intent="absolute-value(𝐚)"><mo>|</mo><mi>𝐚</mi><mo>|</mo></mrow><mrow intent="absolute-value(𝐛)"><mo>|</mo><mi>𝐛</mi><mo>|</mo></mrow><mrow intent=":function"><mi>cos</mi><mo>⁡</mo><mi>𝜃</mi></mrow></math></td>
+          <td class="eq-unicode"><code>𝐚⋅𝐛=|𝐚||𝐛|cos⁡𝜃</code></td>
+          <td class="eq-dict">a punto be igual a el módulo de a por el módulo de be por coseno de theta</td>
+        </tr>
+    </tbody>
+  </table>
+
+  <h1 id="eq-physics">Physics</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Aliases</th>
+        <th>MathML</th>
+        <th>UnicodeMath</th>
+        <th>Dictation</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+            <div class="eq-name-loc">ley de Ohm</div>
+            <div class="eq-name-en">Ohm's law</div>
+          </td>
+          <td class="eq-aliases">uve igual a i por erre</td>
+          <td class="eq-math"><math display="block"><mi>𝑉</mi><mo>=</mo><mi>𝐼</mi><mi>𝑅</mi></math></td>
+          <td class="eq-unicode"><code>𝑉=𝐼𝑅</code></td>
+          <td class="eq-dict">uve igual a i por erre</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="eq-name-loc">segunda ley de Newton</div>
+            <div class="eq-name-en">Newton's second law</div>
+          </td>
+          <td class="eq-aliases">fuerza igual a masa por aceleración; efe igual a eme por a</td>
+          <td class="eq-math"><math display="block"><mi>𝐹</mi><mo>=</mo><mi>𝑚</mi><mi>𝑎</mi></math></td>
+          <td class="eq-unicode"><code>𝐹=𝑚𝑎</code></td>
+          <td class="eq-dict">efe igual a eme por a</td>
+        </tr>
+    </tbody>
+  </table>
+
+  <h1 id="eq-probability-statistics-data-science">Probability, Statistics &amp; Data Science</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Aliases</th>
+        <th>MathML</th>
+        <th>UnicodeMath</th>
+        <th>Dictation</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+            <div class="eq-name-loc">desviación típica poblacional</div>
+            <div class="eq-name-en">population standard deviation</div>
+          </td>
+          <td class="eq-aliases">desviación estándar de la población</td>
+          <td class="eq-math"><math display="block"><mi>𝜎</mi><mo>=</mo><msqrt><mfrac><mn>1</mn><mi>𝑁</mi></mfrac><mrow intent=":nary($l,𝑁,$naryand)"><msubsup><mo>∑</mo><mrow arg="l"><mi>𝑖</mi><mo>=</mo><mn>1</mn></mrow><mi>𝑁</mi></msubsup><mrow arg="naryand"><msup><mrow intent=":fenced"><mo>(</mo><mrow><msub><mi>𝑥</mi><mi>𝑖</mi></msub><mo>−</mo><mi>𝜇</mi></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow></mrow></msqrt></math></td>
+          <td class="eq-unicode"><code>𝜎=√(1/𝑁 ∑_(𝑖=1)^𝑁 (𝑥ᵢ-𝜇)²)</code></td>
+          <td class="eq-dict">sigma igual a raíz cuadrada de abre paréntesis uno partido por ene mayúscula por el sumatorio desde i igual a uno hasta ene mayúscula de abre paréntesis equis sub i menos mu cierra paréntesis al cuadrado cierra paréntesis</td>
+        </tr>
+    </tbody>
+  </table>
   </main>
 
 </body>

@@ -328,37 +328,69 @@ function equationSection(domain) {
 // Timestamp shown top-right on each page (and written to src/lastUpdated.js for the app).
 const lastUpdated = new Date().toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" });
 
-// ── Localized validation pages (pilot) ───────────────────────────────────────
+// ── Localized validation pages ───────────────────────────────────────────────
+// Same column layout as equations.html (Name | Aliases | MathML | UnicodeMath),
+// with Dictation replacing Description and the localized name carrying its English
+// name as a sub-label for reviewers. Grouped by domain with the bookmarks bar.
 
-function localizedRows(items) {
-  return items.map(e => `
+function localizedEquationSection(domain, items) {
+  const rows = items.map(e => `
         <tr>
           <td>
             <div class="eq-name-loc">${esc(e.name)}</div>
             <div class="eq-name-en">${esc(e.englishName)}</div>
-            ${e.aliases && e.aliases.length ? `<div class="eq-aliases">${esc(e.aliases.join("; "))}</div>` : ""}
           </td>
-          <td class="eq-math">
-            ${equationMathML(e)}
-            <div class="eq-unicode"><code>${esc(e.unicodemath)}</code></div>
-          </td>
+          <td class="eq-aliases">${esc((e.aliases || []).join("; "))}</td>
+          <td class="eq-math">${equationMathML(e)}</td>
+          <td class="eq-unicode"><code>${esc(e.unicodemath)}</code></td>
           <td class="eq-dict">${esc(e.dictation)}</td>
         </tr>`).join("");
+
+  return `
+  <h1 id="eq-${slug(domain)}">${esc(domain)}</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Aliases</th>
+        <th>MathML</th>
+        <th>UnicodeMath</th>
+        <th>Dictation</th>
+      </tr>
+    </thead>
+    <tbody>${rows}
+    </tbody>
+  </table>`;
 }
 
 function languagePage(locale) {
   const items = localizedEquations[locale.code] || [];
+
+  // Group by domain, preserving master order within each domain.
+  const byDomain = new Map();
+  for (const e of items) {
+    const d = e.domain || "Other";
+    if (!byDomain.has(d)) byDomain.set(d, []);
+    byDomain.get(d).push(e);
+  }
+  const domains = [...byDomain.keys()].sort((a, b) => a.localeCompare(b));
+
+  const pills = domains
+    .map(d => `<a class="bm-pill bm-pill--eq" href="#eq-${slug(d)}">${esc(d)}</a>`)
+    .join("");
+
   const otherLinks = localizedLocales
     .filter(l => l.code !== locale.code)
     .map(l => `<a class="other" href="equations.${l.code}.html">${esc(l.label)}</a>`)
     .join("\n    ");
+
   return `<!DOCTYPE html>
 <html lang="${locale.code}">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Math Reference — Equations (${esc(locale.label)})</title>
-  <style>${sharedStyles(0)}
+  <style>${sharedStyles(BM_H)}
   </style>
 </head>
 <body>
@@ -368,25 +400,22 @@ function languagePage(locale) {
     <a class="back" href="./">← Math Intellisense</a>
     <a class="other" href="equations.html">English →</a>
     ${otherLinks}
-    <span class="counts">${items.length} pilot equations</span>
+    <span class="counts">${items.length} equations across ${domains.length} domains</span>
     <span class="updated">Last updated: ${lastUpdated}</span>
   </div>
 
+  <nav class="bookmarks" aria-label="Equation domains">
+    <div class="bm-row">
+      <span class="bm-section">Domains</span>
+      <div class="bm-pills">${pills}</div>
+    </div>
+  </nav>
+
   <main>
-    <p class="pilot-note">Pilot localization for native-speaker review. The <strong>Dictation</strong>
+    <p class="pilot-note">Localization for native-speaker review. The <strong>Dictation</strong>
     column is the test corpus for engine localization — how a native speaker says the equation,
     faithful to the UnicodeMath. Names and dictation are model-generated drafts; please flag corrections.</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Equation (UnicodeMath)</th>
-          <th>Dictation</th>
-        </tr>
-      </thead>
-      <tbody>${localizedRows(items)}
-      </tbody>
-    </table>
+    ${domains.map(d => localizedEquationSection(d, byDomain.get(d))).join("\n")}
   </main>
 
 </body>
