@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "generate": "node scripts/generateData.mjs && node scripts/generateReference.mjs",
+    "generate": "node scripts/generateData.mjs && node scripts/generateReference.mjs && node scripts/validate-localization.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "validate:l10n": "node scripts/validate-localization.mjs",

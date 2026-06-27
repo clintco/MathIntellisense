@@ -1,0 +1,21 @@
+name: Validate
+
+# Hard gate: a PR (or push) that changes the equation master without re-blessing
+# its translations fails here. To fix: retranslate the flagged fields, then run
+# `npm run bless:l10n` and commit the updated data/localization-baseline.json.
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  localization:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Stale-translation check
+        run: npm run validate:l10n:check
