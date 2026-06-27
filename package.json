@@ -8,7 +8,10 @@
     "build": "vite build",
     "generate": "node scripts/generateData.mjs && node scripts/generateReference.mjs",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "validate:l10n": "node scripts/validate-localization.mjs",
+    "validate:l10n:check": "node scripts/validate-localization.mjs --check",
+    "bless:l10n": "node scripts/validate-localization.mjs --bless"
   },
   "dependencies": {
     "@fluentui/react-components": "^9.73.7",
