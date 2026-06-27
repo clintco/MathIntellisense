@@ -1,115 +1,3859 @@
 {
   "schemaVersion": 1,
   "locale": "de",
-  "note": "Pilot draft for native review. `dictation` is a test-corpus utterance for engine localization — native phrasing, faithful to the master `unicodemath` (never the English string). Grouping uses explicit 'Klammer auf/zu'. Note: binomial coefficient is 'über' while a fraction is 'durch', which disambiguates naturally. See docs/equation-dictation-localization.md.",
+  "note": "Native-review draft covering the full master corpus (474 equations). `dictation` is a test-corpus utterance for engine localization — native phrasing, faithful to the master `unicodemath` (never the English string). Grouping uses explicit auf/zu markers (Klammer, eckige Klammer, geschweifte Klammer); powers use Quadrat / hoch drei / hoch; subscripts use Index; fractions use durch (binomial coefficient uses über). Capital letters are spelled bare (vau, er, ef) and marked with a following \"groß\" only to resolve a same-letter case clash within a formula. See [[dictation-localization-progress]].",
   "equations": [
+    {
+      "id": 1000,
+      "name": "Potenzgesetz für Produkte",
+      "aliases": [
+        "Multiplikation von Potenzen gleicher Basis"
+      ],
+      "dictation": "a hoch em mal a hoch en gleich a hoch Klammer auf em plus en Klammer zu"
+    },
+    {
+      "id": 1001,
+      "name": "Potenzgesetz für Quotienten",
+      "aliases": [
+        "Division von Potenzen gleicher Basis"
+      ],
+      "dictation": "a hoch em durch a hoch en gleich a hoch Klammer auf em minus en Klammer zu"
+    },
+    {
+      "id": 1002,
+      "name": "Potenzgesetz für Potenzen",
+      "aliases": [
+        "Potenz einer Potenz"
+      ],
+      "dictation": "Klammer auf a hoch em Klammer zu hoch en gleich a hoch Klammer auf em mal en Klammer zu"
+    },
+    {
+      "id": 1003,
+      "name": "Potenz eines Produkts",
+      "aliases": [
+        "Produkt hoch en"
+      ],
+      "dictation": "Klammer auf a mal be Klammer zu hoch en gleich a hoch en mal be hoch en"
+    },
+    {
+      "id": 1004,
+      "name": "Potenz eines Quotienten",
+      "aliases": [
+        "Quotient hoch en"
+      ],
+      "dictation": "Klammer auf a durch be Klammer zu hoch en gleich a hoch en durch be hoch en"
+    },
+    {
+      "id": 1005,
+      "name": "negativer Exponent",
+      "aliases": [
+        "negative Potenz"
+      ],
+      "dictation": "a hoch minus en gleich eins durch a hoch en"
+    },
+    {
+      "id": 1006,
+      "name": "gebrochener Exponent",
+      "aliases": [
+        "rationaler Exponent"
+      ],
+      "dictation": "a hoch Klammer auf em durch en Klammer zu gleich en-te Wurzel aus a hoch em"
+    },
+    {
+      "id": 1007,
+      "name": "Logarithmusgesetz für Produkte",
+      "aliases": [
+        "Logarithmus eines Produkts"
+      ],
+      "dictation": "Logarithmus zur Basis be von Klammer auf iks mal üpsilon Klammer zu gleich Logarithmus zur Basis be von iks plus Logarithmus zur Basis be von üpsilon"
+    },
+    {
+      "id": 1008,
+      "name": "Logarithmusgesetz für Quotienten",
+      "aliases": [
+        "Logarithmus eines Quotienten"
+      ],
+      "dictation": "Logarithmus zur Basis be von Klammer auf iks durch üpsilon Klammer zu gleich Logarithmus zur Basis be von iks minus Logarithmus zur Basis be von üpsilon"
+    },
+    {
+      "id": 1009,
+      "name": "Logarithmusgesetz für Potenzen",
+      "aliases": [
+        "Logarithmus einer Potenz"
+      ],
+      "dictation": "Logarithmus zur Basis be von Klammer auf iks hoch en Klammer zu gleich en mal Logarithmus zur Basis be von iks"
+    },
+    {
+      "id": 1010,
+      "name": "Umkehrung des Logarithmus",
+      "aliases": [
+        "be hoch Logarithmus zur Basis be von iks"
+      ],
+      "dictation": "be hoch Klammer auf Logarithmus zur Basis be von iks Klammer zu gleich iks"
+    },
+    {
+      "id": 1011,
+      "name": "Basiswechselformel",
+      "aliases": [
+        "Basiswechsel des Logarithmus"
+      ],
+      "dictation": "Logarithmus zur Basis be von iks gleich natürlicher Logarithmus von iks durch natürlicher Logarithmus von be"
+    },
+    {
+      "id": 1012,
+      "name": "binomische Formeln",
+      "aliases": [
+        "erste binomische Formel",
+        "zweite binomische Formel"
+      ],
+      "dictation": "Additionsform, Klammer auf a plus be Klammer zu Quadrat gleich a Quadrat plus zwei mal a mal be plus be Quadrat Semikolon Subtraktionsform, Klammer auf a minus be Klammer zu Quadrat gleich a Quadrat minus zwei mal a mal be plus be Quadrat"
+    },
+    {
+      "id": 1013,
+      "name": "quadratische Ergänzung",
+      "aliases": [
+        "Ergänzen zum Quadrat"
+      ],
+      "dictation": "iks Quadrat plus be mal iks plus Klammer auf be durch zwei Klammer zu Quadrat gleich Klammer auf iks plus be durch zwei Klammer zu Quadrat"
+    },
+    {
+      "id": 1014,
+      "name": "direkte Proportionalität",
+      "aliases": [
+        "üpsilon ist direkt proportional zu iks"
+      ],
+      "dictation": "üpsilon gleich ka mal iks"
+    },
+    {
+      "id": 1015,
+      "name": "indirekte Proportionalität",
+      "aliases": [
+        "umgekehrte Proportionalität"
+      ],
+      "dictation": "üpsilon gleich ka durch iks"
+    },
+    {
+      "id": 1016,
+      "name": "zusammengesetzte Proportionalität",
+      "aliases": [
+        "üpsilon proportional zu iks und zett"
+      ],
+      "dictation": "üpsilon gleich ka mal iks mal zett"
+    },
+    {
+      "id": 1017,
+      "name": "Weg-Geschwindigkeit-Zeit",
+      "aliases": [
+        "de gleich er mal te"
+      ],
+      "dictation": "de gleich er mal te"
+    },
+    {
+      "id": 1018,
+      "name": "Betragsgleichung",
+      "aliases": [
+        "Betrag gleich be"
+      ],
+      "dictation": "Betrag von Klammer auf iks minus a Klammer zu gleich be impliziert iks gleich a plus minus be"
+    },
     {
       "id": 1019,
       "name": "Mitternachtsformel",
-      "aliases": ["abc-Formel", "Lösungsformel für quadratische Gleichungen"],
+      "aliases": [
+        "abc-Formel",
+        "Lösungsformel für quadratische Gleichungen"
+      ],
       "dictation": "iks gleich Klammer auf minus be plus minus Wurzel aus Klammer auf be Quadrat minus vier mal a mal ze Klammer zu Klammer zu durch zwei a"
     },
     {
-      "id": 1046,
-      "name": "Satz des Pythagoras",
-      "aliases": ["a Quadrat plus be Quadrat gleich ze Quadrat"],
-      "dictation": "a Quadrat plus be Quadrat gleich ze Quadrat"
+      "id": 1020,
+      "name": "Diskriminante",
+      "aliases": [
+        "be Quadrat minus vier a ze",
+        "Delta"
+      ],
+      "dictation": "be Quadrat minus vier mal a mal ze"
     },
     {
-      "id": 1041,
-      "name": "eulersche Identität",
-      "aliases": ["e hoch i pi plus eins gleich null"],
-      "dictation": "e hoch i mal pi plus eins gleich null"
+      "id": 1021,
+      "name": "dritte binomische Formel",
+      "aliases": [
+        "Produkt aus Summe und Differenz"
+      ],
+      "dictation": "a hoch drei minus be hoch drei gleich Klammer auf a plus be Klammer zu mal Klammer auf a minus be Klammer zu"
     },
     {
-      "id": 1087,
-      "name": "Kosinussatz",
-      "aliases": ["Kosinusregel"],
-      "dictation": "ze Quadrat gleich a Quadrat plus be Quadrat minus zwei mal a mal be mal Kosinus ze groß"
+      "id": 1022,
+      "name": "Summe zweier Kuben",
+      "aliases": [
+        "Faktorisierung der Summe von Kuben"
+      ],
+      "dictation": "a hoch drei plus be hoch drei gleich Klammer auf a plus be Klammer zu mal Klammer auf a Quadrat minus a mal be plus be Quadrat Klammer zu"
     },
     {
-      "id": 1050,
-      "name": "Kreisfläche",
-      "aliases": ["Flächeninhalt des Kreises"],
-      "dictation": "a gleich pi mal er Quadrat"
-    },
-    {
-      "id": 1273,
-      "name": "ohmsches Gesetz",
-      "aliases": ["vau gleich i mal er"],
-      "dictation": "vau gleich i mal er"
-    },
-    {
-      "id": 1269,
-      "name": "zweites newtonsches Gesetz",
-      "aliases": ["Grundgleichung der Mechanik", "Kraft gleich Masse mal Beschleunigung"],
-      "dictation": "ef gleich em mal a"
-    },
-    {
-      "id": 1117,
-      "name": "Hauptsatz der Differential- und Integralrechnung",
-      "aliases": ["Fundamentalsatz der Analysis"],
-      "dictation": "das Integral von a bis be über ef von iks de iks gleich ef groß von be minus ef groß von a"
-    },
-    {
-      "id": 1047,
-      "name": "Abstandsformel",
-      "aliases": ["Distanzformel"],
-      "dictation": "de gleich Wurzel aus Klammer auf Klammer auf iks Index zwei minus iks Index eins Klammer zu Quadrat plus Klammer auf üpsilon Index zwei minus üpsilon Index eins Klammer zu Quadrat Klammer zu"
-    },
-    {
-      "id": 1410,
-      "name": "Zinseszins",
-      "aliases": ["Zinseszinsformel"],
-      "dictation": "a gleich pe mal Klammer auf eins plus er durch en Klammer zu hoch en mal te"
-    },
-    {
-      "id": 1166,
-      "name": "Skalarprodukt",
-      "aliases": ["inneres Produkt", "Punktprodukt"],
-      "dictation": "a Punkt be gleich Betrag von a mal Betrag von be mal Kosinus theta"
+      "id": 1023,
+      "name": "Differenz zweier Kuben",
+      "aliases": [
+        "Faktorisierung der Differenz von Kuben"
+      ],
+      "dictation": "a hoch drei minus be hoch drei gleich Klammer auf a minus be Klammer zu mal Klammer auf a Quadrat plus a mal be plus be Quadrat Klammer zu"
     },
     {
       "id": 1024,
       "name": "binomischer Lehrsatz",
-      "aliases": ["binomische Formel"],
+      "aliases": [
+        "binomische Formel"
+      ],
       "dictation": "Klammer auf a plus be Klammer zu hoch en gleich die Summe von ka gleich null bis en über en über ka mal a hoch Klammer auf en minus ka Klammer zu mal be hoch ka"
-    },
-    {
-      "id": 1101,
-      "name": "Kettenregel",
-      "aliases": ["Ableitung einer verketteten Funktion"],
-      "dictation": "de üpsilon durch de iks gleich de üpsilon durch de u mal de u durch de iks"
     },
     {
       "id": 1025,
       "name": "geometrische Reihe",
-      "aliases": ["Summe einer geometrischen Folge"],
+      "aliases": [
+        "Summe einer geometrischen Folge"
+      ],
       "dictation": "es Index en gleich Klammer auf a mal Klammer auf eins minus er hoch en Klammer zu Klammer zu durch Klammer auf eins minus er Klammer zu"
     },
     {
-      "id": 1214,
-      "name": "Standardabweichung der Grundgesamtheit",
-      "aliases": ["Populationsstandardabweichung"],
-      "dictation": "sigma gleich Wurzel aus Klammer auf eins durch en groß mal die Summe von i gleich eins bis en groß über Klammer auf iks Index i minus mü Klammer zu Quadrat Klammer zu"
+      "id": 1026,
+      "name": "unendliche geometrische Reihe",
+      "aliases": [
+        "Summe einer unendlichen geometrischen Reihe"
+      ],
+      "dictation": "es gleich a durch Klammer auf eins minus er Klammer zu"
     },
     {
-      "id": 1136,
-      "name": "Regel von de L'Hospital",
-      "aliases": ["l'Hospitalsche Regel"],
-      "dictation": "der Limes für iks gegen a von Klammer auf ef von iks durch ge von iks Klammer zu gleich der Limes für iks gegen a von Klammer auf ef Strich von iks durch ge Strich von iks Klammer zu"
+      "id": 1027,
+      "name": "arithmetische Reihe",
+      "aliases": [
+        "Summe einer arithmetischen Folge"
+      ],
+      "dictation": "es Index en gleich en durch zwei mal Klammer auf a Index eins plus a Index en Klammer zu"
+    },
+    {
+      "id": 1028,
+      "name": "allgemeines Glied einer arithmetischen Folge",
+      "aliases": [
+        "en-tes Glied einer arithmetischen Folge"
+      ],
+      "dictation": "a Index en gleich a Index eins plus Klammer auf en minus eins Klammer zu mal de"
+    },
+    {
+      "id": 1029,
+      "name": "allgemeines Glied einer geometrischen Folge",
+      "aliases": [
+        "en-tes Glied einer geometrischen Folge"
+      ],
+      "dictation": "a Index en gleich a Index eins mal er hoch Klammer auf en minus eins Klammer zu"
+    },
+    {
+      "id": 1030,
+      "name": "Scheitelpunktform einer Parabel",
+      "aliases": [
+        "Scheitelform"
+      ],
+      "dictation": "üpsilon gleich a mal Klammer auf iks minus ha Klammer zu Quadrat plus ka"
+    },
+    {
+      "id": 1031,
+      "name": "exponentielles Wachstum und Zerfall",
+      "aliases": [
+        "Exponentialmodell",
+        "exponentielle Lösung einer Differentialgleichung"
+      ],
+      "dictation": "üpsilon gleich üpsilon Index null mal e hoch Klammer auf ka mal te Klammer zu"
+    },
+    {
+      "id": 1032,
+      "name": "Division mit Rest",
+      "aliases": [
+        "a gleich be ku plus er"
+      ],
+      "dictation": "a gleich be mal ku plus er, wobei null kleiner oder gleich er, und er kleiner als be"
+    },
+    {
+      "id": 1033,
+      "name": "Lemma von Bézout",
+      "aliases": [
+        "ggT als Linearkombination"
+      ],
+      "dictation": "der größte gemeinsame Teiler von a und be gleich a mal iks plus be mal üpsilon"
+    },
+    {
+      "id": 1034,
+      "name": "kleiner Satz von Fermat",
+      "aliases": [
+        "a hoch pe modulo pe"
+      ],
+      "dictation": "a hoch pe ist kongruent zu a modulo pe"
+    },
+    {
+      "id": 1035,
+      "name": "eulersche Phi-Funktion",
+      "aliases": [
+        "eulersche Funktion",
+        "phi von en"
+      ],
+      "dictation": "phi von en gleich en mal das Produkt über alle Primzahlen pe, die en teilen, von Klammer auf eins minus eins durch pe Klammer zu"
+    },
+    {
+      "id": 1036,
+      "name": "Satz von Euler",
+      "aliases": [
+        "a hoch phi von en"
+      ],
+      "dictation": "a hoch phi von en ist kongruent zu eins modulo en"
+    },
+    {
+      "id": 1037,
+      "name": "Kongruenz modulo en",
+      "aliases": [
+        "Restklassengleichheit"
+      ],
+      "dictation": "a ist kongruent zu be modulo en"
+    },
+    {
+      "id": 1038,
+      "name": "Betrag einer komplexen Zahl",
+      "aliases": [
+        "Betrag von zett"
+      ],
+      "dictation": "Betrag von zett gleich Wurzel aus Klammer auf a Quadrat plus be Quadrat Klammer zu"
+    },
+    {
+      "id": 1039,
+      "name": "Multiplikation komplexer Zahlen",
+      "aliases": [
+        "Produkt zweier komplexer Zahlen"
+      ],
+      "dictation": "Klammer auf a plus be mal i Klammer zu mal Klammer auf ze plus de mal i Klammer zu gleich Klammer auf a mal ze minus be mal de Klammer zu plus Klammer auf a mal de plus be mal ze Klammer zu mal i"
+    },
+    {
+      "id": 1040,
+      "name": "Satz von de Moivre",
+      "aliases": [
+        "moivrescher Satz"
+      ],
+      "dictation": "Klammer auf Kosinus theta plus i mal Sinus theta Klammer zu hoch en gleich Kosinus Klammer auf en mal theta Klammer zu plus i mal Sinus Klammer auf en mal theta Klammer zu"
+    },
+    {
+      "id": 1041,
+      "name": "eulersche Identität",
+      "aliases": [
+        "e hoch i pi plus eins gleich null"
+      ],
+      "dictation": "e hoch i mal pi plus eins gleich null"
+    },
+    {
+      "id": 1405,
+      "name": "Hardy-Weinberg-Gleichgewicht",
+      "aliases": [
+        "Hardy-Weinberg-Prinzip"
+      ],
+      "dictation": "pe Quadrat plus zwei mal pe mal ku plus ku Quadrat gleich eins"
+    },
+    {
+      "id": 1406,
+      "name": "logistisches Populationswachstum",
+      "aliases": [
+        "logistisches Wachstumsmodell"
+      ],
+      "dictation": "de en durch de te gleich er mal en mal Klammer auf eins minus en durch ka Klammer zu"
+    },
+    {
+      "id": 1407,
+      "name": "Michaelis-Menten-Kinetik",
+      "aliases": [
+        "Enzymkinetik"
+      ],
+      "dictation": "vau gleich vau groß Index max mal eckige Klammer auf es eckige Klammer zu durch Klammer auf ka Index em plus eckige Klammer auf es eckige Klammer zu Klammer zu"
+    },
+    {
+      "id": 1408,
+      "name": "exponentielles Populationswachstum",
+      "aliases": [
+        "malthusianisches Wachstum"
+      ],
+      "dictation": "en von te gleich en Index null mal e hoch Klammer auf er mal te Klammer zu"
+    },
+    {
+      "id": 1462,
+      "name": "2 × 2 Matrix",
+      "aliases": [
+        "2 mal 2 Matrix",
+        "Matrix in runden Klammern"
+      ],
+      "dictation": "Matrix zwei kreuz zwei in runden Klammern"
+    },
+    {
+      "id": 1463,
+      "name": "3 × 3 Matrix",
+      "aliases": [
+        "3 mal 3 Matrix",
+        "Matrix in runden Klammern"
+      ],
+      "dictation": "Matrix drei kreuz drei in runden Klammern"
+    },
+    {
+      "id": 1464,
+      "name": "2 × 2 Matrix in eckigen Klammern",
+      "aliases": [
+        "2 mal 2 Matrix in eckigen Klammern"
+      ],
+      "dictation": "Matrix zwei kreuz zwei in eckigen Klammern"
+    },
+    {
+      "id": 1465,
+      "name": "3 × 3 Matrix in eckigen Klammern",
+      "aliases": [
+        "3 mal 3 Matrix in eckigen Klammern"
+      ],
+      "dictation": "Matrix drei kreuz drei in eckigen Klammern"
+    },
+    {
+      "id": 1466,
+      "name": "2 × 2 Determinante",
+      "aliases": [
+        "2 mal 2 Determinante",
+        "Matrix mit Betragsstrichen"
+      ],
+      "dictation": "Determinante zwei kreuz zwei in Betragsstrichen"
+    },
+    {
+      "id": 1467,
+      "name": "3 × 3 Determinante",
+      "aliases": [
+        "3 mal 3 Determinante",
+        "Matrix mit Betragsstrichen"
+      ],
+      "dictation": "Determinante drei kreuz drei in Betragsstrichen"
+    },
+    {
+      "id": 1101,
+      "name": "Kettenregel",
+      "aliases": [
+        "Ableitung einer verketteten Funktion"
+      ],
+      "dictation": "de üpsilon durch de iks gleich de üpsilon durch de u mal de u durch de iks"
+    },
+    {
+      "id": 1102,
+      "name": "Produktregel",
+      "aliases": [
+        "Ableitung eines Produkts"
+      ],
+      "dictation": "die Ableitung nach iks von eckige Klammer auf ef mal ge eckige Klammer zu gleich ef Strich mal ge plus ef mal ge Strich"
+    },
+    {
+      "id": 1103,
+      "name": "Quotientenregel",
+      "aliases": [
+        "Ableitung eines Quotienten"
+      ],
+      "dictation": "die Ableitung nach iks von eckige Klammer auf ef durch ge eckige Klammer zu gleich Klammer auf ef Strich mal ge minus ef mal ge Strich Klammer zu durch ge Quadrat"
     },
     {
       "id": 1104,
       "name": "Potenzregel",
-      "aliases": ["Ableitung einer Potenz"],
+      "aliases": [
+        "Ableitung einer Potenz"
+      ],
       "dictation": "die Ableitung nach iks von eckige Klammer auf iks hoch en eckige Klammer zu gleich en mal iks hoch Klammer auf en minus eins Klammer zu"
+    },
+    {
+      "id": 1105,
+      "name": "Ableitung des Sinus",
+      "aliases": [
+        "Ableitung von Sinus iks"
+      ],
+      "dictation": "die Ableitung nach iks von eckige Klammer auf Sinus iks eckige Klammer zu gleich Kosinus iks"
+    },
+    {
+      "id": 1106,
+      "name": "Ableitung des Kosinus",
+      "aliases": [
+        "Ableitung von Kosinus iks"
+      ],
+      "dictation": "die Ableitung nach iks von eckige Klammer auf Kosinus iks eckige Klammer zu gleich minus Sinus iks"
+    },
+    {
+      "id": 1107,
+      "name": "Ableitung von e hoch iks",
+      "aliases": [
+        "Ableitung der Exponentialfunktion"
+      ],
+      "dictation": "die Ableitung nach iks von eckige Klammer auf e hoch iks eckige Klammer zu gleich e hoch iks"
+    },
+    {
+      "id": 1108,
+      "name": "Ableitung des natürlichen Logarithmus",
+      "aliases": [
+        "Ableitung von el en von iks"
+      ],
+      "dictation": "die Ableitung nach iks von eckige Klammer auf natürlicher Logarithmus von iks eckige Klammer zu gleich eins durch iks"
+    },
+    {
+      "id": 1109,
+      "name": "Ableitung des Tangens",
+      "aliases": [
+        "Ableitung von Tangens iks"
+      ],
+      "dictation": "die Ableitung nach iks von eckige Klammer auf Tangens iks eckige Klammer zu gleich Sekans Quadrat iks"
+    },
+    {
+      "id": 1110,
+      "name": "Ableitung des Kotangens",
+      "aliases": [
+        "Ableitung von Kotangens iks"
+      ],
+      "dictation": "die Ableitung nach iks von eckige Klammer auf Kotangens iks eckige Klammer zu gleich minus Kosekans Quadrat iks"
+    },
+    {
+      "id": 1111,
+      "name": "Ableitung des Sekans",
+      "aliases": [
+        "Ableitung von Sekans iks"
+      ],
+      "dictation": "die Ableitung nach iks von eckige Klammer auf Sekans iks eckige Klammer zu gleich Sekans iks mal Tangens iks"
+    },
+    {
+      "id": 1112,
+      "name": "Ableitung des Kosekans",
+      "aliases": [
+        "Ableitung von Kosekans iks"
+      ],
+      "dictation": "die Ableitung nach iks von eckige Klammer auf Kosekans iks eckige Klammer zu gleich minus Kosekans iks mal Kotangens iks"
+    },
+    {
+      "id": 1113,
+      "name": "Ableitung von a hoch iks",
+      "aliases": [
+        "Ableitung einer Exponentialfunktion zur Basis a"
+      ],
+      "dictation": "die Ableitung nach iks von eckige Klammer auf a hoch iks eckige Klammer zu gleich a hoch iks mal natürlicher Logarithmus von a"
+    },
+    {
+      "id": 1114,
+      "name": "Ableitung des Arkussinus",
+      "aliases": [
+        "Ableitung von Arkussinus iks"
+      ],
+      "dictation": "die Ableitung nach iks von eckige Klammer auf Arkussinus iks eckige Klammer zu gleich eins durch Wurzel aus Klammer auf eins minus iks Quadrat Klammer zu"
+    },
+    {
+      "id": 1115,
+      "name": "Ableitung des Arkuskosinus",
+      "aliases": [
+        "Ableitung von Arkuskosinus iks"
+      ],
+      "dictation": "die Ableitung nach iks von eckige Klammer auf Arkuskosinus iks eckige Klammer zu gleich minus eins durch Wurzel aus Klammer auf eins minus iks Quadrat Klammer zu"
+    },
+    {
+      "id": 1116,
+      "name": "Ableitung des Arkustangens",
+      "aliases": [
+        "Ableitung von Arkustangens iks"
+      ],
+      "dictation": "die Ableitung nach iks von eckige Klammer auf Arkustangens iks eckige Klammer zu gleich eins durch Klammer auf eins plus iks Quadrat Klammer zu"
+    },
+    {
+      "id": 1117,
+      "name": "Hauptsatz der Differential- und Integralrechnung",
+      "aliases": [
+        "Fundamentalsatz der Analysis"
+      ],
+      "dictation": "das Integral von a bis be über ef von iks de iks gleich ef groß von be minus ef groß von a"
+    },
+    {
+      "id": 1118,
+      "name": "bestimmtes Integral",
+      "aliases": [
+        "Integral von a bis be"
+      ],
+      "dictation": "das Integral von a bis be über ef von iks de iks"
+    },
+    {
+      "id": 1119,
+      "name": "Potenzregel der Integration",
+      "aliases": [
+        "Integral einer Potenz"
+      ],
+      "dictation": "das Integral über iks hoch en de iks gleich iks hoch Klammer auf en plus eins Klammer zu durch Klammer auf en plus eins Klammer zu plus ze"
+    },
+    {
+      "id": 1120,
+      "name": "Integral von eins durch iks",
+      "aliases": [
+        "Integral des Kehrwerts"
+      ],
+      "dictation": "das Integral über eins durch iks de iks gleich natürlicher Logarithmus von Betrag von iks plus ze"
+    },
+    {
+      "id": 1121,
+      "name": "Integral von e hoch iks",
+      "aliases": [
+        "Integral der Exponentialfunktion"
+      ],
+      "dictation": "das Integral über e hoch iks de iks gleich e hoch iks plus ze"
+    },
+    {
+      "id": 1122,
+      "name": "Integral von a hoch iks",
+      "aliases": [
+        "Integral einer Exponentialfunktion zur Basis a"
+      ],
+      "dictation": "das Integral über a hoch iks de iks gleich a hoch iks durch natürlicher Logarithmus von a plus ze"
+    },
+    {
+      "id": 1123,
+      "name": "Integral des Sinus",
+      "aliases": [
+        "Integral von Sinus iks"
+      ],
+      "dictation": "das Integral über Sinus iks de iks gleich minus Kosinus iks plus ze"
+    },
+    {
+      "id": 1124,
+      "name": "Integral des Kosinus",
+      "aliases": [
+        "Integral von Kosinus iks"
+      ],
+      "dictation": "das Integral über Kosinus iks de iks gleich Sinus iks plus ze"
+    },
+    {
+      "id": 1125,
+      "name": "Integral des Tangens",
+      "aliases": [
+        "Integral von Tangens iks"
+      ],
+      "dictation": "das Integral über Tangens iks de iks gleich minus natürlicher Logarithmus von Betrag von Kosinus iks plus ze"
+    },
+    {
+      "id": 1126,
+      "name": "Integral des Sekans",
+      "aliases": [
+        "Integral von Sekans iks"
+      ],
+      "dictation": "das Integral über Sekans iks de iks gleich natürlicher Logarithmus von Betrag von Klammer auf Sekans iks plus Tangens iks Klammer zu plus ze"
+    },
+    {
+      "id": 1127,
+      "name": "Integral des Kosekans",
+      "aliases": [
+        "Integral von Kosekans iks"
+      ],
+      "dictation": "das Integral über Kosekans iks de iks gleich minus natürlicher Logarithmus von Betrag von Klammer auf Kosekans iks plus Kotangens iks Klammer zu plus ze"
+    },
+    {
+      "id": 1128,
+      "name": "Integral von Sekans Quadrat",
+      "aliases": [
+        "Integral von Sekans Quadrat iks"
+      ],
+      "dictation": "das Integral über Sekans Quadrat iks de iks gleich Tangens iks plus ze"
+    },
+    {
+      "id": 1129,
+      "name": "Integral zum Arkussinus",
+      "aliases": [
+        "Integralform des Arkussinus"
+      ],
+      "dictation": "das Integral über eins durch Wurzel aus Klammer auf eins minus iks Quadrat Klammer zu de iks gleich Arkussinus iks plus ze"
+    },
+    {
+      "id": 1130,
+      "name": "Integral zum Arkustangens",
+      "aliases": [
+        "Integralform des Arkustangens"
+      ],
+      "dictation": "das Integral über eins durch Klammer auf eins plus iks Quadrat Klammer zu de iks gleich Arkustangens iks plus ze"
+    },
+    {
+      "id": 1131,
+      "name": "partielle Integration",
+      "aliases": [
+        "Produktintegration"
+      ],
+      "dictation": "das Integral über u de vau gleich u mal vau minus das Integral über vau de u"
+    },
+    {
+      "id": 1132,
+      "name": "Dreifachintegral",
+      "aliases": [
+        "Integral über ein Volumen"
+      ],
+      "dictation": "das Dreifachintegral über den Bereich vau von ef von Klammer auf iks Komma üpsilon Komma zett Klammer zu de vau"
+    },
+    {
+      "id": 1133,
+      "name": "Kurvenintegral",
+      "aliases": [
+        "Konturintegral"
+      ],
+      "dictation": "das Kurvenintegral über die Kurve ze von ef von zett de zett"
+    },
+    {
+      "id": 1134,
+      "name": "Taylor-Reihe",
+      "aliases": [
+        "Taylor-Entwicklung"
+      ],
+      "dictation": "ef von iks gleich die Summe von en gleich null bis unendlich über ef hoch Klammer auf en Klammer zu von a durch en Fakultät mal Klammer auf iks minus a Klammer zu hoch en"
+    },
+    {
+      "id": 1135,
+      "name": "Maclaurin-Reihe",
+      "aliases": [
+        "Maclaurin-Entwicklung"
+      ],
+      "dictation": "ef von iks gleich die Summe von en gleich null bis unendlich über ef hoch Klammer auf en Klammer zu von null durch en Fakultät mal iks hoch en"
+    },
+    {
+      "id": 1136,
+      "name": "Regel von de L'Hospital",
+      "aliases": [
+        "l'Hospitalsche Regel"
+      ],
+      "dictation": "der Limes für iks gegen a von Klammer auf ef von iks durch ge von iks Klammer zu gleich der Limes für iks gegen a von Klammer auf ef Strich von iks durch ge Strich von iks Klammer zu"
+    },
+    {
+      "id": 1137,
+      "name": "Mittelwertsatz der Differentialrechnung",
+      "aliases": [
+        "Mittelwertsatz"
+      ],
+      "dictation": "ef Strich von ze gleich Klammer auf ef von be minus ef von a Klammer zu durch Klammer auf be minus a Klammer zu"
+    },
+    {
+      "id": 1138,
+      "name": "Satz von Rolle",
+      "aliases": [
+        "Satz von Rolle"
+      ],
+      "dictation": "wenn ef von a gleich ef von be, dann ef Strich von ze gleich null für ein ze aus dem offenen Intervall a Komma be"
+    },
+    {
+      "id": 1139,
+      "name": "Einschnürungssatz",
+      "aliases": [
+        "Sandwichsatz",
+        "Quetschlemma"
+      ],
+      "dictation": "wenn ge von iks kleiner oder gleich ef von iks kleiner oder gleich ha von iks und Limes von ge gleich Limes von ha gleich el, dann Limes von ef gleich el"
+    },
+    {
+      "id": 1140,
+      "name": "Limes von Sinus iks durch iks",
+      "aliases": [
+        "fundamentaler trigonometrischer Grenzwert"
+      ],
+      "dictation": "der Limes für iks gegen null von Klammer auf Sinus iks durch iks Klammer zu gleich eins"
+    },
+    {
+      "id": 1141,
+      "name": "Limes von eins minus Kosinus iks durch iks",
+      "aliases": [
+        "zweiter trigonometrischer Grenzwert"
+      ],
+      "dictation": "der Limes für iks gegen null von Klammer auf Klammer auf eins minus Kosinus iks Klammer zu durch iks Klammer zu gleich null"
+    },
+    {
+      "id": 1142,
+      "name": "Mittelwert einer Funktion",
+      "aliases": [
+        "Durchschnitt einer Funktion"
+      ],
+      "dictation": "ef Index Mittelwert gleich eins durch Klammer auf be minus a Klammer zu mal das Integral von a bis be über ef von iks de iks"
+    },
+    {
+      "id": 1143,
+      "name": "Scheibenmethode",
+      "aliases": [
+        "Rotationsvolumen mit Scheiben"
+      ],
+      "dictation": "vau gleich pi mal das Integral von a bis be über eckige Klammer auf ef von iks eckige Klammer zu Quadrat de iks"
+    },
+    {
+      "id": 1144,
+      "name": "Zylinderschalenmethode",
+      "aliases": [
+        "Rotationsvolumen mit Schalen"
+      ],
+      "dictation": "vau gleich zwei mal pi mal das Integral von a bis be über iks mal ef von iks de iks"
+    },
+    {
+      "id": 1145,
+      "name": "Kreisringmethode",
+      "aliases": [
+        "Rotationsvolumen mit Kreisringen"
+      ],
+      "dictation": "vau gleich pi mal das Integral von a bis be über Klammer auf eckige Klammer auf er groß von iks eckige Klammer zu Quadrat minus eckige Klammer auf er von iks eckige Klammer zu Quadrat Klammer zu de iks"
+    },
+    {
+      "id": 1146,
+      "name": "Bogenlänge einer Kurve",
+      "aliases": [
+        "Länge einer Kurve"
+      ],
+      "dictation": "el gleich das Integral von a bis be über Wurzel aus Klammer auf eins plus eckige Klammer auf ef Strich von iks eckige Klammer zu Quadrat Klammer zu de iks"
+    },
+    {
+      "id": 1147,
+      "name": "Mantelfläche eines Rotationskörpers",
+      "aliases": [
+        "Rotationsoberfläche"
+      ],
+      "dictation": "es gleich zwei mal pi mal das Integral von a bis be über ef von iks mal Wurzel aus Klammer auf eins plus eckige Klammer auf ef Strich von iks eckige Klammer zu Quadrat Klammer zu de iks"
+    },
+    {
+      "id": 1148,
+      "name": "Konvergenz der p-Reihe",
+      "aliases": [
+        "p-Reihe"
+      ],
+      "dictation": "die Summe von en gleich eins bis unendlich über eins durch en hoch pe konvergiert, wenn pe größer als eins"
+    },
+    {
+      "id": 1149,
+      "name": "Quotientenkriterium",
+      "aliases": [
+        "Quotiententest"
+      ],
+      "dictation": "wenn der Limes für en gegen unendlich von Betrag von Klammer auf a Index Klammer auf en plus eins Klammer zu durch a Index en Klammer zu kleiner als eins, dann konvergiert die Reihe"
+    },
+    {
+      "id": 1150,
+      "name": "Wurzelkriterium",
+      "aliases": [
+        "Wurzeltest"
+      ],
+      "dictation": "wenn der Limes für en gegen unendlich von en-te Wurzel aus Betrag von a Index en kleiner als eins, dann konvergiert die Reihe"
+    },
+    {
+      "id": 1151,
+      "name": "Konvergenzradius",
+      "aliases": [
+        "Radius einer Potenzreihe"
+      ],
+      "dictation": "er gleich eins durch Limes superior für en gegen unendlich von en-te Wurzel aus Betrag von a Index en"
+    },
+    {
+      "id": 1152,
+      "name": "Richtungsableitung",
+      "aliases": [
+        "Ableitung in Richtung u"
+      ],
+      "dictation": "de Index u von ef gleich Gradient von ef Punkt u"
+    },
+    {
+      "id": 1153,
+      "name": "Test der zweiten Ableitungen bei mehreren Variablen",
+      "aliases": [
+        "Hesse-Test"
+      ],
+      "dictation": "de gleich ef Index iks iks mal ef Index üpsilon üpsilon minus ef Index iks üpsilon Quadrat"
+    },
+    {
+      "id": 1154,
+      "name": "Doppelintegral in Polarkoordinaten",
+      "aliases": [
+        "Flächenelement in Polarkoordinaten"
+      ],
+      "dictation": "das Doppelintegral über den Bereich de von ef von Klammer auf er Komma theta Klammer zu mal er de er de theta"
+    },
+    {
+      "id": 1155,
+      "name": "Variablenwechsel und Jacobi-Determinante",
+      "aliases": [
+        "Substitution im Doppelintegral"
+      ],
+      "dictation": "das Doppelintegral über den Bereich de von ef von Klammer auf iks Komma üpsilon Klammer zu de iks de üpsilon gleich das Doppelintegral über den Bereich de Strich von ef von Klammer auf ge Komma ha Klammer zu mal Betrag von jot de u de vau"
+    },
+    {
+      "id": 1156,
+      "name": "Satz von Green",
+      "aliases": [
+        "greenscher Satz"
+      ],
+      "dictation": "das Kurvenintegral über die Kurve ze von Klammer auf pe de iks plus ku de üpsilon Klammer zu gleich das Doppelintegral über den Bereich de von Klammer auf partielles de ku durch partielles de iks minus partielles de pe durch partielles de üpsilon Klammer zu de a"
+    },
+    {
+      "id": 1157,
+      "name": "Satz von Stokes",
+      "aliases": [
+        "stokesscher Satz"
+      ],
+      "dictation": "das Kurvenintegral über die Kurve ze von ef Punkt de er gleich das Doppelintegral über die Fläche es von Klammer auf Nabla kreuz ef Klammer zu Punkt de es"
+    },
+    {
+      "id": 1158,
+      "name": "gaußscher Integralsatz",
+      "aliases": [
+        "Divergenzsatz",
+        "Satz von Gauß-Ostrogradski"
+      ],
+      "dictation": "das geschlossene Oberflächenintegral über die Fläche es von ef Punkt de es gleich das Dreifachintegral über den Bereich vau von Klammer auf Nabla Punkt ef Klammer zu de vau"
+    },
+    {
+      "id": 1159,
+      "name": "lineare Differentialgleichung erster Ordnung",
+      "aliases": [
+        "DGL erster Ordnung"
+      ],
+      "dictation": "de üpsilon durch de iks plus pe von iks mal üpsilon gleich ku von iks"
+    },
+    {
+      "id": 1160,
+      "name": "lineare Differentialgleichung zweiter Ordnung",
+      "aliases": [
+        "DGL zweiter Ordnung"
+      ],
+      "dictation": "üpsilon Strich Strich plus pe mal üpsilon Strich plus ku mal üpsilon gleich null"
+    },
+    {
+      "id": 1161,
+      "name": "Definition der Laplace-Transformation",
+      "aliases": [
+        "Laplace-Transformation"
+      ],
+      "dictation": "el von geschweifte Klammer auf ef von te geschweifte Klammer zu gleich das Integral von null bis unendlich über ef von te mal e hoch Klammer auf minus es mal te Klammer zu de te"
+    },
+    {
+      "id": 1162,
+      "name": "Definition der Fourier-Transformation",
+      "aliases": [
+        "Fourier-Transformation"
+      ],
+      "dictation": "ef Dach von omega gleich das Integral von minus unendlich bis plus unendlich über ef von te mal e hoch Klammer auf minus i mal omega mal te Klammer zu de te"
+    },
+    {
+      "id": 1163,
+      "name": "inverse Fourier-Transformation",
+      "aliases": [
+        "Fourier-Rücktransformation"
+      ],
+      "dictation": "ef von te gleich eins durch zwei pi mal das Integral von minus unendlich bis plus unendlich über ef Dach von omega mal e hoch Klammer auf i mal omega mal te Klammer zu de omega"
+    },
+    {
+      "id": 1164,
+      "name": "Trennung der Variablen",
+      "aliases": [
+        "separierbare Differentialgleichung"
+      ],
+      "dictation": "de üpsilon durch ge von üpsilon gleich ef von iks de iks"
+    },
+    {
+      "id": 1165,
+      "name": "integrierender Faktor",
+      "aliases": [
+        "Integrationsfaktor"
+      ],
+      "dictation": "mü von iks gleich e hoch Klammer auf das Integral über pe von iks de iks Klammer zu"
+    },
+    {
+      "id": 1468,
+      "name": "Doppelintegral",
+      "aliases": [
+        "Flächenintegral"
+      ],
+      "dictation": "das Doppelintegral über den Bereich de von ef von Klammer auf iks Komma üpsilon Klammer zu de a"
+    },
+    {
+      "id": 1469,
+      "name": "Gammafunktion",
+      "aliases": [
+        "verallgemeinerte Fakultät"
+      ],
+      "dictation": "Gamma von zett gleich das Integral von null bis unendlich über te hoch Klammer auf zett minus eins Klammer zu mal e hoch minus te de te"
+    },
+    {
+      "id": 1470,
+      "name": "gaußsches Integral",
+      "aliases": [
+        "Euler-Poisson-Integral"
+      ],
+      "dictation": "das Integral von minus unendlich bis plus unendlich über e hoch minus iks Quadrat de iks gleich Wurzel aus pi"
+    },
+    {
+      "id": 1471,
+      "name": "Grenzwertdefinition von e",
+      "aliases": [
+        "e als Grenzwert"
+      ],
+      "dictation": "e gleich der Limes für en gegen unendlich von Klammer auf eins plus eins durch en Klammer zu hoch en"
+    },
+    {
+      "id": 1472,
+      "name": "bestimmtes trigonometrisches Integral",
+      "aliases": [
+        "Integral vom Weierstraß-Typ"
+      ],
+      "dictation": "eins durch zwei pi mal das Integral von null bis zwei pi über de theta durch Klammer auf a plus be mal Sinus theta Klammer zu gleich eins durch Wurzel aus Klammer auf a Quadrat minus be Quadrat Klammer zu"
+    },
+    {
+      "id": 1473,
+      "name": "Dreifachintegral in Kugelkoordinaten",
+      "aliases": [
+        "Volumenintegral in Kugelkoordinaten"
+      ],
+      "dictation": "das Dreifachintegral über den Bereich vau von ef von Klammer auf er Komma theta Komma phi Klammer zu mal er de er de theta de phi"
+    },
+    {
+      "id": 1362,
+      "name": "Stoffmenge-Masse-Beziehung",
+      "aliases": [
+        "en gleich em durch em groß"
+      ],
+      "dictation": "en gleich em durch em groß"
+    },
+    {
+      "id": 1363,
+      "name": "Teilchenzahl",
+      "aliases": [
+        "en groß gleich en mal Avogadro-Zahl"
+      ],
+      "dictation": "en groß gleich en mal en groß Index a"
+    },
+    {
+      "id": 1364,
+      "name": "Massenanteil",
+      "aliases": [
+        "prozentuale Zusammensetzung"
+      ],
+      "dictation": "we gleich em Index Element durch em Index Verbindung mal hundert Prozent"
+    },
+    {
+      "id": 1365,
+      "name": "Stoffmengenkonzentration",
+      "aliases": [
+        "Molarität",
+        "Mol pro Liter"
+      ],
+      "dictation": "em gleich en durch vau"
+    },
+    {
+      "id": 1366,
+      "name": "Verdünnungsformel",
+      "aliases": [
+        "em eins vau eins gleich em zwei vau zwei"
+      ],
+      "dictation": "em Index eins mal vau Index eins gleich em Index zwei mal vau Index zwei"
+    },
+    {
+      "id": 1367,
+      "name": "Molalität",
+      "aliases": [
+        "Mol pro Kilogramm Lösungsmittel"
+      ],
+      "dictation": "em gleich en Index gelöster Stoff durch em Index Lösungsmittel"
+    },
+    {
+      "id": 1368,
+      "name": "raoultsches Gesetz",
+      "aliases": [
+        "Dampfdruckerniedrigung"
+      ],
+      "dictation": "pe gleich iks Index Lösungsmittel mal pe Grad"
+    },
+    {
+      "id": 1369,
+      "name": "Siedepunktserhöhung",
+      "aliases": [
+        "ebullioskopische Erhöhung"
+      ],
+      "dictation": "delta te Index be gleich i mal ka Index be mal em"
+    },
+    {
+      "id": 1370,
+      "name": "Gefrierpunktserniedrigung",
+      "aliases": [
+        "kryoskopische Erniedrigung"
+      ],
+      "dictation": "delta te Index ef gleich i mal ka Index ef mal em"
+    },
+    {
+      "id": 1371,
+      "name": "osmotischer Druck",
+      "aliases": [
+        "pi gleich i em er te"
+      ],
+      "dictation": "pi gleich i mal em mal er mal te"
+    },
+    {
+      "id": 1372,
+      "name": "Gesetz von Boyle-Mariotte",
+      "aliases": [
+        "pe eins vau eins gleich pe zwei vau zwei"
+      ],
+      "dictation": "pe Index eins mal vau Index eins gleich pe Index zwei mal vau Index zwei"
+    },
+    {
+      "id": 1373,
+      "name": "Gesetz von Charles",
+      "aliases": [
+        "Volumengesetz von Gay-Lussac",
+        "vau eins durch te eins"
+      ],
+      "dictation": "vau Index eins durch te Index eins gleich vau Index zwei durch te Index zwei"
+    },
+    {
+      "id": 1374,
+      "name": "Gesetz von Amontons",
+      "aliases": [
+        "Druckgesetz von Gay-Lussac",
+        "pe eins durch te eins"
+      ],
+      "dictation": "pe Index eins durch te Index eins gleich pe Index zwei durch te Index zwei"
+    },
+    {
+      "id": 1375,
+      "name": "allgemeine Gasgleichung",
+      "aliases": [
+        "kombiniertes Gasgesetz"
+      ],
+      "dictation": "pe Index eins mal vau Index eins durch te Index eins gleich pe Index zwei mal vau Index zwei durch te Index zwei"
+    },
+    {
+      "id": 1376,
+      "name": "Gesetz von Avogadro",
+      "aliases": [
+        "vau eins durch en eins gleich vau zwei durch en zwei"
+      ],
+      "dictation": "vau Index eins durch en Index eins gleich vau Index zwei durch en Index zwei"
+    },
+    {
+      "id": 1377,
+      "name": "daltonsches Partialdruckgesetz",
+      "aliases": [
+        "Gesetz von Dalton",
+        "Gesamtdruck"
+      ],
+      "dictation": "pe Index gesamt gleich pe Index eins plus pe Index zwei plus und so weiter plus pe Index en"
+    },
+    {
+      "id": 1378,
+      "name": "graham'sches Effusionsgesetz",
+      "aliases": [
+        "Gesetz von Graham",
+        "Effusionsgeschwindigkeit"
+      ],
+      "dictation": "er Index eins durch er Index zwei gleich Wurzel aus Klammer auf em Index zwei durch em Index eins Klammer zu"
+    },
+    {
+      "id": 1379,
+      "name": "van-der-Waals-Gleichung",
+      "aliases": [
+        "Realgasgleichung"
+      ],
+      "dictation": "Klammer auf pe plus a mal en Quadrat durch vau Quadrat Klammer zu mal Klammer auf vau minus en mal be Klammer zu gleich en mal er mal te"
+    },
+    {
+      "id": 1380,
+      "name": "Reaktionsenthalpie",
+      "aliases": [
+        "Satz von Hess",
+        "delta ha der Reaktion"
+      ],
+      "dictation": "delta ha Index Reaktion gleich die Summe über delta ha Index ef der Produkte minus die Summe über delta ha Index ef der Edukte"
+    },
+    {
+      "id": 1381,
+      "name": "freie Enthalpie",
+      "aliases": [
+        "gibbssche freie Energie",
+        "delta ge"
+      ],
+      "dictation": "delta ge gleich delta ha minus te mal delta es"
+    },
+    {
+      "id": 1382,
+      "name": "freie Standardenthalpie und Gleichgewicht",
+      "aliases": [
+        "delta ge Grad und Gleichgewichtskonstante"
+      ],
+      "dictation": "delta ge Grad gleich minus er mal te mal natürlicher Logarithmus von ka"
+    },
+    {
+      "id": 1383,
+      "name": "Entropieänderung",
+      "aliases": [
+        "delta es"
+      ],
+      "dictation": "delta es gleich ku Index reversibel durch te"
+    },
+    {
+      "id": 1384,
+      "name": "Gleichgewichtskonstante",
+      "aliases": [
+        "Massenwirkungsgesetz"
+      ],
+      "dictation": "ka gleich eckige Klammer auf Produkte eckige Klammer zu hoch Koeffizienten durch eckige Klammer auf Edukte eckige Klammer zu hoch Koeffizienten"
+    },
+    {
+      "id": 1385,
+      "name": "Beziehung zwischen ka pe und ka ze",
+      "aliases": [
+        "ka pe gleich ka ze mal er te hoch delta en"
+      ],
+      "dictation": "ka Index pe gleich ka Index ze mal Klammer auf er mal te Klammer zu hoch delta en"
+    },
+    {
+      "id": 1386,
+      "name": "Reaktionsquotient",
+      "aliases": [
+        "Reaktionsquotient ku"
+      ],
+      "dictation": "ku gleich eckige Klammer auf Produkte eckige Klammer zu durch eckige Klammer auf Edukte eckige Klammer zu"
+    },
+    {
+      "id": 1387,
+      "name": "Definition des pH-Werts",
+      "aliases": [
+        "pe ha gleich minus Logarithmus der Wasserstoffionenkonzentration"
+      ],
+      "dictation": "pe ha gleich minus dekadischer Logarithmus von eckige Klammer auf ha hoch plus eckige Klammer zu"
+    },
+    {
+      "id": 1388,
+      "name": "Definition des pOH-Werts",
+      "aliases": [
+        "pe o ha"
+      ],
+      "dictation": "pe o ha gleich minus dekadischer Logarithmus von eckige Klammer auf o ha hoch minus eckige Klammer zu"
+    },
+    {
+      "id": 1389,
+      "name": "Beziehung zwischen pH und pOH",
+      "aliases": [
+        "pe ha plus pe o ha gleich vierzehn"
+      ],
+      "dictation": "pe ha plus pe o ha gleich vierzehn"
+    },
+    {
+      "id": 1390,
+      "name": "Ionenprodukt des Wassers",
+      "aliases": [
+        "ka we",
+        "Dissoziationskonstante des Wassers"
+      ],
+      "dictation": "ka Index we gleich eckige Klammer auf ha hoch plus eckige Klammer zu mal eckige Klammer auf o ha hoch minus eckige Klammer zu gleich eins Komma null mal zehn hoch minus vierzehn"
+    },
+    {
+      "id": 1391,
+      "name": "Henderson-Hasselbalch-Gleichung",
+      "aliases": [
+        "pH-Wert eines Puffers"
+      ],
+      "dictation": "pe ha gleich pe ka Index a plus dekadischer Logarithmus von Klammer auf eckige Klammer auf a hoch minus eckige Klammer zu durch eckige Klammer auf ha a eckige Klammer zu Klammer zu"
+    },
+    {
+      "id": 1392,
+      "name": "Beziehung zwischen ka a, ka be und ka we",
+      "aliases": [
+        "konjugiertes Säure-Base-Paar"
+      ],
+      "dictation": "ka Index a mal ka Index be gleich ka Index we"
+    },
+    {
+      "id": 1393,
+      "name": "Standardzellpotential",
+      "aliases": [
+        "Standardpotential einer Zelle",
+        "elektromotorische Kraft"
+      ],
+      "dictation": "e Grad Index Zelle gleich e Grad Index Kathode minus e Grad Index Anode"
+    },
+    {
+      "id": 1394,
+      "name": "Nernst-Gleichung",
+      "aliases": [
+        "Zellpotential unter Nicht-Standardbedingungen"
+      ],
+      "dictation": "e gleich e Grad minus er mal te durch en mal ef mal natürlicher Logarithmus von ku"
+    },
+    {
+      "id": 1395,
+      "name": "freie Enthalpie und Zellpotential",
+      "aliases": [
+        "delta ge und Zellpotential"
+      ],
+      "dictation": "delta ge Grad gleich minus en mal ef mal e Grad"
+    },
+    {
+      "id": 1396,
+      "name": "faradaysches Elektrolysegesetz",
+      "aliases": [
+        "abgeschiedene Masse"
+      ],
+      "dictation": "em gleich em groß mal i mal te durch en mal ef"
+    },
+    {
+      "id": 1397,
+      "name": "Geschwindigkeitsgesetz",
+      "aliases": [
+        "Reaktionsgeschwindigkeit"
+      ],
+      "dictation": "Geschwindigkeit gleich ka mal eckige Klammer auf a eckige Klammer zu hoch em mal eckige Klammer auf be eckige Klammer zu hoch en"
+    },
+    {
+      "id": 1398,
+      "name": "integriertes Geschwindigkeitsgesetz erster Ordnung",
+      "aliases": [
+        "Kinetik erster Ordnung"
+      ],
+      "dictation": "natürlicher Logarithmus von eckige Klammer auf a eckige Klammer zu gleich natürlicher Logarithmus von eckige Klammer auf a eckige Klammer zu Index null minus ka mal te"
+    },
+    {
+      "id": 1399,
+      "name": "integriertes Geschwindigkeitsgesetz zweiter Ordnung",
+      "aliases": [
+        "Kinetik zweiter Ordnung"
+      ],
+      "dictation": "eins durch eckige Klammer auf a eckige Klammer zu gleich eins durch eckige Klammer auf a eckige Klammer zu Index null plus ka mal te"
+    },
+    {
+      "id": 1400,
+      "name": "Halbwertszeit erster Ordnung",
+      "aliases": [
+        "Halbwertszeit einer Reaktion erster Ordnung"
+      ],
+      "dictation": "te Index ein halb gleich natürlicher Logarithmus von zwei durch ka gleich null Komma sechshundertdreiundneunzig durch ka"
+    },
+    {
+      "id": 1401,
+      "name": "Arrhenius-Gleichung",
+      "aliases": [
+        "Geschwindigkeitskonstante nach Arrhenius"
+      ],
+      "dictation": "ka gleich a mal e hoch Klammer auf minus e Index a durch er mal te Klammer zu"
+    },
+    {
+      "id": 1402,
+      "name": "Rydberg-Formel",
+      "aliases": [
+        "Spektrallinien des Wasserstoffs"
+      ],
+      "dictation": "eins durch lambda gleich er Index ha mal Klammer auf eins durch en Index eins Quadrat minus eins durch en Index zwei Quadrat Klammer zu"
+    },
+    {
+      "id": 1403,
+      "name": "Photonenenergie",
+      "aliases": [
+        "e gleich ha ef"
+      ],
+      "dictation": "e gleich ha mal ef gleich ha mal ze durch lambda"
+    },
+    {
+      "id": 1404,
+      "name": "Energieniveaus des bohrschen Modells",
+      "aliases": [
+        "Energie des en-ten Niveaus"
+      ],
+      "dictation": "e Index en gleich minus dreizehn Komma sechs Elektronenvolt durch en Quadrat"
+    },
+    {
+      "id": 1181,
+      "name": "Variation",
+      "aliases": [
+        "Anzahl der Variationen",
+        "Variation ohne Wiederholung"
+      ],
+      "dictation": "pe von Klammer auf en Komma er Klammer zu gleich en Fakultät durch Klammer auf en minus er Klammer zu Fakultät"
+    },
+    {
+      "id": 1182,
+      "name": "Kombination",
+      "aliases": [
+        "Anzahl der Kombinationen",
+        "Binomialkoeffizient",
+        "en über er"
+      ],
+      "dictation": "ze von Klammer auf en Komma er Klammer zu gleich en Fakultät durch er Fakultät mal Klammer auf en minus er Klammer zu Fakultät"
+    },
+    {
+      "id": 1183,
+      "name": "Multinomialkoeffizient",
+      "aliases": [
+        "Polynomialkoeffizient"
+      ],
+      "dictation": "en über Klammer auf ka Index eins Komma ka Index zwei Komma und so weiter Komma ka Index er Klammer zu gleich en Fakultät durch Klammer auf ka Index eins Fakultät mal ka Index zwei Fakultät mal und so weiter mal ka Index er Fakultät Klammer zu"
+    },
+    {
+      "id": 1184,
+      "name": "Kombination mit Wiederholung",
+      "aliases": [
+        "Sterne-und-Striche-Methode"
+      ],
+      "dictation": "Klammer auf en plus ka minus eins Klammer zu über ka"
+    },
+    {
+      "id": 1185,
+      "name": "Catalan-Zahl",
+      "aliases": [
+        "en-te Catalan-Zahl"
+      ],
+      "dictation": "ze Index en gleich eins durch Klammer auf en plus eins Klammer zu mal Klammer auf zwei mal en über en Klammer zu"
+    },
+    {
+      "id": 1186,
+      "name": "Anzahl der fixpunktfreien Permutationen",
+      "aliases": [
+        "Subfakultät",
+        "Derangement"
+      ],
+      "dictation": "de Index en gleich en Fakultät mal die Summe von ka gleich null bis en über Klammer auf minus eins Klammer zu hoch ka durch ka Fakultät"
+    },
+    {
+      "id": 1187,
+      "name": "Prinzip von Inklusion und Exklusion für zwei Mengen",
+      "aliases": [
+        "Mächtigkeit von a vereinigt be"
+      ],
+      "dictation": "Mächtigkeit von Klammer auf a vereinigt be Klammer zu gleich Mächtigkeit von a plus Mächtigkeit von be minus Mächtigkeit von Klammer auf a geschnitten be Klammer zu"
+    },
+    {
+      "id": 1188,
+      "name": "Prinzip von Inklusion und Exklusion für drei Mengen",
+      "aliases": [
+        "Mächtigkeit von a vereinigt be vereinigt ze"
+      ],
+      "dictation": "Mächtigkeit von Klammer auf a vereinigt be vereinigt ze Klammer zu gleich Mächtigkeit von a plus Mächtigkeit von be plus Mächtigkeit von ze minus Mächtigkeit von Klammer auf a geschnitten be Klammer zu minus Mächtigkeit von Klammer auf a geschnitten ze Klammer zu minus Mächtigkeit von Klammer auf be geschnitten ze Klammer zu plus Mächtigkeit von Klammer auf a geschnitten be geschnitten ze Klammer zu"
+    },
+    {
+      "id": 1189,
+      "name": "De-Morgan-Gesetze in der Mengenlehre",
+      "aliases": [
+        "Komplement einer Vereinigung",
+        "Komplement eines Durchschnitts"
+      ],
+      "dictation": "Klammer auf a vereinigt be Klammer zu hoch ze gleich a hoch ze geschnitten be hoch ze Semikolon Klammer auf a geschnitten be Klammer zu hoch ze gleich a hoch ze vereinigt be hoch ze"
+    },
+    {
+      "id": 1190,
+      "name": "Mächtigkeit der Potenzmenge",
+      "aliases": [
+        "Größe der Potenzmenge"
+      ],
+      "dictation": "Mächtigkeit von pe von a gleich zwei hoch en"
+    },
+    {
+      "id": 1191,
+      "name": "Mächtigkeit eines kartesischen Produkts",
+      "aliases": [
+        "Mächtigkeit von a kreuz be"
+      ],
+      "dictation": "Mächtigkeit von Klammer auf a kreuz be Klammer zu gleich Mächtigkeit von a mal Mächtigkeit von be"
+    },
+    {
+      "id": 1192,
+      "name": "De-Morgan-Gesetze in der Logik",
+      "aliases": [
+        "Negation einer Konjunktion",
+        "Negation einer Disjunktion"
+      ],
+      "dictation": "nicht Klammer auf pe und ku Klammer zu ist äquivalent zu nicht pe oder nicht ku Semikolon nicht Klammer auf pe oder ku Klammer zu ist äquivalent zu nicht pe und nicht ku"
+    },
+    {
+      "id": 1193,
+      "name": "Äquivalenz der Implikation",
+      "aliases": [
+        "Implikation als Disjunktion"
+      ],
+      "dictation": "pe impliziert ku ist äquivalent zu nicht pe oder ku"
+    },
+    {
+      "id": 1194,
+      "name": "Kontraposition",
+      "aliases": [
+        "Äquivalenz durch Kontraposition"
+      ],
+      "dictation": "pe impliziert ku ist äquivalent zu nicht ku impliziert nicht pe"
+    },
+    {
+      "id": 1195,
+      "name": "Äquivalenz der Bikonditional",
+      "aliases": [
+        "doppelte Implikation"
+      ],
+      "dictation": "pe genau dann wenn ku ist äquivalent zu Klammer auf pe impliziert ku Klammer zu und Klammer auf ku impliziert pe Klammer zu"
+    },
+    {
+      "id": 1196,
+      "name": "doppelte Negation",
+      "aliases": [
+        "nicht nicht pe"
+      ],
+      "dictation": "nicht nicht pe ist äquivalent zu pe"
+    },
+    {
+      "id": 1197,
+      "name": "Modus ponens",
+      "aliases": [
+        "Abtrennungsregel"
+      ],
+      "dictation": "Klammer auf pe Komma pe impliziert ku Klammer zu durch ku"
+    },
+    {
+      "id": 1198,
+      "name": "Modus tollens",
+      "aliases": [
+        "Schluss durch Kontraposition"
+      ],
+      "dictation": "Klammer auf nicht ku Komma pe impliziert ku Klammer zu durch nicht pe"
+    },
+    {
+      "id": 1199,
+      "name": "Handschlaglemma",
+      "aliases": [
+        "Summe der Knotengrade"
+      ],
+      "dictation": "die Summe über alle vau aus vau groß von Grad von vau gleich zwei mal Mächtigkeit von e groß"
+    },
+    {
+      "id": 1200,
+      "name": "eulerscher Polyedersatz für planare Graphen",
+      "aliases": [
+        "vau minus e plus ef gleich zwei"
+      ],
+      "dictation": "vau minus e groß plus ef gleich zwei"
+    },
+    {
+      "id": 1201,
+      "name": "Kantenzahl eines vollständigen Graphen",
+      "aliases": [
+        "Kanten von ka en"
+      ],
+      "dictation": "Mächtigkeit von e groß gleich en mal Klammer auf en minus eins Klammer zu durch zwei"
+    },
+    {
+      "id": 1202,
+      "name": "Fibonacci-Rekursion",
+      "aliases": [
+        "Fibonacci-Folge"
+      ],
+      "dictation": "ef Index en gleich ef Index Klammer auf en minus eins Klammer zu plus ef Index Klammer auf en minus zwei Klammer zu"
+    },
+    {
+      "id": 1203,
+      "name": "Mastertheorem",
+      "aliases": [
+        "Teile-und-herrsche-Rekurrenz"
+      ],
+      "dictation": "te von en gleich a mal te von Klammer auf en durch be Klammer zu plus ef von en"
+    },
+    {
+      "id": 1204,
+      "name": "Summe der ersten en natürlichen Zahlen",
+      "aliases": [
+        "Dreieckszahl",
+        "gaußsche Summenformel"
+      ],
+      "dictation": "die Summe von ka gleich eins bis en über ka gleich en mal Klammer auf en plus eins Klammer zu durch zwei"
+    },
+    {
+      "id": 1205,
+      "name": "Summe der ersten en Quadratzahlen",
+      "aliases": [
+        "Summe der Quadratzahlen"
+      ],
+      "dictation": "die Summe von ka gleich eins bis en über ka Quadrat gleich en mal Klammer auf en plus eins Klammer zu mal Klammer auf zwei mal en plus eins Klammer zu durch sechs"
+    },
+    {
+      "id": 1206,
+      "name": "Summe der ersten en Kubikzahlen",
+      "aliases": [
+        "Summe der Kubikzahlen"
+      ],
+      "dictation": "die Summe von ka gleich eins bis en über ka hoch drei gleich eckige Klammer auf en mal Klammer auf en plus eins Klammer zu durch zwei eckige Klammer zu Quadrat"
+    },
+    {
+      "id": 1207,
+      "name": "boolesches exklusiv oder",
+      "aliases": [
+        "exklusiv oder",
+        "Antivalenz"
+      ],
+      "dictation": "a exklusiv oder be gleich Klammer auf a und nicht be Klammer zu oder Klammer auf nicht a und be Klammer zu"
+    },
+    {
+      "id": 1208,
+      "name": "boolesches Absorptionsgesetz",
+      "aliases": [
+        "Absorptionsgesetz"
+      ],
+      "dictation": "a oder Klammer auf a und be Klammer zu gleich a"
+    },
+    {
+      "id": 1209,
+      "name": "boolesches Distributivgesetz",
+      "aliases": [
+        "Distributivgesetz der booleschen Algebra"
+      ],
+      "dictation": "a und Klammer auf be oder ze Klammer zu gleich Klammer auf a und be Klammer zu oder Klammer auf a und ze Klammer zu"
+    },
+    {
+      "id": 1210,
+      "name": "boolesches Idempotenzgesetz",
+      "aliases": [
+        "Idempotenzgesetz"
+      ],
+      "dictation": "a und a gleich a"
     },
     {
       "id": 1211,
       "name": "stirlingsche Formel",
-      "aliases": ["Stirling-Näherung"],
+      "aliases": [
+        "Stirling-Näherung"
+      ],
       "dictation": "en Fakultät ungefähr gleich Wurzel aus Klammer auf zwei mal pi mal en Klammer zu mal Klammer auf en durch e Klammer zu hoch en"
+    },
+    {
+      "id": 1433,
+      "name": "Impedanz eines Kondensators",
+      "aliases": [
+        "kapazitiver Blindwiderstand"
+      ],
+      "dictation": "zett Index ze gleich eins durch jot mal omega mal ze"
+    },
+    {
+      "id": 1434,
+      "name": "Impedanz einer Spule",
+      "aliases": [
+        "induktiver Blindwiderstand"
+      ],
+      "dictation": "zett Index el gleich jot mal omega mal el"
+    },
+    {
+      "id": 1435,
+      "name": "Resonanzfrequenz eines LC-Schwingkreises",
+      "aliases": [
+        "Resonanzfrequenz"
+      ],
+      "dictation": "ef Index null gleich eins durch zwei pi mal Wurzel aus Klammer auf el mal ze Klammer zu"
+    },
+    {
+      "id": 1436,
+      "name": "RC-Zeitkonstante",
+      "aliases": [
+        "Zeitkonstante Widerstand-Kondensator"
+      ],
+      "dictation": "tau gleich er mal ze"
+    },
+    {
+      "id": 1437,
+      "name": "RL-Zeitkonstante",
+      "aliases": [
+        "Zeitkonstante Widerstand-Spule"
+      ],
+      "dictation": "tau gleich el durch er"
+    },
+    {
+      "id": 1438,
+      "name": "Effektivspannung",
+      "aliases": [
+        "Effektivwert der Spannung"
+      ],
+      "dictation": "vau Index eff gleich vau Index Spitze durch Wurzel aus zwei"
+    },
+    {
+      "id": 1439,
+      "name": "Kondensatoren in Reihe",
+      "aliases": [
+        "Reihenschaltung von Kondensatoren"
+      ],
+      "dictation": "eins durch ze Index äquivalent gleich eins durch ze Index eins plus eins durch ze Index zwei"
+    },
+    {
+      "id": 1440,
+      "name": "Kondensatoren parallel",
+      "aliases": [
+        "Parallelschaltung von Kondensatoren"
+      ],
+      "dictation": "ze Index äquivalent gleich ze Index eins plus ze Index zwei"
+    },
+    {
+      "id": 1441,
+      "name": "Nyquist-Shannon-Abtasttheorem",
+      "aliases": [
+        "Abtasttheorem"
+      ],
+      "dictation": "ef Index es größer oder gleich zwei mal ef Index max"
+    },
+    {
+      "id": 1442,
+      "name": "Faltungsintegral",
+      "aliases": [
+        "lineare Faltung"
+      ],
+      "dictation": "Klammer auf ef Faltung ge Klammer zu von te gleich das Integral von minus unendlich bis plus unendlich über ef von tau mal ge von Klammer auf te minus tau Klammer zu de tau"
+    },
+    {
+      "id": 1443,
+      "name": "diskrete Fourier-Transformation",
+      "aliases": [
+        "DFT-Formel"
+      ],
+      "dictation": "iks groß eckige Klammer auf ka eckige Klammer zu gleich die Summe von en gleich null bis en groß minus eins über iks eckige Klammer auf en eckige Klammer zu mal e hoch Klammer auf minus zwei mal pi mal jot mal ka mal en durch en groß Klammer zu"
+    },
+    {
+      "id": 1444,
+      "name": "Signal-Rausch-Verhältnis",
+      "aliases": [
+        "Signal-Rausch-Verhältnis in Dezibel"
+      ],
+      "dictation": "es en er gleich zehn mal Logarithmus zur Basis zehn von Klammer auf pe Index Signal durch pe Index Rauschen Klammer zu"
+    },
+    {
+      "id": 1445,
+      "name": "Shannon-Kanalkapazität",
+      "aliases": [
+        "Shannon-Hartley-Theorem"
+      ],
+      "dictation": "ze gleich be mal Logarithmus zur Basis zwei von Klammer auf eins plus es durch en Klammer zu"
+    },
+    {
+      "id": 1446,
+      "name": "Normalspannung",
+      "aliases": [
+        "Axialspannung"
+      ],
+      "dictation": "sigma gleich ef durch a"
+    },
+    {
+      "id": 1447,
+      "name": "Normaldehnung",
+      "aliases": [
+        "Axialdehnung"
+      ],
+      "dictation": "epsilon gleich delta durch el"
+    },
+    {
+      "id": 1448,
+      "name": "hookesches Gesetz für Festkörper",
+      "aliases": [
+        "Elastizitätsmodul",
+        "Youngscher Modul"
+      ],
+      "dictation": "e gleich sigma durch epsilon"
+    },
+    {
+      "id": 1449,
+      "name": "mittlere Schubspannung",
+      "aliases": [
+        "Querkraft pro Fläche"
+      ],
+      "dictation": "tau gleich vau durch a"
+    },
+    {
+      "id": 1450,
+      "name": "Schubmodul",
+      "aliases": [
+        "Gleitmodul"
+      ],
+      "dictation": "ge gleich tau durch gamma"
+    },
+    {
+      "id": 1451,
+      "name": "Querkontraktionszahl",
+      "aliases": [
+        "Poissonzahl"
+      ],
+      "dictation": "nü gleich minus epsilon Index quer durch epsilon Index längs"
+    },
+    {
+      "id": 1452,
+      "name": "Biegespannung",
+      "aliases": [
+        "Biegeformel"
+      ],
+      "dictation": "sigma gleich em mal ze durch i"
+    },
+    {
+      "id": 1453,
+      "name": "Torsionsschubspannung",
+      "aliases": [
+        "Torsionsformel"
+      ],
+      "dictation": "tau gleich te mal ze durch jot"
+    },
+    {
+      "id": 1454,
+      "name": "Wärmespannung",
+      "aliases": [
+        "thermisch bedingte Spannung"
+      ],
+      "dictation": "sigma Index te gleich e mal alpha mal delta te"
+    },
+    {
+      "id": 1455,
+      "name": "Newton-Verfahren",
+      "aliases": [
+        "Newton-Raphson-Verfahren"
+      ],
+      "dictation": "iks Index Klammer auf en plus eins Klammer zu gleich iks Index en minus ef von iks Index en durch ef Strich von iks Index en"
+    },
+    {
+      "id": 1456,
+      "name": "Trapezregel",
+      "aliases": [
+        "Trapezverfahren"
+      ],
+      "dictation": "das Integral von a bis be über ef von iks de iks ungefähr gleich ha durch zwei mal eckige Klammer auf ef von iks Index null plus zwei mal ef von iks Index eins plus und so weiter plus zwei mal ef von iks Index Klammer auf en minus eins Klammer zu plus ef von iks Index en eckige Klammer zu"
+    },
+    {
+      "id": 1457,
+      "name": "simpsonsche Regel",
+      "aliases": [
+        "Ein-Drittel-Regel von Simpson"
+      ],
+      "dictation": "das Integral von a bis be über ef von iks de iks ungefähr gleich ha durch drei mal eckige Klammer auf ef von iks Index null plus vier mal ef von iks Index eins plus zwei mal ef von iks Index zwei plus und so weiter plus vier mal ef von iks Index Klammer auf en minus eins Klammer zu plus ef von iks Index en eckige Klammer zu"
+    },
+    {
+      "id": 1458,
+      "name": "Euler-Verfahren",
+      "aliases": [
+        "eulersches Polygonzugverfahren"
+      ],
+      "dictation": "üpsilon Index Klammer auf en plus eins Klammer zu gleich üpsilon Index en plus ha mal ef von Klammer auf iks Index en Komma üpsilon Index en Klammer zu"
+    },
+    {
+      "id": 1459,
+      "name": "Vorwärtsdifferenz",
+      "aliases": [
+        "vordere Differenz"
+      ],
+      "dictation": "ef Strich von iks ungefähr gleich Klammer auf ef von Klammer auf iks plus ha Klammer zu minus ef von iks Klammer zu durch ha"
+    },
+    {
+      "id": 1460,
+      "name": "zentrale Differenz",
+      "aliases": [
+        "zentrierte Differenz"
+      ],
+      "dictation": "ef Strich von iks ungefähr gleich Klammer auf ef von Klammer auf iks plus ha Klammer zu minus ef von Klammer auf iks minus ha Klammer zu Klammer zu durch zwei mal ha"
+    },
+    {
+      "id": 1461,
+      "name": "Runge-Kutta-Verfahren vierter Ordnung",
+      "aliases": [
+        "RK4-Verfahren"
+      ],
+      "dictation": "üpsilon Index Klammer auf en plus eins Klammer zu gleich üpsilon Index en plus ha durch sechs mal Klammer auf ka Index eins plus zwei mal ka Index zwei plus zwei mal ka Index drei plus ka Index vier Klammer zu"
+    },
+    {
+      "id": 1409,
+      "name": "einfache Zinsen",
+      "aliases": [
+        "i gleich pe er te"
+      ],
+      "dictation": "i gleich pe mal er mal te"
+    },
+    {
+      "id": 1410,
+      "name": "Zinseszins",
+      "aliases": [
+        "Zinseszinsformel"
+      ],
+      "dictation": "a gleich pe mal Klammer auf eins plus er durch en Klammer zu hoch en mal te"
+    },
+    {
+      "id": 1411,
+      "name": "stetige Verzinsung",
+      "aliases": [
+        "kontinuierlicher Zinseszins"
+      ],
+      "dictation": "a gleich pe mal e hoch Klammer auf er mal te Klammer zu"
+    },
+    {
+      "id": 1412,
+      "name": "Zukunftswert",
+      "aliases": [
+        "Endwert"
+      ],
+      "dictation": "ef vau gleich pe vau mal Klammer auf eins plus er Klammer zu hoch en"
+    },
+    {
+      "id": 1413,
+      "name": "Barwert",
+      "aliases": [
+        "Gegenwartswert"
+      ],
+      "dictation": "pe vau gleich ef vau durch Klammer auf eins plus er Klammer zu hoch en"
+    },
+    {
+      "id": 1414,
+      "name": "Barwert einer Rente",
+      "aliases": [
+        "Rentenbarwert"
+      ],
+      "dictation": "pe vau gleich pe em te mal Klammer auf eins minus Klammer auf eins plus er Klammer zu hoch minus en Klammer zu durch er"
+    },
+    {
+      "id": 1415,
+      "name": "Endwert einer Rente",
+      "aliases": [
+        "Rentenendwert"
+      ],
+      "dictation": "ef vau gleich pe em te mal Klammer auf Klammer auf eins plus er Klammer zu hoch en minus eins Klammer zu durch er"
+    },
+    {
+      "id": 1416,
+      "name": "Barwert einer ewigen Rente",
+      "aliases": [
+        "Formel der ewigen Rente"
+      ],
+      "dictation": "pe vau gleich pe em te durch er"
+    },
+    {
+      "id": 1417,
+      "name": "Tilgung eines Kredits",
+      "aliases": [
+        "Annuitätenformel"
+      ],
+      "dictation": "em gleich pe mal er mal Klammer auf eins plus er Klammer zu hoch en durch Klammer auf Klammer auf eins plus er Klammer zu hoch en minus eins Klammer zu"
+    },
+    {
+      "id": 1418,
+      "name": "effektiver Jahreszins",
+      "aliases": [
+        "Effektivzins"
+      ],
+      "dictation": "e a er gleich Klammer auf eins plus er durch en Klammer zu hoch en minus eins"
+    },
+    {
+      "id": 1419,
+      "name": "Kapitalwert",
+      "aliases": [
+        "Nettobarwert"
+      ],
+      "dictation": "en pe vau gleich die Summe von te gleich null bis en über ze ef Index te durch Klammer auf eins plus er Klammer zu hoch te"
+    },
+    {
+      "id": 1420,
+      "name": "durchschnittliche jährliche Wachstumsrate",
+      "aliases": [
+        "CAGR"
+      ],
+      "dictation": "ze a ge er gleich Klammer auf vau Index ef durch vau Index i Klammer zu hoch Klammer auf eins durch en Klammer zu minus eins"
+    },
+    {
+      "id": 1421,
+      "name": "Verdopplungszeit",
+      "aliases": [
+        "70er-Regel"
+      ],
+      "dictation": "te gleich natürlicher Logarithmus von zwei durch er"
+    },
+    {
+      "id": 1422,
+      "name": "72er-Regel",
+      "aliases": [
+        "näherungsweise Verdopplungszeit"
+      ],
+      "dictation": "te ungefähr gleich zweiundsiebzig durch er"
+    },
+    {
+      "id": 1423,
+      "name": "Fisher-Gleichung",
+      "aliases": [
+        "Nominalzins und Realzins"
+      ],
+      "dictation": "Klammer auf eins plus er Index en Klammer zu gleich Klammer auf eins plus er Index er Klammer zu mal Klammer auf eins plus pi Klammer zu"
+    },
+    {
+      "id": 1424,
+      "name": "lineare Abschreibung",
+      "aliases": [
+        "lineare Wertminderung"
+      ],
+      "dictation": "de gleich Klammer auf ze minus es Klammer zu durch en"
+    },
+    {
+      "id": 1425,
+      "name": "Kapitalrendite",
+      "aliases": [
+        "Return on Investment"
+      ],
+      "dictation": "er o i gleich Klammer auf vau Index ef minus vau Index i Klammer zu durch vau Index i"
+    },
+    {
+      "id": 1426,
+      "name": "Anleihepreis",
+      "aliases": [
+        "Barwert einer Anleihe"
+      ],
+      "dictation": "pe gleich die Summe von te gleich eins bis en über ze durch Klammer auf eins plus er Klammer zu hoch te plus ef durch Klammer auf eins plus er Klammer zu hoch en"
+    },
+    {
+      "id": 1427,
+      "name": "Preiselastizität der Nachfrage",
+      "aliases": [
+        "Nachfrageelastizität"
+      ],
+      "dictation": "epsilon Index de gleich Klammer auf delta ku durch ku Klammer zu durch Klammer auf delta pe durch pe Klammer zu"
+    },
+    {
+      "id": 1428,
+      "name": "Grenzkosten",
+      "aliases": [
+        "Grenzkostenformel"
+      ],
+      "dictation": "em ze gleich de te ze durch de ku"
+    },
+    {
+      "id": 1429,
+      "name": "Grenzerlös",
+      "aliases": [
+        "Grenzerlösformel"
+      ],
+      "dictation": "em er gleich de te er durch de ku"
+    },
+    {
+      "id": 1430,
+      "name": "Bedingung der Gewinnmaximierung",
+      "aliases": [
+        "Grenzerlös gleich Grenzkosten"
+      ],
+      "dictation": "em er gleich em ze"
+    },
+    {
+      "id": 1431,
+      "name": "Konsumentenrente",
+      "aliases": [
+        "Fläche unter der Nachfragekurve"
+      ],
+      "dictation": "ze es gleich das Integral von null bis ku Stern über de von ku de ku minus pe Stern mal ku Stern"
+    },
+    {
+      "id": 1432,
+      "name": "Black-Scholes-Formel",
+      "aliases": [
+        "Black-Scholes-Modell",
+        "Optionsbewertung"
+      ],
+      "dictation": "ze gleich es Index null mal en von de Index eins minus ka mal e hoch Klammer auf minus er mal te Klammer zu mal en von de Index zwei"
+    },
+    {
+      "id": 1042,
+      "name": "Steigung",
+      "aliases": [
+        "Steigung einer Geraden",
+        "Anstieg"
+      ],
+      "dictation": "em gleich Klammer auf üpsilon Index zwei minus üpsilon Index eins Klammer zu durch Klammer auf iks Index zwei minus iks Index eins Klammer zu"
+    },
+    {
+      "id": 1043,
+      "name": "Steigungsform der Geradengleichung",
+      "aliases": [
+        "Normalform der Geraden"
+      ],
+      "dictation": "üpsilon gleich em mal iks plus be"
+    },
+    {
+      "id": 1044,
+      "name": "Punkt-Steigungs-Form",
+      "aliases": [
+        "Punkt-Steigungs-Gleichung"
+      ],
+      "dictation": "üpsilon minus üpsilon Index eins gleich em mal Klammer auf iks minus iks Index eins Klammer zu"
+    },
+    {
+      "id": 1045,
+      "name": "allgemeine Form der Geradengleichung",
+      "aliases": [
+        "Koordinatenform"
+      ],
+      "dictation": "a mal iks plus be mal üpsilon gleich ze"
+    },
+    {
+      "id": 1046,
+      "name": "Satz des Pythagoras",
+      "aliases": [
+        "a Quadrat plus be Quadrat gleich ze Quadrat"
+      ],
+      "dictation": "a Quadrat plus be Quadrat gleich ze Quadrat"
+    },
+    {
+      "id": 1047,
+      "name": "Abstandsformel",
+      "aliases": [
+        "Distanzformel"
+      ],
+      "dictation": "de gleich Wurzel aus Klammer auf Klammer auf iks Index zwei minus iks Index eins Klammer zu Quadrat plus Klammer auf üpsilon Index zwei minus üpsilon Index eins Klammer zu Quadrat Klammer zu"
+    },
+    {
+      "id": 1048,
+      "name": "Mittelpunktsformel",
+      "aliases": [
+        "Mittelpunkt zweier Punkte"
+      ],
+      "dictation": "em gleich Klammer auf Klammer auf iks Index eins plus iks Index zwei Klammer zu durch zwei Komma Klammer auf üpsilon Index eins plus üpsilon Index zwei Klammer zu durch zwei Klammer zu"
+    },
+    {
+      "id": 1049,
+      "name": "Kreisgleichung",
+      "aliases": [
+        "Gleichung eines Kreises"
+      ],
+      "dictation": "Klammer auf iks minus ha Klammer zu Quadrat plus Klammer auf üpsilon minus ka Klammer zu Quadrat gleich er Quadrat"
+    },
+    {
+      "id": 1050,
+      "name": "Kreisfläche",
+      "aliases": [
+        "Flächeninhalt des Kreises"
+      ],
+      "dictation": "a gleich pi mal er Quadrat"
+    },
+    {
+      "id": 1051,
+      "name": "Kreisumfang",
+      "aliases": [
+        "Umfang eines Kreises"
+      ],
+      "dictation": "ze gleich zwei mal pi mal er"
+    },
+    {
+      "id": 1052,
+      "name": "Flächeninhalt eines Dreiecks",
+      "aliases": [
+        "Dreiecksfläche"
+      ],
+      "dictation": "a gleich ein halb mal be mal ha"
+    },
+    {
+      "id": 1053,
+      "name": "heronische Formel",
+      "aliases": [
+        "Dreiecksfläche aus drei Seiten"
+      ],
+      "dictation": "a gleich Wurzel aus Klammer auf es mal Klammer auf es minus a Klammer zu mal Klammer auf es minus be Klammer zu mal Klammer auf es minus ze Klammer zu Klammer zu"
+    },
+    {
+      "id": 1054,
+      "name": "Flächeninhalt eines Rechtecks",
+      "aliases": [
+        "Rechtecksfläche"
+      ],
+      "dictation": "a gleich el mal we"
+    },
+    {
+      "id": 1055,
+      "name": "Flächeninhalt eines Trapezes",
+      "aliases": [
+        "Trapezfläche"
+      ],
+      "dictation": "a gleich ein halb mal Klammer auf a plus be Klammer zu mal ha"
+    },
+    {
+      "id": 1056,
+      "name": "Flächeninhalt einer Ellipse",
+      "aliases": [
+        "Ellipsenfläche"
+      ],
+      "dictation": "a gleich pi mal a mal be"
+    },
+    {
+      "id": 1057,
+      "name": "Kugelvolumen",
+      "aliases": [
+        "Volumen einer Kugel"
+      ],
+      "dictation": "vau gleich vier Drittel mal pi mal er hoch drei"
+    },
+    {
+      "id": 1058,
+      "name": "Kugeloberfläche",
+      "aliases": [
+        "Oberfläche einer Kugel"
+      ],
+      "dictation": "a gleich vier mal pi mal er Quadrat"
+    },
+    {
+      "id": 1059,
+      "name": "Zylindervolumen",
+      "aliases": [
+        "Volumen eines Zylinders"
+      ],
+      "dictation": "vau gleich pi mal er Quadrat mal ha"
+    },
+    {
+      "id": 1060,
+      "name": "Kegelvolumen",
+      "aliases": [
+        "Volumen eines Kegels"
+      ],
+      "dictation": "vau gleich ein Drittel mal pi mal er Quadrat mal ha"
+    },
+    {
+      "id": 1061,
+      "name": "Würfelvolumen",
+      "aliases": [
+        "Volumen eines Würfels"
+      ],
+      "dictation": "vau gleich es hoch drei"
+    },
+    {
+      "id": 1062,
+      "name": "Volumen eines Quaders",
+      "aliases": [
+        "Quadervolumen"
+      ],
+      "dictation": "vau gleich el mal we mal ha"
+    },
+    {
+      "id": 1063,
+      "name": "Pyramidenvolumen",
+      "aliases": [
+        "Volumen einer Pyramide"
+      ],
+      "dictation": "vau gleich ein Drittel mal be mal ha"
+    },
+    {
+      "id": 1064,
+      "name": "Oberfläche eines Zylinders",
+      "aliases": [
+        "Zylinderoberfläche"
+      ],
+      "dictation": "es a gleich zwei mal pi mal er Quadrat plus zwei mal pi mal er mal ha"
+    },
+    {
+      "id": 1065,
+      "name": "Oberfläche eines Kegels",
+      "aliases": [
+        "Kegeloberfläche"
+      ],
+      "dictation": "es a gleich pi mal er Quadrat plus pi mal er mal el"
+    },
+    {
+      "id": 1066,
+      "name": "Oberfläche eines Quaders",
+      "aliases": [
+        "Quaderoberfläche"
+      ],
+      "dictation": "es a gleich zwei mal Klammer auf el mal we plus el mal ha plus we mal ha Klammer zu"
+    },
+    {
+      "id": 1067,
+      "name": "Sinus-Verhältnis",
+      "aliases": [
+        "Sinus gleich Gegenkathete durch Hypotenuse"
+      ],
+      "dictation": "Sinus theta gleich Gegenkathete durch Hypotenuse"
+    },
+    {
+      "id": 1068,
+      "name": "Kosinus-Verhältnis",
+      "aliases": [
+        "Kosinus gleich Ankathete durch Hypotenuse"
+      ],
+      "dictation": "Kosinus theta gleich Ankathete durch Hypotenuse"
+    },
+    {
+      "id": 1069,
+      "name": "Tangens-Verhältnis",
+      "aliases": [
+        "Tangens gleich Gegenkathete durch Ankathete"
+      ],
+      "dictation": "Tangens theta gleich Gegenkathete durch Ankathete"
+    },
+    {
+      "id": 1070,
+      "name": "Kehrwert-Identitäten der Trigonometrie",
+      "aliases": [
+        "Kosekans als Kehrwert des Sinus",
+        "Sekans als Kehrwert des Kosinus",
+        "Kotangens als Kehrwert des Tangens"
+      ],
+      "dictation": "Kosekans theta gleich eins durch Sinus theta Semikolon Sekans theta gleich eins durch Kosinus theta Semikolon Kotangens theta gleich eins durch Tangens theta"
+    },
+    {
+      "id": 1071,
+      "name": "Quotienten-Identitäten der Trigonometrie",
+      "aliases": [
+        "Tangens als Sinus durch Kosinus",
+        "Kotangens als Kosinus durch Sinus"
+      ],
+      "dictation": "Tangens theta gleich Sinus theta durch Kosinus theta Semikolon Kotangens theta gleich Kosinus theta durch Sinus theta"
+    },
+    {
+      "id": 1072,
+      "name": "Komplementärwinkel-Identitäten",
+      "aliases": [
+        "Sinus von 90 Grad minus theta",
+        "Kosinus von 90 Grad minus theta",
+        "Tangens von 90 Grad minus theta"
+      ],
+      "dictation": "Sinus Klammer auf neunzig Grad minus theta Klammer zu gleich Kosinus theta Semikolon Kosinus Klammer auf neunzig Grad minus theta Klammer zu gleich Sinus theta Semikolon Tangens Klammer auf neunzig Grad minus theta Klammer zu gleich Kotangens theta"
+    },
+    {
+      "id": 1073,
+      "name": "Symmetrie-Identitäten der Trigonometrie",
+      "aliases": [
+        "Sinus von minus theta",
+        "Kosinus von minus theta",
+        "Tangens von minus theta"
+      ],
+      "dictation": "Sinus Klammer auf minus theta Klammer zu gleich minus Sinus theta Semikolon Kosinus Klammer auf minus theta Klammer zu gleich Kosinus theta Semikolon Tangens Klammer auf minus theta Klammer zu gleich minus Tangens theta"
+    },
+    {
+      "id": 1074,
+      "name": "Umrechnung von Grad in Bogenmaß",
+      "aliases": [
+        "Grad in Radiant"
+      ],
+      "dictation": "theta Index rad gleich theta Index grad mal pi durch hundertachtzig"
+    },
+    {
+      "id": 1075,
+      "name": "Umrechnung von Bogenmaß in Grad",
+      "aliases": [
+        "Radiant in Grad"
+      ],
+      "dictation": "theta Index grad gleich theta Index rad mal hundertachtzig durch pi"
+    },
+    {
+      "id": 1076,
+      "name": "trigonometrischer Pythagoras",
+      "aliases": [
+        "Sinus Quadrat plus Kosinus Quadrat gleich eins",
+        "Sekans-Identität",
+        "Kosekans-Identität"
+      ],
+      "dictation": "Sinus Quadrat theta plus Kosinus Quadrat theta gleich eins Semikolon eins plus Tangens Quadrat theta gleich Sekans Quadrat theta Semikolon eins plus Kotangens Quadrat theta gleich Kosekans Quadrat theta"
+    },
+    {
+      "id": 1077,
+      "name": "Doppelwinkelformel des Sinus",
+      "aliases": [
+        "Sinus des doppelten Winkels"
+      ],
+      "dictation": "Sinus Klammer auf zwei mal theta Klammer zu gleich zwei mal Sinus theta mal Kosinus theta"
+    },
+    {
+      "id": 1078,
+      "name": "Doppelwinkelformeln des Kosinus",
+      "aliases": [
+        "Kosinus des doppelten Winkels",
+        "zweite Doppelwinkelformel des Kosinus",
+        "dritte Doppelwinkelformel des Kosinus"
+      ],
+      "dictation": "Kosinus Klammer auf zwei mal theta Klammer zu gleich Kosinus Quadrat theta minus Sinus Quadrat theta"
+    },
+    {
+      "id": 1079,
+      "name": "Doppelwinkelformel des Tangens",
+      "aliases": [
+        "Tangens des doppelten Winkels"
+      ],
+      "dictation": "Tangens Klammer auf zwei mal theta Klammer zu gleich zwei mal Tangens theta durch Klammer auf eins minus Tangens Quadrat theta Klammer zu"
+    },
+    {
+      "id": 1080,
+      "name": "Additionstheorem des Sinus für die Summe",
+      "aliases": [
+        "Sinus von a plus be"
+      ],
+      "dictation": "Sinus Klammer auf a plus be Klammer zu gleich Sinus a mal Kosinus be plus Kosinus a mal Sinus be"
+    },
+    {
+      "id": 1081,
+      "name": "Additionstheorem des Sinus für die Differenz",
+      "aliases": [
+        "Sinus von a minus be"
+      ],
+      "dictation": "Sinus Klammer auf a minus be Klammer zu gleich Sinus a mal Kosinus be minus Kosinus a mal Sinus be"
+    },
+    {
+      "id": 1082,
+      "name": "Additionstheorem des Kosinus für die Summe",
+      "aliases": [
+        "Kosinus von a plus be"
+      ],
+      "dictation": "Kosinus Klammer auf a plus be Klammer zu gleich Kosinus a mal Kosinus be minus Sinus a mal Sinus be"
+    },
+    {
+      "id": 1083,
+      "name": "Additionstheorem des Kosinus für die Differenz",
+      "aliases": [
+        "Kosinus von a minus be"
+      ],
+      "dictation": "Kosinus Klammer auf a minus be Klammer zu gleich Kosinus a mal Kosinus be plus Sinus a mal Sinus be"
+    },
+    {
+      "id": 1084,
+      "name": "Additionstheorem des Tangens für die Summe",
+      "aliases": [
+        "Tangens von a plus be"
+      ],
+      "dictation": "Tangens Klammer auf a plus be Klammer zu gleich Klammer auf Tangens a plus Tangens be Klammer zu durch Klammer auf eins minus Tangens a mal Tangens be Klammer zu"
+    },
+    {
+      "id": 1085,
+      "name": "Additionstheorem des Tangens für die Differenz",
+      "aliases": [
+        "Tangens von a minus be"
+      ],
+      "dictation": "Tangens Klammer auf a minus be Klammer zu gleich Klammer auf Tangens a minus Tangens be Klammer zu durch Klammer auf eins plus Tangens a mal Tangens be Klammer zu"
+    },
+    {
+      "id": 1086,
+      "name": "Sinussatz",
+      "aliases": [
+        "Sinusregel"
+      ],
+      "dictation": "a durch Sinus a groß gleich be durch Sinus be groß gleich ze durch Sinus ze groß"
+    },
+    {
+      "id": 1087,
+      "name": "Kosinussatz",
+      "aliases": [
+        "Kosinusregel"
+      ],
+      "dictation": "ze Quadrat gleich a Quadrat plus be Quadrat minus zwei mal a mal be mal Kosinus ze groß"
+    },
+    {
+      "id": 1088,
+      "name": "eulersche Formel",
+      "aliases": [
+        "e hoch i theta"
+      ],
+      "dictation": "e hoch Klammer auf i mal theta Klammer zu gleich Kosinus theta plus i mal Sinus theta"
+    },
+    {
+      "id": 1089,
+      "name": "Bogenlänge",
+      "aliases": [
+        "es gleich er theta"
+      ],
+      "dictation": "es gleich er mal theta"
+    },
+    {
+      "id": 1090,
+      "name": "Kreissektorfläche",
+      "aliases": [
+        "Fläche eines Kreissektors"
+      ],
+      "dictation": "a gleich ein halb mal er Quadrat mal theta"
+    },
+    {
+      "id": 1091,
+      "name": "Dreiecksfläche mit Sinus",
+      "aliases": [
+        "Dreiecksfläche aus zwei Seiten und dem eingeschlossenen Winkel"
+      ],
+      "dictation": "a groß gleich ein halb mal a mal be mal Sinus ze groß"
+    },
+    {
+      "id": 1092,
+      "name": "Halbwinkelformeln",
+      "aliases": [
+        "Sinus des halben Winkels",
+        "Kosinus des halben Winkels",
+        "Tangens des halben Winkels"
+      ],
+      "dictation": "Sinus Klammer auf theta durch zwei Klammer zu gleich plus minus Wurzel aus Klammer auf Klammer auf eins minus Kosinus theta Klammer zu durch zwei Klammer zu Semikolon Kosinus Klammer auf theta durch zwei Klammer zu gleich plus minus Wurzel aus Klammer auf Klammer auf eins plus Kosinus theta Klammer zu durch zwei Klammer zu Semikolon Tangens Klammer auf theta durch zwei Klammer zu gleich Klammer auf eins minus Kosinus theta Klammer zu durch Sinus theta"
+    },
+    {
+      "id": 1093,
+      "name": "Formeln zur Gradreduktion",
+      "aliases": [
+        "Reduktion des Sinusquadrats",
+        "Reduktion des Kosinusquadrats"
+      ],
+      "dictation": "Sinus Quadrat theta gleich Klammer auf eins minus Kosinus Klammer auf zwei mal theta Klammer zu Klammer zu durch zwei Semikolon Kosinus Quadrat theta gleich Klammer auf eins plus Kosinus Klammer auf zwei mal theta Klammer zu Klammer zu durch zwei"
+    },
+    {
+      "id": 1094,
+      "name": "Winkelgeschwindigkeit",
+      "aliases": [
+        "omega gleich theta durch te"
+      ],
+      "dictation": "omega gleich theta durch te"
+    },
+    {
+      "id": 1095,
+      "name": "Bahngeschwindigkeit aus Winkelgeschwindigkeit",
+      "aliases": [
+        "vau gleich er omega"
+      ],
+      "dictation": "vau gleich er mal omega"
+    },
+    {
+      "id": 1096,
+      "name": "Produkt-zu-Summe-Formeln",
+      "aliases": [
+        "Produkt zu Summe Sinus Kosinus",
+        "Produkt zu Summe Kosinus Kosinus",
+        "Produkt zu Summe Sinus Sinus"
+      ],
+      "dictation": "Sinus a mal Kosinus be gleich ein halb mal eckige Klammer auf Sinus Klammer auf a plus be Klammer zu plus Sinus Klammer auf a minus be Klammer zu eckige Klammer zu Semikolon Kosinus a mal Kosinus be gleich ein halb mal eckige Klammer auf Kosinus Klammer auf a minus be Klammer zu plus Kosinus Klammer auf a plus be Klammer zu eckige Klammer zu Semikolon Sinus a mal Sinus be gleich ein halb mal eckige Klammer auf Kosinus Klammer auf a minus be Klammer zu minus Kosinus Klammer auf a plus be Klammer zu eckige Klammer zu"
+    },
+    {
+      "id": 1097,
+      "name": "Summe-zu-Produkt-Formeln",
+      "aliases": [
+        "Summe zu Produkt Sinus",
+        "Summe zu Produkt Kosinus"
+      ],
+      "dictation": "Sinus a plus Sinus be gleich zwei mal Sinus Klammer auf Klammer auf a plus be Klammer zu durch zwei Klammer zu mal Kosinus Klammer auf Klammer auf a minus be Klammer zu durch zwei Klammer zu Semikolon Kosinus a plus Kosinus be gleich zwei mal Kosinus Klammer auf Klammer auf a plus be Klammer zu durch zwei Klammer zu mal Kosinus Klammer auf Klammer auf a minus be Klammer zu durch zwei Klammer zu"
+    },
+    {
+      "id": 1098,
+      "name": "Normalform der Ellipse",
+      "aliases": [
+        "Ellipsengleichung"
+      ],
+      "dictation": "iks Quadrat durch a Quadrat plus üpsilon Quadrat durch be Quadrat gleich eins"
+    },
+    {
+      "id": 1099,
+      "name": "Normalform der Hyperbel",
+      "aliases": [
+        "Hyperbelgleichung"
+      ],
+      "dictation": "iks Quadrat durch a Quadrat minus üpsilon Quadrat durch be Quadrat gleich eins"
+    },
+    {
+      "id": 1100,
+      "name": "Normalform der Parabel",
+      "aliases": [
+        "Parabel aus dem Brennpunkt"
+      ],
+      "dictation": "iks Quadrat gleich vier mal pe mal üpsilon"
+    },
+    {
+      "id": 1166,
+      "name": "Skalarprodukt",
+      "aliases": [
+        "inneres Produkt",
+        "Punktprodukt"
+      ],
+      "dictation": "a Punkt be gleich Betrag von a mal Betrag von be mal Kosinus theta"
+    },
+    {
+      "id": 1167,
+      "name": "Determinante einer 2-×-2-Matrix",
+      "aliases": [
+        "zweireihige Determinante"
+      ],
+      "dictation": "Determinante der Matrix erste Zeile a Komma be und zweite Zeile ze Komma de gleich a mal de minus be mal ze"
+    },
+    {
+      "id": 1168,
+      "name": "Eigenwertgleichung",
+      "aliases": [
+        "Eigenvektorgleichung"
+      ],
+      "dictation": "a mal vau gleich lambda mal vau"
+    },
+    {
+      "id": 1169,
+      "name": "charakteristisches Polynom",
+      "aliases": [
+        "charakteristische Gleichung"
+      ],
+      "dictation": "Determinante von Klammer auf a minus lambda mal Einheitsmatrix Klammer zu gleich null"
+    },
+    {
+      "id": 1170,
+      "name": "Vektorprojektion",
+      "aliases": [
+        "Projektion von u auf vau"
+      ],
+      "dictation": "Projektion von u auf vau gleich u Punkt vau durch Betrag von vau Quadrat mal vau"
+    },
+    {
+      "id": 1171,
+      "name": "Betrag des Kreuzprodukts",
+      "aliases": [
+        "Betrag von a kreuz be"
+      ],
+      "dictation": "Betrag von Klammer auf a kreuz be Klammer zu gleich Betrag von a mal Betrag von be mal Sinus theta"
+    },
+    {
+      "id": 1172,
+      "name": "Komponenten des Kreuzprodukts",
+      "aliases": [
+        "Formel für a kreuz be"
+      ],
+      "dictation": "a kreuz be gleich die Determinante der Matrix erste Zeile i Komma jot Komma ka, zweite Zeile a Index eins Komma a Index zwei Komma a Index drei, dritte Zeile be Index eins Komma be Index zwei Komma be Index drei"
+    },
+    {
+      "id": 1173,
+      "name": "cauchy-schwarzsche Ungleichung",
+      "aliases": [
+        "Cauchy-Schwarz-Ungleichung"
+      ],
+      "dictation": "Betrag von Klammer auf a Punkt be Klammer zu kleiner oder gleich Betrag von a mal Betrag von be"
+    },
+    {
+      "id": 1174,
+      "name": "Satz von Lagrange",
+      "aliases": [
+        "Indexsatz für Untergruppen"
+      ],
+      "dictation": "Ordnung von ge gleich Ordnung von ha mal eckige Klammer auf ge Doppelpunkt ha eckige Klammer zu"
+    },
+    {
+      "id": 1175,
+      "name": "Gruppenhomomorphismus",
+      "aliases": [
+        "Homomorphie-Eigenschaft"
+      ],
+      "dictation": "phi von Klammer auf a mal be Klammer zu gleich phi von a mal phi von be"
+    },
+    {
+      "id": 1176,
+      "name": "erster Isomorphiesatz",
+      "aliases": [
+        "Homomorphiesatz"
+      ],
+      "dictation": "ge durch Kern von phi ist isomorph zu Bild von phi"
+    },
+    {
+      "id": 1177,
+      "name": "Ordnung eines Gruppenelements",
+      "aliases": [
+        "Potenz eines Gruppenelements"
+      ],
+      "dictation": "a hoch Ordnung von a gleich e"
+    },
+    {
+      "id": 1178,
+      "name": "Lagrange-Multiplikator-Bedingung",
+      "aliases": [
+        "Parallelität der Gradienten"
+      ],
+      "dictation": "Gradient von ef gleich lambda mal Gradient von ge"
+    },
+    {
+      "id": 1179,
+      "name": "Lagrange-Funktion",
+      "aliases": [
+        "Lagrangian",
+        "erweiterte Zielfunktion"
+      ],
+      "dictation": "el von Klammer auf iks Komma lambda Klammer zu gleich ef von iks minus lambda mal ge von iks"
+    },
+    {
+      "id": 1180,
+      "name": "KKT-Stationaritätsbedingung",
+      "aliases": [
+        "Karush-Kuhn-Tucker-Optimalitätsbedingung"
+      ],
+      "dictation": "Gradient von ef von iks Stern gleich die Summe über i von lambda Index i mal Gradient von ge Index i von iks Stern"
+    },
+    {
+      "id": 1269,
+      "name": "zweites newtonsches Gesetz",
+      "aliases": [
+        "Grundgleichung der Mechanik",
+        "Kraft gleich Masse mal Beschleunigung"
+      ],
+      "dictation": "ef gleich em mal a"
+    },
+    {
+      "id": 1270,
+      "name": "kinetische Energie",
+      "aliases": [
+        "Bewegungsenergie"
+      ],
+      "dictation": "ka e gleich ein halb mal em mal vau Quadrat"
+    },
+    {
+      "id": 1271,
+      "name": "potentielle Energie im Schwerefeld",
+      "aliases": [
+        "Lageenergie",
+        "Höhenenergie"
+      ],
+      "dictation": "u gleich em mal ge mal ha"
+    },
+    {
+      "id": 1272,
+      "name": "coulombsches Gesetz",
+      "aliases": [
+        "elektrostatische Kraft"
+      ],
+      "dictation": "ef gleich ka mal ku Index eins mal ku Index zwei durch er Quadrat"
+    },
+    {
+      "id": 1273,
+      "name": "ohmsches Gesetz",
+      "aliases": [
+        "vau gleich i mal er"
+      ],
+      "dictation": "vau gleich i mal er"
+    },
+    {
+      "id": 1274,
+      "name": "Wellengeschwindigkeit",
+      "aliases": [
+        "Geschwindigkeit gleich Frequenz mal Wellenlänge"
+      ],
+      "dictation": "vau gleich ef mal lambda"
+    },
+    {
+      "id": 1275,
+      "name": "Geschwindigkeit in der Kinematik",
+      "aliases": [
+        "vau gleich vau null plus a te"
+      ],
+      "dictation": "vau gleich vau Index null plus a mal te"
+    },
+    {
+      "id": 1276,
+      "name": "Ort in der Kinematik",
+      "aliases": [
+        "Weg-Zeit-Gesetz"
+      ],
+      "dictation": "iks gleich iks Index null plus vau Index null mal te plus ein halb mal a mal te Quadrat"
+    },
+    {
+      "id": 1277,
+      "name": "Geschwindigkeit Quadrat in der Kinematik",
+      "aliases": [
+        "zeitfreie Bewegungsgleichung"
+      ],
+      "dictation": "vau Quadrat gleich vau Index null Quadrat plus zwei mal a mal delta iks"
+    },
+    {
+      "id": 1278,
+      "name": "Weg aus der mittleren Geschwindigkeit",
+      "aliases": [
+        "Verschiebung aus der Durchschnittsgeschwindigkeit"
+      ],
+      "dictation": "delta iks gleich ein halb mal Klammer auf vau plus vau Index null Klammer zu mal te"
+    },
+    {
+      "id": 1279,
+      "name": "newtonsches Gravitationsgesetz",
+      "aliases": [
+        "Gravitationskraft"
+      ],
+      "dictation": "ef gleich ge mal em Index eins mal em Index zwei durch er Quadrat"
+    },
+    {
+      "id": 1280,
+      "name": "allgemeine Gravitationsenergie",
+      "aliases": [
+        "potentielle Energie der Gravitation"
+      ],
+      "dictation": "u gleich minus ge mal em Index eins mal em Index zwei durch er"
+    },
+    {
+      "id": 1281,
+      "name": "Fluchtgeschwindigkeit",
+      "aliases": [
+        "zweite kosmische Geschwindigkeit"
+      ],
+      "dictation": "vau Index e gleich Wurzel aus Klammer auf zwei mal ge mal em durch er Klammer zu"
+    },
+    {
+      "id": 1282,
+      "name": "Impuls",
+      "aliases": [
+        "pe gleich em vau"
+      ],
+      "dictation": "pe gleich em mal vau"
+    },
+    {
+      "id": 1283,
+      "name": "Kraftstoß",
+      "aliases": [
+        "Impuls gleich Kraft mal Zeit"
+      ],
+      "dictation": "jot gleich ef mal delta te gleich delta pe"
+    },
+    {
+      "id": 1284,
+      "name": "Impulserhaltung",
+      "aliases": [
+        "Impuls vorher gleich Impuls nachher"
+      ],
+      "dictation": "em Index eins mal vau Index eins plus em Index zwei mal vau Index zwei gleich em Index eins mal vau Index eins Strich plus em Index zwei mal vau Index zwei Strich"
+    },
+    {
+      "id": 1285,
+      "name": "Arbeit",
+      "aliases": [
+        "Arbeit einer Kraft"
+      ],
+      "dictation": "we gleich ef mal de mal Kosinus theta"
+    },
+    {
+      "id": 1286,
+      "name": "Leistung",
+      "aliases": [
+        "pe gleich Arbeit durch Zeit"
+      ],
+      "dictation": "pe gleich we durch te gleich ef mal vau"
+    },
+    {
+      "id": 1287,
+      "name": "Zentripetalbeschleunigung",
+      "aliases": [
+        "a gleich vau Quadrat durch er"
+      ],
+      "dictation": "a Index ze gleich vau Quadrat durch er"
+    },
+    {
+      "id": 1288,
+      "name": "Zentripetalkraft",
+      "aliases": [
+        "ef gleich em vau Quadrat durch er"
+      ],
+      "dictation": "ef Index ze gleich em mal vau Quadrat durch er"
+    },
+    {
+      "id": 1289,
+      "name": "Drehmoment",
+      "aliases": [
+        "tau gleich er ef Sinus theta"
+      ],
+      "dictation": "tau gleich er mal ef mal Sinus theta"
+    },
+    {
+      "id": 1290,
+      "name": "Drehimpuls",
+      "aliases": [
+        "el gleich i omega"
+      ],
+      "dictation": "el gleich i mal omega"
+    },
+    {
+      "id": 1291,
+      "name": "Rotationsenergie",
+      "aliases": [
+        "kinetische Energie der Rotation"
+      ],
+      "dictation": "ka e gleich ein halb mal i mal omega Quadrat"
+    },
+    {
+      "id": 1292,
+      "name": "hookesches Gesetz",
+      "aliases": [
+        "Federkraft"
+      ],
+      "dictation": "ef gleich minus ka mal iks"
+    },
+    {
+      "id": 1293,
+      "name": "Periode eines Federpendels",
+      "aliases": [
+        "Schwingungsdauer einer Feder"
+      ],
+      "dictation": "te gleich zwei mal pi mal Wurzel aus Klammer auf em durch ka Klammer zu"
+    },
+    {
+      "id": 1294,
+      "name": "Periode eines Fadenpendels",
+      "aliases": [
+        "Schwingungsdauer eines Pendels"
+      ],
+      "dictation": "te gleich zwei mal pi mal Wurzel aus Klammer auf el durch ge Klammer zu"
+    },
+    {
+      "id": 1295,
+      "name": "ideales Gasgesetz",
+      "aliases": [
+        "pe vau gleich en er te"
+      ],
+      "dictation": "pe mal vau gleich en mal er mal te"
+    },
+    {
+      "id": 1296,
+      "name": "erster Hauptsatz der Thermodynamik",
+      "aliases": [
+        "delta u gleich ku minus we"
+      ],
+      "dictation": "delta u gleich ku minus we"
+    },
+    {
+      "id": 1297,
+      "name": "Wärmemenge",
+      "aliases": [
+        "Wärmeübertragung",
+        "ku gleich em ze delta te"
+      ],
+      "dictation": "ku gleich em mal ze mal delta te"
+    },
+    {
+      "id": 1298,
+      "name": "lineare Wärmeausdehnung",
+      "aliases": [
+        "Längenausdehnung"
+      ],
+      "dictation": "delta el gleich alpha mal el Index null mal delta te"
+    },
+    {
+      "id": 1299,
+      "name": "Carnot-Wirkungsgrad",
+      "aliases": [
+        "Wirkungsgrad einer Carnot-Maschine"
+      ],
+      "dictation": "eta gleich eins minus te Index ze durch te Index ha"
+    },
+    {
+      "id": 1300,
+      "name": "elektrisches Feld einer Punktladung",
+      "aliases": [
+        "e gleich ka ku durch er Quadrat"
+      ],
+      "dictation": "e gleich ka mal ku durch er Quadrat"
+    },
+    {
+      "id": 1301,
+      "name": "elektrische potentielle Energie",
+      "aliases": [
+        "u gleich ka ku eins ku zwei durch er"
+      ],
+      "dictation": "u gleich ka mal ku Index eins mal ku Index zwei durch er"
+    },
+    {
+      "id": 1302,
+      "name": "elektrisches Potential",
+      "aliases": [
+        "vau gleich ka ku durch er"
+      ],
+      "dictation": "vau gleich ka mal ku durch er"
+    },
+    {
+      "id": 1303,
+      "name": "Kapazität",
+      "aliases": [
+        "ze gleich ku durch vau"
+      ],
+      "dictation": "ze gleich ku durch vau"
+    },
+    {
+      "id": 1304,
+      "name": "im Kondensator gespeicherte Energie",
+      "aliases": [
+        "Energie eines Kondensators"
+      ],
+      "dictation": "u gleich ein halb mal ze mal vau Quadrat"
+    },
+    {
+      "id": 1305,
+      "name": "elektrische Leistung",
+      "aliases": [
+        "pe gleich i vau"
+      ],
+      "dictation": "pe gleich i mal vau gleich i Quadrat mal er gleich vau Quadrat durch er"
+    },
+    {
+      "id": 1306,
+      "name": "Widerstände in Reihe",
+      "aliases": [
+        "Reihenschaltung von Widerständen"
+      ],
+      "dictation": "er Index gesamt gleich er Index eins plus er Index zwei plus und so weiter plus er Index en"
+    },
+    {
+      "id": 1307,
+      "name": "Widerstände parallel",
+      "aliases": [
+        "Parallelschaltung von Widerständen"
+      ],
+      "dictation": "eins durch er Index gesamt gleich eins durch er Index eins plus eins durch er Index zwei plus und so weiter plus eins durch er Index en"
+    },
+    {
+      "id": 1308,
+      "name": "faradaysches Induktionsgesetz",
+      "aliases": [
+        "induzierte Spannung"
+      ],
+      "dictation": "e gleich minus de phi Index be durch de te"
+    },
+    {
+      "id": 1309,
+      "name": "magnetische Kraft auf eine Ladung",
+      "aliases": [
+        "Lorentzkraft"
+      ],
+      "dictation": "ef gleich ku mal vau mal be mal Sinus theta"
+    },
+    {
+      "id": 1310,
+      "name": "magnetische Kraft auf einen Leiter",
+      "aliases": [
+        "Kraft auf einen stromdurchflossenen Leiter"
+      ],
+      "dictation": "ef gleich be mal i mal el mal Sinus theta"
+    },
+    {
+      "id": 1311,
+      "name": "in einer Spule gespeicherte Energie",
+      "aliases": [
+        "Energie einer Induktivität"
+      ],
+      "dictation": "u gleich ein halb mal el mal i Quadrat"
+    },
+    {
+      "id": 1312,
+      "name": "snelliussches Brechungsgesetz",
+      "aliases": [
+        "Brechungsgesetz"
+      ],
+      "dictation": "en Index eins mal Sinus theta Index eins gleich en Index zwei mal Sinus theta Index zwei"
+    },
+    {
+      "id": 1313,
+      "name": "Linsengleichung für dünne Linsen",
+      "aliases": [
+        "Abbildungsgleichung"
+      ],
+      "dictation": "eins durch ef gleich eins durch de Index o plus eins durch de Index i"
+    },
+    {
+      "id": 1314,
+      "name": "Abbildungsmaßstab",
+      "aliases": [
+        "Vergrößerung einer Linse"
+      ],
+      "dictation": "em gleich minus de Index i durch de Index o"
+    },
+    {
+      "id": 1315,
+      "name": "Frequenz und Periode einer Welle",
+      "aliases": [
+        "ef gleich eins durch te"
+      ],
+      "dictation": "ef gleich eins durch te"
+    },
+    {
+      "id": 1316,
+      "name": "Doppler-Effekt",
+      "aliases": [
+        "Doppler-Verschiebung"
+      ],
+      "dictation": "ef Strich gleich ef mal vau plus minus vau Index o durch vau minus plus vau Index es"
+    },
+    {
+      "id": 1317,
+      "name": "Wellenlänge einer stehenden Welle",
+      "aliases": [
+        "Harmonische"
+      ],
+      "dictation": "lambda Index en gleich zwei mal el durch en"
+    },
+    {
+      "id": 1318,
+      "name": "konstruktive Interferenz am Doppelspalt",
+      "aliases": [
+        "konstruktive Interferenz"
+      ],
+      "dictation": "de mal Sinus theta gleich em mal lambda"
+    },
+    {
+      "id": 1319,
+      "name": "destruktive Interferenz am Doppelspalt",
+      "aliases": [
+        "destruktive Interferenz"
+      ],
+      "dictation": "de mal Sinus theta gleich Klammer auf em plus ein halb Klammer zu mal lambda"
+    },
+    {
+      "id": 1320,
+      "name": "photoelektrischer Effekt",
+      "aliases": [
+        "Photonenenergie minus Austrittsarbeit"
+      ],
+      "dictation": "ka e Index max gleich ha mal ef minus phi"
+    },
+    {
+      "id": 1321,
+      "name": "De-Broglie-Wellenlänge",
+      "aliases": [
+        "Materiewelle"
+      ],
+      "dictation": "lambda gleich ha durch pe"
+    },
+    {
+      "id": 1322,
+      "name": "heisenbergsche Unschärferelation",
+      "aliases": [
+        "Unschärferelation"
+      ],
+      "dictation": "delta iks mal delta pe größer oder gleich ha quer durch zwei"
+    },
+    {
+      "id": 1323,
+      "name": "Masse-Energie-Äquivalenz",
+      "aliases": [
+        "e gleich em ze Quadrat",
+        "Ruheenergie"
+      ],
+      "dictation": "e gleich em mal ze Quadrat"
+    },
+    {
+      "id": 1324,
+      "name": "radioaktives Zerfallsgesetz",
+      "aliases": [
+        "exponentieller Zerfall",
+        "Kernzerfall"
+      ],
+      "dictation": "en von te gleich en Index null mal e hoch Klammer auf minus lambda mal te Klammer zu"
+    },
+    {
+      "id": 1325,
+      "name": "radioaktive Halbwertszeit",
+      "aliases": [
+        "Halbwertszeit"
+      ],
+      "dictation": "te Index ein halb gleich natürlicher Logarithmus von zwei durch lambda"
+    },
+    {
+      "id": 1326,
+      "name": "Lorentzfaktor",
+      "aliases": [
+        "Gammafaktor"
+      ],
+      "dictation": "gamma gleich eins durch Wurzel aus Klammer auf eins minus vau Quadrat durch ze Quadrat Klammer zu"
+    },
+    {
+      "id": 1327,
+      "name": "Zeitdilatation",
+      "aliases": [
+        "relativistische Zeitdilatation"
+      ],
+      "dictation": "delta te gleich gamma mal delta te Index null"
+    },
+    {
+      "id": 1328,
+      "name": "Längenkontraktion",
+      "aliases": [
+        "Lorentzkontraktion"
+      ],
+      "dictation": "el gleich el Index null durch gamma"
+    },
+    {
+      "id": 1329,
+      "name": "relativistischer Impuls",
+      "aliases": [
+        "Lorentzimpuls"
+      ],
+      "dictation": "pe gleich gamma mal em mal vau"
+    },
+    {
+      "id": 1330,
+      "name": "relativistische Gesamtenergie",
+      "aliases": [
+        "totale relativistische Energie"
+      ],
+      "dictation": "e gleich gamma mal em mal ze Quadrat"
+    },
+    {
+      "id": 1331,
+      "name": "Energie-Impuls-Beziehung",
+      "aliases": [
+        "relativistische Dispersionsrelation"
+      ],
+      "dictation": "e Quadrat gleich Klammer auf pe mal ze Klammer zu Quadrat plus Klammer auf em mal ze Quadrat Klammer zu Quadrat"
+    },
+    {
+      "id": 1332,
+      "name": "relativistische Geschwindigkeitsaddition",
+      "aliases": [
+        "Geschwindigkeitsaddition"
+      ],
+      "dictation": "u Strich gleich Klammer auf u minus vau Klammer zu durch Klammer auf eins minus u mal vau durch ze Quadrat Klammer zu"
+    },
+    {
+      "id": 1333,
+      "name": "Lorentz-Transformation des Ortes",
+      "aliases": [
+        "Transformation von iks Strich"
+      ],
+      "dictation": "iks Strich gleich gamma mal Klammer auf iks minus vau mal te Klammer zu"
+    },
+    {
+      "id": 1334,
+      "name": "Lorentz-Transformation der Zeit",
+      "aliases": [
+        "Transformation von te Strich"
+      ],
+      "dictation": "te Strich gleich gamma mal Klammer auf te minus vau mal iks durch ze Quadrat Klammer zu"
+    },
+    {
+      "id": 1335,
+      "name": "bernoullische Gleichung",
+      "aliases": [
+        "Prinzip von Bernoulli"
+      ],
+      "dictation": "pe plus ein halb mal rho mal vau Quadrat plus rho mal ge mal ha gleich konstant"
+    },
+    {
+      "id": 1336,
+      "name": "Kontinuitätsgleichung für Fluide",
+      "aliases": [
+        "Erhaltung des Massenstroms"
+      ],
+      "dictation": "a Index eins mal vau Index eins gleich a Index zwei mal vau Index zwei"
+    },
+    {
+      "id": 1337,
+      "name": "Reynolds-Zahl",
+      "aliases": [
+        "dimensionslose Reynolds-Zahl"
+      ],
+      "dictation": "er e gleich rho mal vau mal el durch mü"
+    },
+    {
+      "id": 1338,
+      "name": "Gesetz von Hagen-Poiseuille",
+      "aliases": [
+        "Hagen-Poiseuille-Strömung"
+      ],
+      "dictation": "ku gleich pi mal er hoch vier mal delta pe durch acht mal mü mal el"
+    },
+    {
+      "id": 1339,
+      "name": "Luftwiderstandskraft",
+      "aliases": [
+        "aerodynamischer Widerstand"
+      ],
+      "dictation": "ef Index de gleich ein halb mal ze Index de mal rho mal a mal vau Quadrat"
+    },
+    {
+      "id": 1340,
+      "name": "Auftriebskraft",
+      "aliases": [
+        "archimedisches Prinzip"
+      ],
+      "dictation": "ef Index be gleich rho Index ef mal ge mal vau"
+    },
+    {
+      "id": 1341,
+      "name": "zeitunabhängige Schrödinger-Gleichung",
+      "aliases": [
+        "stationäre Schrödinger-Gleichung"
+      ],
+      "dictation": "minus ha quer Quadrat durch zwei mal em mal de Quadrat psi durch de iks Quadrat plus vau mal psi gleich e mal psi"
+    },
+    {
+      "id": 1342,
+      "name": "zeitabhängige Schrödinger-Gleichung",
+      "aliases": [
+        "Schrödinger-Gleichung der Evolution"
+      ],
+      "dictation": "i mal ha quer mal partielles de psi durch partielles de te gleich ha Dach psi"
+    },
+    {
+      "id": 1343,
+      "name": "Normierung der Wellenfunktion",
+      "aliases": [
+        "Wahrscheinlichkeitsnormierung"
+      ],
+      "dictation": "das Integral von minus unendlich bis plus unendlich über Betrag von psi Quadrat de iks gleich eins"
+    },
+    {
+      "id": 1344,
+      "name": "quantenmechanischer Erwartungswert",
+      "aliases": [
+        "quantenmechanischer Mittelwert"
+      ],
+      "dictation": "spitze Klammer auf iks spitze Klammer zu gleich das Integral von minus unendlich bis plus unendlich über psi Stern mal iks mal psi de iks"
+    },
+    {
+      "id": 1345,
+      "name": "Teilchen im Kasten",
+      "aliases": [
+        "unendlich tiefer Potentialtopf"
+      ],
+      "dictation": "e Index en gleich en Quadrat mal pi Quadrat mal ha quer Quadrat durch zwei mal em mal el Quadrat"
+    },
+    {
+      "id": 1346,
+      "name": "Massendefekt",
+      "aliases": [
+        "nuklearer Massendefekt"
+      ],
+      "dictation": "delta em gleich zett mal em Index pe plus en mal em Index en minus em Index Kern"
+    },
+    {
+      "id": 1347,
+      "name": "Kernbindungsenergie",
+      "aliases": [
+        "gesamte Bindungsenergie"
+      ],
+      "dictation": "e Index be gleich delta em mal ze Quadrat"
+    },
+    {
+      "id": 1348,
+      "name": "Q-Wert",
+      "aliases": [
+        "Energie einer Kernreaktion"
+      ],
+      "dictation": "ku gleich Klammer auf em Index Edukte minus em Index Produkte Klammer zu mal ze Quadrat"
+    },
+    {
+      "id": 1349,
+      "name": "Schallpegel",
+      "aliases": [
+        "Pegel in Dezibel"
+      ],
+      "dictation": "beta gleich zehn mal Logarithmus zur Basis zehn von Klammer auf i durch i Index null Klammer zu"
+    },
+    {
+      "id": 1350,
+      "name": "Schallintensität einer Punktquelle",
+      "aliases": [
+        "quadratisches Abstandsgesetz des Schalls"
+      ],
+      "dictation": "i gleich pe durch vier mal pi mal er Quadrat"
+    },
+    {
+      "id": 1351,
+      "name": "Grundfrequenz einer Saite",
+      "aliases": [
+        "Saitenschwingung"
+      ],
+      "dictation": "ef Index eins gleich eins durch zwei mal el mal Wurzel aus Klammer auf te durch mü Klammer zu"
+    },
+    {
+      "id": 1352,
+      "name": "Harmonische einer offenen Pfeife",
+      "aliases": [
+        "Resonanz einer offenen Röhre"
+      ],
+      "dictation": "ef Index en gleich en mal vau durch zwei mal el"
+    },
+    {
+      "id": 1353,
+      "name": "Resonanz einer geschlossenen Pfeife",
+      "aliases": [
+        "Viertelwellenresonanz"
+      ],
+      "dictation": "ef Index en gleich Klammer auf zwei mal en minus eins Klammer zu mal vau durch vier mal el"
+    },
+    {
+      "id": 1354,
+      "name": "drittes keplersches Gesetz",
+      "aliases": [
+        "Gesetz der Umlaufzeiten"
+      ],
+      "dictation": "te Quadrat gleich vier mal pi Quadrat durch ge mal em mal a hoch drei"
+    },
+    {
+      "id": 1355,
+      "name": "hubblesches Gesetz",
+      "aliases": [
+        "kosmologische Expansion"
+      ],
+      "dictation": "vau gleich ha Index null mal de"
+    },
+    {
+      "id": 1356,
+      "name": "Leuchtkraft eines Sterns",
+      "aliases": [
+        "Leuchtkraft nach Stefan-Boltzmann"
+      ],
+      "dictation": "el gleich vier mal pi mal er Quadrat mal sigma mal te hoch vier"
+    },
+    {
+      "id": 1357,
+      "name": "Differenz der scheinbaren Helligkeit",
+      "aliases": [
+        "Pogson-Gleichung"
+      ],
+      "dictation": "em Index eins minus em Index zwei gleich minus zwei Komma fünf mal Logarithmus zur Basis zehn von Klammer auf ef Index eins durch ef Index zwei Klammer zu"
+    },
+    {
+      "id": 1358,
+      "name": "Schwarzschild-Radius",
+      "aliases": [
+        "Radius des Ereignishorizonts"
+      ],
+      "dictation": "er Index es gleich zwei mal ge mal em durch ze Quadrat"
+    },
+    {
+      "id": 1359,
+      "name": "maxwellsche Gleichungen gruppiert",
+      "aliases": [
+        "gaußsches Gesetz elektrisch",
+        "gaußsches Gesetz magnetisch",
+        "Ampère-Maxwell-Gesetz"
+      ],
+      "dictation": "Nabla Punkt e groß gleich rho durch epsilon Index null Semikolon Nabla Punkt be gleich null Semikolon Nabla kreuz e groß gleich minus partielles de be durch partielles de te Semikolon Nabla kreuz be gleich mü Index null mal jot plus mü Index null mal epsilon Index null mal partielles de e groß durch partielles de te"
+    },
+    {
+      "id": 1360,
+      "name": "Wellengleichung in einer Dimension",
+      "aliases": [
+        "klassische Wellengleichung"
+      ],
+      "dictation": "partielles de Quadrat u durch partielles de te Quadrat gleich ze Quadrat mal partielles de Quadrat u durch partielles de iks Quadrat"
+    },
+    {
+      "id": 1361,
+      "name": "stefan-boltzmannsches Gesetz",
+      "aliases": [
+        "abgestrahlte Leistung"
+      ],
+      "dictation": "pe gleich sigma mal a mal te hoch vier"
+    },
+    {
+      "id": 1212,
+      "name": "Stichprobenmittelwert",
+      "aliases": [
+        "arithmetisches Mittel"
+      ],
+      "dictation": "iks quer gleich eins durch en mal die Summe von i gleich eins bis en über iks Index i"
+    },
+    {
+      "id": 1213,
+      "name": "Stichprobenvarianz",
+      "aliases": [
+        "korrigierte Stichprobenvarianz"
+      ],
+      "dictation": "es Quadrat gleich eins durch Klammer auf en minus eins Klammer zu mal die Summe von i gleich eins bis en über Klammer auf iks Index i minus iks quer Klammer zu Quadrat"
+    },
+    {
+      "id": 1214,
+      "name": "Standardabweichung der Grundgesamtheit",
+      "aliases": [
+        "Populationsstandardabweichung"
+      ],
+      "dictation": "sigma gleich Wurzel aus Klammer auf eins durch en groß mal die Summe von i gleich eins bis en groß über Klammer auf iks Index i minus mü Klammer zu Quadrat Klammer zu"
+    },
+    {
+      "id": 1215,
+      "name": "z-Wert",
+      "aliases": [
+        "Standardwert",
+        "z-Score"
+      ],
+      "dictation": "zett gleich Klammer auf iks minus mü Klammer zu durch sigma"
+    },
+    {
+      "id": 1216,
+      "name": "Dichte der Normalverteilung",
+      "aliases": [
+        "gaußsche Dichte"
+      ],
+      "dictation": "ef von iks gleich eins durch Wurzel aus Klammer auf zwei mal pi mal sigma Quadrat Klammer zu mal e hoch Klammer auf minus Klammer auf iks minus mü Klammer zu Quadrat durch zwei mal sigma Quadrat Klammer zu"
+    },
+    {
+      "id": 1217,
+      "name": "Satz von Bayes",
+      "aliases": [
+        "bayessche Regel"
+      ],
+      "dictation": "pe von Klammer auf a gegeben be Klammer zu gleich pe von Klammer auf be gegeben a Klammer zu mal pe von a durch pe von be"
+    },
+    {
+      "id": 1218,
+      "name": "Erwartungswert im diskreten Fall",
+      "aliases": [
+        "Mittelwert einer diskreten Verteilung"
+      ],
+      "dictation": "Erwartungswert von iks groß gleich die Summe über iks von iks mal pe von Klammer auf iks groß gleich iks Klammer zu"
+    },
+    {
+      "id": 1219,
+      "name": "Erwartungswert im stetigen Fall",
+      "aliases": [
+        "stetiger Erwartungswert"
+      ],
+      "dictation": "Erwartungswert von iks groß gleich das Integral von minus unendlich bis plus unendlich über iks mal ef von iks de iks"
+    },
+    {
+      "id": 1220,
+      "name": "Kovarianz",
+      "aliases": [
+        "Kovarianz von iks groß und üpsilon groß"
+      ],
+      "dictation": "Kovarianz von Klammer auf iks groß Komma üpsilon groß Klammer zu gleich Erwartungswert von Klammer auf Klammer auf iks groß minus mü Index iks groß Klammer zu mal Klammer auf üpsilon groß minus mü Index üpsilon groß Klammer zu Klammer zu"
+    },
+    {
+      "id": 1221,
+      "name": "Pearson-Korrelation",
+      "aliases": [
+        "Korrelationskoeffizient"
+      ],
+      "dictation": "rho gleich Kovarianz von Klammer auf iks groß Komma üpsilon groß Klammer zu durch sigma Index iks groß mal sigma Index üpsilon groß"
+    },
+    {
+      "id": 1222,
+      "name": "Additionssatz der Wahrscheinlichkeit",
+      "aliases": [
+        "pe von a vereinigt be"
+      ],
+      "dictation": "pe von Klammer auf a vereinigt be Klammer zu gleich pe von a plus pe von be minus pe von Klammer auf a geschnitten be Klammer zu"
+    },
+    {
+      "id": 1223,
+      "name": "bedingte Wahrscheinlichkeit",
+      "aliases": [
+        "pe von a gegeben be"
+      ],
+      "dictation": "pe von Klammer auf a gegeben be Klammer zu gleich pe von Klammer auf a geschnitten be Klammer zu durch pe von be"
+    },
+    {
+      "id": 1224,
+      "name": "Multiplikationssatz der Wahrscheinlichkeit",
+      "aliases": [
+        "pe von a und be"
+      ],
+      "dictation": "pe von Klammer auf a geschnitten be Klammer zu gleich pe von a mal pe von Klammer auf be gegeben a Klammer zu"
+    },
+    {
+      "id": 1225,
+      "name": "Komplementärregel",
+      "aliases": [
+        "Wahrscheinlichkeit von nicht a"
+      ],
+      "dictation": "pe von Klammer auf a hoch ze Klammer zu gleich eins minus pe von a"
+    },
+    {
+      "id": 1226,
+      "name": "Satz von der totalen Wahrscheinlichkeit",
+      "aliases": [
+        "totale Wahrscheinlichkeit"
+      ],
+      "dictation": "pe von a gleich die Summe über i von pe von Klammer auf a gegeben be Index i Klammer zu mal pe von be Index i"
+    },
+    {
+      "id": 1227,
+      "name": "Binomialverteilung",
+      "aliases": [
+        "Wahrscheinlichkeitsfunktion der Binomialverteilung"
+      ],
+      "dictation": "pe von Klammer auf iks groß gleich ka Klammer zu gleich en über ka mal pe hoch ka mal Klammer auf eins minus pe Klammer zu hoch Klammer auf en minus ka Klammer zu"
+    },
+    {
+      "id": 1228,
+      "name": "Poisson-Verteilung",
+      "aliases": [
+        "Wahrscheinlichkeitsfunktion der Poisson-Verteilung"
+      ],
+      "dictation": "pe von Klammer auf iks groß gleich ka Klammer zu gleich e hoch minus lambda mal lambda hoch ka durch ka Fakultät"
+    },
+    {
+      "id": 1229,
+      "name": "geometrische Verteilung",
+      "aliases": [
+        "Wahrscheinlichkeitsfunktion der geometrischen Verteilung"
+      ],
+      "dictation": "pe von Klammer auf iks groß gleich ka Klammer zu gleich Klammer auf eins minus pe Klammer zu hoch Klammer auf ka minus eins Klammer zu mal pe"
+    },
+    {
+      "id": 1230,
+      "name": "hypergeometrische Verteilung",
+      "aliases": [
+        "Wahrscheinlichkeitsfunktion der hypergeometrischen Verteilung"
+      ],
+      "dictation": "pe von Klammer auf iks groß gleich ka Klammer zu gleich ka groß über ka mal Klammer auf en groß minus ka groß Klammer zu über Klammer auf en minus ka Klammer zu durch Klammer auf en groß über en Klammer zu"
+    },
+    {
+      "id": 1231,
+      "name": "Dichte der Exponentialverteilung",
+      "aliases": [
+        "Exponentialdichte"
+      ],
+      "dictation": "ef von iks gleich lambda mal e hoch Klammer auf minus lambda mal iks Klammer zu"
+    },
+    {
+      "id": 1232,
+      "name": "Dichte der Gleichverteilung",
+      "aliases": [
+        "Gleichverteilungsdichte"
+      ],
+      "dictation": "ef von iks gleich eins durch Klammer auf be minus a Klammer zu"
+    },
+    {
+      "id": 1233,
+      "name": "Standardfehler des Mittelwerts",
+      "aliases": [
+        "Standardfehler"
+      ],
+      "dictation": "es e gleich sigma durch Wurzel aus en"
+    },
+    {
+      "id": 1234,
+      "name": "Konfidenzintervall für den Mittelwert",
+      "aliases": [
+        "Konfidenzintervall"
+      ],
+      "dictation": "iks quer plus minus zett Stern mal sigma durch Wurzel aus en"
+    },
+    {
+      "id": 1235,
+      "name": "t-Teststatistik",
+      "aliases": [
+        "t-Test für eine Stichprobe"
+      ],
+      "dictation": "te gleich Klammer auf iks quer minus mü Klammer zu durch es durch Wurzel aus en"
+    },
+    {
+      "id": 1236,
+      "name": "t-Test für zwei Stichproben",
+      "aliases": [
+        "t-Test für unabhängige Stichproben"
+      ],
+      "dictation": "te gleich Klammer auf iks quer Index eins minus iks quer Index zwei Klammer zu durch Wurzel aus Klammer auf es Index eins Quadrat durch en Index eins plus es Index zwei Quadrat durch en Index zwei Klammer zu"
+    },
+    {
+      "id": 1237,
+      "name": "gepoolte Varianz",
+      "aliases": [
+        "gepoolte Standardabweichung"
+      ],
+      "dictation": "es Index pe Quadrat gleich Klammer auf Klammer auf en Index eins minus eins Klammer zu mal es Index eins Quadrat plus Klammer auf en Index zwei minus eins Klammer zu mal es Index zwei Quadrat Klammer zu durch Klammer auf en Index eins plus en Index zwei minus zwei Klammer zu"
+    },
+    {
+      "id": 1238,
+      "name": "Chi-Quadrat-Teststatistik",
+      "aliases": [
+        "Chi-Quadrat-Anpassungstest"
+      ],
+      "dictation": "chi Quadrat gleich die Summe über Klammer auf o Index i minus e Index i Klammer zu Quadrat durch e Index i"
+    },
+    {
+      "id": 1239,
+      "name": "F-Statistik",
+      "aliases": [
+        "F-Test"
+      ],
+      "dictation": "ef gleich es Index eins Quadrat durch es Index zwei Quadrat"
+    },
+    {
+      "id": 1240,
+      "name": "Interquartilsabstand",
+      "aliases": [
+        "IQR"
+      ],
+      "dictation": "i ku er gleich ku Index drei minus ku Index eins"
+    },
+    {
+      "id": 1241,
+      "name": "Variationskoeffizient",
+      "aliases": [
+        "CV"
+      ],
+      "dictation": "ze vau gleich sigma durch mü"
+    },
+    {
+      "id": 1242,
+      "name": "Schiefe",
+      "aliases": [
+        "Stichprobenschiefe"
+      ],
+      "dictation": "Schiefe gleich eins durch en mal die Summe über Klammer auf iks Index i minus iks quer Klammer zu hoch drei durch es hoch drei"
+    },
+    {
+      "id": 1243,
+      "name": "Kurtosis",
+      "aliases": [
+        "Exzess-Kurtosis",
+        "Wölbung"
+      ],
+      "dictation": "Kurtosis gleich eins durch en mal die Summe über Klammer auf iks Index i minus iks quer Klammer zu hoch vier durch es hoch vier minus drei"
+    },
+    {
+      "id": 1244,
+      "name": "einfache lineare Regression",
+      "aliases": [
+        "Regressionsgerade"
+      ],
+      "dictation": "üpsilon Dach gleich beta Dach Index null plus beta Dach Index eins mal iks"
+    },
+    {
+      "id": 1245,
+      "name": "KQ-Steigung",
+      "aliases": [
+        "Steigung der kleinsten Quadrate"
+      ],
+      "dictation": "beta Dach Index eins gleich die Summe über Klammer auf iks Index i minus iks quer Klammer zu mal Klammer auf üpsilon Index i minus üpsilon quer Klammer zu durch die Summe über Klammer auf iks Index i minus iks quer Klammer zu Quadrat"
+    },
+    {
+      "id": 1246,
+      "name": "KQ-Achsenabschnitt",
+      "aliases": [
+        "Achsenabschnitt der kleinsten Quadrate"
+      ],
+      "dictation": "beta Dach Index null gleich üpsilon quer minus beta Dach Index eins mal iks quer"
+    },
+    {
+      "id": 1247,
+      "name": "Bestimmtheitsmaß",
+      "aliases": [
+        "R Quadrat"
+      ],
+      "dictation": "er Quadrat gleich eins minus es es Index res durch es es Index tot"
+    },
+    {
+      "id": 1248,
+      "name": "Summe der quadrierten Residuen",
+      "aliases": [
+        "Residuenquadratsumme"
+      ],
+      "dictation": "es es Index res gleich die Summe von i gleich eins bis en über Klammer auf üpsilon Index i minus üpsilon Dach Index i Klammer zu Quadrat"
+    },
+    {
+      "id": 1249,
+      "name": "mittlerer quadratischer Fehler",
+      "aliases": [
+        "MSE"
+      ],
+      "dictation": "em es e gleich eins durch en mal die Summe von i gleich eins bis en über Klammer auf üpsilon Index i minus üpsilon Dach Index i Klammer zu Quadrat"
+    },
+    {
+      "id": 1250,
+      "name": "Wurzel des mittleren quadratischen Fehlers",
+      "aliases": [
+        "RMSE"
+      ],
+      "dictation": "er em es e gleich Wurzel aus Klammer auf eins durch en mal die Summe von i gleich eins bis en über Klammer auf üpsilon Index i minus üpsilon Dach Index i Klammer zu Quadrat Klammer zu"
+    },
+    {
+      "id": 1251,
+      "name": "Normalgleichungen der kleinsten Quadrate",
+      "aliases": [
+        "Matrixregression"
+      ],
+      "dictation": "beta Dach gleich Klammer auf iks groß transponiert mal iks groß Klammer zu hoch minus eins mal iks groß transponiert mal üpsilon"
+    },
+    {
+      "id": 1252,
+      "name": "Shannon-Entropie",
+      "aliases": [
+        "Informationsentropie"
+      ],
+      "dictation": "ha von iks groß gleich minus die Summe über iks von pe von iks mal Logarithmus zur Basis zwei von pe von iks"
+    },
+    {
+      "id": 1253,
+      "name": "Kreuzentropie",
+      "aliases": [
+        "Kreuzentropie-Verlust"
+      ],
+      "dictation": "ha von Klammer auf pe Komma ku Klammer zu gleich minus die Summe über iks von pe von iks mal Logarithmus von ku von iks"
+    },
+    {
+      "id": 1254,
+      "name": "Kullback-Leibler-Divergenz",
+      "aliases": [
+        "KL-Divergenz"
+      ],
+      "dictation": "de Index ka el von Klammer auf pe groß doppelter Strich ku groß Klammer zu gleich die Summe über iks von pe groß von iks mal Logarithmus von Klammer auf pe groß von iks durch ku groß von iks Klammer zu"
+    },
+    {
+      "id": 1255,
+      "name": "Transinformation",
+      "aliases": [
+        "wechselseitige Information"
+      ],
+      "dictation": "i von Klammer auf iks groß Semikolon üpsilon groß Klammer zu gleich ha von iks groß minus ha von Klammer auf iks groß gegeben üpsilon groß Klammer zu"
+    },
+    {
+      "id": 1256,
+      "name": "Sigmoidfunktion",
+      "aliases": [
+        "logistische Funktion"
+      ],
+      "dictation": "sigma von iks gleich eins durch Klammer auf eins plus e hoch minus iks Klammer zu"
+    },
+    {
+      "id": 1257,
+      "name": "Softmax-Funktion",
+      "aliases": [
+        "Softmax"
+      ],
+      "dictation": "Softmax von iks Index i gleich e hoch Klammer auf iks Index i Klammer zu durch die Summe über jot von e hoch Klammer auf iks Index jot Klammer zu"
+    },
+    {
+      "id": 1258,
+      "name": "binäre Kreuzentropie-Verlustfunktion",
+      "aliases": [
+        "Log-Verlust"
+      ],
+      "dictation": "el gleich minus eins durch en mal die Summe von i gleich eins bis en über eckige Klammer auf üpsilon Index i mal Logarithmus von üpsilon Dach Index i plus Klammer auf eins minus üpsilon Index i Klammer zu mal Logarithmus von Klammer auf eins minus üpsilon Dach Index i Klammer zu eckige Klammer zu"
+    },
+    {
+      "id": 1259,
+      "name": "Gradientenabstiegs-Aktualisierung",
+      "aliases": [
+        "Aktualisierungsregel der Parameter"
+      ],
+      "dictation": "theta wird zu theta minus alpha mal Gradient Index theta von jot von theta"
+    },
+    {
+      "id": 1260,
+      "name": "L1-Norm",
+      "aliases": [
+        "Manhattan-Norm"
+      ],
+      "dictation": "Norm Index eins von iks gleich die Summe über i von Betrag von iks Index i"
+    },
+    {
+      "id": 1261,
+      "name": "L2-Norm",
+      "aliases": [
+        "euklidische Norm"
+      ],
+      "dictation": "Norm Index zwei von iks gleich Wurzel aus Klammer auf die Summe über i von iks Index i Quadrat Klammer zu"
+    },
+    {
+      "id": 1262,
+      "name": "L2-Regularisierungsverlust",
+      "aliases": [
+        "Ridge-Verlust"
+      ],
+      "dictation": "jot von theta gleich em es e plus lambda mal die Summe über jot von theta Index jot Quadrat"
+    },
+    {
+      "id": 1263,
+      "name": "L1-Regularisierungsverlust",
+      "aliases": [
+        "Lasso-Verlust"
+      ],
+      "dictation": "jot von theta gleich em es e plus lambda mal die Summe über jot von Betrag von theta Index jot"
+    },
+    {
+      "id": 1264,
+      "name": "Bias-Varianz-Zerlegung",
+      "aliases": [
+        "Bias-Varianz-Kompromiss"
+      ],
+      "dictation": "Erwartungswert von Klammer auf Klammer auf üpsilon minus üpsilon Dach Klammer zu Quadrat Klammer zu gleich Verzerrung Quadrat plus Varianz plus sigma Quadrat"
+    },
+    {
+      "id": 1265,
+      "name": "Genauigkeit",
+      "aliases": [
+        "Korrektklassifikationsrate"
+      ],
+      "dictation": "Genauigkeit gleich Klammer auf te pe plus te en Klammer zu durch Klammer auf te pe plus te en plus ef pe plus ef en Klammer zu"
+    },
+    {
+      "id": 1266,
+      "name": "Präzision",
+      "aliases": [
+        "positiver Vorhersagewert"
+      ],
+      "dictation": "Präzision gleich te pe durch Klammer auf te pe plus ef pe Klammer zu"
+    },
+    {
+      "id": 1267,
+      "name": "Trefferquote",
+      "aliases": [
+        "Sensitivität",
+        "Richtig-Positiv-Rate"
+      ],
+      "dictation": "Trefferquote gleich te pe durch Klammer auf te pe plus ef en Klammer zu"
+    },
+    {
+      "id": 1268,
+      "name": "F1-Wert",
+      "aliases": [
+        "F1"
+      ],
+      "dictation": "ef Index eins gleich zwei mal Präzision mal Trefferquote durch Klammer auf Präzision plus Trefferquote Klammer zu"
     }
   ]
 }
