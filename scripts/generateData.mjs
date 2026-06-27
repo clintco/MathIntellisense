@@ -36,7 +36,7 @@ const equations = eq.equations.map((e) => ({
   aliases: e.aliases.join("; "),
   description: e.description,
   domain: domainLabel.get(e.domainId) ?? e.domainId,
-  unicodemath: `⁅${e.unicodemath}⁆`,
+  unicodemath: e.unicodemath,
 }));
 writeFileSync(
   resolve(SRC, "mathEquations.js"),
