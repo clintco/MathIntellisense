@@ -212,8 +212,8 @@
       "id": 1012,
       "name": "perfect square trinomial",
       "aliases": [
-        "(a+b) squared",
-        "(a-b) squared"
+        "square of a binomial",
+        "perfect square binomial"
       ],
       "unicodemath": "(𝑎+𝑏)²=𝑎²+2𝑎𝑏+𝑏²; (𝑎-𝑏)²=𝑎²-2𝑎𝑏+𝑏²",
       "domainId": "algebra-number-systems",
@@ -321,9 +321,9 @@
       "id": 1021,
       "name": "difference of squares",
       "aliases": [
-        "(a+b)(a-b)"
+        "difference of two squares"
       ],
-      "unicodemath": "𝑎³-𝑏³=(𝑎+𝑏)(𝑎-𝑏)",
+      "unicodemath": "𝑎²-𝑏²=(𝑎+𝑏)(𝑎-𝑏)",
       "domainId": "algebra-number-systems",
       "description": "Difference of squares factoring identity",
       "dictation": "a squared minus b squared equals open parenthesis a plus b close parenthesis times open parenthesis a minus b close parenthesis",
