@@ -35,6 +35,7 @@ const equations = eq.equations.map((e) => ({
   name: e.name,
   aliases: e.aliases.join("; "),
   description: e.description,
+  dictation: e.dictation ?? "",
   domain: domainLabel.get(e.domainId) ?? e.domainId,
   unicodemath: e.unicodemath,
 }));

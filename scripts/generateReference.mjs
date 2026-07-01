@@ -305,6 +305,7 @@ function equationSection(domain) {
           <td class="eq-math">${equationMathML(e)}</td>
           <td class="eq-unicode"><code>${esc(e.unicodemath)}</code></td>
           <td class="eq-desc">${esc(e.description)}</td>
+          <td class="eq-dict">${esc(e.dictation)}</td>
         </tr>`;
   }).join("");
 
@@ -318,6 +319,7 @@ function equationSection(domain) {
         <th>MathML</th>
         <th>UnicodeMath</th>
         <th>Description</th>
+        <th>Dictation</th>
       </tr>
     </thead>
     <tbody>${rows}

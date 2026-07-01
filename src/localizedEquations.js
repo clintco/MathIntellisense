@@ -259,7 +259,7 @@ export const localizedEquations = {
         "suma por diferencia"
       ],
       "dictation": "a al cubo menos be al cubo igual a abre paréntesis a más be cierra paréntesis por abre paréntesis a menos be cierra paréntesis",
-      "unicodemath": "𝑎³-𝑏³=(𝑎+𝑏)(𝑎-𝑏)",
+      "unicodemath": "𝑎²-𝑏²=(𝑎+𝑏)(𝑎-𝑏)",
       "domain": "Algebra & Number Systems"
     },
     {
@@ -5494,7 +5494,7 @@ export const localizedEquations = {
       "aliases": [
         "Betrag gleich be"
       ],
-      "dictation": "Betrag von Klammer auf iks minus a Klammer zu gleich be impliziert iks gleich a plus minus be",
+      "dictation": "Betrag von Klammer auf iks minus a Klammer zu gleich be impliziert iks gleich a plus oder minus be",
       "unicodemath": "|𝑥-𝑎|=𝑏⇒𝑥=𝑎±𝑏",
       "domain": "Algebra & Number Systems"
     },
@@ -5506,7 +5506,7 @@ export const localizedEquations = {
         "abc-Formel",
         "Lösungsformel für quadratische Gleichungen"
       ],
-      "dictation": "iks gleich Klammer auf minus be plus minus Wurzel aus Klammer auf be Quadrat minus vier mal a mal ze Klammer zu Klammer zu durch zwei a",
+      "dictation": "iks gleich Klammer auf minus be plus oder minus Wurzel aus Klammer auf be Quadrat minus vier mal a mal ze Klammer zu Klammer zu durch zwei a",
       "unicodemath": "𝑥=(-𝑏±√(𝑏²-4𝑎𝑐))/2𝑎",
       "domain": "Algebra & Number Systems"
     },
@@ -5530,7 +5530,7 @@ export const localizedEquations = {
         "Produkt aus Summe und Differenz"
       ],
       "dictation": "a hoch drei minus be hoch drei gleich Klammer auf a plus be Klammer zu mal Klammer auf a minus be Klammer zu",
-      "unicodemath": "𝑎³-𝑏³=(𝑎+𝑏)(𝑎-𝑏)",
+      "unicodemath": "𝑎²-𝑏²=(𝑎+𝑏)(𝑎-𝑏)",
       "domain": "Algebra & Number Systems"
     },
     {
@@ -8639,7 +8639,7 @@ export const localizedEquations = {
         "Kosinus des halben Winkels",
         "Tangens des halben Winkels"
       ],
-      "dictation": "Sinus Klammer auf theta durch zwei Klammer zu gleich plus minus Wurzel aus Klammer auf Klammer auf eins minus Kosinus theta Klammer zu durch zwei Klammer zu Semikolon Kosinus Klammer auf theta durch zwei Klammer zu gleich plus minus Wurzel aus Klammer auf Klammer auf eins plus Kosinus theta Klammer zu durch zwei Klammer zu Semikolon Tangens Klammer auf theta durch zwei Klammer zu gleich Klammer auf eins minus Kosinus theta Klammer zu durch Sinus theta",
+      "dictation": "Sinus Klammer auf theta durch zwei Klammer zu gleich plus oder minus Wurzel aus Klammer auf Klammer auf eins minus Kosinus theta Klammer zu durch zwei Klammer zu Semikolon Kosinus Klammer auf theta durch zwei Klammer zu gleich plus oder minus Wurzel aus Klammer auf Klammer auf eins plus Kosinus theta Klammer zu durch zwei Klammer zu Semikolon Tangens Klammer auf theta durch zwei Klammer zu gleich Klammer auf eins minus Kosinus theta Klammer zu durch Sinus theta",
       "unicodemath": "sin(𝜃/2)=±√((1-cos 𝜃)/2); cos(𝜃/2)=±√((1+cos 𝜃)/2); tan(𝜃/2)=(1-cos 𝜃)/sin 𝜃",
       "domain": "Geometry & Trigonometry"
     },
@@ -9429,7 +9429,7 @@ export const localizedEquations = {
       "aliases": [
         "Doppler-Verschiebung"
       ],
-      "dictation": "ef Strich gleich ef mal vau plus minus vau Index o durch vau minus plus vau Index es",
+      "dictation": "ef Strich gleich ef mal vau plus oder minus vau Index o durch vau minus oder plus vau Index es",
       "unicodemath": "𝑓'=𝑓𝑣±𝑣_𝑜/𝑣∓𝑣_𝑠",
       "domain": "Physics"
     },
@@ -10182,7 +10182,7 @@ export const localizedEquations = {
       "aliases": [
         "Konfidenzintervall"
       ],
-      "dictation": "iks quer plus minus zett Stern mal sigma durch Wurzel aus en",
+      "dictation": "iks quer plus oder minus zett Stern mal sigma durch Wurzel aus en",
       "unicodemath": "𝑥̅±𝑧^* 𝜎/√𝑛",
       "domain": "Probability, Statistics & Data Science"
     },
@@ -10808,7 +10808,7 @@ export const localizedEquations = {
         "produit de la somme par la différence"
       ],
       "dictation": "a au cube moins bé au cube égale parenthèse ouvrante a plus bé parenthèse fermante fois parenthèse ouvrante a moins bé parenthèse fermante",
-      "unicodemath": "𝑎³-𝑏³=(𝑎+𝑏)(𝑎-𝑏)",
+      "unicodemath": "𝑎²-𝑏²=(𝑎+𝑏)(𝑎-𝑏)",
       "domain": "Algebra & Number Systems"
     },
     {
