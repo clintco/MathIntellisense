@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1343,
+    "name": "wave function normalization",
+    "domainId": "physics",
+    "UnicodeMath": "∫_-∞^∞ |𝜓|²ⅆ𝑥=1",
+    "error": "unicodemath-convert-failed"
+  }
+]

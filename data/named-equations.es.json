@@ -377,58 +377,6 @@
       "dictation": "ene de te igual a ene sub cero por e elevado a abre paréntesis erre por te cierra paréntesis"
     },
     {
-      "id": 1462,
-      "name": "matriz 2 × 2",
-      "aliases": [
-        "matriz 2 por 2",
-        "matriz entre paréntesis"
-      ],
-      "dictation": "matriz dos por dos entre paréntesis"
-    },
-    {
-      "id": 1463,
-      "name": "matriz 3 × 3",
-      "aliases": [
-        "matriz 3 por 3",
-        "matriz entre paréntesis"
-      ],
-      "dictation": "matriz tres por tres entre paréntesis"
-    },
-    {
-      "id": 1464,
-      "name": "matriz 2 × 2 entre corchetes",
-      "aliases": [
-        "matriz 2 por 2 entre corchetes"
-      ],
-      "dictation": "matriz dos por dos entre corchetes"
-    },
-    {
-      "id": 1465,
-      "name": "matriz 3 × 3 entre corchetes",
-      "aliases": [
-        "matriz 3 por 3 entre corchetes"
-      ],
-      "dictation": "matriz tres por tres entre corchetes"
-    },
-    {
-      "id": 1466,
-      "name": "determinante 2 × 2",
-      "aliases": [
-        "determinante 2 por 2",
-        "matriz entre barras verticales"
-      ],
-      "dictation": "determinante dos por dos entre barras verticales"
-    },
-    {
-      "id": 1467,
-      "name": "determinante 3 × 3",
-      "aliases": [
-        "determinante 3 por 3",
-        "matriz entre barras verticales"
-      ],
-      "dictation": "determinante tres por tres entre barras verticales"
-    },
-    {
       "id": 1101,
       "name": "regla de la cadena",
       "aliases": [

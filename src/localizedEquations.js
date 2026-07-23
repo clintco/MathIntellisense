@@ -91,7 +91,7 @@ export const localizedEquations = {
         "exponente racional"
       ],
       "dictation": "a elevado a abre paréntesis eme partido por ene cierra paréntesis igual a raíz ene-ésima de a elevado a eme",
-      "unicodemath": "𝑎^𝑚\\/𝑛=√(𝑛&𝑎^𝑚)",
+      "unicodemath": "𝑎^𝑚/𝑛=√(𝑛&𝑎^𝑚)",
       "domain": "Algebra & Number Systems"
     },
     {
@@ -381,7 +381,7 @@ export const localizedEquations = {
         "a igual a be cu más erre"
       ],
       "dictation": "a igual a be por cu más erre, donde cero es menor o igual que erre, y erre es menor que be",
-      "unicodemath": "𝑎=𝑏𝑞+𝑟   0≤𝑟<𝑏",
+      "unicodemath": "𝑎=𝑏𝑞+𝑟   0≤𝑟<𝑏",
       "domain": "Algebra & Number Systems"
     },
     {
@@ -403,7 +403,7 @@ export const localizedEquations = {
         "a elevado a pe módulo pe"
       ],
       "dictation": "a elevado a pe es congruente con a módulo pe",
-      "unicodemath": "𝑎^𝑝≡𝑎 (\"mod\" 𝑝)",
+      "unicodemath": "𝑎^𝑝≡𝑎 (\"mod\" 𝑝)",
       "domain": "Algebra & Number Systems"
     },
     {
@@ -426,7 +426,7 @@ export const localizedEquations = {
         "a elevado a phi de ene"
       ],
       "dictation": "a elevado a phi de ene es congruente con uno módulo ene",
-      "unicodemath": "𝑎^𝜙(𝑛)≡1 (\"mod\" 𝑛)",
+      "unicodemath": "𝑎^𝜙(𝑛)≡1 (\"mod\" 𝑛)",
       "domain": "Algebra & Number Systems"
     },
     {
@@ -437,7 +437,7 @@ export const localizedEquations = {
         "congruencia módulo ene"
       ],
       "dictation": "a es congruente con be módulo ene",
-      "unicodemath": "𝑎≡𝑏 (mod 𝑛)",
+      "unicodemath": "𝑎≡𝑏 (mod 𝑛)",
       "domain": "Algebra & Number Systems"
     },
     {
@@ -527,76 +527,6 @@ export const localizedEquations = {
       "dictation": "ene de te igual a ene sub cero por e elevado a abre paréntesis erre por te cierra paréntesis",
       "unicodemath": "𝑁(𝑡)=𝑁₀𝑒^𝑟𝑡",
       "domain": "Biology & Life Sciences"
-    },
-    {
-      "id": 1462,
-      "name": "matriz 2 × 2",
-      "englishName": "2x2 matrix",
-      "aliases": [
-        "matriz 2 por 2",
-        "matriz entre paréntesis"
-      ],
-      "dictation": "matriz dos por dos entre paréntesis",
-      "unicodemath": "2×2⒨",
-      "domain": "Building Blocks"
-    },
-    {
-      "id": 1463,
-      "name": "matriz 3 × 3",
-      "englishName": "3x3 matrix",
-      "aliases": [
-        "matriz 3 por 3",
-        "matriz entre paréntesis"
-      ],
-      "dictation": "matriz tres por tres entre paréntesis",
-      "unicodemath": "3×3⒨",
-      "domain": "Building Blocks"
-    },
-    {
-      "id": 1464,
-      "name": "matriz 2 × 2 entre corchetes",
-      "englishName": "2x2 bracket matrix",
-      "aliases": [
-        "matriz 2 por 2 entre corchetes"
-      ],
-      "dictation": "matriz dos por dos entre corchetes",
-      "unicodemath": "2×2ⓢ",
-      "domain": "Building Blocks"
-    },
-    {
-      "id": 1465,
-      "name": "matriz 3 × 3 entre corchetes",
-      "englishName": "3x3 bracket matrix",
-      "aliases": [
-        "matriz 3 por 3 entre corchetes"
-      ],
-      "dictation": "matriz tres por tres entre corchetes",
-      "unicodemath": "3×3ⓢ",
-      "domain": "Building Blocks"
-    },
-    {
-      "id": 1466,
-      "name": "determinante 2 × 2",
-      "englishName": "2x2 determinant",
-      "aliases": [
-        "determinante 2 por 2",
-        "matriz entre barras verticales"
-      ],
-      "dictation": "determinante dos por dos entre barras verticales",
-      "unicodemath": "2×2⒱",
-      "domain": "Building Blocks"
-    },
-    {
-      "id": 1467,
-      "name": "determinante 3 × 3",
-      "englishName": "3x3 determinant",
-      "aliases": [
-        "determinante 3 por 3",
-        "matriz entre barras verticales"
-      ],
-      "dictation": "determinante tres por tres entre barras verticales",
-      "unicodemath": "3×3⒱",
-      "domain": "Building Blocks"
     },
     {
       "id": 1101,
@@ -969,7 +899,7 @@ export const localizedEquations = {
         "desarrollo de Taylor"
       ],
       "dictation": "efe de equis igual a el sumatorio desde ene igual a cero hasta infinito de efe elevado a abre paréntesis ene cierra paréntesis de a partido por ene factorial por abre paréntesis equis menos a cierra paréntesis elevado a ene",
-      "unicodemath": "𝑓(𝑥)=∑_(𝑛=0)^∞ 𝑓^((𝑛)) (𝑎)/𝑛!(𝑥-𝑎)^𝑛",
+      "unicodemath": "𝑓(𝑥)=∑_(𝑛=0)^∞ 𝑓^((𝑛)) (𝑎)/𝑛! (𝑥-𝑎)^𝑛",
       "domain": "Calculus & Analysis"
     },
     {
@@ -1333,7 +1263,7 @@ export const localizedEquations = {
         "factorial generalizado"
       ],
       "dictation": "gamma mayúscula de zeta igual a la integral de cero a infinito de te elevado a abre paréntesis zeta menos uno cierra paréntesis por e elevado a menos te diferencial de te",
-      "unicodemath": "Γ(𝑧)=∫_0^∞ 𝑡^(𝑧-1) 𝑒^−𝑡 ⅆ𝑡",
+      "unicodemath": "Γ(𝑧)=∫_0^∞ 𝑡^(𝑧-1) 𝑒^−𝑡 ⅆ𝑡",
       "domain": "Calculus & Analysis"
     },
     {
@@ -1377,7 +1307,7 @@ export const localizedEquations = {
         "integral de volumen en coordenadas esféricas"
       ],
       "dictation": "la integral triple sobre uve mayúscula de efe de abre paréntesis erre coma theta coma phi cierra paréntesis por erre diferencial de erre diferencial de theta diferencial de phi",
-      "unicodemath": "∭_𝑉 𝑓(𝑟,𝜃,𝜙)𝑟ⅆ𝑟ⅆ𝜃ⅆ𝜙",
+      "unicodemath": "∭_𝑉 𝑓(𝑟,𝜃,𝜙)𝑟²ⅆ𝑟ⅆ𝜃ⅆ𝜙",
       "domain": "Calculus & Analysis"
     },
     {
@@ -1668,7 +1598,7 @@ export const localizedEquations = {
         "pe hache igual a menos logaritmo de la concentración de hidrógeno"
       ],
       "dictation": "pe hache igual a menos logaritmo decimal de abre corchete hache elevado a más cierra corchete",
-      "unicodemath": "pH=-log[H^+]",
+      "unicodemath": "\"pH\"=-log[\"H\"^+]",
       "domain": "Chemistry"
     },
     {
@@ -1679,7 +1609,7 @@ export const localizedEquations = {
         "pe o hache"
       ],
       "dictation": "pe o hache igual a menos logaritmo decimal de abre corchete o hache elevado a menos cierra corchete",
-      "unicodemath": "pOH=-log⁡[OH^-]",
+      "unicodemath": "\"pOH\"=-log⁡[\"OH\"^-]",
       "domain": "Chemistry"
     },
     {
@@ -1690,7 +1620,7 @@ export const localizedEquations = {
         "pe hache más pe o hache igual a catorce"
       ],
       "dictation": "pe hache más pe o hache igual a catorce",
-      "unicodemath": "pH+pOH=14",
+      "unicodemath": "\"pH\"+\"pOH\"=14",
       "domain": "Chemistry"
     },
     {
@@ -1780,7 +1710,7 @@ export const localizedEquations = {
         "velocidad de reacción"
       ],
       "dictation": "velocidad igual a ka por abre corchete a cierra corchete elevado a eme por abre corchete be cierra corchete elevado a ene",
-      "unicodemath": "rate=𝑘[𝐴]^𝑚 [𝐵]^𝑛",
+      "unicodemath": "\"rate\"=𝑘[𝐴]^𝑚 [𝐵]^𝑛",
       "domain": "Chemistry"
     },
     {
@@ -2050,7 +1980,7 @@ export const localizedEquations = {
         "regla de separación"
       ],
       "dictation": "abre paréntesis pe coma pe implica cu cierra paréntesis partido por cu",
-      "unicodemath": "(𝑝 𝑝⇒𝑞)/𝑞",
+      "unicodemath": "(𝑝 𝑝⇒𝑞)/𝑞",
       "domain": "Discrete Math & Logic"
     },
     {
@@ -2061,7 +1991,7 @@ export const localizedEquations = {
         "razonamiento por contraposición"
       ],
       "dictation": "abre paréntesis no cu coma pe implica cu cierra paréntesis partido por no pe",
-      "unicodemath": "(¬𝑞 𝑝⇒𝑞)/¬𝑝",
+      "unicodemath": "(¬𝑞 𝑝⇒𝑞)/¬𝑝",
       "domain": "Discrete Math & Logic"
     },
     {
@@ -2239,7 +2169,7 @@ export const localizedEquations = {
         "frecuencia de resonancia"
       ],
       "dictation": "efe sub cero igual a uno partido por dos pi por raíz cuadrada de abre paréntesis ele por ce cierra paréntesis",
-      "unicodemath": "𝑓_0=1/2𝜋 √(𝐿𝐶)",
+      "unicodemath": "𝑓₀=1/2𝜋√(𝐿𝐶)",
       "domain": "Engineering & Computing"
     },
     {
@@ -2327,7 +2257,7 @@ export const localizedEquations = {
         "fórmula de la TDF"
       ],
       "dictation": "equis mayúscula abre corchete ka cierra corchete igual a el sumatorio desde ene igual a cero hasta ene mayúscula menos uno de equis abre corchete ene cierra corchete por e elevado a abre paréntesis menos dos por pi por jota por ka por ene partido por ene mayúscula cierra paréntesis",
-      "unicodemath": "𝑋[𝑘]=∑_(𝑛=0)^(𝑁-1) 𝑥[𝑛] 𝑒^-2𝜋𝑗𝑘𝑛\\/𝑁",
+      "unicodemath": "𝑋[𝑘]=∑_(𝑛=0)^(𝑁-1) 𝑥[𝑛] 𝑒^-2𝜋𝑗𝑘𝑛/𝑁",
       "domain": "Engineering & Computing"
     },
     {
@@ -2735,7 +2665,7 @@ export const localizedEquations = {
         "elasticidad de la demanda"
       ],
       "dictation": "épsilon sub de igual a abre paréntesis delta cu partido por cu cierra paréntesis partido por abre paréntesis delta pe partido por pe cierra paréntesis",
-      "unicodemath": "𝜀_𝑑=𝛥𝑄\\/𝑄/𝛥𝑃\\/𝑃",
+      "unicodemath": "𝜀_𝑑=𝛥𝑄/𝑄/𝛥𝑃/𝑃",
       "domain": "Finance & Economics"
     },
     {
@@ -3512,7 +3442,7 @@ export const localizedEquations = {
         "proyección de u sobre uve"
       ],
       "dictation": "proyección de u sobre uve igual a u punto uve partido por el módulo de uve al cuadrado por uve",
-      "unicodemath": "proj_𝐯𝐮=𝐮⋅𝐯/|𝐯|²𝐯",
+      "unicodemath": "\"proj\"_𝐯𝐮=(𝐮⋅𝐯)/|𝐯|²  𝐯",
       "domain": "Linear Algebra & Abstract Algebra"
     },
     {
@@ -3578,7 +3508,7 @@ export const localizedEquations = {
         "teorema fundamental de homomorfismos"
       ],
       "dictation": "ge partido por núcleo de phi es isomorfo a imagen de phi",
-      "unicodemath": "𝐺/\"ker\" (𝜑)≅\"Im\"(𝜑)",
+      "unicodemath": "𝐺/\"ker\"(𝜙)≅\"Im\"(𝜙)",
       "domain": "Linear Algebra & Abstract Algebra"
     },
     {
@@ -4155,7 +4085,7 @@ export const localizedEquations = {
         "desplazamiento Doppler"
       ],
       "dictation": "efe prima igual a efe por uve más menos uve sub o partido por uve menos más uve sub ese",
-      "unicodemath": "𝑓'=𝑓𝑣±𝑣_𝑜/𝑣∓𝑣_𝑠",
+      "unicodemath": "𝑓'=(𝑣±𝑣_𝑜)/(𝑣∓𝑣_𝑠) 𝑓",
       "domain": "Physics"
     },
     {
@@ -4256,7 +4186,7 @@ export const localizedEquations = {
         "periodo de semidesintegración"
       ],
       "dictation": "te sub un medio igual a logaritmo natural de dos partido por lambda",
-      "unicodemath": "𝑡_(1\\/2)=ln⁡2/𝜆",
+      "unicodemath": "𝑡_(1/2)=ln⁡2/𝜆",
       "domain": "Physics"
     },
     {
@@ -4542,7 +4472,7 @@ export const localizedEquations = {
         "vibración de una cuerda"
       ],
       "dictation": "efe sub uno igual a uno partido por dos por ele por raíz cuadrada de abre paréntesis te partido por mu cierra paréntesis",
-      "unicodemath": "𝑓_1=1/2𝐿√(𝑇\\/𝜇)",
+      "unicodemath": "𝑓₁=1/2𝐿 √(𝑇/𝜇)",
       "domain": "Physics"
     },
     {
@@ -4765,7 +4695,7 @@ export const localizedEquations = {
         "coeficiente de correlación"
       ],
       "dictation": "rho igual a covarianza de abre paréntesis equis mayúscula coma i griega mayúscula cierra paréntesis partido por sigma sub equis mayúscula por sigma sub i griega mayúscula",
-      "unicodemath": "𝜌=Cov(𝑋,𝑌)/𝜎_𝑋 𝜎_𝑌",
+      "unicodemath": "𝜌_(𝑋,𝑌)=\"cov\"(𝑋,𝑌)/(𝜎_𝑋 𝜎_𝑌)",
       "domain": "Probability, Statistics & Data Science"
     },
     {
@@ -4919,7 +4849,7 @@ export const localizedEquations = {
         "prueba t de una muestra"
       ],
       "dictation": "te igual a abre paréntesis equis barra menos mu cierra paréntesis partido por ese partido por raíz cuadrada de ene",
-      "unicodemath": "𝑡=(𝑥̅-𝜇)/𝑠/√𝑛",
+      "unicodemath": "𝑡=(𝑥̅-𝜇)/(𝑠/√𝑛)",
       "domain": "Probability, Statistics & Data Science"
     },
     {
@@ -5007,7 +4937,7 @@ export const localizedEquations = {
         "exceso de curtosis"
       ],
       "dictation": "curtosis igual a uno partido por ene por el sumatorio de abre paréntesis equis sub i menos equis barra cierra paréntesis elevado a cuatro partido por ese elevado a cuatro menos tres",
-      "unicodemath": "kurtosis=1/𝑛 ∑ (𝑥_𝑖-𝑥̅)⁴/𝑠⁴-3",
+      "unicodemath": "\"kurtosis\"=1/𝑛 ∑ (𝑥_𝑖-𝑥̅)⁴/𝑠⁴-3",
       "domain": "Probability, Statistics & Data Science"
     },
     {
@@ -5362,7 +5292,7 @@ export const localizedEquations = {
         "rationaler Exponent"
       ],
       "dictation": "a hoch Klammer auf em durch en Klammer zu gleich en-te Wurzel aus a hoch em",
-      "unicodemath": "𝑎^𝑚\\/𝑛=√(𝑛&𝑎^𝑚)",
+      "unicodemath": "𝑎^𝑚/𝑛=√(𝑛&𝑎^𝑚)",
       "domain": "Algebra & Number Systems"
     },
     {
@@ -5652,7 +5582,7 @@ export const localizedEquations = {
         "a gleich be ku plus er"
       ],
       "dictation": "a gleich be mal ku plus er, wobei null kleiner oder gleich er, und er kleiner als be",
-      "unicodemath": "𝑎=𝑏𝑞+𝑟   0≤𝑟<𝑏",
+      "unicodemath": "𝑎=𝑏𝑞+𝑟   0≤𝑟<𝑏",
       "domain": "Algebra & Number Systems"
     },
     {
@@ -5674,7 +5604,7 @@ export const localizedEquations = {
         "a hoch pe modulo pe"
       ],
       "dictation": "a hoch pe ist kongruent zu a modulo pe",
-      "unicodemath": "𝑎^𝑝≡𝑎 (\"mod\" 𝑝)",
+      "unicodemath": "𝑎^𝑝≡𝑎 (\"mod\" 𝑝)",
       "domain": "Algebra & Number Systems"
     },
     {
@@ -5697,7 +5627,7 @@ export const localizedEquations = {
         "a hoch phi von en"
       ],
       "dictation": "a hoch phi von en ist kongruent zu eins modulo en",
-      "unicodemath": "𝑎^𝜙(𝑛)≡1 (\"mod\" 𝑛)",
+      "unicodemath": "𝑎^𝜙(𝑛)≡1 (\"mod\" 𝑛)",
       "domain": "Algebra & Number Systems"
     },
     {
@@ -5708,7 +5638,7 @@ export const localizedEquations = {
         "Restklassengleichheit"
       ],
       "dictation": "a ist kongruent zu be modulo en",
-      "unicodemath": "𝑎≡𝑏 (mod 𝑛)",
+      "unicodemath": "𝑎≡𝑏 (mod 𝑛)",
       "domain": "Algebra & Number Systems"
     },
     {
@@ -5798,76 +5728,6 @@ export const localizedEquations = {
       "dictation": "en von te gleich en Index null mal e hoch Klammer auf er mal te Klammer zu",
       "unicodemath": "𝑁(𝑡)=𝑁₀𝑒^𝑟𝑡",
       "domain": "Biology & Life Sciences"
-    },
-    {
-      "id": 1462,
-      "name": "2 × 2 Matrix",
-      "englishName": "2x2 matrix",
-      "aliases": [
-        "2 mal 2 Matrix",
-        "Matrix in runden Klammern"
-      ],
-      "dictation": "Matrix zwei kreuz zwei in runden Klammern",
-      "unicodemath": "2×2⒨",
-      "domain": "Building Blocks"
-    },
-    {
-      "id": 1463,
-      "name": "3 × 3 Matrix",
-      "englishName": "3x3 matrix",
-      "aliases": [
-        "3 mal 3 Matrix",
-        "Matrix in runden Klammern"
-      ],
-      "dictation": "Matrix drei kreuz drei in runden Klammern",
-      "unicodemath": "3×3⒨",
-      "domain": "Building Blocks"
-    },
-    {
-      "id": 1464,
-      "name": "2 × 2 Matrix in eckigen Klammern",
-      "englishName": "2x2 bracket matrix",
-      "aliases": [
-        "2 mal 2 Matrix in eckigen Klammern"
-      ],
-      "dictation": "Matrix zwei kreuz zwei in eckigen Klammern",
-      "unicodemath": "2×2ⓢ",
-      "domain": "Building Blocks"
-    },
-    {
-      "id": 1465,
-      "name": "3 × 3 Matrix in eckigen Klammern",
-      "englishName": "3x3 bracket matrix",
-      "aliases": [
-        "3 mal 3 Matrix in eckigen Klammern"
-      ],
-      "dictation": "Matrix drei kreuz drei in eckigen Klammern",
-      "unicodemath": "3×3ⓢ",
-      "domain": "Building Blocks"
-    },
-    {
-      "id": 1466,
-      "name": "2 × 2 Determinante",
-      "englishName": "2x2 determinant",
-      "aliases": [
-        "2 mal 2 Determinante",
-        "Matrix mit Betragsstrichen"
-      ],
-      "dictation": "Determinante zwei kreuz zwei in Betragsstrichen",
-      "unicodemath": "2×2⒱",
-      "domain": "Building Blocks"
-    },
-    {
-      "id": 1467,
-      "name": "3 × 3 Determinante",
-      "englishName": "3x3 determinant",
-      "aliases": [
-        "3 mal 3 Determinante",
-        "Matrix mit Betragsstrichen"
-      ],
-      "dictation": "Determinante drei kreuz drei in Betragsstrichen",
-      "unicodemath": "3×3⒱",
-      "domain": "Building Blocks"
     },
     {
       "id": 1101,
@@ -6240,7 +6100,7 @@ export const localizedEquations = {
         "Taylor-Entwicklung"
       ],
       "dictation": "ef von iks gleich die Summe von en gleich null bis unendlich über ef hoch Klammer auf en Klammer zu von a durch en Fakultät mal Klammer auf iks minus a Klammer zu hoch en",
-      "unicodemath": "𝑓(𝑥)=∑_(𝑛=0)^∞ 𝑓^((𝑛)) (𝑎)/𝑛!(𝑥-𝑎)^𝑛",
+      "unicodemath": "𝑓(𝑥)=∑_(𝑛=0)^∞ 𝑓^((𝑛)) (𝑎)/𝑛! (𝑥-𝑎)^𝑛",
       "domain": "Calculus & Analysis"
     },
     {
@@ -6605,7 +6465,7 @@ export const localizedEquations = {
         "verallgemeinerte Fakultät"
       ],
       "dictation": "Gamma von zett gleich das Integral von null bis unendlich über te hoch Klammer auf zett minus eins Klammer zu mal e hoch minus te de te",
-      "unicodemath": "Γ(𝑧)=∫_0^∞ 𝑡^(𝑧-1) 𝑒^−𝑡 ⅆ𝑡",
+      "unicodemath": "Γ(𝑧)=∫_0^∞ 𝑡^(𝑧-1) 𝑒^−𝑡 ⅆ𝑡",
       "domain": "Calculus & Analysis"
     },
     {
@@ -6649,7 +6509,7 @@ export const localizedEquations = {
         "Volumenintegral in Kugelkoordinaten"
       ],
       "dictation": "das Dreifachintegral über den Bereich vau von ef von Klammer auf er Komma theta Komma phi Klammer zu mal er de er de theta de phi",
-      "unicodemath": "∭_𝑉 𝑓(𝑟,𝜃,𝜙)𝑟ⅆ𝑟ⅆ𝜃ⅆ𝜙",
+      "unicodemath": "∭_𝑉 𝑓(𝑟,𝜃,𝜙)𝑟²ⅆ𝑟ⅆ𝜃ⅆ𝜙",
       "domain": "Calculus & Analysis"
     },
     {
@@ -6942,7 +6802,7 @@ export const localizedEquations = {
         "pe ha gleich minus Logarithmus der Wasserstoffionenkonzentration"
       ],
       "dictation": "pe ha gleich minus dekadischer Logarithmus von eckige Klammer auf ha hoch plus eckige Klammer zu",
-      "unicodemath": "pH=-log[H^+]",
+      "unicodemath": "\"pH\"=-log[\"H\"^+]",
       "domain": "Chemistry"
     },
     {
@@ -6953,7 +6813,7 @@ export const localizedEquations = {
         "pe o ha"
       ],
       "dictation": "pe o ha gleich minus dekadischer Logarithmus von eckige Klammer auf o ha hoch minus eckige Klammer zu",
-      "unicodemath": "pOH=-log⁡[OH^-]",
+      "unicodemath": "\"pOH\"=-log⁡[\"OH\"^-]",
       "domain": "Chemistry"
     },
     {
@@ -6964,7 +6824,7 @@ export const localizedEquations = {
         "pe ha plus pe o ha gleich vierzehn"
       ],
       "dictation": "pe ha plus pe o ha gleich vierzehn",
-      "unicodemath": "pH+pOH=14",
+      "unicodemath": "\"pH\"+\"pOH\"=14",
       "domain": "Chemistry"
     },
     {
@@ -7054,7 +6914,7 @@ export const localizedEquations = {
         "Reaktionsgeschwindigkeit"
       ],
       "dictation": "Geschwindigkeit gleich ka mal eckige Klammer auf a eckige Klammer zu hoch em mal eckige Klammer auf be eckige Klammer zu hoch en",
-      "unicodemath": "rate=𝑘[𝐴]^𝑚 [𝐵]^𝑛",
+      "unicodemath": "\"rate\"=𝑘[𝐴]^𝑚 [𝐵]^𝑛",
       "domain": "Chemistry"
     },
     {
@@ -7324,7 +7184,7 @@ export const localizedEquations = {
         "Abtrennungsregel"
       ],
       "dictation": "Klammer auf pe Komma pe impliziert ku Klammer zu durch ku",
-      "unicodemath": "(𝑝 𝑝⇒𝑞)/𝑞",
+      "unicodemath": "(𝑝 𝑝⇒𝑞)/𝑞",
       "domain": "Discrete Math & Logic"
     },
     {
@@ -7335,7 +7195,7 @@ export const localizedEquations = {
         "Schluss durch Kontraposition"
       ],
       "dictation": "Klammer auf nicht ku Komma pe impliziert ku Klammer zu durch nicht pe",
-      "unicodemath": "(¬𝑞 𝑝⇒𝑞)/¬𝑝",
+      "unicodemath": "(¬𝑞 𝑝⇒𝑞)/¬𝑝",
       "domain": "Discrete Math & Logic"
     },
     {
@@ -7513,7 +7373,7 @@ export const localizedEquations = {
         "Resonanzfrequenz"
       ],
       "dictation": "ef Index null gleich eins durch zwei pi mal Wurzel aus Klammer auf el mal ze Klammer zu",
-      "unicodemath": "𝑓_0=1/2𝜋 √(𝐿𝐶)",
+      "unicodemath": "𝑓₀=1/2𝜋√(𝐿𝐶)",
       "domain": "Engineering & Computing"
     },
     {
@@ -7601,7 +7461,7 @@ export const localizedEquations = {
         "DFT-Formel"
       ],
       "dictation": "iks groß eckige Klammer auf ka eckige Klammer zu gleich die Summe von en gleich null bis en groß minus eins über iks eckige Klammer auf en eckige Klammer zu mal e hoch Klammer auf minus zwei mal pi mal jot mal ka mal en durch en groß Klammer zu",
-      "unicodemath": "𝑋[𝑘]=∑_(𝑛=0)^(𝑁-1) 𝑥[𝑛] 𝑒^-2𝜋𝑗𝑘𝑛\\/𝑁",
+      "unicodemath": "𝑋[𝑘]=∑_(𝑛=0)^(𝑁-1) 𝑥[𝑛] 𝑒^-2𝜋𝑗𝑘𝑛/𝑁",
       "domain": "Engineering & Computing"
     },
     {
@@ -8009,7 +7869,7 @@ export const localizedEquations = {
         "Nachfrageelastizität"
       ],
       "dictation": "epsilon Index de gleich Klammer auf delta ku durch ku Klammer zu durch Klammer auf delta pe durch pe Klammer zu",
-      "unicodemath": "𝜀_𝑑=𝛥𝑄\\/𝑄/𝛥𝑃\\/𝑃",
+      "unicodemath": "𝜀_𝑑=𝛥𝑄/𝑄/𝛥𝑃/𝑃",
       "domain": "Finance & Economics"
     },
     {
@@ -8788,7 +8648,7 @@ export const localizedEquations = {
         "Projektion von u auf vau"
       ],
       "dictation": "Projektion von u auf vau gleich u Punkt vau durch Betrag von vau Quadrat mal vau",
-      "unicodemath": "proj_𝐯𝐮=𝐮⋅𝐯/|𝐯|²𝐯",
+      "unicodemath": "\"proj\"_𝐯𝐮=(𝐮⋅𝐯)/|𝐯|²  𝐯",
       "domain": "Linear Algebra & Abstract Algebra"
     },
     {
@@ -8854,7 +8714,7 @@ export const localizedEquations = {
         "Homomorphiesatz"
       ],
       "dictation": "ge durch Kern von phi ist isomorph zu Bild von phi",
-      "unicodemath": "𝐺/\"ker\" (𝜑)≅\"Im\"(𝜑)",
+      "unicodemath": "𝐺/\"ker\"(𝜙)≅\"Im\"(𝜙)",
       "domain": "Linear Algebra & Abstract Algebra"
     },
     {
@@ -9430,7 +9290,7 @@ export const localizedEquations = {
         "Doppler-Verschiebung"
       ],
       "dictation": "ef Strich gleich ef mal vau plus oder minus vau Index o durch vau minus oder plus vau Index es",
-      "unicodemath": "𝑓'=𝑓𝑣±𝑣_𝑜/𝑣∓𝑣_𝑠",
+      "unicodemath": "𝑓'=(𝑣±𝑣_𝑜)/(𝑣∓𝑣_𝑠) 𝑓",
       "domain": "Physics"
     },
     {
@@ -9531,7 +9391,7 @@ export const localizedEquations = {
         "Halbwertszeit"
       ],
       "dictation": "te Index ein halb gleich natürlicher Logarithmus von zwei durch lambda",
-      "unicodemath": "𝑡_(1\\/2)=ln⁡2/𝜆",
+      "unicodemath": "𝑡_(1/2)=ln⁡2/𝜆",
       "domain": "Physics"
     },
     {
@@ -9817,7 +9677,7 @@ export const localizedEquations = {
         "Saitenschwingung"
       ],
       "dictation": "ef Index eins gleich eins durch zwei mal el mal Wurzel aus Klammer auf te durch mü Klammer zu",
-      "unicodemath": "𝑓_1=1/2𝐿√(𝑇\\/𝜇)",
+      "unicodemath": "𝑓₁=1/2𝐿 √(𝑇/𝜇)",
       "domain": "Physics"
     },
     {
@@ -10040,7 +9900,7 @@ export const localizedEquations = {
         "Korrelationskoeffizient"
       ],
       "dictation": "rho gleich Kovarianz von Klammer auf iks groß Komma üpsilon groß Klammer zu durch sigma Index iks groß mal sigma Index üpsilon groß",
-      "unicodemath": "𝜌=Cov(𝑋,𝑌)/𝜎_𝑋 𝜎_𝑌",
+      "unicodemath": "𝜌_(𝑋,𝑌)=\"cov\"(𝑋,𝑌)/(𝜎_𝑋 𝜎_𝑌)",
       "domain": "Probability, Statistics & Data Science"
     },
     {
@@ -10194,7 +10054,7 @@ export const localizedEquations = {
         "t-Test für eine Stichprobe"
       ],
       "dictation": "te gleich Klammer auf iks quer minus mü Klammer zu durch es durch Wurzel aus en",
-      "unicodemath": "𝑡=(𝑥̅-𝜇)/𝑠/√𝑛",
+      "unicodemath": "𝑡=(𝑥̅-𝜇)/(𝑠/√𝑛)",
       "domain": "Probability, Statistics & Data Science"
     },
     {
@@ -10283,7 +10143,7 @@ export const localizedEquations = {
         "Wölbung"
       ],
       "dictation": "Kurtosis gleich eins durch en mal die Summe über Klammer auf iks Index i minus iks quer Klammer zu hoch vier durch es hoch vier minus drei",
-      "unicodemath": "kurtosis=1/𝑛 ∑ (𝑥_𝑖-𝑥̅)⁴/𝑠⁴-3",
+      "unicodemath": "\"kurtosis\"=1/𝑛 ∑ (𝑥_𝑖-𝑥̅)⁴/𝑠⁴-3",
       "domain": "Probability, Statistics & Data Science"
     },
     {
@@ -10638,7 +10498,7 @@ export const localizedEquations = {
         "exposant rationnel"
       ],
       "dictation": "a puissance parenthèse ouvrante emme sur ène parenthèse fermante égale racine ènième de a puissance emme",
-      "unicodemath": "𝑎^𝑚\\/𝑛=√(𝑛&𝑎^𝑚)",
+      "unicodemath": "𝑎^𝑚/𝑛=√(𝑛&𝑎^𝑚)",
       "domain": "Algebra & Number Systems"
     },
     {
@@ -10930,7 +10790,7 @@ export const localizedEquations = {
         "a égale bé cu plus erre"
       ],
       "dictation": "a égale bé fois cu plus erre, où zéro est inférieur ou égal à erre, et erre est inférieur à bé",
-      "unicodemath": "𝑎=𝑏𝑞+𝑟   0≤𝑟<𝑏",
+      "unicodemath": "𝑎=𝑏𝑞+𝑟   0≤𝑟<𝑏",
       "domain": "Algebra & Number Systems"
     },
     {
@@ -10952,7 +10812,7 @@ export const localizedEquations = {
         "a puissance pé modulo pé"
       ],
       "dictation": "a puissance pé est congru à a modulo pé",
-      "unicodemath": "𝑎^𝑝≡𝑎 (\"mod\" 𝑝)",
+      "unicodemath": "𝑎^𝑝≡𝑎 (\"mod\" 𝑝)",
       "domain": "Algebra & Number Systems"
     },
     {
@@ -10975,7 +10835,7 @@ export const localizedEquations = {
         "a puissance phi de ène"
       ],
       "dictation": "a puissance phi de ène est congru à un modulo ène",
-      "unicodemath": "𝑎^𝜙(𝑛)≡1 (\"mod\" 𝑛)",
+      "unicodemath": "𝑎^𝜙(𝑛)≡1 (\"mod\" 𝑛)",
       "domain": "Algebra & Number Systems"
     },
     {
@@ -10986,7 +10846,7 @@ export const localizedEquations = {
         "congruence modulo ène"
       ],
       "dictation": "a est congru à bé modulo ène",
-      "unicodemath": "𝑎≡𝑏 (mod 𝑛)",
+      "unicodemath": "𝑎≡𝑏 (mod 𝑛)",
       "domain": "Algebra & Number Systems"
     },
     {
@@ -11076,76 +10936,6 @@ export const localizedEquations = {
       "dictation": "ène de té égale ène indice zéro fois e puissance parenthèse ouvrante erre fois té parenthèse fermante",
       "unicodemath": "𝑁(𝑡)=𝑁₀𝑒^𝑟𝑡",
       "domain": "Biology & Life Sciences"
-    },
-    {
-      "id": 1462,
-      "name": "matrice 2 × 2",
-      "englishName": "2x2 matrix",
-      "aliases": [
-        "matrice 2 par 2",
-        "matrice entre parenthèses"
-      ],
-      "dictation": "matrice deux par deux entre parenthèses",
-      "unicodemath": "2×2⒨",
-      "domain": "Building Blocks"
-    },
-    {
-      "id": 1463,
-      "name": "matrice 3 × 3",
-      "englishName": "3x3 matrix",
-      "aliases": [
-        "matrice 3 par 3",
-        "matrice entre parenthèses"
-      ],
-      "dictation": "matrice trois par trois entre parenthèses",
-      "unicodemath": "3×3⒨",
-      "domain": "Building Blocks"
-    },
-    {
-      "id": 1464,
-      "name": "matrice 2 × 2 entre crochets",
-      "englishName": "2x2 bracket matrix",
-      "aliases": [
-        "matrice 2 par 2 entre crochets"
-      ],
-      "dictation": "matrice deux par deux entre crochets",
-      "unicodemath": "2×2ⓢ",
-      "domain": "Building Blocks"
-    },
-    {
-      "id": 1465,
-      "name": "matrice 3 × 3 entre crochets",
-      "englishName": "3x3 bracket matrix",
-      "aliases": [
-        "matrice 3 par 3 entre crochets"
-      ],
-      "dictation": "matrice trois par trois entre crochets",
-      "unicodemath": "3×3ⓢ",
-      "domain": "Building Blocks"
-    },
-    {
-      "id": 1466,
-      "name": "déterminant 2 × 2",
-      "englishName": "2x2 determinant",
-      "aliases": [
-        "déterminant 2 par 2",
-        "matrice entre barres verticales"
-      ],
-      "dictation": "déterminant deux par deux entre barres verticales",
-      "unicodemath": "2×2⒱",
-      "domain": "Building Blocks"
-    },
-    {
-      "id": 1467,
-      "name": "déterminant 3 × 3",
-      "englishName": "3x3 determinant",
-      "aliases": [
-        "déterminant 3 par 3",
-        "matrice entre barres verticales"
-      ],
-      "dictation": "déterminant trois par trois entre barres verticales",
-      "unicodemath": "3×3⒱",
-      "domain": "Building Blocks"
     },
     {
       "id": 1101,
@@ -11518,7 +11308,7 @@ export const localizedEquations = {
         "développement de Taylor"
       ],
       "dictation": "effe de iks égale la somme de ène égale zéro à l'infini de effe puissance parenthèse ouvrante ène parenthèse fermante de a sur factorielle de ène fois parenthèse ouvrante iks moins a parenthèse fermante puissance ène",
-      "unicodemath": "𝑓(𝑥)=∑_(𝑛=0)^∞ 𝑓^((𝑛)) (𝑎)/𝑛!(𝑥-𝑎)^𝑛",
+      "unicodemath": "𝑓(𝑥)=∑_(𝑛=0)^∞ 𝑓^((𝑛)) (𝑎)/𝑛! (𝑥-𝑎)^𝑛",
       "domain": "Calculus & Analysis"
     },
     {
@@ -11891,7 +11681,7 @@ export const localizedEquations = {
         "factorielle généralisée"
       ],
       "dictation": "gamma de zède égale l'intégrale de zéro à l'infini de té puissance parenthèse ouvrante zède moins un parenthèse fermante fois e puissance moins té dé té",
-      "unicodemath": "Γ(𝑧)=∫_0^∞ 𝑡^(𝑧-1) 𝑒^−𝑡 ⅆ𝑡",
+      "unicodemath": "Γ(𝑧)=∫_0^∞ 𝑡^(𝑧-1) 𝑒^−𝑡 ⅆ𝑡",
       "domain": "Calculus & Analysis"
     },
     {
@@ -11935,7 +11725,7 @@ export const localizedEquations = {
         "intégrale de volume en coordonnées sphériques"
       ],
       "dictation": "l'intégrale triple sur vé de effe de parenthèse ouvrante erre virgule thêta virgule phi parenthèse fermante fois erre dé erre dé thêta dé phi",
-      "unicodemath": "∭_𝑉 𝑓(𝑟,𝜃,𝜙)𝑟ⅆ𝑟ⅆ𝜃ⅆ𝜙",
+      "unicodemath": "∭_𝑉 𝑓(𝑟,𝜃,𝜙)𝑟²ⅆ𝑟ⅆ𝜃ⅆ𝜙",
       "domain": "Calculus & Analysis"
     },
     {
@@ -12227,7 +12017,7 @@ export const localizedEquations = {
         "pé ache égale moins logarithme de la concentration en ache plus"
       ],
       "dictation": "pé ache égale moins logarithme décimal de crochet ouvrant ache exposant plus crochet fermant",
-      "unicodemath": "pH=-log[H^+]",
+      "unicodemath": "\"pH\"=-log[\"H\"^+]",
       "domain": "Chemistry"
     },
     {
@@ -12238,7 +12028,7 @@ export const localizedEquations = {
         "pé o ache égale moins logarithme de la concentration en o ache moins"
       ],
       "dictation": "pé o ache égale moins logarithme décimal de crochet ouvrant o ache exposant moins crochet fermant",
-      "unicodemath": "pOH=-log⁡[OH^-]",
+      "unicodemath": "\"pOH\"=-log⁡[\"OH\"^-]",
       "domain": "Chemistry"
     },
     {
@@ -12249,7 +12039,7 @@ export const localizedEquations = {
         "pé ache plus pé o ache égale quatorze"
       ],
       "dictation": "pé ache plus pé o ache égale quatorze",
-      "unicodemath": "pH+pOH=14",
+      "unicodemath": "\"pH\"+\"pOH\"=14",
       "domain": "Chemistry"
     },
     {
@@ -12339,7 +12129,7 @@ export const localizedEquations = {
         "vitesse de réaction"
       ],
       "dictation": "vitesse égale ka fois crochet ouvrant a crochet fermant puissance emme fois crochet ouvrant bé crochet fermant puissance ène",
-      "unicodemath": "rate=𝑘[𝐴]^𝑚 [𝐵]^𝑛",
+      "unicodemath": "\"rate\"=𝑘[𝐴]^𝑚 [𝐵]^𝑛",
       "domain": "Chemistry"
     },
     {
@@ -12608,7 +12398,7 @@ export const localizedEquations = {
         "règle du détachement"
       ],
       "dictation": "parenthèse ouvrante pé virgule pé implique cu parenthèse fermante sur cu",
-      "unicodemath": "(𝑝 𝑝⇒𝑞)/𝑞",
+      "unicodemath": "(𝑝 𝑝⇒𝑞)/𝑞",
       "domain": "Discrete Math & Logic"
     },
     {
@@ -12619,7 +12409,7 @@ export const localizedEquations = {
         "raisonnement par contraposition"
       ],
       "dictation": "parenthèse ouvrante non cu virgule pé implique cu parenthèse fermante sur non pé",
-      "unicodemath": "(¬𝑞 𝑝⇒𝑞)/¬𝑝",
+      "unicodemath": "(¬𝑞 𝑝⇒𝑞)/¬𝑝",
       "domain": "Discrete Math & Logic"
     },
     {
@@ -12797,7 +12587,7 @@ export const localizedEquations = {
         "fréquence de résonance"
       ],
       "dictation": "effe indice zéro égale un sur deux pi fois racine carrée de parenthèse ouvrante elle fois cé parenthèse fermante",
-      "unicodemath": "𝑓_0=1/2𝜋 √(𝐿𝐶)",
+      "unicodemath": "𝑓₀=1/2𝜋√(𝐿𝐶)",
       "domain": "Engineering & Computing"
     },
     {
@@ -12885,7 +12675,7 @@ export const localizedEquations = {
         "formule de la TFD"
       ],
       "dictation": "iks majuscule crochet ouvrant ka crochet fermant égale la somme de ène égale zéro à ène majuscule moins un de iks crochet ouvrant ène crochet fermant fois e puissance parenthèse ouvrante moins deux fois pi fois jé fois ka fois ène sur ène majuscule parenthèse fermante",
-      "unicodemath": "𝑋[𝑘]=∑_(𝑛=0)^(𝑁-1) 𝑥[𝑛] 𝑒^-2𝜋𝑗𝑘𝑛\\/𝑁",
+      "unicodemath": "𝑋[𝑘]=∑_(𝑛=0)^(𝑁-1) 𝑥[𝑛] 𝑒^-2𝜋𝑗𝑘𝑛/𝑁",
       "domain": "Engineering & Computing"
     },
     {
@@ -13296,7 +13086,7 @@ export const localizedEquations = {
         "élasticité de la demande"
       ],
       "dictation": "epsilon indice dé égale parenthèse ouvrante delta cu sur cu parenthèse fermante sur parenthèse ouvrante delta pé sur pé parenthèse fermante",
-      "unicodemath": "𝜀_𝑑=𝛥𝑄\\/𝑄/𝛥𝑃\\/𝑃",
+      "unicodemath": "𝜀_𝑑=𝛥𝑄/𝑄/𝛥𝑃/𝑃",
       "domain": "Finance & Economics"
     },
     {
@@ -14074,7 +13864,7 @@ export const localizedEquations = {
         "projeté de u sur vé"
       ],
       "dictation": "projection de u sur vé égale u point vé sur norme de vé au carré fois vé",
-      "unicodemath": "proj_𝐯𝐮=𝐮⋅𝐯/|𝐯|²𝐯",
+      "unicodemath": "\"proj\"_𝐯𝐮=(𝐮⋅𝐯)/|𝐯|²  𝐯",
       "domain": "Linear Algebra & Abstract Algebra"
     },
     {
@@ -14140,7 +13930,7 @@ export const localizedEquations = {
         "théorème fondamental d'homomorphisme"
       ],
       "dictation": "gé sur noyau de phi est isomorphe à image de phi",
-      "unicodemath": "𝐺/\"ker\" (𝜑)≅\"Im\"(𝜑)",
+      "unicodemath": "𝐺/\"ker\"(𝜙)≅\"Im\"(𝜙)",
       "domain": "Linear Algebra & Abstract Algebra"
     },
     {
@@ -14716,7 +14506,7 @@ export const localizedEquations = {
         "décalage Doppler"
       ],
       "dictation": "effe prime égale effe fois vé plus ou moins vé indice o sur vé moins ou plus vé indice esse",
-      "unicodemath": "𝑓'=𝑓𝑣±𝑣_𝑜/𝑣∓𝑣_𝑠",
+      "unicodemath": "𝑓'=(𝑣±𝑣_𝑜)/(𝑣∓𝑣_𝑠) 𝑓",
       "domain": "Physics"
     },
     {
@@ -14817,7 +14607,7 @@ export const localizedEquations = {
         "période radioactive"
       ],
       "dictation": "té indice un demi égale logarithme népérien de deux sur lambda",
-      "unicodemath": "𝑡_(1\\/2)=ln⁡2/𝜆",
+      "unicodemath": "𝑡_(1/2)=ln⁡2/𝜆",
       "domain": "Physics"
     },
     {
@@ -15104,7 +14894,7 @@ export const localizedEquations = {
         "vibration d'une corde"
       ],
       "dictation": "effe indice un égale un sur deux fois elle fois racine carrée de parenthèse ouvrante té sur mu parenthèse fermante",
-      "unicodemath": "𝑓_1=1/2𝐿√(𝑇\\/𝜇)",
+      "unicodemath": "𝑓₁=1/2𝐿 √(𝑇/𝜇)",
       "domain": "Physics"
     },
     {
@@ -15327,7 +15117,7 @@ export const localizedEquations = {
         "coefficient de corrélation"
       ],
       "dictation": "rho égale covariance de parenthèse ouvrante iks majuscule virgule i grec majuscule parenthèse fermante sur sigma indice iks majuscule fois sigma indice i grec majuscule",
-      "unicodemath": "𝜌=Cov(𝑋,𝑌)/𝜎_𝑋 𝜎_𝑌",
+      "unicodemath": "𝜌_(𝑋,𝑌)=\"cov\"(𝑋,𝑌)/(𝜎_𝑋 𝜎_𝑌)",
       "domain": "Probability, Statistics & Data Science"
     },
     {
@@ -15481,7 +15271,7 @@ export const localizedEquations = {
         "test t à un échantillon"
       ],
       "dictation": "té égale parenthèse ouvrante iks barre moins mu parenthèse fermante sur esse sur racine carrée de ène",
-      "unicodemath": "𝑡=(𝑥̅-𝜇)/𝑠/√𝑛",
+      "unicodemath": "𝑡=(𝑥̅-𝜇)/(𝑠/√𝑛)",
       "domain": "Probability, Statistics & Data Science"
     },
     {
@@ -15569,7 +15359,7 @@ export const localizedEquations = {
         "kurtosis excédentaire"
       ],
       "dictation": "coefficient d'aplatissement égale un sur ène fois la somme de parenthèse ouvrante iks indice i moins iks barre parenthèse fermante puissance quatre sur esse puissance quatre moins trois",
-      "unicodemath": "kurtosis=1/𝑛 ∑ (𝑥_𝑖-𝑥̅)⁴/𝑠⁴-3",
+      "unicodemath": "\"kurtosis\"=1/𝑛 ∑ (𝑥_𝑖-𝑥̅)⁴/𝑠⁴-3",
       "domain": "Probability, Statistics & Data Science"
     },
     {

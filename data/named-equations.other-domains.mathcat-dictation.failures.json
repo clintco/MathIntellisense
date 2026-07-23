@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1047,
+    "name": "distance formula",
+    "domainId": "geometry-trigonometry",
+    "UnicodeMath": "𝑑=√((𝑥₂-𝑥₁)²+(𝑦₂-𝑦₁)²)",
+    "error": "mathcat-failed: Failed to set MathML: in file '\\\\?\\C:\\Users\\clintc\\source\\repos\\MathIntellisenseRN\\windows\\MathIntellisenseRN\\Rules\\Rules\\Languages\\en\\definitions.yaml\ncaused by: In file '\\\\?\\C:\\Users\\clintc\\source\\repos\\MathIntellisenseRN\\windows\\MathIntellisenseRN\\Rules\\Rules\\Languages\\en\\definitions.yaml'\ncaused by: Didn't find rules!\n"
+  },
+  {
+    "id": 1124,
+    "name": "integral of cosine",
+    "domainId": "calculus-analysis",
+    "UnicodeMath": "∫ cos 𝑥 ⅆ𝑥=sin 𝑥+𝐶",
+    "error": "mathcat-failed: Failed to set MathML: in file \"\\\\\\\\?\\\\C:\\\\Users\\\\clintc\\\\source\\\\repos\\\\MathIntellisenseRN\\\\windows\\\\MathIntellisenseRN\\\\Rules\\\\Rules\\\\Languages\\\\en\\\\ClearSpeak_Rules.yaml\"\ncaused by: in file \"\\\\\\\\?\\\\C:\\\\Users\\\\clintc\\\\source\\\\repos\\\\MathIntellisenseRN\\\\windows\\\\MathIntellisenseRN\\\\Rules\\\\Rules\\\\Languages\\\\en\\\\ClearSpeak_Rules.yaml\"\ncaused by: in file \"\\\\\\\\?\\\\C:\\\\Users\\\\clintc\\\\source\\\\repos\\\\MathIntellisenseRN\\\\windows\\\\MathIntellisenseRN\\\\Rules\\\\Rules\\\\Languages\\\\en\\\\SharedRules\\\\general.yaml\"\ncaused by: Didn't find rules!\n"
+  },
+  {
+    "id": 1245,
+    "name": "OLS slope",
+    "domainId": "probability-statistics-data-science",
+    "UnicodeMath": "𝛽̂_1=∑(𝑥_𝑖-𝑥̅)(𝑦_𝑖-𝑦̅)/∑(𝑥_𝑖-𝑥̅)^2",
+    "error": "mathcat-failed: Failed to set MathML: in file \"\\\\\\\\?\\\\C:\\\\Users\\\\clintc\\\\source\\\\repos\\\\MathIntellisenseRN\\\\windows\\\\MathIntellisenseRN\\\\Rules\\\\Rules\\\\Languages\\\\en\\\\ClearSpeak_Rules.yaml\"\ncaused by: Parse error!!: while scanning a quoted scalar, found unexpected end of stream at line 638 column 20\n"
+  },
+  {
+    "id": 1343,
+    "name": "wave function normalization",
+    "domainId": "physics",
+    "UnicodeMath": "∫_-∞^∞ |𝜓|²ⅆ𝑥=1",
+    "error": "unicodemath-convert-failed"
+  }
+]

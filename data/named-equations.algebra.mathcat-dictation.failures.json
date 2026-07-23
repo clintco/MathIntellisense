@@ -1,0 +1,8 @@
+[
+  {
+    "id": 1170,
+    "name": "vector projection",
+    "UnicodeMath": "proj_𝐯𝐮=𝐮⋅𝐯/|𝐯|²𝐯",
+    "error": "unicodemath-convert-failed"
+  }
+]

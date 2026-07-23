@@ -1,0 +1,2504 @@
+[
+  {
+    "id": 1042,
+    "UnicodeMath": "𝑚=(𝑦_2-𝑦_1)/(𝑥_2-𝑥_1)",
+    "MathCAT_Dictation": "m is equal to; the fraction with numerator; y sub 2, minus y sub 1; and denominator x sub 2, minus x sub 1",
+    "MathCAT_Simple": "m equals; the fraction with numerator; y 2, minus y 1; and denominator x 2, minus x 1"
+  },
+  {
+    "id": 1043,
+    "UnicodeMath": "𝑦=𝑚𝑥+𝑏",
+    "MathCAT_Dictation": "y is equal to, m x plus b",
+    "MathCAT_Simple": "y equals m x plus b"
+  },
+  {
+    "id": 1044,
+    "UnicodeMath": "𝑦-𝑦₁=𝑚(𝑥-𝑥₁)",
+    "MathCAT_Dictation": "y minus y sub 1; is equal to; m, open paren, x minus x sub 1; close paren",
+    "MathCAT_Simple": "y minus y 1; equals, m, open x minus x 1; close"
+  },
+  {
+    "id": 1045,
+    "UnicodeMath": "𝐴𝑥+𝐵𝑦=𝐶",
+    "MathCAT_Dictation": "cap a x plus  cap b y; is equal to  cap c",
+    "MathCAT_Simple": "cap a x plus  cap b y; equals  cap c"
+  },
+  {
+    "id": 1046,
+    "UnicodeMath": "𝑎²+𝑏²=𝑐²",
+    "MathCAT_Dictation": "a squared plus b squared, is equal to c squared",
+    "MathCAT_Simple": "a squared plus b squared, equals c squared"
+  },
+  {
+    "id": 1047,
+    "UnicodeMath": "𝑑=√((𝑥₂-𝑥₁)²+(𝑦₂-𝑦₁)²)",
+    "MathCAT_Dictation": null,
+    "MathCAT_Simple": "d equals; square root, open x 2, minus x 1; close squared; plus, open y 2, minus y 1; close squared"
+  },
+  {
+    "id": 1048,
+    "UnicodeMath": "𝑀=((𝑥₁+𝑥₂)/2,(𝑦₁+𝑦₂)/2)",
+    "MathCAT_Dictation": "cap m is equal to; the interval from the fraction with numerator; x sub 1, plus x sub 2; and denominator 2; to the fraction with numerator; y sub 1, plus y sub 2; and denominator 2; not including the fraction with numerator; x sub 1, plus x sub 2; and denominator 2; or the fraction with numerator; y sub 1, plus y sub 2; and denominator 2",
+    "MathCAT_Simple": "cap m equals; the interval from the fraction with numerator; x 1, plus x 2; and denominator 2; to the fraction with numerator; y 1, plus y 2; and denominator 2; not including the fraction with numerator; x 1, plus x 2; and denominator 2; or the fraction with numerator; y 1, plus y 2; and denominator 2"
+  },
+  {
+    "id": 1049,
+    "UnicodeMath": "(𝑥-ℎ)²+(𝑦-𝑘)²=𝑟²",
+    "MathCAT_Dictation": "open paren, x minus planck constant, close paren squared; plus, open paren y minus k, close paren squared; is equal to r squared",
+    "MathCAT_Simple": "open x minus planck constant, close squared; plus, open y minus k close squared; equals r squared"
+  },
+  {
+    "id": 1050,
+    "UnicodeMath": "𝐴=𝜋𝑟²",
+    "MathCAT_Dictation": "cap a is equal to, pi r squared",
+    "MathCAT_Simple": "cap a equals pi r squared"
+  },
+  {
+    "id": 1051,
+    "UnicodeMath": "𝐶=2𝜋𝑟",
+    "MathCAT_Dictation": "cap c is equal to, 2 pi r",
+    "MathCAT_Simple": "cap c equals 2 pi r"
+  },
+  {
+    "id": 1052,
+    "UnicodeMath": "𝐴=1/2 𝑏ℎ",
+    "MathCAT_Dictation": "cap a is equal to, 1 half b planck constant",
+    "MathCAT_Simple": "cap a equals, 1 half b planck constant"
+  },
+  {
+    "id": 1053,
+    "UnicodeMath": "𝐴=√(𝑠(𝑠-𝑎)(𝑠-𝑏)(𝑠-𝑐))",
+    "MathCAT_Dictation": "cap a is equal to; the square root of s times, open paren s minus a, close paren; times, open paren s minus b, close paren; times, open paren s minus c, close paren",
+    "MathCAT_Simple": "cap a equals; square root, s times, open s minus a close, times, open s minus b close, times, open s minus c close"
+  },
+  {
+    "id": 1054,
+    "UnicodeMath": "𝐴=𝑙𝑤",
+    "MathCAT_Dictation": "cap a is equal to l w",
+    "MathCAT_Simple": "cap a equals l w"
+  },
+  {
+    "id": 1055,
+    "UnicodeMath": "𝐴=1/2 (𝑎+𝑏)ℎ",
+    "MathCAT_Dictation": "cap a is equal to; 1 half times, open paren a plus b, close paren; times planck constant",
+    "MathCAT_Simple": "cap a equals; 1 half times, open a plus b close, times planck constant"
+  },
+  {
+    "id": 1056,
+    "UnicodeMath": "𝐴=𝜋𝑎𝑏",
+    "MathCAT_Dictation": "cap a is equal to ??????",
+    "MathCAT_Simple": "cap a equals ??????"
+  },
+  {
+    "id": 1057,
+    "UnicodeMath": "𝑉=4/3 𝜋𝑟³",
+    "MathCAT_Dictation": "cap v is equal to, 4 thirds pi r cubed",
+    "MathCAT_Simple": "cap v equals, 4 thirds pi r cubed"
+  },
+  {
+    "id": 1058,
+    "UnicodeMath": "𝐴=4𝜋𝑟²",
+    "MathCAT_Dictation": "cap a is equal to, 4 pi r squared",
+    "MathCAT_Simple": "cap a equals, 4 pi r squared"
+  },
+  {
+    "id": 1059,
+    "UnicodeMath": "𝑉=𝜋𝑟²ℎ",
+    "MathCAT_Dictation": "cap v is equal to, pi r squared planck constant",
+    "MathCAT_Simple": "cap v equals, pi r squared planck constant"
+  },
+  {
+    "id": 1060,
+    "UnicodeMath": "𝑉=1/3 𝜋𝑟²ℎ",
+    "MathCAT_Dictation": "cap v is equal to; 1 third pi r squared planck constant",
+    "MathCAT_Simple": "cap v equals, 1 third pi r squared planck constant"
+  },
+  {
+    "id": 1061,
+    "UnicodeMath": "𝑉=𝑠³",
+    "MathCAT_Dictation": "cap v is equal to s cubed",
+    "MathCAT_Simple": "cap v equals s cubed"
+  },
+  {
+    "id": 1062,
+    "UnicodeMath": "𝑉=𝑙𝑤ℎ",
+    "MathCAT_Dictation": "cap v is equal to ????h",
+    "MathCAT_Simple": "cap v equals ????h"
+  },
+  {
+    "id": 1063,
+    "UnicodeMath": "𝑉=1/3 𝐵ℎ",
+    "MathCAT_Dictation": "cap v is equal to, 1 third  cap b planck constant",
+    "MathCAT_Simple": "cap v equals, 1 third  cap b planck constant"
+  },
+  {
+    "id": 1064,
+    "UnicodeMath": "𝑆𝐴=2𝜋𝑟²+2𝜋𝑟ℎ",
+    "MathCAT_Dictation": "cap s  cap a, is equal to; 2 pi r squared, plus 2 ????h",
+    "MathCAT_Simple": "cap s  cap a, equals; 2 pi r squared, plus 2 ????h"
+  },
+  {
+    "id": 1065,
+    "UnicodeMath": "𝑆𝐴=𝜋𝑟²+𝜋𝑟𝑙",
+    "MathCAT_Dictation": "cap s  cap a, is equal to, pi r squared, plus ??????",
+    "MathCAT_Simple": "cap s  cap a, equals, pi r squared, plus ??????"
+  },
+  {
+    "id": 1066,
+    "UnicodeMath": "𝑆𝐴=2(𝑙𝑤+𝑙ℎ+𝑤ℎ)",
+    "MathCAT_Dictation": "cap s  cap a, is equal to; 2 times; open paren; l w plus l planck constant, plus w planck constant; close paren",
+    "MathCAT_Simple": "cap s  cap a, equals; 2 times; open; l w plus l planck constant, plus w planck constant; close"
+  },
+  {
+    "id": 1067,
+    "UnicodeMath": "sin 𝜃=\"opposite\"/\"hypotenuse\"",
+    "MathCAT_Dictation": "sine theta, is equal to opposite over hypotenuse",
+    "MathCAT_Simple": "sine theta, equals opposite over hypotenuse"
+  },
+  {
+    "id": 1068,
+    "UnicodeMath": "cos⁡𝜃=\"adjacent\"/\"hypotenuse\"",
+    "MathCAT_Dictation": "cosine theta, is equal to adjacent over hypotenuse",
+    "MathCAT_Simple": "cos theta, equals adjacent over hypotenuse"
+  },
+  {
+    "id": 1069,
+    "UnicodeMath": "tan⁡𝜃=\"opposite\"/\"adjacent\"",
+    "MathCAT_Dictation": "tangent theta, is equal to opposite over adjacent",
+    "MathCAT_Simple": "tan theta, equals opposite over adjacent"
+  },
+  {
+    "id": 1070,
+    "UnicodeMath": "csc⁡𝜃=1/sin⁡𝜃; sec⁡𝜃=1/cos⁡𝜃; cot⁡𝜃=1/tan⁡𝜃",
+    "MathCAT_Dictation": "cosecant theta, is equal to, 1 over sine theta; semicolon; secant theta, is equal to, 1 over cosine theta; semicolon; cotangent theta, is equal to, 1 over tangent theta",
+    "MathCAT_Simple": "coseek theta, equals 1 over sine theta; semicolon, seek theta, equals 1 over cos theta; semicolon; cotan theta, equals 1 over tan theta"
+  },
+  {
+    "id": 1071,
+    "UnicodeMath": "tan 𝜃=sin 𝜃/cos 𝜃; cot 𝜃=cos 𝜃/sin 𝜃",
+    "MathCAT_Dictation": "tangent theta, is equal to, sine theta over cosine theta; semicolon; cotangent theta, is equal to, cosine theta over sine theta",
+    "MathCAT_Simple": "tan theta, equals, sine theta over cos theta; semicolon; cotan theta, equals, cos theta over sine theta"
+  },
+  {
+    "id": 1072,
+    "UnicodeMath": "sin⁡(90°-𝜃)=cos⁡𝜃; cos⁡(90°-𝜃)=sin⁡𝜃; tan⁡(90°-𝜃)=cot⁡𝜃",
+    "MathCAT_Dictation": "sine of, open paren, 90 degrees, minus theta, close paren; is equal to, cosine theta; semicolon; cosine of, open paren, 90 degrees, minus theta, close paren; is equal to sine theta; semicolon; tangent of, open paren, 90 degrees, minus theta, close paren; is equal to, cotangent theta",
+    "MathCAT_Simple": "sine, open, 90 degrees, minus theta, close; equals cos theta; semicolon; cos, open, 90 degrees, minus theta, close; equals sine theta; semicolon; tan, open, 90 degrees, minus theta, close; equals cotan theta"
+  },
+  {
+    "id": 1073,
+    "UnicodeMath": "sin⁡(-𝜃)=-sin⁡𝜃; cos⁡(-𝜃)=cos⁡𝜃; tan⁡(-𝜃)=-tan⁡𝜃",
+    "MathCAT_Dictation": "sine of negative theta, is equal to, negative sine theta; semicolon; cosine of negative theta, is equal to, cosine theta; semicolon; tangent of negative theta, is equal to, negative tangent theta",
+    "MathCAT_Simple": "sine negative theta, equals negative sine theta; semicolon; cos negative theta, equals cos theta; semicolon; tan negative theta, equals negative tan theta"
+  },
+  {
+    "id": 1074,
+    "UnicodeMath": "𝜃_\"rad\"=𝜃_\"deg\"   𝜋/180",
+    "MathCAT_Dictation": "theta sub rad  end sub; is equal to, theta sub deg  end sub; pi over 180",
+    "MathCAT_Simple": "theta sub rad  end sub; equals, theta sub deg  end sub; pi over 180"
+  },
+  {
+    "id": 1075,
+    "UnicodeMath": "𝜃_\"deg\"=𝜃_\"rad\"   180/𝜋",
+    "MathCAT_Dictation": "theta sub deg  end sub; is equal to, theta sub rad  end sub; 180 over pi",
+    "MathCAT_Simple": "theta sub deg  end sub; equals, theta sub rad  end sub; 180 over pi"
+  },
+  {
+    "id": 1076,
+    "UnicodeMath": "sin^2⁡𝜃+cos^2⁡𝜃=1; 1+tan^2⁡𝜃=sec^2⁡𝜃; 1+cot^2⁡𝜃=csc^2⁡𝜃",
+    "MathCAT_Dictation": "sine squared of theta, plus cosine squared of theta; is equal to 1; semicolon; 1 plus tangent squared of theta; is equal to, secant squared of theta; semicolon; 1 plus cotangent squared of theta; is equal to, cosecant squared of theta",
+    "MathCAT_Simple": "sine squared theta, plus cos squared theta; equals 1; semicolon; 1 plus tan squared theta; equals seek squared theta; semicolon; 1 plus cotan squared theta; equals coseek squared theta"
+  },
+  {
+    "id": 1077,
+    "UnicodeMath": "sin(2𝜃)=2 sin 𝜃 cos 𝜃",
+    "MathCAT_Dictation": "sine of, open paren 2 theta, close paren; is equal to; 2 sine theta, cosine theta",
+    "MathCAT_Simple": "sine, open 2 theta close; equals, 2 sine theta, cos theta"
+  },
+  {
+    "id": 1078,
+    "UnicodeMath": "cos⁡(2𝜃)=cos^2⁡𝜃-sin^2⁡𝜃",
+    "MathCAT_Dictation": "cosine of, open paren 2 theta, close paren; is equal to; cosine squared of theta, minus sine squared of theta",
+    "MathCAT_Simple": "cos, open 2 theta close; equals; cos squared theta, minus sine squared theta"
+  },
+  {
+    "id": 1079,
+    "UnicodeMath": "tan⁡(2𝜃)=2tan⁡𝜃/(1-tan^2⁡𝜃)",
+    "MathCAT_Dictation": "tangent of, open paren 2 theta, close paren; is equal to; the fraction with numerator; 2 tangent theta; and denominator 1 minus tangent squared of theta",
+    "MathCAT_Simple": "tan, open 2 theta close; equals; the fraction with numerator; 2 tan theta; and denominator 1 minus tan squared theta"
+  },
+  {
+    "id": 1080,
+    "UnicodeMath": "sin(𝐴+𝐵)=sin 𝐴 cos 𝐵+cos 𝐴 sin 𝐵",
+    "MathCAT_Dictation": "sine of, open paren,  cap a plus  cap b, close paren; is equal to; sine  cap a, cosine  cap b; plus, cosine  cap a, sine  cap b",
+    "MathCAT_Simple": "sine, open  cap a plus  cap b, close; equals; sine  cap a, cos  cap b; plus, cos  cap a, sine  cap b"
+  },
+  {
+    "id": 1081,
+    "UnicodeMath": "sin(𝐴-𝐵)=sin 𝐴 cos 𝐵-cos 𝐴 sin 𝐵",
+    "MathCAT_Dictation": "sine of, open paren,  cap a minus  cap b, close paren; is equal to; sine  cap a, cosine  cap b; minus, cosine  cap a, sine  cap b",
+    "MathCAT_Simple": "sine, open  cap a minus  cap b, close; equals; sine  cap a, cos  cap b; minus, cos  cap a, sine  cap b"
+  },
+  {
+    "id": 1082,
+    "UnicodeMath": "cos⁡(𝐴+𝐵)=cos 𝐴 cos 𝐵-sin 𝐴 sin 𝐵",
+    "MathCAT_Dictation": "cosine of, open paren,  cap a plus  cap b, close paren; is equal to; cosine  cap a, cosine  cap b; minus, sine  cap a, sine  cap b",
+    "MathCAT_Simple": "cos, open  cap a plus  cap b, close; equals; cos  cap a, cos  cap b; minus, sine  cap a, sine  cap b"
+  },
+  {
+    "id": 1083,
+    "UnicodeMath": "cos⁡(𝐴-𝐵)=cos 𝐴 cos 𝐵+sin 𝐴 sin 𝐵",
+    "MathCAT_Dictation": "cosine of, open paren,  cap a minus  cap b, close paren; is equal to; cosine  cap a, cosine  cap b; plus, sine  cap a, sine  cap b",
+    "MathCAT_Simple": "cos, open  cap a minus  cap b, close; equals; cos  cap a, cos  cap b; plus, sine  cap a, sine  cap b"
+  },
+  {
+    "id": 1084,
+    "UnicodeMath": "tan⁡(𝐴+𝐵)=(tan⁡𝐴+tan⁡𝐵)/(1-tan⁡𝐴 tan⁡𝐵)",
+    "MathCAT_Dictation": "tangent of, open paren,  cap a plus  cap b, close paren; is equal to; the fraction with numerator; tangent  cap a, plus tangent  cap b; and denominator 1 minus, tangent  cap a, tangent  cap b",
+    "MathCAT_Simple": "tan, open  cap a plus  cap b, close; equals; the fraction with numerator; tan  cap a, plus tan  cap b; and denominator 1 minus, tan  cap a, tan  cap b"
+  },
+  {
+    "id": 1085,
+    "UnicodeMath": "tan⁡(𝐴-𝐵)=(tan⁡𝐴-tan⁡𝐵)/(1+tan⁡𝐴 tan⁡𝐵)",
+    "MathCAT_Dictation": "tangent of, open paren,  cap a minus  cap b, close paren; is equal to; the fraction with numerator; tangent  cap a, minus tangent  cap b; and denominator 1 plus, tangent  cap a, tangent  cap b",
+    "MathCAT_Simple": "tan, open  cap a minus  cap b, close; equals; the fraction with numerator; tan  cap a, minus tan  cap b; and denominator 1 plus, tan  cap a, tan  cap b"
+  },
+  {
+    "id": 1086,
+    "UnicodeMath": "𝑎/sin⁡𝐴=𝑏/sin⁡𝐵=𝑐/sin⁡𝐶",
+    "MathCAT_Dictation": "a over sine  cap a, is equal to, b over sine  cap b, is equal to, c over sine  cap c",
+    "MathCAT_Simple": "a over sine  cap a, equals b over sine  cap b, equals c over sine  cap c"
+  },
+  {
+    "id": 1087,
+    "UnicodeMath": "𝑐²=𝑎²+𝑏²-2𝑎𝑏 cos 𝐶",
+    "MathCAT_Dictation": "c squared is equal to; a squared plus b squared minus, 2 a b cosine  cap c",
+    "MathCAT_Simple": "c squared equals; a squared plus b squared minus, 2 a b cos  cap c"
+  },
+  {
+    "id": 1088,
+    "UnicodeMath": "𝑒^𝑖𝜃=cos⁡𝜃+𝑖 sin⁡𝜃",
+    "MathCAT_Dictation": "e raised to the i theta power; is equal to; cosine theta, plus, i sine theta",
+    "MathCAT_Simple": "e raised to the i theta power, equals; cos theta, plus, i sine theta"
+  },
+  {
+    "id": 1089,
+    "UnicodeMath": "𝑠=𝑟𝜃",
+    "MathCAT_Dictation": "s is equal to r theta",
+    "MathCAT_Simple": "s equals r theta"
+  },
+  {
+    "id": 1090,
+    "UnicodeMath": "𝐴=1/2 𝑟²𝜃",
+    "MathCAT_Dictation": "cap a is equal to, 1 half r squared theta",
+    "MathCAT_Simple": "cap a equals, 1 half r squared theta"
+  },
+  {
+    "id": 1091,
+    "UnicodeMath": "𝐴=1/2 𝑎𝑏 sin 𝐶",
+    "MathCAT_Dictation": "cap a is equal to, 1 half a b sine  cap c",
+    "MathCAT_Simple": "cap a equals, 1 half a b sine  cap c"
+  },
+  {
+    "id": 1092,
+    "UnicodeMath": "sin(𝜃/2)=±√((1-cos 𝜃)/2); cos(𝜃/2)=±√((1+cos 𝜃)/2); tan(𝜃/2)=(1-cos 𝜃)/sin 𝜃",
+    "MathCAT_Dictation": "sine of, open paren theta over 2 close paren; is equal to; plus or minus; the square root of the fraction with numerator; 1 minus cosine theta; and denominator 2; semicolon; cosine of, open paren theta over 2 close paren; is equal to; plus or minus; the square root of the fraction with numerator; 1 plus cosine theta; and denominator 2; semicolon; tangent of, open paren theta over 2 close paren; is equal to; the fraction with numerator; 1 minus cosine theta; and denominator sine theta",
+    "MathCAT_Simple": "sine, open theta over 2 close; equals; plus or minus; square root, the fraction with numerator; 1 minus cos theta; and denominator 2; semicolon; cos, open theta over 2 close; equals; plus or minus; square root, the fraction with numerator; 1 plus cos theta; and denominator 2; semicolon; tan, open theta over 2 close; equals; the fraction with numerator; 1 minus cos theta; and denominator sine theta"
+  },
+  {
+    "id": 1093,
+    "UnicodeMath": "sin^2⁡𝜃=(1-cos⁡(2𝜃))/2; cos^2⁡𝜃=(1+cos⁡(2𝜃))/2",
+    "MathCAT_Dictation": "sine squared of theta, is equal to; the fraction with numerator; 1 minus, cosine of, open paren 2 theta, close paren; and denominator 2; semicolon; cosine squared of theta, is equal to; the fraction with numerator; 1 plus, cosine of, open paren 2 theta, close paren; and denominator 2",
+    "MathCAT_Simple": "sine squared theta, equals; the fraction with numerator; 1 minus, cos, open 2 theta close; and denominator 2; semicolon; cos squared theta, equals; the fraction with numerator; 1 plus, cos, open 2 theta close; and denominator 2"
+  },
+  {
+    "id": 1094,
+    "UnicodeMath": "𝜔=𝜃/𝑡",
+    "MathCAT_Dictation": "omega is equal to theta over t",
+    "MathCAT_Simple": "omega equals theta over t"
+  },
+  {
+    "id": 1095,
+    "UnicodeMath": "𝑣=𝑟𝜔",
+    "MathCAT_Dictation": "v is equal to r omega",
+    "MathCAT_Simple": "v equals r omega"
+  },
+  {
+    "id": 1096,
+    "UnicodeMath": "sin 𝐴 cos 𝐵=1/2 [sin⁡(𝐴+𝐵)+sin⁡(𝐴-𝐵)]; cos 𝐴 cos 𝐵=1/2 [cos⁡(𝐴-𝐵)+cos⁡(𝐴+𝐵)]; sin 𝐴 sin 𝐵=1/2 [cos⁡(𝐴-𝐵)-cos⁡(𝐴+𝐵)]",
+    "MathCAT_Dictation": "sine  cap a, cosine  cap b; is equal to; 1 half times; open bracket; sine of, open paren,  cap a plus  cap b, close paren; plus; sine of, open paren,  cap a minus  cap b, close paren; close bracket; semicolon; cosine  cap a, cosine  cap b; is equal to; 1 half times; open bracket; cosine of, open paren,  cap a minus  cap b, close paren; plus; cosine of, open paren,  cap a plus  cap b, close paren; close bracket; semicolon; sine  cap a, sine  cap b; is equal to; 1 half times; open bracket; cosine of, open paren,  cap a minus  cap b, close paren; minus; cosine of, open paren,  cap a plus  cap b, close paren; close bracket",
+    "MathCAT_Simple": "sine  cap a, cos  cap b; equals; 1 half times; open bracket; sine, open  cap a plus  cap b, close; plus, sine, open  cap a minus  cap b, close; close bracket; semicolon; cos  cap a, cos  cap b; equals; 1 half times; open bracket; cos, open  cap a minus  cap b, close; plus, cos, open  cap a plus  cap b, close; close bracket; semicolon; sine  cap a, sine  cap b; equals; 1 half times; open bracket; cos, open  cap a minus  cap b, close; minus, cos, open  cap a plus  cap b, close; close bracket"
+  },
+  {
+    "id": 1097,
+    "UnicodeMath": "sin 𝐴+sin 𝐵=2 sin⁡((𝐴+𝐵)/2)cos⁡((𝐴-𝐵)/2); cos 𝐴+cos 𝐵=2 cos⁡((𝐴+𝐵)/2)cos⁡((𝐴-𝐵)/2)",
+    "MathCAT_Dictation": "sine  cap a, plus sine  cap b; is equal to; 2; sine of; open paren; the fraction with numerator;  cap a plus  cap b; and denominator 2; close paren; cosine of; open paren; the fraction with numerator;  cap a minus  cap b; and denominator 2; close paren; semicolon; cosine  cap a, plus cosine  cap b; is equal to; 2; cosine of; open paren; the fraction with numerator;  cap a plus  cap b; and denominator 2; close paren; cosine of; open paren; the fraction with numerator;  cap a minus  cap b; and denominator 2; close paren",
+    "MathCAT_Simple": "sine  cap a, plus sine  cap b; equals; 2; sine; open; the fraction with numerator;  cap a plus  cap b; and denominator 2; close; cos; open; the fraction with numerator;  cap a minus  cap b; and denominator 2; close; semicolon; cos  cap a, plus cos  cap b; equals; 2; cos; open; the fraction with numerator;  cap a plus  cap b; and denominator 2; close; cos; open; the fraction with numerator;  cap a minus  cap b; and denominator 2; close"
+  },
+  {
+    "id": 1098,
+    "UnicodeMath": "𝑥²/𝑎²+𝑦²/𝑏²=1",
+    "MathCAT_Dictation": "the fraction with numerator; x squared; and denominator a squared; plus, the fraction with numerator; y squared; and denominator b squared; is equal to 1",
+    "MathCAT_Simple": "the fraction with numerator; x squared; and denominator a squared; plus, the fraction with numerator; y squared; and denominator b squared; equals 1"
+  },
+  {
+    "id": 1099,
+    "UnicodeMath": "𝑥²/𝑎²-𝑦²/𝑏²=1",
+    "MathCAT_Dictation": "the fraction with numerator; x squared; and denominator a squared; minus, the fraction with numerator; y squared; and denominator b squared; is equal to 1",
+    "MathCAT_Simple": "the fraction with numerator; x squared; and denominator a squared; minus, the fraction with numerator; y squared; and denominator b squared; equals 1"
+  },
+  {
+    "id": 1100,
+    "UnicodeMath": "𝑥²=4𝑝𝑦",
+    "MathCAT_Dictation": "x squared is equal to, 4 p y",
+    "MathCAT_Simple": "x squared equals 4 p y"
+  },
+  {
+    "id": 1101,
+    "UnicodeMath": "ⅆ𝑦/ⅆ𝑥=ⅆ𝑦/ⅆ𝑢⋅ⅆ𝑢/ⅆ𝑥",
+    "MathCAT_Dictation": "derivative of 1 comma, y comma, x; is equal to; derivative of 1 comma, y comma, u; times, derivative of 1 comma, u comma, x",
+    "MathCAT_Simple": "derivative 1 comma, y comma, x; equals; derivative 1 comma, y comma, u; times, derivative 1 comma, u comma, x"
+  },
+  {
+    "id": 1102,
+    "UnicodeMath": "𝑑/ⅆ𝑥 [𝑓𝑔]=𝑓'𝑔+𝑓𝑔'",
+    "MathCAT_Dictation": "the fraction with numerator d; and denominator double-struck italic d, x; times, open bracket f g close bracket; is equal to; f prime, g, plus f g prime",
+    "MathCAT_Simple": "the fraction with numerator d; and denominator double-struck italic d, x; times, open bracket f g close bracket; equals, f prime, g, plus f g prime"
+  },
+  {
+    "id": 1103,
+    "UnicodeMath": "ⅆ/ⅆ𝑥 [𝑓/𝑔]=(𝑓'𝑔-𝑓𝑔')/𝑔^2",
+    "MathCAT_Dictation": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times, open bracket f over g close bracket; is equal to; the fraction with numerator; f prime, g, minus f g prime; and denominator g squared",
+    "MathCAT_Simple": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times, open bracket f over g close bracket; equals; the fraction with numerator; f prime, g, minus f g prime; and denominator g squared"
+  },
+  {
+    "id": 1104,
+    "UnicodeMath": "ⅆ/ⅆ𝑥 [𝑥^𝑛]=𝑛𝑥^(𝑛-1)",
+    "MathCAT_Dictation": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times, open bracket x to the n-th power, close bracket; is equal to, n times, x raised to the n minus 1 power",
+    "MathCAT_Simple": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times, open bracket x to the n-th power, close bracket; equals, n times, x raised to the n minus 1 power"
+  },
+  {
+    "id": 1105,
+    "UnicodeMath": "ⅆ/ⅆ𝑥 [sin 𝑥]=cos 𝑥",
+    "MathCAT_Dictation": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times sine x; is equal to cosine x",
+    "MathCAT_Simple": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times sine x; equals cos x"
+  },
+  {
+    "id": 1106,
+    "UnicodeMath": "ⅆ/ⅆ𝑥 [cos 𝑥]=-sin 𝑥",
+    "MathCAT_Dictation": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times cosine x; is equal to, negative sine x",
+    "MathCAT_Simple": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times cos x; equals negative sine x"
+  },
+  {
+    "id": 1107,
+    "UnicodeMath": "ⅆ/ⅆ𝑥 [𝑒^𝑥]=𝑒^𝑥",
+    "MathCAT_Dictation": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times, open bracket e to the x-th power, close bracket; is equal to e to the x-th power",
+    "MathCAT_Simple": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times, open bracket e to the x-th power, close bracket; equals e to the x-th power"
+  },
+  {
+    "id": 1108,
+    "UnicodeMath": "ⅆ/ⅆ𝑥 [ln 𝑥]=1/𝑥",
+    "MathCAT_Dictation": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times l n x; is equal to 1 over x",
+    "MathCAT_Simple": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times l n x; equals 1 over x"
+  },
+  {
+    "id": 1109,
+    "UnicodeMath": "ⅆ/ⅆ𝑥 [tan 𝑥]=sec² 𝑥",
+    "MathCAT_Dictation": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times tangent x; is equal to, secant squared of x",
+    "MathCAT_Simple": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times tan x; equals seek squared x"
+  },
+  {
+    "id": 1110,
+    "UnicodeMath": "ⅆ/ⅆ𝑥 [cot 𝑥]=-csc² 𝑥",
+    "MathCAT_Dictation": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times cotangent x; is equal to, negative cosecant squared of x",
+    "MathCAT_Simple": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times cotan x; equals, negative coseek squared x"
+  },
+  {
+    "id": 1111,
+    "UnicodeMath": "ⅆ/ⅆ𝑥 [sec 𝑥]=sec 𝑥 tan 𝑥",
+    "MathCAT_Dictation": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times secant x; is equal to, secant x tangent x",
+    "MathCAT_Simple": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times seek x; equals, seek x tan x"
+  },
+  {
+    "id": 1112,
+    "UnicodeMath": "ⅆ/ⅆ𝑥 [csc 𝑥]=-csc 𝑥 cot 𝑥",
+    "MathCAT_Dictation": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times cosecant x; is equal to, negative cosecant x, cotangent x",
+    "MathCAT_Simple": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times coseek x; equals, negative coseek x, cotan x"
+  },
+  {
+    "id": 1113,
+    "UnicodeMath": "ⅆ/ⅆ𝑥 [𝑎^𝑥]=𝑎^𝑥 ln 𝑎",
+    "MathCAT_Dictation": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times, open bracket a to the x-th power, close bracket; is equal to, a to the x-th power, l n a",
+    "MathCAT_Simple": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times, open bracket a to the x-th power, close bracket; equals, a to the x-th power, l n a"
+  },
+  {
+    "id": 1114,
+    "UnicodeMath": "ⅆ/ⅆ𝑥 [arcsin 𝑥]=1/√(1-𝑥²)",
+    "MathCAT_Dictation": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times arcsin of x; is equal to; the fraction with numerator 1; and denominator the square root of 1 minus x squared",
+    "MathCAT_Simple": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times arcsin x; equals; the fraction with numerator 1; and denominator square root, 1 minus x squared"
+  },
+  {
+    "id": 1115,
+    "UnicodeMath": "ⅆ/ⅆ𝑥 [arccos 𝑥]=-1/√(1-𝑥²)",
+    "MathCAT_Dictation": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times arccos of x; is equal to; negative the fraction with numerator 1; and denominator the square root of 1 minus x squared",
+    "MathCAT_Simple": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times arccos x; equals; negative the fraction with numerator 1; and denominator square root, 1 minus x squared"
+  },
+  {
+    "id": 1116,
+    "UnicodeMath": "ⅆ/ⅆ𝑥 [arctan 𝑥]=1/(1+𝑥²)",
+    "MathCAT_Dictation": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times arctan of x; is equal to; the fraction with numerator 1; and denominator 1 plus x squared",
+    "MathCAT_Simple": "the fraction with numerator double-struck italic d; and denominator double-struck italic d, x; times arctan x; equals; the fraction with numerator 1; and denominator 1 plus x squared"
+  },
+  {
+    "id": 1117,
+    "UnicodeMath": "∫_𝑎^𝑏 𝑓(𝑥)ⅆ𝑥=𝐹(𝑏)-𝐹(𝑎)",
+    "MathCAT_Dictation": "the integral from a, to b of; f of x double-struck italic d, x; is equal to,  cap f of b minus  cap f of a",
+    "MathCAT_Simple": "integral from a, to b of; f x double-struck italic d, x; equals,  cap f b minus  cap f a"
+  },
+  {
+    "id": 1118,
+    "UnicodeMath": "∫_𝑎^𝑏 𝑓(𝑥)ⅆ𝑥",
+    "MathCAT_Dictation": "the integral from a, to b of; f of x double-struck italic d, x",
+    "MathCAT_Simple": "integral from a, to b of; f x double-struck italic d, x"
+  },
+  {
+    "id": 1119,
+    "UnicodeMath": "∫ 𝑥^𝑛 ⅆ𝑥=𝑥^(𝑛+1)/(𝑛+1)+𝐶",
+    "MathCAT_Dictation": "the integral of x to the n-th power, double-struck italic d, x; is equal to; the fraction with numerator; x raised to the n plus 1 power; and denominator n plus 1; plus  cap c",
+    "MathCAT_Simple": "integral of x to the n-th power, double-struck italic d, x; equals; the fraction with numerator; x raised to the n plus 1 power; and denominator n plus 1; plus  cap c"
+  },
+  {
+    "id": 1120,
+    "UnicodeMath": "∫ 1/𝑥 ⅆ𝑥=ln⁡|𝑥|+𝐶",
+    "MathCAT_Dictation": "the integral of 1 over x double-struck italic d, x; is equal to; the l n of the absolute value of x; plus  cap c",
+    "MathCAT_Simple": "integral of 1 over x double-struck italic d, x; equals, l n absolute value of x; plus  cap c"
+  },
+  {
+    "id": 1121,
+    "UnicodeMath": "∫ 𝑒^𝑥 ⅆ𝑥=𝑒^𝑥+𝐶",
+    "MathCAT_Dictation": "the integral of e to the x-th power, double-struck italic d, x; is equal to, e to the x-th power, plus  cap c",
+    "MathCAT_Simple": "integral of e to the x-th power, double-struck italic d, x; equals, e to the x-th power, plus  cap c"
+  },
+  {
+    "id": 1122,
+    "UnicodeMath": "∫ 𝑎^𝑥 ⅆ𝑥=𝑎^𝑥/ln⁡𝑎+𝐶",
+    "MathCAT_Dictation": "the integral of a to the x-th power, double-struck italic d, x; is equal to; the fraction with numerator; a to the x-th power; and denominator l n a; plus  cap c",
+    "MathCAT_Simple": "integral of a to the x-th power, double-struck italic d, x; equals; the fraction with numerator; a to the x-th power; and denominator l n a; plus  cap c"
+  },
+  {
+    "id": 1123,
+    "UnicodeMath": "∫ sin 𝑥 ⅆ𝑥=-cos 𝑥+𝐶",
+    "MathCAT_Dictation": "the integral of sine x double-struck italic d, x; is equal to, negative cosine x, plus  cap c",
+    "MathCAT_Simple": "integral of sine x double-struck italic d, x; equals, negative cos x, plus  cap c"
+  },
+  {
+    "id": 1124,
+    "UnicodeMath": "∫ cos 𝑥 ⅆ𝑥=sin 𝑥+𝐶",
+    "MathCAT_Dictation": null,
+    "MathCAT_Simple": "integral of cos x double-struck italic d, x; equals, sine x plus  cap c"
+  },
+  {
+    "id": 1125,
+    "UnicodeMath": "∫ tan 𝑥 ⅆ𝑥=-ln⁡|cos 𝑥|+𝐶",
+    "MathCAT_Dictation": "the integral of tangent x, double-struck italic d, x; is equal to; negative the l n of, the absolute value of cosine x; plus  cap c",
+    "MathCAT_Simple": "integral of tan x double-struck italic d, x; equals; negative l n, absolute value of cos x; plus  cap c"
+  },
+  {
+    "id": 1126,
+    "UnicodeMath": "∫ sec 𝑥 ⅆ𝑥=ln⁡|sec 𝑥+tan 𝑥|+𝐶",
+    "MathCAT_Dictation": "the integral of secant x double-struck italic d, x; is equal to; the l n of; the absolute value of secant x plus tangent x; plus  cap c",
+    "MathCAT_Simple": "integral of seek x double-struck italic d, x; equals; l n, absolute value of seek x plus tan x; plus  cap c"
+  },
+  {
+    "id": 1127,
+    "UnicodeMath": "∫ csc 𝑥 ⅆ𝑥=-ln⁡|csc 𝑥+cot 𝑥|+𝐶",
+    "MathCAT_Dictation": "the integral of cosecant x, double-struck italic d, x; is equal to; negative the l n of; the absolute value of cosecant x plus cotangent x; plus  cap c",
+    "MathCAT_Simple": "integral of coseek x double-struck italic d, x; equals; negative l n, absolute value of coseek x plus cotan x; plus  cap c"
+  },
+  {
+    "id": 1128,
+    "UnicodeMath": "∫ sec² 𝑥 ⅆ𝑥=tan 𝑥+𝐶",
+    "MathCAT_Dictation": "the integral of secant squared of x, double-struck italic d, x; is equal to, tangent x plus  cap c",
+    "MathCAT_Simple": "integral of seek squared x, double-struck italic d, x; equals, tan x plus  cap c"
+  },
+  {
+    "id": 1129,
+    "UnicodeMath": "∫ 1/√(1-𝑥²) ⅆ𝑥=arcsin 𝑥+𝐶",
+    "MathCAT_Dictation": "the integral of the fraction with numerator 1; and denominator the square root of 1 minus x squared; double-struck italic d, x; is equal to, arcsin of x plus  cap c",
+    "MathCAT_Simple": "integral of the fraction with numerator 1; and denominator square root, 1 minus x squared; double-struck italic d, x; equals, arcsin x plus  cap c"
+  },
+  {
+    "id": 1130,
+    "UnicodeMath": "∫ 1/(1+𝑥²) ⅆ𝑥=arctan 𝑥+𝐶",
+    "MathCAT_Dictation": "the integral of the fraction with numerator 1; and denominator 1 plus x squared; double-struck italic d, x; is equal to, arctan of x plus  cap c",
+    "MathCAT_Simple": "integral of the fraction with numerator 1; and denominator 1 plus x squared; double-struck italic d, x; equals, arctan x plus  cap c"
+  },
+  {
+    "id": 1131,
+    "UnicodeMath": "∫ 𝑢ⅆ𝑣=𝑢𝑣-∫ 𝑣ⅆ𝑢",
+    "MathCAT_Dictation": "the integral of ???????, is equal to, u v minus the integral of ???????",
+    "MathCAT_Simple": "integral of ???????, equals, u v minus integral of ???????"
+  },
+  {
+    "id": 1132,
+    "UnicodeMath": "∭_𝑉 𝑓(𝑥,𝑦,𝑧)𝑑𝑉",
+    "MathCAT_Dictation": "the triple integral over  cap v of; f; open paren, x comma, y comma, z; close paren; times d  cap v",
+    "MathCAT_Simple": "triple integral over  cap v of; f, open, x comma, y comma, z; close; times d  cap v"
+  },
+  {
+    "id": 1133,
+    "UnicodeMath": "∮_𝐶 𝑓(𝑧)ⅆ𝑧",
+    "MathCAT_Dictation": "the contour integral over  cap c of; f of z double-struck italic d, z",
+    "MathCAT_Simple": "contour integral over  cap c of; f z double-struck italic d, z"
+  },
+  {
+    "id": 1134,
+    "UnicodeMath": "𝑓(𝑥)=∑_(𝑛=0)^∞ 𝑓^((𝑛)) (𝑎)/𝑛!(𝑥-𝑎)^𝑛",
+    "MathCAT_Dictation": "f of x is equal to; the sum from n is equal to 0, to infinity of; the fraction with numerator; the open paren n close paren power of, f of a; and denominator n; factorial; open paren x minus a, close paren to the n-th power",
+    "MathCAT_Simple": "f x equals; sum from n equals 0, to infinity of; the fraction with numerator; open n close power of, f, a; and denominator n; factorial, open x minus a close to the n-th power"
+  },
+  {
+    "id": 1135,
+    "UnicodeMath": "𝑓(𝑥)=∑_(𝑛=0)^∞ 𝑓^((𝑛)) (0)/𝑛! 𝑥^𝑛",
+    "MathCAT_Dictation": "f of x is equal to; the sum from n is equal to 0, to infinity of; the fraction with numerator; the open paren n close paren power of, f of 0; and denominator n factorial; x to the n-th power",
+    "MathCAT_Simple": "f x equals; sum from n equals 0, to infinity of; the fraction with numerator; open n close power of, f, 0; and denominator n factorial; x to the n-th power"
+  },
+  {
+    "id": 1136,
+    "UnicodeMath": "lim_(𝑥→𝑎) 〖𝑓(𝑥)/𝑔(𝑥)〗=lim_(𝑥→𝑎) 〖𝑓'(𝑥)/𝑔'(𝑥)〗",
+    "MathCAT_Dictation": "the limit as x approaches a, of f of x over g of x; is equal to; the limit as x approaches a, of; the fraction with numerator; f prime, of x; and denominator g prime, of x",
+    "MathCAT_Simple": "limit as x approaches a; f x over g x; equals; limit as x approaches a; the fraction with numerator; f prime, x; and denominator g prime, x"
+  },
+  {
+    "id": 1137,
+    "UnicodeMath": "𝑓'(𝑐)=(𝑓(𝑏)-𝑓(𝑎))/(𝑏-𝑎)",
+    "MathCAT_Dictation": "f prime, of c, is equal to; the fraction with numerator; f of b minus f of a; and denominator b minus a",
+    "MathCAT_Simple": "f prime, c, equals; the fraction with numerator; f b minus f a; and denominator b minus a"
+  },
+  {
+    "id": 1138,
+    "UnicodeMath": "𝑓(𝑎)=𝑓(𝑏)⟹𝑓'(𝑐)=0 \"for some \" 𝑐∈(𝑎,𝑏)",
+    "MathCAT_Dictation": "f of a is equal to, f of b implies f prime, of c; is equal to, 0 for some  c; is a member of, the interval from a to b, not including a or b",
+    "MathCAT_Simple": "f a equals, f b implies f prime, c; equals, 0 for some  c; is a member of, the interval from a to b, not including a or b"
+  },
+  {
+    "id": 1139,
+    "UnicodeMath": "𝑔(𝑥)≤𝑓(𝑥)≤ℎ(𝑥)\" and \"lim 𝑔=lim ℎ=𝐿⟹lim 𝑓=𝐿",
+    "MathCAT_Dictation": "g of x, is less than or equal to, f of x, is less than or equal to; planck constant of x,  and  lim of g; is equal to, lim of planck constant, is equal to,  cap l implies lim of f; is equal to  cap l",
+    "MathCAT_Simple": "g x,  less than or equal to, f x,  less than or equal to; planck constant x,  and  lim g; equals lim planck constant, equals,  cap l implies lim f; equals  cap l"
+  },
+  {
+    "id": 1140,
+    "UnicodeMath": "lim_(𝑥→0) 〖sin 𝑥/𝑥〗=1",
+    "MathCAT_Dictation": "the limit as x approaches 0, of sine x over x; is equal to 1",
+    "MathCAT_Simple": "limit as x approaches 0; sine x over x; equals 1"
+  },
+  {
+    "id": 1141,
+    "UnicodeMath": "lim_(𝑥→0) 〖(1-cos 𝑥)/𝑥〗=0",
+    "MathCAT_Dictation": "the limit as x approaches 0, of; the fraction with numerator; 1 minus cosine x; and denominator x; is equal to 0",
+    "MathCAT_Simple": "limit as x approaches 0; the fraction with numerator; 1 minus cos x; and denominator x; equals 0"
+  },
+  {
+    "id": 1142,
+    "UnicodeMath": "𝑓_\"avg\"=1/(𝑏-𝑎) ∫_𝑎^𝑏 𝑓(𝑥)ⅆ𝑥",
+    "MathCAT_Dictation": "f sub avg  end sub; is equal to; the fraction with numerator 1; and denominator b minus a; the integral from a, to b of; f of x double-struck italic d, x",
+    "MathCAT_Simple": "f sub avg  end sub; equals; the fraction with numerator 1; and denominator b minus a; integral from a, to b of; f x double-struck italic d, x"
+  },
+  {
+    "id": 1143,
+    "UnicodeMath": "𝑉=𝜋∫_𝑎^𝑏 [𝑓(𝑥)]²ⅆ𝑥",
+    "MathCAT_Dictation": "cap v is equal to; pi; the integral from a, to b of; open bracket f of x close bracket squared; double-struck italic d, x",
+    "MathCAT_Simple": "cap v equals; pi; integral from a, to b of; open bracket f x close bracket squared; double-struck italic d, x"
+  },
+  {
+    "id": 1144,
+    "UnicodeMath": "𝑉=2𝜋∫_𝑎^𝑏 𝑥𝑓(𝑥)ⅆ𝑥",
+    "MathCAT_Dictation": "cap v is equal to; 2 pi; the integral from a, to b of; x f of x double-struck italic d, x",
+    "MathCAT_Simple": "cap v equals; 2 pi; integral from a, to b of; x f x double-struck italic d, x"
+  },
+  {
+    "id": 1145,
+    "UnicodeMath": "𝑉=𝜋∫_𝑎^𝑏 ([𝑅(𝑥)]²-[𝑟(𝑥)]²)ⅆ𝑥",
+    "MathCAT_Dictation": "cap v is equal to; pi; the integral from a, to b of; open paren; open bracket  cap r of x, close bracket squared; minus, open bracket r of x close bracket squared; close paren; times double-struck italic d, x",
+    "MathCAT_Simple": "cap v equals; pi; integral from a, to b of; open; open bracket  cap r x, close bracket squared; minus, open bracket r x close bracket squared; close; times double-struck italic d, x"
+  },
+  {
+    "id": 1146,
+    "UnicodeMath": "𝐿=∫_𝑎^𝑏 √(1+[𝑓'(𝑥)]^2) ⅆ𝑥",
+    "MathCAT_Dictation": "cap l is equal to; the integral from a, to b of; the square root of 1 plus, open bracket, f prime, of x, close bracket squared; double-struck italic d, x",
+    "MathCAT_Simple": "cap l equals; integral from a, to b of; square root, 1 plus, open bracket, f prime, x, close bracket squared; double-struck italic d, x"
+  },
+  {
+    "id": 1147,
+    "UnicodeMath": "𝑆=2𝜋∫_𝑎^𝑏 𝑓(𝑥)√(1+[𝑓'(𝑥)]^2)ⅆ𝑥",
+    "MathCAT_Dictation": "cap s is equal to; 2 pi; the integral from a, to b of; f of x times; the square root of open paren; 1 plus, open bracket, f prime, of x, close bracket squared; close paren; times double-struck italic d, x",
+    "MathCAT_Simple": "cap s equals; 2 pi; integral from a, to b of; f x times; square root, open; 1 plus, open bracket, f prime, x, close bracket squared; close; times double-struck italic d, x"
+  },
+  {
+    "id": 1148,
+    "UnicodeMath": "∑_(𝑛=1)^∞ 1/𝑛^𝑝  \"converges if \"𝑝>1",
+    "MathCAT_Dictation": "the sum from n is equal to 1, to infinity of; the fraction with numerator 1; and denominator n to the p-th power; converges if  p; is greater than 1",
+    "MathCAT_Simple": "sum from n equals 1, to infinity of; the fraction with numerator 1; and denominator n to the p-th power; converges if  p;  greater than 1"
+  },
+  {
+    "id": 1149,
+    "UnicodeMath": "lim_(𝑛→∞)⁡|𝑎_(𝑛+1)/𝑎_𝑛|<1⟹\"converges\"",
+    "MathCAT_Dictation": "the limit as n approaches infinity, of; the absolute value of the fraction with numerator; a sub n plus 1  end sub; and denominator a sub n; is less than, 1 implies converges",
+    "MathCAT_Simple": "limit as n approaches infinity; absolute value of the fraction with numerator; a sub n plus 1  end sub; and denominator a sub n;  less than, 1 implies converges"
+  },
+  {
+    "id": 1150,
+    "UnicodeMath": "lim_(𝑛→∞)⁡√(𝑛&|𝑎_𝑛|)<1⟹\"converges\"",
+    "MathCAT_Dictation": "the limit as n approaches infinity, of, the n-th root of the absolute value of a sub n; is less than, 1 implies converges",
+    "MathCAT_Simple": "limit as n approaches infinity; n-th root absolute value of a sub n;  less than, 1 implies converges"
+  },
+  {
+    "id": 1151,
+    "UnicodeMath": "𝑅=1/limsup_(𝑛→∞) √(𝑛&|𝑎_𝑛|)",
+    "MathCAT_Dictation": "cap r is equal to; the fraction with numerator 1; and denominator limit sup n right arrow infinity, of, the n-th root of the absolute value of a sub n",
+    "MathCAT_Simple": "cap r equals; the fraction with numerator 1; and denominator limit sup n right arrow infinity; n-th root absolute value of a sub n"
+  },
+  {
+    "id": 1152,
+    "UnicodeMath": "𝐷_𝐮 𝑓=∇𝑓⋅𝐮",
+    "MathCAT_Dictation": "cap d sub bold u; f; is equal to, gradient of f, dot product bold u",
+    "MathCAT_Simple": "cap d sub bold u; f, equals, del f dot product bold u"
+  },
+  {
+    "id": 1153,
+    "UnicodeMath": "𝐷=𝑓_𝑥𝑥 𝑓_𝑦𝑦-𝑓_𝑥𝑦²",
+    "MathCAT_Dictation": "cap d is equal to; f sub x x  end sub; f sub y y  end sub; minus, f sub x y squared  end sub",
+    "MathCAT_Simple": "cap d equals; f sub x x  end sub; f sub y y  end sub; minus, f sub x y squared  end sub"
+  },
+  {
+    "id": 1154,
+    "UnicodeMath": "∬_𝐷 𝑓(𝑟,𝜃)𝑟ⅆ𝑟ⅆ𝜃",
+    "MathCAT_Dictation": "the double integral over  cap d of; f, open paren, r comma, theta, close paren; times ????????????",
+    "MathCAT_Simple": "double integral over  cap d of; f, open r comma, theta, close; times ????????????"
+  },
+  {
+    "id": 1155,
+    "UnicodeMath": "∬_𝐷 𝑓(𝑥,𝑦)ⅆ𝑥ⅆ𝑦=∬_(𝐷') 𝑓(𝑔,ℎ)|𝐽|ⅆ𝑢ⅆ𝑣",
+    "MathCAT_Dictation": "the double integral over  cap d of; f, open paren x comma, y, close paren; times double-struck italic d; is equal to; the double integral over  cap d prime, of; f, open paren, g comma, planck constant, close paren; times, the absolute value of  cap j; double-struck italic d",
+    "MathCAT_Simple": "double integral over  cap d of; f, open x comma, y, close; times double-struck italic d; equals; double integral over  cap d prime, of; f, open, g comma, planck constant, close; times absolute value of  cap j; double-struck italic d"
+  },
+  {
+    "id": 1156,
+    "UnicodeMath": "∮_𝐶 (𝑃ⅆ𝑥+𝑄ⅆ𝑦)=∬_𝐷 (∂𝑄/∂𝑥-∂𝑃/∂𝑦)ⅆ𝐴",
+    "MathCAT_Dictation": "the contour integral over  cap c of; open paren, ??????? plus ???????; close paren; is equal to; the double integral over  cap d of; open paren; partial derivative of 1 comma,  cap q comma, x; minus, partial derivative of 1 comma,  cap p comma, y; close paren; times double-struck italic d,  cap a",
+    "MathCAT_Simple": "contour integral over  cap c of; open, ??????? plus ???????; close; equals; double integral over  cap d of; open; partial derivative 1 comma,  cap q comma, x; minus, partial derivative 1 comma,  cap p comma, y; close; times double-struck italic d,  cap a"
+  },
+  {
+    "id": 1157,
+    "UnicodeMath": "∮_𝐶 𝐅⋅ⅆ𝐫=∬_𝑆 (∇⨯𝐅)⋅ⅆ𝐒",
+    "MathCAT_Dictation": "the contour integral over  cap c of, bold  cap f; dot product, double-struck italic d, bold r; is equal to; the double integral over  cap s of; open paren, nahblah cross product bold  cap f; close paren; dot product, double-struck italic d, bold  cap s",
+    "MathCAT_Simple": "contour integral over  cap c of, bold  cap f; dot product, double-struck italic d, bold r; equals; double integral over  cap s of; open nahblah cross bold  cap f, close; dot product, double-struck italic d, bold  cap s"
+  },
+  {
+    "id": 1158,
+    "UnicodeMath": "∯_𝑆 𝐅⋅ⅆ𝐒=∭_𝑉 (∇⋅𝐅)ⅆ𝑉",
+    "MathCAT_Dictation": "the surface integral over  cap s of, bold  cap f; dot product, double-struck italic d, bold  cap s; is equal to; the triple integral over  cap v of; open paren, divergence of bold  cap f, close paren; times double-struck italic d,  cap v",
+    "MathCAT_Simple": "surface integral over  cap s of, bold  cap f; dot product, double-struck italic d, bold  cap s; equals; triple integral over  cap v of; open dihv bold  cap f close, times double-struck italic d,  cap v"
+  },
+  {
+    "id": 1159,
+    "UnicodeMath": "ⅆ𝑦/ⅆ𝑥+𝑃(𝑥)𝑦=𝑄(𝑥)",
+    "MathCAT_Dictation": "derivative of 1 comma, y comma, x; plus  cap p of x y; is equal to  cap q of x",
+    "MathCAT_Simple": "derivative 1 comma, y comma, x; plus  cap p x y; equals  cap q x"
+  },
+  {
+    "id": 1160,
+    "UnicodeMath": "𝑦''+𝑝𝑦'+𝑞𝑦=0",
+    "MathCAT_Dictation": "y double prime, plus p y prime; plus q y; is equal to 0",
+    "MathCAT_Simple": "y double prime, plus p y prime; plus q y; equals 0"
+  },
+  {
+    "id": 1161,
+    "UnicodeMath": "𝐿{𝑓(𝑡)}=∫_0^∞ 𝑓(𝑡)𝑒^-𝑠𝑡 ⅆ𝑡",
+    "MathCAT_Dictation": "cap l, open brace f of t close brace; is equal to; the integral from 0, to infinity of; f of t times, e raised to the negative s t power; double-struck italic d, t",
+    "MathCAT_Simple": "cap l, open brace f t close brace; equals; integral from 0, to infinity of; f t times, e raised to the negative s t power; double-struck italic d, t"
+  },
+  {
+    "id": 1162,
+    "UnicodeMath": "𝑓̂(𝜔)=∫_-∞^∞ 𝑓(𝑡)𝑒^-𝑖𝜔𝑡 ⅆ𝑡",
+    "MathCAT_Dictation": "f hat, of omega, is equal to; the integral from negative infinity, to infinity of; f of t times, e raised to the negative ?????? power, double-struck italic d, t",
+    "MathCAT_Simple": "f hat, omega, equals; integral from negative infinity, to infinity of; f t times, e raised to the negative ?????? power, double-struck italic d, t"
+  },
+  {
+    "id": 1163,
+    "UnicodeMath": "𝑓(𝑡)=1/2𝜋 ∫_-∞^∞ 𝑓̂(𝜔)𝑒^𝑖𝜔𝑡 ⅆ𝜔",
+    "MathCAT_Dictation": "f of t is equal to; the fraction with numerator 1; and denominator 2 pi; the integral from negative infinity, to infinity of; f hat, of omega, times e raised to the ?????? power, double-struck italic d, omega",
+    "MathCAT_Simple": "f t equals; the fraction with numerator 1; and denominator 2 pi; integral from negative infinity, to infinity of; f hat, omega, times e raised to the ?????? power, double-struck italic d, omega"
+  },
+  {
+    "id": 1164,
+    "UnicodeMath": "ⅆ𝑦/𝑔(𝑦)=𝑓(𝑥)ⅆ𝑥",
+    "MathCAT_Dictation": "the fraction with numerator; double-struck italic d, y; and denominator g of y; is equal to, f of x double-struck italic d, x",
+    "MathCAT_Simple": "the fraction with numerator; double-struck italic d, y; and denominator g y; equals, f x double-struck italic d, x"
+  },
+  {
+    "id": 1165,
+    "UnicodeMath": "𝜇(𝑥)=𝑒^(∫𝑃(𝑥)ⅆ𝑥)",
+    "MathCAT_Dictation": "mu of x is equal to; e raised to the integral of  cap p of x double-struck italic d, x power",
+    "MathCAT_Simple": "mu x equals; e raised to the integral of  cap p x double-struck italic d, x power"
+  },
+  {
+    "id": 1181,
+    "UnicodeMath": "𝑃(𝑛,𝑟)=𝑛!/(𝑛-𝑟)!",
+    "MathCAT_Dictation": "cap p, open paren n comma, r, close paren; is equal to; the fraction with numerator; n factorial; and denominator open paren n minus r, close paren; factorial",
+    "MathCAT_Simple": "cap p, open n comma, r, close; equals; the fraction with numerator; n factorial; and denominator open n minus r close; factorial"
+  },
+  {
+    "id": 1182,
+    "UnicodeMath": "𝐶(𝑛,𝑟)=𝑛!/𝑟!(𝑛-𝑟)!",
+    "MathCAT_Dictation": "cap c, open paren n comma, r, close paren; is equal to; the fraction with numerator; n factorial; and denominator r; factorial, open paren n minus r, close paren; factorial",
+    "MathCAT_Simple": "cap c, open n comma, r, close; equals; the fraction with numerator; n factorial; and denominator r, factorial, open n minus r close; factorial"
+  },
+  {
+    "id": 1183,
+    "UnicodeMath": "(𝑛¦(𝑘₁,𝑘₂,…,𝑘ᵣ))=𝑛!/(𝑘₁!𝑘₂!⋯𝑘ᵣ!)",
+    "MathCAT_Dictation": "n choose; k sub 1, comma, k sub 2, comma, dot dot dot comma, k sub r,  end binomial; is equal to; the fraction with numerator; n factorial; and denominator k sub 1; factorial; k sub 2; factorial, dot dot dot k sub r, factorial",
+    "MathCAT_Simple": "n choose; k 1, comma, k 2, comma, dot dot dot comma, k sub r,  end binomial; equals; the fraction with numerator; n factorial; and denominator k 1; factorial; k 2; factorial, dot dot dot k sub r, factorial"
+  },
+  {
+    "id": 1184,
+    "UnicodeMath": "((𝑛+𝑘-1)¦𝑘)",
+    "MathCAT_Dictation": "binomial n plus k minus 1 choose k",
+    "MathCAT_Simple": "binomial n plus k minus 1 choose k"
+  },
+  {
+    "id": 1185,
+    "UnicodeMath": "𝐶_𝑛=1/(𝑛+1) (2𝑛¦𝑛)",
+    "MathCAT_Dictation": "cap c sub n; is equal to; the fraction with numerator 1; and denominator n plus 1; times, binomial 2 n choose n",
+    "MathCAT_Simple": "cap c sub n; equals; the fraction with numerator 1; and denominator n plus 1; times, binomial 2 n choose n"
+  },
+  {
+    "id": 1186,
+    "UnicodeMath": "𝐷_𝑛=𝑛!∑_(𝑘=0)^𝑛 (-1)^𝑘/𝑘!",
+    "MathCAT_Dictation": "cap d sub n; is equal to; the fraction with numerator; n factorial; the sum from k is equal to 0, to n of; open paren negative 1 close paren to the k-th power; and denominator k factorial",
+    "MathCAT_Simple": "cap d sub n; equals; the fraction with numerator; n factorial; sum from k equals 0, to n of; open negative 1 close to the k-th power; and denominator k factorial"
+  },
+  {
+    "id": 1187,
+    "UnicodeMath": "|𝐴∪𝐵|=|𝐴|+|𝐵|-|𝐴∩𝐵|",
+    "MathCAT_Dictation": "the absolute value of  cap a union  cap b; is equal to; the absolute value of  cap a; plus the absolute value of  cap b; minus, the absolute value of  cap a intersection  cap b",
+    "MathCAT_Simple": "absolute value of  cap a union  cap b; equals; absolute value of  cap a; plus absolute value of  cap b; minus, absolute value of  cap a intersection  cap b"
+  },
+  {
+    "id": 1188,
+    "UnicodeMath": "|𝐴∪𝐵∪𝐶|=|𝐴|+|𝐵|+|𝐶|-|𝐴∩𝐵|-|𝐴∩𝐶|-|𝐵∩𝐶|+|𝐴∩𝐵∩𝐶|",
+    "MathCAT_Dictation": "the absolute value of  cap a union  cap b union  cap c; is equal to; the absolute value of  cap a; plus the absolute value of  cap b; plus the absolute value of  cap c; minus, the absolute value of  cap a intersection  cap b; minus, the absolute value of  cap a intersection  cap c; minus, the absolute value of  cap b intersection  cap c; plus; the absolute value of  cap a intersection  cap b intersection  cap c",
+    "MathCAT_Simple": "absolute value of  cap a union  cap b union  cap c; equals; absolute value of  cap a; plus absolute value of  cap b; plus absolute value of  cap c; minus, absolute value of  cap a intersection  cap b; minus, absolute value of  cap a intersection  cap c; minus, absolute value of  cap b intersection  cap c; plus; absolute value of  cap a intersection  cap b intersection  cap c"
+  },
+  {
+    "id": 1189,
+    "UnicodeMath": "(𝐴∪𝐵)^𝑐=𝐴^𝑐∩𝐵^𝑐; (𝐴∩𝐵)^𝑐=𝐴^𝑐∪𝐵^𝑐",
+    "MathCAT_Dictation": "open paren,  cap a union  cap b, close paren to the c-th power; is equal to;  cap a to the c-th power, intersection,  cap b to the c-th power; semicolon; open paren,  cap a intersection  cap b, close paren to the c-th power; is equal to;  cap a to the c-th power, union  cap b to the c-th power",
+    "MathCAT_Simple": "open  cap a union  cap b, close to the c-th power; equals;  cap a to the c-th power, intersection,  cap b to the c-th power; semicolon; open,  cap a intersection  cap b, close to the c-th power; equals,  cap a to the c-th power, union  cap b to the c-th power"
+  },
+  {
+    "id": 1190,
+    "UnicodeMath": "|𝑃(𝐴)|=2^𝑛",
+    "MathCAT_Dictation": "the absolute value of  cap p of  cap a; is equal to 2 to the n-th power",
+    "MathCAT_Simple": "absolute value of  cap p  cap a; equals 2 to the n-th power"
+  },
+  {
+    "id": 1191,
+    "UnicodeMath": "|𝐴×𝐵|=|𝐴|⋅|𝐵|",
+    "MathCAT_Dictation": "the absolute value of  cap a times  cap b; is equal to; the absolute value of  cap a; times, the absolute value of  cap b",
+    "MathCAT_Simple": "absolute value of  cap a times  cap b; equals, absolute value of  cap a; times absolute value of  cap b"
+  },
+  {
+    "id": 1192,
+    "UnicodeMath": "¬(𝑝∧𝑞)≡¬ 𝑝∨¬ 𝑞; ¬(𝑝∨𝑞)≡¬ 𝑝∧¬ 𝑞",
+    "MathCAT_Dictation": "not; open paren p and q close paren; is identical to, not p or not q; semicolon; not; open paren p or q close paren; is identical to, not p and not q",
+    "MathCAT_Simple": "not; open p and q close;  identical to, not p or not q; semicolon; not; open p or q close,  identical to, not p and not q"
+  },
+  {
+    "id": 1193,
+    "UnicodeMath": "𝑝⇒𝑞≡¬ 𝑝∨𝑞",
+    "MathCAT_Dictation": "p right double arrow q, is identical to, not p or q",
+    "MathCAT_Simple": "p right double arrow q,  identical to, not p or q"
+  },
+  {
+    "id": 1194,
+    "UnicodeMath": "𝑝⇒𝑞≡¬ 𝑞⇒¬ 𝑝",
+    "MathCAT_Dictation": "p right double arrow q, is identical to, not, q right double arrow not p",
+    "MathCAT_Simple": "p right double arrow q,  identical to, not, q right double arrow not p"
+  },
+  {
+    "id": 1195,
+    "UnicodeMath": "𝑝⇔𝑞≡(𝑝⇒𝑞)∧(𝑞⇒𝑝)",
+    "MathCAT_Dictation": "p if and only if q, is identical to; open paren, p right double arrow q, close paren; and, open paren, q right double arrow p, close paren",
+    "MathCAT_Simple": "p if and only if q,  identical to; open p right double arrow q, close; and, open q right double arrow p, close"
+  },
+  {
+    "id": 1196,
+    "UnicodeMath": "¬¬ 𝑝≡𝑝",
+    "MathCAT_Dictation": "not not p is identical to p",
+    "MathCAT_Simple": "not not p  identical to p"
+  },
+  {
+    "id": 1197,
+    "UnicodeMath": "(𝑝 𝑝⇒𝑞)/𝑞",
+    "MathCAT_Dictation": "the fraction with numerator; p p right double arrow q; and denominator q",
+    "MathCAT_Simple": "the fraction with numerator; p p right double arrow q; and denominator q"
+  },
+  {
+    "id": 1198,
+    "UnicodeMath": "(¬𝑞 𝑝⇒𝑞)/¬𝑝",
+    "MathCAT_Dictation": "open paren, not, q p right double arrow q; close paren; �? p",
+    "MathCAT_Simple": "open, not, q p right double arrow q; close; �? p"
+  },
+  {
+    "id": 1199,
+    "UnicodeMath": "∑_(𝑣∈𝑉) \"deg\"(𝑣)=2|𝐸|",
+    "MathCAT_Dictation": "the sum over v is a member of  cap v of; deg of v; is equal to, 2, the absolute value of  cap e",
+    "MathCAT_Simple": "sum over v is a member of  cap v of; deg v; equals, 2 absolute value of  cap e"
+  },
+  {
+    "id": 1200,
+    "UnicodeMath": "𝑉-𝐸+𝐹=2",
+    "MathCAT_Dictation": "cap v minus  cap e plus  cap f; is equal to 2",
+    "MathCAT_Simple": "cap v minus  cap e plus  cap f; equals 2"
+  },
+  {
+    "id": 1201,
+    "UnicodeMath": "|𝐸|=𝑛(𝑛-1)/2",
+    "MathCAT_Dictation": "the absolute value of  cap e; is equal to; the fraction with numerator; n times, open paren n minus 1, close paren; and denominator 2",
+    "MathCAT_Simple": "absolute value of  cap e; equals; the fraction with numerator; n times, open n minus 1 close; and denominator 2"
+  },
+  {
+    "id": 1202,
+    "UnicodeMath": "𝐹_𝑛=𝐹_(𝑛-1)+𝐹_(𝑛-2)",
+    "MathCAT_Dictation": "cap f sub n; is equal to;  cap f sub n minus 1  end sub; plus,  cap f sub n minus 2  end sub",
+    "MathCAT_Simple": "cap f sub n; equals;  cap f sub n minus 1  end sub; plus,  cap f sub n minus 2  end sub"
+  },
+  {
+    "id": 1203,
+    "UnicodeMath": "𝑇(𝑛)=𝑎𝑇(𝑛/𝑏)+𝑓(𝑛)",
+    "MathCAT_Dictation": "cap t of n, is equal to; a,  cap t of, open paren n over b close paren; plus f of n",
+    "MathCAT_Simple": "cap t n equals; a,  cap t open n over b close; plus f n"
+  },
+  {
+    "id": 1204,
+    "UnicodeMath": "∑_(𝑘=1)^𝑛 𝑘=𝑛(𝑛+1)/2",
+    "MathCAT_Dictation": "the sum from k is equal to 1, to n of k; is equal to; the fraction with numerator; n times, open paren n plus 1, close paren; and denominator 2",
+    "MathCAT_Simple": "sum from k equals 1, to n of k; equals; the fraction with numerator; n times, open n plus 1 close; and denominator 2"
+  },
+  {
+    "id": 1205,
+    "UnicodeMath": "∑_(𝑘=1)^𝑛 𝑘²=𝑛(𝑛+1)(2𝑛+1)/6",
+    "MathCAT_Dictation": "the sum from k is equal to 1, to n of; k squared; is equal to; the fraction with numerator; n times, open paren n plus 1, close paren; times, open paren, 2 n plus 1, close paren; and denominator 6",
+    "MathCAT_Simple": "sum from k equals 1, to n of, k squared; equals; the fraction with numerator; n times, open n plus 1 close, times, open 2 n plus 1, close; and denominator 6"
+  },
+  {
+    "id": 1206,
+    "UnicodeMath": "∑_(𝑘=1)^𝑛 𝑘³=[𝑛(𝑛+1)/2]²",
+    "MathCAT_Dictation": "the sum from k is equal to 1, to n of; k cubed; is equal to; open bracket; the fraction with numerator; n times, open paren n plus 1, close paren; and denominator 2; close bracket squared",
+    "MathCAT_Simple": "sum from k equals 1, to n of, k cubed; equals; open bracket; the fraction with numerator; n times, open n plus 1 close; and denominator 2; close bracket squared"
+  },
+  {
+    "id": 1207,
+    "UnicodeMath": "𝐴⊕𝐵=(𝐴∧¬ 𝐵)∨(¬ 𝐴∧𝐵)",
+    "MathCAT_Dictation": "cap a circled plus  cap b, is equal to; open paren,  cap a and not  cap b, close paren or, open paren, not  cap a and  cap b, close paren",
+    "MathCAT_Simple": "cap a circled plus  cap b, equals; open,  cap a and not  cap b, close or, open, not  cap a and  cap b, close"
+  },
+  {
+    "id": 1208,
+    "UnicodeMath": "𝐴∨(𝐴∧𝐵)=𝐴",
+    "MathCAT_Dictation": "cap a or, open paren,  cap a and  cap b, close paren; is equal to  cap a",
+    "MathCAT_Simple": "cap a or, open  cap a and  cap b, close; equals  cap a"
+  },
+  {
+    "id": 1209,
+    "UnicodeMath": "𝐴∧(𝐵∨𝐶)=(𝐴∧𝐵)∨(𝐴∧𝐶)",
+    "MathCAT_Dictation": "cap a and, open paren  cap b or  cap c, close paren; is equal to; open paren,  cap a and  cap b, close paren or, open paren,  cap a and  cap c, close paren",
+    "MathCAT_Simple": "cap a and, open  cap b or  cap c, close; equals; open  cap a and  cap b, close or, open  cap a and  cap c, close"
+  },
+  {
+    "id": 1210,
+    "UnicodeMath": "𝐴∧𝐴=𝐴",
+    "MathCAT_Dictation": "cap a and  cap a, is equal to  cap a",
+    "MathCAT_Simple": "cap a and  cap a, equals  cap a"
+  },
+  {
+    "id": 1211,
+    "UnicodeMath": "𝑛!≈√2𝜋𝑛 (𝑛/𝑒)^𝑛",
+    "MathCAT_Dictation": "n factorial, is approximately equal to; the square root of 2 pi n; times, open paren n over e close paren to the n-th power",
+    "MathCAT_Simple": "n factorial,  approximately equal to; square root, 2 pi n; times, open n over e close to the n-th power"
+  },
+  {
+    "id": 1212,
+    "UnicodeMath": "𝑥̅=1/𝑛 ∑_(𝑖=1)^𝑛 𝑥_𝑖",
+    "MathCAT_Dictation": "line on top, enclosing x end enclosure; is equal to; 1 over n, the sum from i is equal to 1, to n of; x sub i",
+    "MathCAT_Simple": "line on top, enclosing x end enclosure; equals; 1 over n, sum from i equals 1, to n of; x sub i"
+  },
+  {
+    "id": 1213,
+    "UnicodeMath": "𝑠²=1/(𝑛-1) ∑_(𝑖=1)^𝑛 (𝑥_𝑖-𝑥̅)²",
+    "MathCAT_Dictation": "s squared is equal to; the fraction with numerator 1; and denominator n minus 1; the sum from i is equal to 1, to n of; open paren; x sub i, minus, line on top, enclosing x end enclosure; close paren squared",
+    "MathCAT_Simple": "s squared equals; the fraction with numerator 1; and denominator n minus 1; sum from i equals 1, to n of; open, x sub i, minus, line on top, enclosing x end enclosure; close squared"
+  },
+  {
+    "id": 1214,
+    "UnicodeMath": "𝜎=√(1/𝑁 ∑_(𝑖=1)^𝑁 (𝑥ᵢ-𝜇)²)",
+    "MathCAT_Dictation": "sigma is equal to; the square root of 1 over  cap n; the sum from i is equal to 1, to  cap n of; open paren, x sub i, minus mu, close paren squared",
+    "MathCAT_Simple": "sigma equals; square root, 1 over  cap n; sum from i equals 1, to  cap n of; open x sub i, minus mu, close squared"
+  },
+  {
+    "id": 1215,
+    "UnicodeMath": "𝑧=(𝑥-𝜇)/𝜎",
+    "MathCAT_Dictation": "z is equal to; the fraction with numerator; x minus mu; and denominator sigma",
+    "MathCAT_Simple": "z equals; the fraction with numerator; x minus mu; and denominator sigma"
+  },
+  {
+    "id": 1216,
+    "UnicodeMath": "𝑓(𝑥)=1/√(2𝜋𝜎²) 𝑒^(-(𝑥-𝜇)²/2𝜎²)",
+    "MathCAT_Dictation": "f of x is equal to; the fraction with numerator 1; and denominator the square root of 2 pi sigma squared; times; e raised to the fraction with numerator; open paren x minus mu, close paren squared; and denominator 2 sigma squared; power",
+    "MathCAT_Simple": "f x equals; the fraction with numerator 1; and denominator square root, 2 pi sigma squared; times; e raised to the fraction with numerator; open x minus mu close squared; and denominator 2 sigma squared; power"
+  },
+  {
+    "id": 1217,
+    "UnicodeMath": "𝑃(𝐴∣𝐵)=𝑃(𝐵∣𝐴)𝑃(𝐴)/𝑃(𝐵)",
+    "MathCAT_Dictation": "cap p, open paren,  cap a divides  cap b, close paren; is equal to; the fraction with numerator;  cap p, open paren,  cap b divides  cap a, close paren; times  cap p of  cap a; and denominator  cap p of  cap b",
+    "MathCAT_Simple": "cap p, open  cap a divides  cap b, close; equals; the fraction with numerator;  cap p, open  cap b divides  cap a, close; times  cap p  cap a; and denominator  cap p  cap b"
+  },
+  {
+    "id": 1218,
+    "UnicodeMath": "𝐸[𝑋]=∑_𝑥 𝑥𝑃(𝑋=𝑥)",
+    "MathCAT_Dictation": "cap e of  cap x, is equal to; the sum over x of; x  cap p, open paren,  cap x is equal to x, close paren",
+    "MathCAT_Simple": "cap e  cap x, equals; sum over x of; x  cap p, open  cap x equals x, close"
+  },
+  {
+    "id": 1219,
+    "UnicodeMath": "𝐸[𝑋]=∫_-∞^∞ 𝑥𝑓(𝑥)ⅆ𝑥",
+    "MathCAT_Dictation": "cap e of  cap x, is equal to; the integral from negative infinity, to infinity of; x f of x double-struck italic d, x",
+    "MathCAT_Simple": "cap e  cap x, equals; integral from negative infinity, to infinity of; x f x double-struck italic d, x"
+  },
+  {
+    "id": 1220,
+    "UnicodeMath": "Cov(𝑋,𝑌)=𝐸[(𝑋-𝜇_𝑋)(𝑌-𝜇_𝑌)]",
+    "MathCAT_Dictation": "cap c o v, open paren,  cap x comma,  cap y, close paren; is equal to;  cap e; open bracket; open paren,  cap x minus mu sub  cap x; close paren; times; open paren,  cap y minus mu sub  cap y; close paren; close bracket",
+    "MathCAT_Simple": "cap c o v, open  cap x comma,  cap y, close; equals;  cap e; open bracket; open,  cap x minus mu sub  cap x; close; times, open,  cap y minus mu sub  cap y; close; close bracket"
+  },
+  {
+    "id": 1221,
+    "UnicodeMath": "𝜌=Cov(𝑋,𝑌)/𝜎_𝑋 𝜎_𝑌",
+    "MathCAT_Dictation": "rho is equal to; the fraction with numerator;  cap c o v, open paren,  cap x comma,  cap y, close paren; and denominator sigma sub  cap x; sigma sub  cap y",
+    "MathCAT_Simple": "rho equals; the fraction with numerator;  cap c o v, open  cap x comma,  cap y, close; and denominator sigma sub  cap x; sigma sub  cap y"
+  },
+  {
+    "id": 1222,
+    "UnicodeMath": "𝑃(𝐴∪𝐵)=𝑃(𝐴)+𝑃(𝐵)-𝑃(𝐴∩𝐵)",
+    "MathCAT_Dictation": "cap p, open paren,  cap a union  cap b, close paren; is equal to;  cap p of  cap a, plus  cap p of  cap b, minus;  cap p, open paren,  cap a intersection  cap b, close paren",
+    "MathCAT_Simple": "cap p, open  cap a union  cap b, close; equals;  cap p  cap a, plus  cap p  cap b, minus;  cap p, open,  cap a intersection  cap b, close"
+  },
+  {
+    "id": 1223,
+    "UnicodeMath": "𝑃(𝐴∣𝐵)=𝑃(𝐴∩𝐵)/𝑃(𝐵)",
+    "MathCAT_Dictation": "cap p, open paren,  cap a divides  cap b, close paren; is equal to; the fraction with numerator;  cap p, open paren,  cap a intersection  cap b, close paren; and denominator  cap p of  cap b",
+    "MathCAT_Simple": "cap p, open  cap a divides  cap b, close; equals; the fraction with numerator;  cap p, open,  cap a intersection  cap b, close; and denominator  cap p  cap b"
+  },
+  {
+    "id": 1224,
+    "UnicodeMath": "𝑃(𝐴∩𝐵)=𝑃(𝐴)⋅𝑃(𝐵∣𝐴)",
+    "MathCAT_Dictation": "cap p, open paren,  cap a intersection  cap b, close paren; is equal to;  cap p of  cap a, times;  cap p, open paren,  cap b divides  cap a, close paren",
+    "MathCAT_Simple": "cap p, open,  cap a intersection  cap b, close; equals;  cap p  cap a, times,  cap p, open  cap b divides  cap a, close"
+  },
+  {
+    "id": 1225,
+    "UnicodeMath": "𝑃(𝐴^𝑐)=1-𝑃(𝐴)",
+    "MathCAT_Dictation": "cap p of, open paren,  cap a to the c-th power, close paren; is equal to, 1 minus  cap p of  cap a",
+    "MathCAT_Simple": "cap p, open  cap a to the c-th power, close; equals, 1 minus  cap p  cap a"
+  },
+  {
+    "id": 1226,
+    "UnicodeMath": "𝑃(𝐴)=∑_𝑖 𝑃(𝐴∣𝐵_𝑖)𝑃(𝐵_𝑖)",
+    "MathCAT_Dictation": "cap p of  cap a, is equal to; the sum over i of;  cap p; open paren,  cap a divides  cap b sub i; close paren; times,  cap p of, open paren  cap b sub i; close paren",
+    "MathCAT_Simple": "cap p  cap a, equals; sum over i of;  cap p, open,  cap a divides  cap b sub i; close; times,  cap p, open  cap b sub i, close"
+  },
+  {
+    "id": 1227,
+    "UnicodeMath": "𝑃(𝑋=𝑘)=(𝑛¦𝑘)𝑝^𝑘 (1-𝑝)^(𝑛-𝑘)",
+    "MathCAT_Dictation": "cap p, open paren,  cap x is equal to k, close paren; is equal to; n choose k p to the k-th power, times; open paren 1 minus p, close paren raised to the n minus k power",
+    "MathCAT_Simple": "cap p, open  cap x equals k, close; equals; n choose k p to the k-th power, times; open 1 minus p close raised to the n minus k power"
+  },
+  {
+    "id": 1228,
+    "UnicodeMath": "𝑃(𝑋=𝑘)=𝑒^-𝜆 𝜆^𝑘/𝑘!",
+    "MathCAT_Dictation": "cap p, open paren,  cap x is equal to k, close paren; is equal to; the fraction with numerator; e raised to the negative lambda power, lambda to the k-th power; and denominator k factorial",
+    "MathCAT_Simple": "cap p, open  cap x equals k, close; equals; the fraction with numerator; e raised to the negative lambda power, lambda to the k-th power; and denominator k factorial"
+  },
+  {
+    "id": 1229,
+    "UnicodeMath": "𝑃(𝑋=𝑘)=(1-𝑝)^(𝑘-1) 𝑝",
+    "MathCAT_Dictation": "cap p, open paren,  cap x is equal to k, close paren; is equal to; open paren 1 minus p, close paren raised to the k minus 1 power; p",
+    "MathCAT_Simple": "cap p, open  cap x equals k, close; equals; open 1 minus p close raised to the k minus 1 power; p"
+  },
+  {
+    "id": 1230,
+    "UnicodeMath": "𝑃(𝑋=𝑘)=(𝐾¦𝑘)((𝑁-𝐾)¦(𝑛-𝑘))/((𝑁¦𝑛))",
+    "MathCAT_Dictation": "cap p, open paren,  cap x is equal to k, close paren; is equal to; the fraction with numerator;  cap k choose k, times; binomial  cap n minus  cap k choose n minus k  end binomial; and denominator  cap n choose n",
+    "MathCAT_Simple": "cap p, open  cap x equals k, close; equals; the fraction with numerator;  cap k choose k, times; binomial  cap n minus  cap k choose n minus k  end binomial; and denominator  cap n choose n"
+  },
+  {
+    "id": 1231,
+    "UnicodeMath": "𝑓(𝑥)=𝜆 𝑒^-𝜆𝑥",
+    "MathCAT_Dictation": "f of x is equal to; lambda times, e raised to the negative lambda x power",
+    "MathCAT_Simple": "f x equals, lambda times, e raised to the negative lambda x power"
+  },
+  {
+    "id": 1232,
+    "UnicodeMath": "𝑓(𝑥)=1/(𝑏-𝑎)",
+    "MathCAT_Dictation": "f of x is equal to; the fraction with numerator 1; and denominator b minus a",
+    "MathCAT_Simple": "f x equals, the fraction with numerator 1; and denominator b minus a"
+  },
+  {
+    "id": 1233,
+    "UnicodeMath": "𝑆𝐸=𝜎/√𝑛",
+    "MathCAT_Dictation": "cap s  cap e, is equal to; the fraction with numerator sigma; and denominator the square root of n",
+    "MathCAT_Simple": "cap s  cap e, equals; the fraction with numerator sigma; and denominator square root, n"
+  },
+  {
+    "id": 1234,
+    "UnicodeMath": "𝑥̅±𝑧^* 𝜎/√𝑛",
+    "MathCAT_Dictation": "line on top, enclosing x end enclosure; plus or minus; the fraction with numerator; z superscript times; sigma; and denominator the square root of n",
+    "MathCAT_Simple": "line on top, enclosing x end enclosure; plus or minus; the fraction with numerator; z super times; sigma; and denominator square root, n"
+  },
+  {
+    "id": 1235,
+    "UnicodeMath": "𝑡=(𝑥̅-𝜇)/𝑠/√𝑛",
+    "MathCAT_Dictation": "t is equal to; the fraction with numerator; the fraction with numerator; line on top, enclosing x end enclosure; minus mu; and denominator s; and denominator the square root of n",
+    "MathCAT_Simple": "t equals; the fraction with numerator; the fraction with numerator; line on top, enclosing x end enclosure; minus mu; and denominator s; and denominator square root, n"
+  },
+  {
+    "id": 1236,
+    "UnicodeMath": "𝑡=(𝑥̅_1-𝑥̅_2)/√(𝑠₁²/𝑛₁+𝑠₂²/𝑛₂)",
+    "MathCAT_Dictation": "t is equal to; the fraction with numerator; line on top, enclosing x end enclosure, sub 1; minus, line on top, enclosing x end enclosure, sub 2; and denominator the square root of the fraction with numerator; s sub 1, squared; and denominator n sub 1; plus; the fraction with numerator; s sub 2, squared; and denominator n sub 2",
+    "MathCAT_Simple": "t equals; the fraction with numerator; line on top, enclosing x end enclosure, 1; minus, line on top, enclosing x end enclosure, 2; and denominator square root, the fraction with numerator; s 1, squared; and denominator n 1; plus; the fraction with numerator; s 2, squared; and denominator n 2"
+  },
+  {
+    "id": 1237,
+    "UnicodeMath": "𝑠_𝑝²=((𝑛₁-1)𝑠₁²+(𝑛₂-1)𝑠₂²)/(𝑛₁+𝑛₂-2)",
+    "MathCAT_Dictation": "s sub p squared  end sub; is equal to; the fraction with numerator; open paren, n sub 1, minus 1, close paren; times s sub 1, squared; plus; open paren, n sub 2, minus 1, close paren; times s sub 2, squared; and denominator n sub 1, plus n sub 2, minus 2",
+    "MathCAT_Simple": "s sub p squared  end sub; equals; the fraction with numerator; open n 1, minus 1, close; times s 1, squared; plus; open n 2, minus 1, close; times s 2, squared; and denominator n 1, plus n 2, minus 2"
+  },
+  {
+    "id": 1238,
+    "UnicodeMath": "𝜒²=∑ (𝑂_𝑖-𝐸_𝑖)²/𝐸_𝑖",
+    "MathCAT_Dictation": "chi squared is equal to; the sum of the fraction with numerator; open paren,  cap o sub i, minus  cap e sub i; close paren squared; and denominator  cap e sub i",
+    "MathCAT_Simple": "chi squared equals; sum of the fraction with numerator; open,  cap o sub i, minus  cap e sub i; close squared; and denominator  cap e sub i"
+  },
+  {
+    "id": 1239,
+    "UnicodeMath": "𝐹=𝑠₁²/𝑠₂²",
+    "MathCAT_Dictation": "cap f is equal to; the fraction with numerator; s sub 1, squared; and denominator s sub 2, squared",
+    "MathCAT_Simple": "cap f equals; the fraction with numerator; s 1, squared; and denominator s 2, squared"
+  },
+  {
+    "id": 1240,
+    "UnicodeMath": "𝐼𝑄𝑅=𝑄₃-𝑄₁",
+    "MathCAT_Dictation": "cap i  cap q  cap r; is equal to,  cap q sub 3, minus  cap q sub 1",
+    "MathCAT_Simple": "cap i  cap q  cap r; equals,  cap q 3, minus  cap q 1"
+  },
+  {
+    "id": 1241,
+    "UnicodeMath": "𝐶𝑉=𝜎/𝜇",
+    "MathCAT_Dictation": "cap c  cap v, is equal to sigma over mu",
+    "MathCAT_Simple": "cap c  cap v, equals sigma over mu"
+  },
+  {
+    "id": 1242,
+    "UnicodeMath": "\"skewness\"=1/𝑛 ∑ (𝑥_𝑖-𝑥̅)^3/𝑠^3",
+    "MathCAT_Dictation": "skewness is equal to; 1 over n; the sum of the fraction with numerator; open paren; x sub i, minus, line on top, enclosing x end enclosure; close paren cubed; and denominator s cubed",
+    "MathCAT_Simple": "skewness equals; 1 over n; sum of the fraction with numerator; open, x sub i, minus, line on top, enclosing x end enclosure; close cubed; and denominator s cubed"
+  },
+  {
+    "id": 1243,
+    "UnicodeMath": "kurtosis=1/𝑛 ∑ (𝑥_𝑖-𝑥̅)⁴/𝑠⁴-3",
+    "MathCAT_Dictation": "????????????????, is equal to; 1 over n; the sum of the fraction with numerator; open paren; x sub i, minus, line on top, enclosing x end enclosure; close paren to the fourth power; and denominator s to the fourth power; minus 3",
+    "MathCAT_Simple": "????????????????, equals; 1 over n; sum of the fraction with numerator; open, x sub i, minus, line on top, enclosing x end enclosure; close to the fourth power; and denominator s to the fourth power; minus 3"
+  },
+  {
+    "id": 1244,
+    "UnicodeMath": "𝑦̂=𝛽̂_0+𝛽̂_1 𝑥",
+    "MathCAT_Dictation": "y hat, is equal to; beta hat, sub 0; plus, beta hat, sub 1; x",
+    "MathCAT_Simple": "y hat, equals, beta hat, 0, plus beta hat, 1; x"
+  },
+  {
+    "id": 1245,
+    "UnicodeMath": "𝛽̂_1=∑(𝑥_𝑖-𝑥̅)(𝑦_𝑖-𝑦̅)/∑(𝑥_𝑖-𝑥̅)^2",
+    "MathCAT_Dictation": null,
+    "MathCAT_Simple": "beta hat, 1, equals; sum of open, x sub i, minus, line on top, enclosing x end enclosure; close; times; open, y sub i, minus, line on top, enclosing y end enclosure; close; divided by; sum of open, x sub i, minus, line on top, enclosing x end enclosure; close squared"
+  },
+  {
+    "id": 1246,
+    "UnicodeMath": "𝛽̂_0=𝑦̅-𝛽̂_1 𝑥̅",
+    "MathCAT_Dictation": "beta hat, sub 0; is equal to; line on top, enclosing y end enclosure; minus; beta hat, sub 1; line on top, enclosing x end enclosure",
+    "MathCAT_Simple": "beta hat, 0, equals; line on top, enclosing y end enclosure; minus, beta hat, 1; line on top, enclosing x end enclosure"
+  },
+  {
+    "id": 1247,
+    "UnicodeMath": "𝑅^2=1-𝑆𝑆_res/𝑆𝑆_tot",
+    "MathCAT_Dictation": "cap r squared is equal to; 1 minus; the fraction with numerator;  cap s,  cap s sub ??????  end sub; and denominator  cap s,  cap s sub ??????  end sub",
+    "MathCAT_Simple": "cap r squared equals; 1 minus; the fraction with numerator;  cap s,  cap s sub ??????  end sub; and denominator  cap s,  cap s sub ??????  end sub"
+  },
+  {
+    "id": 1248,
+    "UnicodeMath": "𝑆𝑆_res=∑_(𝑖=1)^𝑛 (𝑦_𝑖-𝑦̂_𝑖)²",
+    "MathCAT_Dictation": "cap s,  cap s sub ??????  end sub; is equal to; the sum from i is equal to 1, to n of; open paren, y sub i, minus y hat, sub i; close paren squared",
+    "MathCAT_Simple": "cap s,  cap s sub ??????  end sub; equals; sum from i equals 1, to n of; open, y sub i, minus y hat, sub i; close squared"
+  },
+  {
+    "id": 1249,
+    "UnicodeMath": "\"MSE\"=1/𝑛 ∑_(𝑖=1)^𝑛 (𝑦_𝑖-𝑦̂_𝑖)²",
+    "MathCAT_Dictation": "MSE is equal to; 1 over n; the sum from i is equal to 1, to n of; open paren, y sub i, minus y hat, sub i; close paren squared",
+    "MathCAT_Simple": "MSE equals; 1 over n; sum from i equals 1, to n of; open, y sub i, minus y hat, sub i; close squared"
+  },
+  {
+    "id": 1250,
+    "UnicodeMath": "\"RMSE\"=√(1/𝑛 ∑_(𝑖=1)^𝑛 (𝑦_𝑖-𝑦̂_𝑖)^2)",
+    "MathCAT_Dictation": "RMSE is equal to; the square root of 1 over n; the sum from i is equal to 1, to n of; open paren, y sub i, minus y hat, sub i; close paren squared",
+    "MathCAT_Simple": "RMSE equals; square root, 1 over n; sum from i equals 1, to n of; open, y sub i, minus y hat, sub i; close squared"
+  },
+  {
+    "id": 1251,
+    "UnicodeMath": "𝜷̂=(𝐗^𝑇𝐗)^-1 𝐗^𝑇 𝐲",
+    "MathCAT_Dictation": "bold beta hat, is equal to; open paren, bold  cap x raised to the  cap t bold  cap x power; close paren to the negative 1 power; bold  cap x to the  cap t-th power, bold y",
+    "MathCAT_Simple": "bold beta hat, equals; open, bold  cap x raised to the  cap t bold  cap x power; close to the negative 1 power; bold  cap x to the  cap t-th power, bold y"
+  },
+  {
+    "id": 1252,
+    "UnicodeMath": "𝐻(𝑋)=-∑_𝑥 𝑝(𝑥)log_2 𝑝(𝑥)",
+    "MathCAT_Dictation": "cap h of  cap x, is equal to; negative the sum over x of; p of x, the log base 2, of p of x",
+    "MathCAT_Simple": "cap h  cap x, equals; negative sum over x of; p x, log base 2, p x"
+  },
+  {
+    "id": 1253,
+    "UnicodeMath": "𝐻(𝑝,𝑞)=-∑_𝑥 𝑝(𝑥)log 𝑞(𝑥)",
+    "MathCAT_Dictation": "cap h, open paren p comma, q, close paren; is equal to; negative the sum over x of; p of x log q of x",
+    "MathCAT_Simple": "cap h, open p comma, q, close; equals; negative sum over x of, p x log q x"
+  },
+  {
+    "id": 1254,
+    "UnicodeMath": "𝐷_𝐾𝐿 (𝑃∥𝑄)=∑_𝑥 𝑃(𝑥)log 〖𝑃(𝑥)/𝑄(𝑥)〗",
+    "MathCAT_Dictation": "cap d sub  cap k  cap l  end sub; open paren,  cap p is parallel to  cap q, close paren; is equal to; the sum over x of;  cap p of x, the log of,  cap p of x over  cap q of x",
+    "MathCAT_Simple": "cap d sub  cap k  cap l  end sub; open  cap p parallel to  cap q, close; equals; sum over x of;  cap p x, log,  cap p x over  cap q x"
+  },
+  {
+    "id": 1255,
+    "UnicodeMath": "𝐼(𝑋;𝑌)=𝐻(𝑋)-𝐻(𝑋∣𝑌)",
+    "MathCAT_Dictation": "cap i, open paren,  cap x semicolon  cap y, close paren; is equal to;  cap h of  cap x, minus;  cap h, open paren,  cap x divides  cap y, close paren",
+    "MathCAT_Simple": "cap i, open  cap x semicolon  cap y, close; equals;  cap h  cap x, minus,  cap h, open  cap x divides  cap y, close"
+  },
+  {
+    "id": 1256,
+    "UnicodeMath": "𝜎(𝑥)=1/(1+𝑒^-𝑥)",
+    "MathCAT_Dictation": "sigma of x is equal to; the fraction with numerator 1; and denominator 1 plus e raised to the negative x power",
+    "MathCAT_Simple": "sigma x equals; the fraction with numerator 1; and denominator 1 plus e raised to the negative x power"
+  },
+  {
+    "id": 1257,
+    "UnicodeMath": "\"soft max\"(𝑥_𝑖)=𝑒^(𝑥_𝑖)/∑_𝑗 𝑒^(𝑥_𝑗)",
+    "MathCAT_Dictation": "soft max of, open paren x sub i, close paren; is equal to; the fraction with numerator; e raised to the x sub i, power; and denominator the sum over j of, e raised to the x sub j, power",
+    "MathCAT_Simple": "soft max, open x sub i, close; equals; the fraction with numerator; e raised to the x sub i, power; and denominator sum over j of, e raised to the x sub j, power"
+  },
+  {
+    "id": 1258,
+    "UnicodeMath": "𝐿=-1/𝑛 ∑_(𝑖=1)^𝑛 [𝑦_𝑖 log⁡𝑦̂_𝑖+(1-𝑦_𝑖)log⁡(1-𝑦̂_𝑖)]",
+    "MathCAT_Dictation": "cap l is equal to; negative 1 over n; the sum from i is equal to 1, to n of; open bracket; y sub i; the log of y hat, sub i; plus; open paren, 1 minus y sub i; close paren; times; the log of, open paren, 1 minus y hat, sub i; close paren; close bracket",
+    "MathCAT_Simple": "cap l equals; negative 1 over n; sum from i equals 1, to n of; open bracket; y sub i; log y hat, sub i; plus; open 1 minus y sub i; close; times; log, open, 1 minus y hat, sub i; close; close bracket"
+  },
+  {
+    "id": 1259,
+    "UnicodeMath": "𝜃←𝜃-𝛼∇_𝜃 𝐽(𝜃)",
+    "MathCAT_Dictation": "theta left arrow; theta minus, alpha, nahblah sub theta;  cap j of theta",
+    "MathCAT_Simple": "theta left arrow; theta minus, alpha, nahblah sub theta;  cap j theta"
+  },
+  {
+    "id": 1260,
+    "UnicodeMath": "‖𝐱‖_1=∑_𝑖 |𝑥_𝑖|",
+    "MathCAT_Dictation": "magnitude of bold x sub 1; is equal to; the sum over i of, the absolute value of x sub i",
+    "MathCAT_Simple": "magnitude bold x 1; equals, sum over i of, absolute value of x sub i"
+  },
+  {
+    "id": 1261,
+    "UnicodeMath": "‖𝐱‖_2=√(∑_𝑖 𝑥_𝑖^2)",
+    "MathCAT_Dictation": "magnitude of bold x sub 2; is equal to; the square root of the sum over i of, x sub i, squared",
+    "MathCAT_Simple": "magnitude bold x 2; equals, square root, sum over i of, x sub i, squared"
+  },
+  {
+    "id": 1262,
+    "UnicodeMath": "𝐽(𝜃)=\"MSE\"+𝜆∑_𝑗 𝜃_𝑗^2",
+    "MathCAT_Dictation": "cap j of theta, is equal to; MSE plus, lambda, the sum over j of, theta sub j, squared",
+    "MathCAT_Simple": "cap j theta, equals; MSE plus, lambda, sum over j of, theta sub j, squared"
+  },
+  {
+    "id": 1263,
+    "UnicodeMath": "𝐽(𝜃)=\"MSE\"+𝜆∑_𝑗 |𝜃_𝑗|",
+    "MathCAT_Dictation": "cap j of theta, is equal to; MSE plus; lambda; the sum over j of; the absolute value of theta sub j",
+    "MathCAT_Simple": "cap j theta, equals; MSE plus, lambda, sum over j of, absolute value of theta sub j"
+  },
+  {
+    "id": 1264,
+    "UnicodeMath": "𝐸[(𝑦-𝑦̂)²]=\"Bias\"²+\"Variance\"+𝜎²",
+    "MathCAT_Dictation": "cap e of; open bracket; open paren, y minus y hat; close paren squared; close bracket; is equal to, Bias squared plus Variance plus sigma squared",
+    "MathCAT_Simple": "cap e; open bracket, open y minus y hat; close squared; close bracket; equals, Bias squared plus Variance plus sigma squared"
+  },
+  {
+    "id": 1265,
+    "UnicodeMath": "\"Accuracy\"=(𝑇𝑃+𝑇𝑁)/(𝑇𝑃+𝑇𝑁+𝐹𝑃+𝐹𝑁)",
+    "MathCAT_Dictation": "Accuracy is equal to; the fraction with numerator;  cap t  cap p, plus  cap t  cap n; and denominator  cap t  cap p, plus  cap t  cap n, plus  cap f  cap p, plus  cap f  cap n",
+    "MathCAT_Simple": "Accuracy equals; the fraction with numerator;  cap t  cap p, plus  cap t  cap n; and denominator  cap t  cap p, plus  cap t  cap n, plus  cap f  cap p, plus  cap f  cap n"
+  },
+  {
+    "id": 1266,
+    "UnicodeMath": "\"precision\"=𝑇𝑃/(𝑇𝑃+𝐹𝑃)",
+    "MathCAT_Dictation": "precision is equal to; the fraction with numerator;  cap t  cap p; and denominator  cap t  cap p, plus  cap f  cap p",
+    "MathCAT_Simple": "precision equals; the fraction with numerator;  cap t  cap p; and denominator  cap t  cap p, plus  cap f  cap p"
+  },
+  {
+    "id": 1267,
+    "UnicodeMath": "\"Recall\"=𝑇𝑃/(𝑇𝑃+𝐹𝑁)",
+    "MathCAT_Dictation": "Recall is equal to; the fraction with numerator;  cap t  cap p; and denominator  cap t  cap p, plus  cap f  cap n",
+    "MathCAT_Simple": "Recall equals; the fraction with numerator;  cap t  cap p; and denominator  cap t  cap p, plus  cap f  cap n"
+  },
+  {
+    "id": 1268,
+    "UnicodeMath": "𝐹₁=2⋅\"Precision\"⋅\"Recall\"/(\"Precision\"+\"Recall\")",
+    "MathCAT_Dictation": "cap f sub 1; is equal to; 2 times Precision times; the fraction with numerator; Recall; and denominator Precision plus Recall",
+    "MathCAT_Simple": "cap f 1, equals; 2 times Precision times; the fraction with numerator; Recall; and denominator Precision plus Recall"
+  },
+  {
+    "id": 1269,
+    "UnicodeMath": "𝐹=𝑚𝑎",
+    "MathCAT_Dictation": "cap f is equal to m a",
+    "MathCAT_Simple": "cap f equals m a"
+  },
+  {
+    "id": 1270,
+    "UnicodeMath": "𝐾𝐸=1/2 𝑚𝑣²",
+    "MathCAT_Dictation": "cap k  cap e, is equal to, 1 half m v squared",
+    "MathCAT_Simple": "cap k  cap e, equals, 1 half m v squared"
+  },
+  {
+    "id": 1271,
+    "UnicodeMath": "𝑈=𝑚𝑔ℎ",
+    "MathCAT_Dictation": "cap u is equal to ????h",
+    "MathCAT_Simple": "cap u equals ????h"
+  },
+  {
+    "id": 1272,
+    "UnicodeMath": "𝐹=𝑘𝑞₁𝑞₂/𝑟²",
+    "MathCAT_Dictation": "cap f is equal to; the fraction with numerator; k q sub 1, q sub 2; and denominator r squared",
+    "MathCAT_Simple": "cap f equals; the fraction with numerator; k q 1, q 2; and denominator r squared"
+  },
+  {
+    "id": 1273,
+    "UnicodeMath": "𝑉=𝐼𝑅",
+    "MathCAT_Dictation": "cap v is equal to,  cap i  cap r",
+    "MathCAT_Simple": "cap v equals  cap i  cap r"
+  },
+  {
+    "id": 1274,
+    "UnicodeMath": "𝑣=𝑓𝜆",
+    "MathCAT_Dictation": "v is equal to f lambda",
+    "MathCAT_Simple": "v equals f lambda"
+  },
+  {
+    "id": 1275,
+    "UnicodeMath": "𝑣=𝑣_0+𝑎𝑡",
+    "MathCAT_Dictation": "v is equal to, v sub 0, plus a t",
+    "MathCAT_Simple": "v equals, v 0, plus a t"
+  },
+  {
+    "id": 1276,
+    "UnicodeMath": "𝑥=𝑥_0+𝑣_0 𝑡+1/2 𝑎𝑡²",
+    "MathCAT_Dictation": "x is equal to; x sub 0, plus v sub 0, t, plus, 1 half a t squared",
+    "MathCAT_Simple": "x equals; x 0, plus v 0, t plus, 1 half a t squared"
+  },
+  {
+    "id": 1277,
+    "UnicodeMath": "𝑣²=𝑣_0²+2𝑎Δ𝑥",
+    "MathCAT_Dictation": "v squared is equal to; v sub 0 squared  end sub; plus, 2 a  cap delta x",
+    "MathCAT_Simple": "v squared equals; v sub 0 squared  end sub; plus, 2 a  cap delta x"
+  },
+  {
+    "id": 1278,
+    "UnicodeMath": "Δ𝑥=1/2 (𝑣+𝑣_0)𝑡",
+    "MathCAT_Dictation": "cap delta x, is equal to; 1 half times, open paren, v plus v sub 0; close paren; times t",
+    "MathCAT_Simple": "cap delta x, equals; 1 half times, open v plus v 0; close; times t"
+  },
+  {
+    "id": 1279,
+    "UnicodeMath": "𝐹=𝐺𝑚₁𝑚₂/𝑟²",
+    "MathCAT_Dictation": "cap f is equal to; the fraction with numerator;  cap g m sub 1, m sub 2; and denominator r squared",
+    "MathCAT_Simple": "cap f equals; the fraction with numerator;  cap g m 1, m 2; and denominator r squared"
+  },
+  {
+    "id": 1280,
+    "UnicodeMath": "𝑈=-𝐺𝑚₁𝑚₂/𝑟",
+    "MathCAT_Dictation": "cap u is equal to; negative the fraction with numerator;  cap g m sub 1, m sub 2; and denominator r",
+    "MathCAT_Simple": "cap u equals; negative the fraction with numerator;  cap g m 1, m 2; and denominator r"
+  },
+  {
+    "id": 1281,
+    "UnicodeMath": "𝑣_𝑒=√(2𝐺𝑀/𝑅)",
+    "MathCAT_Dictation": "v sub e, is equal to; the square root of the fraction with numerator; 2  cap g  cap m; and denominator  cap r",
+    "MathCAT_Simple": "v sub e, equals; square root, the fraction with numerator; 2  cap g  cap m; and denominator  cap r"
+  },
+  {
+    "id": 1282,
+    "UnicodeMath": "𝑝=𝑚𝑣",
+    "MathCAT_Dictation": "p is equal to m v",
+    "MathCAT_Simple": "p equals m v"
+  },
+  {
+    "id": 1283,
+    "UnicodeMath": "𝐽=𝐹Δ𝑡=Δ𝑝",
+    "MathCAT_Dictation": "cap j is equal to,  cap f  cap delta t; is equal to  cap delta p",
+    "MathCAT_Simple": "cap j equals,  cap f  cap delta t, equals  cap delta p"
+  },
+  {
+    "id": 1284,
+    "UnicodeMath": "𝑚₁𝑣₁+𝑚₂𝑣₂=𝑚₁𝑣₁'+𝑚₂𝑣₂′",
+    "MathCAT_Dictation": "m sub 1, v sub 1; plus, m sub 2, v sub 2; is equal to; m sub 1, v sub 1, prime; plus, m sub 2, v sub 2, prime",
+    "MathCAT_Simple": "m 1, v 1; plus m 2, v 2; equals; m 1, v 1, prime; plus, m 2, v 2, prime"
+  },
+  {
+    "id": 1285,
+    "UnicodeMath": "𝑊=𝐹𝑑 cos 𝜃",
+    "MathCAT_Dictation": "cap w is equal to,  cap f d cosine theta",
+    "MathCAT_Simple": "cap w equals,  cap f d cos theta"
+  },
+  {
+    "id": 1286,
+    "UnicodeMath": "𝑃=𝑊/𝑡=𝐹𝑣",
+    "MathCAT_Dictation": "cap p is equal to  cap w over t is equal to  cap f v",
+    "MathCAT_Simple": "cap p equals  cap w over t equals  cap f v"
+  },
+  {
+    "id": 1287,
+    "UnicodeMath": "𝑎_𝑐=𝑣²/𝑟",
+    "MathCAT_Dictation": "a sub c, is equal to; the fraction with numerator; v squared; and denominator r",
+    "MathCAT_Simple": "a sub c, equals, the fraction with numerator; v squared; and denominator r"
+  },
+  {
+    "id": 1288,
+    "UnicodeMath": "𝐹_𝑐=𝑚𝑣²/𝑟",
+    "MathCAT_Dictation": "cap f sub c; is equal to; the fraction with numerator; m v squared; and denominator r",
+    "MathCAT_Simple": "cap f sub c; equals; the fraction with numerator; m v squared; and denominator r"
+  },
+  {
+    "id": 1289,
+    "UnicodeMath": "𝜏=𝑟𝐹 sin 𝜃",
+    "MathCAT_Dictation": "tau is equal to, r  cap f sine theta",
+    "MathCAT_Simple": "tau equals, r  cap f sine theta"
+  },
+  {
+    "id": 1290,
+    "UnicodeMath": "𝐿=𝐼𝜔",
+    "MathCAT_Dictation": "cap l is equal to,  cap i omega",
+    "MathCAT_Simple": "cap l equals  cap i omega"
+  },
+  {
+    "id": 1291,
+    "UnicodeMath": "𝐾𝐸=1/2 𝐼𝜔²",
+    "MathCAT_Dictation": "cap k  cap e, is equal to, 1 half  cap i omega squared",
+    "MathCAT_Simple": "cap k  cap e, equals, 1 half  cap i omega squared"
+  },
+  {
+    "id": 1292,
+    "UnicodeMath": "𝐹=-𝑘𝑥",
+    "MathCAT_Dictation": "cap f is equal to negative k x",
+    "MathCAT_Simple": "cap f equals negative k x"
+  },
+  {
+    "id": 1293,
+    "UnicodeMath": "𝑇=2𝜋√(𝑚/𝑘)",
+    "MathCAT_Dictation": "cap t is equal to; 2 pi times, the square root of m over k",
+    "MathCAT_Simple": "cap t equals, 2 pi times square root, m over k"
+  },
+  {
+    "id": 1294,
+    "UnicodeMath": "𝑇=2𝜋√(𝐿/𝑔)",
+    "MathCAT_Dictation": "cap t is equal to; 2 pi times, the square root of  cap l over g",
+    "MathCAT_Simple": "cap t equals, 2 pi times square root,  cap l over g"
+  },
+  {
+    "id": 1295,
+    "UnicodeMath": "𝑃𝑉=𝑛𝑅𝑇",
+    "MathCAT_Dictation": "cap p  cap v, is equal to ??????",
+    "MathCAT_Simple": "cap p  cap v, equals ??????"
+  },
+  {
+    "id": 1296,
+    "UnicodeMath": "Δ𝑈=𝑄-𝑊",
+    "MathCAT_Dictation": "cap delta  cap u, is equal to,  cap q minus  cap w",
+    "MathCAT_Simple": "cap delta  cap u, equals  cap q minus  cap w"
+  },
+  {
+    "id": 1297,
+    "UnicodeMath": "𝑄=𝑚𝑐Δ𝑇",
+    "MathCAT_Dictation": "cap q is equal to, m c  cap delta  cap t",
+    "MathCAT_Simple": "cap q equals, m c  cap delta  cap t"
+  },
+  {
+    "id": 1298,
+    "UnicodeMath": "Δ𝐿=𝛼 𝐿_0 Δ𝑇",
+    "MathCAT_Dictation": "cap delta  cap l, is equal to; alpha  cap l sub 0;  cap delta  cap t",
+    "MathCAT_Simple": "cap delta  cap l, equals, alpha  cap l 0,  cap delta  cap t"
+  },
+  {
+    "id": 1299,
+    "UnicodeMath": "𝜂=1-𝑇_𝑐/𝑇_ℎ",
+    "MathCAT_Dictation": "eta is equal to; 1 minus; the fraction with numerator;  cap t sub c; and denominator  cap t sub planck constant",
+    "MathCAT_Simple": "eta equals; 1 minus; the fraction with numerator;  cap t sub c; and denominator  cap t sub planck constant"
+  },
+  {
+    "id": 1300,
+    "UnicodeMath": "𝐸=𝑘𝑄/𝑟²",
+    "MathCAT_Dictation": "cap e is equal to; the fraction with numerator; k  cap q; and denominator r squared",
+    "MathCAT_Simple": "cap e equals; the fraction with numerator; k  cap q; and denominator r squared"
+  },
+  {
+    "id": 1301,
+    "UnicodeMath": "𝑈=𝑘𝑞₁𝑞₂/𝑟",
+    "MathCAT_Dictation": "cap u is equal to; the fraction with numerator; k q sub 1, q sub 2; and denominator r",
+    "MathCAT_Simple": "cap u equals; the fraction with numerator; k q 1, q 2; and denominator r"
+  },
+  {
+    "id": 1302,
+    "UnicodeMath": "𝑉=𝑘𝑄/𝑟",
+    "MathCAT_Dictation": "cap v is equal to; the fraction with numerator; k  cap q; and denominator r",
+    "MathCAT_Simple": "cap v equals; the fraction with numerator; k  cap q; and denominator r"
+  },
+  {
+    "id": 1303,
+    "UnicodeMath": "𝐶=𝑄/𝑉",
+    "MathCAT_Dictation": "cap c is equal to  cap q over  cap v",
+    "MathCAT_Simple": "cap c equals  cap q over  cap v"
+  },
+  {
+    "id": 1304,
+    "UnicodeMath": "𝑈=1/2 𝐶𝑉²",
+    "MathCAT_Dictation": "cap u is equal to, 1 half  cap c  cap v squared",
+    "MathCAT_Simple": "cap u equals, 1 half  cap c  cap v squared"
+  },
+  {
+    "id": 1305,
+    "UnicodeMath": "𝑃=𝐼𝑉=𝐼²𝑅=𝑉²/𝑅",
+    "MathCAT_Dictation": "cap p is equal to,  cap i  cap v, is equal to,  cap i squared  cap r, is equal to; the fraction with numerator;  cap v squared; and denominator  cap r",
+    "MathCAT_Simple": "cap p equals  cap i  cap v, equals  cap i squared  cap r, equals; the fraction with numerator;  cap v squared; and denominator  cap r"
+  },
+  {
+    "id": 1306,
+    "UnicodeMath": "𝑅_\"total\"=𝑅₁+𝑅₂+⋯+𝑅_𝑛",
+    "MathCAT_Dictation": "cap r sub total  end sub; is equal to;  cap r sub 1, plus  cap r sub 2, plus dot dot dot plus  cap r sub n",
+    "MathCAT_Simple": "cap r sub total  end sub; equals;  cap r 1, plus  cap r 2, plus dot dot dot plus  cap r sub n"
+  },
+  {
+    "id": 1307,
+    "UnicodeMath": "1/𝑅_\"total\"=1/𝑅₁+1/𝑅₂+⋯+1/𝑅_𝑛",
+    "MathCAT_Dictation": "the fraction with numerator 1; and denominator  cap r sub total  end sub; is equal to; the fraction with numerator 1; and denominator  cap r sub 1; plus, the fraction with numerator 1; and denominator  cap r sub 2; plus dot dot dot plus, the fraction with numerator 1; and denominator  cap r sub n",
+    "MathCAT_Simple": "the fraction with numerator 1; and denominator  cap r sub total  end sub; equals; the fraction with numerator 1; and denominator  cap r 1; plus, the fraction with numerator 1; and denominator  cap r 2; plus dot dot dot plus, the fraction with numerator 1; and denominator  cap r sub n"
+  },
+  {
+    "id": 1308,
+    "UnicodeMath": "𝐸=-ⅆ𝛷_𝐵/ⅆ𝑡",
+    "MathCAT_Dictation": "cap e is equal to; negative derivative of 1 comma;  cap phi sub  cap b, comma, t",
+    "MathCAT_Simple": "cap e equals; negative derivative 1 comma;  cap phi sub  cap b, comma, t"
+  },
+  {
+    "id": 1309,
+    "UnicodeMath": "𝐹=𝑞𝑣𝐵 sin 𝜃",
+    "MathCAT_Dictation": "cap f is equal to, ?????? sine theta",
+    "MathCAT_Simple": "cap f equals, ?????? sine theta"
+  },
+  {
+    "id": 1310,
+    "UnicodeMath": "𝐹=𝐵𝐼𝐿 sin 𝜃",
+    "MathCAT_Dictation": "cap f is equal to;  cap b  cap i  cap l sine theta",
+    "MathCAT_Simple": "cap f equals;  cap b  cap i  cap l sine theta"
+  },
+  {
+    "id": 1311,
+    "UnicodeMath": "𝑈=1/2 𝐿𝐼²",
+    "MathCAT_Dictation": "cap u is equal to, 1 half  cap l  cap i squared",
+    "MathCAT_Simple": "cap u equals, 1 half  cap l  cap i squared"
+  },
+  {
+    "id": 1312,
+    "UnicodeMath": "𝑛₁ sin⁡𝜃₁=𝑛₂ sin⁡𝜃₂",
+    "MathCAT_Dictation": "n sub 1; sine of theta sub 1; is equal to, n sub 2; sine of theta sub 2",
+    "MathCAT_Simple": "n 1, sine theta 1; equals, n 2, sine theta 2"
+  },
+  {
+    "id": 1313,
+    "UnicodeMath": "1/𝑓=1/𝑑_𝑜+1/𝑑_𝑖",
+    "MathCAT_Dictation": "1 over f is equal to; the fraction with numerator 1; and denominator d sub o; plus, the fraction with numerator 1; and denominator d sub i",
+    "MathCAT_Simple": "1 over f equals; the fraction with numerator 1; and denominator d sub o; plus, the fraction with numerator 1; and denominator d sub i"
+  },
+  {
+    "id": 1314,
+    "UnicodeMath": "𝑚=-𝑑_𝑖/𝑑_𝑜",
+    "MathCAT_Dictation": "m is equal to; negative the fraction with numerator; d sub i; and denominator d sub o",
+    "MathCAT_Simple": "m equals; negative the fraction with numerator; d sub i; and denominator d sub o"
+  },
+  {
+    "id": 1315,
+    "UnicodeMath": "𝑓=1/𝑇",
+    "MathCAT_Dictation": "f is equal to 1 over  cap t",
+    "MathCAT_Simple": "f equals 1 over  cap t"
+  },
+  {
+    "id": 1316,
+    "UnicodeMath": "𝑓'=𝑓𝑣±𝑣_𝑜/𝑣∓𝑣_𝑠",
+    "MathCAT_Dictation": "f prime, is equal to; f v plus or minus; the fraction with numerator; v sub o; and denominator v; minus or plus v sub s",
+    "MathCAT_Simple": "f prime, equals; f v plus or minus; the fraction with numerator; v sub o; and denominator v; minus or plus v sub s"
+  },
+  {
+    "id": 1317,
+    "UnicodeMath": "𝜆_𝑛=2𝐿/𝑛",
+    "MathCAT_Dictation": "lambda sub n; is equal to; the fraction with numerator; 2  cap l; and denominator n",
+    "MathCAT_Simple": "lambda sub n; equals; the fraction with numerator; 2  cap l; and denominator n"
+  },
+  {
+    "id": 1318,
+    "UnicodeMath": "𝑑 sin⁡𝜃=𝑚𝜆",
+    "MathCAT_Dictation": "d sine theta, is equal to m lambda",
+    "MathCAT_Simple": "d sine theta, equals m lambda"
+  },
+  {
+    "id": 1319,
+    "UnicodeMath": "𝑑 sin⁡𝜃=(𝑚+1/2)𝜆",
+    "MathCAT_Dictation": "d sine theta, is equal to; open paren m plus 1 half, close paren; times lambda",
+    "MathCAT_Simple": "d sine theta, equals, open m plus 1 half, close; times lambda"
+  },
+  {
+    "id": 1320,
+    "UnicodeMath": "𝐾𝐸_(\"max\")=ℎ𝑓-𝜑",
+    "MathCAT_Dictation": "cap k  cap e sub max  end sub; is equal to, planck constant f, minus phi",
+    "MathCAT_Simple": "cap k  cap e sub max  end sub; equals, planck constant f, minus phi"
+  },
+  {
+    "id": 1321,
+    "UnicodeMath": "𝜆=ℎ/𝑝",
+    "MathCAT_Dictation": "lambda is equal to planck constant over p",
+    "MathCAT_Simple": "lambda equals planck constant over p"
+  },
+  {
+    "id": 1322,
+    "UnicodeMath": "Δ𝑥Δ𝑝≥ℏ/2",
+    "MathCAT_Dictation": "cap delta x  cap delta p; is greater than or equal to, h bar over 2",
+    "MathCAT_Simple": "cap delta x  cap delta p;  greater than or equal to, h bar over 2"
+  },
+  {
+    "id": 1323,
+    "UnicodeMath": "𝐸=𝑚𝑐²",
+    "MathCAT_Dictation": "cap e is equal to m c squared",
+    "MathCAT_Simple": "cap e equals m c squared"
+  },
+  {
+    "id": 1324,
+    "UnicodeMath": "𝑁(𝑡)=𝑁_0 𝑒^-𝜆𝑡",
+    "MathCAT_Dictation": "cap n of t, is equal to;  cap n sub 0, times, e raised to the negative lambda t power",
+    "MathCAT_Simple": "cap n t equals;  cap n 0, times, e raised to the negative lambda t power"
+  },
+  {
+    "id": 1325,
+    "UnicodeMath": "𝑡_(1\\/2)=ln⁡2/𝜆",
+    "MathCAT_Dictation": "t sub 1 divided by 2  end sub; is equal to, l n 2 over lambda",
+    "MathCAT_Simple": "t sub 1 divided by 2  end sub; equals l n 2 over lambda"
+  },
+  {
+    "id": 1326,
+    "UnicodeMath": "𝛾=1/√(1-𝑣²/𝑐²)",
+    "MathCAT_Dictation": "gamma is equal to; the fraction with numerator 1; and denominator the square root of 1 minus, the fraction with numerator; v squared; and denominator c squared",
+    "MathCAT_Simple": "gamma equals; the fraction with numerator 1; and denominator square root, 1 minus, the fraction with numerator; v squared; and denominator c squared"
+  },
+  {
+    "id": 1327,
+    "UnicodeMath": "Δ𝑡=𝛾 Δ𝑡_0",
+    "MathCAT_Dictation": "cap delta t, is equal to, gamma  cap delta t sub 0",
+    "MathCAT_Simple": "cap delta t, equals, gamma  cap delta t 0"
+  },
+  {
+    "id": 1328,
+    "UnicodeMath": "𝐿=𝐿_0/𝛾",
+    "MathCAT_Dictation": "cap l is equal to; the fraction with numerator;  cap l sub 0; and denominator gamma",
+    "MathCAT_Simple": "cap l equals; the fraction with numerator;  cap l 0; and denominator gamma"
+  },
+  {
+    "id": 1329,
+    "UnicodeMath": "𝑝=𝛾𝑚𝑣",
+    "MathCAT_Dictation": "p is equal to ??????",
+    "MathCAT_Simple": "p equals ??????"
+  },
+  {
+    "id": 1330,
+    "UnicodeMath": "𝐸=𝛾𝑚𝑐²",
+    "MathCAT_Dictation": "cap e is equal to ?????? squared",
+    "MathCAT_Simple": "cap e equals ?????? squared"
+  },
+  {
+    "id": 1331,
+    "UnicodeMath": "𝐸²=(𝑝𝑐)²+(𝑚𝑐²)²",
+    "MathCAT_Dictation": "cap e squared is equal to; open paren p c close paren squared; plus, open paren m c squared, close paren squared",
+    "MathCAT_Simple": "cap e squared equals; open p c close squared; plus, open m c squared, close squared"
+  },
+  {
+    "id": 1332,
+    "UnicodeMath": "𝑢'=(𝑢-𝑣)/(1-𝑢𝑣/𝑐²)",
+    "MathCAT_Dictation": "u prime, is equal to; the fraction with numerator; u minus v; and denominator 1 minus; the fraction with numerator; u v; and denominator c squared",
+    "MathCAT_Simple": "u prime, equals; the fraction with numerator; u minus v; and denominator 1 minus; the fraction with numerator; u v; and denominator c squared"
+  },
+  {
+    "id": 1333,
+    "UnicodeMath": "𝑥'=𝛾(𝑥-𝑣𝑡)",
+    "MathCAT_Dictation": "x prime, is equal to; gamma, open paren, x minus v t, close paren",
+    "MathCAT_Simple": "x prime, equals, gamma, open x minus v t, close"
+  },
+  {
+    "id": 1334,
+    "UnicodeMath": "𝑡'=𝛾(𝑡-𝑣𝑥/𝑐²)",
+    "MathCAT_Dictation": "t prime, is equal to; gamma; open paren; t minus; the fraction with numerator; v x; and denominator c squared; close paren",
+    "MathCAT_Simple": "t prime, equals; gamma; open; t minus; the fraction with numerator; v x; and denominator c squared; close"
+  },
+  {
+    "id": 1335,
+    "UnicodeMath": "𝑃+1/2 𝜌𝑣²+𝜌𝑔ℎ=\"const\"",
+    "MathCAT_Dictation": "cap p plus, 1 half rho v squared; plus ????h; is equal to const",
+    "MathCAT_Simple": "cap p plus, 1 half rho v squared; plus ????h; equals const"
+  },
+  {
+    "id": 1336,
+    "UnicodeMath": "𝐴₁𝑣₁=𝐴₂𝑣₂",
+    "MathCAT_Dictation": "cap a sub 1; v sub 1; is equal to,  cap a sub 2; v sub 2",
+    "MathCAT_Simple": "cap a 1, v 1; equals,  cap a 2, v 2"
+  },
+  {
+    "id": 1337,
+    "UnicodeMath": "\"Re\"=𝜌𝑣𝐿/𝜇",
+    "MathCAT_Dictation": "Re is equal to; the fraction with numerator; ??????; and denominator mu",
+    "MathCAT_Simple": "Re equals, the fraction with numerator; ??????; and denominator mu"
+  },
+  {
+    "id": 1338,
+    "UnicodeMath": "𝑄=𝜋𝑟^4 𝛥𝑃/8𝜇𝐿",
+    "MathCAT_Dictation": "cap q is equal to; the fraction with numerator; pi r to the fourth power,  cap delta  cap p; and denominator 8 mu  cap l",
+    "MathCAT_Simple": "cap q equals; the fraction with numerator; pi r to the fourth power,  cap delta  cap p; and denominator 8 mu  cap l"
+  },
+  {
+    "id": 1339,
+    "UnicodeMath": "𝐹_𝑑=1/2 𝐶_𝑑 𝜌𝐴𝑣²",
+    "MathCAT_Dictation": "cap f sub d; is equal to; 1 half  cap c sub d; ?????? squared",
+    "MathCAT_Simple": "cap f sub d; equals, 1 half  cap c sub d; ?????? squared"
+  },
+  {
+    "id": 1340,
+    "UnicodeMath": "𝐹_𝑏=𝜌_𝑓 𝑔𝑉",
+    "MathCAT_Dictation": "cap f sub b; is equal to, rho sub f, g  cap v",
+    "MathCAT_Simple": "cap f sub b; equals, rho sub f, g  cap v"
+  },
+  {
+    "id": 1341,
+    "UnicodeMath": "-ℏ²/2𝑚  ⅆ²𝜓/ⅆ𝑥²+𝑉𝜓=𝐸𝜓",
+    "MathCAT_Dictation": "negative the fraction with numerator; h bar squared; and denominator 2 m; derivative of 2 comma, psi comma, x; plus  cap v psi; is equal to  cap e psi",
+    "MathCAT_Simple": "negative the fraction with numerator; h bar squared; and denominator 2 m; derivative 2 comma, psi comma, x; plus  cap v psi; equals  cap e psi"
+  },
+  {
+    "id": 1342,
+    "UnicodeMath": "𝑖ℏ ∂𝜓/∂𝑡=𝐻̂𝜓",
+    "MathCAT_Dictation": "i h bar, partial derivative of 1 comma, psi comma, t; is equal to,  cap h hat, psi",
+    "MathCAT_Simple": "i h bar, partial derivative 1 comma, psi comma, t; equals  cap h hat, psi"
+  },
+  {
+    "id": 1343,
+    "UnicodeMath": "∫_-∞^∞ |𝜓|²ⅆ𝑥=1",
+    "MathCAT_Dictation": null,
+    "MathCAT_Simple": null
+  },
+  {
+    "id": 1344,
+    "UnicodeMath": "⟨𝑥⟩=∫_-∞^∞ 𝜓^* 𝑥𝜓ⅆ𝑥",
+    "MathCAT_Dictation": "left angle bracket x right angle bracket; is equal to; the integral from negative infinity, to infinity of; psi superscript times; ?????????",
+    "MathCAT_Simple": "left angle bracket x right angle bracket; equals; integral from negative infinity, to infinity of; psi super times; ?????????"
+  },
+  {
+    "id": 1345,
+    "UnicodeMath": "𝐸_𝑛=𝑛²𝜋²ℏ²/2𝑚𝐿²",
+    "MathCAT_Dictation": "cap e sub n; is equal to; the fraction with numerator; n squared pi squared h bar squared; and denominator 2 m  cap l squared",
+    "MathCAT_Simple": "cap e sub n; equals; the fraction with numerator; n squared pi squared h bar squared; and denominator 2 m  cap l squared"
+  },
+  {
+    "id": 1346,
+    "UnicodeMath": "Δ𝑚=𝑍𝑚_𝑝+𝑁 𝑚_𝑛-𝑚_(𝑛𝑢𝑐)",
+    "MathCAT_Dictation": "cap delta m, is equal to;  cap z m sub p; plus  cap n m sub n; minus, m sub ??????  end sub",
+    "MathCAT_Simple": "cap delta m, equals;  cap z m sub p; plus  cap n m sub n; minus, m sub ??????  end sub"
+  },
+  {
+    "id": 1347,
+    "UnicodeMath": "𝐸_𝑏=Δ𝑚⋅𝑐^2",
+    "MathCAT_Dictation": "cap e sub b; is equal to,  cap delta m times c squared",
+    "MathCAT_Simple": "cap e sub b; equals,  cap delta m times c squared"
+  },
+  {
+    "id": 1348,
+    "UnicodeMath": "𝑄=(𝑚_\"reactants\"-𝑚_\"products\")𝑐^2",
+    "MathCAT_Dictation": "cap q is equal to; open paren; m sub reactants  end sub; minus m sub products  end sub; close paren; times c squared",
+    "MathCAT_Simple": "cap q equals; open; m sub reactants  end sub; minus m sub products  end sub; close; times c squared"
+  },
+  {
+    "id": 1349,
+    "UnicodeMath": "𝛽=10 log_10 (𝐼/𝐼_0)",
+    "MathCAT_Dictation": "beta is equal to; 10; the log base 10, of; open paren; the fraction with numerator  cap i; and denominator  cap i sub 0; close paren",
+    "MathCAT_Simple": "beta equals; 10; log base 10; open, the fraction with numerator  cap i; and denominator  cap i 0; close"
+  },
+  {
+    "id": 1350,
+    "UnicodeMath": "𝐼=𝑃/4𝜋𝑟²",
+    "MathCAT_Dictation": "cap i is equal to; the fraction with numerator  cap p; and denominator 4 pi r squared",
+    "MathCAT_Simple": "cap i equals; the fraction with numerator  cap p; and denominator 4 pi r squared"
+  },
+  {
+    "id": 1351,
+    "UnicodeMath": "𝑓_1=1/2𝐿√(𝑇\\/𝜇)",
+    "MathCAT_Dictation": "f sub 1, is equal to; the fraction with numerator 1; and denominator 2  cap l times, the square root of  cap t divided by mu",
+    "MathCAT_Simple": "f 1, equals; the fraction with numerator 1; and denominator 2  cap l times, square root,  cap t divided by mu"
+  },
+  {
+    "id": 1352,
+    "UnicodeMath": "𝑓_𝑛=𝑛𝑣/2𝐿",
+    "MathCAT_Dictation": "f sub n, is equal to; the fraction with numerator; n v; and denominator 2  cap l",
+    "MathCAT_Simple": "f sub n, equals; the fraction with numerator; n v; and denominator 2  cap l"
+  },
+  {
+    "id": 1353,
+    "UnicodeMath": "𝑓_𝑛=(2𝑛-1)𝑣/4𝐿",
+    "MathCAT_Dictation": "f sub n, is equal to; the fraction with numerator; open paren, 2 n minus 1, close paren; times v; and denominator 4  cap l",
+    "MathCAT_Simple": "f sub n, equals; the fraction with numerator; open 2 n minus 1, close; times v; and denominator 4  cap l"
+  },
+  {
+    "id": 1354,
+    "UnicodeMath": "𝑇²=4𝜋²/𝐺𝑀 𝑎³",
+    "MathCAT_Dictation": "cap t squared is equal to; the fraction with numerator; 4 pi squared; and denominator  cap g  cap m; a cubed",
+    "MathCAT_Simple": "cap t squared equals; the fraction with numerator; 4 pi squared; and denominator  cap g  cap m; a cubed"
+  },
+  {
+    "id": 1355,
+    "UnicodeMath": "𝑣=𝐻_0 𝑑",
+    "MathCAT_Dictation": "v is equal to,  cap h sub 0; d",
+    "MathCAT_Simple": "v equals  cap h 0, d"
+  },
+  {
+    "id": 1356,
+    "UnicodeMath": "𝐿=4𝜋𝑅² 𝜎𝑇⁴",
+    "MathCAT_Dictation": "cap l is equal to; 4 pi  cap r squared sigma  cap t to the fourth power",
+    "MathCAT_Simple": "cap l equals; 4 pi  cap r squared sigma  cap t to the fourth power"
+  },
+  {
+    "id": 1357,
+    "UnicodeMath": "𝑚₁-𝑚₂=-2.5 log_10⁡〖𝐹₁/𝐹₂〗",
+    "MathCAT_Dictation": "m sub 1, minus m sub 2; is equal to; negative 2.5; the log base 10, of; the fraction with numerator;  cap f sub 1; and denominator  cap f sub 2",
+    "MathCAT_Simple": "m 1, minus m 2; equals; negative 2.5; log base 10; the fraction with numerator;  cap f 1; and denominator  cap f 2"
+  },
+  {
+    "id": 1358,
+    "UnicodeMath": "𝑟_𝑠=2𝐺𝑀/𝑐²",
+    "MathCAT_Dictation": "r sub s, is equal to; the fraction with numerator; 2  cap g  cap m; and denominator c squared",
+    "MathCAT_Simple": "r sub s, equals; the fraction with numerator; 2  cap g  cap m; and denominator c squared"
+  },
+  {
+    "id": 1359,
+    "UnicodeMath": "∇⋅𝐄=𝜌/𝜖₀; ∇⋅𝐁=0; ∇×𝐄=-∂𝐁/∂𝑡; ∇×𝐁=𝜇₀𝐉+𝜇₀𝜖₀ ∂𝐄/∂𝑡",
+    "MathCAT_Dictation": "divergence of bold  cap e, is equal to; the fraction with numerator rho; and denominator epsilon sub 0; semicolon, divergence of bold  cap b, is equal to 0; semicolon; curl of bold  cap e, is equal to; negative partial derivative of 1 comma, bold  cap b comma, t; semicolon; curl of bold  cap b, is equal to; mu sub 0, bold  cap j, plus; the fraction with numerator; mu sub 0, epsilon sub 0; partial derivative bold  cap e; and denominator partial derivative t",
+    "MathCAT_Simple": "dihv bold  cap e equals, the fraction with numerator rho; and denominator epsilon 0; semicolon, dihv bold  cap b equals 0, semicolon; curl bold  cap e equals, negative partial derivative 1 comma, bold  cap b comma, t; semicolon; curl bold  cap b equals; mu 0, bold  cap j, plus; the fraction with numerator; mu 0, epsilon 0, partial bold  cap e; and denominator partial t"
+  },
+  {
+    "id": 1360,
+    "UnicodeMath": "∂²𝑢/∂𝑡²=𝑐²  ∂²𝑢/∂𝑥²",
+    "MathCAT_Dictation": "partial derivative of 2 comma, u comma, t; is equal to; c squared, partial derivative of 2 comma, u comma, x",
+    "MathCAT_Simple": "partial derivative 2 comma, u comma, t; equals; c squared, partial derivative 2 comma, u comma, x"
+  },
+  {
+    "id": 1361,
+    "UnicodeMath": "𝑃=𝜎𝐴𝑇⁴",
+    "MathCAT_Dictation": "cap p is equal to, ?????? to the fourth power",
+    "MathCAT_Simple": "cap p equals ?????? to the fourth power"
+  },
+  {
+    "id": 1362,
+    "UnicodeMath": "𝑛=𝑚/𝑀",
+    "MathCAT_Dictation": "n is equal to m over  cap m",
+    "MathCAT_Simple": "n equals m over  cap m"
+  },
+  {
+    "id": 1363,
+    "UnicodeMath": "𝑁=𝑛×𝑁_𝐴",
+    "MathCAT_Dictation": "cap n is equal to, n times  cap n sub  cap a",
+    "MathCAT_Simple": "cap n equals, n times  cap n sub  cap a"
+  },
+  {
+    "id": 1364,
+    "UnicodeMath": "𝑤=𝑚_\"element\"/𝑚_\"compound\"   100%",
+    "MathCAT_Dictation": "w is equal to; the fraction with numerator; m sub element  end sub; and denominator m sub compound  end sub; 100 percent",
+    "MathCAT_Simple": "w equals; the fraction with numerator; m sub element  end sub; and denominator m sub compound  end sub; 100 percent"
+  },
+  {
+    "id": 1365,
+    "UnicodeMath": "𝑀=𝑛/𝑉",
+    "MathCAT_Dictation": "cap m is equal to n over  cap v",
+    "MathCAT_Simple": "cap m equals n over  cap v"
+  },
+  {
+    "id": 1366,
+    "UnicodeMath": "𝑀₁𝑉₁=𝑀₂𝑉₂",
+    "MathCAT_Dictation": "cap m sub 1;  cap v sub 1; is equal to,  cap m sub 2;  cap v sub 2",
+    "MathCAT_Simple": "cap m 1,  cap v 1; equals,  cap m 2,  cap v 2"
+  },
+  {
+    "id": 1367,
+    "UnicodeMath": "𝑚=𝑛_\"solute\"/𝑚_\"solvent\"",
+    "MathCAT_Dictation": "m is equal to; the fraction with numerator; n sub solute  end sub; and denominator m sub solvent  end sub",
+    "MathCAT_Simple": "m equals; the fraction with numerator; n sub solute  end sub; and denominator m sub solvent  end sub"
+  },
+  {
+    "id": 1368,
+    "UnicodeMath": "𝑃=𝑋_\"solvent\"  𝑃°",
+    "MathCAT_Dictation": "cap p is equal to;  cap x sub solvent  end sub;  cap p degrees",
+    "MathCAT_Simple": "cap p equals,  cap x sub solvent  end sub;  cap p degrees"
+  },
+  {
+    "id": 1369,
+    "UnicodeMath": "Δ𝑇_𝑏=𝑖𝐾_𝑏 𝑚",
+    "MathCAT_Dictation": "cap delta  cap t sub b; is equal to, i  cap k sub b; m",
+    "MathCAT_Simple": "cap delta  cap t sub b; equals, i  cap k sub b; m"
+  },
+  {
+    "id": 1370,
+    "UnicodeMath": "Δ𝑇_𝑓=𝑖 𝐾_𝑓 𝑚",
+    "MathCAT_Dictation": "cap delta  cap t sub f; is equal to, i  cap k sub f; m",
+    "MathCAT_Simple": "cap delta  cap t sub f; equals, i  cap k sub f; m"
+  },
+  {
+    "id": 1371,
+    "UnicodeMath": "𝜋=𝑖𝑀𝑅𝑇",
+    "MathCAT_Dictation": "pi is equal to ????????",
+    "MathCAT_Simple": "pi equals ????????"
+  },
+  {
+    "id": 1372,
+    "UnicodeMath": "𝑃₁𝑉₁=𝑃₂𝑉₂",
+    "MathCAT_Dictation": "cap p sub 1;  cap v sub 1; is equal to,  cap p sub 2;  cap v sub 2",
+    "MathCAT_Simple": "cap p 1,  cap v 1; equals,  cap p 2,  cap v 2"
+  },
+  {
+    "id": 1373,
+    "UnicodeMath": "𝑉₁/𝑇₁=𝑉₂/𝑇₂",
+    "MathCAT_Dictation": "the fraction with numerator;  cap v sub 1; and denominator  cap t sub 1; is equal to; the fraction with numerator;  cap v sub 2; and denominator  cap t sub 2",
+    "MathCAT_Simple": "the fraction with numerator;  cap v 1; and denominator  cap t 1; equals; the fraction with numerator;  cap v 2; and denominator  cap t 2"
+  },
+  {
+    "id": 1374,
+    "UnicodeMath": "𝑃₁/𝑇₁=𝑃₂/𝑇₂",
+    "MathCAT_Dictation": "the fraction with numerator;  cap p sub 1; and denominator  cap t sub 1; is equal to; the fraction with numerator;  cap p sub 2; and denominator  cap t sub 2",
+    "MathCAT_Simple": "the fraction with numerator;  cap p 1; and denominator  cap t 1; equals; the fraction with numerator;  cap p 2; and denominator  cap t 2"
+  },
+  {
+    "id": 1375,
+    "UnicodeMath": "𝑃₁𝑉₁/𝑇₁=𝑃₂𝑉₂/𝑇₂",
+    "MathCAT_Dictation": "the fraction with numerator;  cap p sub 1;  cap v sub 1; and denominator  cap t sub 1; is equal to; the fraction with numerator;  cap p sub 2;  cap v sub 2; and denominator  cap t sub 2",
+    "MathCAT_Simple": "the fraction with numerator;  cap p 1,  cap v 1; and denominator  cap t 1; equals; the fraction with numerator;  cap p 2,  cap v 2; and denominator  cap t 2"
+  },
+  {
+    "id": 1376,
+    "UnicodeMath": "𝑉₁/𝑛₁=𝑉₂/𝑛₂",
+    "MathCAT_Dictation": "the fraction with numerator;  cap v sub 1; and denominator n sub 1; is equal to; the fraction with numerator;  cap v sub 2; and denominator n sub 2",
+    "MathCAT_Simple": "the fraction with numerator;  cap v 1; and denominator n 1; equals; the fraction with numerator;  cap v 2; and denominator n 2"
+  },
+  {
+    "id": 1377,
+    "UnicodeMath": "𝑃_\"total\"=𝑃₁+𝑃₂+⋯+𝑃_𝑛",
+    "MathCAT_Dictation": "cap p sub total  end sub; is equal to;  cap p sub 1, plus  cap p sub 2, plus dot dot dot plus  cap p sub n",
+    "MathCAT_Simple": "cap p sub total  end sub; equals;  cap p 1, plus  cap p 2, plus dot dot dot plus  cap p sub n"
+  },
+  {
+    "id": 1378,
+    "UnicodeMath": "𝑟₁/𝑟₂=√(𝑀₂/𝑀₁)",
+    "MathCAT_Dictation": "the fraction with numerator; r sub 1; and denominator r sub 2; is equal to; the square root of the fraction with numerator;  cap m sub 2; and denominator  cap m sub 1",
+    "MathCAT_Simple": "the fraction with numerator; r 1; and denominator r 2; equals; square root, the fraction with numerator;  cap m 2; and denominator  cap m 1"
+  },
+  {
+    "id": 1379,
+    "UnicodeMath": "(𝑃+𝑎𝑛²/𝑉²)(𝑉-𝑛𝑏)=𝑛𝑅𝑇",
+    "MathCAT_Dictation": "open paren;  cap p plus; the fraction with numerator; a n squared; and denominator  cap v squared; close paren; times, open paren,  cap v minus n b, close paren; is equal to ??????",
+    "MathCAT_Simple": "open;  cap p plus; the fraction with numerator; a n squared; and denominator  cap v squared; close; times, open,  cap v minus n b, close; equals ??????"
+  },
+  {
+    "id": 1380,
+    "UnicodeMath": "Δ𝐻_rxn=∑ Δ𝐻_𝑓 (\"products\")-∑ Δ𝐻_𝑓 (\"reactants\")",
+    "MathCAT_Dictation": "cap delta,  cap h sub ??????  end sub; is equal to; the sum of  cap delta,  cap h sub f, of, open paren products close paren; minus; the sum of  cap delta,  cap h sub f, of, open paren reactants close paren",
+    "MathCAT_Simple": "cap delta,  cap h sub ??????  end sub; equals; sum of  cap delta,  cap h sub f; open products close; minus; sum of  cap delta,  cap h sub f; open reactants close"
+  },
+  {
+    "id": 1381,
+    "UnicodeMath": "Δ𝐺=Δ𝐻-𝑇Δ𝑆",
+    "MathCAT_Dictation": "cap delta  cap g, is equal to;  cap delta  cap h, minus,  cap t  cap delta  cap s",
+    "MathCAT_Simple": "cap delta  cap g, equals;  cap delta  cap h, minus,  cap t  cap delta  cap s"
+  },
+  {
+    "id": 1382,
+    "UnicodeMath": "Δ𝐺°=-𝑅𝑇 ln⁡𝐾",
+    "MathCAT_Dictation": "cap delta  cap g degrees; is equal to; negative  cap r  cap t l n  cap k",
+    "MathCAT_Simple": "cap delta  cap g degrees; equals, negative  cap r  cap t l n  cap k"
+  },
+  {
+    "id": 1383,
+    "UnicodeMath": "Δ𝑆=𝑞_rev/𝑇",
+    "MathCAT_Dictation": "cap delta  cap s, is equal to; the fraction with numerator; q sub ??????  end sub; and denominator  cap t",
+    "MathCAT_Simple": "cap delta  cap s, equals; the fraction with numerator; q sub ??????  end sub; and denominator  cap t"
+  },
+  {
+    "id": 1384,
+    "UnicodeMath": "𝐾=[\"products\"]^\"coefficients\"/[\"reactants\"]^\"coefficients\"",
+    "MathCAT_Dictation": "cap k is equal to; the fraction with numerator; open bracket products close bracket raised to the coefficients power; and denominator open bracket reactants close bracket raised to the coefficients power",
+    "MathCAT_Simple": "cap k equals; the fraction with numerator; open bracket products close bracket raised to the coefficients power; and denominator open bracket reactants close bracket raised to the coefficients power"
+  },
+  {
+    "id": 1385,
+    "UnicodeMath": "𝐾_𝑝=𝐾_𝑐 (𝑅𝑇)^𝛥𝑛",
+    "MathCAT_Dictation": "cap k sub p; is equal to;  cap k sub c, times; open paren  cap r  cap t, close paren raised to the  cap delta n power",
+    "MathCAT_Simple": "cap k sub p; equals;  cap k sub c, times; open  cap r  cap t, close raised to the  cap delta n power"
+  },
+  {
+    "id": 1386,
+    "UnicodeMath": "𝑄=[\"products\"]/[\"reactants\"]",
+    "MathCAT_Dictation": "cap q is equal to; the fraction with numerator; open bracket products close bracket; and denominator open bracket reactants close bracket",
+    "MathCAT_Simple": "cap q equals; the fraction with numerator; open bracket products close bracket; and denominator open bracket reactants close bracket"
+  },
+  {
+    "id": 1387,
+    "UnicodeMath": "pH=-log[H^+]",
+    "MathCAT_Dictation": "p  cap h, is equal to; negative the log of, open bracket,  cap h superscript plus; close bracket",
+    "MathCAT_Simple": "p  cap h, equals; negative log, open bracket,  cap h super plus; close bracket"
+  },
+  {
+    "id": 1388,
+    "UnicodeMath": "pOH=-log⁡[OH^-]",
+    "MathCAT_Dictation": "?????? is equal to; negative the log of; open bracket,  cap o,  cap h superscript minus; close bracket",
+    "MathCAT_Simple": "?????? equals; negative log; open bracket,  cap o  cap h super minus; close bracket"
+  },
+  {
+    "id": 1389,
+    "UnicodeMath": "pH+pOH=14",
+    "MathCAT_Dictation": "p  cap h, plus ??????; is equal to 14",
+    "MathCAT_Simple": "p  cap h, plus ??????; equals 14"
+  },
+  {
+    "id": 1390,
+    "UnicodeMath": "𝐾_𝑤=[H^+][OH^-]=1.0×10^-14",
+    "MathCAT_Dictation": "cap k sub w; is equal to; open bracket,  cap h superscript plus; close bracket; times; open bracket,  cap o,  cap h superscript minus; close bracket; is equal to, 1.0 times 10 to the negative 14 power",
+    "MathCAT_Simple": "cap k sub w; equals; open bracket,  cap h super plus; close bracket; times; open bracket,  cap o  cap h super minus; close bracket; equals, 1.0 times 10 to the negative 14 power"
+  },
+  {
+    "id": 1391,
+    "UnicodeMath": "\"pH\"=\"pK\"_𝑎+log 〖[\"A\"^-]/[\"HA\"]〗",
+    "MathCAT_Dictation": "pH is equal to; pK sub a, plus; the log of; the fraction with numerator; open bracket,  cap a superscript minus; close bracket; and denominator open bracket HA close bracket",
+    "MathCAT_Simple": "pH equals; pK sub a, plus; log; the fraction with numerator; open bracket,  cap a super minus; close bracket; and denominator open bracket HA close bracket"
+  },
+  {
+    "id": 1392,
+    "UnicodeMath": "𝐾_𝑎 𝐾_𝑏=𝐾_𝑤",
+    "MathCAT_Dictation": "cap k sub a;  cap k sub b; is equal to  cap k sub w",
+    "MathCAT_Simple": "cap k sub a;  cap k sub b; equals  cap k sub w"
+  },
+  {
+    "id": 1393,
+    "UnicodeMath": "𝐸°_\"cell\"=𝐸°_\"cathode\"-𝐸°_\"anode\"",
+    "MathCAT_Dictation": "cap e, degrees sub cell  end sub; is equal to;  cap e, degrees sub cathode  end sub; minus,  cap e, degrees sub anode  end sub",
+    "MathCAT_Simple": "cap e, degrees sub cell  end sub; equals;  cap e, degrees sub cathode  end sub; minus,  cap e, degrees sub anode  end sub"
+  },
+  {
+    "id": 1394,
+    "UnicodeMath": "𝐸=𝐸°-𝑅𝑇/𝑛𝐹 ln 𝑄",
+    "MathCAT_Dictation": "cap e is equal to;  cap e degrees, minus; the fraction with numerator;  cap r  cap t; and denominator n  cap f; l n  cap q",
+    "MathCAT_Simple": "cap e equals;  cap e degrees, minus; the fraction with numerator;  cap r  cap t; and denominator n  cap f; l n  cap q"
+  },
+  {
+    "id": 1395,
+    "UnicodeMath": "Δ𝐺°=-𝑛𝐹𝐸°",
+    "MathCAT_Dictation": "cap delta  cap g degrees; is equal to, negative ?????? degrees",
+    "MathCAT_Simple": "cap delta  cap g degrees; equals negative ?????? degrees"
+  },
+  {
+    "id": 1396,
+    "UnicodeMath": "𝑚=𝑀𝐼𝑡/𝑛𝐹",
+    "MathCAT_Dictation": "m is equal to; the fraction with numerator; ??????; and denominator n  cap f",
+    "MathCAT_Simple": "m equals; the fraction with numerator; ??????; and denominator n  cap f"
+  },
+  {
+    "id": 1397,
+    "UnicodeMath": "rate=𝑘[𝐴]^𝑚 [𝐵]^𝑛",
+    "MathCAT_Dictation": "???????? is equal to; k times, open bracket  cap a close bracket to the m-th power; times, open bracket  cap b close bracket to the n-th power",
+    "MathCAT_Simple": "???????? equals; k times, open bracket  cap a close bracket to the m-th power; times, open bracket  cap b close bracket to the n-th power"
+  },
+  {
+    "id": 1398,
+    "UnicodeMath": "ln⁡[𝐴]=ln⁡[𝐴]₀-𝑘𝑡",
+    "MathCAT_Dictation": "the l n of  cap a, is equal to; the l n of  cap a sub 0; minus k t",
+    "MathCAT_Simple": "l n  cap a, equals, l n  cap a 0; minus k t"
+  },
+  {
+    "id": 1399,
+    "UnicodeMath": "1/[𝐴]=1/[𝐴]₀+𝑘𝑡",
+    "MathCAT_Dictation": "the fraction with numerator 1; and denominator  cap a; is equal to; the fraction with numerator 1; and denominator  cap a sub 0; plus k t",
+    "MathCAT_Simple": "the fraction with numerator 1; and denominator  cap a; equals; the fraction with numerator 1; and denominator  cap a 0; plus k t"
+  },
+  {
+    "id": 1400,
+    "UnicodeMath": "𝑡_(1/2)=ln 2/𝑘=0.693/𝑘",
+    "MathCAT_Dictation": "t sub 1 half; is equal to l n 2 over k, is equal to 0.693 over k",
+    "MathCAT_Simple": "t sub 1 half; equals l n 2 over k, equals 0.693 over k"
+  },
+  {
+    "id": 1401,
+    "UnicodeMath": "𝑘=𝐴𝑒^(-𝐸_𝑎/𝑅𝑇)",
+    "MathCAT_Dictation": "k is equal to;  cap a times; e raised to the fraction with numerator;  cap e sub a; and denominator  cap r  cap t; power",
+    "MathCAT_Simple": "k equals;  cap a times; e raised to the fraction with numerator;  cap e sub a; and denominator  cap r  cap t; power"
+  },
+  {
+    "id": 1402,
+    "UnicodeMath": "1/𝜆=𝑅_𝐻 (1/𝑛₁²-1/𝑛₂²)",
+    "MathCAT_Dictation": "1 over lambda is equal to;  cap r sub  cap h; open paren; the fraction with numerator 1; and denominator n sub 1, squared; minus; the fraction with numerator 1; and denominator n sub 2, squared; close paren",
+    "MathCAT_Simple": "1 over lambda equals;  cap r sub  cap h; open; the fraction with numerator 1; and denominator n 1, squared; minus, the fraction with numerator 1; and denominator n 2, squared; close"
+  },
+  {
+    "id": 1403,
+    "UnicodeMath": "𝐸=ℎ𝑓=ℎ𝑐/𝜆",
+    "MathCAT_Dictation": "cap e is equal to, planck constant f, is equal to; the fraction with numerator; planck constant c; and denominator lambda",
+    "MathCAT_Simple": "cap e equals planck constant f, equals; the fraction with numerator; planck constant c; and denominator lambda"
+  },
+  {
+    "id": 1404,
+    "UnicodeMath": "𝐸_𝑛=-13.6eV/𝑛²",
+    "MathCAT_Dictation": "cap e sub n; is equal to; negative the fraction with numerator; 13.6 e  cap v; and denominator n squared",
+    "MathCAT_Simple": "cap e sub n; equals; negative the fraction with numerator; 13.6 e  cap v; and denominator n squared"
+  },
+  {
+    "id": 1405,
+    "UnicodeMath": "𝑝²+2𝑝𝑞+𝑞²=1",
+    "MathCAT_Dictation": "p squared plus 2 p q, plus q squared; is equal to 1",
+    "MathCAT_Simple": "p squared plus 2 p q, plus q squared; equals 1"
+  },
+  {
+    "id": 1406,
+    "UnicodeMath": "ⅆ𝑁/ⅆ𝑡=𝑟𝑁(1-𝑁/𝐾)",
+    "MathCAT_Dictation": "derivative of 1 comma,  cap n comma, t; is equal to; r  cap n times, open paren, 1 minus  cap n over  cap k, close paren",
+    "MathCAT_Simple": "derivative 1 comma,  cap n comma, t; equals; r  cap n times, open, 1 minus  cap n over  cap k, close"
+  },
+  {
+    "id": 1407,
+    "UnicodeMath": "𝑣=𝑉_(max⁡)[𝑆]/(𝐾_𝑚+[𝑆])",
+    "MathCAT_Dictation": "v is equal to; the fraction with numerator;  cap v sub, open paren max of close paren; times  cap s  end sub; and denominator  cap k sub m, plus  cap s",
+    "MathCAT_Simple": "v equals; the fraction with numerator;  cap v sub, open max close, times  cap s  end sub; and denominator  cap k sub m, plus  cap s"
+  },
+  {
+    "id": 1408,
+    "UnicodeMath": "𝑁(𝑡)=𝑁₀𝑒^𝑟𝑡",
+    "MathCAT_Dictation": "cap n of t, is equal to;  cap n sub 0, times e raised to the r t power",
+    "MathCAT_Simple": "cap n t equals,  cap n 0, times e raised to the r t power"
+  },
+  {
+    "id": 1409,
+    "UnicodeMath": "𝐼=𝑃𝑟𝑡",
+    "MathCAT_Dictation": "cap i is equal to,  cap p r t",
+    "MathCAT_Simple": "cap i equals  cap p r t"
+  },
+  {
+    "id": 1410,
+    "UnicodeMath": "𝐴=𝑃(1+𝑟/𝑛)^𝑛𝑡",
+    "MathCAT_Dictation": "cap a is equal to;  cap p times; open paren, 1 plus r over n, close paren raised to the n t power",
+    "MathCAT_Simple": "cap a equals;  cap p times; open 1 plus r over n, close raised to the n t power"
+  },
+  {
+    "id": 1411,
+    "UnicodeMath": "𝐴=𝑃𝑒^𝑟𝑡",
+    "MathCAT_Dictation": "cap a is equal to,  cap p times e raised to the r t power",
+    "MathCAT_Simple": "cap a equals,  cap p times e raised to the r t power"
+  },
+  {
+    "id": 1412,
+    "UnicodeMath": "𝐹𝑉=𝑃𝑉(1+𝑟)^𝑛",
+    "MathCAT_Dictation": "cap f  cap v, is equal to;  cap p  cap v times, open paren 1 plus r, close paren to the n-th power",
+    "MathCAT_Simple": "cap f  cap v, equals;  cap p  cap v times, open 1 plus r close to the n-th power"
+  },
+  {
+    "id": 1413,
+    "UnicodeMath": "𝑃𝑉=𝐹𝑉/(1+𝑟)^𝑛",
+    "MathCAT_Dictation": "cap p  cap v, is equal to; the fraction with numerator;  cap f  cap v; and denominator open paren 1 plus r, close paren to the n-th power",
+    "MathCAT_Simple": "cap p  cap v, equals; the fraction with numerator;  cap f  cap v; and denominator open 1 plus r close to the n-th power"
+  },
+  {
+    "id": 1414,
+    "UnicodeMath": "𝑃𝑉=𝑃𝑀𝑇⋅(1-(1+𝑟)^-𝑛)/𝑟",
+    "MathCAT_Dictation": "cap p  cap v, is equal to; ?????? times; the fraction with numerator; 1 minus; open paren 1 plus r, close paren raised to the negative n power; and denominator r",
+    "MathCAT_Simple": "cap p  cap v, equals; ?????? times; the fraction with numerator; 1 minus, open 1 plus r close raised to the negative n power; and denominator r"
+  },
+  {
+    "id": 1415,
+    "UnicodeMath": "𝐹𝑉=𝑃𝑀𝑇⋅((1+𝑟)^𝑛-1)/𝑟",
+    "MathCAT_Dictation": "cap f  cap v, is equal to; ?????? times; the fraction with numerator; open paren 1 plus r, close paren to the n-th power; minus 1; and denominator r",
+    "MathCAT_Simple": "cap f  cap v, equals; ?????? times; the fraction with numerator; open 1 plus r close to the n-th power; minus 1; and denominator r"
+  },
+  {
+    "id": 1416,
+    "UnicodeMath": "𝑃𝑉=𝑃𝑀𝑇/𝑟",
+    "MathCAT_Dictation": "cap p  cap v, is equal to; the fraction with numerator; ??????; and denominator r",
+    "MathCAT_Simple": "cap p  cap v, equals, the fraction with numerator; ??????; and denominator r"
+  },
+  {
+    "id": 1417,
+    "UnicodeMath": "𝑀=𝑃⋅𝑟(1+𝑟)^𝑛/((1+𝑟)^𝑛-1)",
+    "MathCAT_Dictation": "cap m is equal to;  cap p times; the fraction with numerator; r times, open paren 1 plus r, close paren to the n-th power; and denominator open paren 1 plus r, close paren to the n-th power; minus 1",
+    "MathCAT_Simple": "cap m equals;  cap p times; the fraction with numerator; r times, open 1 plus r close to the n-th power; and denominator open 1 plus r close to the n-th power; minus 1"
+  },
+  {
+    "id": 1418,
+    "UnicodeMath": "\"EAR\"=(1+𝑟/𝑛)^𝑛-1",
+    "MathCAT_Dictation": "EAR is equal to; open paren, 1 plus r over n, close paren to the n-th power; minus 1",
+    "MathCAT_Simple": "EAR equals; open 1 plus r over n, close to the n-th power; minus 1"
+  },
+  {
+    "id": 1419,
+    "UnicodeMath": "\"NPV\"=∑_(𝑡=0)^𝑛 𝐶𝐹_𝑡/(1+𝑟)^𝑡",
+    "MathCAT_Dictation": "NPV is equal to; the sum from t is equal to 0, to n of; the fraction with numerator;  cap c  cap f sub t; and denominator open paren 1 plus r, close paren to the t-th power",
+    "MathCAT_Simple": "NPV equals; sum from t equals 0, to n of; the fraction with numerator;  cap c  cap f sub t; and denominator open 1 plus r close to the t-th power"
+  },
+  {
+    "id": 1420,
+    "UnicodeMath": "\"CAGR\"=(𝑉_𝑓/𝑉_𝑖)^(1/𝑛)-1",
+    "MathCAT_Dictation": "CAGR is equal to; open paren; the fraction with numerator;  cap v sub f; and denominator  cap v sub i; close paren raised to the 1 over n power; minus 1",
+    "MathCAT_Simple": "CAGR equals; open; the fraction with numerator;  cap v sub f; and denominator  cap v sub i; close raised to the 1 over n power; minus 1"
+  },
+  {
+    "id": 1421,
+    "UnicodeMath": "𝑡=ln⁡2/𝑟",
+    "MathCAT_Dictation": "t is equal to l n 2 over r",
+    "MathCAT_Simple": "t equals l n 2 over r"
+  },
+  {
+    "id": 1422,
+    "UnicodeMath": "𝑡≈72/𝑟",
+    "MathCAT_Dictation": "t is approximately equal to, 72 over r",
+    "MathCAT_Simple": "t  approximately equal to, 72 over r"
+  },
+  {
+    "id": 1423,
+    "UnicodeMath": "(1+𝑟_𝑛)=(1+𝑟_𝑟)(1+𝜋)",
+    "MathCAT_Dictation": "open paren, 1 plus r sub n; close paren; is equal to; open paren, 1 plus r sub r; close paren; times, open paren 1 plus pi, close paren",
+    "MathCAT_Simple": "open 1 plus r sub n; close; equals; open 1 plus r sub r; close; times, open 1 plus pi close"
+  },
+  {
+    "id": 1424,
+    "UnicodeMath": "𝐷=(𝐶-𝑆)/𝑛",
+    "MathCAT_Dictation": "cap d is equal to; the fraction with numerator;  cap c minus  cap s; and denominator n",
+    "MathCAT_Simple": "cap d equals; the fraction with numerator;  cap c minus  cap s; and denominator n"
+  },
+  {
+    "id": 1425,
+    "UnicodeMath": "\"ROI\"=(𝑉_𝑓-𝑉_𝑖)/𝑉_𝑖",
+    "MathCAT_Dictation": "ROI is equal to; the fraction with numerator;  cap v sub f, minus  cap v sub i; and denominator  cap v sub i",
+    "MathCAT_Simple": "ROI equals; the fraction with numerator;  cap v sub f, minus  cap v sub i; and denominator  cap v sub i"
+  },
+  {
+    "id": 1426,
+    "UnicodeMath": "𝑃=∑_(𝑡=1)^𝑛 𝐶/(1+𝑟)^𝑡+𝐹/(1+𝑟)^𝑛",
+    "MathCAT_Dictation": "cap p is equal to; the sum from t is equal to 1, to n of; the fraction with numerator  cap c; and denominator open paren 1 plus r, close paren to the t-th power; plus; the fraction with numerator  cap f; and denominator open paren 1 plus r, close paren to the n-th power",
+    "MathCAT_Simple": "cap p equals; sum from t equals 1, to n of; the fraction with numerator  cap c; and denominator open 1 plus r close to the t-th power; plus; the fraction with numerator  cap f; and denominator open 1 plus r close to the n-th power"
+  },
+  {
+    "id": 1427,
+    "UnicodeMath": "𝜀_𝑑=𝛥𝑄\\/𝑄/𝛥𝑃\\/𝑃",
+    "MathCAT_Dictation": "epsilon sub d; is equal to; the fraction with numerator;  cap delta,  cap q divided by  cap q; and denominator  cap delta,  cap p divided by  cap p",
+    "MathCAT_Simple": "epsilon sub d; equals; the fraction with numerator;  cap delta,  cap q divided by  cap q; and denominator  cap delta,  cap p divided by  cap p"
+  },
+  {
+    "id": 1428,
+    "UnicodeMath": "𝑀𝐶=𝑑𝑇𝐶/𝑑𝑄",
+    "MathCAT_Dictation": "cap m  cap c, is equal to; derivative of 1 comma,  cap t comma,  cap q",
+    "MathCAT_Simple": "cap m  cap c, equals, derivative 1 comma,  cap t comma,  cap q"
+  },
+  {
+    "id": 1429,
+    "UnicodeMath": "𝑀𝑅=𝑑𝑇𝑅/𝑑𝑄",
+    "MathCAT_Dictation": "cap m  cap r, is equal to; derivative of 1 comma,  cap t comma,  cap q",
+    "MathCAT_Simple": "cap m  cap r, equals, derivative 1 comma,  cap t comma,  cap q"
+  },
+  {
+    "id": 1430,
+    "UnicodeMath": "𝑀𝑅=𝑀𝐶",
+    "MathCAT_Dictation": "cap m  cap r, is equal to,  cap m  cap c",
+    "MathCAT_Simple": "cap m  cap r, equals  cap m  cap c"
+  },
+  {
+    "id": 1431,
+    "UnicodeMath": "𝐶𝑆=∫_0^(𝑄^*) 𝐷(𝑄)ⅆ𝑄-𝑃^* 𝑄^*",
+    "MathCAT_Dictation": "cap c  cap s, is equal to; the integral from 0, to  cap q superscript times, of;  cap d of  cap q, double-struck italic d,  cap q; minus;  cap p superscript times;  cap q superscript times",
+    "MathCAT_Simple": "cap c  cap s, equals; integral from 0, to  cap q super times, of;  cap d  cap q, double-struck italic d,  cap q; minus,  cap p super times;  cap q super times"
+  },
+  {
+    "id": 1432,
+    "UnicodeMath": "𝐶=𝑆_0 𝑁(𝑑₁)-𝐾 𝑒^-𝑟𝑇 𝑁(𝑑₂)",
+    "MathCAT_Dictation": "cap c is equal to;  cap s sub 0;  cap n of, open paren d sub 1, close paren; minus;  cap k times, e raised to the negative r  cap t power;  cap n of, open paren d sub 2, close paren",
+    "MathCAT_Simple": "cap c equals;  cap s 0;  cap n open d 1, close; minus;  cap k times, e raised to the negative r  cap t power;  cap n open d 2, close"
+  },
+  {
+    "id": 1433,
+    "UnicodeMath": "𝑍_𝐶=1/𝑗𝜔𝐶",
+    "MathCAT_Dictation": "cap z sub  cap c; is equal to; the fraction with numerator 1; and denominator ??????",
+    "MathCAT_Simple": "cap z sub  cap c; equals, the fraction with numerator 1; and denominator ??????"
+  },
+  {
+    "id": 1434,
+    "UnicodeMath": "𝑍_𝐿=𝑗𝜔 𝐿",
+    "MathCAT_Dictation": "cap z sub  cap l; is equal to ??????",
+    "MathCAT_Simple": "cap z sub  cap l; equals ??????"
+  },
+  {
+    "id": 1435,
+    "UnicodeMath": "𝑓_0=1/2𝜋 √(𝐿𝐶)",
+    "MathCAT_Dictation": "f sub 0, is equal to; the fraction with numerator 1; and denominator 2 pi; times, the square root of  cap l  cap c",
+    "MathCAT_Simple": "f 0, equals; the fraction with numerator 1; and denominator 2 pi; times, square root,  cap l  cap c"
+  },
+  {
+    "id": 1436,
+    "UnicodeMath": "𝜏=𝑅𝐶",
+    "MathCAT_Dictation": "tau is equal to,  cap r  cap c",
+    "MathCAT_Simple": "tau equals  cap r  cap c"
+  },
+  {
+    "id": 1437,
+    "UnicodeMath": "𝜏=𝐿/𝑅",
+    "MathCAT_Dictation": "tau is equal to  cap l over  cap r",
+    "MathCAT_Simple": "tau equals  cap l over  cap r"
+  },
+  {
+    "id": 1438,
+    "UnicodeMath": "𝑉_(\"rms\")=𝑉_(\"peak\")/√2",
+    "MathCAT_Dictation": "cap v sub rms  end sub; is equal to; the fraction with numerator;  cap v sub peak  end sub; and denominator the square root of 2",
+    "MathCAT_Simple": "cap v sub rms  end sub; equals; the fraction with numerator;  cap v sub peak  end sub; and denominator square root, 2"
+  },
+  {
+    "id": 1439,
+    "UnicodeMath": "1/𝐶_𝑒𝑞=1/𝐶₁+1/𝐶₂",
+    "MathCAT_Dictation": "the fraction with numerator 1; and denominator  cap c sub e q  end sub; is equal to; the fraction with numerator 1; and denominator  cap c sub 1; plus, the fraction with numerator 1; and denominator  cap c sub 2",
+    "MathCAT_Simple": "the fraction with numerator 1; and denominator  cap c sub e q  end sub; equals; the fraction with numerator 1; and denominator  cap c 1; plus, the fraction with numerator 1; and denominator  cap c 2"
+  },
+  {
+    "id": 1440,
+    "UnicodeMath": "𝐶_𝑒𝑞=𝐶₁+𝐶₂",
+    "MathCAT_Dictation": "cap c sub e q  end sub; is equal to,  cap c sub 1, plus  cap c sub 2",
+    "MathCAT_Simple": "cap c sub e q  end sub; equals,  cap c 1, plus  cap c 2"
+  },
+  {
+    "id": 1441,
+    "UnicodeMath": "𝑓_𝑠≥2 𝑓_\"max\"",
+    "MathCAT_Dictation": "f sub s; is greater than or equal to; 2 f sub max  end sub",
+    "MathCAT_Simple": "f sub s;  greater than or equal to; 2 f sub max  end sub"
+  },
+  {
+    "id": 1442,
+    "UnicodeMath": "(𝑓*𝑔)(𝑡)=∫_-∞^∞ 𝑓(𝜏)𝑔(𝑡-𝜏)ⅆ𝜏",
+    "MathCAT_Dictation": "open paren f times g, close paren; times t; is equal to; the integral from negative infinity, to infinity of; f of tau g, open paren t minus tau, close paren; times double-struck italic d, tau",
+    "MathCAT_Simple": "open f times g close, times t; equals; integral from negative infinity, to infinity of; f tau g, open t minus tau, close; times double-struck italic d, tau"
+  },
+  {
+    "id": 1443,
+    "UnicodeMath": "𝑋[𝑘]=∑_(𝑛=0)^(𝑁-1) 𝑥[𝑛] 𝑒^-2𝜋𝑗𝑘𝑛\\/𝑁",
+    "MathCAT_Dictation": "cap x of k, is equal to; the sum from n is equal to 0, to  cap n minus 1 of; x of n; times; e raised to the negative 2, ???????? divided by  cap n power",
+    "MathCAT_Simple": "cap x k equals; sum from n equals 0, to  cap n minus 1 of; x n; times; e raised to the negative 2, ???????? divided by  cap n power"
+  },
+  {
+    "id": 1444,
+    "UnicodeMath": "𝑆𝑁𝑅=10 log_10 (𝑃_(\"signal\")/𝑃_(\"noise\"))",
+    "MathCAT_Dictation": "?????? is equal to; 10; the log base 10, of; open paren; the fraction with numerator;  cap p sub signal  end sub; and denominator  cap p sub noise  end sub; close paren",
+    "MathCAT_Simple": "?????? equals; 10; log base 10; open; the fraction with numerator;  cap p sub signal  end sub; and denominator  cap p sub noise  end sub; close"
+  },
+  {
+    "id": 1445,
+    "UnicodeMath": "𝐶=𝐵 log_2 (1+𝑆/𝑁)",
+    "MathCAT_Dictation": "cap c is equal to;  cap b; the log base 2, of, open paren, 1 plus  cap s over  cap n, close paren",
+    "MathCAT_Simple": "cap c equals;  cap b; log base 2; open 1 plus  cap s over  cap n, close"
+  },
+  {
+    "id": 1446,
+    "UnicodeMath": "𝜎=𝐹/𝐴",
+    "MathCAT_Dictation": "sigma is equal to  cap f over  cap a",
+    "MathCAT_Simple": "sigma equals  cap f over  cap a"
+  },
+  {
+    "id": 1447,
+    "UnicodeMath": "𝜀=𝛿/𝐿",
+    "MathCAT_Dictation": "epsilon is equal to delta over  cap l",
+    "MathCAT_Simple": "epsilon equals delta over  cap l"
+  },
+  {
+    "id": 1448,
+    "UnicodeMath": "𝐸=𝜎/𝜀",
+    "MathCAT_Dictation": "cap e is equal to sigma over epsilon",
+    "MathCAT_Simple": "cap e equals sigma over epsilon"
+  },
+  {
+    "id": 1449,
+    "UnicodeMath": "𝜏=𝑉/𝐴",
+    "MathCAT_Dictation": "tau is equal to  cap v over  cap a",
+    "MathCAT_Simple": "tau equals  cap v over  cap a"
+  },
+  {
+    "id": 1450,
+    "UnicodeMath": "𝐺=𝜏/𝛾",
+    "MathCAT_Dictation": "cap g is equal to tau over gamma",
+    "MathCAT_Simple": "cap g equals tau over gamma"
+  },
+  {
+    "id": 1451,
+    "UnicodeMath": "𝜈=-𝜀_(\"lateral\")/𝜀_(\"axial\")",
+    "MathCAT_Dictation": "nu is equal to; negative the fraction with numerator; epsilon sub lateral  end sub; and denominator epsilon sub axial  end sub",
+    "MathCAT_Simple": "nu equals; negative the fraction with numerator; epsilon sub lateral  end sub; and denominator epsilon sub axial  end sub"
+  },
+  {
+    "id": 1452,
+    "UnicodeMath": "𝜎=𝑀𝑐/𝐼",
+    "MathCAT_Dictation": "sigma is equal to; the fraction with numerator;  cap m c; and denominator  cap i",
+    "MathCAT_Simple": "sigma equals; the fraction with numerator;  cap m c; and denominator  cap i"
+  },
+  {
+    "id": 1453,
+    "UnicodeMath": "𝜏=𝑇𝑐/𝐽",
+    "MathCAT_Dictation": "tau is equal to; the fraction with numerator;  cap t c; and denominator  cap j",
+    "MathCAT_Simple": "tau equals; the fraction with numerator;  cap t c; and denominator  cap j"
+  },
+  {
+    "id": 1454,
+    "UnicodeMath": "𝜎_𝑇=𝐸𝛼Δ𝑇",
+    "MathCAT_Dictation": "sigma sub  cap t; is equal to,  cap e alpha  cap delta  cap t",
+    "MathCAT_Simple": "sigma sub  cap t; equals,  cap e alpha  cap delta  cap t"
+  },
+  {
+    "id": 1455,
+    "UnicodeMath": "𝑥_(𝑛+1)=𝑥_𝑛-𝑓(𝑥_𝑛)/𝑓'(𝑥_𝑛)",
+    "MathCAT_Dictation": "x sub n plus 1  end sub; is equal to; x sub n, minus; the fraction with numerator; f of, open paren x sub n, close paren; and denominator f prime, of, open paren x sub n, close paren",
+    "MathCAT_Simple": "x sub n plus 1  end sub; equals; x sub n, minus; the fraction with numerator; f, open x sub n, close; and denominator f prime; open x sub n, close"
+  },
+  {
+    "id": 1456,
+    "UnicodeMath": "∫_𝑎^𝑏 𝑓(𝑥)ⅆ𝑥≈ℎ/2 [𝑓(𝑥₀)+2𝑓(𝑥₁)+⋯+2𝑓(𝑥_(𝑛-1))+𝑓(𝑥_𝑛)]",
+    "MathCAT_Dictation": "the integral from a, to b of; f of x double-struck italic d, x; is approximately equal to; planck constant over 2, times; open bracket; f of, open paren x sub 0, close paren; plus, 2, f of, open paren x sub 1, close paren; plus dot dot dot plus; 2; f of, open paren, x sub n minus 1  end sub; close paren; plus, f of, open paren x sub n, close paren; close bracket",
+    "MathCAT_Simple": "integral from a, to b of; f x double-struck italic d, x;  approximately equal to; planck constant over 2, times; open bracket; f open x 0, close; plus, 2, f open x 1, close; plus dot dot dot plus; 2; f, open, x sub n minus 1  end sub; close; plus, f, open x sub n, close; close bracket"
+  },
+  {
+    "id": 1457,
+    "UnicodeMath": "∫_𝑎^𝑏 𝑓(𝑥)ⅆ𝑥≈ℎ/3 [𝑓(𝑥₀)+4𝑓(𝑥₁)+2𝑓(𝑥₂)+⋯+4𝑓(𝑥_(𝑛-1))+𝑓(𝑥_𝑛)]",
+    "MathCAT_Dictation": "the integral from a, to b of; f of x double-struck italic d, x; is approximately equal to; planck constant over 3, times; open bracket; f of, open paren x sub 0, close paren; plus, 4, f of, open paren x sub 1, close paren; plus, 2, f of, open paren x sub 2, close paren; plus dot dot dot plus; 4; f of, open paren, x sub n minus 1  end sub; close paren; plus, f of, open paren x sub n, close paren; close bracket",
+    "MathCAT_Simple": "integral from a, to b of; f x double-struck italic d, x;  approximately equal to; planck constant over 3, times; open bracket; f open x 0, close; plus, 4, f open x 1, close; plus, 2, f open x 2, close; plus dot dot dot plus; 4; f, open, x sub n minus 1  end sub; close; plus, f, open x sub n, close; close bracket"
+  },
+  {
+    "id": 1458,
+    "UnicodeMath": "𝑦_(𝑛+1)=𝑦_𝑛+ℎ𝑓(𝑥_𝑛,𝑦_𝑛)",
+    "MathCAT_Dictation": "y sub n plus 1  end sub; is equal to; y sub n, plus; planck constant f; open paren, x sub n, comma, y sub n; close paren",
+    "MathCAT_Simple": "y sub n plus 1  end sub; equals; y sub n, plus; planck constant f; open, x sub n, comma, y sub n; close"
+  },
+  {
+    "id": 1459,
+    "UnicodeMath": "𝑓'(𝑥)≈(𝑓(𝑥+ℎ)-𝑓(𝑥))/ℎ",
+    "MathCAT_Dictation": "f prime, of x, is approximately equal to; the fraction with numerator; f, open paren, x plus planck constant, close paren; minus f of x; and denominator planck constant",
+    "MathCAT_Simple": "f prime, x,  approximately equal to; the fraction with numerator; f, open x plus planck constant, close; minus f x; and denominator planck constant"
+  },
+  {
+    "id": 1460,
+    "UnicodeMath": "𝑓'(𝑥)≈(𝑓(𝑥+ℎ)-𝑓(𝑥-ℎ))/2ℎ",
+    "MathCAT_Dictation": "f prime, of x, is approximately equal to; the fraction with numerator; f, open paren, x plus planck constant, close paren; minus; f, open paren, x minus planck constant, close paren; and denominator 2 planck constant",
+    "MathCAT_Simple": "f prime, x,  approximately equal to; the fraction with numerator; f, open x plus planck constant, close; minus, f, open x minus planck constant, close; and denominator 2 planck constant"
+  },
+  {
+    "id": 1461,
+    "UnicodeMath": "𝑦_(𝑛+1)=𝑦_𝑛+ℎ/6 (𝑘₁+2𝑘₂+2𝑘₃+𝑘₄)",
+    "MathCAT_Dictation": "y sub n plus 1  end sub; is equal to; y sub n, plus; planck constant over 6, times; open paren; k sub 1, plus 2 k sub 2; plus 2 k sub 3; plus k sub 4; close paren",
+    "MathCAT_Simple": "y sub n plus 1  end sub; equals; y sub n, plus; planck constant over 6, times; open; k 1, plus 2 k 2; plus 2 k 3; plus k 4; close"
+  },
+  {
+    "id": 1462,
+    "UnicodeMath": "2×2⒨",
+    "MathCAT_Dictation": "the 2 by 2 matrix; row 1; box, box; row 2; box, box",
+    "MathCAT_Simple": "the 2 by 2 matrix; row 1; box, box; row 2; box, box"
+  },
+  {
+    "id": 1463,
+    "UnicodeMath": "3×3⒨",
+    "MathCAT_Dictation": "the 3 by 3 matrix; row 1; box, box, box; row 2; box, box, box; row 3; box, box, box",
+    "MathCAT_Simple": "the 3 by 3 matrix; row 1; box, box, box; row 2; box, box, box; row 3; box, box, box"
+  },
+  {
+    "id": 1464,
+    "UnicodeMath": "2×2ⓢ",
+    "MathCAT_Dictation": "the 2 by 2 matrix; row 1; box, box; row 2; box, box",
+    "MathCAT_Simple": "the 2 by 2 matrix; row 1; box, box; row 2; box, box"
+  },
+  {
+    "id": 1465,
+    "UnicodeMath": "3×3ⓢ",
+    "MathCAT_Dictation": "the 3 by 3 matrix; row 1; box, box, box; row 2; box, box, box; row 3; box, box, box",
+    "MathCAT_Simple": "the 3 by 3 matrix; row 1; box, box, box; row 2; box, box, box; row 3; box, box, box"
+  },
+  {
+    "id": 1466,
+    "UnicodeMath": "2×2⒱",
+    "MathCAT_Dictation": "the 2 by 2 determinant; row 1; box, box; row 2; box, box",
+    "MathCAT_Simple": "the 2 by 2 determinant; row 1; box, box; row 2; box, box"
+  },
+  {
+    "id": 1467,
+    "UnicodeMath": "3×3⒱",
+    "MathCAT_Dictation": "the 3 by 3 determinant; row 1; box, box, box; row 2; box, box, box; row 3; box, box, box",
+    "MathCAT_Simple": "the 3 by 3 determinant; row 1; box, box, box; row 2; box, box, box; row 3; box, box, box"
+  },
+  {
+    "id": 1468,
+    "UnicodeMath": "∬_𝐷 𝑓(𝑥,𝑦)ⅆ𝐴",
+    "MathCAT_Dictation": "the double integral over  cap d of; f, open paren x comma, y, close paren; times double-struck italic d,  cap a",
+    "MathCAT_Simple": "double integral over  cap d of; f, open x comma, y, close; times double-struck italic d,  cap a"
+  },
+  {
+    "id": 1469,
+    "UnicodeMath": "Γ(𝑧)=∫_0^∞ 𝑡^(𝑧-1) 𝑒^−𝑡 ⅆ𝑡",
+    "MathCAT_Dictation": "cap gamma of z, is equal to; the integral from 0, to infinity of; t raised to the z minus 1 power, e raised to the negative t power, double-struck italic d, t",
+    "MathCAT_Simple": "cap gamma z, equals; integral from 0, to infinity of; t raised to the z minus 1 power, e raised to the negative t power, double-struck italic d, t"
+  },
+  {
+    "id": 1470,
+    "UnicodeMath": "∫_-∞^∞ e^-𝑥² ⅆ𝑥=√𝜋",
+    "MathCAT_Dictation": "the integral from negative infinity, to infinity of; e raised to the negative x squared power, double-struck italic d, x; is equal to, the square root of pi",
+    "MathCAT_Simple": "integral from negative infinity, to infinity of; e raised to the negative x squared power, double-struck italic d, x; equals square root, pi"
+  },
+  {
+    "id": 1471,
+    "UnicodeMath": "𝑒=lim_(𝑛→∞) (1+1/𝑛)^𝑛",
+    "MathCAT_Dictation": "e is equal to; the limit as n approaches infinity, of, open paren, 1 plus 1 over n, close paren to the n-th power",
+    "MathCAT_Simple": "e equals; limit as n approaches infinity; open 1 plus 1 over n, close to the n-th power"
+  },
+  {
+    "id": 1472,
+    "UnicodeMath": "1/2𝜋 ∫_0^2𝜋 ⅆ𝜃/(𝑎+𝑏 sin⁡𝜃)=1/√(𝑎²−𝑏²)",
+    "MathCAT_Dictation": "the fraction with numerator 1; and denominator 2 pi; the integral from 0, to 2 pi of; the fraction with numerator; double-struck italic d, theta; and denominator a plus, b sine theta; is equal to; the fraction with numerator 1; and denominator the square root of a squared minus b squared",
+    "MathCAT_Simple": "the fraction with numerator 1; and denominator 2 pi; integral from 0, to 2 pi of; the fraction with numerator; double-struck italic d, theta; and denominator a plus, b sine theta; equals; the fraction with numerator 1; and denominator square root, a squared minus b squared"
+  },
+  {
+    "id": 1473,
+    "UnicodeMath": "∭_𝑉 𝑓(𝑟,𝜃,𝜙)𝑟ⅆ𝑟ⅆ𝜃ⅆ𝜙",
+    "MathCAT_Dictation": "the triple integral over  cap v of; f; open paren, r comma, theta comma, phi; close paren; times ?????????????????",
+    "MathCAT_Simple": "triple integral over  cap v of; f; open, r comma, theta comma, phi; close; times ?????????????????"
+  }
+]

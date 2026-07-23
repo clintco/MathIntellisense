@@ -1,0 +1,344 @@
+[
+  {
+    "id": 1000,
+    "UnicodeMath": "𝑎^𝑚⋅𝑎^𝑛=𝑎^(𝑚+𝑛)",
+    "MathCAT_Dictation": "a to the m-th power, times a to the n-th power; is equal to, a raised to the m plus n power",
+    "MathCAT_Simple": "a to the m-th power, times a to the n-th power; equals, a raised to the m plus n power"
+  },
+  {
+    "id": 1001,
+    "UnicodeMath": "𝑎^𝑚/𝑎^𝑛=𝑎^(𝑚-𝑛)",
+    "MathCAT_Dictation": "the fraction with numerator; a to the m-th power; and denominator a to the n-th power; is equal to, a raised to the m minus n power",
+    "MathCAT_Simple": "the fraction with numerator; a to the m-th power; and denominator a to the n-th power; equals, a raised to the m minus n power"
+  },
+  {
+    "id": 1002,
+    "UnicodeMath": "(𝑎^𝑚)^𝑛=𝑎^𝑚𝑛",
+    "MathCAT_Dictation": "open paren a to the m-th power, close paren to the n-th power; is equal to, a raised to the m n power",
+    "MathCAT_Simple": "open a to the m-th power, close to the n-th power; equals, a raised to the m n power"
+  },
+  {
+    "id": 1003,
+    "UnicodeMath": "(𝑎𝑏)^𝑛=𝑎^𝑛 𝑏^𝑛",
+    "MathCAT_Dictation": "open paren a b close paren to the n-th power; is equal to, a to the n-th power, b to the n-th power",
+    "MathCAT_Simple": "open a b close to the n-th power; equals, a to the n-th power, b to the n-th power"
+  },
+  {
+    "id": 1004,
+    "UnicodeMath": "(𝑎/𝑏)^𝑛=𝑎^𝑛/𝑏^𝑛",
+    "MathCAT_Dictation": "open paren a over b close paren to the n-th power; is equal to; the fraction with numerator; a to the n-th power; and denominator b to the n-th power",
+    "MathCAT_Simple": "open a over b close to the n-th power; equals; the fraction with numerator; a to the n-th power; and denominator b to the n-th power"
+  },
+  {
+    "id": 1005,
+    "UnicodeMath": "𝑎^-𝑛=1/𝑎^𝑛",
+    "MathCAT_Dictation": "a raised to the negative n power, is equal to; the fraction with numerator 1; and denominator a to the n-th power",
+    "MathCAT_Simple": "a raised to the negative n power, equals; the fraction with numerator 1; and denominator a to the n-th power"
+  },
+  {
+    "id": 1006,
+    "UnicodeMath": "𝑎^𝑚\\/𝑛=√(𝑛&𝑎^𝑚)",
+    "MathCAT_Dictation": "a raised to the m divided by n power; is equal to, the n-th root of a to the m-th power",
+    "MathCAT_Simple": "a raised to the m divided by n power; equals, n-th root a to the m-th power"
+  },
+  {
+    "id": 1007,
+    "UnicodeMath": "log_𝑏 (𝑥𝑦)=log_𝑏 𝑥+log_𝑏 𝑦",
+    "MathCAT_Dictation": "the log base b, of, open paren x y close paren; is equal to; the log base b, of x, plus the log base b, of y",
+    "MathCAT_Simple": "log base b; open x y close; equals, log base b, x, plus log base b, y"
+  },
+  {
+    "id": 1008,
+    "UnicodeMath": "log_𝑏 (𝑥/𝑦)=log_𝑏 𝑥-log_𝑏 𝑦",
+    "MathCAT_Dictation": "the log base b, of, open paren x over y close paren; is equal to; the log base b, of x, minus the log base b, of y",
+    "MathCAT_Simple": "log base b, open x over y close; equals, log base b, x, minus log base b, y"
+  },
+  {
+    "id": 1009,
+    "UnicodeMath": "log_𝑏 (𝑥^𝑛)=𝑛 log_𝑏 𝑥",
+    "MathCAT_Dictation": "the log base b, of, open paren x to the n-th power, close paren; is equal to, n the log base b, of x",
+    "MathCAT_Simple": "log base b; open x to the n-th power, close; equals, n log base b, x"
+  },
+  {
+    "id": 1010,
+    "UnicodeMath": "𝑏^(log_𝑏 𝑥)=𝑥",
+    "MathCAT_Dictation": "b raised to the the log base b, of x power; is equal to x",
+    "MathCAT_Simple": "b raised to the log base b, x power; equals x"
+  },
+  {
+    "id": 1011,
+    "UnicodeMath": "log_𝑏⁡(𝑥)=ln⁡𝑥/ln⁡𝑏",
+    "MathCAT_Dictation": "the log base b of x; is equal to, l n x over l n b",
+    "MathCAT_Simple": "log base b x; equals, l n x over l n b"
+  },
+  {
+    "id": 1012,
+    "UnicodeMath": "(𝑎+𝑏)²=𝑎²+2𝑎𝑏+𝑏²; (𝑎-𝑏)²=𝑎²-2𝑎𝑏+𝑏²",
+    "MathCAT_Dictation": "open paren a plus b, close paren squared; is equal to; a squared plus 2 a b, plus b squared; semicolon; open paren a minus b, close paren squared; is equal to; a squared minus 2 a b, plus b squared",
+    "MathCAT_Simple": "open a plus b close squared; equals; a squared plus 2 a b, plus b squared; semicolon; open a minus b close squared; equals; a squared minus 2 a b, plus b squared"
+  },
+  {
+    "id": 1013,
+    "UnicodeMath": "𝑥²+𝑏𝑥+(𝑏/2)²=(𝑥+𝑏/2)²",
+    "MathCAT_Dictation": "x squared plus b x plus, open paren b over 2 close paren squared; is equal to; open paren, x plus b over 2, close paren squared",
+    "MathCAT_Simple": "x squared plus b x plus, open b over 2 close squared; equals, open x plus b over 2, close squared"
+  },
+  {
+    "id": 1014,
+    "UnicodeMath": "𝑦=𝑘𝑥",
+    "MathCAT_Dictation": "y is equal to k x",
+    "MathCAT_Simple": "y equals k x"
+  },
+  {
+    "id": 1015,
+    "UnicodeMath": "𝑦=𝑘/𝑥",
+    "MathCAT_Dictation": "y is equal to k over x",
+    "MathCAT_Simple": "y equals k over x"
+  },
+  {
+    "id": 1016,
+    "UnicodeMath": "𝑦=𝑘𝑥𝑧",
+    "MathCAT_Dictation": "y is equal to, k x z",
+    "MathCAT_Simple": "y equals k x z"
+  },
+  {
+    "id": 1017,
+    "UnicodeMath": "𝑑=𝑟𝑡",
+    "MathCAT_Dictation": "d is equal to r t",
+    "MathCAT_Simple": "d equals r t"
+  },
+  {
+    "id": 1018,
+    "UnicodeMath": "|𝑥-𝑎|=𝑏⇒𝑥=𝑎±𝑏",
+    "MathCAT_Dictation": "the absolute value of x minus a; is equal to, b right double arrow x, is equal to, a plus or minus b",
+    "MathCAT_Simple": "absolute value of x minus a; equals b right double arrow x, equals a plus or minus b"
+  },
+  {
+    "id": 1019,
+    "UnicodeMath": "𝑥=(-𝑏±√(𝑏²-4𝑎𝑐))/2𝑎",
+    "MathCAT_Dictation": "x is equal to; the fraction with numerator; negative b plus or minus; the square root of b squared minus 4 a c; and denominator 2 a",
+    "MathCAT_Simple": "x equals; the fraction with numerator; negative b plus or minus; square root, b squared minus 4 a c; and denominator 2 a"
+  },
+  {
+    "id": 1020,
+    "UnicodeMath": "𝑏²-4𝑎𝑐",
+    "MathCAT_Dictation": "b squared minus 4 a c",
+    "MathCAT_Simple": "b squared minus 4 a c"
+  },
+  {
+    "id": 1021,
+    "UnicodeMath": "𝑎²-𝑏²=(𝑎+𝑏)(𝑎-𝑏)",
+    "MathCAT_Dictation": "a squared minus b squared, is equal to; open paren a plus b, close paren; times, open paren a minus b, close paren",
+    "MathCAT_Simple": "a squared minus b squared, equals; open a plus b close, times, open a minus b close"
+  },
+  {
+    "id": 1022,
+    "UnicodeMath": "𝑎³+𝑏³=(𝑎+𝑏)(𝑎²-𝑎𝑏+𝑏²)",
+    "MathCAT_Dictation": "a cubed plus b cubed, is equal to; open paren a plus b, close paren; times; open paren, a squared minus a b plus b squared; close paren",
+    "MathCAT_Simple": "a cubed plus b cubed, equals; open a plus b close, times; open, a squared minus a b plus b squared; close"
+  },
+  {
+    "id": 1023,
+    "UnicodeMath": "𝑎³-𝑏³=(𝑎-𝑏)(𝑎²+𝑎𝑏+𝑏²)",
+    "MathCAT_Dictation": "a cubed minus b cubed, is equal to; open paren a minus b, close paren; times; open paren, a squared plus a b plus b squared; close paren",
+    "MathCAT_Simple": "a cubed minus b cubed, equals; open a minus b close, times; open, a squared plus a b plus b squared; close"
+  },
+  {
+    "id": 1024,
+    "UnicodeMath": "(𝑎+𝑏)^𝑛=∑_(𝑘=0)^𝑛 (𝑛¦𝑘) 𝑎^(𝑛-𝑘) 𝑏^𝑘",
+    "MathCAT_Dictation": "open paren a plus b, close paren to the n-th power; is equal to; the sum from k is equal to 0, to n of; n choose k; times, a raised to the n minus k power, b to the k-th power",
+    "MathCAT_Simple": "open a plus b close to the n-th power; equals; sum from k equals 0, to n of; n choose k; times, a raised to the n minus k power, b to the k-th power"
+  },
+  {
+    "id": 1025,
+    "UnicodeMath": "𝑆_𝑛=𝑎(1-𝑟^𝑛)/(1-𝑟)",
+    "MathCAT_Dictation": "cap s sub n; is equal to; the fraction with numerator; a; open paren, 1 minus r to the n-th power; close paren; and denominator 1 minus r",
+    "MathCAT_Simple": "cap s sub n; equals; the fraction with numerator; a, open, 1 minus r to the n-th power, close; and denominator 1 minus r"
+  },
+  {
+    "id": 1026,
+    "UnicodeMath": "𝑆=𝑎/(1-𝑟)",
+    "MathCAT_Dictation": "cap s is equal to; the fraction with numerator a; and denominator 1 minus r",
+    "MathCAT_Simple": "cap s equals, the fraction with numerator a; and denominator 1 minus r"
+  },
+  {
+    "id": 1027,
+    "UnicodeMath": "𝑆_𝑛=𝑛/2 (𝑎₁+𝑎_𝑛)",
+    "MathCAT_Dictation": "cap s sub n; is equal to; n over 2 times; open paren, a sub 1, plus a sub n; close paren",
+    "MathCAT_Simple": "cap s sub n; equals; n over 2 times, open, a 1, plus a sub n; close"
+  },
+  {
+    "id": 1028,
+    "UnicodeMath": "𝑎_𝑛=𝑎_1+(𝑛-1)𝑑",
+    "MathCAT_Dictation": "a sub n, is equal to; a sub 1, plus, open paren n minus 1, close paren; times d",
+    "MathCAT_Simple": "a sub n, equals; a 1, plus, open n minus 1 close, times d"
+  },
+  {
+    "id": 1029,
+    "UnicodeMath": "𝑎_𝑛=𝑎_1⋅𝑟^(𝑛-1)",
+    "MathCAT_Dictation": "a sub n, is equal to; a sub 1, times, r raised to the n minus 1 power",
+    "MathCAT_Simple": "a sub n, equals, a 1, times, r raised to the n minus 1 power"
+  },
+  {
+    "id": 1030,
+    "UnicodeMath": "𝑦=𝑎(𝑥-ℎ)²+𝑘",
+    "MathCAT_Dictation": "y is equal to; a times, open paren, x minus planck constant, close paren squared; plus k",
+    "MathCAT_Simple": "y equals; a times, open x minus planck constant, close squared; plus k"
+  },
+  {
+    "id": 1031,
+    "UnicodeMath": "𝑦=𝑦₀𝑒^𝑘𝑡",
+    "MathCAT_Dictation": "y is equal to, y sub 0, times e raised to the k t power",
+    "MathCAT_Simple": "y equals, y 0, times e raised to the k t power"
+  },
+  {
+    "id": 1032,
+    "UnicodeMath": "𝑎=𝑏𝑞+𝑟   0≤𝑟<𝑏",
+    "MathCAT_Dictation": "a is equal to; b q plus r 0; is less than or equal to, r is less than b",
+    "MathCAT_Simple": "a equals; b q plus r 0;  less than or equal to, r  less than b"
+  },
+  {
+    "id": 1033,
+    "UnicodeMath": "gcd⁡(𝑎,𝑏)=𝑎𝑥+𝑏𝑦",
+    "MathCAT_Dictation": "gcd of, open paren a comma, b, close paren; is equal to, a x plus b y",
+    "MathCAT_Simple": "gcd, open a comma, b, close; equals, a x plus b y"
+  },
+  {
+    "id": 1034,
+    "UnicodeMath": "𝑎^𝑝≡𝑎 (\"mod\" 𝑝)",
+    "MathCAT_Dictation": "a to the p-th power, is identical to, a, open paren mod p close paren",
+    "MathCAT_Simple": "a to the p-th power,  identical to, a open mod p close"
+  },
+  {
+    "id": 1035,
+    "UnicodeMath": "𝜙(𝑛)=𝑛∏_├𝑝∣𝑛┤ (1-1/𝑝)",
+    "MathCAT_Dictation": "phi of n is equal to; n; the product over p divides n of; open paren, 1 minus 1 over p, close paren",
+    "MathCAT_Simple": "phi n equals; n; product over p divides n of; open 1 minus 1 over p, close"
+  },
+  {
+    "id": 1036,
+    "UnicodeMath": "𝑎^𝜙(𝑛)≡1 (\"mod\" 𝑛)",
+    "MathCAT_Dictation": "a raised to the phi of n power, is identical to; 1 times, open paren mod n close paren",
+    "MathCAT_Simple": "a raised to the phi n power,  identical to, 1 times open mod n close"
+  },
+  {
+    "id": 1037,
+    "UnicodeMath": "𝑎≡𝑏 (mod 𝑛)",
+    "MathCAT_Dictation": "a is identical to, b, open paren mod n close paren",
+    "MathCAT_Simple": "a  identical to, b open mod n close"
+  },
+  {
+    "id": 1038,
+    "UnicodeMath": "|𝑧|=√(𝑎²+𝑏²)",
+    "MathCAT_Dictation": "the absolute value of z; is equal to, the square root of a squared plus b squared",
+    "MathCAT_Simple": "absolute value of z; equals, square root, a squared plus b squared"
+  },
+  {
+    "id": 1039,
+    "UnicodeMath": "(𝑎+𝑏𝑖)(𝑐+𝑑𝑖)=(𝑎𝑐-𝑏𝑑)+(𝑎𝑑+𝑏𝑐)𝑖",
+    "MathCAT_Dictation": "open paren, a plus b i, close paren; times, open paren, c plus d i, close paren; is equal to; open paren, a c minus b d; close paren; plus; open paren, a d plus b c; close paren; times i",
+    "MathCAT_Simple": "open a plus b i, close; times, open c plus d i, close; equals; open, a c minus b d; close; plus; open, a d plus b c; close; times i"
+  },
+  {
+    "id": 1040,
+    "UnicodeMath": "(cos⁡𝜃+𝑖 sin⁡𝜃)^𝑛=cos⁡(𝑛𝜃)+𝑖 sin⁡(𝑛𝜃)",
+    "MathCAT_Dictation": "open paren; cosine theta, plus, i sine theta; close paren to the n-th power; is equal to; cosine of, open paren n theta, close paren; plus; i, sine of, open paren n theta, close paren",
+    "MathCAT_Simple": "open, cos theta, plus, i sine theta; close to the n-th power; equals; cos, open n theta close; plus, i, sine, open n theta close"
+  },
+  {
+    "id": 1041,
+    "UnicodeMath": "𝑒^𝑖𝜋+1=0",
+    "MathCAT_Dictation": "e raised to the i pi power, plus 1; is equal to 0",
+    "MathCAT_Simple": "e raised to the i pi power, plus 1; equals 0"
+  },
+  {
+    "id": 1166,
+    "UnicodeMath": "𝐚⋅𝐛=|𝐚||𝐛|cos⁡𝜃",
+    "MathCAT_Dictation": "bold a dot product bold b, is equal to; the absolute value of bold a; the absolute value of bold b; cosine theta",
+    "MathCAT_Simple": "bold a dot product bold b, equals; absolute value of bold a; absolute value of bold b; cos theta"
+  },
+  {
+    "id": 1167,
+    "UnicodeMath": "⒱(𝑎&𝑏@𝑐&𝑑)=𝑎𝑑-𝑏𝑐",
+    "MathCAT_Dictation": "the 2 by 2 determinant; row 1; a, b; row 2; c, d; is equal to, a d minus b c",
+    "MathCAT_Simple": "the 2 by 2 determinant; row 1; a, b; row 2; c, d; equals, a d minus b c"
+  },
+  {
+    "id": 1168,
+    "UnicodeMath": "𝐴𝐯=𝜆𝐯",
+    "MathCAT_Dictation": "cap a bold v, is equal to, lambda bold v",
+    "MathCAT_Simple": "cap a bold v, equals lambda bold v"
+  },
+  {
+    "id": 1169,
+    "UnicodeMath": "det⁡(𝐴-𝜆𝐼)=0",
+    "MathCAT_Dictation": "det of; open paren,  cap a minus lambda  cap i; close paren; is equal to 0",
+    "MathCAT_Simple": "det, open,  cap a minus lambda  cap i; close; equals 0"
+  },
+  {
+    "id": 1170,
+    "UnicodeMath": "proj_𝐯𝐮=𝐮⋅𝐯/|𝐯|²𝐯",
+    "MathCAT_Dictation": null,
+    "MathCAT_Simple": null
+  },
+  {
+    "id": 1171,
+    "UnicodeMath": "|𝐚×𝐛|=|𝐚||𝐛|sin⁡𝜃",
+    "MathCAT_Dictation": "the absolute value of bold a cross product bold b; is equal to; the absolute value of bold a; the absolute value of bold b; sine theta",
+    "MathCAT_Simple": "absolute value of bold a cross product bold b; equals; absolute value of bold a; absolute value of bold b; sine theta"
+  },
+  {
+    "id": 1172,
+    "UnicodeMath": "𝐚×𝐛=⒱(𝐢&𝐣&𝐤@𝑎₁&𝑎₂&𝑎₃@𝑏₁&𝑏₂&𝑏₃)",
+    "MathCAT_Dictation": "bold a cross product bold b, is equal to; the 3 by 3 determinant; row 1; column 1; bold i, column 2; bold j, column 3; bold k; row 2; column 1; a sub 1; column 2; a sub 2; column 3; a sub 3; row 3; column 1; b sub 1; column 2; b sub 2; column 3; b sub 3",
+    "MathCAT_Simple": "bold a cross product bold b, equals; the 3 by 3 determinant; row 1; column 1; bold i, column 2; bold j, column 3; bold k; row 2; column 1; a 1; column 2; a 2; column 3; a 3; row 3; column 1; b 1; column 2; b 2; column 3; b 3"
+  },
+  {
+    "id": 1173,
+    "UnicodeMath": "|𝐚⋅𝐛|≤|𝐚||𝐛|",
+    "MathCAT_Dictation": "the absolute value of bold a dot product bold b; is less than or equal to; the absolute value of bold a; the absolute value of bold b",
+    "MathCAT_Simple": "absolute value of bold a dot product bold b;  less than or equal to; absolute value of bold a; absolute value of bold b"
+  },
+  {
+    "id": 1174,
+    "UnicodeMath": "|𝐺|=|𝐻|⋅[𝐺:𝐻]",
+    "MathCAT_Dictation": "the absolute value of  cap g; is equal to; the absolute value of  cap h; times, open bracket,  cap g colon  cap h, close bracket",
+    "MathCAT_Simple": "absolute value of  cap g; equals; absolute value of  cap h; times, open bracket,  cap g colon  cap h, close bracket"
+  },
+  {
+    "id": 1175,
+    "UnicodeMath": "𝜑(𝑎𝑏)=𝜑(𝑎)𝜑(𝑏)",
+    "MathCAT_Dictation": "phi, open paren a b close paren; is equal to, phi of a phi of b",
+    "MathCAT_Simple": "phi, open a b close; equals, phi a phi b"
+  },
+  {
+    "id": 1176,
+    "UnicodeMath": "𝐺/\"ker\" (𝜑)≅\"Im\"(𝜑)",
+    "MathCAT_Dictation": "the fraction with numerator  cap g; and denominator ker; times phi; is congruent to, the imaginary part of phi",
+    "MathCAT_Simple": "the fraction with numerator  cap g; and denominator ker; times phi;  congruent to, the imaginary part phi"
+  },
+  {
+    "id": 1177,
+    "UnicodeMath": "𝑎^|𝑎|=𝑒",
+    "MathCAT_Dictation": "a raised to the absolute value of a, power; is equal to e",
+    "MathCAT_Simple": "a raised to the absolute value of a, power; equals e"
+  },
+  {
+    "id": 1178,
+    "UnicodeMath": "∇𝑓=𝜆∇𝑔",
+    "MathCAT_Dictation": "gradient of f, is equal to, lambda gradient of g",
+    "MathCAT_Simple": "del f equals lambda del g"
+  },
+  {
+    "id": 1179,
+    "UnicodeMath": "𝐿(𝑥,𝜆)=𝑓(𝑥)-𝜆𝑔(𝑥)",
+    "MathCAT_Dictation": "cap l, open paren, x comma, lambda, close paren; is equal to, f of x minus lambda g of x",
+    "MathCAT_Simple": "cap l, open x comma, lambda, close; equals, f x minus lambda g x"
+  },
+  {
+    "id": 1180,
+    "UnicodeMath": "∇𝑓(𝑥^*)=∑_𝑖 𝜆_𝑖 ∇𝑔_𝑖 (𝑥^*)",
+    "MathCAT_Dictation": "gradient of f of, open paren, x superscript times; close paren  end gradient; is equal to; the sum over i of, lambda sub i; gradient of g sub i, of, open paren, x superscript times; close paren  end gradient",
+    "MathCAT_Simple": "del f, open x super times; close  end gradient; equals; sum over i of lambda sub i; del g sub i; open x super times; close  end gradient"
+  }
+]

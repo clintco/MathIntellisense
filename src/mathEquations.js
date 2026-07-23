@@ -55,7 +55,7 @@ export const mathEquations = [
     "description": "Fractional exponent as a radical",
     "dictation": "a to the power of begin m over n end equals the nth root of a to the m",
     "domain": "Algebra & Number Systems",
-    "unicodemath": "𝑎^𝑚\\/𝑛=√(𝑛&𝑎^𝑚)"
+    "unicodemath": "𝑎^𝑚/𝑛=√(𝑛&𝑎^𝑚)"
   },
   {
     "name": "logarithm product rule",
@@ -263,7 +263,7 @@ export const mathEquations = [
     "description": "Every integer a divided by positive b has unique quotient q and remainder r",
     "dictation": "a equals b times q plus r, where zero is less than or equal to r, and r is less than b",
     "domain": "Algebra & Number Systems",
-    "unicodemath": "𝑎=𝑏𝑞+𝑟   0≤𝑟<𝑏"
+    "unicodemath": "𝑎=𝑏𝑞+𝑟   0≤𝑟<𝑏"
   },
   {
     "name": "Bezout's identity",
@@ -279,7 +279,7 @@ export const mathEquations = [
     "description": "For prime p and any integer a: a^p is congruent to a mod p",
     "dictation": "a to the p is congruent to a modulo p",
     "domain": "Algebra & Number Systems",
-    "unicodemath": "𝑎^𝑝≡𝑎 (\"mod\" 𝑝)"
+    "unicodemath": "𝑎^𝑝≡𝑎 (\"mod\" 𝑝)"
   },
   {
     "name": "Euler's totient function",
@@ -295,7 +295,7 @@ export const mathEquations = [
     "description": "For gcd(a,n)=1: a raised to Euler totient is congruent to 1 mod n",
     "dictation": "a to the power of phi of n is congruent to one modulo n",
     "domain": "Algebra & Number Systems",
-    "unicodemath": "𝑎^𝜙(𝑛)≡1 (\"mod\" 𝑛)"
+    "unicodemath": "𝑎^𝜙(𝑛)≡1 (\"mod\" 𝑛)"
   },
   {
     "name": "modular congruence",
@@ -303,7 +303,7 @@ export const mathEquations = [
     "description": "a is congruent to b modulo n",
     "dictation": "a is congruent to b modulo n",
     "domain": "Algebra & Number Systems",
-    "unicodemath": "𝑎≡𝑏 (mod 𝑛)"
+    "unicodemath": "𝑎≡𝑏 (mod 𝑛)"
   },
   {
     "name": "modulus of a complex number",
@@ -1079,7 +1079,7 @@ export const mathEquations = [
     "description": "Taylor series expansion of f around x=a",
     "dictation": "f of x equals the sum from n equals zero to infinity of begin fraction the nth derivative of f at a over n factorial end fraction times open parenthesis x minus a close parenthesis to the n",
     "domain": "Calculus & Analysis",
-    "unicodemath": "𝑓(𝑥)=∑_(𝑛=0)^∞ 𝑓^((𝑛)) (𝑎)/𝑛!(𝑥-𝑎)^𝑛"
+    "unicodemath": "𝑓(𝑥)=∑_(𝑛=0)^∞ 𝑓^((𝑛)) (𝑎)/𝑛! (𝑥-𝑎)^𝑛"
   },
   {
     "name": "Maclaurin series",
@@ -1367,7 +1367,7 @@ export const mathEquations = [
     "description": "Projection of vector u onto vector v",
     "dictation": "the projection of u onto v equals begin fraction u dot v over the magnitude of v squared end fraction times v",
     "domain": "Linear Algebra & Abstract Algebra",
-    "unicodemath": "proj_𝐯𝐮=𝐮⋅𝐯/|𝐯|²𝐯"
+    "unicodemath": "\"proj\"_𝐯𝐮=(𝐮⋅𝐯)/|𝐯|²  𝐯"
   },
   {
     "name": "cross product magnitude",
@@ -1415,7 +1415,7 @@ export const mathEquations = [
     "description": "The quotient of G by the kernel of a homomorphism is isomorphic to its image",
     "dictation": "G modulo the kernel of phi is isomorphic to the image of phi",
     "domain": "Linear Algebra & Abstract Algebra",
-    "unicodemath": "𝐺/\"ker\" (𝜑)≅\"Im\"(𝜑)"
+    "unicodemath": "𝐺/\"ker\"(𝜙)≅\"Im\"(𝜙)"
   },
   {
     "name": "group element order",
@@ -1583,7 +1583,7 @@ export const mathEquations = [
     "description": "Modus ponens inference rule",
     "dictation": "from p and p implies q, conclude q",
     "domain": "Discrete Math & Logic",
-    "unicodemath": "(𝑝 𝑝⇒𝑞)/𝑞"
+    "unicodemath": "(𝑝 𝑝⇒𝑞)/𝑞"
   },
   {
     "name": "modus tollens",
@@ -1591,7 +1591,7 @@ export const mathEquations = [
     "description": "Modus tollens inference rule",
     "dictation": "from not q and p implies q, conclude not p",
     "domain": "Discrete Math & Logic",
-    "unicodemath": "(¬𝑞 𝑝⇒𝑞)/¬𝑝"
+    "unicodemath": "(¬𝑞 𝑝⇒𝑞)/¬𝑝"
   },
   {
     "name": "handshaking lemma",
@@ -1775,7 +1775,7 @@ export const mathEquations = [
     "description": "Pearson correlation coefficient",
     "dictation": "rho equals begin fraction covariance of X and Y over sigma sub X times sigma sub Y end fraction",
     "domain": "Probability, Statistics & Data Science",
-    "unicodemath": "𝜌=Cov(𝑋,𝑌)/𝜎_𝑋 𝜎_𝑌"
+    "unicodemath": "𝜌_(𝑋,𝑌)=\"cov\"(𝑋,𝑌)/(𝜎_𝑋 𝜎_𝑌)"
   },
   {
     "name": "addition rule for probability",
@@ -1887,7 +1887,7 @@ export const mathEquations = [
     "description": "One-sample t-test statistic",
     "dictation": "t equals begin fraction x bar minus mu over begin fraction s over the square root of n end fraction end fraction",
     "domain": "Probability, Statistics & Data Science",
-    "unicodemath": "𝑡=(𝑥̅-𝜇)/𝑠/√𝑛"
+    "unicodemath": "𝑡=(𝑥̅-𝜇)/(𝑠/√𝑛)"
   },
   {
     "name": "two-sample t-test",
@@ -1951,7 +1951,7 @@ export const mathEquations = [
     "description": "Measure of tail heaviness relative to a normal distribution",
     "dictation": "kurtosis equals begin fraction begin fraction one over n end fraction times the sum of open parenthesis x sub i minus x bar close parenthesis to the fourth over s to the fourth end fraction minus three",
     "domain": "Probability, Statistics & Data Science",
-    "unicodemath": "kurtosis=1/𝑛 ∑ (𝑥_𝑖-𝑥̅)⁴/𝑠⁴-3"
+    "unicodemath": "\"kurtosis\"=1/𝑛 ∑ (𝑥_𝑖-𝑥̅)⁴/𝑠⁴-3"
   },
   {
     "name": "simple linear regression",
@@ -2535,7 +2535,7 @@ export const mathEquations = [
     "description": "Doppler effect for moving source or observer",
     "dictation": "f prime equals f times begin fraction v plus or minus v sub o over v minus or plus v sub s end fraction",
     "domain": "Physics",
-    "unicodemath": "𝑓'=𝑓𝑣±𝑣_𝑜/𝑣∓𝑣_𝑠"
+    "unicodemath": "𝑓'=(𝑣±𝑣_𝑜)/(𝑣∓𝑣_𝑠) 𝑓"
   },
   {
     "name": "standing wave wavelength",
@@ -2607,7 +2607,7 @@ export const mathEquations = [
     "description": "Half-life in terms of decay constant",
     "dictation": "t sub one half equals begin fraction natural log of two over lambda end fraction",
     "domain": "Physics",
-    "unicodemath": "𝑡_(1\\/2)=ln⁡2/𝜆"
+    "unicodemath": "𝑡_(1/2)=ln⁡2/𝜆"
   },
   {
     "name": "Lorentz factor",
@@ -2815,7 +2815,7 @@ export const mathEquations = [
     "description": "Lowest resonant frequency of a string with tension T and linear mass density mu",
     "dictation": "f sub one equals begin fraction one over two L end fraction times the square root of begin fraction T over mu end fraction",
     "domain": "Physics",
-    "unicodemath": "𝑓_1=1/2𝐿√(𝑇\\/𝜇)"
+    "unicodemath": "𝑓₁=1/2𝐿 √(𝑇/𝜇)"
   },
   {
     "name": "open pipe harmonics",
@@ -3103,7 +3103,7 @@ export const mathEquations = [
     "description": "pH as negative log of hydrogen ion concentration",
     "dictation": "pH equals negative log of the concentration of H plus",
     "domain": "Chemistry",
-    "unicodemath": "pH=-log[H^+]"
+    "unicodemath": "\"pH\"=-log[\"H\"^+]"
   },
   {
     "name": "pOH definition",
@@ -3111,7 +3111,7 @@ export const mathEquations = [
     "description": "pOH as negative log of hydroxide ion concentration",
     "dictation": "p O H equals negative log of the concentration of O H minus",
     "domain": "Chemistry",
-    "unicodemath": "pOH=-log⁡[OH^-]"
+    "unicodemath": "\"pOH\"=-log⁡[\"OH\"^-]"
   },
   {
     "name": "pH plus pOH",
@@ -3119,7 +3119,7 @@ export const mathEquations = [
     "description": "Relationship between pH and pOH in aqueous solution at 25C",
     "dictation": "p H plus p O H equals fourteen",
     "domain": "Chemistry",
-    "unicodemath": "pH+pOH=14"
+    "unicodemath": "\"pH\"+\"pOH\"=14"
   },
   {
     "name": "water dissociation constant",
@@ -3183,7 +3183,7 @@ export const mathEquations = [
     "description": "Rate law with rate constant k and reaction orders m and n",
     "dictation": "rate equals k times the concentration of A to the m times the concentration of B to the n",
     "domain": "Chemistry",
-    "unicodemath": "rate=𝑘[𝐴]^𝑚 [𝐵]^𝑛"
+    "unicodemath": "\"rate\"=𝑘[𝐴]^𝑚 [𝐵]^𝑛"
   },
   {
     "name": "first order integrated rate law",
@@ -3423,7 +3423,7 @@ export const mathEquations = [
     "description": "Percentage change in quantity demanded per percentage change in price",
     "dictation": "epsilon sub d equals begin fraction delta Q over Q over delta P over P end fraction",
     "domain": "Finance & Economics",
-    "unicodemath": "𝜀_𝑑=𝛥𝑄\\/𝑄/𝛥𝑃\\/𝑃"
+    "unicodemath": "𝜀_𝑑=𝛥𝑄/𝑄/𝛥𝑃/𝑃"
   },
   {
     "name": "marginal cost",
@@ -3487,7 +3487,7 @@ export const mathEquations = [
     "description": "Natural resonant frequency of an LC tank circuit",
     "dictation": "f sub zero equals begin fraction one over two pi times the square root of L C end fraction",
     "domain": "Engineering & Computing",
-    "unicodemath": "𝑓_0=1/2𝜋 √(𝐿𝐶)"
+    "unicodemath": "𝑓₀=1/2𝜋√(𝐿𝐶)"
   },
   {
     "name": "RC time constant",
@@ -3551,7 +3551,7 @@ export const mathEquations = [
     "description": "Transforms a discrete time-domain signal of length N into its frequency components",
     "dictation": "f hat of omega equals the integral from negative infinity to infinity of f of t times e to the power of negative i omega t d t",
     "domain": "Engineering & Computing",
-    "unicodemath": "𝑋[𝑘]=∑_(𝑛=0)^(𝑁-1) 𝑥[𝑛] 𝑒^-2𝜋𝑗𝑘𝑛\\/𝑁"
+    "unicodemath": "𝑋[𝑘]=∑_(𝑛=0)^(𝑁-1) 𝑥[𝑛] 𝑒^-2𝜋𝑗𝑘𝑛/𝑁"
   },
   {
     "name": "signal-to-noise ratio",
@@ -3698,54 +3698,6 @@ export const mathEquations = [
     "unicodemath": "𝑦_(𝑛+1)=𝑦_𝑛+ℎ/6 (𝑘₁+2𝑘₂+2𝑘₃+𝑘₄)"
   },
   {
-    "name": "2x2 matrix",
-    "aliases": "2 by 2 matrix,pmatrix,parentheses matrix",
-    "description": "2 by 2 matrix with placeholder entries",
-    "dictation": "begin 2 by 2 matrix row 1 placeholder 1 placeholder 2 row 2 placeholder 3 placeholder 4 end matrix",
-    "domain": "Building Blocks",
-    "unicodemath": "2×2⒨"
-  },
-  {
-    "name": "3x3 matrix",
-    "aliases": "3 by 3 matrix,pmatrix,parentheses matrix",
-    "description": "3 by 3 matrix with placeholder entries",
-    "dictation": "begin 3 by 3 matrix row 1 placeholder 1 placeholder 2 placeholder 3 row 2 placeholder 4 placeholder 5 placeholder 6 row 3 placeholder 7 placeholder 8 placeholder 9 end matrix",
-    "domain": "Building Blocks",
-    "unicodemath": "3×3⒨"
-  },
-  {
-    "name": "2x2 bracket matrix",
-    "aliases": "2 by 2 bmatrix,bracket matrix",
-    "description": "2 by 2 bracket matrix with placeholder entries",
-    "dictation": "begin 2 by 2 bracket matrix row 1 placeholder 1 placeholder 2 row 2 placeholder 3 placeholder 4 end matrix",
-    "domain": "Building Blocks",
-    "unicodemath": "2×2ⓢ"
-  },
-  {
-    "name": "3x3 bracket matrix",
-    "aliases": "3 by 3 bmatrix,bracket matrix",
-    "description": "3 by 3 bracket matrix with placeholder entries",
-    "dictation": "begin 3 by 3 bracket matrix row 1 placeholder 1 placeholder 2 placeholder 3 row 2 placeholder 4 placeholder 5 placeholder 6 row 3 placeholder 7 placeholder 8 placeholder 9 end matrix",
-    "domain": "Building Blocks",
-    "unicodemath": "3×3ⓢ"
-  },
-  {
-    "name": "2x2 determinant",
-    "aliases": "2 by 2 vmatrix,determinant matrix,vertical bar matrix",
-    "description": "2 by 2 determinant (vertical bar) matrix with placeholder entries",
-    "dictation": "begin 2 by 2 determinant matrix row 1 placeholder 1 placeholder 2 row 2 placeholder 3 placeholder 4 end matrix",
-    "domain": "Building Blocks",
-    "unicodemath": "2×2⒱"
-  },
-  {
-    "name": "3x3 determinant",
-    "aliases": "3 by 3 vmatrix,determinant matrix,vertical bar matrix",
-    "description": "3 by 3 determinant (vertical bar) matrix with placeholder entries",
-    "dictation": "begin 3 by 3 determinant matrix row 1 placeholder 1 placeholder 2 placeholder 3 row 2 placeholder 4 placeholder 5 placeholder 6 row 3 placeholder 7 placeholder 8 placeholder 9 end matrix",
-    "domain": "Building Blocks",
-    "unicodemath": "3×3⒱"
-  },
-  {
     "name": "double integral",
     "aliases": "area integral",
     "description": "Double integral of a function over a planar region D",
@@ -3759,7 +3711,7 @@ export const mathEquations = [
     "description": "Extends the factorial to complex numbers via an integral",
     "dictation": "Gamma of z equals the integral from zero to infinity of t to the power of begin z minus one end times e to the power of negative t d t",
     "domain": "Calculus & Analysis",
-    "unicodemath": "Γ(𝑧)=∫_0^∞ 𝑡^(𝑧-1) 𝑒^−𝑡 ⅆ𝑡"
+    "unicodemath": "Γ(𝑧)=∫_0^∞ 𝑡^(𝑧-1) 𝑒^−𝑡 ⅆ𝑡"
   },
   {
     "name": "Gaussian integral",
@@ -3791,6 +3743,6 @@ export const mathEquations = [
     "description": "Triple integral transformed to spherical coordinates",
     "dictation": "the triple integral over V of f of r comma theta comma phi times r d r d theta d phi",
     "domain": "Calculus & Analysis",
-    "unicodemath": "∭_𝑉 𝑓(𝑟,𝜃,𝜙)𝑟ⅆ𝑟ⅆ𝜃ⅆ𝜙"
+    "unicodemath": "∭_𝑉 𝑓(𝑟,𝜃,𝜙)𝑟²ⅆ𝑟ⅆ𝜃ⅆ𝜙"
   }
 ];

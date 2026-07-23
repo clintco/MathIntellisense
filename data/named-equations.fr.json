@@ -379,58 +379,6 @@
       "dictation": "ène de té égale ène indice zéro fois e puissance parenthèse ouvrante erre fois té parenthèse fermante"
     },
     {
-      "id": 1462,
-      "name": "matrice 2 × 2",
-      "aliases": [
-        "matrice 2 par 2",
-        "matrice entre parenthèses"
-      ],
-      "dictation": "matrice deux par deux entre parenthèses"
-    },
-    {
-      "id": 1463,
-      "name": "matrice 3 × 3",
-      "aliases": [
-        "matrice 3 par 3",
-        "matrice entre parenthèses"
-      ],
-      "dictation": "matrice trois par trois entre parenthèses"
-    },
-    {
-      "id": 1464,
-      "name": "matrice 2 × 2 entre crochets",
-      "aliases": [
-        "matrice 2 par 2 entre crochets"
-      ],
-      "dictation": "matrice deux par deux entre crochets"
-    },
-    {
-      "id": 1465,
-      "name": "matrice 3 × 3 entre crochets",
-      "aliases": [
-        "matrice 3 par 3 entre crochets"
-      ],
-      "dictation": "matrice trois par trois entre crochets"
-    },
-    {
-      "id": 1466,
-      "name": "déterminant 2 × 2",
-      "aliases": [
-        "déterminant 2 par 2",
-        "matrice entre barres verticales"
-      ],
-      "dictation": "déterminant deux par deux entre barres verticales"
-    },
-    {
-      "id": 1467,
-      "name": "déterminant 3 × 3",
-      "aliases": [
-        "déterminant 3 par 3",
-        "matrice entre barres verticales"
-      ],
-      "dictation": "déterminant trois par trois entre barres verticales"
-    },
-    {
       "id": 1101,
       "name": "règle de dérivation en chaîne",
       "aliases": [

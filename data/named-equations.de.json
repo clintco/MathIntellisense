@@ -377,58 +377,6 @@
       "dictation": "en von te gleich en Index null mal e hoch Klammer auf er mal te Klammer zu"
     },
     {
-      "id": 1462,
-      "name": "2 × 2 Matrix",
-      "aliases": [
-        "2 mal 2 Matrix",
-        "Matrix in runden Klammern"
-      ],
-      "dictation": "Matrix zwei kreuz zwei in runden Klammern"
-    },
-    {
-      "id": 1463,
-      "name": "3 × 3 Matrix",
-      "aliases": [
-        "3 mal 3 Matrix",
-        "Matrix in runden Klammern"
-      ],
-      "dictation": "Matrix drei kreuz drei in runden Klammern"
-    },
-    {
-      "id": 1464,
-      "name": "2 × 2 Matrix in eckigen Klammern",
-      "aliases": [
-        "2 mal 2 Matrix in eckigen Klammern"
-      ],
-      "dictation": "Matrix zwei kreuz zwei in eckigen Klammern"
-    },
-    {
-      "id": 1465,
-      "name": "3 × 3 Matrix in eckigen Klammern",
-      "aliases": [
-        "3 mal 3 Matrix in eckigen Klammern"
-      ],
-      "dictation": "Matrix drei kreuz drei in eckigen Klammern"
-    },
-    {
-      "id": 1466,
-      "name": "2 × 2 Determinante",
-      "aliases": [
-        "2 mal 2 Determinante",
-        "Matrix mit Betragsstrichen"
-      ],
-      "dictation": "Determinante zwei kreuz zwei in Betragsstrichen"
-    },
-    {
-      "id": 1467,
-      "name": "3 × 3 Determinante",
-      "aliases": [
-        "3 mal 3 Determinante",
-        "Matrix mit Betragsstrichen"
-      ],
-      "dictation": "Determinante drei kreuz drei in Betragsstrichen"
-    },
-    {
       "id": 1101,
       "name": "Kettenregel",
       "aliases": [
